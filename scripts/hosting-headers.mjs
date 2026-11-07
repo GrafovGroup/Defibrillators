@@ -60,3 +60,10 @@ for (const dir of new Set(html.map((file) => path.dirname(file)))) {
 console.log(
   `Prepared page-specific WHC headers; maximum CSP line ${maximum} bytes.`,
 );
+
+// Only content-hashed build assets receive immutable caching.
+fs.mkdirSync('dist/_astro', { recursive: true });
+fs.writeFileSync(
+  'dist/_astro/.htaccess',
+  '<IfModule mod_headers.c>\n  Header set Cache-Control "public, max-age=31536000, immutable"\n</IfModule>\n',
+);

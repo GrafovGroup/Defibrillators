@@ -180,7 +180,7 @@ const references = [
     image: null,
     source: {
       label: 'HeartSine — samaritan PAD 350P',
-      url: 'https://www.stryker.com/us/en/emergency-care/products/heartsine-samaritan-pad-360p.html',
+      url: 'https://heartsine.com/product/heartsine-connected-samaritan-pad-350p/',
       reviewed: '2026-11-07',
     },
     guidance: {

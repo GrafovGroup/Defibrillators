@@ -1,0 +1,82 @@
+---
+import type { Locale } from '../data/content';
+import { pathFor } from '../data/routes';
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+const rows =
+  lang === 'en'
+    ? [
+        [
+          'Equipment',
+          'Record the full model and device identifier, language, quantity and Canadian licence details.',
+        ],
+        [
+          'Included supplies',
+          'List pads, battery, child-use accessories, carrying case, cabinet and signage separately.',
+        ],
+        [
+          'Installation',
+          'Name each location, site contact, mounting requirements and access restrictions.',
+        ],
+        [
+          'Training',
+          'Specify participants, course, language and the provider who will deliver it.',
+        ],
+        [
+          'Ongoing costs',
+          'Itemize replacement supplies, inspections, records and any recurring fees for the same planning period.',
+        ],
+        [
+          'Commercial terms',
+          'Compare delivery, taxes, payment terms, returns, warranty and the service contact in writing.',
+        ],
+      ]
+    : [
+        [
+          'Équipement',
+          'Notez le modèle complet, l’identifiant, la langue, la quantité et les détails de l’homologation canadienne.',
+        ],
+        [
+          'Fournitures incluses',
+          'Détaillez les électrodes, la batterie, les accessoires pédiatriques, l’étui, l’armoire et la signalisation.',
+        ],
+        [
+          'Installation',
+          'Précisez les emplacements, les contacts, les exigences de fixation et les restrictions d’accès.',
+        ],
+        [
+          'Formation',
+          'Indiquez les participants, le cours, la langue et le fournisseur qui assurera la formation.',
+        ],
+        [
+          'Coûts récurrents',
+          'Détaillez les remplacements, les inspections, les registres et les frais récurrents sur une même période.',
+        ],
+        [
+          'Modalités commerciales',
+          'Comparez par écrit la livraison, les taxes, le paiement, les retours, la garantie et le contact de service.',
+        ],
+      ];
+---
+
+<section class="procurement-list" id="quote-checklist">
+  <h2>
+    {lang === 'en'
+      ? 'Six things to compare in an AED quote'
+      : 'Six points à comparer dans une soumission de DEA'}
+  </h2>
+  <ol>
+    {rows.map(([heading, body]) => (
+      <li>
+        <strong>{heading}.</strong> {body}
+      </li>
+    ))}
+  </ol>
+  <a class="text-link" href={`${pathFor('costs', lang)}#ownership-budget`}>
+    {lang === 'en'
+      ? 'Add up your quotes with the budget worksheet'
+      : 'Additionner les montants avec la feuille de budget'}
+  </a>
+</section>

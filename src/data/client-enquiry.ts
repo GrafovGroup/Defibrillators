@@ -72,6 +72,7 @@ export const pageIds = [
   'carryCases',
   'outdoorCabinets',
   'home',
+  'search',
   'defibrillators',
   'zoll',
   'philips',
@@ -436,6 +437,7 @@ export const sourcePaths = {
     fr: '/fr/accessoires/armoires-exterieures-dea/',
   },
   home: { en: '/en/', fr: '/fr/' },
+  search: { en: '/en/search/', fr: '/fr/recherche/' },
   defibrillators: { en: '/en/defibrillators/', fr: '/fr/defibrillateurs/' },
   zoll: {
     en: '/en/defibrillators/zoll-aed-plus/',

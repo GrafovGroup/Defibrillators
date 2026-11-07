@@ -6,6 +6,10 @@ export const routes = {
   ...locationRoutes,
   ...offeringRoutes,
   home: { en: ['', 'Home'], fr: ['', 'Accueil'] },
+  search: {
+    en: ['search', 'Search Defibrillators.ca'],
+    fr: ['recherche', 'Rechercher sur Defibrillators.ca'],
+  },
   defibrillators: {
     en: ['defibrillators', 'AED defibrillators'],
     fr: ['defibrillateurs', 'Défibrillateurs DEA'],

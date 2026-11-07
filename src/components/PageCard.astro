@@ -6,8 +6,9 @@ import type { Locale } from '../data/content';
 interface Props {
   lang: Locale;
   pageId: PageId;
+  compact?: boolean;
 }
-const { lang, pageId } = Astro.props;
+const { lang, pageId, compact = false } = Astro.props;
 const page = pageFor(pageId);
 ---
 
@@ -23,6 +24,6 @@ const page = pageFor(pageId);
     <h2>
       <a href={pathFor(pageId, lang)}>{labelFor(pageId, lang)}</a>
     </h2>
-    <p>{page.intro[lang]}</p>
+    {!compact && <p>{page.intro[lang]}</p>}
   </div>
 </article>

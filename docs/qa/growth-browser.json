@@ -1,0 +1,630 @@
+{
+  "date": "2026-11-07",
+  "checks": [
+    {
+      "page": "search-en",
+      "report": {
+        "path": "/en/search/",
+        "width": 1710,
+        "axe": "4.14.0",
+        "violations": [],
+        "incomplete": [],
+        "passes": 49,
+        "overflow": false,
+        "brokenImages": []
+      }
+    },
+    {
+      "page": "search-fr-320",
+      "report": {
+        "path": "/fr/recherche/",
+        "width": 320,
+        "axe": "4.14.0",
+        "violations": [],
+        "incomplete": [],
+        "passes": 49,
+        "overflow": false,
+        "brokenImages": []
+      }
+    },
+    {
+      "page": "/en/request-quote/",
+      "report": {
+        "path": "/en/request-quote/",
+        "width": 360,
+        "axe": "4.14.0",
+        "violations": [],
+        "incomplete": [],
+        "passes": 47,
+        "overflow": false,
+        "brokenImages": []
+      }
+    },
+    {
+      "page": "/fr/demander-soumission/",
+      "report": {
+        "path": "/fr/demander-soumission/",
+        "width": 390,
+        "axe": "4.14.0",
+        "violations": [],
+        "incomplete": [],
+        "passes": 47,
+        "overflow": false,
+        "brokenImages": []
+      }
+    },
+    {
+      "page": "/en/resources/aed-cost-ownership/",
+      "report": {
+        "path": "/en/resources/aed-cost-ownership/",
+        "width": 768,
+        "axe": "4.14.0",
+        "violations": [],
+        "incomplete": [],
+        "passes": 48,
+        "overflow": false,
+        "brokenImages": []
+      }
+    },
+    {
+      "page": "/fr/defibrillateurs/philips-heartstart-frx/",
+      "report": {
+        "path": "/fr/defibrillateurs/philips-heartstart-frx/",
+        "width": 1024,
+        "axe": "4.14.0",
+        "violations": [],
+        "incomplete": [],
+        "passes": 43,
+        "overflow": false,
+        "brokenImages": []
+      }
+    },
+    {
+      "page": "/en/about/",
+      "report": {
+        "path": "/en/about/",
+        "width": 1440,
+        "axe": "4.14.0",
+        "violations": [],
+        "incomplete": [],
+        "passes": 40,
+        "overflow": false,
+        "brokenImages": []
+      }
+    },
+    {
+      "page": "/en/",
+      "report": {
+        "path": "/en/",
+        "width": 2560,
+        "axe": "4.14.0",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": [
+              {
+                "target": [".utility-coverage > span"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".utility-detail:nth-child(2)"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".utility-detail:nth-child(3)"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".header-phone"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".header-email"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".header-quote"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".desktop-nav > ul > li:nth-child(4) > a[href$=\"installation/\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".desktop-nav > ul > li:nth-child(5) > a[href$=\"maintenance/\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".desktop-nav > ul > li:nth-child(6) > a[href$=\"aed-programs/\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".desktop-nav > ul > li:nth-child(7) > a[href$=\"industries/\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".desktop-nav > ul > li:nth-child(8) > a[href$=\"resources/\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".desktop-nav > ul > li:nth-child(9) > a[href$=\"contact/\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": ["figcaption"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [".benefit-strip > ul > li:nth-child(3) > span"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".benefit-strip > ul > li:nth-child(4) > span"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".benefit-strip > ul > li:nth-child(5) > span"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".benefit-strip > ul > li:nth-child(6) > span"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              }
+            ]
+          }
+        ],
+        "passes": 46,
+        "overflow": false,
+        "brokenImages": []
+      }
+    },
+    {
+      "page": "/fr/regions/",
+      "report": {
+        "path": "/fr/regions/",
+        "width": 390,
+        "axe": "4.14.0",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": [
+              {
+                "target": [
+                  "li[data-code=\"BC\"][data-city-result=\"\"]:nth-child(1) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "a[href$=\"barrie/\"] > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"ON\"][data-city-result=\"\"]:nth-child(3) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "a[href$=\"brantford/\"] > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "a[href$=\"calgary/\"] > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"PE\"] > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"BC\"][data-city-result=\"\"]:nth-child(7) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"QC\"][data-city-result=\"\"]:nth-child(8) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "a[href$=\"edmonton/\"] > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"NB\"][data-city-result=\"\"]:nth-child(10) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"ON\"][data-city-result=\"\"]:nth-child(11) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "a[href$=\"guelph/\"] > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"NS\"] > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "a[href$=\"hamilton/\"] > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "a[href$=\"iqaluit/\"] > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-search=\"Kamloops Kamloops Kamloops\"] > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"BC\"][data-city-result=\"\"]:nth-child(17) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "a[href$=\"kingston/\"] > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"ON\"][data-city-result=\"\"]:nth-child(19) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"AB\"][data-city-result=\"\"]:nth-child(20) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "a[href$=\"london/\"] > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"NB\"][data-city-result=\"\"]:nth-child(22) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "a[href$=\"montreal/\"] > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"BC\"][data-city-result=\"\"]:nth-child(24) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "a[href$=\"oshawa/\"] > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"ON-QC\"] > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"ON\"][data-city-result=\"\"]:nth-child(27) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"QC\"][data-city-result=\"\"]:nth-child(28) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "a[href$=\"red-deer/\"] > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-search=\"Regina Regina White City\"] > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "a[href$=\"saguenay/\"] > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"NB\"][data-city-result=\"\"]:nth-child(32) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"SK\"][data-city-result=\"\"]:nth-child(33) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "a[href$=\"sherbrooke/\"] > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"ON\"][data-city-result=\"\"]:nth-child(35) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"NL\"] > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"ON\"][data-city-result=\"\"]:nth-child(37) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "a[href$=\"toronto/\"] > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"QC\"][data-city-result=\"\"]:nth-child(39) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"BC\"][data-city-result=\"\"]:nth-child(40) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"BC\"][data-city-result=\"\"]:nth-child(41) > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "a[href$=\"whitehorse/\"] > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "a[href$=\"windsor/\"] > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "a[href$=\"winnipeg/\"] > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              },
+              {
+                "target": [
+                  "li[data-code=\"NT\"] > a > span > span[aria-hidden=\"true\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+              }
+            ]
+          }
+        ],
+        "passes": 50,
+        "overflow": false,
+        "brokenImages": []
+      }
+    },
+    {
+      "page": "/fr/ressources/cout-dea-budget/",
+      "report": {
+        "path": "/fr/ressources/cout-dea-budget/",
+        "width": 390,
+        "axe": "4.14.0",
+        "violations": [],
+        "incomplete": [],
+        "passes": 48,
+        "overflow": false,
+        "brokenImages": []
+      }
+    },
+    {
+      "page": "/fr/accessoires/trouver-pieces/",
+      "report": {
+        "path": "/fr/accessoires/trouver-pieces/",
+        "width": 390,
+        "axe": "4.14.0",
+        "violations": [],
+        "incomplete": [],
+        "passes": 47,
+        "overflow": false,
+        "brokenImages": []
+      }
+    },
+    {
+      "page": "/en/defibrillators/compare/",
+      "report": {
+        "path": "/en/defibrillators/compare/",
+        "width": 320,
+        "axe": "4.14.0",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": [
+              {
+                "target": [
+                  "tr:nth-child(1) > td[data-compare-model=\"philips\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "target": ["tr:nth-child(2) > td[data-compare-model=\"zoll\"]"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "target": [
+                  "tr:nth-child(2) > td[data-compare-model=\"philips\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "target": ["tr:nth-child(3) > td[data-compare-model=\"zoll\"]"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "target": [
+                  "tr:nth-child(3) > td[data-compare-model=\"philips\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "target": ["td[data-compare-model=\"zoll\"] > a"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              },
+              {
+                "target": ["td[data-compare-model=\"philips\"] > a"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+              }
+            ]
+          }
+        ],
+        "passes": 53,
+        "overflow": false,
+        "brokenImages": []
+      }
+    }
+  ],
+  "search": [
+    {
+      "query": "frx battery",
+      "text": "What are you looking for?\nSearch products, services and guides\nSection\nAll sections\nAEDs & comparisons\nParts & accessories\nServices\nLocations\nGuides & information\nCLEAR\n\n1 result\n\nPhilips HeartStart FRx\n\nAEDs & comparisons"
+    },
+    {
+      "query": "989803139261",
+      "text": "What are you looking for?\nSearch products, services and guides\nSection\nAll sections\nAEDs & comparisons\nParts & accessories\nServices\nLocations\nGuides & information\nCLEAR\n\n1 result\n\nPhilips HeartStart FRx\n\nAEDs & comparisons"
+    },
+    {
+      "query": "Surrey",
+      "text": "What are you looking for?\nSearch products, services and guides\nSection\nAll sections\nAEDs & comparisons\nParts & accessories\nServices\nLocations\nGuides & information\nCLEAR\n\n1 result\n\nAED equipment & services in Vancouver\n\nLocations"
+    },
+    {
+      "query": "no-such-product-982",
+      "text": "What are you looking for?\nSearch products, services and guides\nSection\nAll sections\nAEDs & comparisons\nParts & accessories\nServices\nLocations\nGuides & information\nCLEAR\n\n0 results\n\nNo matches. Try a model name or a broader term, or contact us."
+    }
+  ],
+  "forms": [
+    {
+      "lang": "en",
+      "scenario": "success",
+      "status": "Thank you — we’ve received your request. We’ll review the details and reply by email. You can call us if you need to add anything.",
+      "errors": "",
+      "events": "[{\"event\":\"rfq_start\",\"page\":\"quote\",\"language\":\"en\",\"source_page\":\"quote\",\"audience\":\"commercial\",\"request_type\":\"equipment\"},{\"event\":\"rfq_success\",\"page\":\"quote\",\"language\":\"en\",\"source_page\":\"quote\",\"audience\":\"commercial\",\"request_type\":\"equipment\"}]"
+    },
+    {
+      "lang": "en",
+      "scenario": "field",
+      "status": "Sending your request…",
+      "errors": "Please check the highlighted fields.Email *: Enter a valid email address.",
+      "events": "[{\"event\":\"rfq_start\",\"page\":\"quote\",\"language\":\"en\",\"source_page\":\"quote\",\"audience\":\"commercial\",\"request_type\":\"equipment\"},{\"event\":\"rfq_error\",\"page\":\"quote\",\"language\":\"en\",\"source_page\":\"quote\",\"audience\":\"commercial\",\"request_type\":\"equipment\",\"outcome\":\"provider\"}]"
+    },
+    {
+      "lang": "en",
+      "scenario": "limited",
+      "events": "[{\"event\":\"rfq_start\",\"page\":\"quote\",\"language\":\"en\",\"source_page\":\"quote\",\"audience\":\"commercial\",\"request_type\":\"equipment\"},{\"event\":\"rfq_error\",\"page\":\"quote\",\"language\":\"en\",\"source_page\":\"quote\",\"audience\":\"commercial\",\"request_type\":\"equipment\",\"outcome\":\"provider\"}]"
+    },
+    {
+      "lang": "fr",
+      "scenario": "challenge",
+      "events": "[{\"event\":\"rfq_start\",\"page\":\"quote\",\"language\":\"fr\",\"source_page\":\"quote\",\"audience\":\"commercial\",\"request_type\":\"equipment\"},{\"event\":\"rfq_error\",\"page\":\"quote\",\"language\":\"fr\",\"source_page\":\"quote\",\"audience\":\"commercial\",\"request_type\":\"equipment\",\"outcome\":\"verification\"}]"
+    },
+    {
+      "lang": "fr",
+      "scenario": "unavailable",
+      "events": "[{\"event\":\"rfq_start\",\"page\":\"quote\",\"language\":\"fr\",\"source_page\":\"quote\",\"audience\":\"commercial\",\"request_type\":\"equipment\"},{\"event\":\"rfq_error\",\"page\":\"quote\",\"language\":\"fr\",\"source_page\":\"quote\",\"audience\":\"commercial\",\"request_type\":\"equipment\",\"outcome\":\"provider\"}]"
+    }
+  ],
+  "other": [
+    "French product to parts to quote preserves FRx and battery selections",
+    "French commercial mock submission accepted without checkbox; no production submission",
+    "CAD 0.10 + 0.20 = 0.30; negative rejected; clear restores prompt",
+    "French budget 1200.50 + 99.50 = 1 300,00 $",
+    "Mobile contact bar hidden during focused input",
+    "Native no-JavaScript form focuses required message; no checkbox",
+    "Keyboard search input to category to Clear",
+    "Safari desktop: frx battery returns one FRx result; French budget 0.10 + 0.20 = 0,30 $"
+  ],
+  "limits": [
+    "Chrome viewport tests are not real iPhone testing",
+    "No full VoiceOver user study performed",
+    "Axe incomplete contrast results include decorative arrows, scroll-clipped table cells, pseudo backgrounds and wide viewport capture edges; retained for review"
+  ]
+}

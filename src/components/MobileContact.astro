@@ -1,0 +1,24 @@
+---
+import { contact, type Locale } from '../data/content';
+import type { PageId } from '../data/routes';
+import { enquiryPath } from '../lib/enquiry';
+import Icon from './Icon.astro';
+interface Props {
+  lang: Locale;
+  pageId: PageId;
+}
+const { lang, pageId } = Astro.props;
+---
+
+<nav
+  class="mobile-contact"
+  aria-label={lang === 'en' ? 'Quick contact' : 'Contact rapide'}
+>
+  <a class="mobile-call" href={contact.tel}>
+    <Icon name="phone" />
+    {lang === 'en' ? 'Call us' : 'Appelez-nous'}
+  </a>
+  <a class="button" href={enquiryPath(pageId, lang)}>
+    {lang === 'en' ? 'Request a quote' : 'Soumission'}
+  </a>
+</nav>

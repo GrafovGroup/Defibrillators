@@ -21,7 +21,19 @@ const c = content[lang];
 <header class="site-header">
   <div class="utility">
     <div class="container utility-inner">
-      <LocaleSwitch lang={lang} pageId={pageId} />
+      <div class="utility-start">
+        <LocaleSwitch lang={lang} pageId={pageId} />
+        <a
+          class="utility-search"
+          href={pathFor('search', lang)}
+          aria-label={
+            lang === 'en' ? 'Search the website' : 'Rechercher dans le site'
+          }
+        >
+          <Icon name="search" />
+          <span>{lang === 'en' ? 'Search' : 'Rechercher'}</span>
+        </a>
+      </div>
       <div class="utility-right">
         <a class="utility-coverage" href={pathFor('locations', lang)}>
           <Icon name="maple" />

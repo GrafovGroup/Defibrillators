@@ -26,7 +26,6 @@ const valid = () => {
     installation: 'discuss',
     maintenance: 'discuss',
     message: 'A synthetic project enquiry.',
-    consent: 'yes',
   }))
     data.set(k, v);
   return data;
@@ -37,12 +36,12 @@ test('Eight distinct model references use official sources and no unlicensed ima
   for (const p of products) {
     assert.match(
       p.source.url,
-      /^https:\/\/(candistributor\.zoll\.com|www\.zoll\.com|www\.usa\.philips\.com|www\.stryker\.com|www\.defibtech\.com)\//,
+      /^https:\/\/(candistributor\.zoll\.com|www\.zoll\.com|www\.usa\.philips\.com|www\.stryker\.com|www\.defibtech\.com|heartsine\.com)\//,
     );
     for (const lang of ['en', 'fr']) {
       const $ = html(p.id, lang);
       assert.ok($(`main a[href="${p.source.url}"]`).length);
-      assert.ok($('.product-status').text().includes(p.source.reviewed));
+      assert.ok($('.product-source').text().includes(p.source.reviewed));
       assert.equal(
         graph($).find((n) => n['@type'] === 'Product').name,
         $('h1').text(),

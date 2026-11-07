@@ -1,0 +1,90 @@
+---
+import PartReferences from './PartReferences.astro';
+import type { Locale } from '../data/content';
+import type { ProductReference } from '../data/products';
+import { pathFor } from '../data/routes';
+interface Props {
+  lang: Locale;
+  product: ProductReference;
+}
+const { lang, product } = Astro.props;
+const t = (en: string, fr: string) => (lang === 'en' ? en : fr);
+---
+
+<section class="product-facts" aria-labelledby="product-facts-heading">
+  <h2 id="product-facts-heading">
+    {t('Compare the essentials', 'Comparez les caractéristiques essentielles')}
+  </h2>
+  <dl>
+    <div>
+      <dt>{t('Guidance', 'Guidage')}</dt>
+      <dd>{product.guidance[lang]}</dd>
+    </div>
+    <div>
+      <dt>
+        {t(
+          'Pads and child-use accessories',
+          'Électrodes et accessoires pédiatriques',
+        )}
+      </dt>
+      <dd>{product.electrodes[lang]}</dd>
+    </div>
+    <div>
+      <dt>{t('Pricing and delivery', 'Prix et livraison')}</dt>
+      <dd>
+        {t(
+          'Request a quote for your quantity, language and delivery location.',
+          'Demandez une soumission selon la quantité, la langue et le lieu de livraison.',
+        )}
+      </dd>
+    </div>
+    <div>
+      <dt>
+        {t('What to include in your quote', 'À inclure dans votre soumission')}
+      </dt>
+      <dd>
+        {t(
+          'The exact model, pads, battery, carry case or cabinet, warranty and any installation or training.',
+          'Le modèle exact, les électrodes, la batterie, l’étui ou l’armoire, la garantie et les services d’installation ou de formation.',
+        )}
+      </dd>
+    </div>
+  </dl>
+  <p>
+    <a href={pathFor('compare', lang)}>
+      {t('Compare models', 'Comparer les modèles')}
+    </a>{' '}
+    ·{' '}
+    <a href={`${pathFor('parts', lang)}?model=${product.id}`}>
+      {t(
+        'Find replacement supplies',
+        'Trouver les fournitures de remplacement',
+      )}
+    </a>
+  </p>
+  <PartReferences model={product.id} lang={lang} />
+  <details class="product-source">
+    <summary>
+      {t(
+        'Manufacturer source and Canadian configuration',
+        'Source du fabricant et configuration canadienne',
+      )}
+    </summary>
+    <p>
+      <a href={product.source.url}>{product.source.label}</a> ·{' '}
+      {t('Reviewed', 'Consultée le')} {product.source.reviewed}
+    </p>
+    <p>
+      {t(
+        'This profile summarizes manufacturer information. The exact Canadian device licence, supplied configuration, availability and warranty still need to be verified before ordering.',
+        'Cette fiche résume les renseignements du fabricant. L’homologation canadienne, la configuration fournie, la disponibilité et la garantie doivent être vérifiées avant la commande.',
+      )}
+    </p>
+    <a href="https://health-products.canada.ca/mdall-limh/index-eng.jsp">
+      {t(
+        'Health Canada device licence lookup',
+        'Recherche d’homologation de Santé Canada',
+      )}
+    </a>
+  </details>
+</section>

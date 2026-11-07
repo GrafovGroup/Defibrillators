@@ -126,6 +126,12 @@ test('Structured data reflects visible content and never fabricates commercial o
       );
       const org = graph.find((node) => node['@type'] === 'Organization');
       assert.equal(org.name, 'Defibrillators.ca');
+      assert.equal(org.legalName, 'Superclean Canada Inc.');
+      assert.equal(
+        org.address.streetAddress,
+        '200 Green Lane East, Unit 5, PMB # 222',
+      );
+      assert.equal(org.address.postalCode, 'L9N 0A2');
       assert.equal(org.telephone, '+18336969996');
       assert.equal(org.email, 'info@defibrillators.ca');
       for (const node of walk(graph)) {
@@ -146,7 +152,6 @@ test('Structured data reflects visible content and never fabricates commercial o
           'sku',
           'gtin',
           'hasCertification',
-          'address',
           'geo',
           'openingHours',
         ])

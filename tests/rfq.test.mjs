@@ -6,8 +6,8 @@ import { load } from 'cheerio';
 import {
   validateRfq,
   submitRfq,
-  consentVersion,
-  consentText,
+  privacyNoticeVersion,
+  privacyNoticeText,
   requestTypes,
   formEndpoint,
   messages,
@@ -28,9 +28,8 @@ const valid = (audience = 'commercial') => {
     installation: 'discuss',
     maintenance: 'recurring',
     message: 'Synthetic integration test only.',
-    consent: 'yes',
-    consent_version: consentVersion,
-    consent_text: consentText.en,
+    privacy_notice_version: privacyNoticeVersion,
+    privacy_notice_text: privacyNoticeText.en,
     locale: 'en',
   }))
     data.set(key, value);
@@ -38,7 +37,7 @@ const valid = (audience = 'commercial') => {
 };
 for (const lang of ['en', 'fr']) {
   const route = lang === 'en' ? 'en/request-quote' : 'fr/demander-soumission';
-  test(`${lang}: functional native POST forms, consent and accessible controls`, () => {
+  test(`${lang}: functional native POST forms, privacy notice and accessible controls`, () => {
     const $ = load(fs.readFileSync(`dist/${route}/index.html`, 'utf8'));
     assert.equal($('form').length, 2);
     for (const form of $('form').toArray()) {
@@ -46,10 +45,19 @@ for (const lang of ['en', 'fr']) {
       assert.equal(f.attr('action'), formEndpoint);
       assert.equal(f.attr('method'), 'POST');
       assert.equal(f.attr('enctype'), 'multipart/form-data');
-      assert.equal(f.find('[name=consent][required]').length, 1);
-      assert.equal(f.find('[name=consent]').attr('checked'), undefined);
-      assert.equal(f.find('[name=consent_version]').val(), consentVersion);
-      assert.equal(f.find('[name=consent_text]').val(), consentText[lang]);
+      assert.equal(f.find('[name=consent]').length, 0);
+      assert.ok(
+        f.find('.rfq-privacy a').attr('href').includes('priva') ||
+          lang === 'fr',
+      );
+      assert.equal(
+        f.find('[name=privacy_notice_version]').val(),
+        privacyNoticeVersion,
+      );
+      assert.equal(
+        f.find('[name=privacy_notice_text]').val(),
+        privacyNoticeText[lang],
+      );
       assert.equal(f.find('[name=_language]').val(), lang);
       assert.equal(f.find('[name=_gotcha][tabindex="-1"]').length, 1);
       f.find('input:not([type=hidden]),select,textarea').each((_, el) =>
@@ -73,24 +81,16 @@ for (const lang of ['en', 'fr']) {
     assert.equal($('#residential-form [name=company]').length, 0);
     assert.equal($('#commercial-form [name=company][required]').length, 1);
   });
-  test(`${lang}: validation enforces required fields and consent`, () => {
+  test(`${lang}: validation enforces required enquiry fields`, () => {
     assert.deepEqual(validateRfq(valid(), lang), {});
     const data = valid();
-    data.delete('consent');
     data.set('email', 'bad');
     data.set('message', 'tiny');
     data.set('quantity', '2.5');
     data.set('province', 'XX');
     data.set('company', ' ');
     const errors = validateRfq(data, lang);
-    for (const field of [
-      'consent',
-      'email',
-      'message',
-      'quantity',
-      'province',
-      'company',
-    ])
+    for (const field of ['email', 'message', 'quantity', 'province', 'company'])
       assert.ok(errors[field]);
   });
 }

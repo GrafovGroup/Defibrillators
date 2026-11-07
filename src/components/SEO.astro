@@ -12,13 +12,27 @@ interface Props {
 const { lang, pageId = 'home' } = Astro.props;
 const page = pageId === 'home' ? null : pageFor(pageId);
 const prefix =
-  page?.kind === 'product'
-    ? lang === 'en'
-      ? 'Product profile: '
-      : 'Fiche de produit : '
-    : '';
+  page?.kind === 'product' ? (lang === 'en' ? 'AED: ' : 'DEA : ') : '';
+const searchTitles: Partial<Record<PageId, Record<Locale, string>>> = {
+  defibrillators: {
+    en: 'AED Defibrillators in Canada — Compare Models',
+    fr: 'Défibrillateurs au Canada — Comparer les DEA',
+  },
+  accessories: {
+    en: 'AED Pads, Batteries & Accessories in Canada',
+    fr: 'Électrodes, batteries et accessoires de DEA',
+  },
+  installation: {
+    en: 'AED Installation & Cabinet Mounting in Canada',
+    fr: 'Installation de DEA et d’armoires au Canada',
+  },
+  maintenance: {
+    en: 'AED Maintenance, Inspections & Replacement Supplies',
+    fr: 'Entretien, vérification et fournitures de DEA',
+  },
+};
 const title = page
-  ? `${prefix}${labelFor(pageId, lang)} | Defibrillators.ca`
+  ? `${prefix}${searchTitles[pageId]?.[lang] ?? labelFor(pageId, lang)} | Defibrillators.ca`
   : content[lang].title;
 const description = page?.intro[lang] ?? content[lang].description;
 const canonical = `https://defibrillators.ca${pathFor(pageId, lang)}`;

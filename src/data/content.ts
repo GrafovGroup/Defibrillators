@@ -37,8 +37,7 @@ export const content = {
       'AED equipment, installation planning, ongoing maintenance and training coordination across Canada.',
     heroNote: 'From a single AED to a multi-location program.',
     heroAlt: 'Illustration of an AED and wall cabinet in a modern lobby',
-    heroCaption:
-      'Illustrative scene. Models and availability confirmed with your quote.',
+    heroCaption: 'Illustration',
     benefits: [
       'AED sales across Canada',
       'Installation planning',
@@ -85,8 +84,7 @@ export const content = {
         alt: 'Illustration of an AED readiness checklist',
       },
     ],
-    imageNote:
-      'Concept illustrations, not product photographs. Model selection, compatibility and service availability are confirmed with your quote.',
+    imageNote: 'Equipment, accessories and support for your AED program.',
     programEyebrow: 'A PLAN THAT FITS YOUR ORGANISATION',
     programTitle: 'One location or many.\nEvery AED matters.',
     programText:
@@ -197,8 +195,7 @@ export const content = {
     heroNote: 'D’un seul DEA à un programme pour plusieurs établissements.',
     heroAlt:
       'Illustration d’un DEA et d’une armoire murale dans un hall moderne',
-    heroCaption:
-      'Scène illustrative. Modèles et disponibilité confirmés avec votre soumission.',
+    heroCaption: 'Illustration',
     benefits: [
       'Vente de DEA au Canada',
       'Planification d’installation',
@@ -246,7 +243,7 @@ export const content = {
       },
     ],
     imageNote:
-      'Illustrations conceptuelles, et non photos de produits. Modèles, compatibilité et disponibilité des services confirmés avec votre soumission.',
+      'Équipement, accessoires et soutien pour votre programme de DEA.',
     programEyebrow: 'UN PLAN ADAPTÉ À VOTRE ORGANISATION',
     programTitle: 'Un établissement ou plusieurs.\nChaque DEA compte.',
     programText:

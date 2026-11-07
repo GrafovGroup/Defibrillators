@@ -6,8 +6,8 @@ import type { Locale } from '../data/content';
 import { pathFor } from '../data/routes';
 import {
   formEndpoint,
-  consentVersion,
-  consentText,
+  privacyNoticeVersion,
+  privacyNoticeText,
   provinces,
   requestTypes,
   requestLabels,
@@ -27,13 +27,11 @@ const t = (en: string, french: string) => (fr ? french : en);
   <p class="eyebrow">
     {t('TELL US WHAT YOU NEED', 'PARLEZ-NOUS DE VOS BESOINS')}
   </p>
-  <h2 id="rfq-heading">
-    {t('Your project starts here', 'Votre projet commence ici')}
-  </h2>
+  <h2 id="rfq-heading">{t('Request a quote', 'Demander une soumission')}</h2>
   <p>
     {t(
-      'Choose a request below. Required fields are marked *. Please share project details only, without medical records or payment information.',
-      'Choisissez une demande ci-dessous. Les champs obligatoires portent un *. Indiquez uniquement les détails du projet, sans dossier médical ni renseignement de paiement.',
+      'Tell us what you need and where. Fields marked * are required.',
+      'Décrivez vos besoins et indiquez votre emplacement. Les champs marqués * sont obligatoires.',
     )}
   </p>
   {(['commercial', 'residential'] as const).map((audience) => {
@@ -117,8 +115,16 @@ const t = (en: string, french: string) => (fr ? french : en);
             name="_subject"
             value={`Defibrillators.ca | ${audience} | ${lang}`}
           />
-          <input type="hidden" name="consent_version" value={consentVersion} />
-          <input type="hidden" name="consent_text" value={consentText[lang]} />
+          <input
+            type="hidden"
+            name="privacy_notice_version"
+            value={privacyNoticeVersion}
+          />
+          <input
+            type="hidden"
+            name="privacy_notice_text"
+            value={privacyNoticeText[lang]}
+          />
           <input
             type="hidden"
             name="source_page"
@@ -189,8 +195,8 @@ const t = (en: string, french: string) => (fr ? french : en);
                 ></textarea>
                 <small id={id('message-hint')}>
                   {t(
-                    '10–4000 characters. Include other models, accessories, training or preferred timing.',
-                    '10 à 4000 caractères. Précisez les autres modèles, accessoires, la formation ou l’échéancier souhaité.',
+                    'Include a model, quantity or preferred timing if you know them. Please leave out medical and payment details.',
+                    'Précisez le modèle, la quantité ou l’échéancier si vous les connaissez. N’incluez pas de renseignements médicaux ou de paiement.',
                   )}
                 </small>
                 <span
@@ -455,35 +461,11 @@ const t = (en: string, french: string) => (fr ? french : en);
               )}
             </div>
           </details>
-          <div class="rfq-consent">
-            <label for={id('consent')}>
-              <input
-                type="checkbox"
-                name="consent"
-                id={id('consent')}
-                value="yes"
-                required
-                aria-describedby={id('consent-error')}
-              />
-              <span>{consentText[lang]} *</span>
-            </label>
-            <span
-              class="field-error"
-              id={id('consent-error')}
-              data-error="consent"
-            ></span>
+          <p class="rfq-privacy">
+            {privacyNoticeText[lang]}{' '}
             <a href={pathFor('privacy', lang)}>
-              {t(
-                'Read our privacy notice',
-                'Lire notre avis de confidentialité',
-              )}
+              {t('Privacy', 'Confidentialité')}
             </a>
-          </div>
-          <p class="rfq-note">
-            {t(
-              'Sending a request does not place an order, reserve stock or enrol you in a maintenance plan. Any services and terms will be confirmed with you.',
-              'L’envoi ne constitue pas une commande, une réservation de stock ni une inscription à un plan d’entretien. Les services et modalités seront confirmés avec vous.',
-            )}
           </p>
           <button class="button" type="submit" data-submit>
             {t('Send my request', 'Envoyer ma demande')}

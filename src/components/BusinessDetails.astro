@@ -1,0 +1,33 @@
+---
+import { business } from '../data/business';
+import type { Locale } from '../data/content';
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+---
+
+<section class="business-details" aria-labelledby="business-heading">
+  <h2 id="business-heading">
+    {lang === 'en' ? 'Company information' : 'Renseignements sur l’entreprise'}
+  </h2>
+  <p>
+    {lang === 'en'
+      ? 'Defibrillators.ca is operated by'
+      : 'Defibrillators.ca est exploité par'}{' '}
+    <strong>{business.legalName}</strong>.
+  </p>
+  <h3>{lang === 'en' ? 'Mailing address' : 'Adresse postale'}</h3>
+  <address>
+    {business.streetAddress}
+    <br />
+    {business.addressLocality}, {business.addressRegion}
+    <br />
+    {business.postalCode}, Canada
+  </address>
+  <p>
+    {lang === 'en'
+      ? 'Mailing address only. Please contact us before sending equipment or arranging a visit.'
+      : 'Adresse postale seulement. Veuillez nous joindre avant d’expédier de l’équipement ou de prévoir une visite.'}
+  </p>
+</section>

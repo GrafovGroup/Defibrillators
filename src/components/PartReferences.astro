@@ -1,0 +1,48 @@
+---
+import type { ModelId } from '../data/model-options';
+import type { Locale } from '../data/content';
+import { partReferences } from '../data/part-references';
+interface Props {
+  model: ModelId;
+  lang: Locale;
+}
+const { model, lang } = Astro.props;
+const parts = partReferences[model];
+const t = (en: string, fr: string) => (lang === 'en' ? en : fr);
+---
+
+{parts && (
+  <section class="part-references">
+    <h3>
+      {t('Manufacturer part references', 'Références de pièces du fabricant')}
+    </h3>
+    <ul>
+      <li>
+        {t('Adult pads', 'Électrodes pour adultes')}:{' '}
+        <strong>{parts.adult}</strong>
+      </li>
+      <li>
+        {model === 'frx'
+          ? t('Infant/Child Key', 'Clé nourrisson/enfant')
+          : t('Child pads', 'Électrodes pédiatriques')}
+        : <strong>{parts.child}</strong>
+      </li>
+      {parts.battery && (
+        <li>
+          {t('Standard battery', 'Batterie standard')}:{' '}
+          <strong>{parts.battery}</strong>
+        </li>
+      )}
+    </ul>
+    <p>
+      {t(
+        'Match these references with your device label and current manual before ordering. Aviation and regional configurations can differ.',
+        'Vérifiez ces références sur l’étiquette de votre appareil et dans son manuel actuel avant de commander. Les configurations régionales et d’aviation peuvent différer.',
+      )}{' '}
+      <a href={parts.source}>
+        {t('Manufacturer documentation', 'Documentation du fabricant')}
+      </a>
+      .
+    </p>
+  </section>
+)}

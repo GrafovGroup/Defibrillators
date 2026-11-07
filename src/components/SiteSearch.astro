@@ -1,0 +1,191 @@
+---
+import { partReferences } from '../data/part-references';
+import type { ModelId } from '../data/model-options';
+import { pages } from '../data/pages';
+import { labelFor, pathFor } from '../data/routes';
+import { cityCatalogue, type CityId } from '../data/city-catalogue';
+import type { Locale } from '../data/content';
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+const t = (en: string, fr: string) => (lang === 'en' ? en : fr);
+const categoryOrder = [
+  'equipment',
+  'accessories',
+  'services',
+  'guides',
+  'locations',
+];
+const entries = pages
+  .filter((p) => p.id !== 'search')
+  .map((page) => {
+    const category = page.location
+      ? 'locations'
+      : page.kind === 'product' ||
+          ['defibrillators', 'compare', 'packages'].includes(page.id)
+        ? 'equipment'
+        : pathFor(page.id, 'en').startsWith('/en/accessories/')
+          ? 'accessories'
+          : pathFor(page.id, 'en').startsWith('/en/services/') ||
+              [
+                'services',
+                'installation',
+                'maintenance',
+                'programs',
+                'training',
+              ].includes(page.id)
+            ? 'services'
+            : 'guides';
+    const city = cityCatalogue[page.id as CityId];
+    return {
+      id: page.id,
+      category,
+      title: labelFor(page.id, lang),
+      keywords: `${labelFor(page.id, lang === 'en' ? 'fr' : 'en')} ${city?.aliases ?? ''} ${page.kind === 'product' ? 'pads battery electrodes batteries replacement pieces' : ''} ${Object.values(
+        partReferences[page.id as ModelId] ?? {},
+      )
+        .slice(0, 3)
+        .filter(Boolean)
+        .join(' ')}`,
+    };
+  })
+  .sort(
+    (a, b) =>
+      categoryOrder.indexOf(a.category) - categoryOrder.indexOf(b.category) ||
+      a.title.localeCompare(b.title, lang),
+  );
+const categories = [
+  ['', 'All sections', 'Toutes les rubriques'],
+  ['equipment', 'AEDs & comparisons', 'DEA et comparatifs'],
+  ['accessories', 'Parts & accessories', 'Pièces et accessoires'],
+  ['services', 'Services', 'Services'],
+  ['locations', 'Locations', 'Régions et villes'],
+  ['guides', 'Guides & information', 'Guides et renseignements'],
+];
+---
+
+<section
+  class="site-search"
+  data-site-search
+  data-lang={lang}
+  aria-labelledby="site-search-heading"
+>
+  <h2 id="site-search-heading">
+    {t('What are you looking for?', 'Que recherchez-vous?')}
+  </h2>
+  <div class="search-controls" hidden data-search-controls>
+    <div>
+      <label for="site-search-input">
+        {t(
+          'Search products, services and guides',
+          'Rechercher des produits, services et guides',
+        )}
+      </label>
+      <input
+        id="site-search-input"
+        type="search"
+        maxlength="120"
+        autocomplete="off"
+        placeholder={t(
+          'Try “FRx”, “battery” or “Toronto”',
+          'Essayez « FRx », « batterie » ou « Toronto »',
+        )}
+        aria-controls="site-search-results"
+      />
+    </div>
+    <div>
+      <label for="site-search-category">{t('Section', 'Rubrique')}</label>
+      <select id="site-search-category">
+        {categories.map(([value, en, fr]) => (
+          <option value={value}>{t(en, fr)}</option>
+        ))}
+      </select>
+    </div>
+    <button class="button button-navy" type="button" data-search-clear>
+      {t('Clear', 'Effacer')}
+    </button>
+  </div>
+  <p class="search-count" role="status" aria-live="polite" data-search-count>
+    {t('Browse all pages below.', 'Parcourez toutes les pages ci-dessous.')}
+  </p>
+  <p hidden data-search-empty>
+    {t(
+      'No matches. Try a model name or a broader term, or',
+      'Aucun résultat. Essayez un modèle ou un terme plus général, ou',
+    )}{' '}
+    <a href={pathFor('contact', lang)}>{t('contact us', 'contactez-nous')}</a>.
+  </p>
+  <ul id="site-search-results" class="search-results">
+    {entries.map((entry) => (
+      <li
+        data-search-entry
+        data-category={entry.category}
+        data-keywords={entry.keywords}
+      >
+        <h3>
+          <a href={pathFor(entry.id, lang)}>{entry.title}</a>
+        </h3>
+        <p>
+          {
+            categories.find(([id]) => id === entry.category)?.[
+              lang === 'en' ? 1 : 2
+            ]
+          }
+        </p>
+      </li>
+    ))}
+  </ul>
+</section>
+<script>
+  import { searchScore } from '../lib/site-search';
+  const root = document.querySelector<HTMLElement>('[data-site-search]');
+  if (root) {
+    const input = root.querySelector<HTMLInputElement>('#site-search-input')!;
+    const category = root.querySelector<HTMLSelectElement>(
+      '#site-search-category',
+    )!;
+    const list = root.querySelector<HTMLElement>('#site-search-results')!;
+    const entries = [
+      ...root.querySelectorAll<HTMLElement>('[data-search-entry]'),
+    ].map((el, index) => ({
+      el,
+      index,
+      title: el.querySelector('h3')!.textContent!,
+      text: `${el.textContent} ${el.dataset.keywords}`,
+    }));
+    const update = () => {
+      const scored = entries
+        .map((entry) => ({
+          ...entry,
+          score:
+            !category.value || entry.el.dataset.category === category.value
+              ? searchScore(entry.title, entry.text, input.value)
+              : 0,
+        }))
+        .sort((a, b) => b.score - a.score || a.index - b.index);
+      for (const entry of scored) {
+        entry.el.hidden = !entry.score;
+        list.append(entry.el);
+      }
+      const count = scored.filter((e) => e.score).length;
+      root.querySelector('[data-search-count]')!.textContent =
+        root.dataset.lang === 'fr'
+          ? `${count} résultat${count === 1 ? '' : 's'}`
+          : `${count} result${count === 1 ? '' : 's'}`;
+      root.querySelector<HTMLElement>('[data-search-empty]')!.hidden =
+        count > 0;
+    };
+    input.addEventListener('input', update);
+    category.addEventListener('change', update);
+    root.querySelector('[data-search-clear]')!.addEventListener('click', () => {
+      input.value = '';
+      category.value = '';
+      update();
+      input.focus();
+    });
+    root.querySelector<HTMLElement>('[data-search-controls]')!.hidden = false;
+    update();
+    // Search terms stay on this page: no URL, storage or analytics payload.
+  }
+</script>

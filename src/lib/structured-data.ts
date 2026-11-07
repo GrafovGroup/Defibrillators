@@ -5,6 +5,7 @@ import { visuals } from '../data/visuals.ts';
 import { products } from '../data/products.ts';
 import { breadcrumbIds } from './breadcrumbs.ts';
 import { siteOrigin } from './site-config.ts';
+import { business } from '../data/business.ts';
 
 type Node = Record<string, unknown>;
 export function structuredData(
@@ -20,11 +21,20 @@ export function structuredData(
       '@type': 'Organization',
       '@id': `${siteOrigin}/#organization`,
       name: 'Defibrillators.ca',
+      legalName: business.legalName,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: business.streetAddress,
+        addressLocality: business.addressLocality,
+        addressRegion: business.addressRegion,
+        postalCode: business.postalCode,
+        addressCountry: business.addressCountry,
+      },
       url: siteOrigin + '/',
       logo: `${siteOrigin}/brand/logo-en-light.svg`,
       telephone: contact.tel.replace('tel:', ''),
       email: contact.email,
-      // No local offices, street addresses, licence numbers or dealership claims.
+      // Owner-confirmed mailing address; no LocalBusiness, map pin or opening hours.
     },
     {
       '@type': 'WebSite',

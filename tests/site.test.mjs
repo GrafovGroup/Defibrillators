@@ -113,7 +113,7 @@ for (const lang of ['en', 'fr']) {
     assert.equal($('.service-card').length, 4);
     assert.equal($('.faq-list details').length, 4);
     assert.ok($('a[href="tel:+18336969996"]').length);
-    assert.ok($('a[href^="mailto:info@defibrillators.ca?subject="]').length);
+    assert.ok($('a[href^="mailto:info@defibrillators.ca"]').length);
     assert.equal($('form').length, 0, 'no unconfigured form should be exposed');
     assert.equal($('meta[name="robots"]').attr('content'), searchConfig.robots);
     assert.equal($('.skip-link').attr('href'), '#main');

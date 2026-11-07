@@ -84,6 +84,14 @@ const s = (heading: string, body: string, bullets?: string[]): Section => ({
   ...(bullets ? { bullets } : {}),
 });
 export const pages: DetailPage[] = [
+  {
+    id: 'search',
+    intro: {
+      en: 'Find AED models, replacement parts, installation services and buying guides. Search by product, topic or Canadian city.',
+      fr: 'Trouvez des modèles de DEA, des pièces, des services d’installation et des guides d’achat. Recherchez par produit, sujet ou ville canadienne.',
+    },
+    sections: { en: [], fr: [] },
+  },
   ...locationPages,
   ...planningPages,
   ...offeringPages,
@@ -99,19 +107,15 @@ export const pages: DetailPage[] = [
       },
       sections: {
         en: [
-          s('What distinguishes this model?', p.guidance.en),
-          s('Which replacement supplies should I plan for?', p.electrodes.en),
           s(
-            'Confirm your Canadian configuration',
-            'Use this profile to prepare questions for your quote. Confirm the exact device identifier, Canadian licence, prompt languages, included components, current manufacturer notices, warranty and service route. Manufacturer specifications from another region do not establish local supply or approval.',
+            'Prepare your quote request',
+            'Tell us the quantity, delivery location and preferred prompt language. For a replacement or an existing fleet, include the device label and current supply references so your quote can identify the right configuration.',
           ),
         ],
         fr: [
-          s('Qu’est-ce qui distingue ce modèle?', p.guidance.fr),
-          s('Quelles fournitures de remplacement prévoir?', p.electrodes.fr),
           s(
-            'Confirmer la configuration canadienne',
-            'Utilisez cette fiche pour préparer votre demande. Confirmez l’identifiant exact, l’homologation canadienne, les langues, les composants inclus, les avis actuels du fabricant, la garantie et le service technique. Les caractéristiques d’une autre région ne prouvent pas la disponibilité ou l’homologation locale.',
+            'Préparez votre demande de soumission',
+            'Précisez la quantité, le lieu de livraison et la langue souhaitée. Pour un remplacement ou un parc existant, indiquez l’étiquette de l’appareil et les références des fournitures actuelles afin de préparer une soumission adaptée.',
           ),
         ],
       },
@@ -1120,8 +1124,8 @@ export const pages: DetailPage[] = [
     id: 'about',
     image: 'readiness',
     intro: {
-      en: 'Defibrillators.ca is built around one practical goal: helping Canadian workplaces, communities and households plan their AED equipment and support.',
-      fr: 'Defibrillators.ca vise un objectif concret : aider les milieux de travail, les collectivités et les familles du Canada à planifier leur équipement de DEA et leur accompagnement.',
+      en: 'Defibrillators.ca is operated by Superclean Canada Inc. We help Canadian workplaces, communities and households choose AED equipment and arrange the support they need.',
+      fr: 'Defibrillators.ca est exploité par Superclean Canada Inc. Nous aidons les milieux de travail, les collectivités et les familles du Canada à choisir leur équipement de DEA et les services adaptés à leurs besoins.',
     },
     sections: {
       en: [
@@ -1131,7 +1135,7 @@ export const pages: DetailPage[] = [
         ),
         s(
           'A clear scope for every enquiry',
-          'Suitable equipment, product availability and service arrangements are confirmed for each project. Qualified service partners may be involved. We do not present partners as employees or claim unverified manufacturer authorization.',
+          'Suitable equipment, product availability and service arrangements are confirmed for each project. Your quote identifies the equipment, services and any partners involved.',
         ),
         s(
           'Workplaces and homes',
@@ -1145,7 +1149,7 @@ export const pages: DetailPage[] = [
         ),
         s(
           'Un mandat clair pour chaque demande',
-          'L’équipement approprié, la disponibilité et les modalités de service sont confirmés pour chaque projet. Des partenaires qualifiés peuvent intervenir. Nous ne les présentons pas comme des employés et ne revendiquons pas d’autorisation de fabricant non vérifiée.',
+          'L’équipement approprié, la disponibilité et les modalités de service sont confirmés pour chaque projet. Votre soumission précise l’équipement, les services et les partenaires concernés.',
         ),
         s(
           'Au travail et à la maison',
@@ -1170,7 +1174,7 @@ export const pages: DetailPage[] = [
         ),
         s(
           'Planning across Canada',
-          'Share the actual site locations so product delivery and service arrangements can be confirmed. This website does not list branch offices or promise a particular response time.',
+          'Share the actual site locations so product delivery and service arrangements can be confirmed. We’ll review delivery and on-site service options with you.',
         ),
       ],
       fr: [
@@ -1214,7 +1218,7 @@ export const pages: DetailPage[] = [
         ]),
         s(
           'What happens next',
-          'Your request is sent securely through Formspree. Sending an enquiry does not place an order or reserve inventory. Pricing, licensing, availability and the service scope must be confirmed in a written quote.',
+          'We’ll review your requirements and contact you to confirm the details for a written quote. If you have a deadline, include it in your message.',
         ),
       ],
       fr: [
@@ -1241,7 +1245,7 @@ export const pages: DetailPage[] = [
         ),
         s(
           'La suite de votre demande',
-          'Votre demande est transmise de façon sécurisée par Formspree. Une demande ne constitue pas une commande et ne réserve pas de stock. Le prix, l’homologation, la disponibilité et le mandat doivent être confirmés dans une soumission écrite.',
+          'Nous examinerons vos besoins et vous contacterons pour préciser les détails d’une soumission écrite. Si vous avez une échéance, indiquez-la dans votre message.',
         ),
       ],
     },
@@ -1449,11 +1453,11 @@ export const pages: DetailPage[] = [
         ),
         s(
           'Your analytics choice',
-          'Use Analytics preferences in the footer to allow or decline analytics at any time. Your choice is stored in your browser for up to 90 days. Declining prevents the Google tag from loading; withdrawing stops future analytics and clears this integration’s cookies. Previously collected data is not automatically deleted by changing the choice. Analytics cookies expire after up to 90 days. If browser storage is unavailable, your choice applies only to the current page. This choice is separate from the consent required to process a quote request.',
+          'Use Analytics preferences in the footer to allow or decline analytics at any time. Your choice is stored in your browser for up to 90 days. Declining prevents the Google tag from loading; withdrawing stops future analytics and clears this integration’s cookies. Previously collected data is not automatically deleted by changing the choice. Analytics cookies expire after up to 90 days. If browser storage is unavailable, your choice applies only to the current page. Your analytics choice does not affect a quote request.',
         ),
         s(
           'Information you choose to send',
-          'Our request forms send contact details, project requirements, any attachment and a record of your consent to Formspree for processing and delivery to our enquiry inbox. Formspree records receipt and may process data outside Canada. This is not marketing consent. Phone and email links use your own applications. Share only what is needed for your enquiry. Do not send payment card details, medical records or sensitive incident information.',
+          'Our request forms send contact details, project requirements, any attachment and the privacy notice shown when you send the form to Formspree for processing and delivery to our enquiry inbox. Formspree records receipt and may process data outside Canada. Sending a request does not subscribe you to marketing. Phone and email links use your own applications. Share only what is needed for your enquiry. Do not send payment card details, medical records or sensitive incident information.',
         ),
         s(
           'External links',
@@ -1475,11 +1479,11 @@ export const pages: DetailPage[] = [
         ),
         s(
           'Votre choix de statistiques',
-          'Utilisez Préférences statistiques au bas de la page pour accepter ou refuser à tout moment. Votre choix est conservé dans votre navigateur pendant un maximum de 90 jours. Un refus empêche le chargement de la balise Google; un retrait arrête les statistiques futures et efface les témoins de cette intégration. Les données déjà recueillies ne sont pas automatiquement supprimées. Les témoins analytiques expirent après un maximum de 90 jours. Si le stockage du navigateur est indisponible, le choix s’applique uniquement à la page actuelle. Ce choix est distinct du consentement requis pour traiter une demande de soumission.',
+          'Utilisez Préférences statistiques au bas de la page pour accepter ou refuser à tout moment. Votre choix est conservé dans votre navigateur pendant un maximum de 90 jours. Un refus empêche le chargement de la balise Google; un retrait arrête les statistiques futures et efface les témoins de cette intégration. Les données déjà recueillies ne sont pas automatiquement supprimées. Les témoins analytiques expirent après un maximum de 90 jours. Si le stockage du navigateur est indisponible, le choix s’applique uniquement à la page actuelle. Votre choix statistique n’a aucune incidence sur une demande de soumission.',
         ),
         s(
           'Renseignements transmis volontairement',
-          'Nos formulaires transmettent à Formspree vos coordonnées, les besoins du projet, toute pièce jointe et la preuve de consentement, pour traitement et livraison à notre boîte de réception. Formspree enregistre la réception et peut traiter les données hors du Canada. Ce consentement ne vise pas le marketing. Les liens de téléphone et de courriel utilisent vos applications. Transmettez uniquement les renseignements nécessaires. N’envoyez pas de numéros de carte, de dossiers médicaux ni de renseignements sensibles sur un incident.',
+          'Nos formulaires transmettent à Formspree vos coordonnées, les besoins du projet, toute pièce jointe et l’avis de confidentialité présenté à l’envoi, pour traitement et livraison à notre boîte de réception. Formspree enregistre la réception et peut traiter les données hors du Canada. L’envoi d’une demande ne vous inscrit à aucune communication marketing. Les liens de téléphone et de courriel utilisent vos applications. Transmettez uniquement les renseignements nécessaires. N’envoyez pas de numéros de carte, de dossiers médicaux ni de renseignements sensibles sur un incident.',
         ),
         s(
           'Liens externes',
@@ -1519,7 +1523,7 @@ export const pages: DetailPage[] = [
         ),
         s(
           'Questions and corrections',
-          'Contact info@defibrillators.ca to ask about a quote, report inaccurate information or clarify the intended scope. Final commercial and legal policies remain subject to operator and qualified adviser review.',
+          'Contact info@defibrillators.ca to ask about a quote, report inaccurate information or clarify the intended scope. Your written quote sets out the terms that apply to your purchase.',
         ),
       ],
       fr: [
@@ -1541,7 +1545,7 @@ export const pages: DetailPage[] = [
         ),
         s(
           'Questions et corrections',
-          'Écrivez à info@defibrillators.ca pour une question de soumission, une correction ou une précision. Les politiques commerciales et juridiques finales restent à réviser par l’exploitant et les conseillers appropriés.',
+          'Écrivez à info@defibrillators.ca pour une question de soumission, une correction ou une précision. Votre soumission écrite précise les modalités applicables à votre achat.',
         ),
       ],
     },

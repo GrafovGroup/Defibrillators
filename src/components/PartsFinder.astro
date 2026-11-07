@@ -1,4 +1,5 @@
 ---
+import PartReferences from './PartReferences.astro';
 import type { Locale } from '../data/content';
 import { products } from '../data/products';
 import { modelOptions } from '../data/model-options';
@@ -96,6 +97,7 @@ const { lang } = Astro.props;
           {p.manufacturer} {p.model}
         </summary>
         <p>{p.electrodes[lang]}</p>
+        <PartReferences model={p.id} lang={lang} />
         <p>
           <a href={p.source.url}>
             {lang === 'en'
@@ -131,6 +133,12 @@ const { lang } = Astro.props;
             ? model.selectedOptions[0].textContent
             : status.dataset.prompt!;
     };
+    const selected = new URLSearchParams(location.search).get('model');
+    if (
+      selected &&
+      [...model.options].some((option) => option.value === selected)
+    )
+      model.value = selected;
     model.addEventListener('change', update);
     update();
   }

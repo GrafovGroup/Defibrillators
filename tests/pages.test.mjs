@@ -185,13 +185,13 @@ test('Product references expose verification limits and official sources', () =>
   ])
     for (const model of ['zoll-aed-plus', 'philips-heartstart-hs1']) {
       const $ = htmlAt(`/${lang}/${prefix}/${model}/`);
-      assert.equal($('.product-status dl>div').length, 3);
+      assert.equal($('.product-facts dl>div').length, 4);
       assert.match(
-        $('.product-status').text(),
-        lang === 'en' ? /Not yet verified/ : /Pas encore vérifiée/,
+        $('.product-source').text(),
+        lang === 'en' ? /need to be verified/ : /doivent être vérifiées/,
       );
       assert.ok(
-        $('.product-status a')
+        $('.product-source a')
           .toArray()
           .some((el) => /\.zoll\.com|\.philips\.com/.test($(el).attr('href'))),
       );
@@ -249,7 +249,8 @@ test('Comparison exposes row and column headings and a keyboard-scrollable regio
     const $ = htmlAt(route);
     assert.equal($('caption').length, 1);
     assert.equal($('thead th[scope="col"]').length, products.length + 1);
-    assert.equal($('tbody th[scope="row"]').length, 6);
+    assert.equal($('tbody th[scope="row"]').length, 4);
+    assert.ok($('.comparison-note').text().length > 80);
     assert.equal(
       $('.comparison-scroll[tabindex="0"][role="region"]').length,
       1,

@@ -1,0 +1,136 @@
+---
+import type { Locale } from '../data/content';
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+const t = (en: string, fr: string) => (lang === 'en' ? en : fr);
+const rows = [
+  ['equipment', 'AEDs and included supplies', 'DEA et fournitures incluses'],
+  [
+    'setup',
+    'Cabinets, signs and installation',
+    'Armoires, signalisation et installation',
+  ],
+  [
+    'replacements',
+    'Replacement pads and batteries',
+    'Électrodes et batteries de remplacement',
+  ],
+  ['training', 'Training and renewals', 'Formation et renouvellements'],
+  [
+    'support',
+    'Maintenance and program support',
+    'Entretien et suivi du programme',
+  ],
+  ['delivery', 'Delivery and other charges', 'Livraison et autres frais'],
+  [
+    'tax',
+    'Applicable taxes from your quote',
+    'Taxes applicables dans votre soumission',
+  ],
+];
+---
+
+<section
+  class="budget-tool"
+  id="ownership-budget"
+  data-budget
+  data-lang={lang}
+  aria-labelledby="budget-heading"
+>
+  <h2 id="budget-heading">
+    {t('Build your AED ownership budget', 'Préparez votre budget de DEA')}
+  </h2>
+  <p>
+    {t(
+      'Enter the totals from your quotes for the same number of AEDs and the same planning period. Include replacement quantities and service renewals in each amount.',
+      'Saisissez les montants de vos soumissions pour le même nombre de DEA et la même période. Incluez les quantités de remplacement et les renouvellements de service dans chaque montant.',
+    )}
+  </p>
+  <p>
+    {t(
+      'Amounts are in Canadian dollars. Blank fields count as zero. This worksheet adds your quoted costs; it does not estimate prices. Your entries are calculated in your browser and are not sent to us.',
+      'Les montants sont en dollars canadiens. Les champs vides valent zéro. Cette feuille additionne vos coûts proposés sans estimer les prix. Le calcul se fait dans votre navigateur; vos montants ne nous sont pas transmis.',
+    )}
+  </p>
+  <div class="budget-fields">
+    {rows.map(([id, en, fr]) => (
+      <div>
+        <label for={`budget-${id}`}>{t(en, fr)} (CAD)</label>
+        <input
+          id={`budget-${id}`}
+          type="number"
+          inputmode="decimal"
+          min="0"
+          max="999999999.99"
+          step="0.01"
+          data-budget-value
+          aria-describedby="budget-total"
+        />
+      </div>
+    ))}
+  </div>
+  <p
+    class="budget-total"
+    id="budget-total"
+    role="status"
+    aria-live="polite"
+    data-budget-total
+  >
+    {t(
+      'Enter your quoted amounts to see a total.',
+      'Saisissez les montants proposés pour calculer le total.',
+    )}
+  </p>
+  <div class="budget-actions" hidden data-budget-actions>
+    <button type="button" class="button button-navy" data-budget-print>
+      {t('Print worksheet', 'Imprimer la feuille')}
+    </button>
+    <button type="button" class="text-link" data-budget-clear>
+      {t('Clear amounts', 'Effacer les montants')}
+    </button>
+  </div>
+  <noscript>
+    <p>
+      {t(
+        'Add the amounts above to calculate your total, or use your browser’s Print command to keep a worksheet.',
+        'Additionnez les montants ci-dessus ou utilisez la commande Imprimer du navigateur pour conserver une feuille de travail.',
+      )}
+    </p>
+  </noscript>
+</section>
+<script>
+  import { budgetTotal } from '../lib/ownership-budget';
+  const root = document.querySelector<HTMLElement>('[data-budget]');
+  if (root) {
+    const inputs = [
+      ...root.querySelectorAll<HTMLInputElement>('[data-budget-value]'),
+    ];
+    const output = root.querySelector<HTMLElement>('[data-budget-total]')!;
+    const fr = root.dataset.lang === 'fr';
+    const update = () => {
+      const total = budgetTotal(inputs.map((input) => input.value));
+      const invalid = inputs.some((input) => !input.validity.valid);
+      output.textContent = invalid
+        ? fr
+          ? 'Utilisez des montants positifs avec un maximum de deux décimales.'
+          : 'Use non-negative amounts with up to two decimal places.'
+        : total === null
+          ? fr
+            ? 'Saisissez les montants proposés pour calculer le total.'
+            : 'Enter your quoted amounts to see a total.'
+          : `${fr ? 'Total des montants saisis' : 'Total entered'}: ${new Intl.NumberFormat(fr ? 'fr-CA' : 'en-CA', { style: 'currency', currency: 'CAD' }).format(total)}`;
+    };
+    for (const input of inputs) input.addEventListener('input', update);
+    root
+      .querySelector('[data-budget-print]')!
+      .addEventListener('click', () => window.print());
+    root.querySelector('[data-budget-clear]')!.addEventListener('click', () => {
+      for (const input of inputs) input.value = '';
+      update();
+      inputs[0].focus();
+    });
+    root.querySelector<HTMLElement>('[data-budget-actions]')!.hidden = false;
+  }
+</script>

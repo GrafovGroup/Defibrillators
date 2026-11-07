@@ -11,13 +11,16 @@ interface Props {
 }
 const { lang, subject, quote = false, pageId = 'contact' } = Astro.props;
 const location = Object.hasOwn(locationRoutes, pageId);
+const request = new URL(
+  enquiryPath(pageId, lang),
+  'https://defibrillators.ca',
+).searchParams.get('request');
 const service = [
   'installation',
   'maintenance',
   'programs',
   'training',
-  'services',
-].includes(pageId);
+].includes(request ?? '');
 ---
 
 <div class="enquiry-actions" id="contact">

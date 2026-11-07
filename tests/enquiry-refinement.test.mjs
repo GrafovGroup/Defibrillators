@@ -71,7 +71,6 @@ test('An enquiry validates with irrelevant optional controls absent', () => {
     audience: 'residential',
     request_type: 'training',
     message: 'Synthetic training enquiry.',
-    consent: 'yes',
   }))
     data.set(key, value);
   assert.deepEqual(validateRfq(data, 'en'), {});

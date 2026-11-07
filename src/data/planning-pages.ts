@@ -92,7 +92,7 @@ export const planningPages: DetailPage[] = [
       en: [
         {
           heading: 'How much does an AED package cost?',
-          body: 'The amount depends on the exact configuration, quantity and services. We do not publish an unverified starting price. Ask for an itemized quote that separates one-time equipment and setup from recurring or replacement costs.',
+          body: 'The amount depends on the exact configuration, quantity and services. Ask for an itemized quote that separates one-time equipment and setup from recurring or replacement costs.',
         },
         {
           heading: 'Build a five-year planning budget',
@@ -122,7 +122,7 @@ export const planningPages: DetailPage[] = [
       fr: [
         {
           heading: 'Combien coûte un ensemble de DEA?',
-          body: 'Le montant dépend de la configuration exacte, de la quantité et des services. Nous ne publions pas de prix de départ non vérifié. Demandez une soumission détaillée séparant l’équipement et la mise en place des coûts récurrents ou de remplacement.',
+          body: 'Le montant dépend de la configuration exacte, de la quantité et des services. Demandez une soumission détaillée séparant l’équipement et la mise en place des coûts récurrents ou de remplacement.',
         },
         {
           heading: 'Préparer un budget de planification sur cinq ans',

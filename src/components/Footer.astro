@@ -84,8 +84,8 @@ const c = content[lang];
       <p>{c.creditsNote}</p>
       <p>
         {lang === 'en'
-          ? 'AI illustrations show concepts, not supplied equipment, actual installations or company staff.'
-          : 'Les illustrations IA évoquent des concepts, sans représenter l’équipement fourni, nos installations ou notre personnel.'}
+          ? 'Illustrations show example settings. Product photographs are credited below.'
+          : 'Les illustrations présentent des exemples de situations. Les crédits des photos de produits figurent ci-dessous.'}
       </p>
       <ul>
         {credits.map((item) => (
@@ -96,6 +96,11 @@ const c = content[lang];
         ))}
       </ul>
     </details>
+    <p class="small">
+      {lang === 'en'
+        ? 'Operated by Superclean Canada Inc.'
+        : 'Exploité par Superclean Canada Inc.'}
+    </p>
     <p class="copyright">
       © {new Date().getFullYear()} {c.copyright}
     </p>

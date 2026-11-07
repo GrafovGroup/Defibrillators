@@ -19,26 +19,6 @@ const rows = [
     label: lang === 'en' ? 'Electrode approach' : 'Électrodes',
     values: products.map((p) => p.electrodes[lang]),
   },
-  {
-    label:
-      lang === 'en'
-        ? 'Canadian licence verification'
-        : 'Vérification de l’homologation canadienne',
-    values: products.map(() =>
-      lang === 'en'
-        ? 'Unverified — confirm the exact device before sale'
-        : 'Non vérifiée — confirmer l’appareil exact avant la vente',
-    ),
-  },
-  {
-    label:
-      lang === 'en' ? 'Price, stock & warranty' : 'Prix, stock et garantie',
-    values: products.map(() =>
-      lang === 'en'
-        ? 'Not confirmed; request written details'
-        : 'Non confirmés; demander les modalités écrites',
-    ),
-  },
 ];
 ---
 
@@ -112,6 +92,11 @@ const rows = [
     </tbody>
   </table>
 </div>
+<p class="comparison-note">
+  {lang === 'en'
+    ? 'Before ordering, confirm the exact Canadian device licence, price, availability and warranty in your written quote.'
+    : 'Avant de commander, confirmez l’homologation canadienne de l’appareil exact, le prix, la disponibilité et la garantie dans votre soumission écrite.'}
+</p>
 
 <script>
   const controls = document.querySelector<HTMLFieldSetElement>(

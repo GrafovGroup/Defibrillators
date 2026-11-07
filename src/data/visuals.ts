@@ -69,12 +69,12 @@ export const pageVisuals: Partial<Record<PageId, string>> = {
 export const visualCaption = (visual: Visual, lang: Locale) =>
   visual.kind === 'context'
     ? lang === 'en'
-      ? 'AI-generated setting · see manufacturer reference for device appearance'
-      : 'Scène générée par IA · voir le fabricant pour l’apparence de l’appareil'
+      ? 'Illustrative setting'
+      : 'Mise en situation illustrative'
     : visual.kind === 'generated'
       ? lang === 'en'
-        ? 'AI-generated illustration · equipment and service scope to confirm'
-        : 'Illustration générée par IA · équipement et portée du service à confirmer'
+        ? 'Illustration'
+        : 'Illustration'
       : lang === 'en'
-        ? 'Reference photograph · exact equipment and configuration to confirm'
-        : 'Photo de référence · équipement et configuration exacts à confirmer';
+        ? 'Product photograph · configuration may vary'
+        : 'Photo de produit · la configuration peut varier';

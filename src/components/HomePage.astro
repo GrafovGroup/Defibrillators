@@ -5,7 +5,7 @@ import Hero from './Hero.astro';
 import ServiceCard from './ServiceCard.astro';
 import IndustryGrid from './IndustryGrid.astro';
 import Footer from './Footer.astro';
-import { content, contact, quoteHref, type Locale } from '../data/content';
+import { content, contact, type Locale } from '../data/content';
 import { pathFor, type PageId } from '../data/routes';
 interface Props {
   lang: Locale;
@@ -109,14 +109,18 @@ const c = content[lang];
           <p>{c.contactText}</p>
         </div>
         <div class="contact-actions">
-          <a class="button" href={quoteHref(lang)}>
-            {c.emailCta}
+          <a class="button" href={pathFor('quote', lang)}>
+            {c.quote}
           </a>
           <a class="contact-phone" href={contact.tel}>
             {contact.phone}
           </a>
           <a href={`mailto:${contact.email}`}>{contact.email}</a>
-          <p class="small">{c.emailHint}</p>
+          <p class="small">
+            {lang === 'en'
+              ? 'Tell us what you need. We’ll help with the next step.'
+              : 'Décrivez vos besoins. Nous vous aiderons à préparer la suite.'}
+          </p>
         </div>
       </div>
     </section>

@@ -5,7 +5,7 @@ import {
   trainingChoices,
 } from '../data/client-enquiry.ts';
 export const formEndpoint = 'https://formspree.io/f/maeezonn';
-export const consentVersion = 'rfq-2026-11-06';
+export const privacyNoticeVersion = 'request-2026-11-07';
 export const provinces = [
   'AB',
   'BC',
@@ -37,9 +37,9 @@ export const maintenanceTypes = [
   'renewal',
 ] as const;
 export type RfqLocale = 'en' | 'fr';
-export const consentText = {
-  en: 'I agree that Defibrillators.ca may use my contact and project details to respond to this request, with Formspree processing the submission. This does not subscribe me to marketing.',
-  fr: 'J’accepte que Defibrillators.ca utilise mes coordonnées et les détails du projet pour répondre à cette demande, traitée par Formspree. Ce consentement ne constitue pas un abonnement au marketing.',
+export const privacyNoticeText = {
+  en: 'We use your details to reply to your request.',
+  fr: 'Nous utilisons vos coordonnées pour répondre à votre demande.',
 };
 export const requestLabels = {
   en: [
@@ -82,12 +82,11 @@ export const messages = {
     invalid: 'Check this value.',
     length: 'Enter between {min} and {max} characters.',
     quantity: 'Enter a whole number from 1 to 9999.',
-    consent: 'Confirm your consent before sending.',
     attachment: 'Choose one PDF, JPG or PNG file, up to 2 MB.',
     summary: 'Please check the highlighted fields.',
     sending: 'Sending your request…',
     success:
-      'Thank you. Your request has been received. We will review it and contact you. This is not an order or a booking.',
+      'Thank you — we’ve received your request. We’ll review the details and reply by email. You can call us if you need to add anything.',
     failure:
       'We could not confirm receipt. Your details are still here. Please try again, or contact us by phone or email.',
     limited:
@@ -101,12 +100,11 @@ export const messages = {
     invalid: 'Vérifiez cette valeur.',
     length: 'Saisissez entre {min} et {max} caractères.',
     quantity: 'Saisissez un nombre entier de 1 à 9999.',
-    consent: 'Confirmez votre consentement avant l’envoi.',
     attachment: 'Choisissez un fichier PDF, JPG ou PNG de 2 Mo maximum.',
     summary: 'Veuillez vérifier les champs indiqués.',
     sending: 'Envoi de votre demande…',
     success:
-      'Merci. Votre demande a été reçue. Nous l’examinerons et communiquerons avec vous. Il ne s’agit pas d’une commande ni d’une réservation.',
+      'Merci, nous avons reçu votre demande. Nous examinerons les détails et vous répondrons par courriel. Vous pouvez nous appeler pour ajouter un renseignement.',
     failure:
       'Nous ne pouvons pas confirmer la réception. Vos renseignements sont conservés dans ce formulaire. Réessayez ou joignez-nous par téléphone ou courriel.',
     limited:
@@ -181,7 +179,6 @@ export function validateRfq(data: FormData, lang: RfqLocale): FieldErrors {
     )
       errors[key] = m.quantity;
   }
-  if (data.get('consent') !== 'yes') errors.consent = m.consent;
   const file = data.get('attachment');
   if (
     file instanceof File &&
@@ -227,12 +224,7 @@ export async function submitRfq(
     for (const error of Array.isArray(result.errors) ? result.errors : []) {
       if (/CAPTCHA/i.test(error.code ?? '')) verification = true;
       if (error.field && /^[a-z_]+$/.test(error.field))
-        fields[error.field] =
-          error.field === 'email'
-            ? m.email
-            : error.field === 'consent'
-              ? m.consent
-              : m.invalid;
+        fields[error.field] = error.field === 'email' ? m.email : m.invalid;
     }
     return {
       kind: 'error',
