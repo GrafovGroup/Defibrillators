@@ -1,0 +1,228 @@
+---
+import Page from '../../layouts/Page.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import PageCard from '../../components/PageCard.astro';
+import Catalogue from '../../components/Catalogue.astro';
+import Comparison from '../../components/Comparison.astro';
+import EnquiryActions from '../../components/EnquiryActions.astro';
+import { pages, pageImages, type DetailPage } from '../../data/pages';
+import { products } from '../../data/products';
+import { pathFor, labelFor, routes } from '../../data/routes';
+import type { Locale } from '../../data/content';
+export function getStaticPaths() {
+  return pages.flatMap((page) =>
+    (['en', 'fr'] as const).map((lang) => ({
+      params: { lang, slug: routes[page.id][lang][0] },
+      props: { page, lang },
+    })),
+  );
+}
+interface Props {
+  page: DetailPage;
+  lang: Locale;
+}
+const { page, lang } = Astro.props;
+const product = products.find((p) => p.id === page.id);
+const sections = page.sections[lang];
+const category =
+  page.kind === 'product'
+    ? lang === 'en'
+      ? 'MANUFACTURER REFERENCE'
+      : 'FICHE DE RÉFÉRENCE'
+    : page.parent
+      ? labelFor(page.parent, lang)
+      : lang === 'en'
+        ? 'AED EQUIPMENT & SUPPORT'
+        : 'ÉQUIPEMENT ET ACCOMPAGNEMENT EN DEA';
+const isLegal = ['privacy', 'terms', 'accessibility'].includes(page.id);
+---
+
+<Page lang={lang} pageId={page.id}>
+  <Header lang={lang} pageId={page.id} />
+  <main id="main" tabindex="-1">
+    <Breadcrumbs lang={lang} pageId={page.id} />
+    <section class:list={['page-hero', { 'has-image': !!page.image }]}>
+      <div class="container page-hero-grid">
+        <div class="page-hero-copy">
+          <p class="eyebrow">{category}</p>
+          <h1>{labelFor(page.id, lang)}</h1>
+          <p>{page.intro[lang]}</p>
+          {!isLegal && page.id !== 'quote' && (
+            <a class="button" href={pathFor('quote', lang)}>
+              {lang === 'en' ? 'Request a quote' : 'Demander une soumission'}
+            </a>
+          )}
+        </div>
+        {page.image && (
+          <figure>
+            <img
+              src={`/images/${page.image}.webp`}
+              width="800"
+              height="600"
+              alt={pageImages[page.image][lang]}
+              fetchpriority="high"
+            />
+            <figcaption>
+              {lang === 'en'
+                ? 'Illustrative photograph · equipment and configuration to be confirmed'
+                : 'Photo à titre indicatif · équipement et configuration à confirmer'}
+            </figcaption>
+          </figure>
+        )}
+      </div>
+    </section>
+    <div class="container page-body">
+      {page.kind === 'catalogue' && <Catalogue lang={lang} />}
+      {page.kind === 'comparison' && <Comparison lang={lang} />}
+      {product && (
+        <section class="product-status" aria-labelledby="model-status">
+          <h2 id="model-status">
+            {lang === 'en'
+              ? 'Product information status'
+              : 'État des renseignements sur le produit'}
+          </h2>
+          <dl>
+            <div>
+              <dt>
+                {lang === 'en' ? 'Canadian licence' : 'Homologation canadienne'}
+              </dt>
+              <dd>
+                {lang === 'en'
+                  ? 'Not yet verified for the exact device'
+                  : 'Pas encore vérifiée pour l’appareil exact'}
+              </dd>
+            </div>
+            <div>
+              <dt>
+                {lang === 'en'
+                  ? 'Availability & price'
+                  : 'Disponibilité et prix'}
+              </dt>
+              <dd>
+                {lang === 'en'
+                  ? 'Unconfirmed · written quote required'
+                  : 'Non confirmés · soumission écrite requise'}
+              </dd>
+            </div>
+            <div>
+              <dt>
+                {lang === 'en'
+                  ? 'Included items & warranty'
+                  : 'Articles inclus et garantie'}
+              </dt>
+              <dd>
+                {lang === 'en'
+                  ? 'To be confirmed for the supplied configuration'
+                  : 'À confirmer pour la configuration fournie'}
+              </dd>
+            </div>
+          </dl>
+          <p>
+            {lang === 'en' ? 'Source:' : 'Source :'}{' '}
+            <a href={product.source.url}>{product.source.label}</a> ·{' '}
+            {lang === 'en' ? 'Reviewed' : 'Consultée le'}{' '}
+            {product.source.reviewed}.{' '}
+            {lang === 'en'
+              ? 'Manufacturer information is not Canadian licence verification.'
+              : 'Les renseignements du fabricant ne constituent pas une vérification de l’homologation canadienne.'}
+          </p>
+          <a
+            class="text-link"
+            href="https://health-products.canada.ca/mdall-limh/index-eng.jsp"
+          >
+            {lang === 'en'
+              ? 'Health Canada MDALL'
+              : 'Base de données MDALL de Santé Canada'}
+          </a>
+        </section>
+      )}
+      {page.children && (
+        <section
+          class="page-directory"
+          aria-label={
+            lang === 'en' ? 'Explore this section' : 'Explorer cette section'
+          }
+        >
+          <div class="page-card-grid">
+            {page.children.map((id) => (
+              <PageCard lang={lang} pageId={id} />
+            ))}
+          </div>
+        </section>
+      )}
+      <div class:list={['article-layout', { 'article-full': isLegal }]}>
+        <article class="article-copy">
+          {page.kind === 'faq' ? (
+            <div class="faq-list">
+              {sections.map((section) => (
+                <details>
+                  <summary>{section.heading}</summary>
+                  <p>{section.body}</p>
+                </details>
+              ))}
+            </div>
+          ) : (
+            sections.map((section, index) => (
+              <section id={`section-${index + 1}`}>
+                <h2>{section.heading}</h2>
+                <p>{section.body}</p>
+                {section.bullets && (
+                  <ul>
+                    {section.bullets.map((item) => (
+                      <li>{item}</li>
+                    ))}
+                  </ul>
+                )}
+              </section>
+            ))
+          )}
+        </article>
+        {!isLegal && (
+          <aside
+            class="page-sidebar"
+            aria-label={
+              lang === 'en'
+                ? 'Enquiry information'
+                : 'Renseignements pour une demande'
+            }
+          >
+            <EnquiryActions
+              lang={lang}
+              quote={page.kind === 'quote'}
+              subject={`${lang === 'en' ? 'Enquiry' : 'Demande'} — ${labelFor(page.id, lang)}`}
+            />
+            <p class="sidebar-note">
+              {lang === 'en'
+                ? 'Equipment and service arrangements are confirmed for your location before any commitment.'
+                : 'L’équipement et les modalités de service sont confirmés pour votre emplacement avant tout engagement.'}
+            </p>
+          </aside>
+        )}
+      </div>
+      {page.related && (
+        <nav
+          class="related-pages"
+          aria-label={
+            lang === 'en' ? 'Related information' : 'Renseignements connexes'
+          }
+        >
+          <h2>
+            {lang === 'en'
+              ? 'Continue planning'
+              : 'Poursuivre votre planification'}
+          </h2>
+          <ul>
+            {page.related.map((id) => (
+              <li>
+                <a href={pathFor(id, lang)}>{labelFor(id, lang)}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
+    </div>
+  </main>
+  <Footer lang={lang} />
+</Page>

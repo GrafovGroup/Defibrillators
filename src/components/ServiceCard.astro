@@ -1,13 +1,14 @@
 ---
 interface Props {
   id: string;
+  href: string;
   image: string;
   title: string;
   text: string;
   link: string;
   alt: string;
 }
-const { id, image, title, text, link, alt } = Astro.props;
+const { id, image, title, text, link, alt, href } = Astro.props;
 ---
 
 <article class="service-card" id={id}>
@@ -24,6 +25,6 @@ const { id, image, title, text, link, alt } = Astro.props;
   <div class="service-content">
     <h3>{title}</h3>
     <p>{text}</p>
-    <a href="#contact">{link}</a>
+    <a href={href}>{link}</a>
   </div>
 </article>

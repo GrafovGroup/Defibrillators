@@ -6,6 +6,7 @@ import ServiceCard from '../components/ServiceCard.astro';
 import IndustryGrid from '../components/IndustryGrid.astro';
 import Footer from '../components/Footer.astro';
 import { content, contact, quoteHref, type Locale } from '../data/content';
+import { pathFor, type PageId } from '../data/routes';
 export function getStaticPaths() {
   return [{ params: { lang: 'en' } }, { params: { lang: 'fr' } }];
 }
@@ -26,7 +27,15 @@ const c = content[lang];
         </div>
         <div class="service-grid">
           {c.cards.map((card) => (
-            <ServiceCard {...card} />
+            <ServiceCard
+              {...card}
+              href={pathFor(
+                (card.id === 'equipment'
+                  ? 'defibrillators'
+                  : card.id) as PageId,
+                lang,
+              )}
+            />
           ))}
         </div>
         <p class="image-note">{c.imageNote}</p>
@@ -67,7 +76,7 @@ const c = content[lang];
               </li>
             ))}
           </ol>
-          <a class="button button-navy" href="#contact">
+          <a class="button button-navy" href={pathFor('programs', lang)}>
             {c.programCta}
           </a>
         </div>

@@ -1,5 +1,6 @@
 ---
 import { content, type Locale } from '../data/content';
+import { pathFor, labelFor, industryIds } from '../data/routes';
 interface Props {
   lang: Locale;
 }
@@ -15,10 +16,10 @@ const c = content[lang];
       <p>{c.industryText}</p>
     </div>
     <ul class="industry-grid">
-      {c.industries.map((industry) => (
+      {industryIds.map((industry) => (
         <li>
           <span aria-hidden="true" class="industry-dot"></span>
-          {industry}
+          <a href={pathFor(industry, lang)}>{labelFor(industry, lang)}</a>
         </li>
       ))}
     </ul>

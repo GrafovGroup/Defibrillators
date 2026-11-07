@@ -1,0 +1,92 @@
+---
+import { products } from '../data/products';
+import { pathFor, labelFor } from '../data/routes';
+import type { Locale } from '../data/content';
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+const rows = [
+  {
+    label: lang === 'en' ? 'Manufacturer' : 'Fabricant',
+    values: products.map((p) => p.manufacturer),
+  },
+  {
+    label: lang === 'en' ? 'Guidance' : 'Guidage',
+    values: products.map((p) => p.guidance[lang]),
+  },
+  {
+    label: lang === 'en' ? 'Electrode approach' : 'Électrodes',
+    values: products.map((p) => p.electrodes[lang]),
+  },
+  {
+    label:
+      lang === 'en'
+        ? 'Canadian licence verification'
+        : 'Vérification de l’homologation canadienne',
+    values: products.map(() =>
+      lang === 'en'
+        ? 'Unverified — confirm the exact device before sale'
+        : 'Non vérifiée — confirmer l’appareil exact avant la vente',
+    ),
+  },
+  {
+    label:
+      lang === 'en' ? 'Price, stock & warranty' : 'Prix, stock et garantie',
+    values: products.map(() =>
+      lang === 'en'
+        ? 'Not confirmed; request written details'
+        : 'Non confirmés; demander les modalités écrites',
+    ),
+  },
+];
+---
+
+<div
+  class="comparison-scroll"
+  role="region"
+  aria-label={
+    lang === 'en'
+      ? 'AED comparison table; scroll horizontally on a small screen'
+      : 'Tableau comparatif; défilement horizontal sur petit écran'
+  }
+  tabindex="0"
+>
+  <table class="comparison-table">
+    <caption>
+      {lang === 'en'
+        ? 'Manufacturer reference comparison'
+        : 'Comparaison des renseignements des fabricants'}
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">
+          {lang === 'en' ? 'Consideration' : 'Point à considérer'}
+        </th>
+        {products.map((p) => (
+          <th scope="col">
+            <a href={pathFor(p.id, lang)}>{labelFor(p.id, lang)}</a>
+          </th>
+        ))}
+      </tr>
+    </thead>
+    <tbody>
+      {rows.map((row) => (
+        <tr>
+          <th scope="row">{row.label}</th>
+          {row.values.map((value) => (
+            <td>{value}</td>
+          ))}
+        </tr>
+      ))}
+      <tr>
+        <th scope="row">{lang === 'en' ? 'Source' : 'Source'}</th>
+        {products.map((p) => (
+          <td>
+            <a href={p.source.url}>{p.source.label}</a>
+          </td>
+        ))}
+      </tr>
+    </tbody>
+  </table>
+</div>

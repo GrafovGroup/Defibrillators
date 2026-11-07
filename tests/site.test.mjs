@@ -6,10 +6,21 @@ import crypto from 'node:crypto';
 import { load } from 'cheerio';
 const root = path.resolve('dist');
 const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
-const pages = ['index.html', 'en/index.html', 'fr/index.html', '404.html'];
+const walk = (dir) =>
+  fs
+    .readdirSync(dir, { withFileTypes: true })
+    .flatMap((item) =>
+      item.isDirectory()
+        ? walk(path.join(dir, item.name))
+        : [path.join(dir, item.name)],
+    );
+const pages = walk(root)
+  .filter((file) => file.endsWith('.html'))
+  .map((file) => path.relative(root, file));
+const parsed = new Map(pages.map((page) => [page, load(read(page))]));
 for (const page of pages) {
   test(`${page}: semantic structure, assets and local destinations`, () => {
-    const $ = load(read(page));
+    const $ = parsed.get(page);
     assert.equal($('h1').length, 1);
     assert.equal($('main').length, 1);
     assert.ok($('html').attr('lang'));
@@ -31,7 +42,7 @@ for (const page of pages) {
       if (pathname.endsWith('/')) target = path.join(target, 'index.html');
       assert.ok(fs.existsSync(target), `missing route ${href}`);
       if (hash) {
-        const targetPage = load(fs.readFileSync(target, 'utf8'));
+        const targetPage = parsed.get(path.relative(root, target));
         assert.ok(
           targetPage(`[id="${hash}"]`).length,
           `missing anchor ${href}`,
@@ -81,23 +92,31 @@ for (const lang of ['en', 'fr']) {
     assert.match($('meta[name="robots"]').attr('content'), /noindex/);
     assert.equal($('.skip-link').attr('href'), '#main');
     assert.equal($('#main').attr('tabindex'), '-1');
-    assert.equal($('.photo-credits li').length, 5);
+    assert.equal($('.photo-credits li').length, 6);
     assert.ok($('meta[name="description"]').attr('content').length > 60);
   });
 }
-test('English and French have distinct content and equivalent destinations', () => {
-  const en = load(read('en/index.html'));
-  const fr = load(read('fr/index.html'));
-  assert.notEqual(en('h1').text(), fr('h1').text());
-  assert.notEqual(en('title').text(), fr('title').text());
-  assert.deepEqual(
-    en('.desktop-nav a')
-      .toArray()
-      .map((el) => en(el).attr('href')),
-    fr('.desktop-nav a')
-      .toArray()
-      .map((el) => fr(el).attr('href')),
-  );
+test('Homepage navigation leads to localized page routes', () => {
+  for (const lang of ['en', 'fr']) {
+    const $ = parsed.get(lang + '/index.html');
+    assert.ok(
+      $('.desktop-nav a')
+        .toArray()
+        .every((el) =>
+          $(el)
+            .attr('href')
+            .startsWith('/' + lang + '/'),
+        ),
+    );
+    assert.equal(
+      new Set(
+        $('.desktop-nav a')
+          .toArray()
+          .map((el) => $(el).attr('href')),
+      ).size,
+      8,
+    );
+  }
 });
 test('Asset size budget and standalone vector brand variants', () => {
   for (const file of fs.readdirSync('public/images')) {

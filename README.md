@@ -1,6 +1,6 @@
 # Defibrillators.ca
 
-Phase 0 audit and Phase 1A bilingual homepage, implementing `MASTER_PROMPT.md` and the approved modern wordmark/homepage direction. Static Astro output for conventional hosting, with no production Node process.
+Phase 0, Phase 1A and Phase 1B implementation of `MASTER_PROMPT.md`: bilingual homepages and core product, accessory, service, industry and information pages using the approved modern wordmark and design system. Static Astro output for conventional hosting, with no production Node process.
 
 ## Development
 
@@ -18,21 +18,28 @@ pnpm preview
 ## Implemented routes
 
 - `/`: accessible English/French language choice, usable without JavaScript.
-- `/en/` and `/fr/`: complete localized homepages, shared design/components, matching navigation, phone and email enquiry links.
+- `/en/` and `/fr/`: complete localized homepages and 35 additional pages per language (72 localized pages).
+- Catalogue, two manufacturer reference profiles and comparison; five accessory categories; four service pages and a service hub; nine industry pages and an industry hub; resources, buying/readiness guides, about, contact, quote enquiries, FAQs, privacy, terms and accessibility.
 - `/404.html`: bilingual not-found page. Configure the host to return this with HTTP 404.
 
-Navigation targets real sections on each homepage. “Shop AEDs” leads to the AED category introduction; the full catalogue belongs to Phase 1B. Quote buttons lead to a contact section with an explicitly labelled email-app link. There is no submission backend, checkout, tracking, cookie storage or claimed email delivery in this phase.
+Navigation, homepage cards and related links reach the localized pages. The language switch retains page identity. The catalogue supports accessible search and manufacturer filtering, with both profiles available without JavaScript. See `docs/ROUTES.md` for the complete route pairs.
+
+Product profiles contain manufacturer reference information, not confirmed inventory. Exact Canadian licensing, supply, price, included items and warranty remain unverified. Quote pages offer separate commercial/residential email-app links. There is no submission backend, checkout, tracking, cookie storage or claimed email delivery in this phase.
 
 ## Source map
 
 - `src/data/content.ts`: typed English and Canadian French copy and contact configuration.
-- `src/components/`: Header, LocaleSwitch, Logo, Hero, ServiceCard, IndustryGrid and Footer.
-- `src/layouts/Page.astro`: document metadata and locale alternates.
-- `src/styles/global.css`: responsive design tokens and components.
+- `src/data/routes.ts`, `pages.ts`, `products.ts`: typed localized routes, core page content and manufacturer references.
+- `src/pages/[lang]/[...slug].astro`: shared static page layouts.
+- `src/components/`: shared navigation, branding, cards, catalogue, comparison, breadcrumbs, enquiry actions and SEO.
+- `src/layouts/Page.astro`: document shell and shared styles.
+- `src/styles/global.css`, `pages.css`: approved design tokens and responsive components.
+- `src/scripts/catalogue-filter.ts`: accent-insensitive search matching.
 - `public/brand/`: path-based SVG wordmarks, bilingual light/dark logo lockups and favicon.
 - `public/images/`: optimized licensed photographic examples; see `docs/ASSETS.md`.
-- `tests/site.test.mjs`: built-output integration checks.
-- `docs/PHASE-0.md`, `docs/DESIGN-SYSTEM.md`, `docs/QA.md`: audit, design and verification record.
+- `tests/`: built-output integration and catalogue-filter checks.
+- `docs/PHASE-0.md`, `docs/DESIGN-SYSTEM.md`, `docs/QA.md`: original audit, design and Phase 1A verification.
+- `docs/PHASE-1B.md`: current scope, source verification, QA and handoff.
 
 ## Static hosting handoff
 
@@ -48,4 +55,4 @@ To regenerate logos on a Mac with the licensed system fonts: `node scripts/gener
 
 ## Remaining phases
 
-Phase 1B: verified catalogue and core pages. Phase 2: secure RFQs and tested delivery. Phase 3: substantive location architecture and expanded SEO. Phase 4: full site QA. Phase 5: verified hosting deployment. See the audit for inputs required before these phases or public launch.
+Phase 2: supplier-backed product data, expanded filtering, secure RFQs, consent/anti-spam and tested delivery. Phase 3: substantive location architecture and expanded SEO. Phase 4: full site QA. Phase 5: verified hosting deployment. See the audit for inputs required before these phases or public launch.

@@ -1,6 +1,7 @@
 ---
 import Logo from './Logo.astro';
 import { content, contact, type Locale } from '../data/content';
+import { pathFor, labelFor, footerIds, type PageId } from '../data/routes';
 import { credits } from '../data/credits';
 interface Props {
   lang: Locale;
@@ -23,11 +24,20 @@ const c = content[lang];
         <ul>
           {c.cards.map((card) => (
             <li>
-              <a href={`#${card.id}`}>{card.title}</a>
+              <a
+                href={pathFor(
+                  (card.id === 'equipment'
+                    ? 'defibrillators'
+                    : card.id) as PageId,
+                  lang,
+                )}
+              >
+                {card.title}
+              </a>
             </li>
           ))}
           <li>
-            <a href="#programs">{c.nav[4]}</a>
+            <a href={pathFor('programs', lang)}>{c.nav[4]}</a>
           </li>
         </ul>
       </div>
@@ -40,6 +50,22 @@ const c = content[lang];
         <p>{c.footerLanguage}</p>
       </div>
     </div>
+    <nav
+      class="footer-info"
+      aria-label={
+        lang === 'en'
+          ? 'Company and website information'
+          : 'Information sur l’entreprise et le site'
+      }
+    >
+      <ul>
+        {footerIds.map((id) => (
+          <li>
+            <a href={pathFor(id, lang)}>{labelFor(id, lang)}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
     <p class="emergency">{c.emergency}</p>
     <details class="photo-credits">
       <summary>{c.credits}</summary>

@@ -1,0 +1,79 @@
+---
+import { contact, type Locale } from '../data/content';
+interface Props {
+  lang: Locale;
+  subject?: string;
+  quote?: boolean;
+}
+const { lang, subject, quote = false } = Astro.props;
+const email = (topic: string, body?: string) =>
+  `mailto:${contact.email}?subject=${encodeURIComponent(topic)}${body ? '&body=' + encodeURIComponent(body) : ''}`;
+const commercial =
+  lang === 'en'
+    ? 'Commercial AED quote request'
+    : 'Soumission de DEA — organisation';
+const residential =
+  lang === 'en'
+    ? 'Residential AED quote request'
+    : 'Soumission de DEA — résidence';
+const body =
+  lang === 'en'
+    ? 'Name / organisation:\nProvince / locations:\nEquipment and quantities:\nInstallation, checks or training needs:\nPreferred contact method:\n'
+    : 'Nom / organisation :\nProvince / emplacements :\nÉquipement et quantités :\nInstallation, vérifications ou formation :\nMoyen de communication préféré :\n';
+---
+
+<div class="enquiry-actions" id="contact">
+  <h2>
+    {lang === 'en'
+      ? 'Let’s discuss your requirements'
+      : 'Discutons de vos besoins'}
+  </h2>
+  <p>
+    {lang === 'en'
+      ? 'Use email or call us directly.'
+      : 'Écrivez-nous ou appelez-nous directement.'}
+  </p>
+  {quote ? (
+    <div class="quote-options">
+      <a class="button" href={email(commercial, body)}>
+        {lang === 'en'
+          ? 'Email a commercial enquiry'
+          : 'Demande pour une organisation'}
+      </a>
+      <a
+        class="button button-navy"
+        href={email(
+          residential,
+          lang === 'en'
+            ? 'Name:\nProvince:\nEquipment questions:\nPreferred contact method:\n'
+            : 'Nom :\nProvince :\nQuestions sur l’équipement :\nMoyen de communication préféré :\n',
+        )}
+      >
+        {lang === 'en' ? 'Email a home enquiry' : 'Demande pour une résidence'}
+      </a>
+    </div>
+  ) : (
+    <a
+      class="button"
+      href={email(
+        subject ??
+          (lang === 'en' ? 'AED enquiry' : 'Demande de renseignements — DEA'),
+      )}
+    >
+      {lang === 'en'
+        ? 'Email your enquiry'
+        : 'Envoyer une demande par courriel'}
+    </a>
+  )}
+  <p class="email-hint">
+    {lang === 'en'
+      ? 'Opens your email app. Nothing is submitted through this website.'
+      : 'Ouvre votre application de courriel. Aucun renseignement n’est transmis par ce site.'}
+  </p>
+  <a class="contact-phone" href={contact.tel}>
+    {contact.phone}
+  </a>
+  <a class="plain-email" href={`mailto:${contact.email}`}>
+    {contact.email}
+  </a>
+</div>

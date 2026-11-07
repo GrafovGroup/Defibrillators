@@ -1,0 +1,130 @@
+---
+import { products } from '../data/products';
+import { pathFor } from '../data/routes';
+import ProductCard from './ProductCard.astro';
+import type { Locale } from '../data/content';
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+---
+
+<section
+  class="catalogue-panel"
+  aria-labelledby="catalogue-title"
+  data-catalogue
+  data-lang={lang}
+>
+  <div class="catalogue-heading">
+    <h2 id="catalogue-title">
+      {lang === 'en' ? 'Explore AED models' : 'Explorer les modèles de DEA'}
+    </h2>
+    <a href={pathFor('compare', lang)}>
+      {lang === 'en' ? 'Compare both models' : 'Comparer les deux modèles'}
+    </a>
+  </div>
+  <p class="notice">
+    {lang === 'en'
+      ? 'Manufacturer reference information. Canadian licence verification and supply availability remain unconfirmed for both profiles. No online orders are accepted.'
+      : 'Renseignements de référence des fabricants. L’homologation canadienne et la disponibilité restent à confirmer pour les deux fiches. Aucune commande en ligne n’est acceptée.'}
+  </p>
+  <div
+    class="catalogue-filters"
+    role="search"
+    aria-label={
+      lang === 'en'
+        ? 'Filter model references'
+        : 'Filtrer les fiches de modèles'
+    }
+    hidden
+  >
+    <div>
+      <label for="model-search">
+        {lang === 'en' ? 'Search models' : 'Rechercher un modèle'}
+      </label>
+      <input
+        id="model-search"
+        type="search"
+        autocomplete="off"
+        placeholder={
+          lang === 'en' ? 'Name or feature' : 'Nom ou caractéristique'
+        }
+      />
+    </div>
+    <div>
+      <label for="brand-filter">
+        {lang === 'en' ? 'Manufacturer' : 'Fabricant'}
+      </label>
+      <select id="brand-filter">
+        <option value="">
+          {lang === 'en' ? 'All manufacturers' : 'Tous les fabricants'}
+        </option>
+        {products.map((p) => (
+          <option value={p.manufacturer}>{p.manufacturer}</option>
+        ))}
+      </select>
+    </div>
+    <button type="button" class="button button-navy" data-reset>
+      {lang === 'en' ? 'Reset' : 'Réinitialiser'}
+    </button>
+  </div>
+  <p
+    class="result-count"
+    role="status"
+    aria-live="polite"
+    aria-atomic="true"
+    data-count
+  >
+    {lang === 'en' ? '2 model references' : '2 fiches de modèles'}
+  </p>
+  <div class="product-grid">
+    {products.map((product) => (
+      <ProductCard lang={lang} product={product} />
+    ))}
+  </div>
+  <p class="empty-results" data-empty hidden>
+    {lang === 'en'
+      ? 'No models match. Change your search or reset the filters.'
+      : 'Aucun modèle correspondant. Modifiez votre recherche ou réinitialisez les filtres.'}
+  </p>
+</section>
+<script>
+  import { matchesProduct } from '../scripts/catalogue-filter';
+  const catalogue = document.querySelector<HTMLElement>('[data-catalogue]');
+  if (catalogue) {
+    const controls =
+      catalogue.querySelector<HTMLElement>('.catalogue-filters')!;
+    const search = catalogue.querySelector<HTMLInputElement>('#model-search')!;
+    const brand = catalogue.querySelector<HTMLSelectElement>('#brand-filter')!;
+    const cards = Array.from(
+      catalogue.querySelectorAll<HTMLElement>('[data-product]'),
+    );
+    const update = () => {
+      let count = 0;
+      for (const card of cards) {
+        card.hidden = !matchesProduct(
+          card.dataset.search ?? '',
+          card.dataset.brand ?? '',
+          search.value,
+          brand.value,
+        );
+        if (!card.hidden) count++;
+      }
+      catalogue.querySelector('[data-count]')!.textContent =
+        catalogue.dataset.lang === 'fr'
+          ? `${count} fiche${count === 1 ? '' : 's'} de modèle${count === 1 ? '' : 's'}`
+          : `${count} model reference${count === 1 ? '' : 's'}`;
+      catalogue.querySelector<HTMLElement>('[data-empty]')!.hidden =
+        count !== 0;
+    };
+    controls.hidden = false;
+    search.addEventListener('input', update);
+    brand.addEventListener('change', update);
+    catalogue.querySelector('[data-reset]')!.addEventListener('click', () => {
+      search.value = '';
+      brand.value = '';
+      update();
+      search.focus();
+    });
+  }
+</script>

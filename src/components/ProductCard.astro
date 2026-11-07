@@ -1,0 +1,47 @@
+---
+import { pathFor, labelFor } from '../data/routes';
+import { pageImages } from '../data/pages';
+import type { Locale } from '../data/content';
+import type { ProductReference } from '../data/products';
+interface Props {
+  lang: Locale;
+  product: ProductReference;
+}
+const { lang, product } = Astro.props;
+---
+
+<article
+  class="product-card"
+  data-product
+  data-brand={product.manufacturer}
+  data-search={`${product.manufacturer} ${product.model} ${product.guidance[lang]}`.toLocaleLowerCase(
+    lang,
+  )}
+>
+  <div class="product-photo">
+    <img
+      src={`/images/${product.image}.webp`}
+      width="640"
+      height="420"
+      alt={pageImages[product.image][lang]}
+      loading="lazy"
+    />
+  </div>
+  <div class="product-copy">
+    <p class="eyebrow">{product.manufacturer}</p>
+    <h3>
+      <a href={pathFor(product.id, lang)}>{labelFor(product.id, lang)}</a>
+    </h3>
+    <p>{product.guidance[lang]}</p>
+    <span class="status-label">
+      {lang === 'en'
+        ? 'Reference model · availability unconfirmed'
+        : 'Modèle de référence · disponibilité non confirmée'}
+    </span>
+    <a class="text-link" href={pathFor(product.id, lang)}>
+      {lang === 'en'
+        ? 'View model information'
+        : 'Consulter la fiche du modèle'}
+    </a>
+  </div>
+</article>

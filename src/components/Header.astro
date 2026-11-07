@@ -1,11 +1,15 @@
 ---
 import Logo from './Logo.astro';
 import LocaleSwitch from './LocaleSwitch.astro';
-import { content, contact, anchors, type Locale } from '../data/content';
+import { content, contact, type Locale } from '../data/content';
+import { pathFor, navIds, type PageId } from '../data/routes';
+import { pageFor } from '../data/pages';
 interface Props {
   lang: Locale;
+  pageId?: PageId;
 }
-const { lang } = Astro.props;
+const { lang, pageId = 'home' } = Astro.props;
+const parent = pageId === 'home' ? null : pageFor(pageId).parent;
 const c = content[lang];
 ---
 
@@ -23,7 +27,7 @@ const c = content[lang];
       </p>
       <div class="utility-right">
         <a href={contact.tel}>{contact.phone}</a>
-        <LocaleSwitch lang={lang} />
+        <LocaleSwitch lang={lang} pageId={pageId} />
       </div>
     </div>
   </div>
@@ -37,7 +41,7 @@ const c = content[lang];
       </a>
       <a href={`mailto:${contact.email}`}>{contact.email}</a>
     </div>
-    <a class="button header-quote" href="#contact">
+    <a class="button header-quote" href={pathFor('quote', lang)}>
       {c.quote}
     </a>
   </div>
@@ -45,7 +49,15 @@ const c = content[lang];
     <ul class="container">
       {c.nav.map((label, i) => (
         <li>
-          <a href={`#${anchors[i]}`}>{label}</a>
+          <a
+            href={pathFor(navIds[i], lang)}
+            aria-current={pageId === navIds[i] ? 'page' : undefined}
+            class:list={{
+              'nav-active': pageId === navIds[i] || parent === navIds[i],
+            }}
+          >
+            {label}
+          </a>
         </li>
       ))}
     </ul>
@@ -63,7 +75,15 @@ const c = content[lang];
       <ul>
         {c.nav.map((label, i) => (
           <li>
-            <a href={`#${anchors[i]}`}>{label}</a>
+            <a
+              href={pathFor(navIds[i], lang)}
+              aria-current={pageId === navIds[i] ? 'page' : undefined}
+              class:list={{
+                'nav-active': pageId === navIds[i] || parent === navIds[i],
+              }}
+            >
+              {label}
+            </a>
           </li>
         ))}
       </ul>

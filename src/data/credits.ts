@@ -1,5 +1,11 @@
 export const credits = [
   {
+    label: 'Philips HeartStart case — GoTheMean / Wikimedia Commons',
+    url: 'https://commons.wikimedia.org/wiki/File:PhilipsAED-ZRS.jpg',
+    license: 'CC0 1.0',
+    licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/',
+  },
+  {
     label: 'Open AED — Owain Davies / Wikimedia Commons',
     url: 'https://commons.wikimedia.org/wiki/File:AED_open_cutout.jpg',
     license: 'CC BY 3.0',

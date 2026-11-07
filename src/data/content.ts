@@ -80,7 +80,7 @@ export const content = {
         title: 'AED maintenance',
         text: 'Organise readiness checks, expiry tracking and replacement supplies.',
         link: 'Discuss ongoing care',
-        alt: 'An open AED in its carrying case',
+        alt: 'An open Powerheart AED G3 with electrodes inside the lid',
       },
     ],
     imageNote:
@@ -237,7 +237,7 @@ export const content = {
         title: 'Entretien de DEA',
         text: 'Planifiez les vérifications, le suivi des dates d’expiration et le remplacement des fournitures.',
         link: 'Discuter de l’entretien',
-        alt: 'Un DEA ouvert dans son étui de transport',
+        alt: 'Un Powerheart AED G3 ouvert avec des électrodes à l’intérieur du couvercle',
       },
     ],
     imageNote:

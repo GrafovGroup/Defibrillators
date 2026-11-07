@@ -1,0 +1,30 @@
+---
+import { pathFor, labelFor, type PageId } from '../data/routes';
+import { pageFor, pageImages } from '../data/pages';
+import type { Locale } from '../data/content';
+interface Props {
+  lang: Locale;
+  pageId: PageId;
+}
+const { lang, pageId } = Astro.props;
+const page = pageFor(pageId);
+---
+
+<article class="page-card">
+  {page.image && (
+    <img
+      src={`/images/${page.image}.webp`}
+      width="640"
+      height="420"
+      alt={pageImages[page.image][lang]}
+      loading="lazy"
+      decoding="async"
+    />
+  )}
+  <div>
+    <h2>
+      <a href={pathFor(pageId, lang)}>{labelFor(pageId, lang)}</a>
+    </h2>
+    <p>{page.intro[lang]}</p>
+  </div>
+</article>

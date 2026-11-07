@@ -1,4 +1,4 @@
-# Phase 1A design system
+# Design system — Phases 1A and 1B
 
 The approved visual direction is implemented as semantic HTML: navy utility bar; modern italic navy/red wordmark with red pulse underline; white masthead and uppercase navigation; a tall split hero with real AED/cabinet photography; red primary and outlined secondary actions; a four-item support strip; and four prominent photographic service cards. Lower sections continue the same restrained clinical/corporate style.
 
@@ -24,7 +24,7 @@ The approved visual direction is implemented as semantic HTML: navy utility bar;
 
 Desktop navigation becomes a native expandable menu below 901px. Four service columns become two below 901px and one below 600px. The split hero stacks below 600px. Programs, resources and contact become single-column layouts at tablet widths. Primary actions remain at least 50px tall; language controls provide 42px-tall targets. No sticky header obscures focus or anchor targets.
 
-Shared components ensure consistent navigation and structure across locales. Headings and buttons allow French text expansion. The language selector links to equivalent localized homepages. The root presents both languages without relying on browser language detection or scripting.
+Shared components ensure consistent navigation and structure across locales. Headings and buttons allow French text expansion. The language selector links to equivalent localized pages. The root presents both languages without relying on browser language detection or scripting.
 
 ## Brand deliverables
 
@@ -37,3 +37,9 @@ The approved mockup's exact generated product/lobby scene is not used because th
 ## Accessibility approach
 
 Semantic landmarks, one H1, skip link, native disclosure controls, meaningful image alternatives, visible focus styles, reduced-motion overrides and tested palette contrast. The site does not claim a complete WCAG certification. Browser checks and current testing limits are recorded in `QA.md`.
+
+## Phase 1B extensions
+
+Core pages reuse the existing palette, wordmark, fonts, header and footer. Added components include breadcrumbs, split page heroes, accessory/industry directories, manufacturer reference cards, catalogue controls, comparison tables, article layouts and enquiry sidebars. Active navigation follows the current page or parent category.
+
+Page heroes stack below 768px. Article sidebars become full-width beneath content; three-column directories become two columns at tablet widths and one below 481px. Catalogue cards stack on phones. Comparison tables scroll inside a labelled, keyboard-focusable region, without expanding the page. The original homepage token definitions and logo assets remain unchanged.

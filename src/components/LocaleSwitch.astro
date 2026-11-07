@@ -1,14 +1,16 @@
 ---
 import { content, type Locale } from '../data/content';
+import { pathFor, type PageId } from '../data/routes';
 interface Props {
   lang: Locale;
+  pageId?: PageId;
 }
-const { lang } = Astro.props;
+const { lang, pageId = 'home' } = Astro.props;
 ---
 
 <nav class="locale-switch" aria-label={content[lang].language}>
   <a
-    href="/en/"
+    href={pathFor(pageId, 'en')}
     lang="en-CA"
     hreflang="en-CA"
     aria-label="English"
@@ -18,7 +20,7 @@ const { lang } = Astro.props;
   </a>
   <span aria-hidden="true">/</span>
   <a
-    href="/fr/"
+    href={pathFor(pageId, 'fr')}
     lang="fr-CA"
     hreflang="fr-CA"
     aria-label="Français"

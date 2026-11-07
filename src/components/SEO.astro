@@ -1,0 +1,51 @@
+---
+import { content, type Locale } from '../data/content';
+import { pathFor, labelFor, type PageId } from '../data/routes';
+import { pageFor } from '../data/pages';
+interface Props {
+  lang: Locale;
+  pageId?: PageId;
+}
+const { lang, pageId = 'home' } = Astro.props;
+const page = pageId === 'home' ? null : pageFor(pageId);
+const prefix =
+  page?.kind === 'product'
+    ? lang === 'en'
+      ? 'Product profile: '
+      : 'Fiche de produit : '
+    : '';
+const title = page
+  ? `${prefix}${labelFor(pageId, lang)} | Defibrillators.ca`
+  : content[lang].title;
+const description = page?.intro[lang] ?? content[lang].description;
+const canonical = `https://defibrillators.ca${pathFor(pageId, lang)}`;
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="canonical" href={canonical} />
+<link
+  rel="alternate"
+  hreflang="en-CA"
+  href={`https://defibrillators.ca${pathFor(pageId, 'en')}`}
+/>
+<link
+  rel="alternate"
+  hreflang="fr-CA"
+  href={`https://defibrillators.ca${pathFor(pageId, 'fr')}`}
+/>
+<link
+  rel="alternate"
+  hreflang="x-default"
+  href={
+    pageId === 'home'
+      ? 'https://defibrillators.ca/'
+      : `https://defibrillators.ca${pathFor(pageId, 'en')}`
+  }
+/>
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:locale" content={`${lang}_CA`} />
+<meta property="og:url" content={canonical} />

@@ -1,12 +1,15 @@
 ---
 import '@fontsource-variable/inter';
 import '../styles/global.css';
-import { content, type Locale } from '../data/content';
+import '../styles/pages.css';
+import SEO from '../components/SEO.astro';
+import type { Locale } from '../data/content';
+import type { PageId } from '../data/routes';
 interface Props {
   lang: Locale;
+  pageId?: PageId;
 }
-const { lang } = Astro.props;
-const c = content[lang];
+const { lang, pageId = 'home' } = Astro.props;
 ---
 
 <!doctype html>
@@ -15,31 +18,8 @@ const c = content[lang];
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#102B4E" />
-    <title>{c.title}</title>
-    <meta name="description" content={c.description} />
-    <meta name="robots" content="noindex, nofollow" />
-    <link rel="canonical" href={`https://defibrillators.ca/${lang}/`} />
-    <link
-      rel="alternate"
-      hreflang="en-CA"
-      href="https://defibrillators.ca/en/"
-    />
-    <link
-      rel="alternate"
-      hreflang="fr-CA"
-      href="https://defibrillators.ca/fr/"
-    />
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://defibrillators.ca/"
-    />
+    <SEO lang={lang} pageId={pageId} />
     <link rel="icon" type="image/svg+xml" href="/brand/favicon.svg" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content={c.title} />
-    <meta property="og:description" content={c.description} />
-    <meta property="og:locale" content={`${lang}_CA`} />
-    <meta property="og:url" content={`https://defibrillators.ca/${lang}/`} />
   </head>
   <body>
     <slot />
