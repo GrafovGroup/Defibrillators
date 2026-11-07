@@ -1112,8 +1112,8 @@ export const pages: DetailPage[] = [
     id: 'quote',
     kind: 'quote',
     intro: {
-      en: 'Start an equipment or service enquiry by email or phone. Choose the checklist that fits your project.',
-      fr: 'Commencez une demande d’équipement ou de service par courriel ou téléphone. Choisissez la liste adaptée à votre projet.',
+      en: 'Tell us about your equipment or service needs. Choose the business or home form, and we will review the details with you.',
+      fr: 'Décrivez vos besoins en équipement ou en services. Choisissez le formulaire pour entreprise ou résidence; nous examinerons les détails avec vous.',
     },
     sections: {
       en: [
@@ -1136,7 +1136,7 @@ export const pages: DetailPage[] = [
         ]),
         s(
           'What happens next',
-          'The email buttons open your own email application. Sending an enquiry does not place an order or reserve inventory. Pricing, licensing, availability and the service scope must be confirmed in a written quote.',
+          'Your request is sent securely through Formspree. Sending an enquiry does not place an order or reserve inventory. Pricing, licensing, availability and the service scope must be confirmed in a written quote.',
         ),
       ],
       fr: [
@@ -1163,7 +1163,7 @@ export const pages: DetailPage[] = [
         ),
         s(
           'La suite de votre demande',
-          'Les boutons de courriel ouvrent votre application. Une demande ne constitue pas une commande et ne réserve pas de stock. Le prix, l’homologation, la disponibilité et le mandat doivent être confirmés dans une soumission écrite.',
+          'Votre demande est transmise de façon sécurisée par Formspree. Une demande ne constitue pas une commande et ne réserve pas de stock. Le prix, l’homologation, la disponibilité et le mandat doivent être confirmés dans une soumission écrite.',
         ),
       ],
     },
@@ -1205,7 +1205,7 @@ export const pages: DetailPage[] = [
         ),
         s(
           'Can I pay or submit a form here?',
-          'There is no online checkout or submission form at this stage. Use the clearly labelled phone or email links to discuss a request; a written quote confirms the commercial details.',
+          'You can send a business or residential request using our bilingual quote forms. There is no online checkout. A written quote confirms availability and commercial details before any order.',
         ),
       ],
       fr: [
@@ -1235,7 +1235,7 @@ export const pages: DetailPage[] = [
         ),
         s(
           'Puis-je payer ou envoyer un formulaire ici?',
-          'Aucun paiement ni formulaire de soumission en ligne n’est offert à cette étape. Utilisez les liens de téléphone ou de courriel clairement indiqués; les modalités commerciales sont confirmées par écrit.',
+          'Vous pouvez envoyer une demande pour entreprise ou résidence avec nos formulaires bilingues. Aucun paiement en ligne n’est offert. La disponibilité et les modalités commerciales sont confirmées par écrit avant toute commande.',
         ),
       ],
     },
@@ -1363,11 +1363,11 @@ export const pages: DetailPage[] = [
       en: [
         s(
           'Browsing this website',
-          'The current site includes no analytics tags, advertising trackers, account creation, payment collection or submission form. Fonts and images are served with the site. Hosting infrastructure may process connection information; the final hosting provider and retention practices must be confirmed before public launch.',
+          'The current site includes no analytics tags, advertising trackers, account creation or payment collection. Fonts and images are served with the site. Hosting infrastructure may process connection information; the final hosting provider and retention practices must be confirmed before public launch.',
         ),
         s(
           'Information you choose to send',
-          'Phone and email links let you contact Defibrillators.ca using your own applications. Share only the contact and project information needed for your enquiry. Do not send payment card details, medical records or sensitive incident information.',
+          'Our request forms send contact details, project requirements, any attachment and a record of your consent to Formspree for processing and delivery to our enquiry inbox. Formspree records receipt and may process data outside Canada. This is not marketing consent. Phone and email links use your own applications. Share only what is needed for your enquiry. Do not send payment card details, medical records or sensitive incident information.',
         ),
         s(
           'External links',
@@ -1381,11 +1381,11 @@ export const pages: DetailPage[] = [
       fr: [
         s(
           'Navigation sur ce site',
-          'Le site actuel ne comprend pas de balises analytiques, de suivi publicitaire, de comptes, de paiement ni de formulaire de transmission. Les polices et images sont servies avec le site. L’hébergement peut traiter des données de connexion; le fournisseur et les pratiques de conservation doivent être confirmés avant le lancement public.',
+          'Le site actuel ne comprend pas de balises analytiques, de suivi publicitaire, de comptes ni de paiement. Les polices et images sont servies avec le site. L’hébergement peut traiter des données de connexion; le fournisseur et les pratiques de conservation doivent être confirmés avant le lancement public.',
         ),
         s(
           'Renseignements transmis volontairement',
-          'Les liens de téléphone et de courriel utilisent vos propres applications. Transmettez uniquement les coordonnées et les détails de projet nécessaires. N’envoyez pas de numéros de carte, de dossiers médicaux ni de renseignements sensibles sur un incident.',
+          'Nos formulaires transmettent à Formspree vos coordonnées, les besoins du projet, toute pièce jointe et la preuve de consentement, pour traitement et livraison à notre boîte de réception. Formspree enregistre la réception et peut traiter les données hors du Canada. Ce consentement ne vise pas le marketing. Les liens de téléphone et de courriel utilisent vos applications. Transmettez uniquement les renseignements nécessaires. N’envoyez pas de numéros de carte, de dossiers médicaux ni de renseignements sensibles sur un incident.',
         ),
         s(
           'Liens externes',

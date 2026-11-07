@@ -13,6 +13,8 @@ const { lang, product } = Astro.props;
 <article
   class="product-card"
   data-product
+  data-environments={product.environments.join(',')}
+  data-type={product.productType}
   data-brand={product.manufacturer}
   data-search={`${product.manufacturer} ${product.model} ${product.guidance[lang]}`.toLocaleLowerCase(
     lang,

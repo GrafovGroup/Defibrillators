@@ -6,6 +6,8 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import PageCard from '../../components/PageCard.astro';
 import Catalogue from '../../components/Catalogue.astro';
 import Comparison from '../../components/Comparison.astro';
+import QuoteForm from '../../components/QuoteForm.astro';
+import { enquiryPath } from '../../lib/enquiry';
 import EnquiryActions from '../../components/EnquiryActions.astro';
 import { pages, pageImages, type DetailPage } from '../../data/pages';
 import { products } from '../../data/products';
@@ -50,7 +52,7 @@ const isLegal = ['privacy', 'terms', 'accessibility'].includes(page.id);
           <h1>{labelFor(page.id, lang)}</h1>
           <p>{page.intro[lang]}</p>
           {!isLegal && page.id !== 'quote' && (
-            <a class="button" href={pathFor('quote', lang)}>
+            <a class="button" href={enquiryPath(page.id, lang)}>
               {lang === 'en' ? 'Request a quote' : 'Demander une soumission'}
             </a>
           )}
@@ -154,6 +156,7 @@ const isLegal = ['privacy', 'terms', 'accessibility'].includes(page.id);
       )}
       <div class:list={['article-layout', { 'article-full': isLegal }]}>
         <article class="article-copy">
+          {page.kind === 'quote' && <QuoteForm lang={lang} />}
           {page.kind === 'faq' ? (
             <div class="faq-list">
               {sections.map((section) => (
@@ -191,6 +194,7 @@ const isLegal = ['privacy', 'terms', 'accessibility'].includes(page.id);
             <EnquiryActions
               lang={lang}
               quote={page.kind === 'quote'}
+              pageId={page.id}
               subject={`${lang === 'en' ? 'Enquiry' : 'Demande'} — ${labelFor(page.id, lang)}`}
             />
             <p class="sidebar-note">

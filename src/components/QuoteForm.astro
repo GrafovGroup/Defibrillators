@@ -1,0 +1,462 @@
+---
+import type { Locale } from '../data/content';
+import { pathFor } from '../data/routes';
+import {
+  formEndpoint,
+  consentVersion,
+  consentText,
+  provinces,
+  requestTypes,
+  requestLabels,
+  maintenanceTypes,
+  maintenanceLabels,
+} from '../lib/rfq';
+import '../styles/forms.css';
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+const fr = lang === 'fr';
+const t = (en: string, french: string) => (fr ? french : en);
+---
+
+<section class="rfq" id="rfq" aria-labelledby="rfq-heading">
+  <p class="eyebrow">
+    {t('TELL US WHAT YOU NEED', 'PARLEZ-NOUS DE VOS BESOINS')}
+  </p>
+  <h2 id="rfq-heading">
+    {t('Your project starts here', 'Votre projet commence ici')}
+  </h2>
+  <p>
+    {t(
+      'Choose a request below. Required fields are marked *. Please share project details only, without medical records or payment information.',
+      'Choisissez une demande ci-dessous. Les champs obligatoires portent un *. Indiquez uniquement les détails du projet, sans dossier médical ni renseignement de paiement.',
+    )}
+  </p>
+  {(['commercial', 'residential'] as const).map((audience) => {
+    const commercial = audience === 'commercial';
+    const id = (name: string) => `${audience}-${name}`;
+    const fields = [
+      {
+        name: 'name',
+        label: t('Full name', 'Nom complet'),
+        type: 'text',
+        required: true,
+        min: 2,
+        max: 100,
+        autocomplete: 'name',
+      },
+      ...(commercial
+        ? [
+            {
+              name: 'company',
+              label: t('Company / organisation', 'Entreprise / organisation'),
+              type: 'text',
+              required: true,
+              min: 2,
+              max: 160,
+              autocomplete: 'organization',
+            },
+          ]
+        : []),
+      {
+        name: 'email',
+        label: t('Email', 'Courriel'),
+        type: 'email',
+        required: true,
+        min: 3,
+        max: 254,
+        autocomplete: 'email',
+      },
+      {
+        name: 'phone',
+        label: t('Phone (optional)', 'Téléphone (facultatif)'),
+        type: 'tel',
+        required: false,
+        min: 5,
+        max: 40,
+        autocomplete: 'tel',
+      },
+    ];
+    return (
+      <details class="rfq-choice" open={commercial} data-audience={audience}>
+        <summary>
+          <span>
+            {commercial
+              ? t('Business & organisation', 'Entreprise et organisation')
+              : t('Home & family', 'Résidence et famille')}
+          </span>
+          <span class="rfq-summary-note">
+            {commercial
+              ? t(
+                  'Equipment, services & multiple locations',
+                  'Équipement, services et plusieurs lieux',
+                )
+              : t(
+                  'A simpler enquiry for your home',
+                  'Une demande simple pour votre résidence',
+                )}
+          </span>
+        </summary>
+        <form
+          action={formEndpoint}
+          method="POST"
+          enctype="multipart/form-data"
+          data-rfq
+          data-lang={lang}
+          id={id('form')}
+        >
+          <input type="hidden" name="audience" value={audience} />
+          <input type="hidden" name="_language" value={lang} />
+          <input type="hidden" name="locale" value={lang} />
+          <input
+            type="hidden"
+            name="_subject"
+            value={`Defibrillators.ca | ${audience} | ${lang}`}
+          />
+          <input type="hidden" name="consent_version" value={consentVersion} />
+          <input type="hidden" name="consent_text" value={consentText[lang]} />
+          <input
+            type="hidden"
+            name="source_page"
+            value={pathFor('quote', lang)}
+          />
+          <input type="hidden" name="request_id" value="" />
+          <div class="rfq-trap" aria-hidden="true">
+            <label for={id('website')}>
+              {t('Leave this field empty', 'Laissez ce champ vide')}
+            </label>
+            <input
+              id={id('website')}
+              name="_gotcha"
+              tabindex="-1"
+              autocomplete="off"
+            />
+          </div>
+          <div
+            class="rfq-status"
+            data-status
+            role="status"
+            tabindex="-1"
+            hidden
+          ></div>
+          <div
+            class="rfq-errors"
+            data-errors
+            role="alert"
+            tabindex="-1"
+            hidden
+          ></div>
+          <fieldset>
+            <legend>{t('Contact details', 'Coordonnées')}</legend>
+            <div class="rfq-grid">
+              {fields.map((field) => (
+                <div class="rfq-field">
+                  <label for={id(field.name)}>
+                    {field.label}
+                    {field.required && ' *'}
+                  </label>
+                  <input
+                    id={id(field.name)}
+                    name={field.name}
+                    type={field.type as 'text' | 'email' | 'tel'}
+                    required={field.required}
+                    minlength={field.min}
+                    maxlength={field.max}
+                    autocomplete={field.autocomplete}
+                    aria-describedby={id(`${field.name}-error`)}
+                  />
+                  <span
+                    class="field-error"
+                    id={id(`${field.name}-error`)}
+                    data-error={field.name}
+                  ></span>
+                </div>
+              ))}
+              <div class="rfq-field">
+                <label for={id('province')}>
+                  {t('Province / territory', 'Province / territoire')} *
+                </label>
+                <select
+                  id={id('province')}
+                  name="province"
+                  required
+                  aria-describedby={id('province-error')}
+                >
+                  <option value="">
+                    {t(
+                      'Select a province or territory',
+                      'Choisir une province ou un territoire',
+                    )}
+                  </option>
+                  {provinces.map((p) => (
+                    <option value={p}>{p}</option>
+                  ))}
+                </select>
+                <span
+                  class="field-error"
+                  id={id('province-error')}
+                  data-error="province"
+                ></span>
+              </div>
+              {commercial && (
+                <div class="rfq-field rfq-wide">
+                  <label for={id('locations')}>
+                    {t(
+                      'Delivery / service locations',
+                      'Lieux de livraison / de service',
+                    )}{' '}
+                    *
+                  </label>
+                  <textarea
+                    id={id('locations')}
+                    name="locations"
+                    required
+                    minlength="2"
+                    maxlength="1000"
+                    rows="2"
+                    aria-describedby={id('locations-error')}
+                  ></textarea>
+                  <span
+                    class="field-error"
+                    id={id('locations-error')}
+                    data-error="locations"
+                  ></span>
+                </div>
+              )}
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>
+              {t('Equipment & support', 'Équipement et accompagnement')}
+            </legend>
+            <div class="rfq-grid">
+              <div class="rfq-field">
+                <label for={id('request_type')}>
+                  {t('Main request', 'Demande principale')} *
+                </label>
+                <select
+                  id={id('request_type')}
+                  name="request_type"
+                  required
+                  aria-describedby={id('request_type-error')}
+                >
+                  {requestTypes.map((value, i) => (
+                    <option value={value}>{requestLabels[lang][i]}</option>
+                  ))}
+                </select>
+                <span
+                  class="field-error"
+                  id={id('request_type-error')}
+                  data-error="request_type"
+                ></span>
+              </div>
+              <div class="rfq-field">
+                <label for={id('model')}>
+                  {t('Model of interest', 'Modèle souhaité')}
+                </label>
+                <select
+                  id={id('model')}
+                  name="model"
+                  aria-describedby={id('model-error')}
+                >
+                  <option value="discuss">
+                    {t('Help me choose / not sure', 'À discuter / incertain')}
+                  </option>
+                  <option value="zoll">ZOLL AED Plus</option>
+                  <option value="philips">Philips HeartStart HS1</option>
+                  <option value="other">
+                    {t(
+                      'Another model — describe below',
+                      'Autre modèle — préciser ci-dessous',
+                    )}
+                  </option>
+                </select>
+                <span
+                  class="field-error"
+                  id={id('model-error')}
+                  data-error="model"
+                ></span>
+              </div>
+              {commercial && (
+                <div class="rfq-field">
+                  <label for={id('quantity')}>
+                    {t('Quantity, if known', 'Quantité, si connue')}
+                  </label>
+                  <input
+                    id={id('quantity')}
+                    name="quantity"
+                    type="number"
+                    min="1"
+                    max="9999"
+                    step="1"
+                    inputmode="numeric"
+                    aria-describedby={id('quantity-error')}
+                  />
+                  <span
+                    class="field-error"
+                    id={id('quantity-error')}
+                    data-error="quantity"
+                  ></span>
+                </div>
+              )}
+              <div class="rfq-field">
+                <label for={id('installation')}>
+                  {t('Installation support', 'Aide à l’installation')}
+                </label>
+                <select id={id('installation')} name="installation">
+                  <option value="discuss">
+                    {t('To discuss', 'À discuter')}
+                  </option>
+                  <option value="yes">{t('Yes', 'Oui')}</option>
+                  <option value="no">{t('No', 'Non')}</option>
+                </select>
+                <span
+                  class="field-error"
+                  id={id('installation-error')}
+                  data-error="installation"
+                ></span>
+              </div>
+              <div class="rfq-field">
+                <label for={id('maintenance')}>
+                  {t('Maintenance needs', 'Besoins d’entretien')}
+                </label>
+                <select id={id('maintenance')} name="maintenance">
+                  {maintenanceTypes.map((value, i) => (
+                    <option value={value}>{maintenanceLabels[lang][i]}</option>
+                  ))}
+                </select>
+                <span
+                  class="field-error"
+                  id={id('maintenance-error')}
+                  data-error="maintenance"
+                ></span>
+              </div>
+              {commercial && (
+                <div class="rfq-field">
+                  <label for={id('renewal_reference')}>
+                    {t(
+                      'Existing plan reference (optional)',
+                      'Référence du plan existant (facultatif)',
+                    )}
+                  </label>
+                  <input
+                    id={id('renewal_reference')}
+                    name="renewal_reference"
+                    maxlength="100"
+                    aria-describedby={id('renewal_reference-error')}
+                  />
+                  <span
+                    class="field-error"
+                    id={id('renewal_reference-error')}
+                    data-error="renewal_reference"
+                  ></span>
+                </div>
+              )}
+              <div class="rfq-field rfq-wide">
+                <label for={id('message')}>
+                  {t('Tell us about your needs', 'Décrivez vos besoins')} *
+                </label>
+                <textarea
+                  id={id('message')}
+                  name="message"
+                  rows="5"
+                  required
+                  minlength="10"
+                  maxlength="4000"
+                  aria-describedby={`${id('message-hint')} ${id('message-error')}`}
+                ></textarea>
+                <small id={id('message-hint')}>
+                  {t(
+                    '10–4000 characters. Include other models, accessories, training or preferred timing.',
+                    '10 à 4000 caractères. Précisez les autres modèles, accessoires, la formation ou l’échéancier souhaité.',
+                  )}
+                </small>
+                <span
+                  class="field-error"
+                  id={id('message-error')}
+                  data-error="message"
+                ></span>
+              </div>
+              {commercial && (
+                <div class="rfq-field rfq-wide">
+                  <label for={id('attachment')}>
+                    {t(
+                      'Project document (optional)',
+                      'Document de projet (facultatif)',
+                    )}
+                  </label>
+                  <input
+                    id={id('attachment')}
+                    name="attachment"
+                    type="file"
+                    accept="application/pdf,image/jpeg,image/png,.pdf,.jpg,.jpeg,.png"
+                    aria-describedby={`${id('attachment-hint')} ${id('attachment-error')}`}
+                  />
+                  <small id={id('attachment-hint')}>
+                    {t(
+                      'One PDF, JPG or PNG, up to 2 MB. No medical, payment or sensitive personal information.',
+                      'Un PDF, JPG ou PNG de 2 Mo maximum. Aucun renseignement médical, de paiement ou personnel sensible.',
+                    )}
+                  </small>
+                  <span
+                    class="field-error"
+                    id={id('attachment-error')}
+                    data-error="attachment"
+                  ></span>
+                </div>
+              )}
+            </div>
+          </fieldset>
+          <div class="rfq-consent">
+            <label for={id('consent')}>
+              <input
+                type="checkbox"
+                name="consent"
+                id={id('consent')}
+                value="yes"
+                required
+                aria-describedby={id('consent-error')}
+              />
+              <span>{consentText[lang]} *</span>
+            </label>
+            <span
+              class="field-error"
+              id={id('consent-error')}
+              data-error="consent"
+            ></span>
+            <a href={pathFor('privacy', lang)}>
+              {t(
+                'Read our privacy notice',
+                'Lire notre avis de confidentialité',
+              )}
+            </a>
+          </div>
+          <p class="rfq-note">
+            {t(
+              'Sending a request does not place an order, reserve stock or enrol you in a maintenance plan. Any services and terms will be confirmed with you.',
+              'L’envoi ne constitue pas une commande, une réservation de stock ni une inscription à un plan d’entretien. Les services et modalités seront confirmés avec vous.',
+            )}
+          </p>
+          <button class="button" type="submit" data-submit>
+            {t('Send my request', 'Envoyer ma demande')}
+          </button>
+          <button class="button button-navy" type="button" data-native hidden>
+            {t('Continue with Formspree', 'Continuer sur Formspree')}
+          </button>
+          <noscript>
+            <p>
+              {t(
+                'You will continue to Formspree to finish sending your request.',
+                'Vous poursuivrez sur Formspree pour terminer l’envoi de votre demande.',
+              )}
+            </p>
+          </noscript>
+        </form>
+      </details>
+    );
+  })}
+</section>
+<script>
+  import '../scripts/rfq-form';
+</script>

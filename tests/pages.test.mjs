@@ -85,7 +85,13 @@ for (const [file, $] of all) {
       0,
       'no fabricated product offers or ratings',
     );
-    assert.equal($('form').length, 0, 'no unconfigured enquiry form');
+    assert.equal(
+      $('form').length,
+      /request-quote|demander-soumission/.test(relative) ? 2 : 0,
+    );
+    $('form').each((_, el) =>
+      assert.equal($(el).attr('action'), 'https://formspree.io/f/maeezonn'),
+    );
   });
 }
 test('Phase 1B route coverage and unique metadata', () => {
@@ -246,29 +252,21 @@ test('Comparison exposes row and column headings and a keyboard-scrollable regio
     );
   }
 });
-test('Enquiry email links preserve model and audience context without transmitting data', () => {
-  for (const [lang, quotePath] of [
-    ['en', 'request-quote'],
-    ['fr', 'demander-soumission'],
-  ]) {
-    const $ = htmlAt(`/${lang}/${quotePath}/`);
-    const links = $('.quote-options a')
-      .toArray()
-      .map((el) => new URL($(el).attr('href')));
-    assert.equal(links.length, 2);
-    assert.notEqual(
-      links[0].searchParams.get('subject'),
-      links[1].searchParams.get('subject'),
-    );
-    for (const url of links) {
-      assert.equal(url.pathname, 'info@defibrillators.ca');
-      assert.ok(url.searchParams.get('body').includes('\n'));
-    }
-  }
+test('Contextual RFQ links preserve product and service identity', () => {
   const product = htmlAt('/fr/defibrillateurs/zoll-aed-plus/');
-  assert.match(
-    decodeURIComponent(product('.enquiry-actions .button').attr('href')),
-    /ZOLL AED Plus/,
+  const url = new URL(
+    product('.enquiry-actions .button').attr('href'),
+    'https://defibrillators.ca',
+  );
+  assert.equal(url.pathname, '/fr/demander-soumission/');
+  assert.equal(url.searchParams.get('model'), 'zoll');
+  const service = htmlAt('/en/maintenance/');
+  assert.equal(
+    new URL(
+      service('.enquiry-actions .button').attr('href'),
+      'https://defibrillators.ca',
+    ).searchParams.get('request'),
+    'maintenance',
   );
 });
 test('Service pages use four distinct relevant photographs', () => {

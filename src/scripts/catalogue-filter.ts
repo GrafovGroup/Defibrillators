@@ -9,9 +9,17 @@ export function matchesProduct(
   manufacturer: string,
   query: string,
   brand: string,
+  metadata: { environments: string[]; type: string } = {
+    environments: [],
+    type: '',
+  },
+  environment = '',
+  type = '',
 ): boolean {
   return (
     (!brand || manufacturer === brand) &&
+    (!environment || metadata.environments.includes(environment)) &&
+    (!type || metadata.type === type) &&
     normalize(query)
       .split(/\s+/)
       .every((word) => normalize(searchText).includes(word))

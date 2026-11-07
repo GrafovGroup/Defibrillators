@@ -1,6 +1,6 @@
 # Defibrillators.ca
 
-Phase 0, Phase 1A and Phase 1B implementation of `MASTER_PROMPT.md`: bilingual homepages and core product, accessory, service, industry and information pages using the approved modern wordmark and design system. Static Astro output for conventional hosting, with no production Node process.
+Phase 0, Phase 1A, Phase 1B and Phase 2 implementation of `MASTER_PROMPT.md`: bilingual homepages and core product, accessory, service, industry and information pages using the approved modern wordmark and design system. Static Astro output for conventional hosting, with no production Node process.
 
 ## Development
 
@@ -22,9 +22,9 @@ pnpm preview
 - Catalogue, two manufacturer reference profiles and comparison; five accessory categories; four service pages and a service hub; nine industry pages and an industry hub; resources, buying/readiness guides, about, contact, quote enquiries, FAQs, privacy, terms and accessibility.
 - `/404.html`: bilingual not-found page. Configure the host to return this with HTTP 404.
 
-Navigation, homepage cards and related links reach the localized pages. The language switch retains page identity. The catalogue supports accessible search and manufacturer filtering, with both profiles available without JavaScript. See `docs/ROUTES.md` for the complete route pairs.
+Navigation, homepage cards and related links reach the localized pages. The language switch retains page identity. The catalogue supports accessible search, manufacturer, environment-verification and product-type filtering, with both profiles available without JavaScript. See `docs/ROUTES.md` for the complete route pairs.
 
-Product profiles contain manufacturer reference information, not confirmed inventory. Exact Canadian licensing, supply, price, included items and warranty remain unverified. Quote pages offer separate commercial/residential email-app links. There is no submission backend, checkout, tracking, cookie storage or claimed email delivery in this phase.
+Product profiles contain manufacturer reference information, not confirmed inventory. Exact Canadian licensing, supply, price, included items and warranty remain unverified. Quote pages provide separate bilingual commercial and residential forms using the owner-supplied Formspree endpoint. Native HTML POST is progressively enhanced with Vanilla JavaScript for localized errors and success feedback. No React, private API key or production Node server is needed. There is no checkout, analytics or client-side storage of enquiry data.
 
 ## Source map
 
@@ -43,7 +43,7 @@ Product profiles contain manufacturer reference information, not confirmed inven
 
 ## Static hosting handoff
 
-`pnpm build` generates `dist/`. Its contents can be uploaded to a cPanel document root or staging subdirectory configured as the site's root. No adapter, database, worker or persistent Node process is required. Verify WHC access, document root, HTTPS, host redirects and 404 handling in Phase 5. No deployment has been performed.
+`pnpm build` generates `dist/`, including Apache security headers, canonical HTTPS redirects and the custom 404 configuration. Inline script hashes are generated from the actual build. Its contents can be uploaded to a cPanel document root or staging subdirectory configured as the site's root. No adapter, database, worker or persistent Node process is required. Verify WHC access, document root, HTTPS, host redirects and 404 handling in Phase 5. See `docs/PHASE-2.md` and `docs/WHC-DEPLOYMENT.md` for integration and hosting verification.
 
 **This is a prelaunch implementation.** Robots and page metadata intentionally prevent indexing. Remove both guards only after launch approval and the documented supplier/regulatory checks. Phase 5 must configure the secondary domain's permanent redirect, canonical host/HTTPS redirects, cache headers, security headers, custom 404, and XML sitemap/indexing. A root language selector preserves equal access to French and English.
 
@@ -55,4 +55,4 @@ To regenerate logos on a Mac with the licensed system fonts: `node scripts/gener
 
 ## Remaining phases
 
-Phase 2: supplier-backed product data, expanded filtering, secure RFQs, consent/anti-spam and tested delivery. Phase 3: substantive location architecture and expanded SEO. Phase 4: full site QA. Phase 5: verified hosting deployment. See the audit for inputs required before these phases or public launch.
+Supplier verification remains required before model recommendations or sales. Phase 3: substantive location architecture and expanded SEO. Phase 4: full site QA. Phase 5: verified hosting deployment. See the audit for inputs required before these phases or public launch.

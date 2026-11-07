@@ -1,25 +1,21 @@
 ---
 import { contact, type Locale } from '../data/content';
+import { enquiryPath } from '../lib/enquiry';
+import type { PageId } from '../data/routes';
 interface Props {
   lang: Locale;
   subject?: string;
   quote?: boolean;
+  pageId?: PageId;
 }
-const { lang, subject, quote = false } = Astro.props;
-const email = (topic: string, body?: string) =>
-  `mailto:${contact.email}?subject=${encodeURIComponent(topic)}${body ? '&body=' + encodeURIComponent(body) : ''}`;
-const commercial =
-  lang === 'en'
-    ? 'Commercial AED quote request'
-    : 'Soumission de DEA — organisation';
-const residential =
-  lang === 'en'
-    ? 'Residential AED quote request'
-    : 'Soumission de DEA — résidence';
-const body =
-  lang === 'en'
-    ? 'Name / organisation:\nProvince / locations:\nEquipment and quantities:\nInstallation, checks or training needs:\nPreferred contact method:\n'
-    : 'Nom / organisation :\nProvince / emplacements :\nÉquipement et quantités :\nInstallation, vérifications ou formation :\nMoyen de communication préféré :\n';
+const { lang, subject, quote = false, pageId = 'contact' } = Astro.props;
+const service = [
+  'installation',
+  'maintenance',
+  'programs',
+  'training',
+  'services',
+].includes(pageId);
 ---
 
 <div class="enquiry-actions" id="contact">
@@ -30,45 +26,30 @@ const body =
   </h2>
   <p>
     {lang === 'en'
-      ? 'Use email or call us directly.'
-      : 'Écrivez-nous ou appelez-nous directement.'}
+      ? 'Send a request or contact us directly.'
+      : 'Envoyez une demande ou joignez-nous directement.'}
   </p>
-  {quote ? (
-    <div class="quote-options">
-      <a class="button" href={email(commercial, body)}>
-        {lang === 'en'
-          ? 'Email a commercial enquiry'
-          : 'Demande pour une organisation'}
-      </a>
-      <a
-        class="button button-navy"
-        href={email(
-          residential,
-          lang === 'en'
-            ? 'Name:\nProvince:\nEquipment questions:\nPreferred contact method:\n'
-            : 'Nom :\nProvince :\nQuestions sur l’équipement :\nMoyen de communication préféré :\n',
-        )}
-      >
-        {lang === 'en' ? 'Email a home enquiry' : 'Demande pour une résidence'}
-      </a>
-    </div>
-  ) : (
-    <a
-      class="button"
-      href={email(
-        subject ??
-          (lang === 'en' ? 'AED enquiry' : 'Demande de renseignements — DEA'),
-      )}
-    >
-      {lang === 'en'
-        ? 'Email your enquiry'
-        : 'Envoyer une demande par courriel'}
+  {!quote && (
+    <a class="button" href={enquiryPath(pageId, lang)}>
+      {service
+        ? lang === 'en'
+          ? 'Request a service'
+          : 'Demander un service'
+        : lang === 'en'
+          ? 'Ask about this equipment'
+          : 'Se renseigner sur cet équipement'}
     </a>
   )}
+  <a
+    class="text-link"
+    href={`mailto:${contact.email}?subject=${encodeURIComponent(subject ?? (lang === 'en' ? 'AED enquiry' : 'Demande — DEA'))}`}
+  >
+    {lang === 'en' ? 'Email your enquiry' : 'Envoyer une demande par courriel'}
+  </a>
   <p class="email-hint">
     {lang === 'en'
-      ? 'Opens your email app. Nothing is submitted through this website.'
-      : 'Ouvre votre application de courriel. Aucun renseignement n’est transmis par ce site.'}
+      ? 'The email link opens your email app.'
+      : 'Le lien de courriel ouvre votre application de messagerie.'}
   </p>
   <a class="contact-phone" href={contact.tel}>
     {contact.phone}

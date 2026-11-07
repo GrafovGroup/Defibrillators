@@ -13,8 +13,37 @@ export interface ProductReference {
   price: null;
   warranty: null;
   related: PageId[];
+  productType: 'aed' | 'accessory';
+  environments: ('indoor' | 'outdoor' | 'unverified')[];
+  intendedSettings: Localized<string>;
+  description: Localized<string>;
+  specifications: {
+    label: Localized<string>;
+    value: Localized<string>;
+    sourceUrl: string;
+  }[];
+  includedComponents: string[] | null;
+  compatibility: {
+    pads: Localized<string>;
+    batteryPartNumber: string | null;
+    status: 'configuration-review-required';
+  };
+  canadianLicence: {
+    status: 'unverified';
+    licenceNumber: string | null;
+    deviceIdentifier: string | null;
+    checkedAt: string | null;
+  };
+  quoteOnly: boolean;
+  imageProvenance: {
+    sourceUrl: string;
+    author: string;
+    licence: string;
+    licenceUrl: string;
+    exactSuppliedConfiguration: false;
+  };
 }
-export const products: ProductReference[] = [
+const references = [
   {
     id: 'zoll',
     manufacturer: 'ZOLL',
@@ -64,3 +93,57 @@ export const products: ProductReference[] = [
     related: ['pads', 'batteries'],
   },
 ];
+
+export const products: ProductReference[] = references.map((reference) => ({
+  ...reference,
+  id: reference.id as ProductReference['id'],
+  image: reference.image as ProductReference['image'],
+  related: reference.related as PageId[],
+  licensing: 'unverified',
+  availability: 'unconfirmed',
+  productType: 'aed',
+  environments: ['unverified'],
+  intendedSettings: {
+    en: 'The intended location and exact Canadian configuration require review before a recommendation.',
+    fr: 'L’emplacement prévu et la configuration canadienne exacte doivent être examinés avant toute recommandation.',
+  },
+  description: reference.guidance,
+  specifications: [
+    {
+      label: { en: 'Responder guidance', fr: 'Guidage du secouriste' },
+      value: reference.guidance,
+      sourceUrl: reference.source.url,
+    },
+  ],
+  includedComponents: null,
+  compatibility: {
+    pads: reference.electrodes,
+    batteryPartNumber: null,
+    status: 'configuration-review-required',
+  },
+  canadianLicence: {
+    status: 'unverified',
+    licenceNumber: null,
+    deviceIdentifier: null,
+    checkedAt: null,
+  },
+  quoteOnly: true,
+  imageProvenance:
+    reference.id === 'zoll'
+      ? {
+          sourceUrl:
+            'https://commons.wikimedia.org/wiki/File:Zoll_AED_Plus_units.png',
+          author: 'Taylor Montgomery',
+          licence: 'CC BY-SA 4.0',
+          licenceUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+          exactSuppliedConfiguration: false,
+        }
+      : {
+          sourceUrl:
+            'https://commons.wikimedia.org/wiki/File:PhilipsAED-ZRS.jpg',
+          author: 'GoTheMean / Wikimedia Commons',
+          licence: 'CC0 1.0',
+          licenceUrl: 'https://creativecommons.org/publicdomain/zero/1.0/',
+          exactSuppliedConfiguration: false,
+        },
+}));

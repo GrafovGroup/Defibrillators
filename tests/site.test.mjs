@@ -37,7 +37,9 @@ for (const page of pages) {
         'unnamed link',
       );
       if (/^(https?:|mailto:|tel:)/.test(href)) return;
-      const [pathname, hash] = href.split('#');
+      const destination = new URL(href, `https://defibrillators.ca/${page}`);
+      const pathname = href.startsWith('#') ? '' : destination.pathname;
+      const hash = destination.hash.slice(1);
       let target = pathname ? path.join(root, pathname) : path.join(root, page);
       if (pathname.endsWith('/')) target = path.join(target, 'index.html');
       assert.ok(fs.existsSync(target), `missing route ${href}`);
