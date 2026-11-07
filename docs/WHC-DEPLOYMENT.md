@@ -32,7 +32,7 @@ To roll back, extract the chosen complete archive in a private staging directory
 
 Check that `/` and `/index.html` redirect directly to `/en/` with query strings preserved. Check both homepages and their header language switch, a model page, services, location guides, new planning routes, assets and a genuine HTTP 404. Verify HTTPS, canonical host/path redirects, reciprocal language links and security headers using the deployed response, not only the local files.
 
-Exercise model filtering, comparison, parts-to-quote navigation, package selection, language switching and the optional replacement/training fields. Make an explicitly labelled synthetic form submission only when authorized for the deployment check, then verify its receipt and routing in the configured provider. Check bilingual validation, consent, uploads and hosted anti-spam fallback. Do not claim notification delivery from a browser success message alone.
+Exercise model filtering, comparison, parts-to-quote navigation, package selection, language switching and the optional replacement/training fields. Make an explicitly labelled synthetic form submission only when authorized for the deployment check, then verify its receipt and routing in the configured provider. Check bilingual validation, the short privacy notice, uploads and hosted anti-spam fallback. Do not claim notification delivery from a browser success message alone.
 
 ## Indexing configuration
 

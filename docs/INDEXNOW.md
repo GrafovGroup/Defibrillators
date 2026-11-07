@@ -27,7 +27,7 @@ Submission is not tied to page views, builds, tests or a source push, because th
 - **Network/5xx failure:** baseline stays unchanged. Diagnose before retrying. If the request reached the provider but its response was lost, a later retry may repeat the notification; exactly-once delivery across a network failure cannot be guaranteed.
 - **Local state save fails after acceptance:** recover the reviewed receipt/state before retrying to avoid repeating a received batch.
 - **Stale lock:** confirm that no notifier process is running before removing `.release/indexnow.lock`.
-- **More than 10,000 changed URLs:** the command stops before submission. This site's current 234-page release fits one batch; add checkpointed batching before expanding past the protocol limit.
+- **More than 10,000 changed URLs:** the command stops before submission. This site's current 238-page release fits one batch; add checkpointed batching before expanding past the protocol limit.
 - **Rollback:** restore the chosen full release and matching policies, verify it, then run the same notifier using the last successful state. Do not reset the baseline just because a release was rolled back.
 
 ## Content and AEO improvements in this release

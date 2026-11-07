@@ -1,0 +1,114 @@
+{
+  "checkedAt": "2026-11-07T21:41:19.301230+00:00",
+  "sourceCommit": "8716a0fa1c752bca09e835ea5b2571d136215529",
+  "publicFilesChecked": 435,
+  "filesMatchingBuild": 435,
+  "htmlPoliciesMatchingBuild": 239,
+  "failures": [],
+  "redirects": [
+    {
+      "url": "https://defibrillators.ca/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/index.html?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/fr/index.html?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "http://defibrillators.ca/en/defibrillators/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/defibrillators/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://www.defibrillators.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillator.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "http://defibrillator.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/enquiry-not-a-page/",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    },
+    {
+      "url": "https://defibrillators.ca/.htaccess",
+      "status": 403,
+      "location": null,
+      "custom404": null
+    }
+  ],
+  "privateArchivesPubliclyAccessible": false,
+  "certificates": [
+    {
+      "host": "defibrillators.ca",
+      "valid": true,
+      "expires": "Feb  5 05:49:28 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "www.defibrillators.ca",
+      "valid": true,
+      "expires": "Feb  5 05:49:28 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "defibrillator.ca",
+      "valid": true,
+      "expires": "Feb  5 06:22:02 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "www.defibrillator.ca",
+      "valid": true,
+      "expires": "Feb  5 06:22:02 2027 GMT",
+      "issuer": "Let's Encrypt"
+    }
+  ],
+  "browser": {
+    "checkedAt": "2026-11-07T21:42:00.327Z",
+    "frenchProcurementSwitch": true,
+    "frenchGuideSources": 3,
+    "frenchGuidePrefillsProcurement": true,
+    "procurementFieldsVisible": true,
+    "multipleAttachments": "",
+    "endpoint": "https://formspree.io/f/maeezonn",
+    "productionSubmission": false,
+    "englishFormContext": true
+  },
+  "indexNow": {
+    "submittedAt": "2026-11-07T21:41:48.945Z",
+    "endpoint": "https://api.indexnow.org/indexnow",
+    "status": 200,
+    "submitted": 238,
+    "outcome": "received"
+  },
+  "changeCounts": {
+    "added": 4,
+    "updated": 234,
+    "removed": 0
+  }
+}

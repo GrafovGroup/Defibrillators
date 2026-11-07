@@ -3,11 +3,11 @@
   "origin": "https://defibrillators.ca",
   "indexable": true,
   "robotsSha256": "54ab782abff8659182d30eda33b9b0c57fcffeac8faaedab6fb4bed0d9ba12b0",
-  "sitemapSha256": "b25ebe78afc824325a4b0a8a4cdee8350a0af2d17cd5ca76256c41371f4fa08a",
+  "sitemapSha256": "23352f105ffbdcaefdb4b4067cb8a422456bc95ba89dfb02f065564394e14419",
   "pages": [
     {
       "url": "https://defibrillators.ca/en/",
-      "sha256": "c792bd1ead24ab3201df8b18f7f6990276ac24836288633174f7d696629f1795",
+      "sha256": "bf214f01328d0f3e379cd209ac9a66fe474785e592e57de3b37dbfb76c357037",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -70,11 +70,11 @@
           "sha256": "440f17b7db6f617340107b4c0a7cb59ddf388fc181bb2c0fad4daffe0e119832"
         }
       ],
-      "fingerprint": "25cd6849cfc0b08b7da19a2ab5af27a63e5a42819103e7e462f535418e3f7555"
+      "fingerprint": "f6f01baaab66d0c004d2d7c9b9358fea877a65b0b229b94b7ddbbecbdd6faccb"
     },
     {
       "url": "https://defibrillators.ca/en/about/",
-      "sha256": "51a45569fd13011b892470646dd32609588cbeb0449921dd5f3246dd8a66c6b9",
+      "sha256": "3e51e9806657d86f12364473702a251da347a38100f8fbdc2ef9d9b9c59e0bde",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -97,11 +97,11 @@
           "sha256": "5030ae21e708bb8733ea7fbc2764e5f29e4ad6ab08ecad09c91c3e0dc5aef7c3"
         }
       ],
-      "fingerprint": "955952bf44ee56a09f53ea993d8c7b84100d3b47d038e1465a23aa0302825de2"
+      "fingerprint": "4564d451e9c6f0418e6e9ee07d45771756ff1f73188f43faf851939b67848bd0"
     },
     {
       "url": "https://defibrillators.ca/en/accessibility/",
-      "sha256": "57e50fc93f7211d9c8a32a1b21aff607bccccdbb3052b9340feb7d041d350996",
+      "sha256": "1dbfedaf998d61ba13993b1bebb974e40c4b6452a5c98808ecd00b9263f5f14d",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -112,11 +112,11 @@
           "sha256": "bc4ca98af0ef05fbeda6e6e308cebd26b38e552ea8457df6ec89120ebcfd00f5"
         }
       ],
-      "fingerprint": "06d315247e173846f51f3bb3e5aa72d348960b3a0cb2adbc083f6d44c482a87a"
+      "fingerprint": "32844208218ee1ce4625aa4ae558461d97389ace74fc56f28173a5cbe3a4a2a0"
     },
     {
       "url": "https://defibrillators.ca/en/accessories/",
-      "sha256": "cea957a3c803e42f2b3e276d6fe94dc022fd3f1ffbe0d5f065f7314da5f5da95",
+      "sha256": "fec1ed6f63256ab2026ef54c95800e77d978197b454291232c27019aa7e5fd4d",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -231,11 +231,11 @@
           "sha256": "19380152d4e3f6346ef0ac405978034ebda06c55017add9acd3862cbdd3a82d6"
         }
       ],
-      "fingerprint": "e4c25364d4f0dee73f94d9a6746530eaa957db5de74973b064ab0de52404f1fc"
+      "fingerprint": "62dc0a41db83cdc5cbad7871615d4410a0c5b4fd6cd8f8cf441c2871a6075ed9"
     },
     {
       "url": "https://defibrillators.ca/en/accessories/adult-aed-pads/",
-      "sha256": "44f15a5a4ab843587fc4ccc8a10faf6fabbdc37e05d57454cb4667d2ef24dedf",
+      "sha256": "4eacee2898a87f58704f97b664927bfa5bda0bd3a659955f52c35bb62aba1408",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -258,11 +258,11 @@
           "sha256": "d16190c7e8526d250895e6b18db8caf9e90eb5cf62fae22d677a8fbafe6b55c0"
         }
       ],
-      "fingerprint": "58ddc4ab7231b5785ef89a787b0fc41fc3459c56abfb286a293c17f3e3b3ef8c"
+      "fingerprint": "40a1c2889683a13bd38410882dc9e208906cb70721b74e17068c43969ea5bd7c"
     },
     {
       "url": "https://defibrillators.ca/en/accessories/aed-carry-cases/",
-      "sha256": "9f0883b4958bcc41d47fb07dc8ec46f16c81ae13c2238bdfe2833de52dd2b398",
+      "sha256": "95f34c26d7ca7fb52d01ae1ba4664939f1d3adf36abc4750c03a1b5d67ba10d1",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -285,11 +285,11 @@
           "sha256": "96a826e29de843e9b23f1034e47bebbb7b53fb3b08db92d68c212b3280fc2968"
         }
       ],
-      "fingerprint": "5e7187786811e2fa81c167b714352cf0a27d55d84c6fb41eabb584f0be48a567"
+      "fingerprint": "82732fdb51696842e381e14151c1f67c63d8c798de7aad0607ae5320b5df376d"
     },
     {
       "url": "https://defibrillators.ca/en/accessories/aed-trainers/",
-      "sha256": "5f017a04f124a19a50f1725b3179bad319fa6eb9f4de2a1f4b050aeeb7ac0862",
+      "sha256": "a515c3071d59f49d8cf0a5d14d7df29ef056b72953529992a0c659885ad5a7ac",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -312,11 +312,11 @@
           "sha256": "19380152d4e3f6346ef0ac405978034ebda06c55017add9acd3862cbdd3a82d6"
         }
       ],
-      "fingerprint": "08c04fd5e5c993ccf9e134ec9ef2bc57e90a455b0ba75eebf0b35986716b985b"
+      "fingerprint": "a7c239e5dd4cfe49fc1058a932f5c4b64425b3131f78148fed9ded8c11d04b5b"
     },
     {
       "url": "https://defibrillators.ca/en/accessories/batteries/",
-      "sha256": "abdeb8c9a2972202d555dbfb97367a8506e87ebac4e0d739fc59128c2a19e4e1",
+      "sha256": "755e55d24350b2a16e2c2a5de92222df5e3a3e14cc8d806c35555917f061fc5d",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -351,11 +351,11 @@
           "sha256": "3a042f584a1e2d952e2d73eb25e2aa09c3d6a863f46ceed56017eaf632fc05a3"
         }
       ],
-      "fingerprint": "bc80f51cc4c1fa19272dfb6e871f570dae20c8983d3da6ace3ca37be0c80bd67"
+      "fingerprint": "d7f909e824c3d97903f3d5c740a7e96cbabde294c2d78d8f5012ca6446cde81d"
     },
     {
       "url": "https://defibrillators.ca/en/accessories/cabinets/",
-      "sha256": "af7b3368f6502669b5d946659f3f86899aff4296ddd9bea16e8185efa6184a05",
+      "sha256": "b1819b0d28aac67971baa4e611968622df1a74efc80a3570a0870dddea009b4c",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -390,11 +390,11 @@
           "sha256": "09a6d2af51c571185cfc49cf01ad0cb3616946a5cc3c0ac12dad5ba8b6bffc1a"
         }
       ],
-      "fingerprint": "fdfba3559f4e327767864ddb3d885870117889f10c361ff7d1f4f29b120b06c5"
+      "fingerprint": "2b05e9bf09f823839b97677f6cb0c77ebbb1eb7e463ceca1784d4ae0a6851967"
     },
     {
       "url": "https://defibrillators.ca/en/accessories/combined-pad-battery-packs/",
-      "sha256": "74fa51f16a17d0c237a3b0605035e0e72a17d4b4d42a41832a8d4dff819f0128",
+      "sha256": "9554b50e60fe7c54d2678a671ff40cadb3b10698e5b689e91dee18c9405e4b10",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -417,11 +417,11 @@
           "sha256": "3a042f584a1e2d952e2d73eb25e2aa09c3d6a863f46ceed56017eaf632fc05a3"
         }
       ],
-      "fingerprint": "edbf4800f7c3e335f15f77865c6d1474bb7ddfaca5c20bcf4788a9037c19ae57"
+      "fingerprint": "5516e20ed2230d7c8f1491c400be035a3d6f6b457a8f7becfd5c3fa21869c83b"
     },
     {
       "url": "https://defibrillators.ca/en/accessories/electrode-pads/",
-      "sha256": "dece05e73d7c2fbce9cca89bbace7f0ba863c20df21243bd979b4f6d9313045c",
+      "sha256": "4e02b5d0af666394bb71c9db7a8558c12eb0e48ee71b9125dcffae03a8109de3",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -464,11 +464,11 @@
           "sha256": "5444ae68dc6b46f20c760fa0cf331eeca29d265b85e336679b338aa6e308aa4c"
         }
       ],
-      "fingerprint": "fc431a7fc8ef0182fd269752f1dcd4908d582c0abcaacae8708171119c028e4c"
+      "fingerprint": "d60c049855d37e89a26be33f0a7d79da0d881ff4278c0dbfed325de4bb6ef58e"
     },
     {
       "url": "https://defibrillators.ca/en/accessories/emergency-response-kits/",
-      "sha256": "60572f83a9b6385ddb2944faa218023eb3f76e3b190f327b66e18697cb893de1",
+      "sha256": "6a6c095bc016989a91135f2061e9fafd4e4773f84f725288635409525f59f0b0",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -491,11 +491,11 @@
           "sha256": "d163e0018f6b358c50bed7e7abea157d4e28cd78a7b729d90c44e3766b329741"
         }
       ],
-      "fingerprint": "20ffd3e06d1410aea87bf4333dfca2a6d168015bc18a75408e35c6e18d79ef91"
+      "fingerprint": "f2914b94237aa3babdb262f4bfaefce64178e629db225c6afc6c37d1a8eebac0"
     },
     {
       "url": "https://defibrillators.ca/en/accessories/find-parts/",
-      "sha256": "72fad2d780f8c37816964638972fd57bb61b12ad14ff08f5db039a4667cdb242",
+      "sha256": "9f8538915c8a82bf6735b9107f443c4f17bfbbb73ddb3e671b82bc06f04df3c3",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -518,11 +518,11 @@
           "sha256": "85a4e06957fd05c546ed59624d27e673cca7aa0c353880d675f4ab05c6f078a4"
         }
       ],
-      "fingerprint": "15737cf768bff589a22484c2013edc86f979116dbcf6a65e95b57c67a59e7f48"
+      "fingerprint": "b402c1dd06bebba83a2c1dd58a2ad217cf7beee55d15e93c7c1fb98384c1c7b9"
     },
     {
       "url": "https://defibrillators.ca/en/accessories/outdoor-aed-cabinets/",
-      "sha256": "496546174aa15d7e944714dfec83136ec393844d03ce30607a8f23d45828b198",
+      "sha256": "7c862bdcc876cf527fe9baacd47f667a15a5d61452aa36e233881c0183c2e89a",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -545,11 +545,11 @@
           "sha256": "09a6d2af51c571185cfc49cf01ad0cb3616946a5cc3c0ac12dad5ba8b6bffc1a"
         }
       ],
-      "fingerprint": "3ce1bba5b0160b7f0754ec7c850a93cebbcd8d478ab50dab42872dd882aa4906"
+      "fingerprint": "bb814eef30c845f2539404f2ed9187e658229dc9188529da6af2c5cb0d01ff35"
     },
     {
       "url": "https://defibrillators.ca/en/accessories/paediatric-aed-pads-keys/",
-      "sha256": "9f1fd1643ecd9cc1cd038c65cb680ca6e66e1400ce8f805d1901a830a3164945",
+      "sha256": "82de65c461c13987b8a487145d9d6ec080d75c9945d7aa0b87108ea2b1355f0a",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -572,11 +572,11 @@
           "sha256": "5444ae68dc6b46f20c760fa0cf331eeca29d265b85e336679b338aa6e308aa4c"
         }
       ],
-      "fingerprint": "7eb56276609f8177d4b1aaf036f7cb8aea13c365b955c40f235f6986e5c1173b"
+      "fingerprint": "0892a0dd4e47daffef723afbc0888e21c69252f67b6a7f17df11f0942312d797"
     },
     {
       "url": "https://defibrillators.ca/en/accessories/signage/",
-      "sha256": "e6488d277b01f9c6046e5a0da1a5e5488d8bfc5ef01236985f1baef8f13f3655",
+      "sha256": "d2b45d21ceb0c6cb1d26b788c1060b58c70b48668936c2da1c70ade8d20d20e5",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -599,11 +599,11 @@
           "sha256": "41b43fea7881c6ceb21fe6b26d29a25e70edddf6dd60d17d34ae5b2cada76ce7"
         }
       ],
-      "fingerprint": "32f84c6d0108c34d5591ce9599d4c6cccbf7e46542e0af86154054da874fa0c7"
+      "fingerprint": "f5c956411d575a9e5a01f1d900098b30ff8ee5ad45854013c5ac3f805914a26d"
     },
     {
       "url": "https://defibrillators.ca/en/aed-programs/",
-      "sha256": "ccf23433b80040e28f036df86dd0dbb66c80b0496fa60c3d8c11b9d02f02a396",
+      "sha256": "8327930cc38c00fbc3b96f2869407a8c672c8ec414bc9f926a067ff18f688bf3",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -650,11 +650,11 @@
           "sha256": "ca5064dfb3b34af6e0cc406e62a0b47f45e3c612883457108690c24568c7ce12"
         }
       ],
-      "fingerprint": "9cfec23ac4140d96c5d5dca8de2c0d955e0fbf159d11c740995e47ecb2cb222d"
+      "fingerprint": "82764d26baa3bfce20085268d90ba92fb28bbb7fb5cb5223e5e8b1dff056abf3"
     },
     {
       "url": "https://defibrillators.ca/en/contact/",
-      "sha256": "74375c81347e0703f4fa167fb16a0f754efbceb16bc409866e49e79e44dc991e",
+      "sha256": "7ce0e53e0548659d417bd4cfa04a015b3ac8ca4fb6ab9c7fb4ea9fc9b9b890e4",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -665,11 +665,11 @@
           "sha256": "bc4ca98af0ef05fbeda6e6e308cebd26b38e552ea8457df6ec89120ebcfd00f5"
         }
       ],
-      "fingerprint": "8759f1846e6afe082d6d92c79ebdfcc7229c27719a04cd1cae95be6114006631"
+      "fingerprint": "00cdd78c7416132f7ec6b21e1e647e53ac968d6751eea24b02457c055227358f"
     },
     {
       "url": "https://defibrillators.ca/en/cpr-aed-training/",
-      "sha256": "3cf54d541fbdf8f54113e8421d7657e1add02fcfbfadcbb7d37859af043f6803",
+      "sha256": "735c6cb9e6dc96c73e6435895828b6389836ad421fd5df167f7c4f83b1d81693",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -692,11 +692,11 @@
           "sha256": "4cf7abbb75220589080e2a9e670198f89abd6aeafd1e05813ed12846d13e4dd9"
         }
       ],
-      "fingerprint": "d07d5b3f98990d6e7abcbde6963af40f6868154842ec02b3bd663614adc602b6"
+      "fingerprint": "a8490262060f4748a9e12e441554516432596279e520e43672994430a10ac18a"
     },
     {
       "url": "https://defibrillators.ca/en/defibrillators/",
-      "sha256": "0e8f9356047ed89064d98e5d7b9e4a05652f61371936654fc6e05626fdf5e4e1",
+      "sha256": "1228d9a4304d84a1df0d0929340af7109d37a2dff4c4e5510f753bf3f2a863c1",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -807,11 +807,11 @@
           "sha256": "912cb8fafefe1aaa3ab96bf6ff1e14e21398b80bed857637ef9871cd8362985a"
         }
       ],
-      "fingerprint": "88e2d6837367b410d45aeed198b3671f0efe8008bdb0bafacf552489dbb785be"
+      "fingerprint": "041a625767aeb68520981421cd910c06d55afe0b62a4521a117f98b792c7e9b5"
     },
     {
       "url": "https://defibrillators.ca/en/defibrillators/compare/",
-      "sha256": "4d926ffee8439ad089d0a6ad06d49a1ec7d3e178daeea191e23af626b3525dbc",
+      "sha256": "fde9334d3d6977c9eb04bbf4f806538a1eec4a2f2705931dc00e54259309b250",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -834,11 +834,11 @@
           "sha256": "d544d5e1701d6a6b3dc9ced60cef3c09604e561d29c6c37571d745a51dc4b813"
         }
       ],
-      "fingerprint": "69f2e3b43fdce90e4321b6b384992f9d10549322efaab8fc4ec56187b9629c89"
+      "fingerprint": "789f27735fe69b7fb41df361994d5b84123799fd277e37b5535ac7a76b8942fd"
     },
     {
       "url": "https://defibrillators.ca/en/defibrillators/defibtech-lifeline-view/",
-      "sha256": "be826d1b42f3b36027b8679335e599e4db5a74bee5977466344dd1bccca0438a",
+      "sha256": "e412352c4c4bb1f2d8e7969672c8057dc4ff2ba3523140bdc8803693a74b93de",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -857,11 +857,11 @@
           "sha256": "f7b94e6480a938970ef35269c803465361f8583e1e0fdc1ad8ffeb1c2bec8f7d"
         }
       ],
-      "fingerprint": "bf641bb676e8df960b09cd12887141a2a75083dac5207ab676be382723c656cd"
+      "fingerprint": "e67b8858dc7d807ad039234db53d0bbc9454859df85d2ff6b768e0daa55e2ee0"
     },
     {
       "url": "https://defibrillators.ca/en/defibrillators/heartsine-samaritan-350p/",
-      "sha256": "e36575f94c4683280c2fccc664437972a9886dce1bf10d5dfee7ea1dd148dbef",
+      "sha256": "70d68958bb63eeae96c94cdcfb91dd013a81ea97cab62b304acb7f2ea2f4d313",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -884,11 +884,11 @@
           "sha256": "adeba3cbd22fb48276ac8a66e2c5447a7f431e318f3eb788362caa25164c2a1c"
         }
       ],
-      "fingerprint": "81dc16d855051c0d49764b594584b3e6bfaf9c50bedcf107bee867a5a81eb524"
+      "fingerprint": "71a0f1ca1b01c866b7477e182e937a95e5152fc0cd4defbc91a28b06b8eaeea5"
     },
     {
       "url": "https://defibrillators.ca/en/defibrillators/lifepak-cr2/",
-      "sha256": "62be5593cca3ed9ffbf68919d0d2ae2026c1f6d526c507a141882bac009dec4e",
+      "sha256": "56d08ead7afe096642bc09675364bbe141d609594cf75e7894b8d37a413bd830",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -911,11 +911,11 @@
           "sha256": "547f6b3070e7c8c76556b58ac316df31ba15ab4d8d678635566b2c4a47847003"
         }
       ],
-      "fingerprint": "b091ddbf4cb407ed01e520318bdae61cf9b3c546734daf24480dfce5211b6887"
+      "fingerprint": "4ff73cbdbcbcc7542bb3bf943328e44cac5ab96a3b5bcba63a8f543495d58c38"
     },
     {
       "url": "https://defibrillators.ca/en/defibrillators/packages/",
-      "sha256": "549d308c993029a7f01bbf3ff017251f8c066ec806ce7934af2a0e08652d5c60",
+      "sha256": "c8a922f7624572dfa8a96a5e6efcc1dca66eab72bdc41f7be620321b777839b3",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -938,11 +938,11 @@
           "sha256": "90f55a05bf8833d7289f3d538ba800b8404326fcf6c9ef94bed9e933b29a280a"
         }
       ],
-      "fingerprint": "8843f7638effe3768575651c3f3d3a454a57f22dd5ee35a5224a3615b90a5232"
+      "fingerprint": "02630c206acf55d46ae162651ba7c05e2c9c524f2973418db423fcfd90ddcb71"
     },
     {
       "url": "https://defibrillators.ca/en/defibrillators/philips-heartstart-frx/",
-      "sha256": "88d5284dbee1979d5b765e616315643da2229fc9ed34c83eae14862c8cc31b1d",
+      "sha256": "7b6ec8d0ed6aeeee13c9dddc15311a6e7c3dc09745c63dce5f2ded3814f37050",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -965,11 +965,11 @@
           "sha256": "169a35d1b63ea4a33061f6fcaba16be258bdedb436f438b4cd8f61d1cc49ef4c"
         }
       ],
-      "fingerprint": "4b42711ed418cbf95c65e77191313e33e5337a0d41a90129f5c5c455e470319b"
+      "fingerprint": "0034659f53e55a424707b99a49191c225a98f7c185dd3a5ad0a4f5e22d295ab7"
     },
     {
       "url": "https://defibrillators.ca/en/defibrillators/philips-heartstart-hs1/",
-      "sha256": "7e353eba68c47a70e70de0f9d7ad64f6f061f8b67276b017ee0cba2302a7377d",
+      "sha256": "1c267da91587271aa606ca244ced4263a2d1ed5c04f959a43556abd9bf3de9a3",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -992,11 +992,11 @@
           "sha256": "74461d7d5ff4e1e66b5d4569215dd1a254ef0e3f8a48e7d2a2dad8495b2081c5"
         }
       ],
-      "fingerprint": "c46b9fe13925d3450e9b2f7fc728cc1a50382e012662cf8a4d0315c8f2074c72"
+      "fingerprint": "e0f26494f691890d03853b9b9f770c7bf0d427c15538b50fbb291f334c695b7f"
     },
     {
       "url": "https://defibrillators.ca/en/defibrillators/powerheart-g5/",
-      "sha256": "b8bef82b1031b375c781393844284b4915cba5d53ee40931c38de5b328ffc0ec",
+      "sha256": "38f0ea9b2f7e12140c73edf958b9ce0f1c476368bb76646377f73003d6709d6a",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1019,11 +1019,11 @@
           "sha256": "43c7a5020e9f85dd57fe73c2e34f437e2de9921bb69f4f18ffc1bfb3a6d21a7f"
         }
       ],
-      "fingerprint": "20ffea7c0717b720e7e46b6a66a822f5e8bd0b2a760e36cfb854876d1da65890"
+      "fingerprint": "913af714b44a6c14c3e7b6fcaed9f29b16c814d3cae5973038da4d242c92a5cd"
     },
     {
       "url": "https://defibrillators.ca/en/defibrillators/zoll-aed-3/",
-      "sha256": "7d332aa4fbef9f310d66df758e6e2e37d6c1bc8c59a8c99fc8be6c038473a75d",
+      "sha256": "a6fb798b1d3441ac87f4d129f0f14d79e60595a0f02eb98373da5347f23ca4a0",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1046,11 +1046,11 @@
           "sha256": "912cb8fafefe1aaa3ab96bf6ff1e14e21398b80bed857637ef9871cd8362985a"
         }
       ],
-      "fingerprint": "5276286265c776cb7bd3378f03a65f4561587fcd318259a06cb12f1fb47493c4"
+      "fingerprint": "74d261e67060976b4774d4937d5be3cbe5e232d238498c3d3b6b718226c39aae"
     },
     {
       "url": "https://defibrillators.ca/en/defibrillators/zoll-aed-plus/",
-      "sha256": "a371bbd4a8e084553269759a5e891580c958a3f7025bb66e5a800c95ea96a0ec",
+      "sha256": "d3337e50dd0fcacd61997b021c423aff595ada38cb76fef2ca534fd71efc1d51",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1069,11 +1069,11 @@
           "sha256": "699454803d9ceebb7e9b7126adb5c1991dd53d8d37db6c27f81e87759930d061"
         }
       ],
-      "fingerprint": "f22f4d96acb04f8413aba1c79586ae42767faea05d08ead5c15dbbb7739ef7f6"
+      "fingerprint": "4c32fefd05c575e8ccc55dd5af0e257c876a29f80dd1acaa4ca45b8c790bbcae"
     },
     {
       "url": "https://defibrillators.ca/en/faqs/",
-      "sha256": "9eae2663182d9f03acd82198234e4ffbf1f57dc37db85ab07b0cce67be3835e1",
+      "sha256": "c5eb84e9fc2977386bea1574809b933845f9f3b0b47a6015a7c5da06e4b234db",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1084,11 +1084,11 @@
           "sha256": "bc4ca98af0ef05fbeda6e6e308cebd26b38e552ea8457df6ec89120ebcfd00f5"
         }
       ],
-      "fingerprint": "fa55e431c192bd82b6d52ad987178d66c29346e87cee33ab94262f7c9edda0a9"
+      "fingerprint": "2ccbf59f00e38c868e206d66099197076a79f90456605a327bdf982c17a9f95d"
     },
     {
       "url": "https://defibrillators.ca/en/industries/",
-      "sha256": "b1c24ef146379890613cc8ff687af9dc3782ec8a2e09c1cb311a316a3d0e64ac",
+      "sha256": "e37801c26e3fbe48f0b64c2361a60eeeb28b831b0391ef4f7107752c0ae9ae0b",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1219,11 +1219,11 @@
           "sha256": "faee9da9ba73f53a24c9624972b605886975112adb4758ca65fb3e37964eba72"
         }
       ],
-      "fingerprint": "a2f504ef81687a42cb6a2d9fabe1c77614feb3bc47030ed113f0c68334c29a00"
+      "fingerprint": "3473636d8143052a5a898bcb1412db063d52024d01dd8efd5c334d085b681196"
     },
     {
       "url": "https://defibrillators.ca/en/industries/fitness-recreation/",
-      "sha256": "4e0e56514ad68973c9ab95f0b3c53c6df504eec3bdf9b0c8c7e1c30073d3082f",
+      "sha256": "4000a8d459b495cbf83f4f9ee77125e2a5b96466dd9fc42af0b46b01f61de932",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1246,11 +1246,11 @@
           "sha256": "b359c5539de8178e2c740a192b7b70159217c5c6a1338e2ac0181d5ec0c5fec9"
         }
       ],
-      "fingerprint": "48ebeb2b143e3a2cede761d99fd9663d32bcd0219af40615e2ce786201b8aead"
+      "fingerprint": "d5ec6fe08d492c59f3a5c8a99d49ae5fe73863d41eb879674044958c919ca8c3"
     },
     {
       "url": "https://defibrillators.ca/en/industries/hospitality/",
-      "sha256": "9d18b24f91424d699d2b5ff2806736e3c96a594c1b30b208645487b3593ef0ea",
+      "sha256": "58a463af7d1dab60f4e4c3bd73d390e473e9caa524cb81da1c5c29ca926291eb",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1273,11 +1273,11 @@
           "sha256": "fc85e82e63d6429dd361f624efe1f2430d508eff8313896fb096f593850a90a5"
         }
       ],
-      "fingerprint": "98d3ee80c898da20715562d23c3639e08ee7447967e0cb357a58edb392acfa91"
+      "fingerprint": "b383449ea2fc5bcb658fd7d4bca75e926100012eac17f9e016c170741104a51d"
     },
     {
       "url": "https://defibrillators.ca/en/industries/industrial-warehouses/",
-      "sha256": "3435550966b13e65276f9ec65e0a3a4f1348c749c94c68b3dc6ac74d10e266a9",
+      "sha256": "c272dd88eb27110ff6663817ad612ae90c3bbadc24cdee5f1e784c00162f292f",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1300,11 +1300,11 @@
           "sha256": "8658dd347a9fca21e8b13946583473c1f73e2010aeb26aed58ca9f26755d9c7b"
         }
       ],
-      "fingerprint": "d729732caaf35f04411f08ab9975572f3e860907658338bf65f0b53c9e15026b"
+      "fingerprint": "9a29a58f81ea1b34a2a9e5b69154a0a958dd7e468646c49f14732260ddf1fcfc"
     },
     {
       "url": "https://defibrillators.ca/en/industries/municipalities/",
-      "sha256": "cab9b8cdafb082fb28871717e797fb54403e55a0a3d98cfb604c07363fef3b26",
+      "sha256": "6615b71c6eeabcea272e87a3bc56917688940ecdff7c6c7066d9518d43a2efee",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1327,11 +1327,11 @@
           "sha256": "44123d5ff114c5beabb359db15db87c22170eba4f131492fdcfca4c046cc7962"
         }
       ],
-      "fingerprint": "db0f90028223c2f613fe02288afc00cf80219d7c4c92db99175ac12b358326bc"
+      "fingerprint": "b581d61b6ece3369119f897b90b22667c28d9c24cb28f1fd9bb771cccb6c771c"
     },
     {
       "url": "https://defibrillators.ca/en/industries/offices/",
-      "sha256": "1333616be312cb6a15e48864841e695a69663765836da0c83fd796f6cc502c13",
+      "sha256": "a398b19c6132a9bbe25bc3fb024d4ab7eecf8f2f01cc992eefbc4a83740e5847",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1354,11 +1354,11 @@
           "sha256": "aa0686a5365e8b80a644e82aa96e34286fc0b22c6b1384cb365939d6b24f4a57"
         }
       ],
-      "fingerprint": "9955ed671a516c3922f7a6157377a2e7f9ad3ca853d12ea455414381b651f484"
+      "fingerprint": "d122220c2b14b73047787172defe3009e055edcc1fb4d2597a69378d555df124"
     },
     {
       "url": "https://defibrillators.ca/en/industries/property-management/",
-      "sha256": "cab7a5183d7aba08ce5b4aabc04dfb32b4717846702c7ecd75a4e9a1ccad92e9",
+      "sha256": "74d3f177c054c05581906216db21d417503a8b117c80e198c1383c15d79e6c36",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1381,11 +1381,11 @@
           "sha256": "9facf1d0a2c47b5677edfedcc5dc96a9b11e434bc9bea4f2bf938ed112354ca0"
         }
       ],
-      "fingerprint": "02efe6f464a21cf75ab325b902a7211000d85bc58ac63d2456da86a0db6df807"
+      "fingerprint": "e323b61a2ec3703a0f8e1b350ddb1f8ecbbdf4f1975caba247344393fafd790f"
     },
     {
       "url": "https://defibrillators.ca/en/industries/residential/",
-      "sha256": "6b0b1bf2bdf45c65a6419091cb6d177e4f525ccb9828380944d1e8d5284e3191",
+      "sha256": "fa811b74b1766e9c5fdb687cccd9dbe50b3b115efdae9413d45985e3ff1f8599",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1408,11 +1408,11 @@
           "sha256": "97c8441e4bd7d6aaae59603d0ccb004e85997564fb5e9d3f07866b094ff9fc82"
         }
       ],
-      "fingerprint": "7a3f5f013ba6704efb4dc57ac6282e7d512b72ddea7c86943c26c62777d1844f"
+      "fingerprint": "d21ec234873d6b22968cf160eabb057c53a224ee19beeb307cc72c7c9d339312"
     },
     {
       "url": "https://defibrillators.ca/en/industries/retail/",
-      "sha256": "f258a8f7c097406cda16d691ee90c630fd6cccef09d40994af9b61a279d3d2b0",
+      "sha256": "2df8158c80c30d5efa9a7f8f3e27025c3a0bd873f23dbce25cf0d8008c441852",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1435,11 +1435,11 @@
           "sha256": "40f15db7cb4e9c4f061531371de7a55c68dafbcd0e0835a73412fc29ed248cc8"
         }
       ],
-      "fingerprint": "1a341e2fa8b3d06bca222e3e2ad26d7738e54205cd0e79a806ac42502759c150"
+      "fingerprint": "b229e1a2fc9fb45b6bed341fe028a691ad2450ca7bed98415d4d00115d3bf06e"
     },
     {
       "url": "https://defibrillators.ca/en/industries/schools/",
-      "sha256": "4731d76cb6ace4fc0e3f40eef00c5f815ea14b71d3415e02ba075f0d70f784ee",
+      "sha256": "7df102f4aa926e3a26d4fea215e109b8d7545db02749f3f1b4f2abbb11d2ed1c",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1462,11 +1462,11 @@
           "sha256": "faee9da9ba73f53a24c9624972b605886975112adb4758ca65fb3e37964eba72"
         }
       ],
-      "fingerprint": "15591f9596af3c9b8c01c00b655b5a9115341c417cf125fd44f11266a0178c10"
+      "fingerprint": "a3d569b7ada6bf8a0e4da4a7a7c5269942520594b7a5a8fe3831d9fe62587f15"
     },
     {
       "url": "https://defibrillators.ca/en/installation/",
-      "sha256": "ecf94e78e29465ff62f7b4e3c076bcadb289e4aee3409df676219403d2284d28",
+      "sha256": "f2c5fcd2946849a8e7c134e1c4a160d57ce859aa890be65f40607d9e5f63cb5a",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1513,11 +1513,11 @@
           "sha256": "ec8275ba722b13682528e45f93457aeb34965d8edbb32c9693fcd16407fe4a2c"
         }
       ],
-      "fingerprint": "51ea9dd3a81bb738a257c73fc09d341b0a1403f818553778d1a0619f7c955ffe"
+      "fingerprint": "c58768a57a4085ac0042f013aa74287448b473bf97e0341728d6a00650ef9027"
     },
     {
       "url": "https://defibrillators.ca/en/locations/",
-      "sha256": "2ea1f7876f74ef9124f5dd910f54dc2ca8a040f292a0e322cdf7c815612a124c",
+      "sha256": "352ddf9568844d0ce68baa4f3a864039d96d7c722f8a4fae430ecd0d0a16b25f",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1532,11 +1532,11 @@
           "sha256": "3561e8902c8dbe5afb163c569244c1a5d7a9b7ab53818d2c0d14c6d6d36613b9"
         }
       ],
-      "fingerprint": "a0716d55a08b8a6c086e699a57745ebaa1a80e73ed4a2fa98602273242fdf792"
+      "fingerprint": "4341caa863238e7e3f855b5faceb68b48ce290f69ffc09b301ecf528e0d85bcb"
     },
     {
       "url": "https://defibrillators.ca/en/locations/alberta/",
-      "sha256": "e85ea67c8aacd4cec4635e7a1eadcedc0877fe17e6989b5d8937c24c60010cab",
+      "sha256": "498b0515f6a78c2e48ed8cef9d47deee9c6da3836cfa69ec14fa4136ccc769fc",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1551,11 +1551,11 @@
           "sha256": "e30db338d9af87d999db8347bffaa12e36b384e0073d996f831093bd0abb6897"
         }
       ],
-      "fingerprint": "5459e7ac59d36a343ec7f2836cd9fc5f6b3b2ca58903ef2d8136d2ede53a3e0f"
+      "fingerprint": "43f5dc4efc2b1a13c9c7ff075f07c15309e05a79134cffbda9c61a1b806dd8a7"
     },
     {
       "url": "https://defibrillators.ca/en/locations/alberta/calgary/",
-      "sha256": "76f10ccede3689f8ea0dea83a80bc1a4794eeeea0dfdf186eaa59f5e327758f6",
+      "sha256": "3a4481cdc27d327427cbb51937fae5af8eb05841ff64162d7569a87480949841",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1570,11 +1570,11 @@
           "sha256": "7d96aba5f07ab6b257a53f9e6445a0512d934933441a5fa31923c1045382accd"
         }
       ],
-      "fingerprint": "1c60ff58fd27e266707acf191181b4f79e30af855c08cda6faae8023b122c3ad"
+      "fingerprint": "d2a7af40b1ecefd28ea4f7b0dcffcc10d3eecdf768cee9203954ca4f257804bc"
     },
     {
       "url": "https://defibrillators.ca/en/locations/alberta/edmonton/",
-      "sha256": "860584be0bd9b441014af2b3113ba412531367a07fe504252b4ebcdafde838c6",
+      "sha256": "712216e2cdab84881b4edf4663d9c0f697023c489a4bc52da4aa176b4cc249de",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1589,11 +1589,11 @@
           "sha256": "e30db338d9af87d999db8347bffaa12e36b384e0073d996f831093bd0abb6897"
         }
       ],
-      "fingerprint": "8ceedf57e1b8ac1f9e12f35df2c1fd2a729bcb257d011f85c10db2664e4e6d5c"
+      "fingerprint": "6953eca615690a75e25be304f706b05b43e86e3a4bf1f4677fa4936b4902a756"
     },
     {
       "url": "https://defibrillators.ca/en/locations/alberta/lethbridge/",
-      "sha256": "ca46e392cc656e103c9eeff5653cc2dd905e360c990dd63f593d84e7efcfa347",
+      "sha256": "184edbd00536f5acd6af4d1399c8b872fe83217f70f5648647a83315f19e3442",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1608,11 +1608,11 @@
           "sha256": "e30db338d9af87d999db8347bffaa12e36b384e0073d996f831093bd0abb6897"
         }
       ],
-      "fingerprint": "c874c8f08361cff3a85ed3568493fb820dc2ee29dcc0bff28330c09d688ee86a"
+      "fingerprint": "39c21cd44379bc95423c147e885caeeca16418d92b0fe089b4983332cd7e9f01"
     },
     {
       "url": "https://defibrillators.ca/en/locations/alberta/red-deer/",
-      "sha256": "8cd2544565899830b62d93711f5d0f18b1d28dc3dffc33db05ca83fa6e5cb555",
+      "sha256": "9cb546d3446e8ac6f263a0a073f5746ed637546207d8e2ffbcac2fc8fb472c1d",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1627,11 +1627,11 @@
           "sha256": "e30db338d9af87d999db8347bffaa12e36b384e0073d996f831093bd0abb6897"
         }
       ],
-      "fingerprint": "a007d34cb1ff3b290ba198d411e5ed8738cf6644baaf3da3c62bce47998f899f"
+      "fingerprint": "4c328715a6769a2a4dac47c145aac389ff8da20696893515a8c7ae790ed7dd4b"
     },
     {
       "url": "https://defibrillators.ca/en/locations/british-columbia/",
-      "sha256": "3c4bb758f635fde0259507f59123963559cb09882fd665d43e84dcb66fd74752",
+      "sha256": "2ad9f016c42d18e963a06d682625315668e09855bbe8e669f0a08321c18901be",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1646,11 +1646,11 @@
           "sha256": "528ed2118b72e04c8e877a38e8ab8ae7bd1f2fbf46abcb12316497de44cdbbff"
         }
       ],
-      "fingerprint": "3b31c7affe6a90ab92b5aa4c6395c091524bd1e5cc902ddbea6e961a79885642"
+      "fingerprint": "8c2214424479d6cb9fa02c9c8fc8c20a5b382576d6e09217113d0242dc138f54"
     },
     {
       "url": "https://defibrillators.ca/en/locations/british-columbia/abbotsford-mission/",
-      "sha256": "d217a879e5e3f5b93078e7644f712ef9882f5c7d99b28b1765a63a0f00726c80",
+      "sha256": "8c0065d4669e0ea20cf4392f28aa7662738bebb3d32077ae529f7ad1f7fe2d47",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1665,11 +1665,11 @@
           "sha256": "528ed2118b72e04c8e877a38e8ab8ae7bd1f2fbf46abcb12316497de44cdbbff"
         }
       ],
-      "fingerprint": "35755009e759ab28351dc252a2e14c8d48a83e85bf2388a9f468856e6f3ed497"
+      "fingerprint": "2db8a5629a5184564f5087b3637d57545058af31ca758be02acb425069f17141"
     },
     {
       "url": "https://defibrillators.ca/en/locations/british-columbia/chilliwack/",
-      "sha256": "b443e1a7a5ce3eeb624bde8d0cb57b528040c2b0214ab72da9f8c931115bbb48",
+      "sha256": "37ca784089f05932dc37a25e514f6f70c123ce1491235f966d43ace45a73df23",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1684,11 +1684,11 @@
           "sha256": "528ed2118b72e04c8e877a38e8ab8ae7bd1f2fbf46abcb12316497de44cdbbff"
         }
       ],
-      "fingerprint": "9d982bd58e8b14c1f910c34b41fdfe524359ea19f1c63f998902e0b6f4c94bbc"
+      "fingerprint": "901142e5be8b0a1c913fc6e58c1cd7a4659f8acd770e83ef33ad1c118c3a8ffe"
     },
     {
       "url": "https://defibrillators.ca/en/locations/british-columbia/kamloops/",
-      "sha256": "337474fdfc14accfbbf48ff704adbb59a25a71e1bc110ffa6ea9bc52126e6ca9",
+      "sha256": "2db539331b81124291c5d0c5adf29179979549be797c8459a5771f5cb7d1a7f8",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1703,11 +1703,11 @@
           "sha256": "528ed2118b72e04c8e877a38e8ab8ae7bd1f2fbf46abcb12316497de44cdbbff"
         }
       ],
-      "fingerprint": "6a2e2a7358a71f1b3c5a008995e38e1be499dca01264a7fa87937a5f1751fc32"
+      "fingerprint": "41cfb68e690632542ff00fab46046e8a1753c0dcd84de6e831c29b44f0ed826a"
     },
     {
       "url": "https://defibrillators.ca/en/locations/british-columbia/kelowna/",
-      "sha256": "3619958f19927a1a58808458c2d09375c50e55f30235319650cc88fd30816007",
+      "sha256": "2b3fe04fee1defe1e509d37a9ce86693bf2bb78f726b7803b29321a4a18617e1",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1722,11 +1722,11 @@
           "sha256": "528ed2118b72e04c8e877a38e8ab8ae7bd1f2fbf46abcb12316497de44cdbbff"
         }
       ],
-      "fingerprint": "886e95664d68b31df08f5a1ec3fd673d7c49f2560e9b8ba670faf99013a62bda"
+      "fingerprint": "159bb762248cd1aae5594d4f7352cbbfb950c56c0da097f9cf867abb1082db49"
     },
     {
       "url": "https://defibrillators.ca/en/locations/british-columbia/nanaimo/",
-      "sha256": "7b7a98e9f578aa4bb6fe934e360b3a69a94708a0580c012adda0117f07b0748f",
+      "sha256": "80ccd31084160914f34a3af6214d96f03157eb14826b487f2542fc1a11cfe4b7",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1741,11 +1741,11 @@
           "sha256": "528ed2118b72e04c8e877a38e8ab8ae7bd1f2fbf46abcb12316497de44cdbbff"
         }
       ],
-      "fingerprint": "24ad7908be0134d467424a0da62eb769dde3347c98bf1c5bcbb87fd206ae930d"
+      "fingerprint": "adff9510a031b1a62164641850307e0b341d17f173e54ce4f81abbb07e5a9683"
     },
     {
       "url": "https://defibrillators.ca/en/locations/british-columbia/vancouver/",
-      "sha256": "dd18a451db18e40ee692343ca6c7e2c586955bab301ec571b05db64d84d07729",
+      "sha256": "a273b792b0c294913891c6a9baba29750c47d32b8505a2ae38ed31fdb047edeb",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1760,11 +1760,11 @@
           "sha256": "7b6c834fb33397ec2db75227c8d11cbad23e166b1d31525afc912b87b6a4a360"
         }
       ],
-      "fingerprint": "103ccd2051428d0abf8b67b45e77ad043994aecb30dc69978656ba7c9f71e5a6"
+      "fingerprint": "79654a0869023eee124582de0b1870eaa94e5fda2e1243bfea0319e79f40217d"
     },
     {
       "url": "https://defibrillators.ca/en/locations/british-columbia/victoria/",
-      "sha256": "7035c3cbd6b2e87801dd6924d7c6bd70e5d5017b8b40059e2fbbdb306a357dfb",
+      "sha256": "959b75d9d7cd33d6fe0be55377361e815b79af8e1eb4feb48289aed71324e146",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1779,11 +1779,11 @@
           "sha256": "528ed2118b72e04c8e877a38e8ab8ae7bd1f2fbf46abcb12316497de44cdbbff"
         }
       ],
-      "fingerprint": "7477f3aa8474a780c1c026a4fca4e56ce0a615700ffc120e9454e1dda84aea07"
+      "fingerprint": "762c82ced9efc4bdb2e6c3a519f6b9311de9eb6344ae404df525a1d654348624"
     },
     {
       "url": "https://defibrillators.ca/en/locations/manitoba/",
-      "sha256": "b956bed3c95a3c1d0886459fc87e7ed3ebd3dbb26cd9f7b7738c3fcd70379616",
+      "sha256": "73c1b3ec53dd7edab8d9f4c10ee7222b630f7ed234764c7d75a82cfccf7f75ac",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1798,11 +1798,11 @@
           "sha256": "5a7cb80483f4c8ca4ce6fae8c0d07800700ab19faf07ee6b2e2f8a04f4ced73d"
         }
       ],
-      "fingerprint": "879360d9a6859cbc07d07e32e292d6a77c7f632c0cf54d0d9032911cf5a95dee"
+      "fingerprint": "b93ec44a693246d10177eaec587b1feae66e5da0d91ab1c09b5e9f2df6452dd6"
     },
     {
       "url": "https://defibrillators.ca/en/locations/manitoba/winnipeg/",
-      "sha256": "20848ad272c94f0adb0e7c62201115158bb8cfc2f5d4b9da5af0a22be70b152d",
+      "sha256": "f3dec4bbb6b9e8649177328a3edbcf5d2364d6f218dce5909a93a9c6fb404b59",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1817,11 +1817,11 @@
           "sha256": "5a7cb80483f4c8ca4ce6fae8c0d07800700ab19faf07ee6b2e2f8a04f4ced73d"
         }
       ],
-      "fingerprint": "65dcd643eb4ba47e620a25126f8d572300bcfba9d6dae9501422cb54ddeea276"
+      "fingerprint": "49f4df739fa934791beeaff8bef0b3a6a23890279ece21a5050250ae201e7721"
     },
     {
       "url": "https://defibrillators.ca/en/locations/new-brunswick/",
-      "sha256": "1954383c4efee2552b3d92725fee939699520a03b3551068f6339ea64149e4fe",
+      "sha256": "cda9246e610e259189d4724ff6b6539267f044e6675e40e478534a0a30df0f1f",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1836,11 +1836,11 @@
           "sha256": "3528c7d076dd7347b63de1f0d7c411604c770f794d24309d2bf7f09f84f2777d"
         }
       ],
-      "fingerprint": "4240a4a8389149cbeadaadf8dd4c6d2758f9f527afc35acbcbc1c1fe73934c09"
+      "fingerprint": "a9b5d9f05d91b4d307e3763a587b0177c5ff052f7ea392f1d87ff8b92e4ea250"
     },
     {
       "url": "https://defibrillators.ca/en/locations/new-brunswick/fredericton/",
-      "sha256": "5513cf6633ca533fe2507fa8e2bd43030aa9c75ecde3543de42f264a147203a4",
+      "sha256": "9d5b4caa69d2e9d4f6cd1ab13d1d2c63f2c1ec2a28dd81592c2cb8cddfbcb69b",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1855,11 +1855,11 @@
           "sha256": "3528c7d076dd7347b63de1f0d7c411604c770f794d24309d2bf7f09f84f2777d"
         }
       ],
-      "fingerprint": "e9e123fc0d60d7ee9ae4bdd0affa0d4e39f3fb322b183e540aa3450d6d29b500"
+      "fingerprint": "bcf1d07139c0036863298b81126a946f646a5e108dfd08db4b20fd71001ea304"
     },
     {
       "url": "https://defibrillators.ca/en/locations/new-brunswick/moncton/",
-      "sha256": "fe2d6569890f2b389cb57aa52462c8632378a32e7f437cd9f19f762d8904f0d3",
+      "sha256": "bcf9b4731b5a03f67812cae77871ac469ae1be763863005382daf7210dcdf93d",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1874,11 +1874,11 @@
           "sha256": "3528c7d076dd7347b63de1f0d7c411604c770f794d24309d2bf7f09f84f2777d"
         }
       ],
-      "fingerprint": "3a023296e8c5ba0f60e2978421cb6ca22e8f1af34512627561ccf8fafc7a0d08"
+      "fingerprint": "ad7fa55876f9ace0966aecf6e3f53de3fe302a1613bc19182fe241fcd4c9d0b4"
     },
     {
       "url": "https://defibrillators.ca/en/locations/new-brunswick/saint-john/",
-      "sha256": "858990b47b74f66e43b3b64d60a80b6f2fb2cb57e038ac61c256291198c5b75e",
+      "sha256": "7391294c792dfd390a7b448ca0c836e22285eb77004fa357cc8aad6122d656ea",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1893,11 +1893,11 @@
           "sha256": "3528c7d076dd7347b63de1f0d7c411604c770f794d24309d2bf7f09f84f2777d"
         }
       ],
-      "fingerprint": "3f05265a1ce532216e64075c7c61e08f4f5db4069204554a9d823bbc1bd29264"
+      "fingerprint": "bb47e66c033b74d8ae039942f57985638db74ac1538d688e9157afa87d02d537"
     },
     {
       "url": "https://defibrillators.ca/en/locations/newfoundland-labrador/",
-      "sha256": "268c0f99a13dc892c30b6c45ea9066e2ff62bd629be3d6ac26d7777fde88eadb",
+      "sha256": "d72190317771112934f00e3a1dcb9d38b530d9826424715c20abbfac2e6bf475",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1912,11 +1912,11 @@
           "sha256": "9cb7a90e868ecb052c209580a49ffd261bfcaf9c016f25f5af466b059d53f687"
         }
       ],
-      "fingerprint": "3323200fdb572ddfdc7a451d52533c4a9af035dfad357d655239034a15d79fd7"
+      "fingerprint": "7bc049b4ec15b50aca0f2887b7387ba20bc79390f5420c5565ab39efc18783a4"
     },
     {
       "url": "https://defibrillators.ca/en/locations/newfoundland-labrador/st-johns/",
-      "sha256": "781f1284989256fbf43522701206115ba7994e97790f336058dd1b784c69654e",
+      "sha256": "54f5ac0aadbbe65b36cda8ecc4d6054262ffbfa1eff90ab3dc1ea3508495e30a",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1931,11 +1931,11 @@
           "sha256": "9cb7a90e868ecb052c209580a49ffd261bfcaf9c016f25f5af466b059d53f687"
         }
       ],
-      "fingerprint": "320c2530ebfa3e1911c3b83493006c99a0e15e7432e13740490e3f3806f28e47"
+      "fingerprint": "36114463337ca2e07fdb01fd8e98dc3b29747e0635261aee0ff2dff13882154a"
     },
     {
       "url": "https://defibrillators.ca/en/locations/northwest-territories/",
-      "sha256": "51082329181ecd7fea5644adcadceef81b7f92cc484eb4225527a1647056033a",
+      "sha256": "fadaf443e6f2994a6480ea71b80f9682dee3ff6fa00c364091f91c6b8b06df85",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1950,11 +1950,11 @@
           "sha256": "734e0588a8aeb9d5b2dec54d7199c4e0caf26a8c8efb4d8c68aaa9f2e403f710"
         }
       ],
-      "fingerprint": "93e3ab7be7550acd7b0845b207e390cdd027c153743ee342e80b4182a39f476a"
+      "fingerprint": "b15a082f590075eb1030db993fb66bea9702ee5de1d4f82136298050ea598d1e"
     },
     {
       "url": "https://defibrillators.ca/en/locations/northwest-territories/yellowknife/",
-      "sha256": "eff405afba7b55981d0f7f351ca802315115a084e01190706b8555fa4dcb2914",
+      "sha256": "bb89dde9eec02b52eea9e2da59112d264c3a9eeb9bcb620d15f4b55412efba59",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1969,11 +1969,11 @@
           "sha256": "734e0588a8aeb9d5b2dec54d7199c4e0caf26a8c8efb4d8c68aaa9f2e403f710"
         }
       ],
-      "fingerprint": "35bc1478ab8357ed328cb85ac318099081600d027651f086752927489bd48f51"
+      "fingerprint": "3cdaf6add201ab833f49a3f5bbd705b7a6310ec8e55c99223f04b969b3c8de4c"
     },
     {
       "url": "https://defibrillators.ca/en/locations/nova-scotia/",
-      "sha256": "7951523a9f368d59fd03f9c35d0878ca66c4a4b44ffb290ebf76d1909ce61b93",
+      "sha256": "be4b5eb0d6ae67c97b295fa1d8bd08f624ab483b9b2a38b7d2e0b0eea614c3e6",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -1988,11 +1988,11 @@
           "sha256": "bee95428ff2a9f59f0e919d4602f97acb1f8a1b48af0473c2c18b08ca182fbd1"
         }
       ],
-      "fingerprint": "835db4b91aa33c32c4bbc35abc29b881fc363df274fe4ea3d58b753f52e761ac"
+      "fingerprint": "0beef43a7e42c85ac4f071326daba6796f97467bd810bebcb150fa0f861fdb1f"
     },
     {
       "url": "https://defibrillators.ca/en/locations/nova-scotia/halifax/",
-      "sha256": "a61dd2efcbce3a80cf27991d9fcd2b15b2d1e67b312eb482bc1376304496fcce",
+      "sha256": "9f07e8d611e2560c89f5bda0ca03547d219c97517340458511757f28fcacb0ec",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2007,11 +2007,11 @@
           "sha256": "bee95428ff2a9f59f0e919d4602f97acb1f8a1b48af0473c2c18b08ca182fbd1"
         }
       ],
-      "fingerprint": "10e63c9d1fe6b7c39bfed05b540fdd0b3dda8e9e8c41dcb68d188e61f6ce2e59"
+      "fingerprint": "3223aa78aa9a4a3926b12d181c8e988c84401ef22326bce56eb00c1deebb714c"
     },
     {
       "url": "https://defibrillators.ca/en/locations/nunavut/",
-      "sha256": "8a810c4dcc48abb8d458ffdb2a3f6bb447cf1b705e70ce98e2d8efecac5b308a",
+      "sha256": "5698fac1476a1f8863023176bc49caf3da1e8f5db716f69d655fc2a091d8f495",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2026,11 +2026,11 @@
           "sha256": "6e0441c2df8c4c6b0e82b695af73e6099678a2e06e098e1d2491cdb956e204ca"
         }
       ],
-      "fingerprint": "55b3037e57d900eab974fefa3d0210f77515c44c3367a8b4bf8143f86fded5dc"
+      "fingerprint": "8097cbbf3a99cda794903c5892407a30373ef7cce006028b6d2e3d81db2939e5"
     },
     {
       "url": "https://defibrillators.ca/en/locations/nunavut/iqaluit/",
-      "sha256": "43b9113916b35a2a655f98bb17856ade3ce465dca7218bfbb27ac877c8c4543d",
+      "sha256": "98cc2ed2d328d934291a7a079144905530b2ac85f15b221f735a057ac8d49f60",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2045,11 +2045,11 @@
           "sha256": "6e0441c2df8c4c6b0e82b695af73e6099678a2e06e098e1d2491cdb956e204ca"
         }
       ],
-      "fingerprint": "0f849168a33e39db5e52df65f9655868328d357f8f299d80291008a744eeb8c4"
+      "fingerprint": "0be28ef1a9af2aa2ad32c77ee54a67b2c9dc2c8be79ccea69c6c1e64ba4b81cc"
     },
     {
       "url": "https://defibrillators.ca/en/locations/ontario/",
-      "sha256": "1f2430d4f30d5b7d58fe2409e9a1deeb09612ab2db9adc400fd81a7319fa5a80",
+      "sha256": "1eca5c4b674ca28510b0c19f9c45fbe19c29c8bdf4065e7d4afced21ab06b944",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2064,11 +2064,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "b106dc29c9ade7e95fe09a62c6f0d74a44cba46484cd5e12aeb8a62fb5cf5fc8"
+      "fingerprint": "1345551f8de73622c7a4f31140e7a6cde161429d920ac6304271826650975aa6"
     },
     {
       "url": "https://defibrillators.ca/en/locations/ontario/barrie/",
-      "sha256": "ed540f9b77889c037151cf9b07aa003436e5cf543aff309b0d5371febf98485a",
+      "sha256": "f74184a4dda517a42329220cbd4431b4451db549f3996d2f70bce1005f64e718",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2083,11 +2083,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "1d2dd124be466f6016ce0aaad4370ed3df1a9f97fda1d59840d6b139a16cfbc2"
+      "fingerprint": "a0925a247d82f62edbfe7ac46dbf42a3471c2b1dbb81e4ba79866f0b2835b14b"
     },
     {
       "url": "https://defibrillators.ca/en/locations/ontario/belleville-quinte-west/",
-      "sha256": "5c2997a895116522d2feecc373c7d5f2add2db429a5e649490fcfd5623e334ea",
+      "sha256": "91900dba5a4d22e20402d4b09febc79aa7d71ea2fe3f60650a3e1970d361b237",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2102,11 +2102,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "a24883783fa1874d904f64b3f021bc12c94f2c44f27212220822c8a04444e473"
+      "fingerprint": "2aad660c70bf02aa37d667035d115145a55145b990746b45ec9a635c62d13633"
     },
     {
       "url": "https://defibrillators.ca/en/locations/ontario/brantford/",
-      "sha256": "93f9d3f13fcbebe4019072cfb9ab8e1575099c01d47d46f6b87a09af7cf8d3bb",
+      "sha256": "e08d5d144f3d6ea27c8c787b442f9f2912b3fd40325872f912856c2e5778ed55",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2121,11 +2121,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "c51212c74327f9d5c92bac4bb8a62acaff310310573ef8ae910c850f5eafb74e"
+      "fingerprint": "91aa542cb0819f36984c5e08b53ecb11575581542e1975a05a4ca5817f359491"
     },
     {
       "url": "https://defibrillators.ca/en/locations/ontario/greater-sudbury/",
-      "sha256": "714633b499d8cb727cf1d2f581149b95ef037b577f35afcac12f43dd9577cb31",
+      "sha256": "60592c42231b5e6674ed373f6d46f7552e4be0c23fee1553deb7a39eb18553d3",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2140,11 +2140,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "dcbabfc8df65bcf8d219f50317780063333bb51a5a92a629cc3f46c42c02152b"
+      "fingerprint": "d606b3173379777a0a797bbdd6e7a91085f4afb7c3707245ced2f939be0fac2a"
     },
     {
       "url": "https://defibrillators.ca/en/locations/ontario/guelph/",
-      "sha256": "42ea64041203e96474f1d0a9f3a6d8e6000659d30013e0d844db8b11129579a6",
+      "sha256": "00ad90ee7161f75f27a692c84c67b0a63b785ebbdadfdade3f203ad051c6a5b0",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2159,11 +2159,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "605d9f7c8b9f13aa1e18c39b1434affa5b47c202cbb21f78157fb867bcdabb18"
+      "fingerprint": "9bdb26708a0a48e6bd0ae0102c543436acfa02f6d76e6db64a5bc0a848e8540d"
     },
     {
       "url": "https://defibrillators.ca/en/locations/ontario/hamilton/",
-      "sha256": "ddac2f40a77ba4cb535d939e18ee82e1e871052a2649bbfe52291f0b152d0c5e",
+      "sha256": "4a890fe979a3f670170d86aac22225d057c57b881a3fecf10c00f59184c3d0ba",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2178,11 +2178,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "ae4a8c4b75a8ccab4e4455933d06d8b23f863244cefc253e32393b0b9c4ab19f"
+      "fingerprint": "e0f55e09bed52e23ee38f5c91c7131352c6761695fc2582c07c6a29dff9de6da"
     },
     {
       "url": "https://defibrillators.ca/en/locations/ontario/kingston/",
-      "sha256": "77746f528ac4d0cfcf9fa28c00d79799db623984459030b209748cd14c52ee39",
+      "sha256": "4f17335eed59c96838660393035e54ff4ee10282809172a39ee4501fc1f3b146",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2197,11 +2197,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "6cd600976ab3709097135ef8654ec9e97b3ed71b0b0116d88862a5b09d56156c"
+      "fingerprint": "bd62b0a5296dee34563e28a872cf5bd554abf5db67b6e8371c70486185485eb1"
     },
     {
       "url": "https://defibrillators.ca/en/locations/ontario/kitchener-cambridge-waterloo/",
-      "sha256": "71eb1d93b700a0cccc8c59416b10ab6f3a13b2739e49b60370016ca6f7f3aae0",
+      "sha256": "b4eaabdb776935c955d090b81a216842ecf00cc5d2850a9898243c4a86406b64",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2216,11 +2216,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "bc16a4621fe7c36ee3ea45f8550cd8bb583348d70d24041239538e997e58d5e0"
+      "fingerprint": "5b96ffcaef2a60d2ef8cd9c6f5b57a8081892fc6cffec5329f23e1cffbeaa7e4"
     },
     {
       "url": "https://defibrillators.ca/en/locations/ontario/london/",
-      "sha256": "a8df1a0e5695d5e66ab6b07ea7a33387f5104d4529c99fda50236b67c0dc8271",
+      "sha256": "5cfb51e23a5e5612a1c32c0b7276a94557f7b5bbe494f2381bfe9a287a13dfb7",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2235,11 +2235,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "1c54ed024fb7d2e0ebd8758e45fa8c6f4f2281cbaff01ef0bb7d3eebb8b2dc91"
+      "fingerprint": "2098a99b35b2859dc02b85e8d9fe32055cc21b139af6311875e623015d3fa569"
     },
     {
       "url": "https://defibrillators.ca/en/locations/ontario/oshawa/",
-      "sha256": "fec857243226a857f62d27e4b6d819ae346944432dafa029fcd353b77d4efd76",
+      "sha256": "4ae2d447e26c202f35b6db5c2659d12d04db56b3a49a1a3765b36d42588936f8",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2254,11 +2254,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "bcdbdd5f5d481b61364f178681e8f2f42346c5274e46b7e1e3600bb600e4283f"
+      "fingerprint": "d60d9d874ee2ba98f5aabec6257fe8148a00ae27bf70169fb012a7cdd58c757e"
     },
     {
       "url": "https://defibrillators.ca/en/locations/ontario/ottawa-gatineau/",
-      "sha256": "9bbda9ce723bc76ef96faed01b4a5a637d2c536b0069c33bb4c20f0b270b3a9d",
+      "sha256": "11842c67b210b733afe74ccc7c91dda0ff9ffe4e9ecdd328cb69cafa6e2bb525",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2273,11 +2273,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "a67d31b4c18b0ad3eb612906bff5f3c7c7e88a95d4cdeaae46c5392a08b990d9"
+      "fingerprint": "e4c1e0ef318e7e71bf3a74e3adae411185f7d306ab2898d0baac9400e27b561b"
     },
     {
       "url": "https://defibrillators.ca/en/locations/ontario/peterborough/",
-      "sha256": "41b422878f0c8ba2c096ac6252d28de6b6b96cd0325a61c209b19b3557f536e0",
+      "sha256": "1622736900564c4718dc527cd47899d9f4dac5256255df86eb3348f2d30fa8cc",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2292,11 +2292,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "030724f21a9a1187e3be3f548ba506425a87fd0aef182e413da57021c37a6622"
+      "fingerprint": "2646948883b5714110d631865dbf8b273c66d34deb6af25a3c39d47190f5a018"
     },
     {
       "url": "https://defibrillators.ca/en/locations/ontario/st-catharines-niagara/",
-      "sha256": "0216f57b712f6fe75c01fb608682818cccbd7f74b3e37497edae604e3b0c7c7a",
+      "sha256": "93a4827bc0005e52b2421d14147f5838bd46fae9fdb3c2ff3e1f849cfbb8f268",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2311,11 +2311,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "b3bbc589db8b24e98d4539e9376e76bf9cb14df640243ce5ea83f3efed0eed49"
+      "fingerprint": "693e601755f5c05fa5da8bed2a74f4e989a270d99f82487ee89ddd9f5e6b50ec"
     },
     {
       "url": "https://defibrillators.ca/en/locations/ontario/thunder-bay/",
-      "sha256": "6793a144f08af95b0561afc92fde7e489f2218e9b37d8d63a6dc7f2043f1eb17",
+      "sha256": "188553981a87093bc71b71a070572b644acb01088aef8babf7a0fa779651903d",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2330,11 +2330,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "3bbd487168a04590222e70ac7347cdec8b225d4635c414a72cd61f143532af7a"
+      "fingerprint": "7258966d77e8aacbb7af144ae441b4a37ba2157ac3a61948c66c44161a0da721"
     },
     {
       "url": "https://defibrillators.ca/en/locations/ontario/toronto/",
-      "sha256": "10c841a3dc34a65dbdc8d9bce0019c4d601c1c3b369135c47d5a54c20059537e",
+      "sha256": "c64e9c4b0666f6b081829e0a474398c9a8c51f5e3bf545d8c1f99a6d3cf5d131",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2349,11 +2349,11 @@
           "sha256": "47f0077eaa771b8002182686ed9dddbf5e556f825634074fc974f5c6b78449f8"
         }
       ],
-      "fingerprint": "3e9dcf74a2248b7d72a8628a65e118742ce8cf0f6377672f1ee802b232cf4381"
+      "fingerprint": "1f83fe66a2c6a5aaeb5e573293ec7491a4c4c49f3c9670b7509e04434eade8ce"
     },
     {
       "url": "https://defibrillators.ca/en/locations/ontario/windsor/",
-      "sha256": "cc3b1a9a345f9a74d6c3824748ce4f1bfb4d20dd88bf8d07309ebd4513ee3a15",
+      "sha256": "5d5b488f7bc39fa8ed5170dfba1dec6eebbdb62932b3075ea4d062c0026ac9d4",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2368,11 +2368,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "0345ad54c85ef420d7195e6bd6555902765930f18c83555748f02912cc504dcb"
+      "fingerprint": "b496b27fd29b9890c33e0a6b3a65ad23e49e576d3ebbf74c32e7a3bab641e8ca"
     },
     {
       "url": "https://defibrillators.ca/en/locations/prince-edward-island/",
-      "sha256": "9cd9c51b1fdecec2a1f62fb9cf468899a2895544057b0f368dd103005eceaf0f",
+      "sha256": "bea902e88a1fb71af1f816ba33470c8aba2d532e5c894e7ae3e16bcc6df39631",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2387,11 +2387,11 @@
           "sha256": "1f2b070e87b0d29a34c4bb107d72e9a501ef31cb0d3b6b2150eb2636ff11e678"
         }
       ],
-      "fingerprint": "f37209e27abeb253ffba24d4e33b6fce1fad412418a60c6e8072de6167f48158"
+      "fingerprint": "5f54d1158b30f1a134e0e4f3254bab856cb4b269490e58b00181600785e4ab5b"
     },
     {
       "url": "https://defibrillators.ca/en/locations/prince-edward-island/charlottetown/",
-      "sha256": "d555fc004cd88b08510c5254734c014da9e02a670cda0aaefdce62b9bf0a92d2",
+      "sha256": "cef6d1f4b5822aa08a66cb91764daca0fb7117970ee0c966cfb890aa272cbad4",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2406,11 +2406,11 @@
           "sha256": "1f2b070e87b0d29a34c4bb107d72e9a501ef31cb0d3b6b2150eb2636ff11e678"
         }
       ],
-      "fingerprint": "f59312c5b8e6f16c2d8c537db30293f96a14a32df68187651cd3bc7615256164"
+      "fingerprint": "a62289113e226afaaa878ad76c908f5becf53f916bcc545debe9cc17c451cf7a"
     },
     {
       "url": "https://defibrillators.ca/en/locations/quebec/",
-      "sha256": "9b550b086e337aef54ee75fe8497c43d1aa7623bc661f5b302bb94438219f9a4",
+      "sha256": "859ebb87e63ec13541795fb4b6c2fcc538c2314d3ccd427e858e1c14be42702f",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2425,11 +2425,11 @@
           "sha256": "f6c9a906a1058544ae181ceb56cf97c5d5ecf311be87609fca2eeb926a0f5b29"
         }
       ],
-      "fingerprint": "f16781f50361b8a6d71c016ba39d00ccd61af08992577442de3a1dc1dc6af277"
+      "fingerprint": "cac337c94c5a87e76250f75b524edeed23dc04f4b0f55d059bbacbbb21b6935b"
     },
     {
       "url": "https://defibrillators.ca/en/locations/quebec/drummondville/",
-      "sha256": "73e48f0b294db2fac45ea794588cbc91c46271ee1640761006ee06c5f4782405",
+      "sha256": "14b5e3ecc6c8c2c95943e502a647512860969ee9155270c105eb9e330d7da434",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2444,11 +2444,11 @@
           "sha256": "f6c9a906a1058544ae181ceb56cf97c5d5ecf311be87609fca2eeb926a0f5b29"
         }
       ],
-      "fingerprint": "e7d58d8d0c4208c361e587b41a469747ec36556ed265692d672e9045b8821ca6"
+      "fingerprint": "649cf681f5b82654b4fe54d96e7b1d3be40cf1c28c18cd0ba5e5f6017ef43373"
     },
     {
       "url": "https://defibrillators.ca/en/locations/quebec/montreal/",
-      "sha256": "c5f4a27659c05f39f76d2f5689d3b0544095b8b71c33fcb607828d7ec5714ed5",
+      "sha256": "c9c80405d3ae03cb207e22c1d6f565ee699dfa6d05512306a3ffbabfde90f0a9",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2463,11 +2463,11 @@
           "sha256": "ce5fa7feaf8a91fbb5d5d561364bcb049ec3632f5bd6d4f99bd5201261ac5081"
         }
       ],
-      "fingerprint": "d335f8ebc90b86d6a6da8e6ff00efa8abe49b68e0a6a70c306e3f9bb7434fd57"
+      "fingerprint": "290b3d58511337f8e861aa88aa22fe0b762ae302e61fe40cdf56f77e5e56718b"
     },
     {
       "url": "https://defibrillators.ca/en/locations/quebec/quebec-city/",
-      "sha256": "e010bd821a37a8f310e0ad2eeca1fde73a448c1e319e423f17defeadbb0b981c",
+      "sha256": "38a02a549dfae1d5e8ea3314f5a24d5a7efed51fd4f0dde184c3ea70b854a433",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2482,11 +2482,11 @@
           "sha256": "f6c9a906a1058544ae181ceb56cf97c5d5ecf311be87609fca2eeb926a0f5b29"
         }
       ],
-      "fingerprint": "70b21669c1b02eedde05cd3ca19db5853f68864fb0e7b74ff5969fc9679f7453"
+      "fingerprint": "78a8ba870ce9fa9b600f39551ece0b534d61a669d9874147f8aa485a8730f19b"
     },
     {
       "url": "https://defibrillators.ca/en/locations/quebec/saguenay/",
-      "sha256": "6d32e18b511249a4946341dafefd1fd5973f68dabd93b21da914f09f01509873",
+      "sha256": "17a5fd819465132fcc6fb7c957af150ce13a70224506bfc6b195eba10e8efaf7",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2501,11 +2501,11 @@
           "sha256": "f6c9a906a1058544ae181ceb56cf97c5d5ecf311be87609fca2eeb926a0f5b29"
         }
       ],
-      "fingerprint": "cca8a2611d588efd7b9e5232641fb2da2c78e0bd96b8b7877ba78e6aa707e66c"
+      "fingerprint": "849607c89a4d8f5d4c27eb778db6ec6c7309f1fd62d651578d6c8333abb1e17c"
     },
     {
       "url": "https://defibrillators.ca/en/locations/quebec/sherbrooke/",
-      "sha256": "87fbf0fbb77a1f256344833c1da0a80808f2351efa1f6f1d26f4e1ef8edc50a8",
+      "sha256": "9b5594d11647fa11934112d7c76e64f2f6a232093218fb1166a261f4f6f6ea4d",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2520,11 +2520,11 @@
           "sha256": "f6c9a906a1058544ae181ceb56cf97c5d5ecf311be87609fca2eeb926a0f5b29"
         }
       ],
-      "fingerprint": "fc415cdb2127bf7b423e39e7cf8c45b3985c6f2dcda759596b4d014f1512ce85"
+      "fingerprint": "3a3957bce31e440a1232364426712a93ab9e586bad25da270afefe3b268ad515"
     },
     {
       "url": "https://defibrillators.ca/en/locations/quebec/trois-rivieres/",
-      "sha256": "20d7293b5b766339290aa657ebdf19e8c1d5890085333227177543ce7b463bc5",
+      "sha256": "66f049eed0d0e231dfdcf7cb907fc83123753b000d2d6a2d003687a318266461",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2539,11 +2539,11 @@
           "sha256": "f6c9a906a1058544ae181ceb56cf97c5d5ecf311be87609fca2eeb926a0f5b29"
         }
       ],
-      "fingerprint": "1c33bae04cf63d6518cbd1967b4bc85bad6fb3a5400dfc0a4fc546b985e5da22"
+      "fingerprint": "24ce184396b20deca15b174d6e921cf1e7c079e45ad3447e2ee845a4b42e348c"
     },
     {
       "url": "https://defibrillators.ca/en/locations/saskatchewan/",
-      "sha256": "bfb96f0ec9003bdb35c1ace726d84b49b64c416616cbe77544cddc7491eca252",
+      "sha256": "c7021bef14891e39b69d6a34cc41d3969f8580fba27497ae9ca4b7541db81506",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2558,11 +2558,11 @@
           "sha256": "59ed48cb6a039182f7c83ff0761ca959020ae84281d28b2f6ceddcdbb75b081e"
         }
       ],
-      "fingerprint": "e3334a1b6282d251ca692960c55b6f0c1cb7770ecf5ca6f4fb15746232b8744d"
+      "fingerprint": "df27befb33e9bb9a788ca7aeb7757d847480f9a693fcfb390ffff4976c93ef61"
     },
     {
       "url": "https://defibrillators.ca/en/locations/saskatchewan/regina/",
-      "sha256": "c7f2c39a5027f352ef9e8954f5ef76440ac1804ab8ab4107f0c611d269cd8414",
+      "sha256": "d7440af794ebae83a8b1342b236db007e306cbbcb74425927c8132d1c51e2ec3",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2577,11 +2577,11 @@
           "sha256": "59ed48cb6a039182f7c83ff0761ca959020ae84281d28b2f6ceddcdbb75b081e"
         }
       ],
-      "fingerprint": "2ab7a2b5ef008021d6714176c604139fa9897bd25bc524b2dbb46391b7b90b34"
+      "fingerprint": "e3e3d8bfd918da4c5d1ca9a3c6487106cfff5692ee3ca1f5ae0a4f7d0289488d"
     },
     {
       "url": "https://defibrillators.ca/en/locations/saskatchewan/saskatoon/",
-      "sha256": "0707fabf4e3422caea64ea579d99c317d918479ee9825bbfb263392beab1a7c3",
+      "sha256": "e945a3ae8e2c3ea89db9fc36ce8e61663525a570cfd9b1d9c6f2b9fe48a44a4a",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2596,11 +2596,11 @@
           "sha256": "59ed48cb6a039182f7c83ff0761ca959020ae84281d28b2f6ceddcdbb75b081e"
         }
       ],
-      "fingerprint": "78122a85477d43dea9edc377c9ceb4f4707f56cb0622927fce16e90e23b64522"
+      "fingerprint": "5740863cc7e62490c34c509099cde34d32656f56e6dee915e621674cff05ad08"
     },
     {
       "url": "https://defibrillators.ca/en/locations/yukon/",
-      "sha256": "bc719a654c24f8839a2f9a2aa287519757c02ca1bec4151c0c14a37fe24d9002",
+      "sha256": "6bc5c914f493ae997783fc4a9908931a2fa6a9ad5723d511fbe818793154524d",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2615,11 +2615,11 @@
           "sha256": "8c4b62cd27c4d406ae8d2763acc7c012b240b1414bb3fd6d697557dfa8aee4fe"
         }
       ],
-      "fingerprint": "0dac358a8bacb7670f94218e32a068bc0e7e919b871d74e32202a8208ce4ed1a"
+      "fingerprint": "058090282ceaf5601cbe7cc19417ec0354e83b276de9b55a06168c1b76e048ee"
     },
     {
       "url": "https://defibrillators.ca/en/locations/yukon/whitehorse/",
-      "sha256": "b0918a5a4a5dfd56f475bd00bfbe97370ff008fc08e5aaddaf95114c0bb36a51",
+      "sha256": "373569e4d3ddd98a03f9039304fb91156a1629cc7ce6a7ca66380323ae687cd9",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2634,11 +2634,11 @@
           "sha256": "8c4b62cd27c4d406ae8d2763acc7c012b240b1414bb3fd6d697557dfa8aee4fe"
         }
       ],
-      "fingerprint": "215fcca264276bc23b99add52f803403c61562b9013ad96cade43b7e55ab0439"
+      "fingerprint": "b786b5b35f37eb6900c56665a74bfc018dc6ae71cf6778c9c63b102792e9e5c6"
     },
     {
       "url": "https://defibrillators.ca/en/maintenance/",
-      "sha256": "058cdda40ae31229510e15ee48963f6700c75dce900b05044990ad8e94d4e3f7",
+      "sha256": "424d4318634b9afc667c2a8bc5e4f4276cc1f9eb5284be349ebeaeb2611f9607",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2685,11 +2685,11 @@
           "sha256": "13a610b71fcd48b8fa1590305f02f37b68bd4c29c8ab91c4fc8c6e9558c20732"
         }
       ],
-      "fingerprint": "e84f1f930bc367619395bb7f01a6f7c152892dbd31d5e257f48498c3f2b101a1"
+      "fingerprint": "f157ad10a3bbb9c2af2b2b787292c9ee28c3bab32e06ee3b107a0df6678f1b9f"
     },
     {
       "url": "https://defibrillators.ca/en/privacy/",
-      "sha256": "c286ee1a4c7ea4ede68f0f8236d6965ab6be1bb63a25f195cf27ba4b0be28751",
+      "sha256": "767fbff22719476a07fee2708ff1d354939f4069f25ebefb46ccd92ae574810d",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2700,11 +2700,26 @@
           "sha256": "bc4ca98af0ef05fbeda6e6e308cebd26b38e552ea8457df6ec89120ebcfd00f5"
         }
       ],
-      "fingerprint": "57952b4b0e468c5b73e9bc3ff36410a3a32701dd44c75b2b5cf507ea1f88ad7e"
+      "fingerprint": "29e8f2cf5dc1f25683821c44d0096595470363aef0ee26ef8cf66c8ea3454c92"
+    },
+    {
+      "url": "https://defibrillators.ca/en/procurement/",
+      "sha256": "f3250bfba5aefa3d9ba70193f2d25562a11e320bb4cfaf4ac555e7bf5fa3a24d",
+      "images": [
+        {
+          "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
+          "sha256": "779c5fbb43eaa5af68fb72a3fb600f8aaa93b62fa9961b67a719ad349921c467"
+        },
+        {
+          "url": "https://defibrillators.ca/brand/logo-en-light.svg",
+          "sha256": "bc4ca98af0ef05fbeda6e6e308cebd26b38e552ea8457df6ec89120ebcfd00f5"
+        }
+      ],
+      "fingerprint": "dd13d837b24f81cccc2d1286bfabb30dab8eaafeaf36c7678eac7ad2e90442ed"
     },
     {
       "url": "https://defibrillators.ca/en/request-quote/",
-      "sha256": "0518794ba602e7fa0a7f80d423323353cf0715e4c7d92ff255a3c8beb5b82f32",
+      "sha256": "590e9f4a1fd0b5eb8f21d01659d01eefceaf3ebb1698793631a96016b0433ffe",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2715,11 +2730,11 @@
           "sha256": "bc4ca98af0ef05fbeda6e6e308cebd26b38e552ea8457df6ec89120ebcfd00f5"
         }
       ],
-      "fingerprint": "a3f1b888d5675e4b01db8724f30c5f6a9bd79c1a0fba0f607aac61e4613a3e30"
+      "fingerprint": "11d0c9663929d12042d72fe1645263fa15636493139d6ffba6faecb038e34998"
     },
     {
       "url": "https://defibrillators.ca/en/resources/",
-      "sha256": "b1c7600294b908706f291cc41bd75b033f42e477a914d8d2bb8755ee5e519bed",
+      "sha256": "9428add28ea5bcfcb48a4f9d1d58304cec47dce53366ca745957bbc0c4fd93dc",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2810,11 +2825,11 @@
           "sha256": "b08e3eca887e2be7a0ed76b7a34718abc0858c555570bea4d1b73247b96faf69"
         }
       ],
-      "fingerprint": "a8837bc5cca614577a575bd09e35e816c9940291928f5e7b52ec335384eb15a9"
+      "fingerprint": "c28f9da56808e918a400ae6979a313bf93dd9b806d8166701096d4aad3994864"
     },
     {
       "url": "https://defibrillators.ca/en/resources/aed-buying-guide/",
-      "sha256": "0a2e6fae4b0ea9d7bba5a77ebcc930b9d23dae455690a6bd46f06889c4a20f1e",
+      "sha256": "53fd97882c6cdbe180ed5d9e59ac4168030a116013ec41f380d00521db20ba74",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2837,11 +2852,11 @@
           "sha256": "d332d8e8cb18cda721cf2ce79c2d4d7d960d0cb39db1c16bdd75689793f5646b"
         }
       ],
-      "fingerprint": "596cf6871f0cd806453f1ff7644b76a4d26c31f1e90041124da6c08e03db7ac7"
+      "fingerprint": "d27ee901f20519c89790313c89059b655c7a000e6a91c9493d1b99e3299dc8fe"
     },
     {
       "url": "https://defibrillators.ca/en/resources/aed-cost-ownership/",
-      "sha256": "b2e9547252161567b427a6f6a8a2c710829f26a20f110b4f127f9fd757b9fa9e",
+      "sha256": "b2343dd58065dadb4b0577e31ea99bb798574df58af8f885942e1156ca20a53d",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2864,11 +2879,11 @@
           "sha256": "5eaf31412d4753a36bd0e26e0f6a7ede6c0061da38deb9abbbd57d32c4c9ddcd"
         }
       ],
-      "fingerprint": "fbba7f7fdafa318f2066541fff068071ca8b598cc2d90767a9def7c56d649baa"
+      "fingerprint": "de279d1dd783b0f777acf4513f280f2579258ab62e6ec24ae1062b9497ea6b54"
     },
     {
       "url": "https://defibrillators.ca/en/resources/aed-maintenance-guide/",
-      "sha256": "b8623c663f0f23450924ed96602ac8c6912904c89d4ae3b07ff6e1f040871442",
+      "sha256": "5b5a8ed795596df22e1874c94678e17012effcbc69bcc45f29b0ca1ec8559345",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2887,11 +2902,11 @@
           "sha256": "ac8aa356cfe24644bd2380e50fa88f32691c945123abd61b0605ba513133b169"
         }
       ],
-      "fingerprint": "12b1933836773e3cee2ea2cc236ac8ca4a2d7ebd3d6f502f5a83643879bc31b9"
+      "fingerprint": "0466998808513d5b140d35898be03cc26f794c22313f0a365fd44093927b8d0a"
     },
     {
-      "url": "https://defibrillators.ca/en/search/",
-      "sha256": "01b52ff61dc44b6afb9927278070355efb3718ca2fa78366a1a4750a8635d585",
+      "url": "https://defibrillators.ca/en/resources/defibrillator-mount-compatibility/",
+      "sha256": "1790149909ce8f34edf615744b0faf3cded620a79dc9b23213c16a4325af3464",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2902,11 +2917,26 @@
           "sha256": "bc4ca98af0ef05fbeda6e6e308cebd26b38e552ea8457df6ec89120ebcfd00f5"
         }
       ],
-      "fingerprint": "7aae9183883fbbda2a1016923253d40494cb7356fb386f4e2577be99b6797fc1"
+      "fingerprint": "919cc3cad564bd489912ec2fff7e320f370411aa2f94e5923167489052b2293c"
+    },
+    {
+      "url": "https://defibrillators.ca/en/search/",
+      "sha256": "808e91dab1cb88350899b37f80de69b5f13c500cee203d20fe1e899990132969",
+      "images": [
+        {
+          "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
+          "sha256": "779c5fbb43eaa5af68fb72a3fb600f8aaa93b62fa9961b67a719ad349921c467"
+        },
+        {
+          "url": "https://defibrillators.ca/brand/logo-en-light.svg",
+          "sha256": "bc4ca98af0ef05fbeda6e6e308cebd26b38e552ea8457df6ec89120ebcfd00f5"
+        }
+      ],
+      "fingerprint": "b44846eb1f7de180ed4d174b0bb91da1def08fbc8b9dac75ebebb9353162d9e1"
     },
     {
       "url": "https://defibrillators.ca/en/services/",
-      "sha256": "c3dc37421aedc5db0613f4e5682af1cbd5a7bcd054a48acb6a115d4e891aedf1",
+      "sha256": "82e1899941e4c6378ac9e6f179c9168841212ac0c0d65a1fbfeba02f53a8db5d",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -2977,11 +3007,11 @@
           "sha256": "4cf7abbb75220589080e2a9e670198f89abd6aeafd1e05813ed12846d13e4dd9"
         }
       ],
-      "fingerprint": "e91e7757e1f6f281d1c4f0c9593b0f3eafa896fe9fa19f52166278f206e35b7b"
+      "fingerprint": "76ce2636965eb3e6365b0e0e705135e566922272308343974fd03285582ecde8"
     },
     {
       "url": "https://defibrillators.ca/en/services/aed-asset-inventory/",
-      "sha256": "0e0f529bae0995cbdbd6a6a6da5c34b2375ff9e7611ed682a5b737afa79e2f1f",
+      "sha256": "e4d1b3b2575255651e853a14befdf2a2b198dd27c4da8076e2a2eb480da3cf52",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -3004,11 +3034,11 @@
           "sha256": "71ed029f8dd786fba0002908010fdfbf0f7e46f775ade4682eafd50aff1772ea"
         }
       ],
-      "fingerprint": "4b62f52b7990978391582be42a51dc9af8c977600afdc11660cb269246cf1cec"
+      "fingerprint": "42a066f9bf5de046bfcbbe51193dc3e313a61564429c22036bc75cdfcbe054a3"
     },
     {
       "url": "https://defibrillators.ca/en/services/aed-cabinet-mounting/",
-      "sha256": "b4d1a797f732b36884bdedc2579221c6ccebff1c29c9ed3c459f6c18207d717f",
+      "sha256": "b6000c6b5b7bccfc4bf95e3dac4ccd7924743a4bbbd8488002422eb58b1ba25d",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -3031,11 +3061,11 @@
           "sha256": "87d57e3ec20e04f92344183e92a11be5e345a71b8e7bcb80abcec767824a4bfb"
         }
       ],
-      "fingerprint": "46fedeb9df5b885b987c80900738dba6e7d8ea24e6e9c6f2e9079441966758ad"
+      "fingerprint": "f6fdc332b04920b1044526a08e86b635324bcf892eea0bb9a6b85f56a89a9838"
     },
     {
       "url": "https://defibrillators.ca/en/services/aed-expiry-tracking/",
-      "sha256": "96092a7c91ec5aac7f5089f5b25e37560041c4b584604b92ee9e83cccf20fce5",
+      "sha256": "45388a5c70cff3fd225c6fe4089aa5feb9bfcbe86fbc8d44bca00cf06e2263a3",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -3058,11 +3088,11 @@
           "sha256": "71abaae596ee71786b299680654ee93ef971f1aaae35dcfeef73a43c05a255dc"
         }
       ],
-      "fingerprint": "8a95cba8a0daf082b5eda95b18a086306f88c4013b3b9416506822f5577cbd04"
+      "fingerprint": "8814a249882f8f6d86a974f6728c13f1bf94e8435432d0a54cc3df30d5e87820"
     },
     {
       "url": "https://defibrillators.ca/en/services/aed-post-use-replenishment/",
-      "sha256": "3020c55529941a8353c06fdf58c4e05dda84e0cfdcf2dfe28add8b35033258df",
+      "sha256": "7192836df8c01b3c0c07db318a51bd396d99db46a4f4e32d4cc9b90b27e6f3e5",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -3085,11 +3115,11 @@
           "sha256": "ffd655275f77ee0e8e879a40039ff8887be23b4a9bb4390e3dff1ee897bf39f9"
         }
       ],
-      "fingerprint": "153cbb04f0efeaf03f4f42c7739744a1b83de7563f319c03585e4a1f4f6358fe"
+      "fingerprint": "2bfd1380add237c7cda116ff3d7d72a3acb4f209e863ebd344555c36cd7da0f5"
     },
     {
       "url": "https://defibrillators.ca/en/services/aed-readiness-inspection/",
-      "sha256": "efb12cce614b6c5e7b7819b041dcf66b511326eac13f8ad14200cf5360d7e23d",
+      "sha256": "42377a544412cce04fcda54405cc27005e9b7a2ba866b1b180d75f8a2c3e388f",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -3112,11 +3142,11 @@
           "sha256": "13a610b71fcd48b8fa1590305f02f37b68bd4c29c8ab91c4fc8c6e9558c20732"
         }
       ],
-      "fingerprint": "ca9c6d657c5b7ca26922fefe3f178dda400113184f1ef71c5bd44052d6dbeed1"
+      "fingerprint": "510c3c60f94b4f47c6fdc5a9091f44a0053abc82016282b0d0d292500511da6b"
     },
     {
       "url": "https://defibrillators.ca/en/services/aed-site-assessment/",
-      "sha256": "a456c5d288fbb89367be1097e01c93310eaf47bb32eb0ed01aaed72153c406c9",
+      "sha256": "4f27e0392373b91a8867e08422afd9ef3967002d7b223fcd05f28fc5be7fa1b3",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -3139,11 +3169,11 @@
           "sha256": "ec8275ba722b13682528e45f93457aeb34965d8edbb32c9693fcd16407fe4a2c"
         }
       ],
-      "fingerprint": "c4594f4a801f6f365a98f5031dc48b7660add19ca3a749c1fd2ba5411137232b"
+      "fingerprint": "8a9c4276bb7da42af3b5c124921e5868b10758fd7fcdf5956d517b419cb8876f"
     },
     {
       "url": "https://defibrillators.ca/en/terms/",
-      "sha256": "dfa80b8cde8ce6cebbac25bcd043b1ff27477001cb8a654855889c1bf8334530",
+      "sha256": "0f2212321b10be5ffc7785698e66adbf72804bf27a4ccb7b05a4f708b034a6ff",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-en-dark.svg",
@@ -3154,11 +3184,11 @@
           "sha256": "bc4ca98af0ef05fbeda6e6e308cebd26b38e552ea8457df6ec89120ebcfd00f5"
         }
       ],
-      "fingerprint": "d0b9f00e27c93250410f72082f2fc781498e2ba99f02abbdc0d0bc6df4f0d4dd"
+      "fingerprint": "7d31b9ccc212baccd6ed906aad840c309fff790b4ee39ac0949d21417535043e"
     },
     {
       "url": "https://defibrillators.ca/fr/",
-      "sha256": "6f7f6420f49a83d784a793fcd73d717b3e4e40d5c9d73d912d4c6e753727cf73",
+      "sha256": "1491652dbb04dcdca6070f2a0ca4921f0369bfdc3faa2c55631097a424468303",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3221,11 +3251,11 @@
           "sha256": "440f17b7db6f617340107b4c0a7cb59ddf388fc181bb2c0fad4daffe0e119832"
         }
       ],
-      "fingerprint": "550b913d966be64fb4fb9154cbfd1051e67e3783b78628800cd3b9a0b3ad2fcb"
+      "fingerprint": "6995dbc976034bc0bce14ba458dcf832ba2a936babe35ab7b7605ec541e84601"
     },
     {
       "url": "https://defibrillators.ca/fr/a-propos/",
-      "sha256": "a105d44db1a757e77f482cb5c2fec67885b89c11d7ea5ec59ee163cd12ca1687",
+      "sha256": "387ae70dfa2ae6f5bbe64fdb1c1e0b642545d3405867780797812421c71f88b7",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3248,11 +3278,11 @@
           "sha256": "5030ae21e708bb8733ea7fbc2764e5f29e4ad6ab08ecad09c91c3e0dc5aef7c3"
         }
       ],
-      "fingerprint": "28500ec91e8c28c8ce7ab3ee85d4bbc190562bf78c4c033ce63179804af69b41"
+      "fingerprint": "bf6e2ad8ab1fea81b652a21feb6805a307907d3f931a4a0996af16d156e43807"
     },
     {
       "url": "https://defibrillators.ca/fr/accessibilite/",
-      "sha256": "e54a84a88858ad1e6871b940d936a1a8af5e6098fcb699b51e74b2c89fcff85c",
+      "sha256": "99825017b5ff885b68ae3a46e6ee4ed0c3816bdf2827bc6a2cc7f9b17d8182b6",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3263,11 +3293,11 @@
           "sha256": "7b4de4af0657d40862a483a0a6b94bf91692f581b401b1fddc9c7bbc350cebf7"
         }
       ],
-      "fingerprint": "38151da6c0b03a83f46d26b7478fd8f82f21cdb24839d2119c4c6de61d009950"
+      "fingerprint": "014e0896a2fbe74359debef88d686bffd424aca71e6327ee2c5dd73f96a7c963"
     },
     {
       "url": "https://defibrillators.ca/fr/accessoires/",
-      "sha256": "64b3af0363888c3e26cf7285b39bc90659c198642446c9093954f848bf2f7e00",
+      "sha256": "1bd3f8cfdf40b84cba858801a7c8e61fd1324abff1c094e9bc71e942a8acdb9f",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3382,11 +3412,11 @@
           "sha256": "19380152d4e3f6346ef0ac405978034ebda06c55017add9acd3862cbdd3a82d6"
         }
       ],
-      "fingerprint": "f4fc692268364eee37339f6695ed27b84ece3d828d92e1865a3c0c2b9a46ffbf"
+      "fingerprint": "2c4620c9ef2f78e7e76d1ad5cc4e0e4074d41fd7e309b00a48033a04cedf8941"
     },
     {
       "url": "https://defibrillators.ca/fr/accessoires/armoires-exterieures-dea/",
-      "sha256": "90823934cea0a49b7154b19b286e2c2c0f32c3af78a55dcc0194c45123de99f4",
+      "sha256": "a2885703b47584fb26c9e8ee842c43adae9b3a3aaf8e61c4ec31af89ca23e1cd",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3409,11 +3439,11 @@
           "sha256": "09a6d2af51c571185cfc49cf01ad0cb3616946a5cc3c0ac12dad5ba8b6bffc1a"
         }
       ],
-      "fingerprint": "4828d26b49c3a164ea71d4bffe4a8b5f7d60eea025bbcf53bd0f2a184e80d93a"
+      "fingerprint": "c0d55338be87b7c7dcc25bb3b997dbacdb58f0260b31ef82d2ff64eafa9b4742"
     },
     {
       "url": "https://defibrillators.ca/fr/accessoires/armoires/",
-      "sha256": "38964e9fb205f73785022804dec3a96d63a09952ddb3798b18750059fc73e7d8",
+      "sha256": "5025facaee8fb58755f37f3fe24230e5ed897e92a0860e23031c528510e45d9b",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3448,11 +3478,11 @@
           "sha256": "09a6d2af51c571185cfc49cf01ad0cb3616946a5cc3c0ac12dad5ba8b6bffc1a"
         }
       ],
-      "fingerprint": "4f5ffce95129f45878edb486930b0071b5af9be638ee6e177fddd08741bc6e86"
+      "fingerprint": "596404db76b15749d90f78f3be062b7553f1601fab1653f5eac9fbda9726e280"
     },
     {
       "url": "https://defibrillators.ca/fr/accessoires/batteries/",
-      "sha256": "5ca92784324e707a8991a446ae73ad3045f437cd65a661287180b04db5e36af0",
+      "sha256": "83dd71dfaa7bd6261717b4c3c5f95136c8d9aaff9da73cd67bbd28923984a733",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3487,11 +3517,11 @@
           "sha256": "3a042f584a1e2d952e2d73eb25e2aa09c3d6a863f46ceed56017eaf632fc05a3"
         }
       ],
-      "fingerprint": "ed0b207b21ebac87504ce89a50242e8e5794859f3538e776a8a71da87812434b"
+      "fingerprint": "98ce89b41d8931241dd94e5311ce0044848ee13e5cb0c6168dda20625ada1d97"
     },
     {
       "url": "https://defibrillators.ca/fr/accessoires/blocs-electrodes-batterie-dea/",
-      "sha256": "b78f3f5516bf826fd302ed9794ac142b17addcc96615fc76c8d1bd0de04e0ae4",
+      "sha256": "d192faabd875ef9300542b35283c7538316f4d8aa38be62decb7cbe07d9c92e3",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3514,11 +3544,11 @@
           "sha256": "3a042f584a1e2d952e2d73eb25e2aa09c3d6a863f46ceed56017eaf632fc05a3"
         }
       ],
-      "fingerprint": "840b1740896b25d71c9332ba77a34b03127b9951e92e4dd1d85638eae2eb675a"
+      "fingerprint": "c219aa7a8896054bff89d46d095557537fb56e01fd7327d6f627e1820b846ebb"
     },
     {
       "url": "https://defibrillators.ca/fr/accessoires/electrodes-cles-pediatriques-dea/",
-      "sha256": "fda8e87244d788f6cc3e084f99ae8a5f50aa5a4cc9f1bc9c811770343e63ebd8",
+      "sha256": "6206e2d099fd0923fc0c70f6a442eccce8db2a7d19361086617303b83c4e7697",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3541,11 +3571,11 @@
           "sha256": "5444ae68dc6b46f20c760fa0cf331eeca29d265b85e336679b338aa6e308aa4c"
         }
       ],
-      "fingerprint": "0422bb19d40d83faf5230f8777e7266c93cd4eebb1b55f60f69e638b83d84de3"
+      "fingerprint": "2784c8872d576cdacbd7460760e8111c0ec96bf52ee58dd0909e8706fa380482"
     },
     {
       "url": "https://defibrillators.ca/fr/accessoires/electrodes-dea-adultes/",
-      "sha256": "30190197ff94bff62177fe2aa110221b7aa9fff30e3bafc37c6442a421d2f594",
+      "sha256": "6d8c1b85a8d87e291b06b47e0baa3e176f194a9eb0267551f27a0f1588e2cd5f",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3568,11 +3598,11 @@
           "sha256": "d16190c7e8526d250895e6b18db8caf9e90eb5cf62fae22d677a8fbafe6b55c0"
         }
       ],
-      "fingerprint": "4133d2bf8fb763f2b1db38ecc22098b83b86fe30068a9f250979f49f05ec436b"
+      "fingerprint": "a1b58a2bb6a0e1331b6c06b8831aa0ba693af6d2159cd6233daf2143e5ae2a36"
     },
     {
       "url": "https://defibrillators.ca/fr/accessoires/electrodes/",
-      "sha256": "0974b7416331118f4191e3e51973ccb065e1556855a04851baff296c1435a027",
+      "sha256": "9eeb9bb42293da302935727b1bd880d6a071b0ecc2aa4baf3d154245a9235e02",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3615,11 +3645,11 @@
           "sha256": "5444ae68dc6b46f20c760fa0cf331eeca29d265b85e336679b338aa6e308aa4c"
         }
       ],
-      "fingerprint": "628bfbf8ea370d960179be613e8060593581f8585fb24f7b6e3dc8a2861dffc2"
+      "fingerprint": "bd9067152a7b8979b2f5a324a5455c5329d0cf4816509af2038229618506fb2c"
     },
     {
       "url": "https://defibrillators.ca/fr/accessoires/etuis-transport-dea/",
-      "sha256": "bf35cd3856e81948bc80a43303c1fc3d78ea8c706abbb0cf4405255b380ce4ce",
+      "sha256": "a8810ff1142415f1d70968f9e215882e7db6f6f1ab5f079cecd2dbced03cdd76",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3642,11 +3672,11 @@
           "sha256": "96a826e29de843e9b23f1034e47bebbb7b53fb3b08db92d68c212b3280fc2968"
         }
       ],
-      "fingerprint": "56db83efa7c8c36bd110d48adc30b4b8f90bc7c5f5a088c59f17090730eb9f93"
+      "fingerprint": "b556bdf5bbc7579953e0bf44468e901d901bcf3da2d2054b7ccf8bd93a9b158d"
     },
     {
       "url": "https://defibrillators.ca/fr/accessoires/signalisation/",
-      "sha256": "14e5ba128046414a880c0a1da44d6dcb9b95db49ab73da032aac55f94b1755e4",
+      "sha256": "720a8a7e79ec7a0a976f7923217d167f783fe424e3482ab360d6a19fe2aae872",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3669,11 +3699,11 @@
           "sha256": "41b43fea7881c6ceb21fe6b26d29a25e70edddf6dd60d17d34ae5b2cada76ce7"
         }
       ],
-      "fingerprint": "86c07607cffa23535feabad27e66970179c0e95e13a05a5c0b20c76cf33e80f3"
+      "fingerprint": "fedbf341231825ff34009390af1c5900a42ddc83242e9390eb47dd4050f88bc5"
     },
     {
       "url": "https://defibrillators.ca/fr/accessoires/simulateurs-dea/",
-      "sha256": "4bced4327515be59e67daa585323e76bf7476c7acd6d1642dc3d41ae402330ad",
+      "sha256": "3763db1f5d871957f163a28b6a539a5b7c2e3a876ed5ee964d66c99b2e15bb49",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3696,11 +3726,11 @@
           "sha256": "19380152d4e3f6346ef0ac405978034ebda06c55017add9acd3862cbdd3a82d6"
         }
       ],
-      "fingerprint": "6dc415174b87d076537bccdbaa109f069ff9097a840d3a9ec84ba24c09bf8086"
+      "fingerprint": "b9e774774f34cf5e3a9e9d277641d97da2f21df6362a5e3a9f02b7089b6af114"
     },
     {
       "url": "https://defibrillators.ca/fr/accessoires/trousses-intervention/",
-      "sha256": "db13f3cf070f9554101b621f8fba02a525cd7a5e65abd3fddd84f92c128a9d8a",
+      "sha256": "f9ffd3bba0f921e63fbc7c5f8e73fa450e21a035d86064fd69c982dde7b7f21f",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3723,11 +3753,11 @@
           "sha256": "d163e0018f6b358c50bed7e7abea157d4e28cd78a7b729d90c44e3766b329741"
         }
       ],
-      "fingerprint": "2d39c36a1e981bdc823e7ff1baaf9f38b1b32ca3da5a112a25894eb4a3742c1a"
+      "fingerprint": "ce36d2059cf523070de369442acab4922413a8e7fd8432c6782ce1d1eddf2ed1"
     },
     {
       "url": "https://defibrillators.ca/fr/accessoires/trouver-pieces/",
-      "sha256": "9dad6007ef9525b6103dfed40065ad56b65a3b6c439fd121cf4ce2c1a3b63a03",
+      "sha256": "fc25dd95dbdcac09066d4f94a6abadd2777c1876562a1ac342780b1afab71a31",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3750,11 +3780,26 @@
           "sha256": "85a4e06957fd05c546ed59624d27e673cca7aa0c353880d675f4ab05c6f078a4"
         }
       ],
-      "fingerprint": "426359026de7e2c0f7592b59ad8d03e78fa36e06085ac0f1b4eab80b4a3e8ffb"
+      "fingerprint": "e6dff830f38b6899b357f49e892a7a9f8d013bfc403d6bc9f8c76e7dfee22ddc"
+    },
+    {
+      "url": "https://defibrillators.ca/fr/approvisionnement/",
+      "sha256": "8c900e13c433f795b8259f3836ddc5c9d0df33cc2dd9ac3cb6219ec415bd8c5b",
+      "images": [
+        {
+          "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
+          "sha256": "22121d95dc4bb6a535e548d04cc4d732f5d4c4e5f51195f408b4116ddcd993ba"
+        },
+        {
+          "url": "https://defibrillators.ca/brand/logo-fr-light.svg",
+          "sha256": "7b4de4af0657d40862a483a0a6b94bf91692f581b401b1fddc9c7bbc350cebf7"
+        }
+      ],
+      "fingerprint": "1df5b4abe51b46cfd9dc44f5569655dd8bcf67d338807391a0ab474200bffd00"
     },
     {
       "url": "https://defibrillators.ca/fr/conditions/",
-      "sha256": "00a4a654a05487a0e238551e8d7630bcd527b16710c81b6f1ef0900bf936c882",
+      "sha256": "f801ac18071cc2ad9b3fd007d54694c04940ab43fff7902c1de790b14c2a969b",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3765,11 +3810,11 @@
           "sha256": "7b4de4af0657d40862a483a0a6b94bf91692f581b401b1fddc9c7bbc350cebf7"
         }
       ],
-      "fingerprint": "7a9f2de146ca4e28c145d9057b24be3674933af37433477720a9fee611f48f0d"
+      "fingerprint": "ce639127fb0ea3883dec7ab7c2724787fe3b5c6eaa565ec0337414e267e69d85"
     },
     {
       "url": "https://defibrillators.ca/fr/confidentialite/",
-      "sha256": "fee9ab6c3c9d5e98ea69f266e54a82c5ec5febea2d294f1cffc6f086aa250e02",
+      "sha256": "0c25ace1266bfdfbe7d3e07603e083060b8d7ea8254c85b7403e9563957baa60",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3780,11 +3825,11 @@
           "sha256": "7b4de4af0657d40862a483a0a6b94bf91692f581b401b1fddc9c7bbc350cebf7"
         }
       ],
-      "fingerprint": "0b7ca0939c4abf3dbe9fb83c50fc16f67004184cf318ea98443ec3f7256d5d12"
+      "fingerprint": "44c8d68bd15969acce2da5639affe881c867a52d8a665ddc6b83c568fec4c61f"
     },
     {
       "url": "https://defibrillators.ca/fr/contact/",
-      "sha256": "84e4f4bbdc8751cd07698e207efd78d4b8455039e6aa235394bbcd3b4ea9a1e8",
+      "sha256": "efeceabd040abe61e1063c5fb85601f8246314d157be78e4c2645957e88320a4",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3795,11 +3840,11 @@
           "sha256": "7b4de4af0657d40862a483a0a6b94bf91692f581b401b1fddc9c7bbc350cebf7"
         }
       ],
-      "fingerprint": "dc8521b8ff468cad866650abc8ba5d38c8b20cd7daf742fcb57a9d523ab92a78"
+      "fingerprint": "07beebd6b7be81825026604aacb1e7ba08f16a1985b4ed8d886d7f2fd89a2cf8"
     },
     {
       "url": "https://defibrillators.ca/fr/defibrillateurs/",
-      "sha256": "f5d4905d4e814a0c00000dafb4ee289dfd413f0acdc810b2b3a1fd5d1acdaee7",
+      "sha256": "2ef3f3bca8f391e6bd46fe217260c7f8c7fd935c928f51f654547fc2c00ede4b",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3910,11 +3955,11 @@
           "sha256": "912cb8fafefe1aaa3ab96bf6ff1e14e21398b80bed857637ef9871cd8362985a"
         }
       ],
-      "fingerprint": "a4e071fa9a448902d2158400a3d69e92455bc550a541f92b72bf5cac2846b5ff"
+      "fingerprint": "fd9478eb4ee5cb8699cf3bf5e1bcbdbfb2d4a0c515f2a2f815cb65f815428d9a"
     },
     {
       "url": "https://defibrillators.ca/fr/defibrillateurs/comparer/",
-      "sha256": "e228c78103f2f499fe90190acd41bbc05b7c1a579baee4cd32eca50227020891",
+      "sha256": "0a186bcaba74f3589998820d1666ae7bbe79ca1d70c158bc005a75d09db0c4bd",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3937,11 +3982,11 @@
           "sha256": "d544d5e1701d6a6b3dc9ced60cef3c09604e561d29c6c37571d745a51dc4b813"
         }
       ],
-      "fingerprint": "253d4d2bf20a04cb5e448743bd1294266db2ba88397df2713333eda07a424014"
+      "fingerprint": "94d5f83a0cf0a8edd017d62230b47977f915be3cea8b0ac2fcfd1daccea8f18d"
     },
     {
       "url": "https://defibrillators.ca/fr/defibrillateurs/defibtech-lifeline-view/",
-      "sha256": "c4de1db19afb66b01b9f89327a5d273a9e47ef6570ab1a57c8375c933e00bd06",
+      "sha256": "495a4ad21226d5e16c177db526c5a35aa9a5fc95c6164dfac26a3d56b45b9620",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3960,11 +4005,11 @@
           "sha256": "f7b94e6480a938970ef35269c803465361f8583e1e0fdc1ad8ffeb1c2bec8f7d"
         }
       ],
-      "fingerprint": "8580c32040cdd01c09660be91d83916444fb0218a86681114a52c436d979cacd"
+      "fingerprint": "45388b6d45342f4368e9134b2e3dd178ccad023de9c821c20cc6c15ac1169cda"
     },
     {
       "url": "https://defibrillators.ca/fr/defibrillateurs/ensembles/",
-      "sha256": "c140a100b826da51cacc07f5d57fa94cfa620f89ae61f120689b8c3c0239ab99",
+      "sha256": "15aafd901e4a7e68bfbc23ef98d7a1fccc9e58305e6c21d317bc48d79f0f219f",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -3987,11 +4032,11 @@
           "sha256": "90f55a05bf8833d7289f3d538ba800b8404326fcf6c9ef94bed9e933b29a280a"
         }
       ],
-      "fingerprint": "690403df198f61da19238876613fd1ceea644534a8e4efea902c14bf862921e2"
+      "fingerprint": "a3a2d78d95f878ab1ede3ec517b9c6f1a7c7eb69179980197d9b3681276b41bb"
     },
     {
       "url": "https://defibrillators.ca/fr/defibrillateurs/heartsine-samaritan-350p/",
-      "sha256": "a67e543c968f6b04d95186fe558a4e74c80a4b4bf91a94e1efc6daf4d0c217ab",
+      "sha256": "540156d503d23f284edd17154c7ec4cc32b54d39586154acdd25bebabb0213ca",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4014,11 +4059,11 @@
           "sha256": "adeba3cbd22fb48276ac8a66e2c5447a7f431e318f3eb788362caa25164c2a1c"
         }
       ],
-      "fingerprint": "eed8344e10c6ff905c21be8b0f4fb48255064bc2acddb36cb6966c1458005fc7"
+      "fingerprint": "e17649d042de22a5c1b9eaeccc7d9ff23ff9ed9c4cd5b56c00c80465083194e9"
     },
     {
       "url": "https://defibrillators.ca/fr/defibrillateurs/lifepak-cr2/",
-      "sha256": "1cbe5c5b1a512425918e522f4631d3b475c9756764c2b5e6d77cb74d43cdfdc8",
+      "sha256": "f074994ba3d2f27eed6cb3b506392794e0daac8fba37d2d66f128fbe01bc63e0",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4041,11 +4086,11 @@
           "sha256": "547f6b3070e7c8c76556b58ac316df31ba15ab4d8d678635566b2c4a47847003"
         }
       ],
-      "fingerprint": "b33d8a0166c04bb6b01e1291bdffa3a134213be3ffff9f07da120d0d38edeb6e"
+      "fingerprint": "ae3295d2f4f8fc5ea68e88ea724df063711ad43e3f53eaba1cfd1209b34ac323"
     },
     {
       "url": "https://defibrillators.ca/fr/defibrillateurs/philips-heartstart-frx/",
-      "sha256": "f17205e47003aa5a66d407f87eb5751367e8b4361456dd00cb7188c314f698c4",
+      "sha256": "baab390a2d1c568b7124f29429d468e96a671bc9f8e4ad4b2da8412b9cd8b68b",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4068,11 +4113,11 @@
           "sha256": "169a35d1b63ea4a33061f6fcaba16be258bdedb436f438b4cd8f61d1cc49ef4c"
         }
       ],
-      "fingerprint": "0c7fcaa4b7d6f02b5c7149078026ab4a12398cbdda11db5898520a451a10d5d6"
+      "fingerprint": "5e3ce0198bdac0f3602e2ed19bbd02679035d9d9e9046c64e4623ce66656dfcc"
     },
     {
       "url": "https://defibrillators.ca/fr/defibrillateurs/philips-heartstart-hs1/",
-      "sha256": "6d58b0fbd9e3406c58e4e171339f251659574e4b175ea53ffe8e54e05b4c3c8b",
+      "sha256": "1fd31a3476281203e3cc0030614e1e434e777941aacdac63673c2bf6c17f395d",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4095,11 +4140,11 @@
           "sha256": "74461d7d5ff4e1e66b5d4569215dd1a254ef0e3f8a48e7d2a2dad8495b2081c5"
         }
       ],
-      "fingerprint": "b05bb0377013fefc49e889367ebc7b3079184666a7dfbbb91941da4128a458f9"
+      "fingerprint": "35e9028bee5bbf6048f01ab5ddf274043a65aacb7bc93bf5bb333e194e8c9453"
     },
     {
       "url": "https://defibrillators.ca/fr/defibrillateurs/powerheart-g5/",
-      "sha256": "ff455dc7336572b9a8c2ea4583f53c99ad2ece457f5811336030c36253475af7",
+      "sha256": "21997e7ad3b9af41446513f38b376986145e64115b4dffae785aa3e981928ccf",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4122,11 +4167,11 @@
           "sha256": "43c7a5020e9f85dd57fe73c2e34f437e2de9921bb69f4f18ffc1bfb3a6d21a7f"
         }
       ],
-      "fingerprint": "d6f61092318db40796483c608ffc0f89ea927d0d6160b47624ba72ca0a8f39ad"
+      "fingerprint": "485715b24205441f04618e06886ebeb9708880a62980d9955d140f2856bb7981"
     },
     {
       "url": "https://defibrillators.ca/fr/defibrillateurs/zoll-aed-3/",
-      "sha256": "5c9247878e11daa6b5c6d6f9676152775bd93580bcad9e06db92209a5e0e2249",
+      "sha256": "17a61fd560f4ebf5aac7b4e9358acdb1d3dc6817e477834369c01825aab2a636",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4149,11 +4194,11 @@
           "sha256": "912cb8fafefe1aaa3ab96bf6ff1e14e21398b80bed857637ef9871cd8362985a"
         }
       ],
-      "fingerprint": "e58981ac9e84477ca060f9e4c4bdb9b608b35e9ffa747fc89a84d0a141a9b390"
+      "fingerprint": "6ec32d73e245a39c64d143843a4873da8fe9381917a2388e07fc6d00e59f3f56"
     },
     {
       "url": "https://defibrillators.ca/fr/defibrillateurs/zoll-aed-plus/",
-      "sha256": "8fed3e6474c5897028c6fc8ef6e0324fa02886ab278f4ed7883eddafbdf99b79",
+      "sha256": "f24e948cf550c0976913234ad11a2a704d5917feb6103777e0edc50cfacf6e81",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4172,11 +4217,11 @@
           "sha256": "699454803d9ceebb7e9b7126adb5c1991dd53d8d37db6c27f81e87759930d061"
         }
       ],
-      "fingerprint": "f550ae803b8fba3cdabb249a0931c348c923252693de8541294311c071e2e5c8"
+      "fingerprint": "75f27cabeef5915c4fb6d421ea04d4622fc4368bd26acaee5365ca5746245c7c"
     },
     {
       "url": "https://defibrillators.ca/fr/demander-soumission/",
-      "sha256": "966c7f0c44c2e799dc7a66a7be8e8193866878d301a6e966e618a37bc647caf9",
+      "sha256": "548d86065124b5d5bf43b25af2867cbbfcc4049628c1397855fa33b2be251a68",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4187,11 +4232,11 @@
           "sha256": "7b4de4af0657d40862a483a0a6b94bf91692f581b401b1fddc9c7bbc350cebf7"
         }
       ],
-      "fingerprint": "bac72cb22f29bacdd6efa6097838c1b8d1d4891355eccc273eab9d81fee48006"
+      "fingerprint": "91c9ca0ef264072e936a5cd963857987009201fe4faa99811acbdca400aee8f7"
     },
     {
       "url": "https://defibrillators.ca/fr/entretien/",
-      "sha256": "5915ecea8c940246883530a303165cd0dc835c2937b707a9cf5295470513f790",
+      "sha256": "00c062a17f21af31fddf6645c9aa9e6eb6c212cd8c8dd714d35008a66d00cf26",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4238,11 +4283,11 @@
           "sha256": "13a610b71fcd48b8fa1590305f02f37b68bd4c29c8ab91c4fc8c6e9558c20732"
         }
       ],
-      "fingerprint": "033ddd691459a210ecccaf7041255b0d4766763e97890c04947d757c3ca991e4"
+      "fingerprint": "a75bfe96d3aeef41171452651eebf9e96d9fde7777b655472dbec3fc10dd1e6c"
     },
     {
       "url": "https://defibrillators.ca/fr/formation-rcr-dea/",
-      "sha256": "57a950713de95bd38eec442b256efb5b61d9cd0099b49bf70bc8c91b8840dec0",
+      "sha256": "1e768f3e47617281b6321a98fa8ed1a01a53939913be7cbfbde76398f3798404",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4265,11 +4310,11 @@
           "sha256": "4cf7abbb75220589080e2a9e670198f89abd6aeafd1e05813ed12846d13e4dd9"
         }
       ],
-      "fingerprint": "64310f5cfbc68c9ebc6ece61925300e2dec298991bdc7e9d84201344a912af9f"
+      "fingerprint": "498813fb61ede1b992dcbb4489df79e11e6d6a40b7535e7f92f9ffa23126861a"
     },
     {
       "url": "https://defibrillators.ca/fr/installation/",
-      "sha256": "080a3435120232ce4ed788b47ab9de6189c8b30262017085974d3846d3163050",
+      "sha256": "3982107cf321d31e0b1d502f991e07778c47313551e7e568cca00b04a7be8de3",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4316,11 +4361,11 @@
           "sha256": "ec8275ba722b13682528e45f93457aeb34965d8edbb32c9693fcd16407fe4a2c"
         }
       ],
-      "fingerprint": "72694c25b6884f5b88f150ea03bcbf9e5c8c308f4b90191eae69ea9650b8f840"
+      "fingerprint": "c1f78aa90368d06e10836ac649492350aea26c7c72ab1c5dc72b4edeeb85ecc1"
     },
     {
       "url": "https://defibrillators.ca/fr/programmes-dea/",
-      "sha256": "f75fcdaa3b1b0ac055a980bb02161c4877e5653057ae3ccb1c6dae7dac21d751",
+      "sha256": "a4998299abfaecbd73a15be900abeff1511c20c9b11dcb7b64ee4289e8b721ce",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4367,11 +4412,11 @@
           "sha256": "ca5064dfb3b34af6e0cc406e62a0b47f45e3c612883457108690c24568c7ce12"
         }
       ],
-      "fingerprint": "78e01170a172846e7d3243a7dc4246e12b8710b6b6cc18504c932fcc6736a976"
+      "fingerprint": "744176cdf5dd54addf069d97662925dde30a5df797010d6e689a0a992ec0d3dd"
     },
     {
       "url": "https://defibrillators.ca/fr/questions-frequentes/",
-      "sha256": "851a2ac595271bc5ecd861efb51df17cabfdcff1c29f4040b0c62ed9d9822978",
+      "sha256": "391e2c70dd7984e387b376f08e44c5976ac1537e70a47e21fdad75dd5a41f970",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4382,11 +4427,11 @@
           "sha256": "7b4de4af0657d40862a483a0a6b94bf91692f581b401b1fddc9c7bbc350cebf7"
         }
       ],
-      "fingerprint": "c0be6aa8b47bfa7309fdd33e79008ff5c8d6ddb04c131b509ac4a2454d8ed79e"
+      "fingerprint": "e6509496312c505ebbc03a64e65c11641e7f4485d34ac91132a7e76cecf3b62e"
     },
     {
       "url": "https://defibrillators.ca/fr/recherche/",
-      "sha256": "ba87204f4ae7aa53f86fb76a1674a538ff8a1f8bd7f88d752ea06eed8f65e465",
+      "sha256": "ca13372ddbb02fc1e38f6a9d4b50582ea81c40b469576d596b71a4c1151318b8",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4397,11 +4442,11 @@
           "sha256": "7b4de4af0657d40862a483a0a6b94bf91692f581b401b1fddc9c7bbc350cebf7"
         }
       ],
-      "fingerprint": "6e1c449e695a6c841c4b6a81e789e6cc773ff70303c2f25593053b79eab1b60e"
+      "fingerprint": "b11c0b60ccace2025ed70d0c96efbff361f8a72148e10871ad23bfe79edb7e50"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/",
-      "sha256": "4bf631ecf3d96590038c9bfe69eff9336fa328ae9045488893a9fd94560177e7",
+      "sha256": "05e5d6cd899f26fc5eb0a8c40732c8938d43c1ba8f23dd110a84253588010c09",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4416,11 +4461,11 @@
           "sha256": "3561e8902c8dbe5afb163c569244c1a5d7a9b7ab53818d2c0d14c6d6d36613b9"
         }
       ],
-      "fingerprint": "589ac875537dfa22d83741022c9c908d0d0b6fff5b6ed097a5d7b9d13d8810a1"
+      "fingerprint": "393f78392469bd212d80b8a8653bdb9bbd7b5b9c4670a63b232b7f699667d9e8"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/alberta/",
-      "sha256": "c65c51c4a3eed59d9ee07dcb4885e9004e48d8ea894ac05a9809489af2dc2ffb",
+      "sha256": "483e5955640b4431ac75ddd7102c4163127104e90c466b495a2bf7c8a0ac6090",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4435,11 +4480,11 @@
           "sha256": "e30db338d9af87d999db8347bffaa12e36b384e0073d996f831093bd0abb6897"
         }
       ],
-      "fingerprint": "0bf54cbe999a30ec365572f99f78680245e7ced35f2f3c30668d38b6218eb00f"
+      "fingerprint": "66f27af94a6b91733ca80a788d072d6163a1f4f60aa9b447b9681a1ae5964fd1"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/alberta/calgary/",
-      "sha256": "41e1c348fb1d4e10158a40dfea4ed37e92cc79c71ac8718f639455f562f6b083",
+      "sha256": "8ed44bb661b51f8eb927dc0dc82e21b6361ac672adca6fe6f33a6b6d6f233f1b",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4454,11 +4499,11 @@
           "sha256": "7d96aba5f07ab6b257a53f9e6445a0512d934933441a5fa31923c1045382accd"
         }
       ],
-      "fingerprint": "1b29e1cfce34e942011a9907a47b01fdf70591abcdb363d9e03b2bee00e1ca09"
+      "fingerprint": "b96fa3aed06866b50e12152595b8a6673d6ef35fb9665b7bae313c8748f3fd77"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/alberta/edmonton/",
-      "sha256": "928d25215dae4ffc4bab22f91a12e8ec3996e78c747215aef1eeaf32872345a0",
+      "sha256": "2547baf83af444eda92b8b2dcd85d78b3e8de13dd224a513d105a8c4eec95a6a",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4473,11 +4518,11 @@
           "sha256": "e30db338d9af87d999db8347bffaa12e36b384e0073d996f831093bd0abb6897"
         }
       ],
-      "fingerprint": "50d8a03beae0fdc6866d6a944e58789e06d38829d091422486684979f76eee8f"
+      "fingerprint": "9961c7f0e3b0454841fed5110061944b5620840f5acb1a3d2148bef8b08c0e7f"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/alberta/lethbridge/",
-      "sha256": "a5cad2137380b339d6c619f6cb8da8625e01192343df194bc592b64e7e5ef9d6",
+      "sha256": "6bc3fb9cd6d836e27e973365a92751c3bbc87bdc7507b7bcd7ed65e74d85464e",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4492,11 +4537,11 @@
           "sha256": "e30db338d9af87d999db8347bffaa12e36b384e0073d996f831093bd0abb6897"
         }
       ],
-      "fingerprint": "cd2ea3c0557c72f1c209b202a25795541bc4b4cb19b4f570442165bb48dd1ed6"
+      "fingerprint": "54cb4f29e2d79da7e8d9bf386b78b35f779c8e7524ebd6f94068758df68dbe5d"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/alberta/red-deer/",
-      "sha256": "fadda4e1ddc07ccd749ce678c71cf96f46e6a4f84e4c701c6534e1ff18124199",
+      "sha256": "ca9292efae79539185fbb2334f80473ef01d2e704470b5076ccaa1baa0c98cdd",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4511,11 +4556,11 @@
           "sha256": "e30db338d9af87d999db8347bffaa12e36b384e0073d996f831093bd0abb6897"
         }
       ],
-      "fingerprint": "19fd89f95cd091728068dccd70321100fb15151cac87916345d4daa65adbb1d8"
+      "fingerprint": "45345e5a4dc3adc46c7486e97604e5018a81cf739c3a2455cbfe87758f386e8a"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/colombie-britannique/",
-      "sha256": "7f8bb24df8699b830ed184017474411ecc21d4ba2661647525fc42a02fc873ce",
+      "sha256": "5bdcd76c9d67b455706fc7d4f1ac7e285936f6c63173076910e2bc7031171f2d",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4530,11 +4575,11 @@
           "sha256": "528ed2118b72e04c8e877a38e8ab8ae7bd1f2fbf46abcb12316497de44cdbbff"
         }
       ],
-      "fingerprint": "f3912978934bdba2c35f2dd6dbf94b93ade236ecde5f86ec218684c852bb0425"
+      "fingerprint": "8a09f8ffc4829285693c02deb9c5e0990339b7769b93e4d0928576d1f2807dd0"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/colombie-britannique/abbotsford-mission/",
-      "sha256": "bd3fbc8aa9b0db9d7ed01685dea297f4193bac1b4fe49abc52702449ed353d03",
+      "sha256": "0502b244a25bbc7c9be8f0c51eea6ccb25d8e4e0ff1942cfe2155b29da70ea0c",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4549,11 +4594,11 @@
           "sha256": "528ed2118b72e04c8e877a38e8ab8ae7bd1f2fbf46abcb12316497de44cdbbff"
         }
       ],
-      "fingerprint": "55ac7052d06e9e776f44c8d7bb0986bd5c07c0cc62d3c4256e6274c59bbac16e"
+      "fingerprint": "06bc86cf03a308cafe72413f2f1ce4580464156c38206ad4615c18e20ce4b445"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/colombie-britannique/chilliwack/",
-      "sha256": "5530cca02196f9d75adbf23f2242398bc1c74d196ee38559a2d50aac158ab727",
+      "sha256": "489ae12703e42ef6cbcd77d3cf758b9f616015e2efbcf24f0fc16d0f45ea7e3a",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4568,11 +4613,11 @@
           "sha256": "528ed2118b72e04c8e877a38e8ab8ae7bd1f2fbf46abcb12316497de44cdbbff"
         }
       ],
-      "fingerprint": "b8b88267b9407dfbd2704f11ebf4d67f3a8b569837a8e8cc772d3834a1d9f7be"
+      "fingerprint": "c8d9dd5690c615dbabe5effed55c8a5282623ee873e1fe42b0eebc5a5dd5fea7"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/colombie-britannique/kamloops/",
-      "sha256": "7c2afbfb02397b31838d7c1e45a9d486d714df01c87758e962447b29e923db5d",
+      "sha256": "c8bd916825e874bab43da6ea6ee48e40dd8ddc79e4b62ff1a8194aa6f96542c9",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4587,11 +4632,11 @@
           "sha256": "528ed2118b72e04c8e877a38e8ab8ae7bd1f2fbf46abcb12316497de44cdbbff"
         }
       ],
-      "fingerprint": "248e2412cf76512d1a769459b07615e74da39bfcf60309f492e4ce386a33ff3e"
+      "fingerprint": "09b4929c646a5b99791af2251543e11074060fddd9c445d14e4c6e3a3ac4e060"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/colombie-britannique/kelowna/",
-      "sha256": "54a4961bdddf5438c8f324396cebf8b31295fb3af1a0deba656da96e59f8088a",
+      "sha256": "b4d4abebddf929105ed2e78180779d70a216c8756b42d70e63aac28ac465b780",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4606,11 +4651,11 @@
           "sha256": "528ed2118b72e04c8e877a38e8ab8ae7bd1f2fbf46abcb12316497de44cdbbff"
         }
       ],
-      "fingerprint": "25f623c217d7fd517de4df8a28315e11c117daf556d5ad5f3090f1c84d3023fd"
+      "fingerprint": "d2608f57bdeac2800a5fe887f4d18b227e31ce876c64763e45cc5581abfefb94"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/colombie-britannique/nanaimo/",
-      "sha256": "ee8527c83abe809b4ee28a1b025d09d7b5a17c343a18aeac398ce7c518928cd7",
+      "sha256": "ce367d8c4cceadaaf6e3d111215108cebe769a8a761472683ab7f9039b2bf781",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4625,11 +4670,11 @@
           "sha256": "528ed2118b72e04c8e877a38e8ab8ae7bd1f2fbf46abcb12316497de44cdbbff"
         }
       ],
-      "fingerprint": "acf9baf2381afeec33f6f8f70aa10e42b01f7a4e4a89d54b9de7eec033ceae8b"
+      "fingerprint": "0d9ed2342dcaea17fc9059d94fed20a054dbfa49c76986e781f3b280bd593404"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/colombie-britannique/vancouver/",
-      "sha256": "0ed30e50245bad42b8881faf167c4bab833025bd87d047f7376ba112a0b49fa5",
+      "sha256": "aa49dac6668adbe8dd376c108098d12f7c40a4b21f5c93868f385731c5428ce5",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4644,11 +4689,11 @@
           "sha256": "7b6c834fb33397ec2db75227c8d11cbad23e166b1d31525afc912b87b6a4a360"
         }
       ],
-      "fingerprint": "3216180c837d75188adffa482f98cb365faedf9caa4fc64a51da564eaf513eb5"
+      "fingerprint": "788108b1c4da45b193557b6825c878913cc69c89289d9b9423143e2d9b0a5a1e"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/colombie-britannique/victoria/",
-      "sha256": "aad332642714dccb622c1464ed5ee39beafbadc2d85f3f448fbcbfd2f7f10342",
+      "sha256": "a38df85205f99200aecbbb83737544525e7d9ff152e0b8c8744d10ee4470d9c2",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4663,11 +4708,11 @@
           "sha256": "528ed2118b72e04c8e877a38e8ab8ae7bd1f2fbf46abcb12316497de44cdbbff"
         }
       ],
-      "fingerprint": "650d6ce904b29a84696ef9cea3f53f32fc6bf4f1e9d21709015b52e876d35a19"
+      "fingerprint": "f5b96409ce0091128fc9062fd44c44ae88c7c9049c2b0241e718a871e8e562f1"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/ile-du-prince-edouard/",
-      "sha256": "54fd4664b6e9fb21bb5c8da36a6005c98c050819523715801e2c9ea3e5f06f99",
+      "sha256": "1b36a9b88544506f6fdddd4124683991779960d06cac9d862ee223742fcf775b",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4682,11 +4727,11 @@
           "sha256": "1f2b070e87b0d29a34c4bb107d72e9a501ef31cb0d3b6b2150eb2636ff11e678"
         }
       ],
-      "fingerprint": "9041c8ba6f00ca8d392e015ff023c0cfbda8bdd7c64a6e7cd8d0d5951067213f"
+      "fingerprint": "6acc281c6fff004bdb8f488883a8a76d17cc077291987ba438fbb360a26b3a86"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/ile-du-prince-edouard/charlottetown/",
-      "sha256": "368f5d9b13706306c71db9a0747d0445646610dc1c5f31ae3ff1de360f28c2de",
+      "sha256": "48f5e0ae7cf4fcc1257a3c13510ab4c6bc0888cf45eeae5bf0a9dfa56bf8e6a8",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4701,11 +4746,11 @@
           "sha256": "1f2b070e87b0d29a34c4bb107d72e9a501ef31cb0d3b6b2150eb2636ff11e678"
         }
       ],
-      "fingerprint": "d800cbf81d52633f1ee0ead3672335e08e1a259b8b96e953830c9a4cb89e74dc"
+      "fingerprint": "1db5c6345d747ecb228b05a4492eed0fe6ef388875f7b9da6564008d0034fc82"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/manitoba/",
-      "sha256": "0033fe8a05f238df8c8a33c5b6ef35aa0891ad7e40b2caef170db9fc0940ce7d",
+      "sha256": "307284aae21030ff97d6fce40eebaf0369887fc04f2bfd161f2ec5f1f418fd45",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4720,11 +4765,11 @@
           "sha256": "5a7cb80483f4c8ca4ce6fae8c0d07800700ab19faf07ee6b2e2f8a04f4ced73d"
         }
       ],
-      "fingerprint": "555005f965d6c287e25fbab5736c5da4b6a1e5c43b273a736caaa9ed11b59ace"
+      "fingerprint": "7fc0c71472c0cac8c52be312e0a2cc74ee3d436c2b33068dabdff254f858a9ee"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/manitoba/winnipeg/",
-      "sha256": "bdc2556b233a5365c060b44403524d9e74ba661bf7e80dd571cbc19d543cf598",
+      "sha256": "0f8f392f367adda24e3b2dbea97d30d70e32f8a833cec9896d1df15cd2fe4951",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4739,11 +4784,11 @@
           "sha256": "5a7cb80483f4c8ca4ce6fae8c0d07800700ab19faf07ee6b2e2f8a04f4ced73d"
         }
       ],
-      "fingerprint": "fabdfe31ddd2f26741398d4b10665ca9d50098cb95d4a4af901b124c2c0f4f55"
+      "fingerprint": "9fbcfd9beef20a2d12c49370cedae0224db8d752f0f4856d5b2c301b2b4dc9c2"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/nouveau-brunswick/",
-      "sha256": "ca7252077cb2d72402c9e148a5724d10ee0eb3147197064fbd74adaec8c1562b",
+      "sha256": "9291320410b465cc54f562e1f32352c2b416e637c1a3e9c69e0791ea731d1f72",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4758,11 +4803,11 @@
           "sha256": "3528c7d076dd7347b63de1f0d7c411604c770f794d24309d2bf7f09f84f2777d"
         }
       ],
-      "fingerprint": "016659b1f4f7ca98a3debd532f32e50b1d7b29aea3433fcf7321ffb35e7cc6e8"
+      "fingerprint": "2967bf46d826eda5f05338f631a887caa06be5d0aa31c051696c30631ddd233b"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/nouveau-brunswick/fredericton/",
-      "sha256": "12f478ce32fc5ac8e8d37697b30bc757ec03913982fa7537af11686a31ab6a5e",
+      "sha256": "27c423fe1854222892ec561e60b88b247b6591f5b29a1ed4bc48ee6f4df0d25b",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4777,11 +4822,11 @@
           "sha256": "3528c7d076dd7347b63de1f0d7c411604c770f794d24309d2bf7f09f84f2777d"
         }
       ],
-      "fingerprint": "035fb36262cf1e31cece482f5c8670646cfe0bb45a1d637f35a2b78d4f57f602"
+      "fingerprint": "6c40840309009d28cb6d815e0b9973b62e542640f51d20acb06085be5a3b7715"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/nouveau-brunswick/moncton/",
-      "sha256": "26f78936887b7a048798a475d86f9849fc9e596c5e9718ef82141bc9907de6a2",
+      "sha256": "aad82405c7503ddf813f8194f7c358ac58660ff7115cc181febae5d3efb24ee3",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4796,11 +4841,11 @@
           "sha256": "3528c7d076dd7347b63de1f0d7c411604c770f794d24309d2bf7f09f84f2777d"
         }
       ],
-      "fingerprint": "0a2bd7c83fa09da10402b7ff387aaf4529a6afdc03b8c251cdb3fcb849db51e8"
+      "fingerprint": "fa48df75dd21cc9185ec6129e43fc7c690ba24c5ddd9f481f8f1190a45d86987"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/nouveau-brunswick/saint-john/",
-      "sha256": "eec8ad8573d45558fcb387f2aa2025dcd67785931cd7ad36712872fe07e8cf34",
+      "sha256": "8a7b7edc1f818ec4a9100834061910f97fa01edd17144516acba507e65df4b1a",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4815,11 +4860,11 @@
           "sha256": "3528c7d076dd7347b63de1f0d7c411604c770f794d24309d2bf7f09f84f2777d"
         }
       ],
-      "fingerprint": "40ab899c8b473c610cc4d949f556e0f350956dbd5b5c21309d067307fb41e20c"
+      "fingerprint": "0ea24516cd078e68e890a2f2ca91997f52ac52423668d72166f903e3289df5c2"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/nouvelle-ecosse/",
-      "sha256": "30fb0fcacd45a969d315239cf92767dc27e5a5df978fee6ffc18ebf75519ea0f",
+      "sha256": "48161b26816048405f512ba57875b2200eef2cd3310fb9524d67687d4ab22239",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4834,11 +4879,11 @@
           "sha256": "bee95428ff2a9f59f0e919d4602f97acb1f8a1b48af0473c2c18b08ca182fbd1"
         }
       ],
-      "fingerprint": "e9a9b6ec1d8192b5dd71a3cce4b3ce11961eb31cb539dbbd6b5f9deb8801cedf"
+      "fingerprint": "1a248c6d7187abce38be1baae9170341cd610710bbfd31fd7aca0b0592c5074a"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/nouvelle-ecosse/halifax/",
-      "sha256": "549d02c45698b971cbdc044f806b2f8df46ec631ed1a82d19b372fdd8ee2ae83",
+      "sha256": "e4fa65c620a370bcbe72d2a185d294f83d068d47bc4f30896efb699f423b62ab",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4853,11 +4898,11 @@
           "sha256": "bee95428ff2a9f59f0e919d4602f97acb1f8a1b48af0473c2c18b08ca182fbd1"
         }
       ],
-      "fingerprint": "d2ca7da658e246a2057a18e73af07068da4a38705036eeab9f3cc0b596d562c4"
+      "fingerprint": "01f773f4483512814590382752b46dee60f6ba8122d246e811f5b68a8d8868f4"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/nunavut/",
-      "sha256": "bcc0c7e8a5c0e77e5055d8b42ded9e146d01f5c1fa44c74d741472240b66ef78",
+      "sha256": "b4ee8d3db8652a16323800352d4fc09d719812e78763aada62ffff9e9b09f3b5",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4872,11 +4917,11 @@
           "sha256": "6e0441c2df8c4c6b0e82b695af73e6099678a2e06e098e1d2491cdb956e204ca"
         }
       ],
-      "fingerprint": "212cd424b3df7dd0b492d077e1ef0d763f8df001c0c66931753ef75072e06f67"
+      "fingerprint": "eab02335af4e5ab61352d5f7f244733fe222491feb50ff96b67eb4c049ece45d"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/nunavut/iqaluit/",
-      "sha256": "3dd729a54b5debc704dedc493132bcdd186b792bef9ed2b941c44460f3e15147",
+      "sha256": "5489a1d4ecae24d5d18934d3f2fd04f38b43586686b445140fa1a76b2668b5d7",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4891,11 +4936,11 @@
           "sha256": "6e0441c2df8c4c6b0e82b695af73e6099678a2e06e098e1d2491cdb956e204ca"
         }
       ],
-      "fingerprint": "446760fdaa61c3e3840da5677688a146018cf3ef56f63e71ad55357e935f4416"
+      "fingerprint": "78b38310aa8f6286e05fbad5afee4b0e7b1ea67f359ff9c154a5a0ba34256c8f"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/ontario/",
-      "sha256": "ca8e6df200a5ac859258af03c8c53d6a5e4b1baf2a2f3f800c9c782d06d0dc5c",
+      "sha256": "72c1411277a57d10d11dfdd61b2358b8ef373f7b668c2151b63fb2ee974a4f46",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4910,11 +4955,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "a53208b8a066e46bce1dbbd2860107eebf168b9fa7499d0d67565a4b4f347c0f"
+      "fingerprint": "c0af001c0e3b504563a6b48ed666ea4f30b36935da4760d9bed727928fc1ea12"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/ontario/barrie/",
-      "sha256": "7498350929ba1eb4abed3f7eb0bde413194fc40676d790053533c1d38b724f2b",
+      "sha256": "679265a590d5d2fc726b4ddc0816158d7cd7e90bcc9d7a061f769fc6708801ee",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4929,11 +4974,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "dc66a9fddf6779041ed02f07f4a6ff45e071e2edf3e8f8bebb8cacb769076ae4"
+      "fingerprint": "f16fc1987f0396c363534ec30d3b6c2d6fc588b2af06a2e5dca7eb8674672039"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/ontario/belleville-quinte-west/",
-      "sha256": "6e5ffe64250922eac79ddb1072d071465cdf9b16c9240ad89255da9d26ea77ac",
+      "sha256": "c543106bdd64919b768fbdcdc9af6da0ebf0f9eccebb38f3c7c5fc9d8d9207ac",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4948,11 +4993,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "7c4cddb76347f426c89281a5e1acaca7516a45b8253560033fc5102931e1ee10"
+      "fingerprint": "bfae4ef0eda572a6dc8a700a3f2116cb55c114da06226d82a4d5f1f9abf0e1f8"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/ontario/brantford/",
-      "sha256": "173dbb1f627d57211866b478fb56a42f36b58b025e37b8b88a40264236d5d2c0",
+      "sha256": "50f8c70624975018f724c352d560933813051ad82a52a3643f7c74d0bfcfae43",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4967,11 +5012,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "73e29ebdfaa4c9ffaac7f7a17eb50ce051b22c788bff5059926bf35aa4bc758d"
+      "fingerprint": "117e65343c273784489884cc9bcee8c4cedb9f5bc8054c414d022c30802cb840"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/ontario/grand-sudbury/",
-      "sha256": "1eaf09993bad264e919fd802b39273efed574a29f26e16983a701bf5c804d570",
+      "sha256": "ef1b55c7b569af0d511474c394a64bb5b7a199103e90e9d22d39cca0a1e7aec6",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -4986,11 +5031,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "4cd052cefac304fa615a84d589a0992bda1357d6a2715e7a16da04b9ba622d5c"
+      "fingerprint": "897a13be929374216c79401b1fdbe21641cabb782f80339a5a8a25da4b1dabf9"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/ontario/guelph/",
-      "sha256": "357aac464c4154bf968a4481d398a2054a1718079ccffec80b35cc0c0010aeaf",
+      "sha256": "4415a436d8efd46e1ad2ad347d87f255ec77ad57bc7d77ad3f3b4f08e62d391a",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5005,11 +5050,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "618ea66f6769f753856ee890074fe8a5bbbbb5cd7424c596764e230c12c131c0"
+      "fingerprint": "8b5fd0a8f69e170dcf6409ee7d0ba855b526807aed86107129949cfe13ee748e"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/ontario/hamilton/",
-      "sha256": "753b1841b0cb2357c87a45dbc235c00850daa017f41d97a36e58f2db21b24bae",
+      "sha256": "6a62c4f31064afd836fec8e4f63d0ed1c8337162fba55fe2d64ab6a5e4c0c897",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5024,11 +5069,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "bcbf3cc3fe917d8333d04b8ec13fb324ff8c85c386ab8df5c53fd836ebd3aa6a"
+      "fingerprint": "a657a98b9bd40ff5d76b672b8ae7c63cfa6c5aed61276eda35e68612f3ea1747"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/ontario/kingston/",
-      "sha256": "f3db77c084fec0f46f4af62928c5ec0269c707b4353e9c73d7be6d4b604a739f",
+      "sha256": "40d1d5ce63231f9d75137bb694d23515adbd612d38f2651c0aa63b52e6203f6a",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5043,11 +5088,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "a76dda74c297dc80386d99b84a50d2b34396850be28edea86a4eb9e255d828b8"
+      "fingerprint": "4688f76d9c19fcd5f3f1c2650cf438305ca255484ab5875eb6e330176218f4d5"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/ontario/kitchener-cambridge-waterloo/",
-      "sha256": "6c994d98245ff8d4ca516a68dc8af8ecc55da00e257a5af51e91b4a350b96c66",
+      "sha256": "93964aa61e5e8babbbeaa64a900008595bf5c0b4b9ba20061d371232be0f7183",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5062,11 +5107,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "8128c0dc9b99a5ca8b3783d5eca23f0ab9149d3759cda65512821aaa3c60454d"
+      "fingerprint": "76cd97cb607f31ca688157cca2f2d52f3e20830711a60e19ede8ea8d0e197268"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/ontario/london/",
-      "sha256": "58fb6869568176f84f30ec6157513d099305291bf1468a5b154a6b74fff9e830",
+      "sha256": "58e7200c4d4fc7471cfe104b02697bc5e9666bb1293d2e725066ea666f4da102",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5081,11 +5126,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "d6579bb8e43fa2ea45303d528585df3685cddd61ba05682abe0d99fe6e535076"
+      "fingerprint": "bee8fac6602027eda69a2f5f0cba3d165797c233021e2b43ee678756d480ffb2"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/ontario/oshawa/",
-      "sha256": "1ed4c492c48b41e07f0d8bb10e57f899746068f5586b1d2561a0414c558309d7",
+      "sha256": "81ea9918ec7c6abe7d61e8e865ed847af7c9bff8a91cbbbc996e3999acb1548d",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5100,11 +5145,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "dfd1ae0ef1268124d2136d6c99ff69bb2d2c09b14ea2b7e27f808110862bb6f6"
+      "fingerprint": "199c6abb30dbdf734e7bdd6dbab738fcb6dcef6f66cbbd68c809e2233aae013d"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/ontario/ottawa-gatineau/",
-      "sha256": "735a0c2b2316713e348e3fa3d0da1380abaa82a4da979981e17b2131f24aeda3",
+      "sha256": "73ac0aff03c946f947cc5edc6d8dadb69dbea24fe4b9495f0a43b32b93c0c8dc",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5119,11 +5164,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "7e923c60a49862e7807a1863616863f3441d789c91696eb2f6839970a5c95079"
+      "fingerprint": "c9e6fba01b124fb0d91edb18b76dc0570ac0bdfc1893c1bd5ad24b3b5ae6757b"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/ontario/peterborough/",
-      "sha256": "901b0ebedf7556430c116b1d95399207038ef7afba6bafd9bfb4620e76d65a3f",
+      "sha256": "f127d92f327ec6f4bebb0b328d1be8ee6ca7c922272e003aba8fb25e034e099f",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5138,11 +5183,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "6bb2565f6afa3c67707b8401bf604cce3c5f7bcc1b19f76f7c20a82537c3cfc9"
+      "fingerprint": "b3bc7778f3e4dee01b5206f9bc80312dcd228f2b169f1ab8cbea53448212b65d"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/ontario/st-catharines-niagara/",
-      "sha256": "0893c786054bbb784510d2bd94cc51f61fe994942d320d71d2de3579d4aec883",
+      "sha256": "8c340a59d51a18d4a94b228ed92215de5666d47c5388de9374146240ff86de73",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5157,11 +5202,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "6afb70f178169bbfb3db9f5588283cb2748dcc2690edf9ae2cb8d14f0cf1ac65"
+      "fingerprint": "d24c2672d78f2e08a066c98ec571c8ce88eb98a0075efeaff997a5101eccdf06"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/ontario/thunder-bay/",
-      "sha256": "4f1511c11041cd18180c21a47d8506abc0599bae7d94c080f5cddd357515c906",
+      "sha256": "f57062aa06167058356197fa879d9b66b4a25d7b7054fc792c2bc91a5bc9de1e",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5176,11 +5221,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "74be94665ad2257062e281dac5524a0bbc9f840b61bd7c050df7887480675e20"
+      "fingerprint": "a6b8dd0be9e4f78586fdbf0bc98afeba3db6e6a05c737089b71f5a4e2ddef3b6"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/ontario/toronto/",
-      "sha256": "beaafd49c4a7bf06c28079117dfab6aa26579c89ad011dd6414bdee5e4941117",
+      "sha256": "09d86ba34a82851a6d505dca38b2917815fa83f202ab7d180d7083e22e14e61f",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5195,11 +5240,11 @@
           "sha256": "47f0077eaa771b8002182686ed9dddbf5e556f825634074fc974f5c6b78449f8"
         }
       ],
-      "fingerprint": "cc90623179c10650b7a1c508cb2aa11a9f5fdcabf082fc7357d7db89fd0f1f60"
+      "fingerprint": "e3ed388bbd6aa7313cf9da49580f0aef41470a025db72c2037f029d7c339c047"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/ontario/windsor/",
-      "sha256": "d4f24586fb803f78f3a1745cadd7fa0ae76c217eb78f5217390c07e0b3843120",
+      "sha256": "22f742e551c60bff188e6201945c809f262b119f2b0726e29d69aad65f9eafaf",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5214,11 +5259,11 @@
           "sha256": "0a84962995d95ab40508fe6390ea577d2f12c3a2c2fe992263b951ad2ba1741a"
         }
       ],
-      "fingerprint": "af3f454cf9afa2d929f2d3115ca8a60a951a5c4bd2a8e6a73f5646ea65a2c27a"
+      "fingerprint": "b3693d64b0f070cc67faf08920d1f876d819c1bc9f3bad10a5cdfd8a7accb2ec"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/quebec/",
-      "sha256": "1a7279db5683b2b2ada1255ec060d31f95000b48956efc1b54cf382adb7a34d5",
+      "sha256": "c9efec95e3429e6c220024a308898044c00851dcbb0b4e9adb4edbf883660d22",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5233,11 +5278,11 @@
           "sha256": "f6c9a906a1058544ae181ceb56cf97c5d5ecf311be87609fca2eeb926a0f5b29"
         }
       ],
-      "fingerprint": "0acf73612a8f4fc08e264db45f089b6cd908a1e2197b8841f257bd3d1957ab75"
+      "fingerprint": "af782799b1ed858284cb5407603a5274e97a044ad87655514a518af5e7edefbf"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/quebec/drummondville/",
-      "sha256": "f7877b4c415b7ee9aef668feac245c8a464bb5836bf5acef3c023804cb889753",
+      "sha256": "3503c2287572080730a95a18a28a75650593b71dba70b00f148109b9de08fe47",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5252,11 +5297,11 @@
           "sha256": "f6c9a906a1058544ae181ceb56cf97c5d5ecf311be87609fca2eeb926a0f5b29"
         }
       ],
-      "fingerprint": "b5d91001d87090da10f28017e6a46077f53c3acc3f351ef30195fdc71f2a2b84"
+      "fingerprint": "17b3740e3659ebb54ede8d12698c34e1090b69338b8001ccb0c55dc3b47dfd19"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/quebec/montreal/",
-      "sha256": "5c59392db93e09f11c743e400f7892a3b305d2967d0b154357aed94575dbe442",
+      "sha256": "e33e1168a44f6971c9129b5ca51aa4b9de09ff49ad0be34f696911becb942c74",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5271,11 +5316,11 @@
           "sha256": "ce5fa7feaf8a91fbb5d5d561364bcb049ec3632f5bd6d4f99bd5201261ac5081"
         }
       ],
-      "fingerprint": "46c6b2a0604643924e5f30b25fa979b22736b1cc35e6e33dbb7ce210ab0fd842"
+      "fingerprint": "b89fb586d669844b6b30ca9f8936b0af5f276454eea16e120dd1465abad7f072"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/quebec/saguenay/",
-      "sha256": "c3499c884312fae8a82ff243d4b97b49f9e997c257d55d5bc77ccdbd1f5c1b9f",
+      "sha256": "0dfbd7a4d8d379e56a867cbafcdc95874407627579fb54d79a60eb04b4a10457",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5290,11 +5335,11 @@
           "sha256": "f6c9a906a1058544ae181ceb56cf97c5d5ecf311be87609fca2eeb926a0f5b29"
         }
       ],
-      "fingerprint": "570fd8f571f7964b90ed256548b605581cd12f88a7a55309ce0d8add423c37cd"
+      "fingerprint": "52560af9e970f8e32fafc829def0f796ac1aeef7f028ab70e62ed45afba0963e"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/quebec/sherbrooke/",
-      "sha256": "ac4d1933309941dcb1f301754b635dbb697ac6db8f694fdc7872895c123c4dbf",
+      "sha256": "531517b2f1337fc60f8510dc215f28c752d44d7887b905e24372bf96aac092aa",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5309,11 +5354,11 @@
           "sha256": "f6c9a906a1058544ae181ceb56cf97c5d5ecf311be87609fca2eeb926a0f5b29"
         }
       ],
-      "fingerprint": "80e3cf3da41cb2e535da0cdc140b6102528263778976cfd7f499ab8a5e920fd5"
+      "fingerprint": "156d179d0782c9037308e292e1c3d7aca01ddccd0bef30eb05bddfcb67ef9ad9"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/quebec/trois-rivieres/",
-      "sha256": "938f3c06d0df8328ec226ab30299e4fef423e9bc32c3f6a037a27253ca1a7aeb",
+      "sha256": "3be7f2db58ce1dbe038405148fe406277e6b92dc879af11756bf351f0e7da69a",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5328,11 +5373,11 @@
           "sha256": "f6c9a906a1058544ae181ceb56cf97c5d5ecf311be87609fca2eeb926a0f5b29"
         }
       ],
-      "fingerprint": "5f9d743ac4e5965e7a83b8ac7720b26c81c4e5da23be8566cf51003d0fd95468"
+      "fingerprint": "ab91fe4b7b9f2fe206091c1222c1fdd8e299fe16c5ab398f40d23a0f40ea6315"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/quebec/ville-quebec/",
-      "sha256": "7581f9ebd52954096f38a5471e4f99ab824eebce7c688a892f7e466f39ee42b1",
+      "sha256": "f4a156f88be2e806b167f22ba3ccf224c770f2dc5362b8ddef6bcf56a0cb39ab",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5347,11 +5392,11 @@
           "sha256": "f6c9a906a1058544ae181ceb56cf97c5d5ecf311be87609fca2eeb926a0f5b29"
         }
       ],
-      "fingerprint": "2c10cf30fcf8ffc4c4106966dda317f36475e90b6f3f5fa8bf6e4011549c489f"
+      "fingerprint": "e9e3fc561d248612aadda4ed55b37735581d84dcb3dfd64307b1f555e9e52da6"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/saskatchewan/",
-      "sha256": "f156a7d5bdebae1a5298d088dfc4cc1a771bac250aa4531c3b5772940e3e839d",
+      "sha256": "99167a3f688e9243fcea0bceda6101ed2956e7dbc017f391517757e7682321c5",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5366,11 +5411,11 @@
           "sha256": "59ed48cb6a039182f7c83ff0761ca959020ae84281d28b2f6ceddcdbb75b081e"
         }
       ],
-      "fingerprint": "d62361941375a408e1e43622d32a17607f31ad517cb215dc07d4e5827677ca3a"
+      "fingerprint": "26e8d79f7b93d8de450fede90e0efbd73b2a353373315a26303350a172bdac60"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/saskatchewan/regina/",
-      "sha256": "995c904d91f613983d1001c1507813d13a8e3f5f824cb42a742fabea78999e5c",
+      "sha256": "2ce2d5986dc471faf234472007973b159521e83e56b82a847cdfdfb11bd02024",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5385,11 +5430,11 @@
           "sha256": "59ed48cb6a039182f7c83ff0761ca959020ae84281d28b2f6ceddcdbb75b081e"
         }
       ],
-      "fingerprint": "9476e8cec943f997069f292eaf1a7ad3366f2435d1d33d54f456a6079766fd08"
+      "fingerprint": "be833902dc0576a2c4034cd9bca9afc1e57aa8f9dbc78927ec69ceb78dfa31b5"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/saskatchewan/saskatoon/",
-      "sha256": "75985df496344d7b45cc5da17949edd006aa1140912a47c12da232cd581176cd",
+      "sha256": "cdafed24e45d32c2658d027b6ac4e1d55838f60f5694ac38ed098d56232ab77f",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5404,11 +5449,11 @@
           "sha256": "59ed48cb6a039182f7c83ff0761ca959020ae84281d28b2f6ceddcdbb75b081e"
         }
       ],
-      "fingerprint": "f07e35d87201cc73f9426f0fbd22c4b0cd0d7c927c1fa1cab93e9f583beee13a"
+      "fingerprint": "73279767750a04aa627a653e78e0c503c0025edb74b45f992615c716ceb5e4ab"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/terre-neuve-labrador/",
-      "sha256": "16df9b87487d55b24b9ce93b4d2569b28d5eda942788a7ed0e7d32949020a50e",
+      "sha256": "a40e852063861cabf2da9d36a3b47247e77908eb26ee6734cfd7767885059954",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5423,11 +5468,11 @@
           "sha256": "9cb7a90e868ecb052c209580a49ffd261bfcaf9c016f25f5af466b059d53f687"
         }
       ],
-      "fingerprint": "b9b8e9b3403414570a959b9df3561c26683b9a52d181d10e8d4960a7b6edb623"
+      "fingerprint": "88cf00a800d6a11dc8b97a43ba849c65983a44c544f63068c05c5a6e51054bc0"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/terre-neuve-labrador/st-johns/",
-      "sha256": "0f201be88fbeffd15310880fd36a98aca85a45e5298328f0e5a3bb2c53202349",
+      "sha256": "744ecebeb13935af0ecdbf059f8a3a25a6b42f267a7276b8b5398d59ae0c5386",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5442,11 +5487,11 @@
           "sha256": "9cb7a90e868ecb052c209580a49ffd261bfcaf9c016f25f5af466b059d53f687"
         }
       ],
-      "fingerprint": "932eb35f26bb3470f11a159ce1039fd6c68549c981618989887184a8888374d4"
+      "fingerprint": "f51089549d300d39d99f15f2384731a9ebf9286b535c671746a43f41dbe2c155"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/territoires-du-nord-ouest/",
-      "sha256": "c424f2383053332f7abd345c849d64657f5b8d99d18287a5cf3daf27503e6a7b",
+      "sha256": "41bfed19b754dd7eeb4bd2c1848fe7fdd38a824b2a187ae0b28ad02ba4f97090",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5461,11 +5506,11 @@
           "sha256": "734e0588a8aeb9d5b2dec54d7199c4e0caf26a8c8efb4d8c68aaa9f2e403f710"
         }
       ],
-      "fingerprint": "4d9d69be947c171e2f3f99a7b2268a2c9558939ca6f7c034523e995d7fe9c974"
+      "fingerprint": "7de6eaa39d87c8e85d7154f25fda46f08fd4fcb3dfc7099a37eb005bddec3b09"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/territoires-du-nord-ouest/yellowknife/",
-      "sha256": "53a94ac5f3111b7b6178de5c7c8e6a17bc123cac72b485e3ff04a8d64a4ed164",
+      "sha256": "7806752f0b5d1ac7a3e41d3db379cf22e24ebcc1b56402ff0cef4029363e3382",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5480,11 +5525,11 @@
           "sha256": "734e0588a8aeb9d5b2dec54d7199c4e0caf26a8c8efb4d8c68aaa9f2e403f710"
         }
       ],
-      "fingerprint": "da1675876cb0519a73d0776e73baa9e50fbdb943f09941d437c2101f1bdf0ebd"
+      "fingerprint": "8b7208ff2f007568950328b4602de8f2248b0d110f16b57c08eaf0e5b5a4ea5a"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/yukon/",
-      "sha256": "e8901bbef27a4a7807d85421a73e8bc7a203c8805624661ca2081735f26e5e41",
+      "sha256": "bb8be4f6de9ea89abfcd21e55e8471e96d0ed0f742f2ec37b63a376ae497fbe2",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5499,11 +5544,11 @@
           "sha256": "8c4b62cd27c4d406ae8d2763acc7c012b240b1414bb3fd6d697557dfa8aee4fe"
         }
       ],
-      "fingerprint": "104f7c3f5c25c95c1bf01a983d68dc1cb2d4874126f63884de9d84a269c893f5"
+      "fingerprint": "e920f7939fc45062faddc6f5d6095e9f292b7977d5cb5ac2ec5fa889aedddfa5"
     },
     {
       "url": "https://defibrillators.ca/fr/regions/yukon/whitehorse/",
-      "sha256": "af0b38bd6a8bb5a8a822e5743951643fdc7adf6cdac34fe4facc5b39c6d26cb5",
+      "sha256": "ea8a8f9d102ae3612355c3c6c0eb98ca59a1f4eaad15fa3dc9a2feb47e0ad1b3",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5518,11 +5563,11 @@
           "sha256": "8c4b62cd27c4d406ae8d2763acc7c012b240b1414bb3fd6d697557dfa8aee4fe"
         }
       ],
-      "fingerprint": "08338a85d5fccb11228db41c032ab3adbee757d3ec458d9d3722ad061d98bc5b"
+      "fingerprint": "75cd5658fe3fca62c49306d27f67444646f7f8c9b5e5d635a60cbd10b541994d"
     },
     {
       "url": "https://defibrillators.ca/fr/ressources/",
-      "sha256": "3ad0a06eef9316d5e0bb775b2647271f167a5ccf1086e8098f6eef8a4618a122",
+      "sha256": "4e5f47d6b532f166a79ce8956116ca8ddc168302c7413617bbfd217bd561478d",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5613,11 +5658,26 @@
           "sha256": "b08e3eca887e2be7a0ed76b7a34718abc0858c555570bea4d1b73247b96faf69"
         }
       ],
-      "fingerprint": "24dd565cfb9d6c65dffcb5638be13aa7a39a5397ae7cccf3b98f1fa0a8cd1185"
+      "fingerprint": "f556754ae23e60459db5a2ea0c33b72dd276cce7f13fb8273465ef0ee006907a"
+    },
+    {
+      "url": "https://defibrillators.ca/fr/ressources/compatibilite-supports-defibrillateurs/",
+      "sha256": "f9f686110b999f184403cc579b829f84547669e2bc62cb9149327e67d232b0d0",
+      "images": [
+        {
+          "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
+          "sha256": "22121d95dc4bb6a535e548d04cc4d732f5d4c4e5f51195f408b4116ddcd993ba"
+        },
+        {
+          "url": "https://defibrillators.ca/brand/logo-fr-light.svg",
+          "sha256": "7b4de4af0657d40862a483a0a6b94bf91692f581b401b1fddc9c7bbc350cebf7"
+        }
+      ],
+      "fingerprint": "c995ddc493ea2815d3b12df5e64b531806fb111a9759027510cbabe12abd75f7"
     },
     {
       "url": "https://defibrillators.ca/fr/ressources/cout-dea-budget/",
-      "sha256": "2fe456fa7b24c0933ca96f1ed67d75ab3bb738a6ec3c8090a97143fb125f2c0a",
+      "sha256": "34411e0e5fcc74936c4ab564c7c9eb8241133b6548060249a736c7d02d4ca217",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5640,11 +5700,11 @@
           "sha256": "5eaf31412d4753a36bd0e26e0f6a7ede6c0061da38deb9abbbd57d32c4c9ddcd"
         }
       ],
-      "fingerprint": "9fbdac4c53ea246b34040c218b1ca083bd6e12a475a71716e3af011032c5db58"
+      "fingerprint": "987822d1c031e447caac56e8dcc5792a359825b136042086c8a41ca509fa36dd"
     },
     {
       "url": "https://defibrillators.ca/fr/ressources/guide-achat-dea/",
-      "sha256": "ff9db0e7f7e0618893f0333e937dd3601835840c0d21f14cd80d6d910ec44281",
+      "sha256": "54c87bcbebcc850296a53399e67162414eb3731bd7778fa8c3eb2fd7563e2c84",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5667,11 +5727,11 @@
           "sha256": "d332d8e8cb18cda721cf2ce79c2d4d7d960d0cb39db1c16bdd75689793f5646b"
         }
       ],
-      "fingerprint": "d7265bc4a318233e61fb51a58e5d10748500e90f8ecfe77dfa33bb2f1948ddd0"
+      "fingerprint": "8a799f406a7d5e58f67b2d7922cfc9a5917cf86413f2ec01d8784cf8fc4c80e4"
     },
     {
       "url": "https://defibrillators.ca/fr/ressources/guide-entretien-dea/",
-      "sha256": "a510f07a4967a66bca43d816f942db73ff433d4a4f05a153e8c8a5c4b80e9cae",
+      "sha256": "67457953230b9cd2fb2e7db554052e0d51adfc7f8d51c015bb9e72cba14f7540",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5690,11 +5750,11 @@
           "sha256": "ac8aa356cfe24644bd2380e50fa88f32691c945123abd61b0605ba513133b169"
         }
       ],
-      "fingerprint": "ac7fe81b3ea6e2fede426ab32c258bf959f7b1826f28b5a2ea3566c9806cce4a"
+      "fingerprint": "b4c8f1b479fb19f78e104fb64a9b37fa0c2393c4ec97fe3b224cd6ea1031aaec"
     },
     {
       "url": "https://defibrillators.ca/fr/secteurs/",
-      "sha256": "0573265af763c67745deb978bbbb3b9ed65590761c2acfb89644a9b48929e30d",
+      "sha256": "1ffcc4c5e76cb712ce32ea06caeb1a49e0d1b4b1de7f5067b05ca1ce6c4bfb8e",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5825,11 +5885,11 @@
           "sha256": "faee9da9ba73f53a24c9624972b605886975112adb4758ca65fb3e37964eba72"
         }
       ],
-      "fingerprint": "e77a1359a9ed9d25e47ca6eb03a082e64003d72848bce6ed9a7a860e25bbf37e"
+      "fingerprint": "5f4b40b956aaa7e88ada0b70bea04f935b60189271f90aafa995f87f29236bb7"
     },
     {
       "url": "https://defibrillators.ca/fr/secteurs/bureaux/",
-      "sha256": "714f9150beae6359ba865335b6080849a3935898301f481347d4937ceb3de68f",
+      "sha256": "6c7ecd61b913dcc387039cd73bcd43680cca6e4afef173bde7c96d98a0fab1df",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5852,11 +5912,11 @@
           "sha256": "aa0686a5365e8b80a644e82aa96e34286fc0b22c6b1384cb365939d6b24f4a57"
         }
       ],
-      "fingerprint": "b470de508a94022e4e1f281793ff9699e13d46b8d9f52109a2b121a1b107767f"
+      "fingerprint": "aa63cba6896600a7e7c617358a0bbe5fa857b23123bbb48d4631d9ff21364646"
     },
     {
       "url": "https://defibrillators.ca/fr/secteurs/commerce-detail/",
-      "sha256": "6c0b15802cd3899c28dc629c115b914ddd32ebc65d109f4c75136b32f423b5ca",
+      "sha256": "ebcc1c4e9967e0239616e0224fa4563edfb5b4f938752b3e433749a441877c67",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5879,11 +5939,11 @@
           "sha256": "40f15db7cb4e9c4f061531371de7a55c68dafbcd0e0835a73412fc29ed248cc8"
         }
       ],
-      "fingerprint": "8d4af134aed9af2eacc4a70b06def648dd3b776252ed9cdfb9f0b16c9e7ea6b7"
+      "fingerprint": "1f3e85003b3ce8cca60d46bfd0eb952a01adf4b7cc88dfe83a4fb0cc44057bd1"
     },
     {
       "url": "https://defibrillators.ca/fr/secteurs/ecoles/",
-      "sha256": "4e8cca73e554e1f0923e2234eace4caa41ac614db6d23b28f84c493cf5862fcb",
+      "sha256": "31a813f7387045d6b6039cdea876c814de4e104d7e6ed893b9b59275164c21f6",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5906,11 +5966,11 @@
           "sha256": "faee9da9ba73f53a24c9624972b605886975112adb4758ca65fb3e37964eba72"
         }
       ],
-      "fingerprint": "bb10cd6dcff5e5d9941d341c3d149421fd097ac0914386062587e2c7ba8a63e9"
+      "fingerprint": "e78e5d00d5b98210cdb0df37fdf30e385cb555da8bb359d3a7b355364bd5aaa1"
     },
     {
       "url": "https://defibrillators.ca/fr/secteurs/gestion-immobiliere/",
-      "sha256": "cdfbe714285f7879725b16431388b9b61a7e727a1ce7a9327946b43edca84754",
+      "sha256": "c5baf7871d03b6e3afe3bf53342e43dd0535f0af3bd71a4429ef9db0eabde497",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5933,11 +5993,11 @@
           "sha256": "9facf1d0a2c47b5677edfedcc5dc96a9b11e434bc9bea4f2bf938ed112354ca0"
         }
       ],
-      "fingerprint": "c73a4854796cf012810fd8f9456919cd0b65bff013c45514ca6e26d2970525ec"
+      "fingerprint": "d84cf5f9748c903968a9f6770a031bbb654869bc9903ef6d78b0f07fc24d07cd"
     },
     {
       "url": "https://defibrillators.ca/fr/secteurs/hotellerie/",
-      "sha256": "892ec80d8f428502233ebfc2e6e6afe6843e838223373a54bb16228397812f09",
+      "sha256": "0f6dadbbad131aae28aa8ffbf203da833892e41159300a3758187a92bf6e616c",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5960,11 +6020,11 @@
           "sha256": "fc85e82e63d6429dd361f624efe1f2430d508eff8313896fb096f593850a90a5"
         }
       ],
-      "fingerprint": "a18d340efa135716477dc6c7eaccf1ff7dc731cf6b085c55db290a81c4d1eba5"
+      "fingerprint": "1ca1a16eb5a7a69e90e179d169bc9fa1f9123c4fb4b6fc83367847fc1e3651e5"
     },
     {
       "url": "https://defibrillators.ca/fr/secteurs/industries-entrepots/",
-      "sha256": "5ed73b59407b630234f21ae27038fbee3a113c773897f9eda483ccef43a70034",
+      "sha256": "60f05b14a481434e105af19438ac7f2cb35fcba3a57dc9d7dd12ef3fa5e95c55",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -5987,11 +6047,11 @@
           "sha256": "8658dd347a9fca21e8b13946583473c1f73e2010aeb26aed58ca9f26755d9c7b"
         }
       ],
-      "fingerprint": "5299c4e06e708c27fb9387c7a53c2c8416e80ef3dce974c48339a395f480be2e"
+      "fingerprint": "414e4e5a70064713d7520571e9f2e964641d87f16305055e8675b308da2755ae"
     },
     {
       "url": "https://defibrillators.ca/fr/secteurs/municipalites/",
-      "sha256": "0d967256a1c23b8800b32951ed58ec4a6072b00e2c37891446a9c66d28f5c8ac",
+      "sha256": "60f4509d0a9dfbeb2c77c83b191b4f62a7e6dd757239234087f6d8a687ab34ef",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -6014,11 +6074,11 @@
           "sha256": "44123d5ff114c5beabb359db15db87c22170eba4f131492fdcfca4c046cc7962"
         }
       ],
-      "fingerprint": "5c5e0f5daea5d80398ff4783cd248a7680387c3f549f3b1f9c8769e5ce7a7ea8"
+      "fingerprint": "394f19b7d0d283dd07605d9312d6b19fa1b1dc358678cdc51e9c29117443fa1b"
     },
     {
       "url": "https://defibrillators.ca/fr/secteurs/residentiel/",
-      "sha256": "c275a4a6f23b079d2d86402c63946d31ee1ce82e428f0a41597d54cbb00a8cbb",
+      "sha256": "60f67de8da4d8eca937528478e6d0b4e3cff854a4433e5c690088fdc9ffee2b0",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -6041,11 +6101,11 @@
           "sha256": "97c8441e4bd7d6aaae59603d0ccb004e85997564fb5e9d3f07866b094ff9fc82"
         }
       ],
-      "fingerprint": "8d6e2d917a39d48dc2eb61b74026c4c92d44ba9e678b64e3ee0775cd2baefd99"
+      "fingerprint": "5c8062733dc20b5b4c3bb3e3f2d05d4191792c9b522361a8f6a452317d2a4694"
     },
     {
       "url": "https://defibrillators.ca/fr/secteurs/sports-loisirs/",
-      "sha256": "518e2ea6f2d2275d83f56308b8cd4f2183bf7af619894200161d142e9257ac01",
+      "sha256": "8d8471f71c8a173e726a5c0a743ec6c06fe572dca13f46f4463626d1e78ae02e",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -6068,11 +6128,11 @@
           "sha256": "b359c5539de8178e2c740a192b7b70159217c5c6a1338e2ac0181d5ec0c5fec9"
         }
       ],
-      "fingerprint": "d2a03a0ed3738a82b151038f7342bb853ebbcffc4f10010e4d753882facefc69"
+      "fingerprint": "33fd425e7bc49eb236f00bd5c8e55c43b0e3075cd31ce914ceebbfecc46fe447"
     },
     {
       "url": "https://defibrillators.ca/fr/services/",
-      "sha256": "a963e3af92ac53decc4b77a5695092eae1bdc710bfb49625ae25317190baee31",
+      "sha256": "2650e45d4ffb661542bf293000345b5ca1bf64a607faafa1a552d68f3ba385fc",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -6143,11 +6203,11 @@
           "sha256": "4cf7abbb75220589080e2a9e670198f89abd6aeafd1e05813ed12846d13e4dd9"
         }
       ],
-      "fingerprint": "812ac26cdfbc8a5641e28486e16a885123fbf544badf57e2686c106c6f1b9ef5"
+      "fingerprint": "7821d1745bc66ec12881b0c17bf67a4b1df70edd59b0e1d0f4a5cc8a06b0e392"
     },
     {
       "url": "https://defibrillators.ca/fr/services/evaluation-emplacement-dea/",
-      "sha256": "05d062702301931607ac668d87bbcb57132fa2051db507c1b87fa14fc5bb5da0",
+      "sha256": "ff52b7e0b1fbf0bbc43f408f3763695de1775fc9f733fc11c9c7c9c8bb47d17f",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -6170,11 +6230,11 @@
           "sha256": "ec8275ba722b13682528e45f93457aeb34965d8edbb32c9693fcd16407fe4a2c"
         }
       ],
-      "fingerprint": "e8e034320395158ae4a66b5e8e877194af98a4acf3e1bd22cc9df726e5978e23"
+      "fingerprint": "7e06d3c8f8e2f21919afead9e9565d464943dcea05d26f9cd493d976e9d7987b"
     },
     {
       "url": "https://defibrillators.ca/fr/services/fixation-armoire-dea/",
-      "sha256": "0da4536d7ce439678b8bdebbb41c01bc88b223f2aff63571cdfdb027367c4ef2",
+      "sha256": "e0fd2b4e26681da2119bd8e1feeba67108d98eec9a7a57abf5fb725e1e17394b",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -6197,11 +6257,11 @@
           "sha256": "87d57e3ec20e04f92344183e92a11be5e345a71b8e7bcb80abcec767824a4bfb"
         }
       ],
-      "fingerprint": "d1b4a921cd48fb5fe2f0a3d1108992dffcb560426f31a690c8036743117ff4f4"
+      "fingerprint": "24e890e7bb1933dfe6c8c6942f08ab16fa58295e68a3895f9c9683e0e02c0633"
     },
     {
       "url": "https://defibrillators.ca/fr/services/inventaire-dea-multisite/",
-      "sha256": "1e91ba41c31fe3909f8efc2e209c5a325216c4beedc0b6734793ccb18e66cece",
+      "sha256": "e6169ef858e8ea961a69778c7c8ae45ad036071292a8501d8cd98a1af6f04536",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -6224,11 +6284,11 @@
           "sha256": "71ed029f8dd786fba0002908010fdfbf0f7e46f775ade4682eafd50aff1772ea"
         }
       ],
-      "fingerprint": "7196c31afe2a2e77a7da7cc7c6806ae4401940ebd74a26d867c17a1f45df2771"
+      "fingerprint": "796da048d735fb0373c7d3f1389960337ecc3b318b26cced25c54dd60d953f28"
     },
     {
       "url": "https://defibrillators.ca/fr/services/reapprovisionnement-dea-apres-utilisation/",
-      "sha256": "8348b41490e55849c2635d44e6d3967344038bb8fa0f0142a07b3c867af22cc7",
+      "sha256": "ba7c272e7f422179fb2b7556adc29b653b760dfb485b89bf53fe45e2f9b1dfac",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -6251,11 +6311,11 @@
           "sha256": "ffd655275f77ee0e8e879a40039ff8887be23b4a9bb4390e3dff1ee897bf39f9"
         }
       ],
-      "fingerprint": "c0bd11662292d2e500370808544c0b0108c40de35ca5c4fb60be250380235865"
+      "fingerprint": "34659c691eb4eda310751a55ad14a9d69e372bd7c29107d9eb2323569a71c039"
     },
     {
       "url": "https://defibrillators.ca/fr/services/suivi-echeances-dea/",
-      "sha256": "fffc95e604b8a62e03fe4c418fbf1d6c201b00028d96505786670687e985559c",
+      "sha256": "fc89967614b325854554b433ecd57c10fa7972a9db253d3443d71f7292451fd1",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -6278,11 +6338,11 @@
           "sha256": "71abaae596ee71786b299680654ee93ef971f1aaae35dcfeef73a43c05a255dc"
         }
       ],
-      "fingerprint": "537e975b59e4b10629c510705a50e8da09a05ae81c88b7d0d78ba74b70802189"
+      "fingerprint": "9f2d6ec792fab3db655967e6542118476007daf553da0cebad0dcd5260408094"
     },
     {
       "url": "https://defibrillators.ca/fr/services/verification-etat-dea/",
-      "sha256": "aae9e16fd237263034c505166ca1c52e241470bb3b8a386bf8b27e3d05b1f935",
+      "sha256": "94f5613d68f68266b13b532f8cd61fb6ffe43f5cd7b5396ba7a54b5ddb558079",
       "images": [
         {
           "url": "https://defibrillators.ca/brand/logo-fr-dark.svg",
@@ -6305,17 +6365,23 @@
           "sha256": "13a610b71fcd48b8fa1590305f02f37b68bd4c29c8ab91c4fc8c6e9558c20732"
         }
       ],
-      "fingerprint": "b87614d4cf4a96299af7081cbaf3c1a401b01a8fcea158d26edd38fca092822f"
+      "fingerprint": "97ee5479dca5c67fd0cb1447e780fc5d2e5e6a92c54071dd970c3f5bb3bd6661"
     }
   ],
   "receipt": {
-    "submittedAt": "2026-11-07T21:10:14.387Z",
+    "submittedAt": "2026-11-07T21:41:48.945Z",
     "endpoint": "https://api.indexnow.org/indexnow",
     "status": 200,
-    "submitted": 234,
+    "submitted": 238,
     "outcome": "received",
     "changes": {
       "added": [
+        "https://defibrillators.ca/en/procurement/",
+        "https://defibrillators.ca/en/resources/defibrillator-mount-compatibility/",
+        "https://defibrillators.ca/fr/approvisionnement/",
+        "https://defibrillators.ca/fr/ressources/compatibilite-supports-defibrillateurs/"
+      ],
+      "updated": [
         "https://defibrillators.ca/en/",
         "https://defibrillators.ca/en/about/",
         "https://defibrillators.ca/en/accessibility/",
@@ -6551,7 +6617,6 @@
         "https://defibrillators.ca/fr/services/suivi-echeances-dea/",
         "https://defibrillators.ca/fr/services/verification-etat-dea/"
       ],
-      "updated": [],
       "removed": []
     }
   }

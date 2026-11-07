@@ -32,3 +32,9 @@ Sources checked on 7 November 2026:
 Responsive browser audits cover 360, 390, 768, 1024, 1440 and 1920 px with no axe violations, horizontal overflow or broken images. Local browser checks exercise French deadline errors, a three-file multipart submission, success/reset, English provider-error recovery, request-type visibility and the native no-JavaScript fallback. All browser submissions use the loopback QA mock, which blocks production delivery. No real enquiry or notification-delivery claim is made from these checks. See `docs/qa/procurement-browser.json`.
 
 The build contains 238 canonical localized pages. Follow `WHC-DEPLOYMENT.md` and `INDEXNOW.md` for complete-file deployment, live integrity verification and the post-deployment notification receipt.
+
+## Verified WHC deployment — 7 November 2026
+
+Implementation commit `8716a0fa1c752bca09e835ea5b2571d136215529` is live. All 435 public files and 239 HTML security policies match the tested build. HTTPS, canonical redirects, the direct English root, custom 404 and private archive isolation passed. Production browser checks verified both procurement languages, the French compatibility guide's sources and its preselected procurement enquiry in both languages. No production form was submitted. A private rollback archive is retained outside the document root. [Live evidence](qa/procurement-live.json).
+
+IndexNow received all 238 canonical URLs with HTTP 200 at `2026-11-07T21:41:48.945Z`. The four new pages were added; the other 234 HTML fingerprints changed because the shared enquiry route module gained the new routes, changing the emitted asset references. This does not represent a homepage redesign. The receipt confirms notification, not indexing or ranking.
