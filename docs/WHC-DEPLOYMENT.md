@@ -2,7 +2,7 @@
 
 ## Current delivery scope
 
-The owner authorized Phase 5 deployment on 7 November 2026. The verified Phase 4 build is now live on WHC, including the direct English homepage and the restored approved design. Both forms and primary/secondary-domain redirects have live verification evidence in [PHASE-5.md](PHASE-5.md). The later city expansion includes the owner-authorized search launch; see [EXPANSION-AND-SEARCH.md](EXPANSION-AND-SEARCH.md) for its verification record. Detailed hosting-account, server and historical operations records are kept outside this repository.
+The national city/product/service expansion is live on WHC as of 7 November 2026, including the direct English homepage and the restored approved design. The deployment matched all 279 checked public files and all 233 HTML security policies. Both forms and primary/secondary-domain redirects have earlier live verification evidence in [PHASE-5.md](PHASE-5.md). The expansion includes the owner-authorized search launch; see [EXPANSION-AND-SEARCH.md](EXPANSION-AND-SEARCH.md) for its verification and search-submission record. Detailed hosting-account, server and historical operations records are kept outside this repository.
 
 The current expansion build contains 234 HTML files (232 localized pages, an English homepage fallback at the root and a custom 404) and 232 canonical sitemap entries. WHC redirects the root directly to `/en/`; no language-selection screen is used. It includes the restored approved design, 45 city/metropolitan guides, all 13 provinces/territories, eight manufacturer reference profiles, parts and package planning, twelve focused offerings and bilingual quote forms. See `EXPANSION-AND-SEARCH.md` for the latest implementation, validation and deployment status.
 

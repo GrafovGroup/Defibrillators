@@ -8,6 +8,7 @@
 - Preserve the approved homepages and logos; improve local page navigation and related product/service discovery.
 - Replace the global CSP hash list with bounded page-specific headers and enable the owner-authorized search launch with Google/Bing verification tags.
 - Validate 232 localized routes with 526 tests and 332 browser accessibility/responsive checks. Search submission and deployment evidence is recorded in `docs/EXPANSION-AND-SEARCH.md`.
+- Deploy to WHC and verify all 279 public files and 233 page security policies. Verify Google/Bing ownership and submit the sitemap; Bing reads all 232 URLs successfully. Refresh Google's cached robots.txt and resubmit, with Google processing still pending in the observed report.
 
 ## 2026-11-07 — Phase 5 WHC deployment
 

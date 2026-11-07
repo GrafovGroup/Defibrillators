@@ -1,0 +1,2905 @@
+{
+  "checkedAt": "2026-11-07T14:52:38.996208+00:00",
+  "sourceCommit": "6cb33bf329c337042479fa7a8aa41f25c5bc48e1",
+  "checks": [
+    {
+      "path": "/404.html",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 698,
+      "elapsedMs": 158,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18812,
+      "elapsedMs": 172,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 71,
+      "elapsedMs": 158,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/maps/calgary.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63385,
+      "elapsedMs": 537,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/maps/manitoba.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63247,
+      "elapsedMs": 190,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/maps/ontario.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63246,
+      "elapsedMs": 190,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/maps/quebec.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63246,
+      "elapsedMs": 106,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/maps/locations.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63245,
+      "elapsedMs": 106,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/maps/saskatchewan.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63251,
+      "elapsedMs": 107,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/maps/alberta.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63246,
+      "elapsedMs": 106,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/maps/nl.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63290,
+      "elapsedMs": 106,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/maps/pei.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63285,
+      "elapsedMs": 108,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/maps/nunavut.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63246,
+      "elapsedMs": 113,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/maps/montreal.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63387,
+      "elapsedMs": 115,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/maps/ns.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63269,
+      "elapsedMs": 116,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/maps/nb.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63272,
+      "elapsedMs": 112,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/maps/toronto.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63385,
+      "elapsedMs": 118,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/maps/nwt.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63288,
+      "elapsedMs": 109,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/maps/bc.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63278,
+      "elapsedMs": 102,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/maps/vancouver.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63387,
+      "elapsedMs": 114,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/maps/yukon.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63244,
+      "elapsedMs": 105,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/licenses/inter-OFL.txt",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 4477,
+      "elapsedMs": 79,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/images/philips-reference.webp",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27280,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/images/approved-homepage-art.webp",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 136932,
+      "elapsedMs": 124,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/images/electrodes.webp",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 54614,
+      "elapsedMs": 122,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/images/readiness.webp",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 31024,
+      "elapsedMs": 102,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/images/aed-cabinet.webp",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 56198,
+      "elapsedMs": 119,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/images/maintenance.webp",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 46536,
+      "elapsedMs": 108,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/images/training.webp",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 43842,
+      "elapsedMs": 113,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/brand/logo-en-dark.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16116,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/brand/logo-fr-light.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15906,
+      "elapsedMs": 88,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/brand/logo-en-light.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16116,
+      "elapsedMs": 94,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/brand/logo-fr-dark.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15906,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/brand/wordmark-light.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 6998,
+      "elapsedMs": 79,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/brand/wordmark-dark.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 6998,
+      "elapsedMs": 72,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/brand/favicon.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 329,
+      "elapsedMs": 79,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/_astro/inter-vietnamese-wght-normal.CBcvBZtf.woff2",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 10252,
+      "elapsedMs": 78,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/_astro/CityContext.astro_astro_type_script_index_0_lang.CUGQElD-.js",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 663,
+      "elapsedMs": 77,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/_astro/QuoteForm.astro_astro_type_script_index_0_lang.BH7_gEmN.js",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 2796,
+      "elapsedMs": 77,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/_astro/inter-cyrillic-ext-wght-normal.BOeWTOD4.woff2",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 25960,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/_astro/enquiry-context.BS5aBvkq.js",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 21701,
+      "elapsedMs": 87,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/_astro/inter-greek-wght-normal.CkhJZR-_.woff2",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18996,
+      "elapsedMs": 365,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/_astro/inter-cyrillic-wght-normal.DqGufNeO.woff2",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18748,
+      "elapsedMs": 85,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/_astro/inter-latin-ext-wght-normal.DO1Apj_S.woff2",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 85068,
+      "elapsedMs": 147,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/_astro/inter-latin-wght-normal.Dx4kXJAl.woff2",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 48256,
+      "elapsedMs": 118,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/_astro/site.B1aPolSA.css",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 39401,
+      "elapsedMs": 111,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/_astro/inter-greek-ext-wght-normal.DlzME5K_.woff2",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 11232,
+      "elapsedMs": 69,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": null
+    },
+    {
+      "path": "/fr/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24461,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/confidentialite/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16289,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/formation-rcr-dea/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16856,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 41697,
+      "elapsedMs": 104,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/nouvelle-ecosse/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24371,
+      "elapsedMs": 92,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/nouvelle-ecosse/halifax/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27862,
+      "elapsedMs": 91,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/yukon/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24111,
+      "elapsedMs": 94,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/yukon/whitehorse/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27466,
+      "elapsedMs": 87,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/saskatchewan/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24692,
+      "elapsedMs": 92,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/saskatchewan/regina/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27583,
+      "elapsedMs": 91,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/saskatchewan/saskatoon/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27606,
+      "elapsedMs": 91,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/manitoba/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24192,
+      "elapsedMs": 87,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/manitoba/winnipeg/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27708,
+      "elapsedMs": 88,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/territoires-du-nord-ouest/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24592,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/territoires-du-nord-ouest/yellowknife/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 28015,
+      "elapsedMs": 105,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/nunavut/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24261,
+      "elapsedMs": 96,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/nunavut/iqaluit/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27482,
+      "elapsedMs": 92,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/nouveau-brunswick/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 25285,
+      "elapsedMs": 95,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/nouveau-brunswick/fredericton/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27835,
+      "elapsedMs": 92,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/nouveau-brunswick/moncton/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 28007,
+      "elapsedMs": 94,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/nouveau-brunswick/saint-john/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27724,
+      "elapsedMs": 94,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/ontario/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 30154,
+      "elapsedMs": 108,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/ontario/hamilton/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27925,
+      "elapsedMs": 92,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/ontario/belleville-quinte-west/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 28225,
+      "elapsedMs": 90,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/ontario/peterborough/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27759,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/ontario/kitchener-cambridge-waterloo/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 28505,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/ontario/brantford/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27530,
+      "elapsedMs": 95,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/ontario/kingston/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27567,
+      "elapsedMs": 95,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/ontario/toronto/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27861,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/ontario/grand-sudbury/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27595,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/ontario/london/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27491,
+      "elapsedMs": 91,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/ontario/windsor/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27566,
+      "elapsedMs": 90,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/ontario/oshawa/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27846,
+      "elapsedMs": 91,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/ontario/st-catharines-niagara/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 28292,
+      "elapsedMs": 92,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/ontario/barrie/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27415,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/ontario/ottawa-gatineau/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 28105,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/ontario/thunder-bay/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27727,
+      "elapsedMs": 90,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/ontario/guelph/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27326,
+      "elapsedMs": 86,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/ile-du-prince-edouard/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24714,
+      "elapsedMs": 88,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/ile-du-prince-edouard/charlottetown/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 28122,
+      "elapsedMs": 87,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27121,
+      "elapsedMs": 87,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/nanaimo/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27721,
+      "elapsedMs": 91,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/kelowna/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27766,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/victoria/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 28114,
+      "elapsedMs": 91,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/chilliwack/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27902,
+      "elapsedMs": 97,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/kamloops/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27809,
+      "elapsedMs": 96,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/abbotsford-mission/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 28358,
+      "elapsedMs": 88,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/vancouver/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 28330,
+      "elapsedMs": 96,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/quebec/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26606,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/quebec/ville-quebec/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27922,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/quebec/sherbrooke/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27556,
+      "elapsedMs": 101,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/quebec/montreal/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27945,
+      "elapsedMs": 92,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/quebec/trois-rivieres/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27883,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/quebec/drummondville/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27726,
+      "elapsedMs": 94,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/quebec/saguenay/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27733,
+      "elapsedMs": 87,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/alberta/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 25353,
+      "elapsedMs": 90,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/alberta/calgary/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27870,
+      "elapsedMs": 94,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/alberta/edmonton/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27886,
+      "elapsedMs": 96,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/alberta/red-deer/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27427,
+      "elapsedMs": 90,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/alberta/lethbridge/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27500,
+      "elapsedMs": 98,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/terre-neuve-labrador/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24559,
+      "elapsedMs": 88,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/regions/terre-neuve-labrador/st-johns/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27845,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/contact/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15896,
+      "elapsedMs": 94,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/demander-soumission/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 41906,
+      "elapsedMs": 117,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/questions-frequentes/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19890,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/installation/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18005,
+      "elapsedMs": 113,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/secteurs/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 21362,
+      "elapsedMs": 92,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/secteurs/bureaux/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16776,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/secteurs/hotellerie/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16640,
+      "elapsedMs": 91,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/secteurs/commerce-detail/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16825,
+      "elapsedMs": 110,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/secteurs/ecoles/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16764,
+      "elapsedMs": 97,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/secteurs/gestion-immobiliere/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17083,
+      "elapsedMs": 85,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/secteurs/industries-entrepots/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16897,
+      "elapsedMs": 87,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/secteurs/municipalites/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16940,
+      "elapsedMs": 90,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/secteurs/residentiel/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16934,
+      "elapsedMs": 90,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/secteurs/sports-loisirs/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16728,
+      "elapsedMs": 92,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/a-propos/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16769,
+      "elapsedMs": 84,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/accessoires/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23511,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/accessoires/trousses-intervention/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16973,
+      "elapsedMs": 118,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/accessoires/etuis-transport-dea/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23997,
+      "elapsedMs": 124,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/accessoires/signalisation/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16762,
+      "elapsedMs": 118,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/accessoires/batteries/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17609,
+      "elapsedMs": 125,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/accessoires/electrodes/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18094,
+      "elapsedMs": 130,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/accessoires/electrodes-dea-adultes/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24507,
+      "elapsedMs": 114,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/accessoires/electrodes-cles-pediatriques-dea/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24661,
+      "elapsedMs": 94,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/accessoires/simulateurs-dea/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24101,
+      "elapsedMs": 94,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/accessoires/armoires/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17450,
+      "elapsedMs": 92,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/accessoires/blocs-electrodes-batterie-dea/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24569,
+      "elapsedMs": 96,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/accessoires/trouver-pieces/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 22922,
+      "elapsedMs": 99,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/accessoires/armoires-exterieures-dea/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24589,
+      "elapsedMs": 87,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/defibrillateurs/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 28173,
+      "elapsedMs": 88,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/defibrillateurs/philips-heartstart-frx/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18374,
+      "elapsedMs": 94,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/defibrillateurs/ensembles/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 20105,
+      "elapsedMs": 92,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/defibrillateurs/zoll-aed-plus/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18342,
+      "elapsedMs": 101,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/defibrillateurs/lifepak-cr2/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17940,
+      "elapsedMs": 105,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/defibrillateurs/philips-heartstart-hs1/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18526,
+      "elapsedMs": 99,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/defibrillateurs/defibtech-lifeline-view/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18203,
+      "elapsedMs": 94,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/defibrillateurs/heartsine-samaritan-350p/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18575,
+      "elapsedMs": 87,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/defibrillateurs/zoll-aed-3/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17863,
+      "elapsedMs": 85,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/defibrillateurs/comparer/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 25354,
+      "elapsedMs": 98,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/defibrillateurs/powerheart-g5/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17953,
+      "elapsedMs": 94,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/conditions/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16094,
+      "elapsedMs": 103,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/ressources/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19758,
+      "elapsedMs": 99,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/ressources/guide-entretien-dea/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 21986,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/ressources/guide-achat-dea/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 22049,
+      "elapsedMs": 87,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/ressources/cout-dea-budget/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 22746,
+      "elapsedMs": 97,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/accessibilite/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15623,
+      "elapsedMs": 94,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/programmes-dea/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18121,
+      "elapsedMs": 92,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/services/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 21415,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/services/inventaire-dea-multisite/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24525,
+      "elapsedMs": 99,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/services/suivi-echeances-dea/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24421,
+      "elapsedMs": 92,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/services/fixation-armoire-dea/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24415,
+      "elapsedMs": 88,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/services/evaluation-emplacement-dea/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24550,
+      "elapsedMs": 86,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/services/reapprovisionnement-dea-apres-utilisation/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 25017,
+      "elapsedMs": 86,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/services/verification-etat-dea/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24378,
+      "elapsedMs": 87,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/fr/entretien/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18153,
+      "elapsedMs": 82,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23121,
+      "elapsedMs": 88,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/aed-programs/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17311,
+      "elapsedMs": 120,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/contact/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15209,
+      "elapsedMs": 120,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/accessories/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 22372,
+      "elapsedMs": 115,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/accessories/find-parts/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 21809,
+      "elapsedMs": 122,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/accessories/aed-trainers/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23309,
+      "elapsedMs": 112,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/accessories/signage/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15948,
+      "elapsedMs": 119,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/accessories/electrode-pads/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17340,
+      "elapsedMs": 92,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/accessories/emergency-response-kits/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16269,
+      "elapsedMs": 96,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/accessories/batteries/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16884,
+      "elapsedMs": 92,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/accessories/outdoor-aed-cabinets/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23832,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/accessories/cabinets/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16773,
+      "elapsedMs": 87,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/accessories/combined-pad-battery-packs/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23921,
+      "elapsedMs": 85,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/accessories/adult-aed-pads/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23673,
+      "elapsedMs": 130,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/accessories/aed-carry-cases/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23311,
+      "elapsedMs": 135,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/accessories/paediatric-aed-pads-keys/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23843,
+      "elapsedMs": 126,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/privacy/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15442,
+      "elapsedMs": 128,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/resources/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18913,
+      "elapsedMs": 119,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/resources/aed-maintenance-guide/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 20983,
+      "elapsedMs": 119,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/resources/aed-buying-guide/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 21021,
+      "elapsedMs": 86,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/resources/aed-cost-ownership/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 21630,
+      "elapsedMs": 95,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/terms/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15578,
+      "elapsedMs": 87,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/industries/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 20424,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/industries/municipalities/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16269,
+      "elapsedMs": 84,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/industries/hospitality/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16041,
+      "elapsedMs": 86,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/industries/industrial-warehouses/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16390,
+      "elapsedMs": 96,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/industries/fitness-recreation/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16159,
+      "elapsedMs": 88,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/industries/retail/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16055,
+      "elapsedMs": 85,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/industries/property-management/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16385,
+      "elapsedMs": 123,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/industries/residential/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16273,
+      "elapsedMs": 121,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/industries/offices/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16111,
+      "elapsedMs": 118,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/industries/schools/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16082,
+      "elapsedMs": 131,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/about/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15956,
+      "elapsedMs": 124,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/installation/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17208,
+      "elapsedMs": 123,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/faqs/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18667,
+      "elapsedMs": 95,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/defibrillators/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26831,
+      "elapsedMs": 99,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/defibrillators/philips-heartstart-frx/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17601,
+      "elapsedMs": 92,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/defibrillators/zoll-aed-plus/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17581,
+      "elapsedMs": 90,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/defibrillators/lifepak-cr2/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17218,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/defibrillators/philips-heartstart-hs1/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17853,
+      "elapsedMs": 90,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/defibrillators/defibtech-lifeline-view/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17414,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/defibrillators/heartsine-samaritan-350p/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17809,
+      "elapsedMs": 87,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/defibrillators/zoll-aed-3/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17166,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/defibrillators/packages/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19004,
+      "elapsedMs": 91,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/defibrillators/compare/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24187,
+      "elapsedMs": 91,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/defibrillators/powerheart-g5/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17206,
+      "elapsedMs": 91,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/cpr-aed-training/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16188,
+      "elapsedMs": 90,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 40300,
+      "elapsedMs": 103,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/new-brunswick/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24207,
+      "elapsedMs": 88,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/new-brunswick/fredericton/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26880,
+      "elapsedMs": 91,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/new-brunswick/moncton/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27052,
+      "elapsedMs": 88,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/new-brunswick/saint-john/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26872,
+      "elapsedMs": 90,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/newfoundland-labrador/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23869,
+      "elapsedMs": 91,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/newfoundland-labrador/st-johns/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27000,
+      "elapsedMs": 100,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/yukon/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23064,
+      "elapsedMs": 87,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/yukon/whitehorse/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26711,
+      "elapsedMs": 95,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/saskatchewan/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23838,
+      "elapsedMs": 92,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/saskatchewan/regina/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26622,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/saskatchewan/saskatoon/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26652,
+      "elapsedMs": 91,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/manitoba/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23288,
+      "elapsedMs": 83,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/manitoba/winnipeg/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26636,
+      "elapsedMs": 88,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/nunavut/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23276,
+      "elapsedMs": 90,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/nunavut/iqaluit/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26621,
+      "elapsedMs": 87,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/ontario/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 29324,
+      "elapsedMs": 100,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/ontario/greater-sudbury/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26746,
+      "elapsedMs": 88,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/ontario/hamilton/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26921,
+      "elapsedMs": 88,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/ontario/belleville-quinte-west/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27374,
+      "elapsedMs": 84,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/ontario/peterborough/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26757,
+      "elapsedMs": 94,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/ontario/kitchener-cambridge-waterloo/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27495,
+      "elapsedMs": 94,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/ontario/brantford/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26578,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/ontario/kingston/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26642,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/ontario/toronto/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26913,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/ontario/london/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26461,
+      "elapsedMs": 88,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/ontario/windsor/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26591,
+      "elapsedMs": 104,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/ontario/oshawa/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26795,
+      "elapsedMs": 99,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/ontario/st-catharines-niagara/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27312,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/ontario/barrie/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26444,
+      "elapsedMs": 99,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/ontario/ottawa-gatineau/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27221,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/ontario/thunder-bay/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26780,
+      "elapsedMs": 127,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/ontario/guelph/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26507,
+      "elapsedMs": 90,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/nova-scotia/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23317,
+      "elapsedMs": 98,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/nova-scotia/halifax/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27034,
+      "elapsedMs": 90,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/prince-edward-island/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23626,
+      "elapsedMs": 96,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/prince-edward-island/charlottetown/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27124,
+      "elapsedMs": 91,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/northwest-territories/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23658,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/northwest-territories/yellowknife/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27148,
+      "elapsedMs": 84,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/british-columbia/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26112,
+      "elapsedMs": 87,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/british-columbia/nanaimo/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26794,
+      "elapsedMs": 128,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/british-columbia/kelowna/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26771,
+      "elapsedMs": 85,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/british-columbia/victoria/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27083,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/british-columbia/chilliwack/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26853,
+      "elapsedMs": 90,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/british-columbia/kamloops/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26860,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/british-columbia/abbotsford-mission/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27350,
+      "elapsedMs": 90,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/british-columbia/vancouver/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27144,
+      "elapsedMs": 91,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/quebec/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 25763,
+      "elapsedMs": 82,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/quebec/quebec-city/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27007,
+      "elapsedMs": 86,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/quebec/sherbrooke/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26612,
+      "elapsedMs": 90,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/quebec/montreal/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26981,
+      "elapsedMs": 88,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/quebec/trois-rivieres/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26871,
+      "elapsedMs": 86,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/quebec/drummondville/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26794,
+      "elapsedMs": 91,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/quebec/saguenay/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26926,
+      "elapsedMs": 90,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/alberta/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24425,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/alberta/calgary/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26942,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/alberta/edmonton/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26951,
+      "elapsedMs": 92,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/alberta/red-deer/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26554,
+      "elapsedMs": 94,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/locations/alberta/lethbridge/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26652,
+      "elapsedMs": 92,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/request-quote/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 40225,
+      "elapsedMs": 147,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/maintenance/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17393,
+      "elapsedMs": 90,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/accessibility/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15000,
+      "elapsedMs": 103,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/services/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 20456,
+      "elapsedMs": 85,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/services/aed-site-assessment/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23840,
+      "elapsedMs": 97,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/services/aed-post-use-replenishment/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23871,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/services/aed-cabinet-mounting/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23620,
+      "elapsedMs": 89,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/services/aed-readiness-inspection/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23694,
+      "elapsedMs": 93,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/services/aed-expiry-tracking/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23484,
+      "elapsedMs": 87,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    },
+    {
+      "path": "/en/services/aed-asset-inventory/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23744,
+      "elapsedMs": 96,
+      "csp": true,
+      "cspCount": 1,
+      "cspMatchesBuild": true
+    }
+  ],
+  "redirects": [
+    {
+      "url": "https://defibrillators.ca/?expansion=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/?expansion=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/index.html?expansion=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/?expansion=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/fr/index.html?expansion=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?expansion=check",
+      "custom404": null
+    },
+    {
+      "url": "http://defibrillators.ca/en/defibrillators/?expansion=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/defibrillators/?expansion=check",
+      "custom404": null
+    },
+    {
+      "url": "https://www.defibrillators.ca/fr/?expansion=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?expansion=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillator.ca/fr/?expansion=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?expansion=check",
+      "custom404": null
+    },
+    {
+      "url": "http://defibrillator.ca/fr/?expansion=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?expansion=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/expansion-not-a-page/",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    },
+    {
+      "url": "https://defibrillators.ca/.htaccess",
+      "status": 403,
+      "location": null,
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/defibrillators-expansion-whc.zip",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    },
+    {
+      "url": "https://defibrillators.ca/defibrillators-pre-expansion-20261107.zip",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    }
+  ],
+  "tlsHostChecks": {
+    "hosts": 4,
+    "allValid": true
+  },
+  "browserSmoke": {
+    "citySearch": "Surrey returns Vancouver",
+    "enquiryJourney": "Vancouver \u2192 cabinet mounting \u2192 French \u2192 RFQ, province BC and installation request preserved",
+    "frenchMobile": {
+      "width": 390,
+      "overflow": false,
+      "brokenImages": 0
+    },
+    "capturedConsoleErrors": 0,
+    "productionFormSubmitted": false
+  },
+  "searchSubmission": {
+    "sitemap": "https://defibrillators.ca/sitemap.xml",
+    "canonicalUrls": 232,
+    "propertiesVerified": ["Google Search Console", "Bing Webmaster Tools"],
+    "bing": {
+      "submitted": true,
+      "status": "Success",
+      "discoveredUrls": 232,
+      "lastCrawl": "2026-11-07"
+    },
+    "google": {
+      "submitted": true,
+      "status": "Could not fetch \u2014 cached robots block",
+      "robotsRecrawlRequested": true,
+      "refreshedRobotsConfirmed": true,
+      "refreshedRobotsBytes": 71,
+      "refreshedRobotsRules": [
+        "User-agent: *",
+        "Allow: /",
+        "Sitemap: https://defibrillators.ca/sitemap.xml"
+      ],
+      "resubmittedAfterRefresh": true,
+      "successfulProcessingConfirmed": false
+    },
+    "indexingConfirmed": false
+  }
+}

@@ -104,3 +104,9 @@ See [PHASE-4.md](PHASE-4.md) for complete scope, reproduction commands, evidence
 Deployed the verified Phase 4 build after owner authorization. All 171 publicly checked files returned 200 and matched the build. Primary and singular-domain HTTPS, canonical 301 redirects with path/query preservation, custom 404, security headers and archive isolation were verified live. Bilingual synthetic enquiries reached Formspree; notification delivery, consent/context and a synthetic attachment were checked in the provider. Catalogue filters, comparison, parts-to-RFQ language switching and the French mobile keyboard menu passed live smoke checks.
 
 The website remains excluded from indexing pending launch clearance. See [PHASE-5.md](PHASE-5.md) for release identity, exact verification scope, transfer samples, rollback handoff and limits. No claim of field Core Web Vitals, full accessibility conformance or regulatory clearance is made.
+
+## National expansion and search launch — 7 November 2026
+
+The bilingual city/product/service expansion passed 526 automated tests and 332 browser accessibility/responsive checks before deployment. The release preserves the approved design and direct English homepage. WHC verification matched all 279 checked public files and all 233 HTML security policies; HTTPS, redirects, 404 handling and private archive isolation passed. The live city search and bilingual context-to-RFQ journey passed, including a French 390 px layout check. No new production enquiry was submitted.
+
+Both webmaster properties were verified and their 232-URL sitemap submitted. Bing reports Success with 232 URLs discovered. Google’s earlier cached robots.txt block was identified, a refresh requested and the new Allow rule confirmed in its robots report; final Google processing is tracked in [EXPANSION-AND-SEARCH.md](EXPANSION-AND-SEARCH.md). Submission and URL discovery are distinct from indexing.
