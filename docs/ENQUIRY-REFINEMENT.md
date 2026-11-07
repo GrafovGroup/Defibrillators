@@ -36,4 +36,6 @@ Google's live homepage inspection at 10:30 AM on 7 November still reported the e
 
 ## Deployment
 
-Release packaging and live verification are recorded here after upload. Private hosting identifiers and rollback paths are kept outside this repository.
+Implementation commit: `6f2f7e1a454b801024a09fcab4c64614141c10b2`. The tested release archive contains 515 files, including 234 HTML documents and 233 `.htaccess` files; size 2,908,894 bytes; SHA-256 `20909d375ddc331d54ca226f7c7dd4cd5157b7f20b6eeb7232747608def2ae33`.
+
+A fresh private WHC rollback archive was created and confirmed before upload. **This refinement has not yet been deployed:** the browser file-upload integration cannot access local files, and the native picker is unavailable while the owner's Mac is locked. The upload page is prepared for continuation after unlock. The previous expansion remains the live release; no live verification of these new form changes is claimed. Private hosting identifiers and rollback paths are kept outside this repository.
