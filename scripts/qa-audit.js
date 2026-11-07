@@ -15,6 +15,22 @@ report.id = 'qa-report';
 report.style.cssText = 'white-space:pre-wrap;font-size:14px;line-height:1.5';
 panel.append(heading, button, report);
 document.body.append(panel);
+const eventReport = document.createElement('pre');
+eventReport.id = 'qa-events';
+eventReport.style.cssText = report.style.cssText;
+const observedEvents = [];
+eventReport.textContent = '[]';
+panel.append(eventReport);
+document.addEventListener('defibrillators:measurement', (event) => {
+  observedEvents.push(event.detail);
+  if (observedEvents.length > 25) observedEvents.shift();
+  eventReport.textContent = JSON.stringify(observedEvents);
+});
+// Local QA must not open a mail client or place a call during click checks.
+document.addEventListener('click', (event) => {
+  if (event.target.closest?.('a[href^="tel:"], a[href^="mailto:"]'))
+    event.preventDefault();
+});
 async function audit() {
   report.dataset.state = 'running';
   button.disabled = true;

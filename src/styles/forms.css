@@ -160,6 +160,26 @@
   }
 }
 
-.rfq fieldset[hidden] {
+.rfq [hidden] {
   display: none;
+}
+
+.rfq-optional {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin: 0 0 1.5rem;
+}
+.rfq-optional > summary {
+  padding: 1rem;
+  cursor: pointer;
+  color: var(--navy);
+  font-weight: 700;
+  line-height: 1.5;
+}
+.rfq-optional-fields {
+  padding: 1rem;
+  border-top: 1px solid var(--border);
+}
+.rfq-optional fieldset {
+  margin-bottom: 0;
 }

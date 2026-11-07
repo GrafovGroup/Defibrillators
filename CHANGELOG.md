@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-07 — Enquiry refinement
+
+- Put the request first and group optional equipment/service details in bilingual quote forms.
+- Show relevant controls, reveal collapsed validation errors and preserve selected catalogue/city context after successful submission.
+- Prepare finite enquiry/contact events without an analytics provider, network delivery, cookies or storage.
+- Strengthen the existing JavaScript transfer budget to include shared imports; pass 531 tests and 22 browser audit checks.
+- Record the remaining Google crawl-cache issue and measurement activation requirements in `docs/ENQUIRY-REFINEMENT.md`.
+
 ## 2026-11-07 — National city coverage and focused offerings
 
 - Expand to 45 city/metropolitan guides plus all 13 provincial/territorial guides in both languages.

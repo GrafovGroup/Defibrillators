@@ -1,0 +1,612 @@
+{
+  "checkedAt": "2026-11-07T15:42:28.999Z",
+  "audits": [
+    {
+      "path": "/en/request-quote/",
+      "width": 360,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/en/request-quote/",
+      "width": 360,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 49,
+      "overflow": false,
+      "brokenImages": [],
+      "state": "training-expanded"
+    },
+    {
+      "path": "/fr/demander-soumission/",
+      "width": 360,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/fr/demander-soumission/",
+      "width": 360,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 49,
+      "overflow": false,
+      "brokenImages": [],
+      "state": "training-expanded"
+    },
+    {
+      "path": "/en/request-quote/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/en/request-quote/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 49,
+      "overflow": false,
+      "brokenImages": [],
+      "state": "training-expanded"
+    },
+    {
+      "path": "/fr/demander-soumission/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/fr/demander-soumission/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 49,
+      "overflow": false,
+      "brokenImages": [],
+      "state": "training-expanded"
+    },
+    {
+      "path": "/en/request-quote/",
+      "width": 768,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/en/request-quote/",
+      "width": 768,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 49,
+      "overflow": false,
+      "brokenImages": [],
+      "state": "training-expanded"
+    },
+    {
+      "path": "/fr/demander-soumission/",
+      "width": 768,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/fr/demander-soumission/",
+      "width": 768,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 49,
+      "overflow": false,
+      "brokenImages": [],
+      "state": "training-expanded"
+    },
+    {
+      "path": "/en/request-quote/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/en/request-quote/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 49,
+      "overflow": false,
+      "brokenImages": [],
+      "state": "training-expanded"
+    },
+    {
+      "path": "/fr/demander-soumission/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/fr/demander-soumission/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 49,
+      "overflow": false,
+      "brokenImages": [],
+      "state": "training-expanded"
+    },
+    {
+      "path": "/en/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": [".utility-coverage"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [".utility-detail:nth-child(2)"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [".utility-detail:nth-child(3)"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [".header-phone"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [".header-quote"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".desktop-nav > ul > li:nth-child(4) > a[href$=\"installation/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".desktop-nav > ul > li:nth-child(5) > a[href$=\"maintenance/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".desktop-nav > ul > li:nth-child(6) > a[href$=\"aed-programs/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".desktop-nav > ul > li:nth-child(7) > a[href$=\"industries/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".desktop-nav > ul > li:nth-child(8) > a[href$=\"resources/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".desktop-nav > ul > li:nth-child(9) > a[href$=\"contact/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": ["figcaption"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [".benefit-strip > ul > li:nth-child(1) > span"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [".benefit-strip > ul > li:nth-child(2) > span"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [".benefit-strip > ul > li:nth-child(3) > span"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [".benefit-strip > ul > li:nth-child(4) > span"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [".benefit-strip > ul > li:nth-child(5) > span"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [".benefit-strip > ul > li:nth-child(6) > span"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": ["#equipment > .service-content > p"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": ["#accessories > .service-content > p"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": ["#installation > .service-content > p"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": ["#maintenance > .service-content > p"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        }
+      ],
+      "passes": 45,
+      "overflow": false,
+      "brokenImages": [],
+      "state": "initial"
+    },
+    {
+      "path": "/fr/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": [".utility-coverage"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [".utility-detail:nth-child(2)"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [".utility-detail:nth-child(3)"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [".header-phone"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [".header-quote"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".desktop-nav > ul > li:nth-child(3) > a[href$=\"accessoires/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".desktop-nav > ul > li:nth-child(4) > a[href$=\"installation/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".desktop-nav > ul > li:nth-child(5) > a[href$=\"entretien/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".desktop-nav > ul > li:nth-child(6) > a[href$=\"programmes-dea/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".desktop-nav > ul > li:nth-child(7) > a[href$=\"secteurs/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".desktop-nav > ul > li:nth-child(8) > a[href$=\"ressources/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".desktop-nav > ul > li:nth-child(9) > a[href$=\"contact/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": ["figcaption"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [".benefit-strip > ul > li:nth-child(1) > span"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [".benefit-strip > ul > li:nth-child(2) > span"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [".benefit-strip > ul > li:nth-child(3) > span"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [".benefit-strip > ul > li:nth-child(4) > span"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [".benefit-strip > ul > li:nth-child(5) > span"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [".benefit-strip > ul > li:nth-child(6) > span"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": ["#equipment > .service-content > p"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": ["#accessories > .service-content > p"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": ["#installation > .service-content > p"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": ["#maintenance > .service-content > p"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        }
+      ],
+      "passes": 45,
+      "overflow": false,
+      "brokenImages": [],
+      "state": "initial"
+    },
+    {
+      "path": "/en/locations/ontario/toronto/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": [
+                "div:nth-child(1) > ul > li:nth-child(1) > a > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > ul > li:nth-child(2) > a > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > ul > li:nth-child(3) > a > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > ul > li:nth-child(4) > a > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > ul > li:nth-child(5) > a > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > ul > li:nth-child(6) > a > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > ul > li:nth-child(1) > a > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > ul > li:nth-child(2) > a > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > ul > li:nth-child(3) > a > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > ul > li:nth-child(4) > a > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > ul > li:nth-child(5) > a > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > ul > li:nth-child(6) > a > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passes": 40,
+      "overflow": false,
+      "brokenImages": [],
+      "state": "initial"
+    },
+    {
+      "path": "/fr/entretien/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": ["figcaption"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            }
+          ]
+        }
+      ],
+      "passes": 38,
+      "overflow": false,
+      "brokenImages": [],
+      "state": "initial"
+    },
+    {
+      "path": "/en/request-quote/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": [],
+      "state": "native"
+    },
+    {
+      "path": "/fr/demander-soumission/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": [],
+      "state": "native"
+    }
+  ],
+  "requestCategories": [
+    {
+      "category": "equipment",
+      "enabled": [
+        "model",
+        "quantity",
+        "installation",
+        "maintenance",
+        "package",
+        "attachment"
+      ]
+    },
+    {
+      "category": "accessories",
+      "enabled": [
+        "model",
+        "quantity",
+        "accessory_type",
+        "part_reference",
+        "attachment"
+      ]
+    },
+    {
+      "category": "installation",
+      "enabled": ["model", "quantity", "installation", "attachment"]
+    },
+    {
+      "category": "maintenance",
+      "enabled": ["model", "quantity", "maintenance", "attachment"]
+    },
+    {
+      "category": "programs",
+      "enabled": [
+        "model",
+        "quantity",
+        "installation",
+        "maintenance",
+        "package",
+        "attachment"
+      ]
+    },
+    {
+      "category": "training",
+      "enabled": [
+        "training_language",
+        "training_format",
+        "training_course",
+        "training_participants",
+        "attachment"
+      ]
+    }
+  ],
+  "journeys": [
+    "EN validation summary focuses and opens collapsed invalid optional control",
+    "EN simulated success after correction",
+    "FR simulated field/429/503/challenge errors with no success event",
+    "FR model/part/city prefill and language preservation",
+    "FR simulated success retains prefilled context",
+    "Telephone and email click events contain only finite dimensions",
+    "Ottawa–Gatineau leaves province unselected",
+    "Native forms retain required validation and optional details"
+  ],
+  "productionSubmissions": 0
+}

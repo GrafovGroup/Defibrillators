@@ -27,7 +27,10 @@ const { lang, pageId = 'home' } = Astro.props;
       />
     )}
   </head>
-  <body>
+  <body data-page={pageId} data-language={lang}>
     <slot />
+    <script>
+      import '../scripts/measurement';
+    </script>
   </body>
 </html>

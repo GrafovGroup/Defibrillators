@@ -2,6 +2,8 @@
 
 Phases 0–5 of `MASTER_PROMPT.md`: bilingual homepages, core product/service pages, RFQs, location planning guides, SEO, technical QA and WHC deployment using the approved modern wordmark and design system. Static Astro output, with no production Node process. The verified release is live at [Defibrillators.ca](https://defibrillators.ca/), with the approved design preserved. The owner authorized Google/Bing indexing and national city/product/service expansion on 7 November 2026. See `docs/EXPANSION-AND-SEARCH.md` for the current release and search-submission record, and `docs/PHASE-5.md` for the original hosting verification.
 
+The latest enquiry refinement simplifies both quote forms and prepares sanitized measurement events without connecting an external tracker. See [docs/ENQUIRY-REFINEMENT.md](docs/ENQUIRY-REFINEMENT.md) for scope, checks and activation requirements.
+
 The homepage and shared logo/header were restored to the owner’s selected mockup on 7 November 2026. Both homepages now use the exact owner-approved concept artwork as an illustration, with real HTML content and controls. See `docs/DESIGN-SYSTEM.md` and `docs/ASSETS.md` for the reference and scope.
 
 ## Development

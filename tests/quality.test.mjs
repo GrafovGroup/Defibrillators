@@ -81,9 +81,29 @@ test('Page transfer budgets keep HTML, styles and scripts small', () => {
             ).length,
           0,
         );
+    const scripts = new Set();
+    const addScript = (file) => {
+      if (scripts.has(file)) return;
+      scripts.add(file);
+      const script = fs.readFileSync(file, 'utf8');
+      for (const [, reference] of script.matchAll(
+        /(?:from\s*|import\s*)["']([^"']+\.js)["']/g,
+      )) {
+        const dependency = reference.startsWith('/')
+          ? path.join('dist', reference)
+          : path.resolve(path.dirname(file), reference);
+        addScript(path.resolve(dependency));
+      }
+    };
+    for (const element of $('script[src]').toArray())
+      addScript(path.resolve('dist', '.' + $(element).attr('src')));
+    const scriptBytes = [...scripts].reduce(
+      (sum, file) => sum + gzipSync(fs.readFileSync(file)).length,
+      0,
+    );
     assert.ok(
-      total('script[src]', 'src') < 10_000,
-      `${file}: external JS exceeds 10 KB gzip`,
+      scriptBytes < 10_000,
+      `${file}: external JS including shared imports is ${scriptBytes} bytes (10 KB gzip budget)`,
     );
     assert.ok(
       total('link[rel=stylesheet]', 'href') < 12_000,

@@ -168,8 +168,8 @@ export function validateRfq(data: FormData, lang: RfqLocale): FieldErrors {
     ],
     training_format: ['', ...trainingOptions.training_format.map((p) => p.id)],
     training_course: ['', ...trainingOptions.training_course.map((p) => p.id)],
-    maintenance: maintenanceTypes,
-    installation: ['discuss', 'yes', 'no'],
+    maintenance: ['', ...maintenanceTypes],
+    installation: ['', 'discuss', 'yes', 'no'],
   };
   for (const [key, values] of Object.entries(allowed))
     if (!errors[key] && !values.includes(textValue(data, key)))

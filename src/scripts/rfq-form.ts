@@ -9,6 +9,7 @@ import {
 import { safeEnquiryParams } from '../lib/enquiry-context';
 import { pathFor, type PageId } from '../data/routes';
 import { provinceForLocation } from '../data/location-routes';
+import { emitMeasurement, type MeasurementName } from '../lib/measurement';
 const params = new URLSearchParams(location.search);
 const audience =
   params.get('audience') === 'residential' ? 'residential' : 'commercial';
@@ -26,6 +27,7 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-rfq]')) {
   const button = form.querySelector<HTMLButtonElement>('[data-submit]')!;
   const native = form.querySelector<HTMLButtonElement>('[data-native]')!;
   let busy = false;
+  let started = false;
   let requestId = crypto.randomUUID();
   const controls = () =>
     Array.from(
@@ -35,6 +37,38 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-rfq]')) {
     );
   const field = (name: string) =>
     controls().find((control) => control.name === name);
+  const measure = (name: MeasurementName, outcome?: string) =>
+    emitMeasurement(name, {
+      page: 'quote',
+      language: lang,
+      source_page: safe.get('source') ?? 'quote',
+      city: safe.get('city') ?? safe.get('source'),
+      audience: field('audience')?.value,
+      request_type: field('request_type')?.value,
+      outcome,
+    });
+  const start = () => {
+    if (started) return;
+    started = true;
+    measure('rfq_start');
+  };
+  form.addEventListener('input', start);
+  form.addEventListener('change', start);
+  const reveal = (input: Element) => {
+    for (
+      let parent = input.parentElement;
+      parent;
+      parent = parent.parentElement
+    )
+      if (parent instanceof HTMLDetailsElement) parent.open = true;
+  };
+  form.addEventListener(
+    'invalid',
+    (event) => {
+      if (event.target instanceof Element) reveal(event.target);
+    },
+    true,
+  );
   const showErrors = (fields: FieldErrors, message: string) => {
     errors.replaceChildren();
     errors.hidden = false;
@@ -45,6 +79,7 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-rfq]')) {
     for (const [name, message] of Object.entries(fields)) {
       const input = field(name);
       if (!input || input.type === 'hidden') continue;
+      reveal(input);
       input.setAttribute('aria-invalid', 'true');
       const inline = form.querySelector<HTMLElement>(`[data-error="${name}"]`);
       if (inline) inline.textContent = message;
@@ -69,36 +104,52 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-rfq]')) {
   };
   const details = form.closest('details')!;
   details.open = details.dataset.audience === audience;
-  if (safe.has('model')) field('model')!.value = safe.get('model')!;
-  if (safe.has('request')) field('request_type')!.value = safe.get('request')!;
-  if (safe.has('part')) field('accessory_type')!.value = safe.get('part')!;
-  if (safe.has('package')) field('package')!.value = safe.get('package')!;
+  const optional = form.querySelector<HTMLDetailsElement>(
+    '[data-optional-details]',
+  )!;
+  optional.open = ['model', 'part', 'package'].some((key) => safe.has(key));
   const syncDetails = () => {
-    for (const group of form.querySelectorAll<HTMLFieldSetElement>(
-      '[data-request-details]',
+    for (const group of form.querySelectorAll<HTMLElement>(
+      '[data-request-details], [data-request-field], [data-maintenance-renewal]',
     )) {
-      const relevant = group.dataset
-        .requestDetails!.split(' ')
-        .includes(field('request_type')!.value);
+      const relevant = group.hasAttribute('data-maintenance-renewal')
+        ? field('maintenance')!.value === 'renewal' &&
+          !field('maintenance')!.disabled
+        : (group.dataset.requestDetails ?? group.dataset.requestField)!
+            .split(' ')
+            .includes(field('request_type')!.value);
       group.hidden = !relevant;
-      group.disabled = !relevant;
+      if (group instanceof HTMLFieldSetElement) group.disabled = !relevant;
+      for (const control of group.querySelectorAll<
+        HTMLInputElement | HTMLSelectElement
+      >('input, select'))
+        control.disabled = !relevant;
     }
   };
   field('request_type')!.addEventListener('change', syncDetails);
-  syncDetails();
-  if (safe.has('source'))
-    field('source_page')!.value = pathFor(safe.get('source') as PageId, lang);
+  field('maintenance')!.addEventListener('change', syncDetails);
   const cityId = safe.get('city') ?? safe.get('source') ?? '';
   const city = Object.hasOwn(cityCatalogue, cityId)
     ? cityCatalogue[cityId as CityId]
     : undefined;
-  if (city) {
-    field('planning_city')!.value = city[lang];
-    const locations = field('locations');
-    if (locations) locations.value = city[lang];
-  }
   const province = provinceForLocation(cityId);
-  if (province) field('province')!.value = province;
+  const applyContext = () => {
+    if (safe.has('model')) field('model')!.value = safe.get('model')!;
+    if (safe.has('request'))
+      field('request_type')!.value = safe.get('request')!;
+    if (safe.has('part')) field('accessory_type')!.value = safe.get('part')!;
+    if (safe.has('package')) field('package')!.value = safe.get('package')!;
+    if (safe.has('source'))
+      field('source_page')!.value = pathFor(safe.get('source') as PageId, lang);
+    if (city) {
+      field('planning_city')!.value = city[lang];
+      const locations = field('locations');
+      if (locations) locations.value = city[lang];
+    }
+    if (province) field('province')!.value = province;
+    syncDetails();
+  };
+  applyContext();
   native.addEventListener('click', () => {
     // Preserve the provider's hosted challenge; never disable or bypass it.
     if (busy) return;
@@ -108,17 +159,20 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-rfq]')) {
       return;
     }
     field('request_id')!.value = requestId;
+    measure('rfq_provider_handoff');
     HTMLFormElement.prototype.submit.call(form);
   });
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
     if (busy) return;
+    start();
     clear();
     field('request_id')!.value = requestId;
     const data = new FormData(form);
     const issues = validateRfq(data, lang);
     if (Object.keys(issues).length) {
       showErrors(issues, m.summary);
+      measure('rfq_error', 'validation');
       return;
     }
     busy = true;
@@ -132,13 +186,16 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-rfq]')) {
     form.removeAttribute('aria-busy');
     status.hidden = true;
     if (result.kind === 'success') {
+      measure('rfq_success');
       form.reset();
-      syncDetails();
+      applyContext();
+      started = false;
       requestId = crypto.randomUUID();
       status.textContent = m.success;
       status.hidden = false;
       status.focus();
     } else {
+      measure('rfq_error', result.verification ? 'verification' : 'provider');
       showErrors(result.fields, result.message);
       native.hidden = !result.verification;
     }

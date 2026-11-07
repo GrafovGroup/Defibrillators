@@ -152,7 +152,62 @@ const t = (en: string, french: string) => (fr ? french : en);
             hidden
           ></div>
           <fieldset>
-            <legend>{t('Contact details', 'Coordonnées')}</legend>
+            <legend>{t('Your request', 'Votre demande')}</legend>
+            <div class="rfq-grid">
+              <div class="rfq-field rfq-wide">
+                <label for={id('request_type')}>
+                  {t('What do you need?', 'Quel est votre besoin?')} *
+                </label>
+                <select
+                  id={id('request_type')}
+                  name="request_type"
+                  required
+                  aria-describedby={id('request_type-error')}
+                >
+                  {requestTypes.map((value, i) => (
+                    <option value={value}>{requestLabels[lang][i]}</option>
+                  ))}
+                </select>
+                <span
+                  class="field-error"
+                  id={id('request_type-error')}
+                  data-error="request_type"
+                ></span>
+              </div>
+              <div class="rfq-field rfq-wide">
+                <label for={id('message')}>
+                  {t('Tell us about your needs', 'Décrivez vos besoins')} *
+                </label>
+                <textarea
+                  id={id('message')}
+                  name="message"
+                  rows="3"
+                  required
+                  minlength="10"
+                  maxlength="4000"
+                  aria-describedby={`${id('message-hint')} ${id('message-error')}`}
+                ></textarea>
+                <small id={id('message-hint')}>
+                  {t(
+                    '10–4000 characters. Include other models, accessories, training or preferred timing.',
+                    '10 à 4000 caractères. Précisez les autres modèles, accessoires, la formation ou l’échéancier souhaité.',
+                  )}
+                </small>
+                <span
+                  class="field-error"
+                  id={id('message-error')}
+                  data-error="message"
+                ></span>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>
+              {t(
+                'Your contact & location',
+                'Vos coordonnées et votre emplacement',
+              )}
+            </legend>
             <div class="rfq-grid">
               {fields.map((field) => (
                 <div class="rfq-field">
@@ -232,32 +287,24 @@ const t = (en: string, french: string) => (fr ? french : en);
               )}
             </div>
           </fieldset>
-          <fieldset>
-            <legend>
-              {t('Equipment & support', 'Équipement et accompagnement')}
-            </legend>
-            <div class="rfq-grid">
-              <div class="rfq-field">
-                <label for={id('request_type')}>
-                  {t('Main request', 'Demande principale')} *
-                </label>
-                <select
-                  id={id('request_type')}
-                  name="request_type"
-                  required
-                  aria-describedby={id('request_type-error')}
-                >
-                  {requestTypes.map((value, i) => (
-                    <option value={value}>{requestLabels[lang][i]}</option>
-                  ))}
-                </select>
-                <span
-                  class="field-error"
-                  id={id('request_type-error')}
-                  data-error="request_type"
-                ></span>
-              </div>
-              <div class="rfq-field">
+          <details class="rfq-optional" data-optional-details open>
+            <summary>
+              {t(
+                'Add equipment or service details (optional)',
+                'Ajouter des détails sur l’équipement ou les services (facultatif)',
+              )}
+              <span class="rfq-summary-note">
+                {t(
+                  'Share what you know. You can send your request without these details.',
+                  'Indiquez ce que vous savez. Vous pouvez envoyer votre demande sans ces détails.',
+                )}
+              </span>
+            </summary>
+            <div class="rfq-grid rfq-optional-fields">
+              <div
+                class="rfq-field"
+                data-request-field="equipment accessories installation maintenance programs"
+              >
                 <label for={id('model')}>
                   {t('Model of interest', 'Modèle souhaité')}
                 </label>
@@ -286,7 +333,10 @@ const t = (en: string, french: string) => (fr ? french : en);
                 ></span>
               </div>
               {commercial && (
-                <div class="rfq-field">
+                <div
+                  class="rfq-field"
+                  data-request-field="equipment accessories installation maintenance programs"
+                >
                   <label for={id('quantity')}>
                     {t('Quantity, if known', 'Quantité, si connue')}
                   </label>
@@ -307,7 +357,10 @@ const t = (en: string, french: string) => (fr ? french : en);
                   ></span>
                 </div>
               )}
-              <div class="rfq-field">
+              <div
+                class="rfq-field"
+                data-request-field="equipment installation programs"
+              >
                 <label for={id('installation')}>
                   {t('Installation support', 'Aide à l’installation')}
                 </label>
@@ -328,7 +381,10 @@ const t = (en: string, french: string) => (fr ? french : en);
                   data-error="installation"
                 ></span>
               </div>
-              <div class="rfq-field">
+              <div
+                class="rfq-field"
+                data-request-field="equipment maintenance programs"
+              >
                 <label for={id('maintenance')}>
                   {t('Maintenance needs', 'Besoins d’entretien')}
                 </label>
@@ -348,7 +404,7 @@ const t = (en: string, french: string) => (fr ? french : en);
                 ></span>
               </div>
               {commercial && (
-                <div class="rfq-field">
+                <div class="rfq-field" data-maintenance-renewal>
                   <label for={id('renewal_reference')}>
                     {t(
                       'Existing plan reference (optional)',
@@ -369,31 +425,6 @@ const t = (en: string, french: string) => (fr ? french : en);
                 </div>
               )}
               <PlanningFields lang={lang} audience={audience} />
-              <div class="rfq-field rfq-wide">
-                <label for={id('message')}>
-                  {t('Tell us about your needs', 'Décrivez vos besoins')} *
-                </label>
-                <textarea
-                  id={id('message')}
-                  name="message"
-                  rows="5"
-                  required
-                  minlength="10"
-                  maxlength="4000"
-                  aria-describedby={`${id('message-hint')} ${id('message-error')}`}
-                ></textarea>
-                <small id={id('message-hint')}>
-                  {t(
-                    '10–4000 characters. Include other models, accessories, training or preferred timing.',
-                    '10 à 4000 caractères. Précisez les autres modèles, accessoires, la formation ou l’échéancier souhaité.',
-                  )}
-                </small>
-                <span
-                  class="field-error"
-                  id={id('message-error')}
-                  data-error="message"
-                ></span>
-              </div>
               {commercial && (
                 <div class="rfq-field rfq-wide">
                   <label for={id('attachment')}>
@@ -423,7 +454,7 @@ const t = (en: string, french: string) => (fr ? french : en);
                 </div>
               )}
             </div>
-          </fieldset>
+          </details>
           <div class="rfq-consent">
             <label for={id('consent')}>
               <input
