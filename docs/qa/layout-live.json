@@ -1,0 +1,234 @@
+{
+  "checkedAt": "2026-11-07T19:41:26.301503+00:00",
+  "sourceCommit": "078c1129ea7fbd87a8eba9d3d296dad8c1daa594",
+  "redirects": [
+    {
+      "url": "https://defibrillators.ca/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/index.html?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/fr/index.html?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "http://defibrillators.ca/en/defibrillators/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/defibrillators/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://www.defibrillators.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillator.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "http://defibrillator.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/enquiry-not-a-page/",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    },
+    {
+      "url": "https://defibrillators.ca/.htaccess",
+      "status": 403,
+      "location": null,
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/defibrillators-layout-whc.zip",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    },
+    {
+      "url": "https://defibrillators.ca/defibrillators-pre-layout-20261107.zip",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    }
+  ],
+  "certificates": [
+    {
+      "host": "defibrillators.ca",
+      "valid": true,
+      "expires": "Feb  5 05:49:28 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "www.defibrillators.ca",
+      "valid": true,
+      "expires": "Feb  5 05:49:28 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "defibrillator.ca",
+      "valid": true,
+      "expires": "Feb  5 06:22:02 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "www.defibrillator.ca",
+      "valid": true,
+      "expires": "Feb  5 06:22:02 2027 GMT",
+      "issuer": "Let's Encrypt"
+    }
+  ],
+  "release": {
+    "files": 664,
+    "htmlDocuments": 234,
+    "headerFiles": 233,
+    "bytes": 9406444,
+    "sha256": "2df9193a8ce7e3797a61b1d167857ffdbc74d8fb9ff14ca23a7fe4c38025c07d"
+  },
+  "publicFiles": 430,
+  "matchingFiles": 430,
+  "matchingPagePolicies": 233,
+  "failures": [],
+  "browserChecks": {
+    "mobile": {
+      "centering": 0,
+      "containers": [
+        {
+          "left": 20,
+          "right": 300,
+          "width": 280
+        },
+        {
+          "left": 20,
+          "right": 300,
+          "width": 280
+        },
+        {
+          "left": 20,
+          "right": 300,
+          "width": 280
+        },
+        {
+          "left": 20,
+          "right": 300,
+          "width": 280
+        },
+        {
+          "left": 20,
+          "right": 300,
+          "width": 280
+        },
+        {
+          "left": 20,
+          "right": 300,
+          "width": 280
+        },
+        {
+          "left": 20,
+          "right": 300,
+          "width": 280
+        },
+        {
+          "left": 20,
+          "right": 300,
+          "width": 280
+        },
+        {
+          "left": 20,
+          "right": 300,
+          "width": 280
+        },
+        {
+          "left": 20,
+          "right": 300,
+          "width": 280
+        }
+      ],
+      "leafAsset": "/brand/maple-leaf.svg#leaf",
+      "overflow": false,
+      "path": "/fr/",
+      "width": 320
+    },
+    "desktop": {
+      "centering": 0,
+      "containers": [
+        {
+          "left": 51.296875,
+          "right": 1658.6953125,
+          "width": 1607.3984375
+        },
+        {
+          "left": 51.296875,
+          "right": 1658.6953125,
+          "width": 1607.3984375
+        },
+        {
+          "left": 51.296875,
+          "right": 1658.6953125,
+          "width": 1607.3984375
+        },
+        {
+          "left": 51.296875,
+          "right": 1658.6953125,
+          "width": 1607.3984375
+        },
+        {
+          "left": 51.296875,
+          "right": 1658.6953125,
+          "width": 1607.3984375
+        },
+        {
+          "left": 51.296875,
+          "right": 1658.6953125,
+          "width": 1607.3984375
+        },
+        {
+          "left": 51.296875,
+          "right": 1658.6953125,
+          "width": 1607.3984375
+        },
+        {
+          "left": 51.296875,
+          "right": 1658.6953125,
+          "width": 1607.3984375
+        },
+        {
+          "left": 51.296875,
+          "right": 1658.6953125,
+          "width": 1607.3984375
+        },
+        {
+          "left": 51.296875,
+          "right": 1658.6953125,
+          "width": 1607.3984375
+        },
+        {
+          "left": 51.296875,
+          "right": 1658.6953125,
+          "width": 1607.3984375
+        }
+      ],
+      "leafAsset": "/brand/maple-leaf.svg#leaf",
+      "overflow": false,
+      "path": "/en/",
+      "width": 1710
+    }
+  }
+}
