@@ -8,6 +8,10 @@ A small local migration removes only `dfca-analytics-v1` and cookies beginning w
 
 `pnpm verify` passed lint, Astro/TypeScript, formatting, the build and **555 tests**. Obsolete GA4 mapping/consent tests were replaced with all-build tracking-absence and targeted migration checks. Four browser checks cover English/French homepages, the quote page and French privacy page at 390/1440 px: zero axe violations, page overflow or broken images, zero analytics controls and zero Google tag elements. Decorative/pseudo-background contrast checks that axe cannot resolve are retained in the evidence. An English commercial enquiry was accepted by the local mock; no production enquiry was sent. [Browser evidence](qa/analytics-removal-browser.json).
 
+## Deployment verification
+
+Published the tested build from commit `f0f5c9c568da7303bdca1ca3bc3879e8950778da` to the existing dedicated WHC document root, after creating a rollback archive outside the public root. All **430 public files** match the local build byte for byte; all **235 HTML response policies** match. HTTPS certificates, canonical redirects, query preservation, custom 404s and archive isolation pass. Live English desktop and French mobile homepages have no analytics controls or Google tag elements. The live enquiry form shows required-field errors without submitting a lead. [Live verification](qa/analytics-removal-live.json).
+
 ## Search engines and browsers
 
 Chrome, Safari and Firefox are browsers. Visibility depends on the search engine selected inside them. Google/Bing indexing and crawlable public pages provide useful foundations across browsers. The site already has static English/French content, canonical links, reciprocal hreflang, a 234-URL XML sitemap, factual structured data and an open production robots.txt. Removing GA4 does not remove those features or the webmaster verification tags.

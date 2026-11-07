@@ -1,0 +1,154 @@
+{
+  "checkedAt": "2026-11-07T20:41:01.032251+00:00",
+  "sourceCommit": "f0f5c9c568da7303bdca1ca3bc3879e8950778da",
+  "redirects": [
+    {
+      "url": "https://defibrillators.ca/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/index.html?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/fr/index.html?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "http://defibrillators.ca/en/defibrillators/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/defibrillators/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://www.defibrillators.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillator.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "http://defibrillator.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/enquiry-not-a-page/",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    },
+    {
+      "url": "https://defibrillators.ca/.htaccess",
+      "status": 403,
+      "location": null,
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/defibrillators-no-analytics-whc.zip",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    },
+    {
+      "url": "https://defibrillators.ca/defibrillators-pre-no-analytics-20261107.zip",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    }
+  ],
+  "certificates": [
+    {
+      "host": "defibrillators.ca",
+      "valid": true,
+      "expires": "Feb  5 05:49:28 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "www.defibrillators.ca",
+      "valid": true,
+      "expires": "Feb  5 05:49:28 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "defibrillator.ca",
+      "valid": true,
+      "expires": "Feb  5 06:22:02 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "www.defibrillator.ca",
+      "valid": true,
+      "expires": "Feb  5 06:22:02 2027 GMT",
+      "issuer": "Let's Encrypt"
+    }
+  ],
+  "publicFilesChecked": 430,
+  "matchingFiles": 430,
+  "htmlPoliciesMatched": 235,
+  "failures": [],
+  "browser": {
+    "checkedAt": "2026-11-07T20:41:17.721Z",
+    "checks": [
+      {
+        "path": "/en/",
+        "viewport": "default",
+        "analyticsControls": 0,
+        "googleScripts": 0,
+        "overflow": false,
+        "preferencesText": false
+      },
+      {
+        "path": "/fr/",
+        "viewport": "390x844",
+        "analyticsControls": 0,
+        "googleScripts": 0,
+        "overflow": false,
+        "preferencesText": false
+      },
+      {
+        "path": "/en/request-quote/",
+        "viewport": "390x844",
+        "analyticsControls": 0,
+        "googleScripts": 0,
+        "overflow": false,
+        "validationShown": true
+      }
+    ],
+    "noProductionLeadSent": true
+  },
+  "archive": {
+    "sourceCommit": "f0f5c9c568da7303bdca1ca3bc3879e8950778da",
+    "files": 667,
+    "html": 236,
+    "headers": 236,
+    "bytes": 9299745,
+    "sha256": "0bc4717f797fc6cedc965adbd5303d63f962ef796b32f794cb1398f2bf7cb22d"
+  },
+  "cacheExamples": [
+    {
+      "path": "/_astro/measurement.CmotvzZa.js",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_astro/inter-vietnamese-wght-normal.CBcvBZtf.woff2",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/_astro/CityContext.astro_astro_type_script_index_0_lang.Uzmc9O4s.js",
+      "cacheControl": "public, max-age=31536000, immutable"
+    }
+  ]
+}
