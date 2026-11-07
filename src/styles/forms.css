@@ -159,3 +159,7 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+.rfq fieldset[hidden] {
+  display: none;
+}

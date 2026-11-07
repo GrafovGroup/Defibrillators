@@ -1,0 +1,1130 @@
+{
+  "reviewed": "2026-11-07",
+  "scope": "42 representative public HTML pages; JSON-LD detection from raw source only; headings may include hidden layout elements",
+  "pages": [
+    {
+      "url": "https://aedadvantage.ca/",
+      "status": 200,
+      "title": "Discover Health Canada-Licensed AEDs\n · AED Advantage Sales Ltd. ",
+      "canonical": "https://aedadvantage.ca/",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://aedadvantage.ca/"
+        },
+        {
+          "lang": "en",
+          "url": "https://aedadvantage.ca/"
+        },
+        {
+          "lang": "fr",
+          "url": "https://aedadvantage.ca/fr"
+        }
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ListItem",
+        "WebSite",
+        "SearchAction",
+        "Organization"
+      ],
+      "schemaErrors": 0,
+      "descriptionLength": 140,
+      "headingCounts": {
+        "h1": 2,
+        "h2": 22,
+        "h3": 9
+      }
+    },
+    {
+      "url": "https://aed.ca/",
+      "status": 200,
+      "title": "\n\tAEDs for Sale in Canada | Defibrillators & Maintenance – AED.ca\n\t",
+      "canonical": "https://aed.ca/",
+      "lang": "en",
+      "alternates": [],
+      "schemaTypes": ["Organization", "WebSite", "SearchAction"],
+      "schemaErrors": 0,
+      "descriptionLength": 174,
+      "headingCounts": {
+        "h1": 0,
+        "h2": 1,
+        "h3": 7
+      }
+    },
+    {
+      "url": "https://aedshop.ca/",
+      "status": 200,
+      "title": "\n      AEDShop: AEDs (Defibrillators), Pads, Batteries & Cabinets in Canada\n",
+      "canonical": "https://aedshop.ca/",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://aedshop.ca/"
+        },
+        {
+          "lang": "en",
+          "url": "https://aedshop.ca/"
+        },
+        {
+          "lang": "fr",
+          "url": "https://aedshop.ca/fr"
+        }
+      ],
+      "schemaTypes": [
+        "Organization",
+        "ShippingService",
+        "ShippingConditions",
+        "DefinedRegion",
+        "MonetaryAmount",
+        "WebSite",
+        "SearchAction"
+      ],
+      "schemaErrors": 0,
+      "descriptionLength": 156,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 5,
+        "h3": 47
+      }
+    },
+    {
+      "url": "https://sja.ca/en",
+      "status": 200,
+      "title": "Saving Lives at Work, Home and Play | St. John Ambulance",
+      "canonical": "https://sja.ca/en",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://sja.ca/en"
+        },
+        {
+          "lang": "fr",
+          "url": "https://sja.ca/fr"
+        }
+      ],
+      "schemaTypes": [],
+      "schemaErrors": 0,
+      "descriptionLength": 247,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 16,
+        "h3": 2
+      }
+    },
+    {
+      "url": "https://rescue7.net/",
+      "status": 200,
+      "title": "\n      Rescue 7 | Start Today. Save a Life Tomorrow.\n",
+      "canonical": "https://rescue7.net/",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://rescue7.net/"
+        },
+        {
+          "lang": "en",
+          "url": "https://rescue7.net/"
+        },
+        {
+          "lang": "fr",
+          "url": "https://rescue7.net/fr"
+        }
+      ],
+      "schemaTypes": ["Organization", "WebSite", "SearchAction"],
+      "schemaErrors": 0,
+      "descriptionLength": 113,
+      "headingCounts": {
+        "h1": 0,
+        "h2": 29,
+        "h3": 12
+      }
+    },
+    {
+      "url": "https://www.aedsolutions.ca/",
+      "status": 200,
+      "title": "AED Solutions Canada | AED Defibrillators, Pads, Batteries & Accessories",
+      "canonical": "https://www.aedsolutions.ca/",
+      "lang": "en",
+      "alternates": [],
+      "schemaTypes": [],
+      "schemaErrors": 0,
+      "descriptionLength": 197,
+      "headingCounts": {
+        "h1": 0,
+        "h2": 11,
+        "h3": 7
+      }
+    },
+    {
+      "url": "https://aedadvantage.ca/collections/replacement-parts",
+      "status": 200,
+      "title": "Shop AED Supplies and Replacement Parts\n · AED Advantage Sales Ltd. ",
+      "canonical": "https://aedadvantage.ca/collections/replacement-parts",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://aedadvantage.ca/collections/replacement-parts"
+        },
+        {
+          "lang": "en",
+          "url": "https://aedadvantage.ca/collections/replacement-parts"
+        },
+        {
+          "lang": "fr",
+          "url": "https://aedadvantage.ca/fr/collections/replacement-parts"
+        }
+      ],
+      "schemaTypes": ["BreadcrumbList", "ListItem"],
+      "schemaErrors": 1,
+      "descriptionLength": 167,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 2,
+        "h3": 2
+      }
+    },
+    {
+      "url": "https://aedadvantage.ca/blogs/resources/aed-comparison",
+      "status": 200,
+      "title": "AED Buying Guide (With an AED Comparison Chart)\n · AED Advantage Sales Ltd. ",
+      "canonical": "https://aedadvantage.ca/blogs/resources/aed-comparison",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://aedadvantage.ca/blogs/resources/aed-comparison"
+        },
+        {
+          "lang": "en",
+          "url": "https://aedadvantage.ca/blogs/resources/aed-comparison"
+        },
+        {
+          "lang": "fr",
+          "url": "https://aedadvantage.ca/fr/blogs/resources/aed-comparison"
+        }
+      ],
+      "schemaTypes": [
+        "Article",
+        "WebPage",
+        "Person",
+        "Organization",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "FAQPage",
+        "Question",
+        "Answer"
+      ],
+      "schemaErrors": 0,
+      "descriptionLength": 139,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 7,
+        "h3": 14
+      }
+    },
+    {
+      "url": "https://aedadvantage.ca/products/lifepak-cr2-defibrillator",
+      "status": 200,
+      "title": "LIFEPAK CR2 AED Defibrillator · Stryker / Physio-Control\n · AED Advantage Sales Ltd. ",
+      "canonical": "https://aedadvantage.ca/products/lifepak-cr2-defibrillator",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://aedadvantage.ca/products/lifepak-cr2-defibrillator"
+        },
+        {
+          "lang": "en",
+          "url": "https://aedadvantage.ca/products/lifepak-cr2-defibrillator"
+        },
+        {
+          "lang": "fr",
+          "url": "https://aedadvantage.ca/fr/products/lifepak-cr2-defibrillator"
+        }
+      ],
+      "schemaTypes": [
+        "Product",
+        "Brand",
+        "Offer",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "schemaErrors": 0,
+      "descriptionLength": 124,
+      "headingCounts": {
+        "h1": 3,
+        "h2": 7,
+        "h3": 7
+      }
+    },
+    {
+      "url": "https://aedadvantage.ca/collections/bundles",
+      "status": 200,
+      "title": "Shop AED Bundles\n · AED Advantage Sales Ltd. ",
+      "canonical": "https://aedadvantage.ca/collections/bundles",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://aedadvantage.ca/collections/bundles"
+        },
+        {
+          "lang": "en",
+          "url": "https://aedadvantage.ca/collections/bundles"
+        },
+        {
+          "lang": "fr",
+          "url": "https://aedadvantage.ca/fr/collections/bundles"
+        }
+      ],
+      "schemaTypes": ["BreadcrumbList", "ListItem"],
+      "schemaErrors": 1,
+      "descriptionLength": 269,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 2,
+        "h3": 21
+      }
+    },
+    {
+      "url": "https://aedadvantage.ca/pages/equipping-multiple-locations",
+      "status": 200,
+      "title": "Equipping Multiple Locations with AEDs Across Canada\n · AED Advantage Sales Ltd. ",
+      "canonical": "https://aedadvantage.ca/pages/equipping-multiple-locations",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://aedadvantage.ca/pages/equipping-multiple-locations"
+        },
+        {
+          "lang": "en",
+          "url": "https://aedadvantage.ca/pages/equipping-multiple-locations"
+        },
+        {
+          "lang": "fr",
+          "url": "https://aedadvantage.ca/fr/pages/equipping-multiple-locations"
+        }
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ListItem",
+        "Organization",
+        "ImageObject",
+        "Country",
+        "WebSite",
+        "WebPage",
+        "Article",
+        "Thing",
+        "FAQPage",
+        "Question",
+        "Answer"
+      ],
+      "schemaErrors": 0,
+      "descriptionLength": 161,
+      "headingCounts": {
+        "h1": 2,
+        "h2": 12,
+        "h3": 6
+      }
+    },
+    {
+      "url": "https://aedadvantage.ca/pages/aed-management-program",
+      "status": 200,
+      "title": "AED Management Program\n · AED Advantage Sales Ltd. ",
+      "canonical": "https://aedadvantage.ca/pages/aed-management-program",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://aedadvantage.ca/pages/aed-management-program"
+        },
+        {
+          "lang": "en",
+          "url": "https://aedadvantage.ca/pages/aed-management-program"
+        },
+        {
+          "lang": "fr",
+          "url": "https://aedadvantage.ca/fr/pages/aed-management-program"
+        }
+      ],
+      "schemaTypes": ["BreadcrumbList", "ListItem"],
+      "schemaErrors": 0,
+      "descriptionLength": 143,
+      "headingCounts": {
+        "h1": 2,
+        "h2": 2,
+        "h3": 11
+      }
+    },
+    {
+      "url": "https://aed.ca/pages/aed-maintenance-plans",
+      "status": 200,
+      "title": "\n\tAED Maintenance Plans – AED.ca\n\t",
+      "canonical": "https://aed.ca/pages/aed-maintenance-plans",
+      "lang": "en",
+      "alternates": [],
+      "schemaTypes": ["Organization"],
+      "schemaErrors": 0,
+      "descriptionLength": 0,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 1,
+        "h3": 8
+      }
+    },
+    {
+      "url": "https://aed.ca/products/zoll-aed-3",
+      "status": 200,
+      "title": "\n\tZoll AED 3 - aed.ca – AED.ca\n\t",
+      "canonical": "https://aed.ca/products/zoll-aed-3",
+      "lang": "en",
+      "alternates": [],
+      "schemaTypes": ["Organization"],
+      "schemaErrors": 0,
+      "descriptionLength": 180,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 0,
+        "h3": 2
+      }
+    },
+    {
+      "url": "https://aed.ca/collections/bundles",
+      "status": 200,
+      "title": "\n\tBundles – AED.ca\n\t",
+      "canonical": "https://aed.ca/collections/bundles",
+      "lang": "en",
+      "alternates": [],
+      "schemaTypes": ["Organization"],
+      "schemaErrors": 0,
+      "descriptionLength": 7,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 0,
+        "h3": 1
+      }
+    },
+    {
+      "url": "https://aed.ca/pages/get-a-quote",
+      "status": 200,
+      "title": "\n\tGet a Quote for an AED Automated External Defibrillator – AED.ca\n\t",
+      "canonical": "https://aed.ca/pages/get-a-quote",
+      "lang": "en",
+      "alternates": [],
+      "schemaTypes": ["Organization"],
+      "schemaErrors": 0,
+      "descriptionLength": 56,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 0,
+        "h3": 1
+      }
+    },
+    {
+      "url": "https://aed.ca/blogs/featured-news/how-to-select-the-best-aed-a-comprehensive-guide",
+      "status": 200,
+      "title": "\n\tSelect the Best Automated External Defibrillator Guide – AED.ca\n\t",
+      "canonical": "https://aed.ca/blogs/featured-news/how-to-select-the-best-aed-a-comprehensive-guide",
+      "lang": "en",
+      "alternates": [],
+      "schemaTypes": ["Organization"],
+      "schemaErrors": 0,
+      "descriptionLength": 170,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 1,
+        "h3": 7
+      }
+    },
+    {
+      "url": "https://aed.ca/blogs/news/provincial-aed-registries-in-canada-guide",
+      "status": 200,
+      "title": "\n\t🇨🇦 Provincial AED Registries in Canada: Guide (2026) – AED.ca\n\t",
+      "canonical": "https://aed.ca/blogs/news/provincial-aed-registries-in-canada-guide",
+      "lang": "en",
+      "alternates": [],
+      "schemaTypes": ["Organization"],
+      "schemaErrors": 0,
+      "descriptionLength": 320,
+      "headingCounts": {
+        "h1": 5,
+        "h2": 11,
+        "h3": 3
+      }
+    },
+    {
+      "url": "https://aedshop.ca/collections/aed-pads",
+      "status": 200,
+      "title": "\n      AED Pads\n – AEDShop",
+      "canonical": "https://aedshop.ca/collections/aed-pads",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://aedshop.ca/collections/aed-pads"
+        },
+        {
+          "lang": "en",
+          "url": "https://aedshop.ca/collections/aed-pads"
+        },
+        {
+          "lang": "fr",
+          "url": "https://aedshop.ca/fr/collections/aed-pads"
+        }
+      ],
+      "schemaTypes": [
+        "Organization",
+        "ShippingService",
+        "ShippingConditions",
+        "DefinedRegion",
+        "MonetaryAmount",
+        "CollectionPage",
+        "ItemList",
+        "ListItem",
+        "BreadcrumbList"
+      ],
+      "schemaErrors": 0,
+      "descriptionLength": 132,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 7,
+        "h3": 31
+      }
+    },
+    {
+      "url": "https://aedshop.ca/collections/packages",
+      "status": 200,
+      "title": "\n      Complete AED (Defibrillator) Packages\n – AEDShop",
+      "canonical": "https://aedshop.ca/collections/packages",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://aedshop.ca/collections/packages"
+        },
+        {
+          "lang": "en",
+          "url": "https://aedshop.ca/collections/packages"
+        },
+        {
+          "lang": "fr",
+          "url": "https://aedshop.ca/fr/collections/packages"
+        }
+      ],
+      "schemaTypes": [
+        "Organization",
+        "ShippingService",
+        "ShippingConditions",
+        "DefinedRegion",
+        "MonetaryAmount",
+        "CollectionPage",
+        "ItemList",
+        "ListItem",
+        "BreadcrumbList"
+      ],
+      "schemaErrors": 0,
+      "descriptionLength": 161,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 1,
+        "h3": 5
+      }
+    },
+    {
+      "url": "https://aedshop.ca/pages/ultimate-aed-buyers-guide-canada",
+      "status": 200,
+      "title": "\n      Ultimate AED Buyer’s Guide for Canada\n – AEDShop",
+      "canonical": "https://aedshop.ca/pages/ultimate-aed-buyers-guide-canada",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://aedshop.ca/pages/ultimate-aed-buyers-guide-canada"
+        },
+        {
+          "lang": "en",
+          "url": "https://aedshop.ca/pages/ultimate-aed-buyers-guide-canada"
+        },
+        {
+          "lang": "fr",
+          "url": "https://aedshop.ca/fr/pages/ultimate-aed-buyers-guide-canada"
+        }
+      ],
+      "schemaTypes": [
+        "Organization",
+        "ShippingService",
+        "ShippingConditions",
+        "DefinedRegion",
+        "MonetaryAmount"
+      ],
+      "schemaErrors": 0,
+      "descriptionLength": 320,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 9,
+        "h3": 18
+      }
+    },
+    {
+      "url": "https://aedshop.ca/pages/aed-cpr-training-partners",
+      "status": 200,
+      "title": "\n      AED/CPR Training\n – AEDShop",
+      "canonical": "https://aedshop.ca/pages/aed-cpr-training-partners",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://aedshop.ca/pages/aed-cpr-training-partners"
+        },
+        {
+          "lang": "en",
+          "url": "https://aedshop.ca/pages/aed-cpr-training-partners"
+        },
+        {
+          "lang": "fr",
+          "url": "https://aedshop.ca/fr/pages/aed-cpr-training-partners"
+        }
+      ],
+      "schemaTypes": [
+        "Organization",
+        "ShippingService",
+        "ShippingConditions",
+        "DefinedRegion",
+        "MonetaryAmount"
+      ],
+      "schemaErrors": 0,
+      "descriptionLength": 320,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 2,
+        "h3": 13
+      }
+    },
+    {
+      "url": "https://aedshop.ca/products/aedtrax-1",
+      "status": 200,
+      "title": "\n      AEDtrax\n – AEDShop",
+      "canonical": "https://aedshop.ca/products/aedtrax-1",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://aedshop.ca/products/aedtrax-1"
+        },
+        {
+          "lang": "en",
+          "url": "https://aedshop.ca/products/aedtrax-1"
+        },
+        {
+          "lang": "fr",
+          "url": "https://aedshop.ca/fr/products/aedtrax-1"
+        }
+      ],
+      "schemaTypes": [
+        "Organization",
+        "ShippingService",
+        "ShippingConditions",
+        "DefinedRegion",
+        "MonetaryAmount",
+        "BreadcrumbList",
+        "ListItem",
+        "Product",
+        "OfferShippingDetails"
+      ],
+      "schemaErrors": 0,
+      "descriptionLength": 320,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 1,
+        "h3": 6
+      }
+    },
+    {
+      "url": "https://aedshop.ca/collections/arky-aed-cabinets",
+      "status": 200,
+      "title": "\n      Outdoor AED Cabinets in Canada\n – AEDShop",
+      "canonical": "https://aedshop.ca/collections/arky-aed-cabinets",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://aedshop.ca/collections/arky-aed-cabinets"
+        },
+        {
+          "lang": "en",
+          "url": "https://aedshop.ca/collections/arky-aed-cabinets"
+        },
+        {
+          "lang": "fr",
+          "url": "https://aedshop.ca/fr/collections/arky-aed-cabinets"
+        }
+      ],
+      "schemaTypes": [
+        "Organization",
+        "ShippingService",
+        "ShippingConditions",
+        "DefinedRegion",
+        "MonetaryAmount",
+        "CollectionPage",
+        "ItemList",
+        "ListItem",
+        "BreadcrumbList"
+      ],
+      "schemaErrors": 0,
+      "descriptionLength": 233,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 0,
+        "h3": 5
+      }
+    },
+    {
+      "url": "https://sja.ca/en/training/first-aid/cpr-and-aed-training",
+      "status": 200,
+      "title": "CPR & AED Training | St. John Ambulance Canada",
+      "canonical": "https://sja.ca/en/training/first-aid/cpr-and-aed-training",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://sja.ca/en/training/first-aid/cpr-and-aed-training"
+        },
+        {
+          "lang": "fr",
+          "url": "https://sja.ca/fr/formation/secourisme/rcr-et-dea"
+        }
+      ],
+      "schemaTypes": [],
+      "schemaErrors": 0,
+      "descriptionLength": 190,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 17,
+        "h3": 25
+      }
+    },
+    {
+      "url": "https://sja.ca/en/products?type=aed",
+      "status": 200,
+      "title": "Products | St. John Ambulance Canada",
+      "canonical": "https://sja.ca/en/products",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://sja.ca/en/products"
+        },
+        {
+          "lang": "fr",
+          "url": "https://sja.ca/fr/produits"
+        }
+      ],
+      "schemaTypes": [],
+      "schemaErrors": 0,
+      "descriptionLength": 0,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 12,
+        "h3": 0
+      }
+    },
+    {
+      "url": "https://sja.ca/en/product-contact-information",
+      "status": 200,
+      "title": "Product Contact Information | St. John Ambulance Canada",
+      "canonical": "https://sja.ca/en/product-contact-information",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://sja.ca/en/product-contact-information"
+        },
+        {
+          "lang": "fr",
+          "url": "https://sja.ca/fr/questions-relatives-au-produits"
+        }
+      ],
+      "schemaTypes": [],
+      "schemaErrors": 0,
+      "descriptionLength": 99,
+      "headingCounts": {
+        "h1": 3,
+        "h2": 9,
+        "h3": 0
+      }
+    },
+    {
+      "url": "https://sja.ca/en/business-accounts",
+      "status": 200,
+      "title": "St. John Ambulance | National & Provincial Business Accounts",
+      "canonical": "https://sja.ca/en/business-accounts",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://sja.ca/en/business-accounts"
+        },
+        {
+          "lang": "fr",
+          "url": "https://sja.ca/fr/business-accounts"
+        }
+      ],
+      "schemaTypes": [],
+      "schemaErrors": 0,
+      "descriptionLength": 146,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 12,
+        "h3": 0
+      }
+    },
+    {
+      "url": "https://sja.ca/en/shop/shipping-returns-and-refunds",
+      "status": 200,
+      "title": "Shipping, Returns, and Refunds | St. John Ambulance Canada",
+      "canonical": "https://sja.ca/en/shop/shipping-returns-and-refunds",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://sja.ca/en/shop/shipping-returns-and-refunds"
+        },
+        {
+          "lang": "fr",
+          "url": "https://sja.ca/fr/shop/shipping-returns-and-refunds"
+        }
+      ],
+      "schemaTypes": [],
+      "schemaErrors": 0,
+      "descriptionLength": 142,
+      "headingCounts": {
+        "h1": 3,
+        "h2": 10,
+        "h3": 1
+      }
+    },
+    {
+      "url": "https://sja.ca/fr",
+      "status": 200,
+      "title": "Sauver des vies au travail, à la maison et dans les loisirs | ASJ",
+      "canonical": "https://sja.ca/fr",
+      "lang": "fr",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://sja.ca/en"
+        },
+        {
+          "lang": "fr",
+          "url": "https://sja.ca/fr"
+        }
+      ],
+      "schemaTypes": [],
+      "schemaErrors": 0,
+      "descriptionLength": 316,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 16,
+        "h3": 2
+      }
+    },
+    {
+      "url": "https://rescue7.net/pages/services",
+      "status": 200,
+      "title": "\n      Services\n – Rescue 7",
+      "canonical": "https://rescue7.net/pages/services",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://rescue7.net/pages/services"
+        },
+        {
+          "lang": "en",
+          "url": "https://rescue7.net/pages/services"
+        },
+        {
+          "lang": "fr",
+          "url": "https://rescue7.net/fr/pages/services"
+        }
+      ],
+      "schemaTypes": ["Organization"],
+      "schemaErrors": 0,
+      "descriptionLength": 0,
+      "headingCounts": {
+        "h1": 0,
+        "h2": 15,
+        "h3": 4
+      }
+    },
+    {
+      "url": "https://rescue7.net/blogs/resources/aed-pad-and-battery-guide",
+      "status": 200,
+      "title": "\n      AED Pad and Battery Guide\n – Rescue 7",
+      "canonical": "https://rescue7.net/blogs/resources/aed-pad-and-battery-guide",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://rescue7.net/blogs/resources/aed-pad-and-battery-guide"
+        },
+        {
+          "lang": "en",
+          "url": "https://rescue7.net/blogs/resources/aed-pad-and-battery-guide"
+        },
+        {
+          "lang": "fr",
+          "url": "https://rescue7.net/fr/blogs/resources/aed-pad-and-battery-guide"
+        }
+      ],
+      "schemaTypes": ["Organization", "Article", "WebPage", "Person"],
+      "schemaErrors": 0,
+      "descriptionLength": 320,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 13,
+        "h3": 1
+      }
+    },
+    {
+      "url": "https://rescue7.net/blogs/resources/aed-buyers-guide",
+      "status": 200,
+      "title": "\n      AED Buyers Guide\n – Rescue 7",
+      "canonical": "https://rescue7.net/blogs/resources/aed-buyers-guide",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://rescue7.net/blogs/resources/aed-buyers-guide"
+        },
+        {
+          "lang": "en",
+          "url": "https://rescue7.net/blogs/resources/aed-buyers-guide"
+        },
+        {
+          "lang": "fr",
+          "url": "https://rescue7.net/fr/blogs/resources/aed-buyers-guide"
+        }
+      ],
+      "schemaTypes": ["Organization", "Article", "WebPage", "Person"],
+      "schemaErrors": 0,
+      "descriptionLength": 320,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 20,
+        "h3": 1
+      }
+    },
+    {
+      "url": "https://rescue7.net/products/aed-subscription-program",
+      "status": 200,
+      "title": "\n      AED Subscription Program\n – Rescue 7",
+      "canonical": "https://rescue7.net/products/aed-subscription-program",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://rescue7.net/products/aed-subscription-program"
+        },
+        {
+          "lang": "en",
+          "url": "https://rescue7.net/products/aed-subscription-program"
+        },
+        {
+          "lang": "fr",
+          "url": "https://rescue7.net/fr/products/aed-subscription-program"
+        }
+      ],
+      "schemaTypes": ["Organization"],
+      "schemaErrors": 0,
+      "descriptionLength": 320,
+      "headingCounts": {
+        "h1": 0,
+        "h2": 12,
+        "h3": 5
+      }
+    },
+    {
+      "url": "https://rescue7.net/pages/cpr-aed-training",
+      "status": 200,
+      "title": "\n      CPR & AED Training\n – Rescue 7",
+      "canonical": "https://rescue7.net/pages/cpr-aed-training",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://rescue7.net/pages/cpr-aed-training"
+        },
+        {
+          "lang": "en",
+          "url": "https://rescue7.net/pages/cpr-aed-training"
+        },
+        {
+          "lang": "fr",
+          "url": "https://rescue7.net/fr/pages/cpr-aed-training"
+        }
+      ],
+      "schemaTypes": ["Organization"],
+      "schemaErrors": 0,
+      "descriptionLength": 0,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 10,
+        "h3": 1
+      }
+    },
+    {
+      "url": "https://rescue7.net/pages/faq",
+      "status": 200,
+      "title": "\n      FAQ\n – Rescue 7",
+      "canonical": "https://rescue7.net/pages/faq",
+      "lang": "en",
+      "alternates": [
+        {
+          "lang": "x-default",
+          "url": "https://rescue7.net/pages/faq"
+        },
+        {
+          "lang": "en",
+          "url": "https://rescue7.net/pages/faq"
+        },
+        {
+          "lang": "fr",
+          "url": "https://rescue7.net/fr/pages/faq"
+        }
+      ],
+      "schemaTypes": ["Organization"],
+      "schemaErrors": 0,
+      "descriptionLength": 0,
+      "headingCounts": {
+        "h1": 0,
+        "h2": 12,
+        "h3": 13
+      }
+    },
+    {
+      "url": "https://www.aedsolutions.ca/batteries/",
+      "status": 200,
+      "title": "AED Batteries & Solution Packs | AED Solutions Canada",
+      "canonical": "https://www.aedsolutions.ca/batteries/",
+      "lang": "en",
+      "alternates": [],
+      "schemaTypes": [
+        "CollectionPage",
+        "ItemList",
+        "ListItem",
+        "Organization",
+        "ImageObject"
+      ],
+      "schemaErrors": 0,
+      "descriptionLength": 151,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 1,
+        "h3": 1
+      }
+    },
+    {
+      "url": "https://www.aedsolutions.ca/defibtech-lifeline-aed/",
+      "status": 200,
+      "title": "Defibtech Lifeline AED | Public Access Defibrillator",
+      "canonical": "https://www.aedsolutions.ca/defibtech-lifeline-aed/",
+      "lang": "en",
+      "alternates": [],
+      "schemaTypes": [
+        "Product",
+        "Brand",
+        "AggregateRating",
+        "Review",
+        "Person",
+        "Rating",
+        "Offer"
+      ],
+      "schemaErrors": 0,
+      "descriptionLength": 144,
+      "headingCounts": {
+        "h1": 3,
+        "h2": 6,
+        "h3": 1
+      }
+    },
+    {
+      "url": "https://www.aedsolutions.ca/aed-solutions-management-program/",
+      "status": 200,
+      "title": "AED Solutions Management Program",
+      "canonical": "https://www.aedsolutions.ca/aed-solutions-management-program/",
+      "lang": "en",
+      "alternates": [],
+      "schemaTypes": [],
+      "schemaErrors": 0,
+      "descriptionLength": 173,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 3,
+        "h3": 10
+      }
+    },
+    {
+      "url": "https://www.aedsolutions.ca/maintenance-and-service-of-my-aed/",
+      "status": 200,
+      "title": "Maintenance and Service of my AED",
+      "canonical": "https://www.aedsolutions.ca/maintenance-and-service-of-my-aed/",
+      "lang": "en",
+      "alternates": [],
+      "schemaTypes": [],
+      "schemaErrors": 0,
+      "descriptionLength": 154,
+      "headingCounts": {
+        "h1": 2,
+        "h2": 11,
+        "h3": 2
+      }
+    },
+    {
+      "url": "https://www.aedsolutions.ca/shipping/",
+      "status": 200,
+      "title": "AED Solutions - Shipping Information",
+      "canonical": "https://www.aedsolutions.ca/shipping/",
+      "lang": "en",
+      "alternates": [],
+      "schemaTypes": [],
+      "schemaErrors": 0,
+      "descriptionLength": 251,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 5,
+        "h3": 1
+      }
+    },
+    {
+      "url": "https://www.aedsolutions.ca/frx-AED/",
+      "status": 200,
+      "title": "Philips HeartStart FRx AEDs & Deployment Packages",
+      "canonical": "https://www.aedsolutions.ca/frx-AED/",
+      "lang": "en",
+      "alternates": [],
+      "schemaTypes": [
+        "CollectionPage",
+        "ItemList",
+        "ListItem",
+        "Organization",
+        "ImageObject"
+      ],
+      "schemaErrors": 0,
+      "descriptionLength": 125,
+      "headingCounts": {
+        "h1": 1,
+        "h2": 1,
+        "h3": 1
+      }
+    }
+  ]
+}

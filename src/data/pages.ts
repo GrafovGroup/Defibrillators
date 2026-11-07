@@ -5,6 +5,9 @@ import {
   serviceIds,
   type PageId,
 } from './routes.ts';
+import { planningPages } from './planning-pages.ts';
+import { products } from './products.ts';
+import { guideDetails } from './guide-details.ts';
 import { locationPages } from './locations.ts';
 export type Localized<T> = Record<Locale, T>;
 export interface Section {
@@ -22,7 +25,16 @@ export interface DetailPage {
     | 'quote'
     | 'contact'
     | 'faq'
-    | 'location';
+    | 'location'
+    | 'parts'
+    | 'packages'
+    | 'guide';
+  guide?: {
+    reviewed: string;
+    summary: Localized<string>;
+    sources: { label: string; url: string }[];
+    faqs: Localized<Section[]>;
+  };
   location?: {
     code: string;
     place: Localized<string>;
@@ -68,6 +80,37 @@ const s = (heading: string, body: string, bullets?: string[]): Section => ({
 });
 export const pages: DetailPage[] = [
   ...locationPages,
+  ...planningPages,
+  ...products
+    .filter((p) => !['zoll', 'philips'].includes(p.id))
+    .map((p): DetailPage => ({
+      id: p.id,
+      parent: 'defibrillators',
+      kind: 'product',
+      intro: {
+        en: `${p.manufacturer} ${p.model}: ${p.guidance.en}`,
+        fr: `${p.manufacturer} ${p.model} : ${p.guidance.fr}`,
+      },
+      sections: {
+        en: [
+          s('What distinguishes this model?', p.guidance.en),
+          s('Which replacement supplies should I plan for?', p.electrodes.en),
+          s(
+            'Confirm your Canadian configuration',
+            'Use this profile to prepare questions for your quote. Confirm the exact device identifier, Canadian licence, prompt languages, included components, current manufacturer notices, warranty and service route. Manufacturer specifications from another region do not establish local supply or approval.',
+          ),
+        ],
+        fr: [
+          s('Qu’est-ce qui distingue ce modèle?', p.guidance.fr),
+          s('Quelles fournitures de remplacement prévoir?', p.electrodes.fr),
+          s(
+            'Confirmer la configuration canadienne',
+            'Utilisez cette fiche pour préparer votre demande. Confirmez l’identifiant exact, l’homologation canadienne, les langues, les composants inclus, les avis actuels du fabricant, la garantie et le service technique. Les caractéristiques d’une autre région ne prouvent pas la disponibilité ou l’homologation locale.',
+          ),
+        ],
+      },
+      related: ['compare', 'parts', 'packages', 'buying'],
+    })),
   {
     id: 'defibrillators',
     kind: 'catalogue',
@@ -98,7 +141,7 @@ export const pages: DetailPage[] = [
         ),
       ],
     },
-    related: ['compare', 'buying', 'accessories', 'quote'],
+    related: ['compare', 'packages', 'parts', 'costs', 'quote'],
   },
   {
     id: 'zoll',
@@ -217,7 +260,7 @@ export const pages: DetailPage[] = [
   {
     id: 'accessories',
     image: 'electrodes',
-    children: accessoryIds,
+    children: ['parts', ...accessoryIds],
     intro: {
       en: 'Build out your AED setup with compatible supplies, suitable storage and clear location signage.',
       fr: 'Complétez votre installation avec des fournitures compatibles, un rangement approprié et une signalisation claire.',
@@ -1037,7 +1080,16 @@ export const pages: DetailPage[] = [
   {
     id: 'resources',
     image: 'training',
-    children: ['locations', 'buying', 'care', 'faq', 'compare'],
+    children: [
+      'buying',
+      'costs',
+      'care',
+      'compare',
+      'packages',
+      'parts',
+      'locations',
+      'faq',
+    ],
     intro: {
       en: 'Practical questions and planning guides to help you organise an AED purchase and ongoing care.',
       fr: 'Des questions pratiques et des guides pour organiser l’achat d’un DEA et son suivi.',
@@ -1315,7 +1367,7 @@ export const pages: DetailPage[] = [
         ),
       ],
     },
-    related: ['compare', 'installation', 'care', 'quote'],
+    related: ['compare', 'packages', 'costs', 'installation', 'care', 'quote'],
   },
   {
     id: 'care',
@@ -1520,6 +1572,13 @@ export const pages: DetailPage[] = [
     related: ['contact', 'privacy'],
   },
 ];
+for (const page of pages) {
+  const guide = guideDetails[page.id];
+  if (guide) {
+    page.kind = 'guide';
+    page.guide = guide;
+  }
+}
 export function pageFor(id: PageId): DetailPage {
   const page = pages.find((p) => p.id === id);
   if (!page) throw new Error(`Missing page: ${id}`);

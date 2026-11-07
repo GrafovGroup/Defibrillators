@@ -7,6 +7,7 @@ interface Props {
   lang: Locale;
 }
 const { lang } = Astro.props;
+const brands = [...new Set(products.map((p) => p.manufacturer))].sort();
 ---
 
 <section
@@ -20,13 +21,35 @@ const { lang } = Astro.props;
       {lang === 'en' ? 'Explore AED models' : 'Explorer les modèles de DEA'}
     </h2>
     <a href={pathFor('compare', lang)}>
-      {lang === 'en' ? 'Compare both models' : 'Comparer les deux modèles'}
+      {lang === 'en' ? 'Compare models' : 'Comparer les modèles'}
     </a>
   </div>
+  <nav
+    class="catalogue-paths"
+    aria-label={
+      lang === 'en' ? 'Equipment planning' : 'Planification d’équipement'
+    }
+  >
+    <a href={pathFor('packages', lang)}>
+      {lang === 'en'
+        ? 'Plan a complete package'
+        : 'Planifier un ensemble complet'}
+    </a>
+    <a href={pathFor('parts', lang)}>
+      {lang === 'en'
+        ? 'Find replacement parts'
+        : 'Trouver des pièces de remplacement'}
+    </a>
+    <a href={pathFor('costs', lang)}>
+      {lang === 'en'
+        ? 'Plan your ownership budget'
+        : 'Prévoir le budget de suivi'}
+    </a>
+  </nav>
   <p class="notice">
     {lang === 'en'
-      ? 'Manufacturer reference information. Canadian licence verification and supply availability remain unconfirmed for both profiles. No online orders are accepted.'
-      : 'Renseignements de référence des fabricants. L’homologation canadienne et la disponibilité restent à confirmer pour les deux fiches. Aucune commande en ligne n’est acceptée.'}
+      ? 'Manufacturer reference profiles. Exact Canadian licensing, site suitability, configuration and availability must be confirmed before a sale. No online orders are accepted.'
+      : 'Fiches de référence des fabricants. L’homologation canadienne, le lieu approprié, la configuration et la disponibilité doivent être confirmés avant la vente. Aucune commande en ligne n’est acceptée.'}
   </p>
   <div
     class="catalogue-filters"
@@ -53,53 +76,37 @@ const { lang } = Astro.props;
     </div>
     <div>
       <label for="brand-filter">
-        {lang === 'en' ? 'Manufacturer' : 'Fabricant'}
+        {lang === 'en' ? 'Manufacturer / brand' : 'Fabricant / marque'}
       </label>
       <select id="brand-filter">
         <option value="">
           {lang === 'en' ? 'All manufacturers' : 'Tous les fabricants'}
         </option>
-        {products.map((p) => (
-          <option value={p.manufacturer}>{p.manufacturer}</option>
+        {brands.map((brand) => (
+          <option value={brand}>{brand}</option>
         ))}
       </select>
     </div>
     <div>
-      <label for="environment-filter">
-        {lang === 'en' ? 'Environment' : 'Environnement'}
+      <label for="guidance-filter">
+        {lang === 'en' ? 'Guidance feature' : 'Fonction de guidage'}
       </label>
-      <select id="environment-filter">
+      <select id="guidance-filter">
         <option value="">
-          {lang === 'en' ? 'All reference profiles' : 'Toutes les fiches'}
+          {lang === 'en' ? 'All guidance types' : 'Tous les guidages'}
         </option>
-        <option value="indoor">
+        <option value="voice">
           {lang === 'en'
-            ? 'Verified for indoor use'
-            : 'Usage intérieur vérifié'}
+            ? 'Voice-led guidance'
+            : 'Guidage principalement vocal'}
         </option>
-        <option value="outdoor">
+        <option value="feedback">
           {lang === 'en'
-            ? 'Verified for outdoor use'
-            : 'Usage extérieur vérifié'}
+            ? 'Compression feedback option'
+            : 'Option de rétroaction des compressions'}
         </option>
-        <option value="unverified">
-          {lang === 'en'
-            ? 'Site suitability to confirm'
-            : 'Emplacement à confirmer'}
-        </option>
-      </select>
-    </div>
-    <div>
-      <label for="type-filter">
-        {lang === 'en' ? 'Product type' : 'Type de produit'}
-      </label>
-      <select id="type-filter">
-        <option value="">
-          {lang === 'en' ? 'All types' : 'Tous les types'}
-        </option>
-        <option value="aed">{lang === 'en' ? 'AED' : 'DEA'}</option>
-        <option value="accessory">
-          {lang === 'en' ? 'Accessory' : 'Accessoire'}
+        <option value="video">
+          {lang === 'en' ? 'Video guidance' : 'Guidage vidéo'}
         </option>
       </select>
     </div>
@@ -114,7 +121,7 @@ const { lang } = Astro.props;
     aria-atomic="true"
     data-count
   >
-    {lang === 'en' ? '2 model references' : '2 fiches de modèles'}
+    {products.length} {lang === 'en' ? 'model references' : 'fiches de modèles'}
   </p>
   <div class="product-grid">
     {products.map((product) => (
@@ -123,8 +130,8 @@ const { lang } = Astro.props;
   </div>
   <p class="empty-results" data-empty hidden>
     {lang === 'en'
-      ? 'No verified profiles match these filters. Site suitability remains unverified for both models. Ask us about your location or browse the accessory pages.'
-      : 'Aucune fiche vérifiée ne correspond. L’emplacement approprié reste à confirmer pour les deux modèles. Décrivez-nous votre lieu ou consultez les pages d’accessoires.'}
+      ? 'No model references match. Clear a filter or reset to see all models. For an unlisted model, describe it in your enquiry.'
+      : 'Aucune fiche correspondante. Retirez un filtre ou réinitialisez pour voir les modèles. Pour un modèle non présenté, précisez-le dans votre demande.'}
   </p>
 </section>
 <script>
@@ -135,28 +142,22 @@ const { lang } = Astro.props;
       catalogue.querySelector<HTMLElement>('.catalogue-filters')!;
     const search = catalogue.querySelector<HTMLInputElement>('#model-search')!;
     const brand = catalogue.querySelector<HTMLSelectElement>('#brand-filter')!;
-    const environment = catalogue.querySelector<HTMLSelectElement>(
-      '#environment-filter',
-    )!;
-    const type = catalogue.querySelector<HTMLSelectElement>('#type-filter')!;
-    const cards = Array.from(
-      catalogue.querySelectorAll<HTMLElement>('[data-product]'),
-    );
+    const guidance =
+      catalogue.querySelector<HTMLSelectElement>('#guidance-filter')!;
+    const cards = [
+      ...catalogue.querySelectorAll<HTMLElement>('[data-product]'),
+    ];
     const update = () => {
       let count = 0;
       for (const card of cards) {
-        card.hidden = !matchesProduct(
-          card.dataset.search ?? '',
-          card.dataset.brand ?? '',
-          search.value,
-          brand.value,
-          {
-            environments: (card.dataset.environments ?? '').split(','),
-            type: card.dataset.type ?? '',
-          },
-          environment.value,
-          type.value,
-        );
+        card.hidden =
+          !matchesProduct(
+            card.dataset.search ?? '',
+            card.dataset.brand ?? '',
+            search.value,
+            brand.value,
+          ) ||
+          (!!guidance.value && card.dataset.guidance !== guidance.value);
         if (!card.hidden) count++;
       }
       catalogue.querySelector('[data-count]')!.textContent =
@@ -169,15 +170,14 @@ const { lang } = Astro.props;
     controls.hidden = false;
     search.addEventListener('input', update);
     brand.addEventListener('change', update);
-    environment.addEventListener('change', update);
-    type.addEventListener('change', update);
+    guidance.addEventListener('change', update);
     catalogue.querySelector('[data-reset]')!.addEventListener('click', () => {
       search.value = '';
       brand.value = '';
-      environment.value = '';
-      type.value = '';
+      guidance.value = '';
       update();
       search.focus();
     });
+    update();
   }
 </script>

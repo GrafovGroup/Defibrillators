@@ -2,26 +2,16 @@ import {
   validateRfq,
   submitRfq,
   messages,
-  requestTypes,
   type FieldErrors,
   type RfqLocale,
 } from '../lib/rfq';
-import { routes, pathFor, type PageId } from '../data/routes';
+import { safeEnquiryParams } from '../lib/enquiry-context';
+import { pathFor, type PageId } from '../data/routes';
 import { provinceForLocation } from '../data/location-routes';
 const params = new URLSearchParams(location.search);
 const audience =
   params.get('audience') === 'residential' ? 'residential' : 'commercial';
-const safe = new URLSearchParams();
-for (const [key, values] of Object.entries({
-  audience: ['commercial', 'residential'],
-  model: ['zoll', 'philips', 'other'],
-  request: requestTypes,
-  source: Object.keys(routes),
-})) {
-  const value = params.get(key);
-  if (value && (values as readonly string[]).includes(value))
-    safe.set(key, value);
-}
+const safe = safeEnquiryParams(params);
 if (safe.size)
   for (const link of document.querySelectorAll<HTMLAnchorElement>(
     '.locale-switch a',
@@ -80,6 +70,21 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-rfq]')) {
   details.open = details.dataset.audience === audience;
   if (safe.has('model')) field('model')!.value = safe.get('model')!;
   if (safe.has('request')) field('request_type')!.value = safe.get('request')!;
+  if (safe.has('part')) field('accessory_type')!.value = safe.get('part')!;
+  if (safe.has('package')) field('package')!.value = safe.get('package')!;
+  const syncDetails = () => {
+    for (const group of form.querySelectorAll<HTMLFieldSetElement>(
+      '[data-request-details]',
+    )) {
+      const relevant = group.dataset
+        .requestDetails!.split(' ')
+        .includes(field('request_type')!.value);
+      group.hidden = !relevant;
+      group.disabled = !relevant;
+    }
+  };
+  field('request_type')!.addEventListener('change', syncDetails);
+  syncDetails();
   if (safe.has('source'))
     field('source_page')!.value = pathFor(safe.get('source') as PageId, lang);
   const province = provinceForLocation(safe.get('source') ?? '');
@@ -118,6 +123,7 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-rfq]')) {
     status.hidden = true;
     if (result.kind === 'success') {
       form.reset();
+      syncDetails();
       requestId = crypto.randomUUID();
       status.textContent = m.success;
       status.hidden = false;

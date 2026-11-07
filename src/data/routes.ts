@@ -1,4 +1,5 @@
 import type { Locale } from './content';
+import { modelRoutes } from './model-options.ts';
 import { locationRoutes } from './location-routes.ts';
 export const routes = {
   ...locationRoutes,
@@ -7,17 +8,22 @@ export const routes = {
     en: ['defibrillators', 'AED defibrillators'],
     fr: ['defibrillateurs', 'Défibrillateurs DEA'],
   },
-  zoll: {
-    en: ['defibrillators/zoll-aed-plus', 'ZOLL AED Plus'],
-    fr: ['defibrillateurs/zoll-aed-plus', 'ZOLL AED Plus'],
-  },
-  philips: {
-    en: ['defibrillators/philips-heartstart-hs1', 'Philips HeartStart HS1'],
-    fr: ['defibrillateurs/philips-heartstart-hs1', 'Philips HeartStart HS1'],
-  },
+  ...modelRoutes,
   compare: {
     en: ['defibrillators/compare', 'Compare AEDs'],
     fr: ['defibrillateurs/comparer', 'Comparer les DEA'],
+  },
+  parts: {
+    en: ['accessories/find-parts', 'Find AED replacement parts'],
+    fr: ['accessoires/trouver-pieces', 'Trouver des pièces de DEA'],
+  },
+  packages: {
+    en: ['defibrillators/packages', 'Plan an AED package'],
+    fr: ['defibrillateurs/ensembles', 'Planifier un ensemble de DEA'],
+  },
+  costs: {
+    en: ['resources/aed-cost-ownership', 'AED costs & ownership budget'],
+    fr: ['ressources/cout-dea-budget', 'Coût d’un DEA et budget de suivi'],
   },
   accessories: {
     en: ['accessories', 'AED accessories'],

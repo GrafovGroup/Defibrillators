@@ -1,0 +1,137 @@
+---
+import type { Locale } from '../data/content';
+import { products } from '../data/products';
+import { modelOptions } from '../data/model-options';
+import { partOptions } from '../data/planning-options';
+import { pathFor } from '../data/routes';
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+---
+
+<section
+  class="planning-panel parts-finder"
+  aria-labelledby="parts-heading"
+  data-parts-finder
+>
+  <h2 id="parts-heading">
+    {lang === 'en'
+      ? 'Start with the model on your AED'
+      : 'Commencez par le modèle de votre DEA'}
+  </h2>
+  <p>
+    {lang === 'en'
+      ? 'This finder prepares an enquiry. Exact part compatibility and supply are confirmed before an order.'
+      : 'Cet outil prépare une demande. La compatibilité exacte et la disponibilité sont confirmées avant une commande.'}
+  </p>
+  <form
+    method="get"
+    action={pathFor('quote', lang) + '#rfq'}
+    class="finder-controls"
+  >
+    <input type="hidden" name="request" value="accessories" />
+    <input type="hidden" name="source" value="parts" />
+    <div>
+      <label for="parts-model">
+        {lang === 'en' ? 'AED model' : 'Modèle de DEA'}
+      </label>
+      <select id="parts-model" name="model" required>
+        <option value="">
+          {lang === 'en' ? 'Select your model' : 'Choisir votre modèle'}
+        </option>
+        {modelOptions.map((m) => (
+          <option value={m.id}>{m.name}</option>
+        ))}
+        <option value="other">
+          {lang === 'en'
+            ? 'Other model / not sure'
+            : 'Autre modèle / incertain'}
+        </option>
+      </select>
+    </div>
+    <div>
+      <label for="parts-type">
+        {lang === 'en' ? 'What do you need?' : 'Que recherchez-vous?'}
+      </label>
+      <select id="parts-type" name="part" required>
+        {partOptions.map((p) => (
+          <option value={p.id}>{p[lang]}</option>
+        ))}
+      </select>
+    </div>
+    <button class="button" type="submit">
+      {lang === 'en'
+        ? 'Continue to parts enquiry'
+        : 'Poursuivre la demande de pièces'}
+    </button>
+  </form>
+  <p
+    class="finder-status"
+    data-finder-status
+    role="status"
+    aria-live="polite"
+    data-prompt={
+      lang === 'en'
+        ? 'Choose a model to narrow the reference notes below.'
+        : 'Choisissez un modèle pour préciser les notes de référence ci-dessous.'
+    }
+    data-other={
+      lang === 'en'
+        ? 'Include the exact model and existing part reference in your enquiry.'
+        : 'Indiquez le modèle exact et la référence existante dans votre demande.'
+    }
+  ></p>
+  <noscript>
+    <p>
+      {lang === 'en'
+        ? 'All model notes are available below. If scripting is disabled on the enquiry page, select your model and accessory type again in the form.'
+        : 'Toutes les notes sont accessibles ci-dessous. Si les scripts sont désactivés sur la page de demande, choisissez de nouveau le modèle et le type d’accessoire dans le formulaire.'}
+    </p>
+  </noscript>
+  <div class="parts-notes">
+    {products.map((p) => (
+      <details data-parts-model={p.id}>
+        <summary>
+          {p.manufacturer} {p.model}
+        </summary>
+        <p>{p.electrodes[lang]}</p>
+        <p>
+          <a href={p.source.url}>
+            {lang === 'en'
+              ? 'Manufacturer reference'
+              : 'Référence du fabricant'}
+          </a>{' '}
+          ·{' '}
+          <a href={pathFor(p.id, lang)}>
+            {lang === 'en' ? 'Model profile' : 'Fiche du modèle'}
+          </a>
+        </p>
+      </details>
+    ))}
+  </div>
+</section>
+<script>
+  const finder = document.querySelector<HTMLElement>('[data-parts-finder]');
+  if (finder) {
+    const model = finder.querySelector<HTMLSelectElement>('#parts-model')!;
+    const status = finder.querySelector<HTMLElement>('[data-finder-status]')!;
+    const notes = [
+      ...finder.querySelectorAll<HTMLDetailsElement>('[data-parts-model]'),
+    ];
+    const update = () => {
+      for (const note of notes) {
+        note.hidden = !!model.value && note.dataset.partsModel !== model.value;
+        note.open = note.dataset.partsModel === model.value;
+      }
+      status.textContent =
+        model.value === 'other'
+          ? status.dataset.other!
+          : model.value
+            ? model.selectedOptions[0].textContent
+            : status.dataset.prompt!;
+    };
+    model.addEventListener('change', update);
+    update();
+  }
+</script>

@@ -34,8 +34,17 @@ export function structuredData(
       publisher: { '@id': `${siteOrigin}/#organization` },
     },
   ];
+  const collectionItems =
+    page?.kind === 'catalogue'
+      ? products.map((p) => p.id)
+      : (page?.children ?? []);
   const webpage: Node = {
-    '@type': page?.kind === 'faq' ? 'FAQPage' : 'WebPage',
+    '@type':
+      page?.kind === 'faq'
+        ? 'FAQPage'
+        : collectionItems.length
+          ? 'CollectionPage'
+          : 'WebPage',
     '@id': `${url}#webpage`,
     url,
     name: title,
@@ -67,6 +76,35 @@ export function structuredData(
       name: page.location.place[lang],
     };
   }
+  if (collectionItems.length) {
+    webpage.mainEntity = { '@id': `${url}#items` };
+    graph.push({
+      '@type': 'ItemList',
+      '@id': `${url}#items`,
+      numberOfItems: collectionItems.length,
+      itemListElement: collectionItems.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: labelFor(item, lang),
+        url: siteOrigin + pathFor(item, lang),
+      })),
+    });
+  }
+  if (page?.guide) {
+    webpage.mainEntity = { '@id': `${url}#article` };
+    graph.push({
+      '@type': 'Article',
+      '@id': `${url}#article`,
+      mainEntityOfPage: { '@id': `${url}#webpage` },
+      headline: labelFor(id, lang),
+      description: page.guide.summary[lang],
+      inLanguage: `${lang}-CA`,
+      dateModified: page.guide.reviewed,
+      author: { '@id': `${siteOrigin}/#organization` },
+      publisher: { '@id': `${siteOrigin}/#organization` },
+      citation: page.guide.sources.map((source) => source.url),
+    });
+  }
   const product = products.find((product) => product.id === id);
   if (product) {
     webpage.mainEntity = { '@id': `${url}#product` };
@@ -74,7 +112,7 @@ export function structuredData(
       '@type': 'Product',
       '@id': `${url}#product`,
       url,
-      name: `${product.manufacturer} ${product.model}`,
+      name: labelFor(id, lang),
       model: product.model,
       brand: { '@type': 'Brand', name: product.manufacturer },
       description: page!.intro[lang],
@@ -85,7 +123,8 @@ export function structuredData(
   const faqs =
     page?.kind === 'faq'
       ? page.sections[lang]
-      : (page?.location?.faqs[lang] ??
+      : (page?.guide?.faqs[lang] ??
+        page?.location?.faqs[lang] ??
         (id === 'home'
           ? content[lang].faqs.map(([heading, body]) => ({ heading, body }))
           : []));

@@ -15,20 +15,29 @@ const { lang, product } = Astro.props;
   data-product
   data-environments={product.environments.join(',')}
   data-type={product.productType}
+  data-guidance={product.guidanceMode}
   data-brand={product.manufacturer}
   data-search={`${product.manufacturer} ${product.model} ${product.guidance[lang]}`.toLocaleLowerCase(
     lang,
   )}
 >
-  <div class="product-photo">
-    <img
-      src={`/images/${product.image}.webp`}
-      width="640"
-      height="420"
-      alt={pageImages[product.image][lang]}
-      loading="lazy"
-    />
-  </div>
+  {product.image ? (
+    <div class="product-photo">
+      <img
+        src={`/images/${product.image}.webp`}
+        width="640"
+        height="420"
+        alt={pageImages[product.image][lang]}
+        loading="lazy"
+      />
+    </div>
+  ) : (
+    <div class="product-reference" aria-hidden="true">
+      <span>{product.manufacturer}</span>
+      <strong>{product.model}</strong>
+      <span>{lang === 'en' ? 'Model reference' : 'Fiche de modèle'}</span>
+    </div>
+  )}
   <div class="product-copy">
     <p class="eyebrow">{product.manufacturer}</p>
     <h3>

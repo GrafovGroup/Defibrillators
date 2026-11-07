@@ -58,3 +58,21 @@ Validation:
 Production screenshots in the workspace `outputs/` directory: `restored-homepage-en-desktop.png`, `restored-homepage-fr-desktop.png`, `restored-homepage-fr-mobile.png`. Original reference copies: `approved-homepage-original.png` and `approved-logo-concepts-original.png`.
 
 The owner selected “Keep it on GitHub for now.” This revision is not deployed to WHC. No new Formspree submission or provider configuration change was made during this design correction.
+
+## Competitor-informed catalogue and planning — 7 November 2026
+
+Implemented the decisions recorded in `COMPETITOR-AUDIT.md`: eight model references, model/guidance filters, two-model comparison, parts finder, four package planning paths, optional contextual RFQ fields and answer-led guides with source-backed structured data. The approved homepage, illustration assets and brand SVGs were preserved.
+
+Validation:
+
+- `pnpm verify`: ESLint, Astro/TypeScript (0 diagnostics), formatting, production build and **304 passing automated tests**. The output contains 128 HTML files (126 localized pages, root language selector and 404) and 127 canonical sitemap entries.
+- New tests cover all model routes and RFQ values, manufacturer sources, absent-image provenance, native parts enquiry navigation, package/audience context, query allowlists, bounded optional fields, mocked multipart delivery, article/collection schema against visible content, table semantics and complete no-JavaScript source content.
+- Tested the production build through a loopback static server applying the generated WHC security headers. Added same-origin `form-action` permission for the native parts-finder GET navigation while retaining Formspree POST and hash-based script restrictions. The CSP header is 7,318 bytes, under the existing 7,500-byte test budget. It is close to that budget; further route growth needs a more granular header strategy rather than an unbounded global hash list.
+- Browser: manufacturer filter, unmatched search, reset/focus and video guidance filter; French FRx/combined-supplies enquiry handoff and English switch; residential package routing; request-specific fields hidden/disabled when irrelevant; invalid French participant count and focused error summary; two-model selection with matching column order, duplicate-choice prevention and keyboard scrolling inside the comparison region; guide table-of-contents navigation.
+- Catalogue, French parts finder, package planner, ownership guide and new model profile checked at 360, 390, 768, 1024 and 1440px: no page-level horizontal overflow or broken HTML images in those 25 checks. Comparison and RFQ were additionally inspected at 390px. The comparison table intentionally scrolls within its labelled region.
+- Approved English desktop and French mobile homepages visually rechecked. The native mobile menu opens with Enter and closes with Escape. No browser console errors were observed during the final checks.
+- No runtime dependency was added. The RFQ external JavaScript bundle is 16,347 bytes (6,010 bytes gzip); the smaller page-specific enhancements are emitted inline and covered by generated hashes. This is a build-size observation, not a measured Core Web Vitals score.
+
+Workspace screenshots: `competitor-parts-finder-fr-desktop.png`, `competitor-package-planner-desktop.png`, `competitor-catalogue-desktop.png`, `competitor-budget-guide-fr-mobile.png` in `outputs/`.
+
+Delivery remains GitHub-only. No new live Formspree lead or provider configuration change was made; current optional-field transport is covered by mocked tests, and the established delivery integration remains unchanged. No WHC upload or search indexing submission occurred. Exact supplier/licensing information, stock/pricing, new photo rights and operating service commitments remain launch dependencies. Formal accessibility and French-language review and field performance measurement are not claimed by these checks.

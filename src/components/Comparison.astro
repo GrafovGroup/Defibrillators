@@ -42,6 +42,28 @@ const rows = [
 ];
 ---
 
+<fieldset class="comparison-controls" hidden data-comparison-controls>
+  <legend>
+    {lang === 'en'
+      ? 'Choose two different models to compare'
+      : 'Choisir deux modèles différents à comparer'}
+  </legend>
+  {[0, 1].map((index) => (
+    <div>
+      <label for={`compare-${index}`}>
+        {lang === 'en' ? `Model ${index + 1}` : `Modèle ${index + 1}`}
+      </label>
+      <select id={`compare-${index}`} data-compare-select>
+        {products.map((p, i) => (
+          <option value={p.id} selected={i === index}>
+            {labelFor(p.id, lang)}
+          </option>
+        ))}
+      </select>
+    </div>
+  ))}
+</fieldset>
+<p data-comparison-status role="status" aria-live="polite"></p>
 <div
   class="comparison-scroll"
   role="region"
@@ -64,7 +86,7 @@ const rows = [
           {lang === 'en' ? 'Consideration' : 'Point à considérer'}
         </th>
         {products.map((p) => (
-          <th scope="col">
+          <th scope="col" data-compare-model={p.id}>
             <a href={pathFor(p.id, lang)}>{labelFor(p.id, lang)}</a>
           </th>
         ))}
@@ -74,15 +96,15 @@ const rows = [
       {rows.map((row) => (
         <tr>
           <th scope="row">{row.label}</th>
-          {row.values.map((value) => (
-            <td>{value}</td>
+          {row.values.map((value, index) => (
+            <td data-compare-model={products[index].id}>{value}</td>
           ))}
         </tr>
       ))}
       <tr>
         <th scope="row">{lang === 'en' ? 'Source' : 'Source'}</th>
         {products.map((p) => (
-          <td>
+          <td data-compare-model={p.id}>
             <a href={p.source.url}>{p.source.label}</a>
           </td>
         ))}
@@ -90,3 +112,40 @@ const rows = [
     </tbody>
   </table>
 </div>
+
+<script>
+  const controls = document.querySelector<HTMLFieldSetElement>(
+    '[data-comparison-controls]',
+  );
+  if (controls) {
+    const selects = [
+      ...controls.querySelectorAll<HTMLSelectElement>('[data-compare-select]'),
+    ];
+    const cells = [
+      ...document.querySelectorAll<HTMLElement>('[data-compare-model]'),
+    ];
+    const update = () => {
+      const ids = selects.map((s) => s.value);
+      for (const cell of cells)
+        cell.hidden = !ids.includes(cell.dataset.compareModel!);
+      // Keep visible columns in the same order as the two labelled choices.
+      for (const row of document.querySelectorAll('.comparison-table tr')) {
+        for (const id of ids) {
+          const cell = [
+            ...row.querySelectorAll<HTMLElement>('[data-compare-model]'),
+          ].find((cell) => cell.dataset.compareModel === id);
+          if (cell) row.append(cell);
+        }
+      }
+      for (const [index, select] of selects.entries())
+        for (const option of select.options)
+          option.disabled = option.value === ids[1 - index];
+      document.querySelector('[data-comparison-status]')!.textContent = [
+        ...new Set(selects.map((s) => s.selectedOptions[0].textContent)),
+      ].join(' · ');
+    };
+    controls.hidden = false;
+    for (const select of selects) select.addEventListener('change', update);
+    update();
+  }
+</script>

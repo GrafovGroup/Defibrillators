@@ -5,6 +5,8 @@ import Footer from '../../components/Footer.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import PageCard from '../../components/PageCard.astro';
 import Catalogue from '../../components/Catalogue.astro';
+import PartsFinder from '../../components/PartsFinder.astro';
+import PackagePlanner from '../../components/PackagePlanner.astro';
 import Comparison from '../../components/Comparison.astro';
 import QuoteForm from '../../components/QuoteForm.astro';
 import CityPage from '../../components/CityPage.astro';
@@ -124,6 +126,8 @@ const isLegal = ['privacy', 'terms', 'accessibility'].includes(page.id);
             : 'Cela ne constitue pas une approbation de ce produit par Statistique Canada. Carte généralisée à titre de repère, non officielle.'}
         </p>
       )}
+      {page.kind === 'parts' && <PartsFinder lang={lang} />}
+      {page.kind === 'packages' && <PackagePlanner lang={lang} />}
       {page.kind === 'catalogue' && <Catalogue lang={lang} />}
       {page.kind === 'comparison' && <Comparison lang={lang} />}
       {product && (
@@ -204,6 +208,56 @@ const isLegal = ['privacy', 'terms', 'accessibility'].includes(page.id);
       )}
       <div class:list={['article-layout', { 'article-full': isLegal }]}>
         <article class="article-copy">
+          {page.guide && (
+            <>
+              <p class="guide-byline">
+                {lang === 'en' ? 'Prepared by' : 'Préparé par'}{' '}
+                <a href={pathFor('about', lang)}>Defibrillators.ca</a> ·{' '}
+                {lang === 'en' ? 'Updated' : 'Mis à jour le'}{' '}
+                <time datetime={page.guide.reviewed}>
+                  {page.guide.reviewed}
+                </time>
+              </p>
+              <section
+                class="guide-answer"
+                aria-labelledby="guide-answer-heading"
+              >
+                <h2 id="guide-answer-heading">
+                  {lang === 'en' ? 'The key points' : 'Les points essentiels'}
+                </h2>
+                <p>{page.guide.summary[lang]}</p>
+              </section>
+              <nav
+                class="guide-toc"
+                aria-label={lang === 'en' ? 'On this page' : 'Sur cette page'}
+              >
+                <strong>
+                  {lang === 'en' ? 'On this page' : 'Sur cette page'}
+                </strong>
+                <ol>
+                  {sections.map((section, index) => (
+                    <li>
+                      <a href={`#section-${index + 1}`}>{section.heading}</a>
+                    </li>
+                  ))}
+                  <li>
+                    <a href="#guide-questions">
+                      {lang === 'en'
+                        ? 'Common questions'
+                        : 'Questions courantes'}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#guide-sources">
+                      {lang === 'en'
+                        ? 'Reference sources'
+                        : 'Sources de référence'}
+                    </a>
+                  </li>
+                </ol>
+              </nav>
+            </>
+          )}
           {page.kind === 'quote' && <QuoteForm lang={lang} />}
           {page.kind === 'location' ? (
             <CityPage page={page} lang={lang} />
@@ -230,6 +284,38 @@ const isLegal = ['privacy', 'terms', 'accessibility'].includes(page.id);
                 )}
               </section>
             ))
+          )}
+          {page.guide && (
+            <>
+              <section id="guide-questions" class="faq-list">
+                <h2>
+                  {lang === 'en' ? 'Common questions' : 'Questions courantes'}
+                </h2>
+                {page.guide.faqs[lang].map((faq) => (
+                  <details>
+                    <summary>{faq.heading}</summary>
+                    <p>{faq.body}</p>
+                  </details>
+                ))}
+              </section>
+              <section id="guide-sources" class="guide-sources">
+                <h2>
+                  {lang === 'en' ? 'Reference sources' : 'Sources de référence'}
+                </h2>
+                <p>
+                  {lang === 'en'
+                    ? 'Manufacturer references explain model-specific differences. They do not establish our prices, inventory or Canadian licensing. This guide supports procurement planning; use the current instructions for your exact device.'
+                    : 'Les références des fabricants expliquent les différences entre modèles. Elles ne confirment ni nos prix, ni notre inventaire, ni l’homologation canadienne. Ce guide aide à planifier l’achat; utilisez les instructions actuelles de votre appareil exact.'}
+                </p>
+                <ul>
+                  {page.guide.sources.map((source) => (
+                    <li>
+                      <a href={source.url}>{source.label}</a>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            </>
           )}
         </article>
         {!isLegal && (

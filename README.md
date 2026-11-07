@@ -20,13 +20,13 @@ pnpm preview
 ## Implemented routes
 
 - `/`: accessible English/French language choice, usable without JavaScript.
-- `/en/` and `/fr/`: complete localized homepages and 53 additional pages per language (108 localized pages).
-- Catalogue, two manufacturer reference profiles and comparison; five accessory categories; four service pages and a service hub; nine industry pages and an industry hub; resources, buying/readiness guides, about, contact, quote enquiries, FAQs, privacy, terms and accessibility.
+- `/en/` and `/fr/`: complete localized homepages and 62 additional pages per language (126 localized pages).
+- Catalogue, eight manufacturer reference profiles, selectable comparison, model-first parts finder and four package planning paths; five accessory categories; four service pages and a service hub; nine industry pages and an industry hub; resources, buying/readiness/ownership-budget guides, about, contact, quote enquiries, FAQs, privacy, terms and accessibility.
 - `/404.html`: bilingual not-found page. Configure the host to return this with HTTP 404.
 - `/en/locations/` and `/fr/regions/`: a national planning hub, all 13 provinces/territories and Toronto, Montréal, Vancouver and Calgary guides, with locator maps and project-specific briefs. These are not claims of local offices or guaranteed service coverage.
-- `/sitemap.xml`: 109 canonical URLs, excluding queries, assets and the error page. Reciprocal hreflang is supplied in HTML.
+- `/sitemap.xml`: 127 canonical URLs, excluding queries, assets and the error page. Reciprocal hreflang is supplied in HTML.
 
-Navigation, homepage cards and related links reach the localized pages. The language switch retains page identity. The catalogue supports accessible search, manufacturer, environment-verification and product-type filtering, with both profiles available without JavaScript. See `docs/ROUTES.md` for the complete route pairs.
+Navigation, homepage cards and related links reach the localized pages. The language switch retains page identity. The catalogue supports accessible search, manufacturer and guidance-feature filtering, with every profile available without JavaScript. Parts/package context carries into the RFQ; request-specific optional fields support replacement supplies and training. See `docs/ROUTES.md` for the complete route pairs and `docs/COMPETITOR-AUDIT.md` for the six-site audit and implementation decisions.
 
 Product profiles contain manufacturer reference information, not confirmed inventory. Exact Canadian licensing, supply, price, included items and warranty remain unverified. Quote pages provide separate bilingual commercial and residential forms using the owner-supplied Formspree endpoint. Native HTML POST is progressively enhanced with Vanilla JavaScript for localized errors and success feedback. No React, private API key or production Node server is needed. There is no checkout, analytics or client-side storage of enquiry data.
 
@@ -56,9 +56,9 @@ Product profiles contain manufacturer reference information, not confirmed inven
 
 ## Logo assets
 
-The SVG assets contain outlined text and work without external fonts. The original wordmark uses Arial Bold Italic outlines and an original red pulse/underline. Body text uses locally bundled Inter (SIL Open Font License via Fontsource). Full bilingual lockups are included for off-site use; the website uses the wordmark plus real, localized tagline text.
+The SVG assets contain outlined text and work without external fonts. The restored wordmark uses skewed Arial Black outlines and an original red pulse/underline. Body text uses locally bundled Inter (SIL Open Font License via Fontsource). Full bilingual lockups are included for off-site use; the website uses the complete localized SVG lockup.
 
-To regenerate logos on a Mac with the licensed system fonts: `node scripts/generate-brand.mjs`. On other systems, set `LOGO_FONT_PATH` and `TAGLINE_FONT_PATH` to licensed Arial Bold Italic and Arial Bold font files. The font binaries are not redistributed. Generated SVGs are committed, so regeneration is unnecessary for ordinary development.
+To regenerate logos on a Mac with the licensed system fonts: `node scripts/generate-brand.mjs`. On other systems, set `LOGO_FONT_PATH` and `TAGLINE_FONT_PATH` to licensed Arial Black and Arial Bold font files. The font binaries are not redistributed. Generated SVGs are committed, so regeneration is unnecessary for ordinary development.
 
 ## Remaining phases
 

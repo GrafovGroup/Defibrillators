@@ -1,8 +1,9 @@
-import { pathFor, type PageId } from '../data/routes';
+import { modelIds, type ModelId } from '../data/model-options.ts';
+import { pathFor, type PageId } from '../data/routes.ts';
 import type { Locale } from '../data/content';
 export function enquiryPath(page: PageId, lang: Locale): string {
   const params = new URLSearchParams();
-  if (page === 'zoll' || page === 'philips') params.set('model', page);
+  if (modelIds.includes(page as ModelId)) params.set('model', page);
   const service = [
     'installation',
     'maintenance',
@@ -15,6 +16,7 @@ export function enquiryPath(page: PageId, lang: Locale): string {
       ? page
       : [
             'accessories',
+            'parts',
             'pads',
             'batteries',
             'cabinets',

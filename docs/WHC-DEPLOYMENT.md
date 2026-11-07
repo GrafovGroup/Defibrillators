@@ -1,33 +1,33 @@
-# WHC static hosting
+# WHC static hosting handoff
 
-## Deployment record — 7 November 2026
+## Current delivery scope
 
-The Phase 2 build from commit `fe17a85cfee020d600590ef314e45bc096278949` was uploaded and extracted into the separate `defibrillators.ca` document root on WHC Pro. The upload archive was moved to the account home directory outside the public document root. The primary site's files were not changed.
+The competitor-informed update remains on GitHub at the owner’s request. No hosting upload or indexing submission is included in this revision. Detailed hosting-account, server and historical operations records are kept outside this repository.
 
-The apex A record now points to the cPanel shared web address `51.161.57.68` with a 300-second TTL. Both authoritative and local DNS were checked. The existing `www` CNAME, nameservers and Forward Email MX/TXT records were preserved. The HTTP response was verified to redirect to canonical HTTPS and include the generated security headers.
+The current build contains 128 HTML files (126 localized pages, a root language selector and a custom 404) and 127 canonical sitemap entries. It includes the restored approved design, location guides, eight manufacturer reference profiles, parts and package planning, and bilingual quote forms. See `COMPETITOR-AUDIT.md` and the latest `QA.md` section for implementation and validation.
 
-After the owner approved the certificate terms, the free Let's Encrypt certificate was issued through cPanel's SSL/TLS Wizard. cPanel confirms AutoSSL domain validation for both the apex and `www`, with expiry on 5 February 2027 and automatic renewal enabled. Public HTTPS checks passed normal certificate validation for both hostnames.
+## Build and package
 
-The language selector, English/French homepages, both quote forms, service pages and generated JavaScript/CSS returned HTTP 200. Both HTTP and `www` redirect to the canonical HTTPS host with HTTP 301. A missing page and the removed public upload-archive path returned HTTP 404. The approved homepage was visually checked on the live domain; the English quote form's JavaScript validation and focused error summary work under the deployed Content Security Policy. A labelled synthetic submission from the live WHC domain received the confirmed Formspree success state and reset the form. The French catalogue filter and product detail page were also checked, with no browser errors reported. Both homepages and RFQ pages matched the tested local build byte for byte.
+Run `pnpm verify` from the repository with the supported Node version. `pnpm build` creates the static `dist/` directory and generates `.htaccess` script hashes from the emitted HTML. No persistent Node process, database or server adapter is required on WHC.
 
-Formspree confirmed a bilingual form test in its Inbox and marked the notification delivered. A separate synthetic PNG attachment was accepted. The implementation passed all 173 automated checks, plus responsive form and error-focus checks.
+Upload the complete contents of `dist/`, including the hidden `.htaccess` file and all `_astro`, `brand`, `images` and `maps` assets. Keep source code, environment files, internal records and upload archives outside the public document root. Do not combine HTML from one build with security headers from another.
 
-## Design restoration publication scope
+The new parts finder uses a same-origin GET navigation to the quote page. Its updated Content Security Policy allows that navigation and the configured Formspree POST destination. Inline scripts are authorized by generated hashes; do not replace that restriction with unrestricted inline JavaScript. The current header is close to its tested size budget, so future route expansion needs a more granular strategy.
 
-On 7 November 2026 the owner selected “Keep it on GitHub for now.” The restored logo/homepage and Phase 3 release are committed and packaged, but this revision is not uploaded to WHC. The verified live deployment remains the Phase 2 record above.
+## Hosting preparation
 
-## Deployment procedure
+Before an authorized upload, confirm the domain’s dedicated document root in the hosting control panel and keep those account details private. Verify the destination carefully so other hosted websites are unaffected. Keep a private rollback copy of the existing release. Check that the hosting configuration supports the supplied Apache rewrite, header and custom-error directives.
 
-Phase 3 version 0.4.0, including the subsequent approved-homepage restoration, is ready as a separate static release. Its build adds 36 location pages, locator maps, `/sitemap.xml`, generated robots.txt and updated CSP hashes/redirect rules. The hosting browser connection was unavailable during that implementation; the live Phase 2 deployment above has not been replaced. Retain the existing private Phase 2 archive for rollback, extract the complete new build into the same document root, and move the new archive outside the public root. In addition to the checks below, verify both location hubs, a nested city route, the sitemap, `index.html` canonicalization and the updated RFQ province context. Keep the indexing switch false until launch approval.
+Confirm the authoritative DNS records and valid HTTPS certificate in the hosting account. Configure the primary canonical hostname and the secondary-domain redirect only after ownership and destination are verified. Do not put hosting account identifiers, credentials, server addresses or certificate records into this repository.
 
-Build with `pnpm verify`, then upload the **contents** of `dist/` (including `.htaccess`) to the document root configured for `defibrillators.ca`. Do not upload source, `node_modules`, `.git`, credentials or customer submissions. Build locally; the live site needs no Node process or database.
+## Post-upload verification
 
-The WHC Pro account's primary domain is a separate site. Defibrillators.ca was added with its own document root named `defibrillators.ca`, not the primary domain's `public_html`. The new root initially contained only the standard `cgi-bin` directory. Keep that directory and any certificate-validation files intact.
+Check the root language selector, both homepages, a model page, services, location guides, new planning routes, assets and a genuine HTTP 404. Verify HTTPS, canonical host/path redirects, reciprocal language links and security headers using the deployed response, not only the local files.
 
-Before replacing an existing release, archive the current site outside the public document root. Extract the new build into the intended directory and retain the previous release for rollback. Avoid a nested `dist/` folder. Remove or move the upload archive outside the public root after extraction.
+Exercise model filtering, comparison, parts-to-quote navigation, package selection, language switching and the optional replacement/training fields. Make an explicitly labelled synthetic form submission only when authorized for the deployment check, then verify its receipt and routing in the configured provider. Check bilingual validation, consent, uploads and hosted anti-spam fallback. Do not claim notification delivery from a browser success message alone.
 
-Point the website's A record at the shared web IP shown in cPanel, not the separate SFTP host IP. Preserve the existing Forward Email MX/TXT records. Keep `www` following the apex. Do not replace nameservers without copying the full mail and other DNS configuration.
+## Indexing gate
 
-Run AutoSSL for the apex and www after DNS resolves to WHC. Never bypass browser certificate warnings. The supplied `.htaccess` redirects to canonical HTTPS, denies directory listing and framing, adds browser security headers and returns `/404.html` with HTTP 404. Build-time SHA-256 hashes allow only the static inline scripts Astro actually generated; Formspree is the only external form/connect destination.
+Keep `PUBLIC_SITE_INDEXABLE=false` until launch is approved and supplier, regulatory, privacy and operating requirements are resolved. The build switch controls robots metadata and robots.txt together. Before enabling it, review the exact product information, service commitments, canonical routes and sitemap, and configure public Search Console/Bing verification tokens if supplied. Verify the deployed indexing controls before submitting the sitemap.
 
-Verify the live root language selector, both homepages, a product/service route, both RFQ pages, static assets, 404 status, HTTPS/host redirects and a labelled test submission. Confirm receipt in Formspree and the configured inbox. The site remains noindex until the operator approves launch after supplier/regulatory/privacy review. Do not describe DNS, SSL or notification delivery as complete until observed.
+A crawl block is not access control and cannot guarantee removal of previously discovered URLs. Crawlers need access to read a noindex directive when deindexing is required. No search-engine submission or eligibility guarantee is implied by generating a sitemap.

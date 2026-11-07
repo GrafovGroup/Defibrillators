@@ -1,0 +1,144 @@
+---
+import type { Locale } from '../data/content';
+import {
+  partOptions,
+  packageOptions,
+  trainingOptions,
+} from '../data/planning-options';
+interface Props {
+  lang: Locale;
+  audience: string;
+}
+const { lang, audience } = Astro.props;
+const t = (en: string, fr: string) => (lang === 'en' ? en : fr);
+const groups = [
+  {
+    requests: 'equipment programs',
+    title: t(
+      'Package planning (optional)',
+      'Planification d’ensemble (facultatif)',
+    ),
+    fields: [
+      {
+        name: 'package',
+        label: t('Planning path', 'Piste de planification'),
+        options: packageOptions,
+      },
+    ],
+  },
+  {
+    requests: 'accessories',
+    title: t(
+      'Replacement supplies (optional)',
+      'Fournitures de remplacement (facultatif)',
+    ),
+    fields: [
+      {
+        name: 'accessory_type',
+        label: t('Accessory needed', 'Accessoire recherché'),
+        options: partOptions,
+      },
+    ],
+  },
+  {
+    requests: 'training',
+    title: t('Training brief (optional)', 'Détails de formation (facultatif)'),
+    fields: [
+      {
+        name: 'training_language',
+        label: t('Preferred course language', 'Langue de formation souhaitée'),
+        options: trainingOptions.training_language,
+      },
+      {
+        name: 'training_format',
+        label: t('Preferred format', 'Format souhaité'),
+        options: trainingOptions.training_format,
+      },
+      {
+        name: 'training_course',
+        label: t('Course need', 'Besoin de formation'),
+        options: trainingOptions.training_course,
+      },
+    ],
+  },
+];
+---
+
+{groups.map((group) => (
+  <fieldset class="rfq-wide" data-request-details={group.requests}>
+    <legend>{group.title}</legend>
+    <div class="rfq-grid">
+      {group.fields.map((field) => (
+        <div class="rfq-field">
+          <label for={`${audience}-${field.name}`}>{field.label}</label>
+          <select
+            id={`${audience}-${field.name}`}
+            name={field.name}
+            aria-describedby={`${audience}-${field.name}-error`}
+          >
+            <option value="">{t('To discuss', 'À discuter')}</option>
+            {field.options.map((option) => (
+              <option value={option.id}>{option[lang]}</option>
+            ))}
+          </select>
+          <span
+            class="field-error"
+            id={`${audience}-${field.name}-error`}
+            data-error={field.name}
+          ></span>
+        </div>
+      ))}
+      {group.requests === 'accessories' && (
+        <div class="rfq-field">
+          <label for={`${audience}-part_reference`}>
+            {t(
+              'Existing part reference, if known',
+              'Référence de pièce existante, si connue',
+            )}
+          </label>
+          <input
+            id={`${audience}-part_reference`}
+            name="part_reference"
+            maxlength="100"
+            aria-describedby={`${audience}-part_reference-error`}
+          />
+          <span
+            class="field-error"
+            id={`${audience}-part_reference-error`}
+            data-error="part_reference"
+          ></span>
+        </div>
+      )}
+      {group.requests === 'training' && (
+        <>
+          <div class="rfq-field">
+            <label for={`${audience}-training_participants`}>
+              {t('Estimated participants', 'Nombre estimé de participants')}
+            </label>
+            <input
+              id={`${audience}-training_participants`}
+              type="number"
+              name="training_participants"
+              min="1"
+              max="9999"
+              step="1"
+              inputmode="numeric"
+              aria-describedby={`${audience}-training_participants-error`}
+            />
+            <span
+              class="field-error"
+              id={`${audience}-training_participants-error`}
+              data-error="training_participants"
+            ></span>
+          </div>
+          <p class="rfq-wide">
+            {t(
+              'Tell us the desired dates and course or certification requirements below. Provider qualifications, course eligibility, format and availability are confirmed before booking.',
+              'Précisez ci-dessous les dates, le cours ou la certification souhaités. Les qualifications du fournisseur, l’admissibilité, le format et la disponibilité sont confirmés avant la réservation.',
+            )}
+          </p>
+        </>
+      )}
+    </div>
+  </fieldset>
+))}

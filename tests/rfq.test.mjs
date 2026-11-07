@@ -181,8 +181,15 @@ test('Product data records provenance and explicit unknown commercial facts', ()
     assert.equal(product.includedComponents, null);
     assert.equal(product.price, null);
     assert.equal(product.warranty, null);
-    assert.ok(product.imageProvenance.sourceUrl.startsWith('https://'));
-    assert.equal(product.imageProvenance.exactSuppliedConfiguration, false);
+    if (product.image) {
+      assert.ok(product.imageProvenance.sourceUrl.startsWith('https://'));
+      assert.equal(product.imageProvenance.exactSuppliedConfiguration, false);
+    } else
+      assert.equal(
+        product.imageProvenance,
+        null,
+        'No invented photo provenance',
+      );
     assert.ok(
       product.specifications.every((s) => s.sourceUrl === product.source.url),
     );
@@ -206,7 +213,7 @@ test('Renewals require an accepted active agreement and a real calendar date', (
 });
 test('WHC headers allow Formspree and every generated inline script by hash', () => {
   const headers = fs.readFileSync('dist/.htaccess', 'utf8');
-  assert.match(headers, /form-action https:\/\/formspree.io/);
+  assert.match(headers, /form-action 'self' https:\/\/formspree.io/);
   assert.match(headers, /ErrorDocument 404 \/404.html/);
   assert.doesNotMatch(headers, /__SCRIPT_HASHES__/);
   const $ = load(fs.readFileSync('dist/en/request-quote/index.html', 'utf8'));

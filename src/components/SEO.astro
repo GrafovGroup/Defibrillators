@@ -21,7 +21,10 @@ const title = page
   : content[lang].title;
 const description = page?.intro[lang] ?? content[lang].description;
 const canonical = `https://defibrillators.ca${pathFor(pageId, lang)}`;
-const image = `/images/${page?.image ?? 'aed-cabinet'}.webp`;
+const image =
+  page?.kind === 'product' && !page.image
+    ? null
+    : `/images/${page?.image ?? 'aed-cabinet'}.webp`;
 ---
 
 <title>{title}</title>
@@ -51,7 +54,7 @@ const image = `/images/${page?.image ?? 'aed-cabinet'}.webp`;
       : `https://defibrillators.ca${pathFor(pageId, 'en')}`
   }
 />
-<meta property="og:type" content="website" />
+<meta property="og:type" content={page?.guide ? 'article' : 'website'} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:locale" content={`${lang}_CA`} />
@@ -61,7 +64,7 @@ const image = `/images/${page?.image ?? 'aed-cabinet'}.webp`;
   content={lang === 'en' ? 'fr_CA' : 'en_CA'}
 />
 <meta property="og:site_name" content="Defibrillators.ca" />
-<meta property="og:image" content={siteOrigin + image} />
+{image && <meta property="og:image" content={siteOrigin + image} />}
 <meta name="twitter:card" content="summary" />
 <script
   is:inline

@@ -5,6 +5,7 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { load } from 'cheerio';
 import { routes, pathFor } from '../src/data/routes.ts';
+import { modelIds } from '../src/data/model-options.ts';
 import { locationGuides } from '../src/data/locations.ts';
 import { provinceForLocation } from '../src/data/location-routes.ts';
 import {
@@ -41,7 +42,7 @@ test('Sitemap contains each canonical destination exactly once and excludes quer
       ['en', 'fr'].map((lang) => origin + pathFor(id, lang)),
     ),
   ];
-  assert.equal(actual.length, 109);
+  assert.equal(actual.length, Object.keys(routes).length * 2 + 1);
   assert.equal(new Set(actual).size, actual.length);
   assert.deepEqual([...actual].sort(), [...expected].sort());
   for (const loc of actual) {
@@ -157,7 +158,7 @@ test('Structured data reflects visible content and never fabricates commercial o
         }
       }
       const product = graph.find((node) => node['@type'] === 'Product');
-      assert.equal(!!product, ['zoll', 'philips'].includes(id));
+      assert.equal(!!product, modelIds.includes(id));
       if (product) assert.equal(product.name, $('h1').text().trim());
       if (id !== 'home') {
         const breadcrumb = graph.find(

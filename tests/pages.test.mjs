@@ -3,6 +3,8 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { load } from 'cheerio';
+import { products } from '../src/data/products.ts';
+import { routes } from '../src/data/routes.ts';
 import { matchesProduct } from '../src/scripts/catalogue-filter.ts';
 const root = path.resolve('dist');
 const htmlAt = (url) =>
@@ -85,11 +87,12 @@ for (const [file, $] of all) {
       1,
       'one JSON-LD graph; factual content is checked by the SEO suite',
     );
+    const parts = /find-parts|trouver-pieces/.test(relative);
     assert.equal(
       $('form').length,
-      /request-quote|demander-soumission/.test(relative) ? 2 : 0,
+      /request-quote|demander-soumission/.test(relative) ? 2 : parts ? 1 : 0,
     );
-    $('form').each((_, el) =>
+    $('form[data-rfq]').each((_, el) =>
       assert.equal($(el).attr('action'), 'https://formspree.io/f/maeezonn'),
     );
   });
@@ -97,8 +100,8 @@ for (const [file, $] of all) {
 test('Core and Phase 3 route coverage and unique metadata', () => {
   assert.equal(
     localized.length,
-    108,
-    '54 pages per locale including the homepage and 18 location guides',
+    Object.keys(routes).length * 2,
+    'Every route has an English and French page',
   );
   const titles = [...all.values()].map(($) => $('title').text());
   assert.equal(new Set(titles).size, titles.length);
@@ -200,7 +203,7 @@ test('Product references expose verification limits and official sources', () =>
 test('Catalogue has accessible progressively enhanced filtering', () => {
   for (const route of ['/en/defibrillators/', '/fr/defibrillateurs/']) {
     const $ = htmlAt(route);
-    assert.equal($('[data-product]').length, 2);
+    assert.equal($('[data-product]').length, products.length);
     assert.equal(
       $('.catalogue-filters[hidden]').length,
       1,
@@ -244,7 +247,7 @@ test('Comparison exposes row and column headings and a keyboard-scrollable regio
   ]) {
     const $ = htmlAt(route);
     assert.equal($('caption').length, 1);
-    assert.equal($('thead th[scope="col"]').length, 3);
+    assert.equal($('thead th[scope="col"]').length, products.length + 1);
     assert.equal($('tbody th[scope="row"]').length, 6);
     assert.equal(
       $('.comparison-scroll[tabindex="0"][role="region"]').length,

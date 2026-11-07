@@ -1,4 +1,6 @@
 ---
+import PlanningFields from './PlanningFields.astro';
+import { modelOptions } from '../data/model-options';
 import type { Locale } from '../data/content';
 import { pathFor } from '../data/routes';
 import {
@@ -263,8 +265,9 @@ const t = (en: string, french: string) => (fr ? french : en);
                   <option value="discuss">
                     {t('Help me choose / not sure', 'À discuter / incertain')}
                   </option>
-                  <option value="zoll">ZOLL AED Plus</option>
-                  <option value="philips">Philips HeartStart HS1</option>
+                  {modelOptions.map((model) => (
+                    <option value={model.id}>{model.name}</option>
+                  ))}
                   <option value="other">
                     {t(
                       'Another model — describe below',
@@ -353,6 +356,7 @@ const t = (en: string, french: string) => (fr ? french : en);
                   ></span>
                 </div>
               )}
+              <PlanningFields lang={lang} audience={audience} />
               <div class="rfq-field rfq-wide">
                 <label for={id('message')}>
                   {t('Tell us about your needs', 'Décrivez vos besoins')} *

@@ -1,0 +1,50 @@
+---
+import type { Locale } from '../data/content';
+import { packages } from '../data/packages';
+import { pathFor } from '../data/routes';
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+---
+
+<section class="planning-panel" aria-labelledby="package-heading">
+  <h2 id="package-heading">
+    {lang === 'en' ? 'Start with your setting' : 'Commencez par votre milieu'}
+  </h2>
+  <p>
+    {lang === 'en'
+      ? 'Four planning paths. Final equipment, services and prices are confirmed in your written quote.'
+      : 'Quatre pistes de planification. L’équipement, les services et les prix définitifs sont confirmés dans la soumission écrite.'}
+  </p>
+  <div class="planning-grid">
+    {packages.map((pack) => {
+      const params = new URLSearchParams({
+        request: pack.id === 'multisite' ? 'programs' : 'equipment',
+        package: pack.id,
+        source: 'packages',
+        ...(pack.id === 'home' ? { audience: 'residential' } : {}),
+      });
+      return (
+        <article class="planning-card">
+          <p class="eyebrow">
+            {lang === 'en' ? 'PACKAGE PLANNING' : 'PLANIFICATION D’ENSEMBLE'}
+          </p>
+          <h3>{pack.title[lang]}</h3>
+          <p>{pack.body[lang]}</p>
+          <ul>
+            {pack.items[lang].map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+          <a
+            class="button button-navy"
+            href={`${pathFor('quote', lang)}?${params}#rfq`}
+          >
+            {lang === 'en' ? 'Plan this package' : 'Planifier cet ensemble'}
+          </a>
+        </article>
+      );
+    })}
+  </div>
+</section>
