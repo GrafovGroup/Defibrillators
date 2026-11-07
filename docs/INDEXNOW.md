@@ -51,3 +51,9 @@ Supplier-confirmed pricing, stock, Canadian configurations, delivery commitments
 ## Validation before deployment
 
 `pnpm verify` passed all 574 tests, ESLint, Astro/TypeScript checking, formatting and the production build. IndexNow tests simulate accepted/pending/rejected responses, unchanged releases, image-only changes, staging, canonical errors, mismatched live files and retired routes. Six local browser audits cover 360, 390, 768, 1024, 1440 and 1920 px: no axe violations, overflow or broken images. Comparison selection, model-specific reference links and the parts finder were exercised. [Browser evidence](qa/indexnow-browser.json). No production enquiry was submitted.
+
+## Verified production activation — 7 November 2026
+
+The release from `b855dd28061d5cd57ba40e3c1f5ec018fce76639` is deployed on WHC. All 431 public files and 235 HTML security policies match the tested build; canonical redirects, valid HTTPS, 404s and archive isolation passed. The live English comparison and French model references were checked. [Live evidence](qa/indexnow-live.json).
+
+The first IndexNow POST returned 403 without advancing the baseline. Direct inspection confirmed the ownership text file returned 200 with the matching key. A diagnostic improvement now surfaces bounded provider error details. After the live proof was rechecked, a single retry received **HTTP 200 for all 234 URLs** at `2026-11-07T21:10:14.387Z`. The committed [notification state](search/indexnow-state.json) records that accepted batch. A repeat command returned `unchanged`, zero submitted, with no network access. This records notification receipt, not confirmed indexing or ranking. The diagnostic-only script change passed lint, formatting and all 19 IndexNow tests; it does not change the deployed static site.

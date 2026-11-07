@@ -269,11 +269,11 @@ export async function submitRelease({
           : 'rejected',
     changes,
   };
-  await res.body?.cancel();
+  const responseDetail = (await res.text()).trim().slice(0, 1000);
   if (![200, 202].includes(res.status)) {
     const wait = res.headers.get('retry-after');
     throw new Error(
-      `IndexNow returned ${res.status}; state unchanged.${wait ? ` Retry-After: ${wait}.` : ''} Inspect the response status before retrying.`,
+      `IndexNow returned ${res.status}; state unchanged.${wait ? ` Retry-After: ${wait}.` : ''}${responseDetail ? ` Provider response: ${responseDetail}` : ''} Inspect the response status before retrying.`,
     );
   }
   // Save only after the endpoint receives the entire batch. Receipt never claims indexing.

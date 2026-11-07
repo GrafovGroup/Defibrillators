@@ -1,0 +1,141 @@
+{
+  "checkedAt": "2026-11-07T21:07:47.429836+00:00",
+  "sourceCommit": "b855dd28061d5cd57ba40e3c1f5ec018fce76639",
+  "redirects": [
+    {
+      "url": "https://defibrillators.ca/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/index.html?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/fr/index.html?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "http://defibrillators.ca/en/defibrillators/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/defibrillators/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://www.defibrillators.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillator.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "http://defibrillator.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/enquiry-not-a-page/",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    },
+    {
+      "url": "https://defibrillators.ca/.htaccess",
+      "status": 403,
+      "location": null,
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/defibrillators-indexnow-whc.zip",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    },
+    {
+      "url": "https://defibrillators.ca/defibrillators-pre-indexnow-20261107.zip",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    }
+  ],
+  "certificates": [
+    {
+      "host": "defibrillators.ca",
+      "valid": true,
+      "expires": "Feb  5 05:49:28 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "www.defibrillators.ca",
+      "valid": true,
+      "expires": "Feb  5 05:49:28 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "defibrillator.ca",
+      "valid": true,
+      "expires": "Feb  5 06:22:02 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "www.defibrillator.ca",
+      "valid": true,
+      "expires": "Feb  5 06:22:02 2027 GMT",
+      "issuer": "Let's Encrypt"
+    }
+  ],
+  "publicFilesChecked": 431,
+  "matchingFiles": 431,
+  "htmlPoliciesMatched": 235,
+  "failures": [],
+  "browser": [
+    {
+      "path": "/en/defibrillators/compare/",
+      "analyticsControls": 0,
+      "overflow": false,
+      "partReferenceVisible": true
+    },
+    {
+      "path": "/fr/defibrillateurs/philips-heartstart-frx/",
+      "width": 390,
+      "analyticsControls": 0,
+      "manufacturerSourceVisible": true,
+      "overflow": false
+    }
+  ],
+  "archive": {
+    "sourceCommit": "b855dd28061d5cd57ba40e3c1f5ec018fce76639",
+    "files": 668,
+    "html": 236,
+    "headers": 236,
+    "bytes": 9301808,
+    "sha256": "e6ccdca91fccc9cc4532a946bde6261c383fd9614f9db67a28a8c995cfcc0373"
+  },
+  "indexNow": {
+    "submittedAt": "2026-11-07T21:10:14.387Z",
+    "endpoint": "https://api.indexnow.org/indexnow",
+    "status": 200,
+    "submitted": 234,
+    "outcome": "received"
+  },
+  "repeatSubmissionCheck": {
+    "outcome": "unchanged",
+    "submitted": 0,
+    "changes": {
+      "added": [],
+      "updated": [],
+      "removed": []
+    }
+  }
+}
