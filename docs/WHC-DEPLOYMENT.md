@@ -2,6 +2,8 @@
 
 ## Current delivery scope
 
+Consent-gated GA4 is live as of 7 November 2026. All 283 checked public files and 233 page security policies match the release, and GA4 Realtime received both English and French page views. Google now reports sitemap Success with 232 discovered URLs. See [ANALYTICS.md](ANALYTICS.md) for configuration and evidence.
+
 The bilingual enquiry refinement is also live as of 7 November 2026: all 281 checked public files and 233 HTML security policies match the tested release. The subsequent consent-gated GA4 release is documented in [ANALYTICS.md](ANALYTICS.md). See [ENQUIRY-REFINEMENT.md](ENQUIRY-REFINEMENT.md) for the latest release evidence.
 
 The national city/product/service expansion is live on WHC as of 7 November 2026, including the direct English homepage and the restored approved design. The deployment matched all 279 checked public files and all 233 HTML security policies. Both forms and primary/secondary-domain redirects have earlier live verification evidence in [PHASE-5.md](PHASE-5.md). The expansion includes the owner-authorized search launch; see [EXPANSION-AND-SEARCH.md](EXPANSION-AND-SEARCH.md) for its verification and search-submission record. Detailed hosting-account, server and historical operations records are kept outside this repository.

@@ -32,7 +32,7 @@ The owner subsequently authorized a dedicated Defibrillators.ca GA4 property in 
 
 ## Search status
 
-Google live inspection at 1:24 PM on 7 November cleared the earlier crawl block and reported that the English homepage was available to Google and could be indexed. Indexing requests for both English and French homepages were accepted. The sitemap was resubmitted, but its observed status still read Could not fetch; successful sitemap processing remains pending. Bing previously showed Success and 232 discovered URLs. Submission does not guarantee indexing or ranking. See [EXPANSION-AND-SEARCH.md](EXPANSION-AND-SEARCH.md).
+Google live inspection at 1:24 PM on 7 November cleared the earlier crawl block and reported that the English homepage was available to Google and could be indexed. Indexing requests for both English and French homepages were accepted. After resubmission, Google subsequently reported sitemap Success with all 232 URLs discovered. Bing previously showed Success and 232 discovered URLs. Submission does not guarantee indexing or ranking. See [EXPANSION-AND-SEARCH.md](EXPANSION-AND-SEARCH.md).
 
 ## Deployment
 

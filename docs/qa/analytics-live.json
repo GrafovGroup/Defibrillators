@@ -1,0 +1,145 @@
+{
+  "checkedAt": "2026-11-07T18:50:17.996259+00:00",
+  "sourceCommit": "30f4dd69668ee16431becd80519a74a4d00ab857",
+  "release": {
+    "files": 517,
+    "bytes": 3097107,
+    "sha256": "ccbaba97e2a615995e98388dc5be13960bf0cc5973a69cf9c590d14702788fed"
+  },
+  "publicFiles": 283,
+  "matchingFiles": 283,
+  "matchingPagePolicies": 233,
+  "failures": [],
+  "redirects": [
+    {
+      "url": "https://defibrillators.ca/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/index.html?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/fr/index.html?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "http://defibrillators.ca/en/defibrillators/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/defibrillators/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://www.defibrillators.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillator.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "http://defibrillator.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/enquiry-not-a-page/",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    },
+    {
+      "url": "https://defibrillators.ca/.htaccess",
+      "status": 403,
+      "location": null,
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/defibrillators-analytics-whc.zip",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    },
+    {
+      "url": "https://defibrillators.ca/defibrillators-pre-analytics-20261107.zip",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    }
+  ],
+  "certificates": [
+    {
+      "host": "defibrillators.ca",
+      "valid": true,
+      "expires": "Feb  5 05:49:28 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "www.defibrillators.ca",
+      "valid": true,
+      "expires": "Feb  5 05:49:28 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "defibrillator.ca",
+      "valid": true,
+      "expires": "Feb  5 06:22:02 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "www.defibrillator.ca",
+      "valid": true,
+      "expires": "Feb  5 06:22:02 2027 GMT",
+      "issuer": "Let's Encrypt"
+    }
+  ],
+  "browser": {
+    "noGoogleLoaderBeforeConsent": true,
+    "loaderAfterAllow": true,
+    "consentSharedWithFrench": true,
+    "withdrawalAndReloadNoLoader": true,
+    "englishRequiredFieldErrors": true,
+    "consoleErrorsOrWarningsObserved": [],
+    "productionFormSubmissions": 0
+  },
+  "ga4": {
+    "measurementId": "G-ERD2WFW0WZ",
+    "realtimeReceipt": "English/French page_view plus rfq_start and validation rfq_error observed; no production lead test sent",
+    "customDimensions": [
+      "page_id",
+      "site_language",
+      "source_page",
+      "planning_city",
+      "enquiry_audience",
+      "request_type",
+      "contact_channel",
+      "failure_category"
+    ],
+    "keyEvent": "generate_lead",
+    "retentionMonths": 2,
+    "resetRetentionOnNewActivity": false,
+    "enhancedMeasurement": false,
+    "googleSignals": false,
+    "granularLocationAndDeviceCollection": false,
+    "adsPersonalizationRegionsAllowed": 0
+  },
+  "search": {
+    "googleSitemap": "Success",
+    "googleDiscoveredPages": 232,
+    "englishAndFrenchHomepageIndexingRequests": "Accepted",
+    "bingLastVerifiedSitemap": "Success",
+    "bingDiscoveredPages": 232,
+    "indexingGuaranteed": false
+  }
+}

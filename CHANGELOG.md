@@ -6,7 +6,8 @@
 - Send canonical page views and finite enquiry categories; map confirmed delivery to `generate_lead`, excluding contact details and message text.
 - Set 90-day browser choices/cookies and disable enhanced measurement and advertising. Configure short user/event retention in the dedicated property.
 - Generate compact browser catalogue data to preserve the existing initial JavaScript budget.
-- Record live enquiry-release verification and accepted English/French Google indexing requests.
+- Deploy the tested release to WHC; verify 283 public files, 233 page policies and bilingual page views in GA4 Realtime.
+- Pass all 535 tests. Google now processes the sitemap successfully with 232 URLs; both homepage indexing requests were accepted.
 
 ## 2026-11-07 — Enquiry refinement
 

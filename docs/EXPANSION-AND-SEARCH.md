@@ -58,3 +58,7 @@ Both search properties were verified using their public HTML meta tags. The subm
 Independent public requests to the sitemap using ordinary, Googlebot and bingbot user-agent strings returned HTTP 200, `application/xml` and all 232 entries. These requests do not substitute for the engines' own crawl results. Keep the updated public verification tags and crawl rules in place while Google's cache/reporting catches up; its first failure is recorded rather than described as successful processing.
 
 Submission asks the engines to discover the pages; their indexing, ranking and answer-engine inclusion remain their decisions. No Google Indexing API request is used for these ordinary commercial/informational pages.
+
+## Search processing update - 7 November 2026
+
+The later live inspection cleared the earlier crawl block. English and French homepage indexing requests were accepted. Google Search Console subsequently reported sitemap **Success** with **232 discovered URLs**, matching the earlier Bing success. See [ANALYTICS.md](ANALYTICS.md) and [qa/analytics-live.json](qa/analytics-live.json) for the latest release and observed status. Submission and discovered URLs do not establish that every page is indexed.
