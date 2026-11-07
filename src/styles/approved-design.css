@@ -21,10 +21,13 @@
 .site-header .utility-right {
   gap: 32px;
 }
-.utility-right > span {
+.utility-right > span,
+.utility-right > a {
   display: flex;
   align-items: center;
   gap: 8px;
+  min-height: 42px;
+  line-height: 1.4;
 }
 .utility-right .icon {
   width: 18px;
@@ -32,6 +35,8 @@
 }
 .utility-coverage .icon {
   color: #ed3445;
+  width: 20px;
+  height: 20px;
 }
 .site-header .masthead {
   min-height: 99px;

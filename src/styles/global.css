@@ -9,8 +9,8 @@
   --muted: #506278;
   --border: #d9e2eb;
   --radius: 8px;
-  --container: 1480px;
-  --gutter: clamp(20px, 4vw, 64px);
+  --gutter: clamp(20px, 3vw, 80px);
+  --section-gap: clamp(24px, 4vw, 80px);
   font-family: 'Inter Variable', Arial, sans-serif;
   color: var(--ink);
   background: var(--white);
@@ -81,7 +81,7 @@ ul {
   margin: 0;
 }
 .container {
-  width: min(100% - var(--gutter) * 2, var(--container));
+  width: calc(100% - var(--gutter) * 2);
   margin-inline: auto;
 }
 .section {
@@ -225,6 +225,7 @@ article[id] {
 .logo-link {
   text-decoration: none;
   flex: 1;
+  min-width: 0;
 }
 .brand {
   display: inline-flex;
@@ -460,9 +461,9 @@ article[id] {
 }
 .program-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: center;
-  gap: 7%;
+  gap: var(--section-gap);
 }
 .program-visual {
   position: relative;
@@ -503,6 +504,7 @@ article[id] {
   white-space: pre-line;
 }
 .program-copy > p:not(.eyebrow) {
+  max-width: 70ch;
   color: var(--muted);
   margin-top: 20px;
   font-size: 14px;
@@ -569,8 +571,8 @@ article[id] {
 }
 .resource-grid {
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: 9%;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--section-gap);
 }
 .resource-grid > div > p:not(.eyebrow) {
   margin-top: 24px;
@@ -622,8 +624,8 @@ summary {
 }
 .contact-grid {
   display: grid;
-  grid-template-columns: 1.15fr 1fr;
-  gap: 8%;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--section-gap);
   align-items: center;
 }
 .contact-grid h2 {
@@ -634,6 +636,7 @@ summary {
   color: #ffd5d9;
 }
 .contact-grid > div > p:not(.eyebrow) {
+  max-width: 70ch;
   color: #d4dfec;
   margin: 20px 0 0;
   font-size: 15px;
@@ -671,12 +674,16 @@ summary {
   gap: 8%;
   padding-bottom: 32px;
 }
+.footer-grid > div {
+  min-width: 0;
+}
 .footer .brand-tagline {
   color: #cfdae7;
   font-size: 7.5px;
 }
 .footer .brand {
-  max-width: 310px;
+  width: min(310px, 100%);
+  max-width: 100%;
 }
 .footer-grid > div > p {
   max-width: 355px;
@@ -697,6 +704,7 @@ summary {
   display: inline-block;
   min-height: 28px;
   line-height: 1.8;
+  max-width: 100%;
 }
 .footer-grid a:hover {
   color: #fff;
@@ -759,14 +767,6 @@ summary {
 .error-page .actions {
   justify-content: flex-start;
 }
-@media (min-width: 1700px) {
-  .hero-image {
-    margin-right: calc((1480px - 100vw) / 2);
-  }
-  .hero-copy {
-    padding-block: 75px;
-  }
-}
 @media (max-width: 1199px) {
   .masthead {
     gap: 24px;
@@ -815,9 +815,6 @@ summary {
   }
   .service-photo {
     height: 165px;
-  }
-  .program-grid {
-    gap: 5%;
   }
   .industry-grid li {
     padding: 20px 15px;
@@ -976,7 +973,7 @@ summary {
     max-width: 500px;
   }
   .footer .brand {
-    max-width: 310px;
+    max-width: 100%;
   }
 }
 @media (max-width: 599px) {
@@ -991,7 +988,6 @@ summary {
     align-items: center;
     min-height: 42px;
     font-size: 9px;
-    margin-right: 10px;
   }
   .utility-inner {
     min-height: 42px;

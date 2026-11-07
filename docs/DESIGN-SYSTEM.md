@@ -2,7 +2,7 @@
 
 The owner’s original homepage and Logo #4 were recovered from the “Launch AED Business” conversation on 2026-11-07. The initial implementation diverged in wordmark weight/pulse placement, artwork, header proportions and the large introduction before the service cards. The restored implementation follows that reference: heavy italic navy/red lettering, a fine underline ending in a pulse beyond `.ca`, compact white masthead, a red Home/Accueil tab, wide lobby hero, six icon-led support items and four compact illustrated cards. The eight established category links remain available in both languages.
 
-The exact approved illustration is shared by the hero and cards through `ApprovedScene.astro`, using SVG viewports to frame the existing source. No new device, label or scene is generated. All navigation, headings, descriptions and actions are semantic HTML. The owner's explicit choice to use the approved scene as an illustration overrides the master prompt's photographic requirement for these homepage visuals only; see `ASSETS.md`. Product reference pages retain their existing licensed photographs and verification notes.
+The exact approved hero illustration uses `ApprovedScene.astro` to frame the existing source. Following the later imagery request, the four service cards use distinct subject images; see `PAGE_IMAGERY.md`. All navigation, headings, descriptions and actions are semantic HTML. The owner's explicit choice to use the approved scene as an illustration overrides the master prompt's photographic requirement for these homepage visuals only; see `ASSETS.md`. Product reference pages retain their existing licensed photographs and verification notes.
 
 ## Homepage entry preference
 
@@ -10,21 +10,21 @@ On 7 November 2026, the owner rejected the preliminary language-selection page a
 
 ## Tokens
 
-| Role           | Token                                 |
-| -------------- | ------------------------------------- |
-| Primary navy   | `#102B4E`                             |
-| Deep navy      | `#09213E`                             |
-| Action red     | `#D6091B`                             |
-| Action hover   | `#B91C2C`                             |
-| Canvas         | `#F5F8FB`                             |
-| Body text      | `#18324F`                             |
-| Secondary text | `#506278`                             |
-| Borders        | `#D9E2EB`                             |
-| Focus ring     | `#1872CB`, 3px with 5px white halo    |
-| Container      | 1480px maximum, fluid 20–64px gutters |
-| CTA radius     | 8px                                   |
-| Card radius    | 10px                                  |
-| Type           | Self-hosted Inter, Arial fallback     |
+| Role           | Token                              |
+| -------------- | ---------------------------------- |
+| Primary navy   | `#102B4E`                          |
+| Deep navy      | `#09213E`                          |
+| Action red     | `#D6091B`                          |
+| Action hover   | `#B91C2C`                          |
+| Canvas         | `#F5F8FB`                          |
+| Body text      | `#18324F`                          |
+| Secondary text | `#506278`                          |
+| Borders        | `#D9E2EB`                          |
+| Focus ring     | `#1872CB`, 3px with 5px white halo |
+| Container      | Full width, fluid 20–80px gutters  |
+| CTA radius     | 8px                                |
+| Card radius    | 10px                               |
+| Type           | Self-hosted Inter, Arial fallback  |
 
 ## Responsive behaviour
 
@@ -49,3 +49,11 @@ Semantic landmarks, one H1, skip link, native disclosure controls, meaningful im
 Core pages reuse the existing palette, wordmark, fonts, header and footer. Added components include breadcrumbs, split page heroes, accessory/industry directories, manufacturer reference cards, catalogue controls, comparison tables, article layouts and enquiry sidebars. Active navigation follows the current page or parent category.
 
 Page heroes stack below 768px. Article sidebars become full-width beneath content; three-column directories become two columns at tablet widths and one below 481px. Catalogue cards stack on phones. Comparison tables scroll inside a labelled, keyboard-focusable region, without expanding the page. The 2026-11-07 restoration updates the shared logo, header and red accent; core page layouts are preserved.
+
+## Wide containers and alignment — 7 November 2026
+
+The owner requested containers that use the available screen width. Shared containers now fill the viewport between `clamp(20px, 3vw, 80px)` side gutters, without the former 1480px cap. Header, navigation, breadcrumbs, hero content, directories and footer share these edges. Reading-width limits remain on long copy. Program, FAQ and contact sections use equal columns and a shared `clamp(24px, 4vw, 80px)` gap. Responsive image hints scale with their wider containers.
+
+An original, symmetrical eleven-point Canadian maple silhouette with a visible stem replaces the malformed leaf. The small reusable SVG is cached across pages. The coverage link uses the same centred icon/text row as the adjacent utility items, with an 8px gap. Header and footer logos can shrink safely on narrow screens.
+
+`pnpm verify` passes all 541 tests, lint, Astro/TypeScript, formatting, build and transfer budgets. Twenty-seven English/French browser views from 320px to 3840px show no horizontal overflow or detected axe violations, matching container edges, centred maple text and aligned shared columns. Expanded French mobile navigation and the enquiry form were checked. See [qa/layout-browser.json](qa/layout-browser.json).

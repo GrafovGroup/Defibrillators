@@ -1,0 +1,850 @@
+{
+  "checkedAt": "2026-11-07T19:36:13.018Z",
+  "reports": [
+    {
+      "path": "/fr/",
+      "width": 2560,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "affectedNodes": 17
+        }
+      ],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 2406.3984375,
+        "leftGutter": 76.796875,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [
+          {
+            "class": "container program-grid",
+            "second": 1319.9921875
+          },
+          {
+            "class": "container resource-grid",
+            "second": 1319.9921875
+          },
+          {
+            "class": "container contact-grid",
+            "second": 1319.9921875
+          }
+        ],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/en/",
+      "width": 1920,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "affectedNodes": 17
+        }
+      ],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 1804.796875,
+        "leftGutter": 57.6015625,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [
+          {
+            "class": "container program-grid",
+            "second": 998.3984375
+          },
+          {
+            "class": "container resource-grid",
+            "second": 998.3984375
+          },
+          {
+            "class": "container contact-grid",
+            "second": 998.3984375
+          }
+        ],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/fr/",
+      "width": 1440,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "affectedNodes": 18
+        }
+      ],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 1353.59375,
+        "leftGutter": 43.203125,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [
+          {
+            "class": "container program-grid",
+            "second": 748.796875
+          },
+          {
+            "class": "container resource-grid",
+            "second": 748.796875
+          },
+          {
+            "class": "container contact-grid",
+            "second": 748.796875
+          }
+        ],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/en/",
+      "width": 1366,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "affectedNodes": 18
+        }
+      ],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 1284.0390625,
+        "leftGutter": 40.9765625,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [
+          {
+            "class": "container program-grid",
+            "second": 710.3125
+          },
+          {
+            "class": "container resource-grid",
+            "second": 710.3125
+          },
+          {
+            "class": "container contact-grid",
+            "second": 710.3125
+          }
+        ],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/fr/",
+      "width": 1024,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "affectedNodes": 20
+        }
+      ],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 962.5546875,
+        "leftGutter": 30.71875,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [
+          {
+            "class": "container program-grid",
+            "second": 532.46875
+          },
+          {
+            "class": "container resource-grid",
+            "second": 532.46875
+          },
+          {
+            "class": "container contact-grid",
+            "second": 532.46875
+          }
+        ],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/en/",
+      "width": 900,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "affectedNodes": 5
+        }
+      ],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 846,
+        "leftGutter": 27,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [
+          {
+            "class": "container program-grid",
+            "second": 27
+          },
+          {
+            "class": "container resource-grid",
+            "second": 27
+          },
+          {
+            "class": "container contact-grid",
+            "second": 27
+          }
+        ],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/fr/",
+      "width": 768,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "affectedNodes": 5
+        }
+      ],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 721.9140625,
+        "leftGutter": 23.0390625,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [
+          {
+            "class": "container program-grid",
+            "second": 23.0390625
+          },
+          {
+            "class": "container resource-grid",
+            "second": 23.0390625
+          },
+          {
+            "class": "container contact-grid",
+            "second": 23.0390625
+          }
+        ],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/en/",
+      "width": 600,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "affectedNodes": 3
+        }
+      ],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 560,
+        "leftGutter": 20,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [
+          {
+            "class": "container program-grid",
+            "second": 20
+          },
+          {
+            "class": "container resource-grid",
+            "second": 20
+          },
+          {
+            "class": "container contact-grid",
+            "second": 20
+          }
+        ],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/fr/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "affectedNodes": 7
+        }
+      ],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 350,
+        "leftGutter": 20,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [
+          {
+            "class": "container program-grid",
+            "second": 20
+          },
+          {
+            "class": "container resource-grid",
+            "second": 20
+          },
+          {
+            "class": "container contact-grid",
+            "second": 20
+          }
+        ],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/en/",
+      "width": 360,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "affectedNodes": 8
+        }
+      ],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 320,
+        "leftGutter": 20,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [
+          {
+            "class": "container program-grid",
+            "second": 20
+          },
+          {
+            "class": "container resource-grid",
+            "second": 20
+          },
+          {
+            "class": "container contact-grid",
+            "second": 20
+          }
+        ],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/fr/",
+      "width": 320,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "affectedNodes": 5
+        }
+      ],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 280,
+        "leftGutter": 20,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [
+          {
+            "class": "container program-grid",
+            "second": 20
+          },
+          {
+            "class": "container resource-grid",
+            "second": 20
+          },
+          {
+            "class": "container contact-grid",
+            "second": 20
+          }
+        ],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/en/defibrillators/",
+      "width": 2560,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 49,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 2406.3984375,
+        "leftGutter": 76.796875,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/fr/defibrillateurs/",
+      "width": 360,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 49,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 320,
+        "leftGutter": 20,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/en/installation/",
+      "width": 1920,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 40,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 1804.796875,
+        "leftGutter": 57.6015625,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/fr/accessoires/simulateurs-dea/",
+      "width": 768,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "affectedNodes": 1
+        }
+      ],
+      "passes": 48,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 721.9140625,
+        "leftGutter": 23.0390625,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/en/industries/offices/",
+      "width": 1440,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 40,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 1353.59375,
+        "leftGutter": 43.203125,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/fr/regions/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "affectedNodes": 45
+        }
+      ],
+      "passes": 50,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 350,
+        "leftGutter": 20,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/en/locations/ontario/toronto/",
+      "width": 2560,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "affectedNodes": 12
+        }
+      ],
+      "passes": 41,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 2406.3984375,
+        "leftGutter": 76.796875,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/fr/demander-soumission/",
+      "width": 768,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 721.9140625,
+        "leftGutter": 23.0390625,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/en/request-quote/",
+      "width": 320,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 280,
+        "leftGutter": 20,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/fr/defibrillateurs/comparer/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "affectedNodes": 10
+        }
+      ],
+      "passes": 53,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 350,
+        "leftGutter": 20,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/en/accessories/find-parts/",
+      "width": 1024,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 47,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 962.5546875,
+        "leftGutter": 30.71875,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/fr/defibrillateurs/ensembles/",
+      "width": 1920,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 40,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 1804.796875,
+        "leftGutter": 57.6015625,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/en/privacy/",
+      "width": 1440,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 40,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 1353.59375,
+        "leftGutter": 43.203125,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/en/",
+      "width": 1440,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "affectedNodes": 18
+        }
+      ],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 1353.59375,
+        "leftGutter": 43.203125,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [
+          {
+            "class": "container program-grid",
+            "second": 748.796875
+          },
+          {
+            "class": "container resource-grid",
+            "second": 748.796875
+          },
+          {
+            "class": "container contact-grid",
+            "second": 748.796875
+          }
+        ],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/fr/demander-soumission/",
+      "width": 360,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 320,
+        "leftGutter": 20,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [],
+        "overflowElements": []
+      }
+    },
+    {
+      "path": "/en/",
+      "width": 3840,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "affectedNodes": 17
+        }
+      ],
+      "passes": 46,
+      "overflow": false,
+      "brokenImages": [],
+      "layout": {
+        "containerWidth": 3680,
+        "leftGutter": 80,
+        "containerEdgeSpread": 0,
+        "mapleTextCenterDelta": 0,
+        "mapleGap": 8,
+        "columns": [
+          {
+            "class": "container program-grid",
+            "second": 1960
+          },
+          {
+            "class": "container resource-grid",
+            "second": 1960
+          },
+          {
+            "class": "container contact-grid",
+            "second": 1960
+          }
+        ],
+        "overflowElements": []
+      }
+    }
+  ],
+  "mobileMenu": {
+    "path": "/fr/demander-soumission/",
+    "width": 360,
+    "expanded": true,
+    "layout": {
+      "columns": [],
+      "containerEdgeSpread": 0,
+      "containers": [
+        {
+          "centerY": 21,
+          "class": "container utility-inner",
+          "height": 42,
+          "left": 20,
+          "right": 340,
+          "top": 0,
+          "width": 320
+        },
+        {
+          "centerY": 84,
+          "class": "container masthead",
+          "height": 84,
+          "left": 20,
+          "right": 340,
+          "top": 42,
+          "width": 320
+        },
+        {
+          "centerY": 453.796875,
+          "class": "breadcrumbs container",
+          "height": 51.59375,
+          "left": 20,
+          "right": 340,
+          "top": 428,
+          "width": 320
+        },
+        {
+          "centerY": 642.1875,
+          "class": "container page-hero-grid",
+          "height": 325.1875,
+          "left": 20,
+          "right": 340,
+          "top": 479.59375,
+          "width": 320
+        },
+        {
+          "centerY": 2764.328125,
+          "class": "container page-body",
+          "height": 3919.09375,
+          "left": 20,
+          "right": 340,
+          "top": 804.78125,
+          "width": 320
+        },
+        {
+          "centerY": 5281.28125,
+          "class": "container",
+          "height": 1030.8125,
+          "left": 20,
+          "right": 340,
+          "top": 4765.875,
+          "width": 320
+        }
+      ],
+      "mapleGap": 8,
+      "mapleTextCenterDelta": 0,
+      "overflow": false,
+      "overflowElements": [],
+      "width": 360
+    }
+  },
+  "manualReview": [
+    "Full English homepage at 1440px",
+    "English homepage and Canadian maple silhouette at 2560px",
+    "French homepage, header and footer logo fit at 320px",
+    "Expanded French mobile navigation at 360px",
+    "Final cached maple asset at 1920px"
+  ],
+  "notes": "No detected axe violations. Existing automated contrast indeterminacy on decorative characters and layered homepage backgrounds was reviewed visually; this is not full accessibility certification."
+}
