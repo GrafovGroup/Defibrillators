@@ -284,3 +284,11 @@ Use case: photorealistic-natural. Asset type: original service-page editorial he
 Both photographs resized and converted to WebP; source/licence attribution is visible in both language footers and image metadata. Existing reference photos retain the licences in [ASSETS.md](ASSETS.md).
 
 Rejected `Défibrillateur LifeLine View DEFIBTECH avec écran vidéo.jpg` because its visible label identifies Lifeline PRO despite the Commons filename. ZOLL's public distributor gallery was reviewed, but no permission for this website was established; none of its photographs were copied.
+
+## Verification and deployment
+
+`pnpm verify` passes lint, Astro/TypeScript, formatting, production build, generated headers and all 541 tests. Imagery checks cover unique source hashes, complete bilingual page mappings, dimensions, decoding, transfer budgets, accessible alternatives, lazy previews and matching image metadata. Ten representative English/French views at desktop, tablet and mobile widths have no detected axe violations, broken images or horizontal overflow. Automated contrast checks left some existing decorative characters/backgrounds for manual review; this is not full accessibility certification. Evidence: [qa/imagery-browser.json](qa/imagery-browser.json).
+
+Published on WHC on 7 November 2026 from commit `d9a572970effe53469997c9da831fd7b3f66f57c`, after saving a private rollback archive. The release contains 663 files, including 234 HTML documents, 233 header files and 146 new responsive WebP variants. Package size: 9,411,568 bytes. SHA-256: `d9259cb252c74109a83557561d1560f891819d2c8b9dc7f2c74c5e796ae742f4`.
+
+All 429 public files and 233 page security policies match the tested build. HTTPS, canonical redirects, custom 404, configuration-file protection and archive isolation pass. Live English installation, French training-device and homepage previews were inspected. No production enquiry was submitted. Evidence: [qa/imagery-live.json](qa/imagery-live.json).

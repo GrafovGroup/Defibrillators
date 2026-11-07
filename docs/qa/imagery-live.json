@@ -1,0 +1,115 @@
+{
+  "checkedAt": "2026-11-07T19:26:07.650329+00:00",
+  "sourceTree": "01bbf14ab5c8fbfd91fa5f122f4496a6780baac0",
+  "redirects": [
+    {
+      "url": "https://defibrillators.ca/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/index.html?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/fr/index.html?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "http://defibrillators.ca/en/defibrillators/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/defibrillators/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://www.defibrillators.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillator.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "http://defibrillator.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/enquiry-not-a-page/",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    },
+    {
+      "url": "https://defibrillators.ca/.htaccess",
+      "status": 403,
+      "location": null,
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/defibrillators-imagery-whc.zip",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    },
+    {
+      "url": "https://defibrillators.ca/defibrillators-pre-imagery-20261107.zip",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    }
+  ],
+  "certificates": [
+    {
+      "host": "defibrillators.ca",
+      "valid": true,
+      "expires": "Feb  5 05:49:28 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "www.defibrillators.ca",
+      "valid": true,
+      "expires": "Feb  5 05:49:28 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "defibrillator.ca",
+      "valid": true,
+      "expires": "Feb  5 06:22:02 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "www.defibrillator.ca",
+      "valid": true,
+      "expires": "Feb  5 06:22:02 2027 GMT",
+      "issuer": "Let's Encrypt"
+    }
+  ],
+  "release": {
+    "files": 663,
+    "htmlDocuments": 234,
+    "headerFiles": 233,
+    "bytes": 9411568,
+    "sha256": "d9259cb252c74109a83557561d1560f891819d2c8b9dc7f2c74c5e796ae742f4"
+  },
+  "publicFiles": 429,
+  "matchingFiles": 429,
+  "matchingPagePolicies": 233,
+  "failures": [],
+  "browserChecks": [
+    "English installation image and caption",
+    "French training-device image, caption and alt text",
+    "Four distinct homepage service-card images"
+  ],
+  "sourceCommit": "d9a572970effe53469997c9da831fd7b3f66f57c"
+}

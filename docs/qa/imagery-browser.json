@@ -1,0 +1,180 @@
+[
+  {
+    "path": "/en/installation/",
+    "width": 1710,
+    "axe": "4.14.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 40,
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "path": "/en/defibrillators/",
+    "width": 1710,
+    "axe": "4.14.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 49,
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "path": "/fr/services/suivi-echeances-dea/",
+    "width": 1710,
+    "axe": "4.14.0",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".text-link[href$=\"regions/\"] > span[aria-hidden=\"true\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+          }
+        ]
+      }
+    ],
+    "passes": 48,
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "path": "/fr/accessoires/simulateurs-dea/",
+    "width": 1710,
+    "axe": "4.14.0",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".text-link[href$=\"regions/\"] > span[aria-hidden=\"true\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+          }
+        ]
+      }
+    ],
+    "passes": 48,
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "path": "/en/",
+    "width": 390,
+    "axe": "4.14.0",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [".hero-description"],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+          },
+          {
+            "target": ["figcaption"],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "target": [".benefit-strip > ul > li:nth-child(1) > span"],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+          },
+          {
+            "target": [".benefit-strip > ul > li:nth-child(2) > span"],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+          },
+          {
+            "target": [".benefit-strip > ul > li:nth-child(3) > span"],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+          },
+          {
+            "target": [".benefit-strip > ul > li:nth-child(4) > span"],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+          },
+          {
+            "target": [".benefit-strip > ul > li:nth-child(5) > span"],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+          },
+          {
+            "target": [".benefit-strip > ul > li:nth-child(6) > span"],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+          }
+        ]
+      }
+    ],
+    "passes": 46,
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "path": "/en/installation/",
+    "width": 390,
+    "axe": "4.14.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 40,
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "path": "/fr/accessoires/simulateurs-dea/",
+    "width": 390,
+    "axe": "4.14.0",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".text-link[href$=\"regions/\"] > span[aria-hidden=\"true\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+          }
+        ]
+      }
+    ],
+    "passes": 48,
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "path": "/en/defibrillators/",
+    "width": 390,
+    "axe": "4.14.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 49,
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "path": "/fr/defibrillateurs/defibtech-lifeline-view/",
+    "width": 768,
+    "axe": "4.14.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 43,
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "path": "/en/defibrillators/zoll-aed-3/",
+    "width": 768,
+    "axe": "4.14.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 43,
+    "overflow": false,
+    "brokenImages": []
+  }
+]
