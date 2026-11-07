@@ -3,7 +3,6 @@ import '@fontsource-variable/inter';
 import '../styles/site.css';
 import SEO from '../components/SEO.astro';
 import MobileContact from '../components/MobileContact.astro';
-import AnalyticsConsent from '../components/AnalyticsConsent.astro';
 import type { Locale } from '../data/content';
 import type { PageId } from '../data/routes';
 interface Props {
@@ -39,9 +38,9 @@ const quickContact = !['quote', 'privacy', 'terms', 'accessibility'].includes(
   >
     <slot />
     {quickContact && <MobileContact lang={lang} pageId={pageId} />}
-    <AnalyticsConsent lang={lang} />
     <script>
       import '../scripts/measurement';
+      import '../scripts/retire-analytics';
     </script>
   </body>
 </html>

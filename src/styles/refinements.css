@@ -160,7 +160,6 @@
   body.has-mobile-contact {
     padding-bottom: calc(76px + env(safe-area-inset-bottom));
   }
-  body.has-mobile-contact:has(.analytics-consent:not([hidden])) .mobile-contact,
   body.has-mobile-contact:has(input:focus, select:focus, textarea:focus)
     .mobile-contact {
     visibility: hidden;
@@ -204,7 +203,6 @@
   header,
   footer,
   .mobile-contact,
-  .analytics-consent,
   .page-sidebar,
   .budget-actions,
   .related-pages {

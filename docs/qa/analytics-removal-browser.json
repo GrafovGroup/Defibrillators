@@ -1,0 +1,194 @@
+{
+  "checkedAt": "2026-11-07",
+  "checks": [
+    {
+      "path": "/en/",
+      "report": {
+        "path": "/en/",
+        "width": 1440,
+        "axe": "4.14.0",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": [
+              {
+                "target": [".utility-coverage > span"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".utility-detail:nth-child(2)"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".utility-detail:nth-child(3)"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".header-phone"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".header-email"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".header-quote"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".desktop-nav > ul > li:nth-child(3) > a[href$=\"accessories/\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".desktop-nav > ul > li:nth-child(4) > a[href$=\"installation/\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".desktop-nav > ul > li:nth-child(5) > a[href$=\"maintenance/\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".desktop-nav > ul > li:nth-child(6) > a[href$=\"aed-programs/\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".desktop-nav > ul > li:nth-child(7) > a[href$=\"industries/\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".desktop-nav > ul > li:nth-child(8) > a[href$=\"resources/\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [
+                  ".desktop-nav > ul > li:nth-child(9) > a[href$=\"contact/\"]"
+                ],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": ["figcaption"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [".benefit-strip > ul > li:nth-child(3) > span"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".benefit-strip > ul > li:nth-child(4) > span"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".benefit-strip > ul > li:nth-child(5) > span"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".benefit-strip > ul > li:nth-child(6) > span"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              }
+            ]
+          }
+        ],
+        "passes": 45,
+        "overflow": false,
+        "brokenImages": []
+      },
+      "analyticsControls": 0,
+      "googleScripts": 0
+    },
+    {
+      "path": "/fr/",
+      "report": {
+        "path": "/fr/",
+        "width": 390,
+        "axe": "4.14.0",
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": [
+              {
+                "target": ["figcaption"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+              },
+              {
+                "target": [".benefit-strip > ul > li:nth-child(1) > span"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".benefit-strip > ul > li:nth-child(2) > span"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".benefit-strip > ul > li:nth-child(3) > span"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".benefit-strip > ul > li:nth-child(4) > span"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".benefit-strip > ul > li:nth-child(5) > span"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              },
+              {
+                "target": [".benefit-strip > ul > li:nth-child(6) > span"],
+                "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+              }
+            ]
+          }
+        ],
+        "passes": 45,
+        "overflow": false,
+        "brokenImages": []
+      },
+      "analyticsControls": 0,
+      "googleScripts": 0
+    },
+    {
+      "path": "/en/request-quote/",
+      "report": {
+        "path": "/en/request-quote/",
+        "width": 390,
+        "axe": "4.14.0",
+        "violations": [],
+        "incomplete": [],
+        "passes": 47,
+        "overflow": false,
+        "brokenImages": []
+      },
+      "analyticsControls": 0,
+      "googleScripts": 0
+    },
+    {
+      "path": "/fr/confidentialite/",
+      "report": {
+        "path": "/fr/confidentialite/",
+        "width": 1440,
+        "axe": "4.14.0",
+        "violations": [],
+        "incomplete": [],
+        "passes": 39,
+        "overflow": false,
+        "brokenImages": []
+      },
+      "analyticsControls": 0,
+      "googleScripts": 0
+    }
+  ],
+  "formResult": "English commercial submission accepted by local mock; no production lead submitted"
+}

@@ -1438,8 +1438,8 @@ export const pages: DetailPage[] = [
   {
     id: 'privacy',
     intro: {
-      en: 'This notice describes browsing Defibrillators.ca, optional analytics and the information you choose to send in an enquiry.',
-      fr: 'Cet avis décrit la navigation sur Defibrillators.ca, les statistiques facultatives et les renseignements que vous choisissez de transmettre dans une demande.',
+      en: 'This notice describes browsing Defibrillators.ca and the information you choose to send in an enquiry.',
+      fr: 'Cet avis décrit la navigation sur Defibrillators.ca et les renseignements que vous choisissez de transmettre dans une demande.',
     },
     sections: {
       en: [
@@ -1448,12 +1448,8 @@ export const pages: DetailPage[] = [
           'The site is hosted by WHC. Fonts and images are served with the website. Hosting infrastructure may process connection information and server logs. The site does not offer customer accounts or collect payments.',
         ),
         s(
-          'Optional Google Analytics',
-          'Google Analytics 4 loads only after you allow analytics. It uses first-party cookies and technical connection information to measure visits and enquiry activity; Google may process data outside Canada. We send canonical page addresses without URL queries or fragments, and only fixed categories such as language, request type and selected city guide. Form answers, contact details and attachments are excluded. Automatic enhanced measurement, advertising signals and advertising personalization are disabled. Referrer addresses are not sent. This limits traffic-source reporting. Analytics is optional and does not affect your enquiry.',
-        ),
-        s(
-          'Your analytics choice',
-          'Use Analytics preferences in the footer to allow or decline analytics at any time. Your choice is stored in your browser for up to 90 days. Declining prevents the Google tag from loading; withdrawing stops future analytics and clears this integration’s cookies. Previously collected data is not automatically deleted by changing the choice. Analytics cookies expire after up to 90 days. If browser storage is unavailable, your choice applies only to the current page. Your analytics choice does not affect a quote request.',
+          'Browsing and measurement',
+          'This website does not load Google Analytics or set analytics cookies. On a return visit, it removes the preference and cookies from our previous analytics integration. This does not delete data already collected by Google. Hosting logs and information you submit through the enquiry form are handled separately.',
         ),
         s(
           'Information you choose to send',
@@ -1474,12 +1470,8 @@ export const pages: DetailPage[] = [
           'Le site est hébergé par WHC. Les polices et images sont servies avec le site. L’infrastructure d’hébergement peut traiter des données de connexion et des journaux serveur. Le site ne propose pas de comptes clients et ne perçoit pas de paiements.',
         ),
         s(
-          'Google Analytics facultatif',
-          'Google Analytics 4 se charge uniquement après votre accord. Il utilise des témoins internes et des données techniques de connexion pour mesurer les visites et l’activité des demandes; Google peut traiter les données hors du Canada. Nous transmettons les adresses canoniques sans paramètres ni fragments, et des catégories fixes comme la langue, le type de demande et le guide de ville choisi. Les réponses, coordonnées et pièces jointes sont exclues. Les mesures améliorées automatiques, les signaux publicitaires et la personnalisation publicitaire sont désactivés. Les adresses de provenance ne sont pas transmises, ce qui limite les rapports sur les sources de trafic. Ces statistiques sont facultatives et n’affectent pas votre demande.',
-        ),
-        s(
-          'Votre choix de statistiques',
-          'Utilisez Préférences statistiques au bas de la page pour accepter ou refuser à tout moment. Votre choix est conservé dans votre navigateur pendant un maximum de 90 jours. Un refus empêche le chargement de la balise Google; un retrait arrête les statistiques futures et efface les témoins de cette intégration. Les données déjà recueillies ne sont pas automatiquement supprimées. Les témoins analytiques expirent après un maximum de 90 jours. Si le stockage du navigateur est indisponible, le choix s’applique uniquement à la page actuelle. Votre choix statistique n’a aucune incidence sur une demande de soumission.',
+          'Navigation et mesure',
+          'Ce site ne charge pas Google Analytics et ne crée pas de témoins analytiques. À votre retour, il retire la préférence et les témoins de notre ancienne intégration. Cela ne supprime pas les données déjà recueillies par Google. Les journaux d’hébergement et les renseignements transmis par le formulaire sont traités séparément.',
         ),
         s(
           'Renseignements transmis volontairement',

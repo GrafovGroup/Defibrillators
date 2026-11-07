@@ -1,3 +1,9 @@
+# Analytics retired — 7 November 2026
+
+The owner requested removal of the analytics warning and popup/preferences control. The Google tag, consent panel, footer control and GA4 event forwarding are now removed. Returning visits remove this integration’s old preference and cookies. No replacement tracker is installed. The GA4 property and historical records were not deleted. See [the removal and discovery notes](ANALYTICS-REMOVAL-AND-DISCOVERY.md).
+
+The following documents the earlier implementation and its historical verification, not the current runtime.
+
 # Optional GA4 analytics
 
 The owner authorized a dedicated Defibrillators.ca property in Grafov Group on 7 November 2026 and confirmed the 1–10 employee category. The bilingual web stream uses public measurement ID `G-ERD2WFW0WZ`, Toronto time and CAD. The tested implementation is live on WHC; live verification is recorded below.

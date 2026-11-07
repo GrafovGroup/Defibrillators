@@ -82,12 +82,3 @@ async function audit() {
 }
 button.addEventListener('click', audit);
 window.addEventListener('load', audit, { once: true });
-
-const resetAnalytics = document.createElement('button');
-resetAnalytics.type = 'button';
-resetAnalytics.textContent = 'Reset analytics choice (local QA)';
-resetAnalytics.addEventListener('click', () => {
-  localStorage.removeItem('dfca-analytics-v1');
-  location.reload();
-});
-panel.append(resetAnalytics);
