@@ -1,0 +1,60 @@
+---
+import Logo from './Logo.astro';
+import { content, contact, type Locale } from '../data/content';
+import { credits } from '../data/credits';
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+const c = content[lang];
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href={`/${lang}/`} aria-label={c.home}>
+          <Logo lang={lang} dark />
+        </a>
+        <p>{c.footerText}</p>
+      </div>
+      <div>
+        <h2>{c.footerServices}</h2>
+        <ul>
+          {c.cards.map((card) => (
+            <li>
+              <a href={`#${card.id}`}>{card.title}</a>
+            </li>
+          ))}
+          <li>
+            <a href="#programs">{c.nav[4]}</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>{c.footerContact}</h2>
+        <a class="footer-phone" href={contact.tel}>
+          {contact.phone}
+        </a>
+        <a href={`mailto:${contact.email}`}>{contact.email}</a>
+        <p>{c.footerLanguage}</p>
+      </div>
+    </div>
+    <p class="emergency">{c.emergency}</p>
+    <details class="photo-credits">
+      <summary>{c.credits}</summary>
+      <p>{c.creditsNote}</p>
+      <ul>
+        {credits.map((item) => (
+          <li>
+            <a href={item.url}>{item.label}</a> ·{' '}
+            <a href={item.licenseUrl}>{item.license}</a>
+          </li>
+        ))}
+      </ul>
+    </details>
+    <p class="copyright">
+      © {new Date().getFullYear()} {c.copyright}
+    </p>
+  </div>
+</footer>

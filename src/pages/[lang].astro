@@ -1,0 +1,117 @@
+---
+import Page from '../layouts/Page.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import IndustryGrid from '../components/IndustryGrid.astro';
+import Footer from '../components/Footer.astro';
+import { content, contact, quoteHref, type Locale } from '../data/content';
+export function getStaticPaths() {
+  return [{ params: { lang: 'en' } }, { params: { lang: 'fr' } }];
+}
+const lang = Astro.params.lang as Locale;
+const c = content[lang];
+---
+
+<Page lang={lang}>
+  <Header lang={lang} />
+  <main id="main" tabindex="-1">
+    <Hero lang={lang} />
+    <section class="section services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">{c.servicesEyebrow}</p>
+          <h2>{c.servicesTitle}</h2>
+          <p>{c.servicesText}</p>
+        </div>
+        <div class="service-grid">
+          {c.cards.map((card) => (
+            <ServiceCard {...card} />
+          ))}
+        </div>
+        <p class="image-note">{c.imageNote}</p>
+      </div>
+    </section>
+    <section class="section program" id="programs">
+      <div class="container program-grid">
+        <div class="program-visual">
+          <img
+            src="/images/training.webp"
+            width="960"
+            height="641"
+            alt={c.trainingAlt}
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="program-caption">
+            <span class="eyebrow">
+              {lang === 'en'
+                ? 'EQUIPMENT. PLANNING. PEOPLE.'
+                : 'ÉQUIPEMENT. PLANIFICATION. ÉQUIPE.'}
+            </span>
+            <p>{c.heroNote}</p>
+          </div>
+        </div>
+        <div class="program-copy">
+          <p class="eyebrow">{c.programEyebrow}</p>
+          <h2>{c.programTitle}</h2>
+          <p>{c.programText}</p>
+          <ol class="steps">
+            {c.steps.map(([title, text], i) => (
+              <li>
+                <span aria-hidden="true">0{i + 1}</span>
+                <div>
+                  <h3>{title}</h3>
+                  <p>{text}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+          <a class="button button-navy" href="#contact">
+            {c.programCta}
+          </a>
+        </div>
+      </div>
+    </section>
+    <IndustryGrid lang={lang} />
+    <section class="section resources" id="resources">
+      <div class="container resource-grid">
+        <div>
+          <p class="eyebrow">{c.resourcesEyebrow}</p>
+          <h2>{c.resourcesTitle}</h2>
+          <p>
+            {c.resourceIntro} <a href={c.resourceUrl}>{c.resourceName}</a>.
+          </p>
+        </div>
+        <div class="faq-list">
+          {c.faqs.map(([q, a]) => (
+            <details>
+              <summary>{q}</summary>
+              <p>{a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">{c.contactEyebrow}</p>
+          <h2>{c.contactTitle}</h2>
+          <p>{c.contactText}</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button" href={quoteHref(lang)}>
+            {c.emailCta}
+          </a>
+          <a class="contact-phone" href={contact.tel}>
+            {contact.phone}
+          </a>
+          <a href={`mailto:${contact.email}`}>{contact.email}</a>
+          <p class="small">{c.emailHint}</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer lang={lang} />
+</Page>

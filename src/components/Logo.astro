@@ -1,0 +1,18 @@
+---
+import { content, type Locale } from '../data/content';
+interface Props {
+  lang: Locale;
+  dark?: boolean;
+}
+const { lang, dark = false } = Astro.props;
+---
+
+<span class="brand">
+  <img
+    src={`/brand/wordmark-${dark ? 'dark' : 'light'}.svg`}
+    width="440"
+    height="70"
+    alt="Defibrillators.ca"
+  />
+  <span class="brand-tagline">{content[lang].tagline}</span>
+</span>

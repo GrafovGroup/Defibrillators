@@ -1,0 +1,29 @@
+---
+interface Props {
+  id: string;
+  image: string;
+  title: string;
+  text: string;
+  link: string;
+  alt: string;
+}
+const { id, image, title, text, link, alt } = Astro.props;
+---
+
+<article class="service-card" id={id}>
+  <div class={`service-photo photo-${image}`}>
+    <img
+      src={`/images/${image}.webp`}
+      width="640"
+      height="420"
+      alt={alt}
+      loading="lazy"
+      decoding="async"
+    />
+  </div>
+  <div class="service-content">
+    <h3>{title}</h3>
+    <p>{text}</p>
+    <a href="#contact">{link}</a>
+  </div>
+</article>

@@ -1,0 +1,26 @@
+---
+import { content, type Locale } from '../data/content';
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+const c = content[lang];
+---
+
+<section class="section industries" id="industries">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">{c.industryEyebrow}</p>
+      <h2>{c.industryTitle}</h2>
+      <p>{c.industryText}</p>
+    </div>
+    <ul class="industry-grid">
+      {c.industries.map((industry) => (
+        <li>
+          <span aria-hidden="true" class="industry-dot"></span>
+          {industry}
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

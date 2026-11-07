@@ -1,0 +1,49 @@
+---
+import { content, type Locale } from '../data/content';
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+const c = content[lang];
+---
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">{c.eyebrow}</p>
+      <h1 id="hero-title">{c.headline}</h1>
+      <p class="hero-description">{c.heroText}</p>
+      <div class="actions">
+        <a class="button" href="#contact">
+          {c.quote}
+        </a>
+        <a class="button button-outline" href="#equipment">
+          {c.shop}
+        </a>
+      </div>
+      <p class="hero-note">{c.heroNote}</p>
+    </div>
+    <figure class="hero-image">
+      <img
+        src="/images/aed-cabinet.webp"
+        width="800"
+        height="1106"
+        alt={c.heroAlt}
+        fetchpriority="high"
+      />
+      <figcaption>{c.heroCaption}</figcaption>
+    </figure>
+  </div>
+</section>
+<div class="benefit-strip">
+  <ul class="container">
+    {c.benefits.map((benefit, i) => (
+      <li>
+        <span class="benefit-icon" aria-hidden="true">
+          {['＋', '⌖', '✓', '◎'][i]}
+        </span>
+        <span>{benefit}</span>
+      </li>
+    ))}
+  </ul>
+</div>

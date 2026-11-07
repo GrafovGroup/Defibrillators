@@ -1,0 +1,84 @@
+---
+import Logo from './Logo.astro';
+import LocaleSwitch from './LocaleSwitch.astro';
+import { content, contact, anchors, type Locale } from '../data/content';
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+const c = content[lang];
+---
+
+<a class="skip-link" href="#main">
+  {c.skip}
+</a>
+<header>
+  <div class="utility">
+    <div class="container utility-inner">
+      <p>
+        <span class="canada-mark" aria-hidden="true">
+          ✦
+        </span>{' '}
+        {c.coverage}
+      </p>
+      <div class="utility-right">
+        <a href={contact.tel}>{contact.phone}</a>
+        <LocaleSwitch lang={lang} />
+      </div>
+    </div>
+  </div>
+  <div class="container masthead">
+    <a class="logo-link" href={`/${lang}/`} aria-label={c.home}>
+      <Logo lang={lang} />
+    </a>
+    <div class="header-contact">
+      <a class="header-phone" href={contact.tel}>
+        {contact.phone}
+      </a>
+      <a href={`mailto:${contact.email}`}>{contact.email}</a>
+    </div>
+    <a class="button header-quote" href="#contact">
+      {c.quote}
+    </a>
+  </div>
+  <nav class="desktop-nav" aria-label={c.navLabel}>
+    <ul class="container">
+      {c.nav.map((label, i) => (
+        <li>
+          <a href={`#${anchors[i]}`}>{label}</a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+  <details class="mobile-nav">
+    <summary>
+      <span>{c.menu}</span>
+      <span class="menu-bars" aria-hidden="true">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+    </summary>
+    <nav aria-label={c.navLabel}>
+      <ul>
+        {c.nav.map((label, i) => (
+          <li>
+            <a href={`#${anchors[i]}`}>{label}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </details>
+</header>
+<script>
+  const menu = document.querySelector<HTMLDetailsElement>('.mobile-nav');
+  menu?.addEventListener('click', (event) => {
+    if ((event.target as HTMLElement).closest('a')) menu.open = false;
+  });
+  menu?.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      menu.open = false;
+      menu.querySelector('summary')?.focus();
+    }
+  });
+</script>
