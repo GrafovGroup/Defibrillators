@@ -1,6 +1,7 @@
 ---
 import { pathFor, labelFor, type PageId } from '../data/routes';
-import { pageFor, pageImages } from '../data/pages';
+import { pageFor } from '../data/pages';
+import PageVisual from './PageVisual.astro';
 import type { Locale } from '../data/content';
 interface Props {
   lang: Locale;
@@ -12,13 +13,10 @@ const page = pageFor(pageId);
 
 <article class="page-card">
   {page.image && (
-    <img
-      src={`/images/${page.image}.webp`}
-      width="640"
-      height="420"
-      alt={pageImages[page.image][lang]}
-      loading="lazy"
-      decoding="async"
+    <PageVisual
+      image={page.image}
+      lang={lang}
+      sizes="(max-width: 480px) calc(100vw - 40px), (max-width: 900px) 44vw, 360px"
     />
   )}
   <div>

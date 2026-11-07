@@ -1,3 +1,4 @@
+import { pageVisuals } from './visuals.ts';
 import { offeringPages } from './offering-pages.ts';
 import type { Locale } from './content';
 import {
@@ -45,7 +46,7 @@ export interface DetailPage {
     checklist: Localized<string[]>;
     faqs: Localized<Section[]>;
   };
-  image?: keyof typeof pageImages;
+  image?: string;
   intro: Localized<string>;
   sections: Localized<Section[]>;
   children?: PageId[];
@@ -1598,6 +1599,7 @@ for (const offering of offeringPages) {
   parent.children = [...(parent.children ?? []), offering.id];
 }
 for (const page of pages) {
+  page.image = pageVisuals[page.id];
   const guide = guideDetails[page.id];
   if (guide) {
     page.kind = 'guide';

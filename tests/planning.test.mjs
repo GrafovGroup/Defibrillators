@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import { load } from 'cheerio';
 import { routes, pathFor } from '../src/data/routes.ts';
 import { modelIds, modelOptions } from '../src/data/model-options.ts';
+import { pageVisuals } from '../src/data/visuals.ts';
 import { products } from '../src/data/products.ts';
 import { safeEnquiryParams } from '../src/lib/enquiry-context.ts';
 import { enquiryPath } from '../src/lib/enquiry.ts';
@@ -46,7 +47,7 @@ test('Eight distinct model references use official sources and no unlicensed ima
         graph($).find((n) => n['@type'] === 'Product').name,
         $('h1').text(),
       );
-      assert.equal($('.page-hero img').length, p.image ? 1 : 0);
+      assert.equal($('.page-hero img').length, pageVisuals[p.id] ? 1 : 0);
       assert.equal(
         new URL(
           enquiryPath(p.id, lang),

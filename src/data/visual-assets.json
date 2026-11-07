@@ -1,0 +1,1424 @@
+{
+  "visuals/maintenance": {
+    "src": "/images/visuals/maintenance-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/maintenance-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/maintenance-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/maintenance-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "A coordinator checking an AED kit and inspection record",
+      "fr": "Vérification d’une trousse DEA et d’un registre d’inspection"
+    }
+  },
+  "visuals/programs": {
+    "src": "/images/visuals/programs-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/programs-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/programs-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/programs-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Planning folders and equipment for a multi-location AED program",
+      "fr": "Dossiers et équipement pour un programme DEA multisite"
+    }
+  },
+  "visuals/training": {
+    "src": "/images/visuals/training-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/training-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/training-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/training-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "A classroom prepared with CPR manikins and practice equipment",
+      "fr": "Salle préparée avec des mannequins de RCR et du matériel de formation"
+    }
+  },
+  "visuals/services": {
+    "src": "/images/visuals/services-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/services-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/services-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/services-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Facilities staff planning equipment and service requirements",
+      "fr": "Planification des besoins en équipement et en services"
+    }
+  },
+  "visuals/accessories": {
+    "src": "/images/visuals/accessories-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/accessories-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/accessories-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/accessories-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "A selection of packaged AED support supplies",
+      "fr": "Une sélection de fournitures de soutien pour DEA"
+    }
+  },
+  "visuals/batteries": {
+    "src": "/images/visuals/batteries-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/batteries-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/batteries-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/batteries-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Battery modules with equipment documentation",
+      "fr": "Modules de batterie et documentation de l’équipement"
+    }
+  },
+  "visuals/signage": {
+    "src": "/images/visuals/signage-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/signage-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/signage-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/signage-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "AED wayfinding symbols at a hallway junction",
+      "fr": "Pictogrammes de localisation d’un DEA à une intersection de corridor"
+    }
+  },
+  "visuals/kits": {
+    "src": "/images/visuals/kits-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/kits-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/kits-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/kits-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "An open response pouch with packaged supporting supplies",
+      "fr": "Une trousse d’intervention ouverte avec ses fournitures emballées"
+    }
+  },
+  "visuals/parts": {
+    "src": "/images/visuals/parts-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/parts-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/parts-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/parts-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Checking equipment references before selecting replacement parts",
+      "fr": "Vérification des références avant le choix de pièces de remplacement"
+    }
+  },
+  "visuals/packages": {
+    "src": "/images/visuals/packages-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/packages-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/packages-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/packages-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Equipment bags and storage options arranged for package planning",
+      "fr": "Sacs d’équipement et rangement pour planifier un ensemble"
+    }
+  },
+  "visuals/site-assessment": {
+    "src": "/images/visuals/site-assessment-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/site-assessment-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/site-assessment-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/site-assessment-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Assessing access and sightlines in a public building",
+      "fr": "Évaluation de l’accès et des lignes de vue dans un bâtiment public"
+    }
+  },
+  "visuals/cabinet-mounting": {
+    "src": "/images/visuals/cabinet-mounting-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/cabinet-mounting-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/cabinet-mounting-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/cabinet-mounting-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Preparing a cabinet mounting bracket and level",
+      "fr": "Préparation d’un support d’armoire avec un niveau"
+    }
+  },
+  "visuals/readiness-inspection": {
+    "src": "/images/visuals/readiness-inspection-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/readiness-inspection-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/readiness-inspection-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/readiness-inspection-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "A visual readiness check at an equipment cabinet",
+      "fr": "Vérification visuelle de disponibilité près d’une armoire"
+    }
+  },
+  "visuals/expiry-tracking": {
+    "src": "/images/visuals/expiry-tracking-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/expiry-tracking-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/expiry-tracking-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/expiry-tracking-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "A calendar and packaged supplies for expiry planning",
+      "fr": "Calendrier et fournitures emballées pour le suivi des dates"
+    }
+  },
+  "visuals/post-use": {
+    "src": "/images/visuals/post-use-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/post-use-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/post-use-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/post-use-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Fresh supplies prepared for a return-to-service review",
+      "fr": "Fournitures neuves préparées pour une remise en service"
+    }
+  },
+  "visuals/asset-inventory": {
+    "src": "/images/visuals/asset-inventory-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/asset-inventory-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/asset-inventory-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/asset-inventory-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Recording equipment in a managed storage area",
+      "fr": "Inventaire de l’équipement dans un espace de rangement"
+    }
+  },
+  "visuals/adult-pads": {
+    "src": "/images/visuals/adult-pads-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/adult-pads-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/adult-pads-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/adult-pads-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Packaged electrode supplies beside an adult training manikin",
+      "fr": "Fournitures d’électrodes emballées près d’un mannequin adulte"
+    }
+  },
+  "visuals/paediatric-pads": {
+    "src": "/images/visuals/paediatric-pads-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/paediatric-pads-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/paediatric-pads-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/paediatric-pads-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Paediatric supply planning with a child-size training manikin",
+      "fr": "Planification des fournitures pédiatriques avec un mannequin enfant"
+    }
+  },
+  "visuals/pad-battery-packs": {
+    "src": "/images/visuals/pad-battery-packs-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/pad-battery-packs-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/pad-battery-packs-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/pad-battery-packs-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "A packaged replacement-supply concept for compatibility planning",
+      "fr": "Concept d’ensemble de remplacement pour vérifier la compatibilité"
+    }
+  },
+  "visuals/training-devices": {
+    "src": "/images/visuals/training-devices-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/training-devices-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/training-devices-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/training-devices-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Practice devices and manikin equipment in a training tray",
+      "fr": "Appareils de pratique et mannequin dans un plateau de formation"
+    }
+  },
+  "visuals/carry-cases": {
+    "src": "/images/visuals/carry-cases-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/carry-cases-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/carry-cases-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/carry-cases-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "A padded carry case with organized compartments",
+      "fr": "Étui rembourré avec compartiments de rangement"
+    }
+  },
+  "visuals/outdoor-cabinets": {
+    "src": "/images/visuals/outdoor-cabinets-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/outdoor-cabinets-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/outdoor-cabinets-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/outdoor-cabinets-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Sheltered outdoor equipment storage at a recreation building",
+      "fr": "Rangement extérieur abrité près d’un bâtiment récréatif"
+    }
+  },
+  "visuals/defibrillators": {
+    "src": "/images/visuals/defibrillators-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/defibrillators-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/defibrillators-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/defibrillators-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Comparing equipment options for an AED purchase",
+      "fr": "Comparaison d’options d’équipement pour l’achat d’un DEA"
+    }
+  },
+  "visuals/compare": {
+    "src": "/images/visuals/compare-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/compare-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/compare-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/compare-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Two equipment formats beside a comparison checklist",
+      "fr": "Deux formats d’équipement près d’une liste comparative"
+    }
+  },
+  "visuals/industries": {
+    "src": "/images/visuals/industries-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/industries-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/industries-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/industries-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Different workplace and community settings",
+      "fr": "Différents milieux de travail et espaces communautaires"
+    }
+  },
+  "visuals/offices": {
+    "src": "/images/visuals/offices-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/offices-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/offices-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/offices-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "An office reception with accessible equipment storage",
+      "fr": "Accueil de bureau avec rangement d’équipement accessible"
+    }
+  },
+  "visuals/industrial": {
+    "src": "/images/visuals/industrial-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/industrial-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/industrial-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/industrial-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "A warehouse safety station beside a clear pedestrian route",
+      "fr": "Poste de sécurité d’entrepôt près d’un passage piéton dégagé"
+    }
+  },
+  "visuals/properties": {
+    "src": "/images/visuals/properties-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/properties-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/properties-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/properties-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "A residential building lobby with shared equipment access",
+      "fr": "Hall résidentiel avec accès à l’équipement partagé"
+    }
+  },
+  "visuals/schools": {
+    "src": "/images/visuals/schools-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/schools-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/schools-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/schools-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "A school gym prepared for supervised activities",
+      "fr": "Gymnase scolaire préparé pour des activités supervisées"
+    }
+  },
+  "visuals/fitness": {
+    "src": "/images/visuals/fitness-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/fitness-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/fitness-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/fitness-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Accessible safety equipment near a fitness studio entrance",
+      "fr": "Équipement de sécurité accessible à l’entrée d’un centre sportif"
+    }
+  },
+  "visuals/hospitality": {
+    "src": "/images/visuals/hospitality-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/hospitality-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/hospitality-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/hospitality-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "A hotel lobby with a visible shared safety station",
+      "fr": "Hall d’hôtel avec un poste de sécurité commun visible"
+    }
+  },
+  "visuals/retail": {
+    "src": "/images/visuals/retail-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/retail-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/retail-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/retail-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "A retail service counter with a clear customer approach",
+      "fr": "Comptoir de service de commerce avec accès dégagé"
+    }
+  },
+  "visuals/municipalities": {
+    "src": "/images/visuals/municipalities-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/municipalities-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/municipalities-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/municipalities-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "A recreation centre corridor with accessible equipment storage",
+      "fr": "Corridor de centre récréatif avec rangement accessible"
+    }
+  },
+  "visuals/residential": {
+    "src": "/images/visuals/residential-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/residential-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/residential-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/residential-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Planning equipment access in a home",
+      "fr": "Planification de l’accès à l’équipement dans une résidence"
+    }
+  },
+  "visuals/resources": {
+    "src": "/images/visuals/resources-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/resources-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/resources-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/resources-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Reference documents for researching AED equipment",
+      "fr": "Documents de référence pour rechercher de l’équipement DEA"
+    }
+  },
+  "visuals/about": {
+    "src": "/images/visuals/about-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/about-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/about-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/about-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "A collaborative equipment planning discussion",
+      "fr": "Discussion collaborative sur la planification d’équipement"
+    }
+  },
+  "visuals/buying": {
+    "src": "/images/visuals/buying-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/buying-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/buying-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/buying-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "A procurement checklist and equipment planning materials",
+      "fr": "Liste d’achat et documents de planification d’équipement"
+    }
+  },
+  "visuals/costs": {
+    "src": "/images/visuals/costs-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/costs-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/costs-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/costs-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Budget planning materials and replacement supplies",
+      "fr": "Documents budgétaires et fournitures de remplacement"
+    }
+  },
+  "visuals/installation": {
+    "src": "/images/visuals/installation-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/installation-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/installation-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/installation-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "generated",
+    "fit": "cover",
+    "alt": {
+      "en": "Illustration of an installer checking the level of an empty AED cabinet",
+      "fr": "Illustration d’un installateur vérifiant le niveau d’une armoire de DEA vide"
+    }
+  },
+  "visuals/zoll3": {
+    "src": "/images/visuals/zoll3-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/zoll3-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/zoll3-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/zoll3-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "context",
+    "fit": "cover",
+    "alt": {
+      "en": "Illustration of compression-feedback planning beside a training manikin; no ZOLL AED 3 is pictured",
+      "fr": "Illustration de la planification de la rétroaction près d’un mannequin; aucun ZOLL AED 3 n’est représenté"
+    }
+  },
+  "visuals/cr2": {
+    "src": "/images/visuals/cr2-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/cr2-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/cr2-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/cr2-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "context",
+    "fit": "cover",
+    "alt": {
+      "en": "Illustration of AED access planning at a library reception; no LIFEPAK CR2 is pictured",
+      "fr": "Illustration de la planification de l’accès à un DEA dans une bibliothèque; aucun LIFEPAK CR2 n’est représenté"
+    }
+  },
+  "visuals/heartsine": {
+    "src": "/images/visuals/heartsine-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/heartsine-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/heartsine-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/heartsine-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "context",
+    "fit": "cover",
+    "alt": {
+      "en": "Illustration of portable equipment planning with a closed bag and route map; no HeartSine device is pictured",
+      "fr": "Illustration de la planification d’un équipement portable avec sac fermé et carte; aucun appareil HeartSine n’est représenté"
+    }
+  },
+  "visuals/g5": {
+    "src": "/images/visuals/g5-800.webp",
+    "width": 800,
+    "height": 533,
+    "variants": [
+      {
+        "src": "/images/visuals/g5-400.webp",
+        "width": 400,
+        "height": 267
+      },
+      {
+        "src": "/images/visuals/g5-800.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "src": "/images/visuals/g5-1200.webp",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "kind": "context",
+    "fit": "cover",
+    "alt": {
+      "en": "Illustration of staff-readiness planning with a closed equipment case; no Powerheart G5 is pictured",
+      "fr": "Illustration de la préparation du personnel avec une mallette fermée; aucun Powerheart G5 n’est représenté"
+    }
+  },
+  "visuals/zoll-aed-plus": {
+    "src": "/images/visuals/zoll-aed-plus-800.webp",
+    "width": 800,
+    "height": 448,
+    "variants": [
+      {
+        "src": "/images/visuals/zoll-aed-plus-400.webp",
+        "width": 400,
+        "height": 224
+      },
+      {
+        "src": "/images/visuals/zoll-aed-plus-800.webp",
+        "width": 800,
+        "height": 448
+      }
+    ],
+    "kind": "reference",
+    "fit": "contain",
+    "alt": {
+      "en": "Two ZOLL AED Plus units in their carrying cases",
+      "fr": "Deux ZOLL AED Plus dans leurs étuis de transport"
+    },
+    "credit": {
+      "label": "ZOLL AED Plus — Taylor Montgomery",
+      "url": "https://commons.wikimedia.org/wiki/File:Zoll_AED_Plus_units.png",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  },
+  "visuals/philips-heartstart-case": {
+    "src": "/images/visuals/philips-heartstart-case-800.webp",
+    "width": 800,
+    "height": 450,
+    "variants": [
+      {
+        "src": "/images/visuals/philips-heartstart-case-400.webp",
+        "width": 400,
+        "height": 225
+      },
+      {
+        "src": "/images/visuals/philips-heartstart-case-800.webp",
+        "width": 800,
+        "height": 450
+      },
+      {
+        "src": "/images/visuals/philips-heartstart-case-1000.webp",
+        "width": 1000,
+        "height": 563
+      }
+    ],
+    "kind": "reference",
+    "fit": "contain",
+    "alt": {
+      "en": "A Philips HeartStart carrying case in a cabinet; the HS1 device is not visible",
+      "fr": "Un étui Philips HeartStart dans une armoire; le DEA HS1 n’est pas visible"
+    },
+    "credit": {
+      "label": "Philips HeartStart case — GoTheMean",
+      "url": "https://commons.wikimedia.org/wiki/File:PhilipsAED-ZRS.jpg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  },
+  "visuals/electrode-pads": {
+    "src": "/images/visuals/electrode-pads-700.webp",
+    "width": 700,
+    "height": 552,
+    "variants": [
+      {
+        "src": "/images/visuals/electrode-pads-400.webp",
+        "width": 400,
+        "height": 315
+      },
+      {
+        "src": "/images/visuals/electrode-pads-700.webp",
+        "width": 700,
+        "height": 552
+      }
+    ],
+    "kind": "reference",
+    "fit": "contain",
+    "alt": {
+      "en": "Packaged Philips defibrillator electrode pads",
+      "fr": "Électrodes Philips pour défibrillateur dans leur emballage"
+    },
+    "credit": {
+      "label": "Electrodes — © Raimond Spekking",
+      "url": "https://commons.wikimedia.org/wiki/File:Philips_self-adhesive_electrodes_of_adefibrillator-9854.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  },
+  "visuals/aed-cabinet": {
+    "src": "/images/visuals/aed-cabinet-800.webp",
+    "width": 800,
+    "height": 1106,
+    "variants": [
+      {
+        "src": "/images/visuals/aed-cabinet-400.webp",
+        "width": 400,
+        "height": 553
+      },
+      {
+        "src": "/images/visuals/aed-cabinet-800.webp",
+        "width": 800,
+        "height": 1106
+      },
+      {
+        "src": "/images/visuals/aed-cabinet-1000.webp",
+        "width": 1000,
+        "height": 1383
+      }
+    ],
+    "kind": "reference",
+    "fit": "contain",
+    "alt": {
+      "en": "An AED in a wall-mounted cabinet with location signage",
+      "fr": "Un DEA dans une armoire murale avec une enseigne de localisation"
+    },
+    "credit": {
+      "label": "AED cabinet — © BrokenSphere",
+      "url": "https://commons.wikimedia.org/wiki/File:Philips_Automated_External_Defibrillator_in_Tanforan.JPG",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  },
+  "visuals/aed-care": {
+    "src": "/images/visuals/aed-care-700.webp",
+    "width": 700,
+    "height": 890,
+    "variants": [
+      {
+        "src": "/images/visuals/aed-care-400.webp",
+        "width": 400,
+        "height": 509
+      },
+      {
+        "src": "/images/visuals/aed-care-700.webp",
+        "width": 700,
+        "height": 890
+      }
+    ],
+    "kind": "reference",
+    "fit": "contain",
+    "alt": {
+      "en": "An open Powerheart AED G3 with electrodes inside the lid",
+      "fr": "Un Powerheart AED G3 ouvert avec des électrodes dans le couvercle"
+    },
+    "credit": {
+      "label": "Open AED — Owain Davies",
+      "url": "https://commons.wikimedia.org/wiki/File:AED_open_cutout.jpg",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+    }
+  },
+  "visuals/philips-frx-case": {
+    "src": "/images/visuals/philips-frx-case-800.webp",
+    "width": 800,
+    "height": 1200,
+    "variants": [
+      {
+        "src": "/images/visuals/philips-frx-case-400.webp",
+        "width": 400,
+        "height": 600
+      },
+      {
+        "src": "/images/visuals/philips-frx-case-800.webp",
+        "width": 800,
+        "height": 1200
+      },
+      {
+        "src": "/images/visuals/philips-frx-case-1200.webp",
+        "width": 1200,
+        "height": 1800
+      }
+    ],
+    "kind": "reference",
+    "fit": "contain",
+    "alt": {
+      "en": "A Philips HeartStart FRx carrying case in a station cabinet; the device is not visible",
+      "fr": "Un étui Philips HeartStart FRx dans l’armoire d’une gare; l’appareil n’est pas visible"
+    },
+    "credit": {
+      "label": "Philips FRx case — Pnapora",
+      "url": "https://commons.wikimedia.org/wiki/File:AED_Wroclaw_main_station_2013_P01.JPG",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  },
+  "visuals/lifeline-view": {
+    "src": "/images/visuals/lifeline-view-698.webp",
+    "width": 698,
+    "height": 400,
+    "variants": [
+      {
+        "src": "/images/visuals/lifeline-view-400.webp",
+        "width": 400,
+        "height": 229
+      },
+      {
+        "src": "/images/visuals/lifeline-view-698.webp",
+        "width": 698,
+        "height": 400
+      }
+    ],
+    "kind": "reference",
+    "fit": "contain",
+    "alt": {
+      "en": "Three reference views of the Defibtech Lifeline VIEW",
+      "fr": "Trois vues de référence du Defibtech Lifeline VIEW"
+    },
+    "credit": {
+      "label": "Lifeline VIEW — Puradigm",
+      "url": "https://commons.wikimedia.org/wiki/File:Lifeline_View_(Defibtech).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  }
+}

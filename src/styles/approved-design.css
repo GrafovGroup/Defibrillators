@@ -206,6 +206,11 @@
   height: auto;
   aspect-ratio: 360 / 165;
 }
+.service-photo img[data-visual] {
+  object-fit: cover;
+  object-position: center;
+  padding: 0;
+}
 .service-content {
   padding: 15px 18px 17px;
 }

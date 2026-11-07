@@ -1,4 +1,5 @@
-import type { Localized, pageImages } from './pages';
+import { pageVisuals, visuals } from './visuals.ts';
+import type { Localized } from './pages';
 import type { PageId } from './routes';
 import type { ModelId } from './model-options';
 export interface ProductReference {
@@ -6,7 +7,7 @@ export interface ProductReference {
   guidanceMode: 'voice' | 'feedback' | 'video';
   manufacturer: string;
   model: string;
-  image: keyof typeof pageImages | null;
+  image: string | null;
   source: { label: string; url: string; reviewed: string };
   guidance: Localized<string>;
   electrodes: Localized<string>;
@@ -251,7 +252,10 @@ const references = [
 export const products: ProductReference[] = references.map((reference) => ({
   ...reference,
   id: reference.id as ProductReference['id'],
-  image: reference.image as ProductReference['image'],
+  image:
+    visuals[pageVisuals[reference.id as ModelId]!]!.kind === 'reference'
+      ? pageVisuals[reference.id as ModelId]!
+      : null,
   guidanceMode: reference.guidanceMode as ProductReference['guidanceMode'],
   related: reference.related as PageId[],
   licensing: 'unverified',
@@ -283,24 +287,16 @@ export const products: ProductReference[] = references.map((reference) => ({
     checkedAt: null,
   },
   quoteOnly: true,
-  imageProvenance:
-    reference.id === 'zoll'
+  imageProvenance: (() => {
+    const credit = visuals[pageVisuals[reference.id as ModelId]!]!.credit;
+    return credit
       ? {
-          sourceUrl:
-            'https://commons.wikimedia.org/wiki/File:Zoll_AED_Plus_units.png',
-          author: 'Taylor Montgomery',
-          licence: 'CC BY-SA 4.0',
-          licenceUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
-          exactSuppliedConfiguration: false,
+          sourceUrl: credit.url,
+          author: credit.label,
+          licence: credit.license,
+          licenceUrl: credit.licenseUrl,
+          exactSuppliedConfiguration: false as const,
         }
-      : reference.id === 'philips'
-        ? {
-            sourceUrl:
-              'https://commons.wikimedia.org/wiki/File:PhilipsAED-ZRS.jpg',
-            author: 'GoTheMean / Wikimedia Commons',
-            licence: 'CC0 1.0',
-            licenceUrl: 'https://creativecommons.org/publicdomain/zero/1.0/',
-            exactSuppliedConfiguration: false,
-          }
-        : null,
+      : null;
+  })(),
 }));

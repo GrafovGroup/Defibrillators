@@ -1,6 +1,7 @@
 import { searchConfig } from '../src/lib/site-config.ts';
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import { credits } from '../src/data/credits.ts';
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -117,7 +118,7 @@ for (const lang of ['en', 'fr']) {
     assert.equal($('meta[name="robots"]').attr('content'), searchConfig.robots);
     assert.equal($('.skip-link').attr('href'), '#main');
     assert.equal($('#main').attr('tabindex'), '-1');
-    assert.equal($('.photo-credits li').length, 6);
+    assert.equal($('.photo-credits li').length, credits.length);
     assert.ok($('meta[name="description"]').attr('content').length > 60);
   });
 }

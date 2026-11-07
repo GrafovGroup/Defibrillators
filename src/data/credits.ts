@@ -1,5 +1,17 @@
 export const credits = [
   {
+    label: 'Philips FRx case — Pnapora / Wikimedia Commons (resized)',
+    url: 'https://commons.wikimedia.org/wiki/File:AED_Wroclaw_main_station_2013_P01.JPG',
+    license: 'CC BY-SA 3.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
+  },
+  {
+    label: 'Lifeline VIEW — Puradigm / Wikimedia Commons (resized)',
+    url: 'https://commons.wikimedia.org/wiki/File:Lifeline_View_(Defibtech).jpg',
+    license: 'CC BY-SA 4.0',
+    licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+  },
+  {
     label: 'Philips HeartStart case — GoTheMean / Wikimedia Commons',
     url: 'https://commons.wikimedia.org/wiki/File:PhilipsAED-ZRS.jpg',
     license: 'CC0 1.0',

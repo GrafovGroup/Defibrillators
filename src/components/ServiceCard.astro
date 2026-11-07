@@ -1,6 +1,9 @@
 ---
-import ApprovedScene from './ApprovedScene.astro';
+import PageVisual from './PageVisual.astro';
+import { pageVisuals } from '../data/visuals';
+import type { Locale } from '../data/content';
 interface Props {
+  lang: Locale;
   id: 'equipment' | 'accessories' | 'installation' | 'maintenance';
   href: string;
   image: string;
@@ -9,12 +12,16 @@ interface Props {
   link: string;
   alt: string;
 }
-const { id, image, title, text, link, alt, href } = Astro.props;
+const { id, image, title, text, link, lang, href } = Astro.props;
 ---
 
 <article class="service-card" id={id}>
   <div class={`service-photo photo-${image}`}>
-    <ApprovedScene scene={id} alt={alt} />
+    <PageVisual
+      image={pageVisuals[id === 'equipment' ? 'defibrillators' : id]!}
+      lang={lang}
+      sizes="(max-width: 480px) calc(100vw - 40px), (max-width: 900px) 44vw, 280px"
+    />
   </div>
   <div class="service-content">
     <h3>

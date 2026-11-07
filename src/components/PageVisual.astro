@@ -1,0 +1,32 @@
+---
+import { visuals } from '../data/visuals';
+import type { Locale } from '../data/content';
+interface Props {
+  image: string;
+  lang: Locale;
+  priority?: boolean;
+  sizes?: string;
+}
+const {
+  image,
+  lang,
+  priority = false,
+  sizes = '(max-width: 767px) calc(100vw - 40px), (max-width: 1240px) 44vw, 540px',
+} = Astro.props;
+const visual = visuals[image];
+if (!visual) throw new Error(`Missing visual: ${image}`);
+---
+
+<img
+  src={visual.src}
+  srcset={visual.variants.map((v) => `${v.src} ${v.width}w`).join(', ')}
+  sizes={sizes}
+  width={visual.width}
+  height={visual.height}
+  alt={visual.alt[lang]}
+  loading={priority ? 'eager' : 'lazy'}
+  fetchpriority={priority ? 'high' : 'auto'}
+  decoding="async"
+  data-visual={image}
+  data-fit={visual.fit}
+/>

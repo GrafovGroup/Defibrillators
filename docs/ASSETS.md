@@ -38,3 +38,9 @@ Inter Variable 5.3.0 is locally bundled through Fontsource under the SIL Open Fo
 The original PNG is preserved in the workspace output as `approved-homepage-original.png`; the logo selection sheet is `approved-logo-concepts-original.png`. The website version is a 1536 × 1024 WebP (quality 72, 136,932 bytes). `ApprovedScene.astro` frames its hero and four image areas using SVG viewports. Conversion is compression only; the selected scene has not been regenerated or altered. The full mockup is never displayed as a flattened webpage. The browser fetches one shared illustration for the five frames, preloaded on the homepage. Actual text, navigation, controls and layout remain HTML/CSS.
 
 The visible illustration notes and bilingual image credits distinguish this artwork from the unchanged licensed real photographs used elsewhere. Do not reuse these illustrative branded device depictions as product-specification images or schema evidence.
+
+## Page imagery enrichment — 7 November 2026
+
+The owner's subsequent imagery request replaces the four homepage service-card crops with four distinct subject images, preserving the approved hero, logo and layout. The shared approved scene is now used only by the homepage hero. Fifty distinct visuals cover product, accessory, service, industry and planning pages; EN/FR equivalents and previews of the same subject share their visual identity. See [PAGE_IMAGERY.md](PAGE_IMAGERY.md) for the final generation prompts, new photo licences, source review and responsive asset pipeline.
+
+The new reference derivatives in `public/images/visuals/` retain the original licences above and use contained rendering so device and case details are not cropped. Original illustration PNGs remain in workspace output. The production package contains only optimized WebP variants. Generated scenes are labelled and are not asserted as product photos in Product schema.

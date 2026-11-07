@@ -17,7 +17,9 @@ import { cityCatalogue, type CityId } from '../../data/city-catalogue';
 import { offeringIds, type OfferingId } from '../../data/offering-routes';
 import { enquiryPath } from '../../lib/enquiry';
 import EnquiryActions from '../../components/EnquiryActions.astro';
-import { pages, pageImages, type DetailPage } from '../../data/pages';
+import { pages, type DetailPage } from '../../data/pages';
+import PageVisual from '../../components/PageVisual.astro';
+import { visuals, visualCaption } from '../../data/visuals';
 import { products } from '../../data/products';
 import { pathFor, labelFor, routes } from '../../data/routes';
 import type { Locale } from '../../data/content';
@@ -114,18 +116,10 @@ const isLegal = ['privacy', 'terms', 'accessibility'].includes(page.id);
           </figure>
         ) : (
           page.image && (
-            <figure>
-              <img
-                src={`/images/${page.image}.webp`}
-                width="800"
-                height="600"
-                alt={pageImages[page.image][lang]}
-                fetchpriority="high"
-              />
+            <figure class="page-visual">
+              <PageVisual image={page.image} lang={lang} priority />
               <figcaption>
-                {lang === 'en'
-                  ? 'Illustrative photograph · equipment and configuration to be confirmed'
-                  : 'Photo à titre indicatif · équipement et configuration à confirmer'}
+                {visualCaption(visuals[page.image], lang)}
               </figcaption>
             </figure>
           )

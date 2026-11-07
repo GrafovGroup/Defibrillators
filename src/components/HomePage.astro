@@ -27,6 +27,7 @@ const c = content[lang];
           {c.cards.map((card) => (
             <ServiceCard
               {...card}
+              lang={lang}
               href={pathFor(
                 (card.id === 'equipment'
                   ? 'defibrillators'

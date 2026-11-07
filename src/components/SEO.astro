@@ -3,6 +3,7 @@ import { content, type Locale } from '../data/content';
 import { pathFor, labelFor, type PageId } from '../data/routes';
 import { pageFor } from '../data/pages';
 import { searchConfig, siteOrigin, safeJson } from '../lib/site-config';
+import { visuals } from '../data/visuals';
 import { structuredData } from '../lib/structured-data';
 interface Props {
   lang: Locale;
@@ -21,10 +22,13 @@ const title = page
   : content[lang].title;
 const description = page?.intro[lang] ?? content[lang].description;
 const canonical = `https://defibrillators.ca${pathFor(pageId, lang)}`;
+const visual = page?.image ? visuals[page.image] : undefined;
 const image =
-  page?.kind === 'product' && !page.image
-    ? null
-    : `/images/${page?.image ?? 'aed-cabinet'}.webp`;
+  visual?.variants.at(-1)?.src ??
+  (pageId === 'home' ? '/images/approved-homepage-art.webp' : undefined);
+const imageAlt = visual?.alt[lang] ?? content[lang].heroNote;
+const imageWidth = visual?.variants.at(-1)?.width ?? 1536;
+const imageHeight = visual?.variants.at(-1)?.height ?? 1024;
 ---
 
 <title>{title}</title>
@@ -60,8 +64,18 @@ const image =
   content={lang === 'en' ? 'fr_CA' : 'en_CA'}
 />
 <meta property="og:site_name" content="Defibrillators.ca" />
-{image && <meta property="og:image" content={siteOrigin + image} />}
-<meta name="twitter:card" content="summary" />
+{image && (
+  <>
+    <meta property="og:image" content={siteOrigin + image} />
+    <meta property="og:image:alt" content={imageAlt} />
+    <meta property="og:image:width" content={String(imageWidth)} />
+    <meta property="og:image:height" content={String(imageHeight)} />
+    <meta property="og:image:type" content="image/webp" />
+    <meta name="twitter:image" content={siteOrigin + image} />
+    <meta name="twitter:image:alt" content={imageAlt} />
+  </>
+)}
+<meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
 <script
   is:inline
   type="application/ld+json"

@@ -1,6 +1,7 @@
 ---
 import { pathFor, labelFor } from '../data/routes';
-import { pageImages } from '../data/pages';
+import { pageVisuals, visuals } from '../data/visuals';
+import PageVisual from './PageVisual.astro';
 import type { Locale } from '../data/content';
 import type { ProductReference } from '../data/products';
 interface Props {
@@ -8,6 +9,7 @@ interface Props {
   product: ProductReference;
 }
 const { lang, product } = Astro.props;
+const image = pageVisuals[product.id];
 ---
 
 <article
@@ -21,15 +23,18 @@ const { lang, product } = Astro.props;
     lang,
   )}
 >
-  {product.image ? (
+  {image ? (
     <div class="product-photo">
-      <img
-        src={`/images/${product.image}.webp`}
-        width="640"
-        height="420"
-        alt={pageImages[product.image][lang]}
-        loading="lazy"
+      <PageVisual
+        image={image}
+        lang={lang}
+        sizes="(max-width: 767px) calc(100vw - 80px), 480px"
       />
+      {visuals[image].kind === 'context' && (
+        <span class="visual-label">
+          {lang === 'en' ? 'Illustrative setting' : 'Contexte illustratif'}
+        </span>
+      )}
     </div>
   ) : (
     <div class="product-reference" aria-hidden="true">

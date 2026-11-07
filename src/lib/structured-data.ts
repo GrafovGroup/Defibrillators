@@ -1,6 +1,7 @@
 import { content, contact, type Locale } from '../data/content.ts';
 import { labelFor, pathFor, type PageId } from '../data/routes.ts';
 import { pageFor } from '../data/pages.ts';
+import { visuals } from '../data/visuals.ts';
 import { products } from '../data/products.ts';
 import { breadcrumbIds } from './breadcrumbs.ts';
 import { siteOrigin } from './site-config.ts';
@@ -52,6 +53,26 @@ export function structuredData(
     inLanguage: `${lang}-CA`,
     isPartOf: { '@id': `${siteOrigin}/#website` },
   };
+  if (page?.image) {
+    const visual = visuals[page.image];
+    const largest = visual.variants.at(-1)!;
+    webpage.primaryImageOfPage = { '@id': `${url}#image` };
+    graph.push({
+      '@type': 'ImageObject',
+      '@id': `${url}#image`,
+      contentUrl: siteOrigin + largest.src,
+      width: largest.width,
+      height: largest.height,
+      caption: visual.alt[lang],
+      ...(visual.credit
+        ? {
+            creditText: visual.credit.label,
+            license: visual.credit.licenseUrl,
+            acquireLicensePage: visual.credit.url,
+          }
+        : {}),
+    });
+  }
   if (id !== 'home') {
     webpage.breadcrumb = { '@id': `${url}#breadcrumb` };
     graph.push({
