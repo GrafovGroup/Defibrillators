@@ -1,6 +1,8 @@
 node_modules/
 dist/
 .astro/
+.release/
+docs/search/*.tmp
 .env
 .env.*
 !.env.example

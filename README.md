@@ -2,7 +2,7 @@
 
 Phases 0–5 of `MASTER_PROMPT.md`: bilingual homepages, core product/service pages, RFQs, location planning guides, SEO, technical QA and WHC deployment using the approved modern wordmark and design system. Static Astro output, with no production Node process. The verified release is live at [Defibrillators.ca](https://defibrillators.ca/), with the approved design preserved. The owner authorized Google/Bing indexing and national city/product/service expansion on 7 November 2026. See `docs/EXPANSION-AND-SEARCH.md` for the current release and search-submission record, and `docs/PHASE-5.md` for the original hosting verification.
 
-The latest enquiry refinement simplifies both quote forms. The owner-authorized GA4 integration adds optional bilingual consent and sanitized enquiry events. See [docs/ANALYTICS.md](docs/ANALYTICS.md) and [docs/ENQUIRY-REFINEMENT.md](docs/ENQUIRY-REFINEMENT.md) for scope, checks and deployment evidence.
+The current site has no analytics popup or Google Analytics tracking. The bilingual forms remain active. Search discovery uses crawlable static pages, the canonical sitemap and a post-deployment IndexNow command. See [docs/INDEXNOW.md](docs/INDEXNOW.md) for the release workflow and [docs/ANALYTICS-REMOVAL-AND-DISCOVERY.md](docs/ANALYTICS-REMOVAL-AND-DISCOVERY.md) for the analytics removal.
 
 The homepage and shared logo/header were restored to the owner’s selected mockup on 7 November 2026. Both homepages now use the exact owner-approved concept artwork as an illustration, with real HTML content and controls. See `docs/DESIGN-SYSTEM.md` and `docs/ASSETS.md` for the reference and scope.
 
@@ -24,16 +24,16 @@ For local accessibility and form QA after a build, use `pnpm qa:preview`. It run
 ## Implemented routes
 
 - `/`: opens the English homepage directly. WHC redirects to `/en/`; other static hosts render the same complete homepage without JavaScript or a preliminary screen. The header retains the EN/FR switch. See `AGENTS.md` for the owner's permanent preference against language-selection gates.
-- `/en/` and `/fr/`: complete localized homepages and 115 additional pages per language (232 localized pages).
+- `/en/` and `/fr/`: complete localized homepages and 116 additional pages per language (234 localized pages).
 - Catalogue, eight manufacturer reference profiles, selectable comparison, model-first parts finder and four package planning paths; five accessory categories; four service pages and a service hub; nine industry pages and an industry hub; resources, buying/readiness/ownership-budget guides, about, contact, quote enquiries, FAQs, privacy, terms and accessibility.
 - Twelve focused product/service pages: adult pads, paediatric pads/keys, combined packs, trainers, carrying cases, outdoor cabinets, site assessments, cabinet mounting, readiness checks, expiry tracking, post-use replenishment and asset inventories.
 - `/404.html`: bilingual not-found page. Configure the host to return this with HTTP 404.
 - `/en/locations/` and `/fr/regions/`: a national planning hub, all 13 provinces/territories and 45 city/metropolitan guides covering all 41 Statistics Canada 2021 CMAs plus the remaining provincial/territorial capitals, with locator maps and project-specific briefs. These are not claims of local offices or guaranteed service coverage.
-- `/sitemap.xml`: 232 canonical URLs, excluding the redirected root, queries, assets and the error page. Reciprocal hreflang is supplied in HTML.
+- `/sitemap.xml`: 234 canonical URLs, excluding the redirected root, queries, assets and the error page. Reciprocal hreflang is supplied in HTML.
 
 Navigation, homepage cards and related links reach the localized pages. The language switch retains page identity. The catalogue supports accessible search, manufacturer and guidance-feature filtering, with every profile available without JavaScript. City, service, part and package context carries into the RFQ; request-specific optional fields support replacement supplies and training. See `docs/ROUTES.md` for the complete route pairs and `docs/COMPETITOR-AUDIT.md` for the six-site audit and implementation decisions.
 
-Product profiles contain manufacturer reference information, not confirmed inventory. Exact Canadian licensing, supply, price, included items and warranty remain unverified. Quote pages provide separate bilingual commercial and residential forms using the owner-supplied Formspree endpoint. Native HTML POST is progressively enhanced with Vanilla JavaScript for localized errors and success feedback. No React, private API key or production Node server is needed. There is no checkout or client-side storage of enquiry data. Optional GA4 loads only after consent; its browser choice is stored separately from form data.
+Product profiles contain manufacturer reference information, not confirmed inventory. Exact Canadian licensing, supply, price, included items and warranty remain unverified. Quote pages provide separate bilingual commercial and residential forms using the owner-supplied Formspree endpoint. Native HTML POST is progressively enhanced with Vanilla JavaScript for localized errors and success feedback. No React, private API key or production Node server is needed. There is no checkout or client-side storage of enquiry data. There is no external analytics tag or consent popup.
 
 ## Source map
 
@@ -67,4 +67,4 @@ To regenerate logos on a Mac with the licensed system fonts: `node scripts/gener
 
 ## Launch dependencies
 
-The current expansion passes 526 tests and 332 page/viewport accessibility and responsive checks. Phase 5 verified live DNS, SSL, redirects, file integrity, bilingual enquiries, compression and core interactions for the preceding release. These checks are not full accessibility certification or field Core Web Vitals measurements. Supplier/regulatory/privacy verification, operating commitments, formal French review and assistive-technology testing remain business-review items. The owner has explicitly authorized search submission; preserve indexable production settings and factual, limited product/service claims. See `docs/EXPANSION-AND-SEARCH.md` for the current deployment and submission status.
+Release-specific test counts and browser evidence are recorded in the relevant documents under `docs/qa/`; run `pnpm verify` for the current implementation. Phase 5 verified live DNS, SSL, redirects, file integrity, bilingual enquiries, compression and core interactions for the preceding release. These checks are not full accessibility certification or field Core Web Vitals measurements. Supplier/regulatory/privacy verification, operating commitments, formal French review and assistive-technology testing remain business-review items. The owner has explicitly authorized search submission; preserve indexable production settings and factual, limited product/service claims. See `docs/EXPANSION-AND-SEARCH.md` for the current deployment and submission status.

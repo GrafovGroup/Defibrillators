@@ -31,7 +31,7 @@ export const partReferences: Partial<
   view: {
     adult: 'DDP-2001',
     child: 'DDP-2002',
-    battery: null,
+    battery: 'DCF-2003',
     source: 'https://www.defibtech.com/products/lifeline-view-aed/',
     reviewed: '2026-11-07',
   },

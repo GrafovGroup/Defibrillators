@@ -2,6 +2,7 @@
 import type { ModelId } from '../data/model-options';
 import type { Locale } from '../data/content';
 import { partReferences } from '../data/part-references';
+import { labelFor } from '../data/routes';
 interface Props {
   model: ModelId;
   lang: Locale;
@@ -12,9 +13,16 @@ const t = (en: string, fr: string) => (lang === 'en' ? en : fr);
 ---
 
 {parts && (
-  <section class="part-references">
-    <h3>
-      {t('Manufacturer part references', 'Références de pièces du fabricant')}
+  <section
+    class="part-references"
+    id={`replacement-parts-${model}`}
+    aria-labelledby={`replacement-parts-heading-${model}`}
+  >
+    <h3 id={`replacement-parts-heading-${model}`}>
+      {t(
+        `Which replacement parts does the ${labelFor(model, lang)} use?`,
+        `Quelles pièces de remplacement pour le ${labelFor(model, lang)}?`,
+      )}
     </h3>
     <ul>
       <li>
@@ -41,8 +49,9 @@ const t = (en: string, fr: string) => (lang === 'en' ? en : fr);
       )}{' '}
       <a href={parts.source}>
         {t('Manufacturer documentation', 'Documentation du fabricant')}
-      </a>
-      .
+      </a>{' '}
+      · {t('Reference checked', 'Référence consultée le')}{' '}
+      <time datetime={parts.reviewed}>{parts.reviewed}</time>.
     </p>
   </section>
 )}

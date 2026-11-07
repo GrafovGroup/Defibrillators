@@ -249,7 +249,12 @@ test('Comparison exposes row and column headings and a keyboard-scrollable regio
     const $ = htmlAt(route);
     assert.equal($('caption').length, 1);
     assert.equal($('thead th[scope="col"]').length, products.length + 1);
-    assert.equal($('tbody th[scope="row"]').length, 4);
+    assert.equal($('tbody th[scope="row"]').length, 7);
+    assert.ok(
+      $('td[data-compare-model="frx"] a[href$="#replacement-parts-frx"]')
+        .length,
+    );
+    assert.match($('td[data-compare-model="view"]').text(), /DCF-2003/);
     assert.ok($('.comparison-note').text().length > 80);
     assert.equal(
       $('.comparison-scroll[tabindex="0"][role="region"]').length,

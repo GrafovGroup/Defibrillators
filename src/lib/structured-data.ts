@@ -6,6 +6,7 @@ import { products } from '../data/products.ts';
 import { breadcrumbIds } from './breadcrumbs.ts';
 import { siteOrigin } from './site-config.ts';
 import { business } from '../data/business.ts';
+import { partReferences } from '../data/part-references.ts';
 
 type Node = Record<string, unknown>;
 export function structuredData(
@@ -144,6 +145,13 @@ export function structuredData(
   const product = products.find((product) => product.id === id);
   if (product) {
     webpage.mainEntity = { '@id': `${url}#product` };
+    webpage.citation = [
+      ...new Set(
+        [product.source.url, partReferences[product.id]?.source].filter(
+          Boolean,
+        ),
+      ),
+    ];
     graph.push({
       '@type': 'Product',
       '@id': `${url}#product`,

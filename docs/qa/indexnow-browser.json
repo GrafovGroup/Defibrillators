@@ -1,0 +1,140 @@
+{
+  "checkedAt": "2026-11-07T21:04:01.128Z",
+  "checks": [
+    {
+      "path": "/en/defibrillators/compare/",
+      "width": 1920,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 51,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/en/defibrillators/compare/",
+      "width": 1440,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 51,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/fr/defibrillateurs/comparer/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": [
+                "tr:nth-child(1) > td[data-compare-model=\"philips\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": ["tr:nth-child(2) > td[data-compare-model=\"zoll\"]"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "tr:nth-child(2) > td[data-compare-model=\"philips\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": ["tr:nth-child(3) > td[data-compare-model=\"zoll\"]"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "tr:nth-child(3) > td[data-compare-model=\"philips\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": ["tr:nth-child(4) > td[data-compare-model=\"zoll\"]"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "tr:nth-child(4) > td[data-compare-model=\"philips\"] > a"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": ["tr:nth-child(5) > td[data-compare-model=\"zoll\"]"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "tr:nth-child(5) > td[data-compare-model=\"philips\"] > a"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": ["tr:nth-child(6) > td[data-compare-model=\"zoll\"]"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "tr:nth-child(6) > td[data-compare-model=\"philips\"] > a"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "tr:nth-child(7) > td[data-compare-model=\"philips\"] > a"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ]
+        }
+      ],
+      "passes": 52,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/fr/defibrillateurs/philips-heartstart-frx/",
+      "width": 360,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 42,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/en/defibrillators/defibtech-lifeline-view/",
+      "width": 1024,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 42,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/en/accessories/find-parts/",
+      "width": 768,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 47,
+      "overflow": false,
+      "brokenImages": []
+    }
+  ],
+  "interactions": [
+    "FRx/VIEW comparison selects preserve column order and part references",
+    "DCF-2003 comparison link reaches the VIEW replacement section",
+    "Parts finder selects VIEW and shows the cited DCF-2003 reference"
+  ],
+  "noProductionLeadSent": true
+}

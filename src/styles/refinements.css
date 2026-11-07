@@ -111,7 +111,7 @@
 .product-source {
   font-size: 0.875rem;
 }
-.product-source summary {
+.product-source h3 {
   padding-block: 12px;
 }
 .budget-tool {

@@ -63,16 +63,21 @@ const t = (en: string, fr: string) => (lang === 'en' ? en : fr);
     </a>
   </p>
   <PartReferences model={product.id} lang={lang} />
-  <details class="product-source">
-    <summary>
+  <section
+    class="product-source"
+    id="manufacturer-source"
+    aria-labelledby="manufacturer-source-heading"
+  >
+    <h3 id="manufacturer-source-heading">
       {t(
         'Manufacturer source and Canadian configuration',
         'Source du fabricant et configuration canadienne',
       )}
-    </summary>
+    </h3>
     <p>
       <a href={product.source.url}>{product.source.label}</a> ·{' '}
-      {t('Reviewed', 'Consultée le')} {product.source.reviewed}
+      {t('Reviewed', 'Consultée le')}{' '}
+      <time datetime={product.source.reviewed}>{product.source.reviewed}</time>
     </p>
     <p>
       {t(
@@ -86,5 +91,5 @@ const t = (en: string, fr: string) => (lang === 'en' ? en : fr);
         'Recherche d’homologation de Santé Canada',
       )}
     </a>
-  </details>
+  </section>
 </section>

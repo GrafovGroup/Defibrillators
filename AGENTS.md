@@ -8,3 +8,5 @@
 - The owner explicitly authorized Google and Bing indexing on 7 November 2026 with the city/product/service expansion. Keep the production launch indexable and retain the public verification tags. This authorization does not establish unverified licensing, inventory, prices, local offices or service-provider claims.
 
 - On 7 November 2026 the owner requested removal of the analytics warning and popup/preferences control. The Google Analytics integration is retired; do not silently re-enable tracking or restore the popup. Formspree enquiries and search-engine verification remain active.
+
+- IndexNow is authorized by the owner for the WHC release workflow. After each verified production upload, inspect `pnpm indexnow` and run `pnpm indexnow:submit`; commit the successful receipt/state. Build/test commands must never submit. Preserve `docs/search/indexnow-state.json` so unchanged URLs are not repeatedly sent, and follow `docs/INDEXNOW.md`. The initial `--bootstrap` flag is only for deliberate first activation or a reviewed state recovery.

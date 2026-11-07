@@ -1,5 +1,6 @@
 ---
 import { products } from '../data/products';
+import { partReferences } from '../data/part-references';
 import { pathFor, labelFor } from '../data/routes';
 import type { Locale } from '../data/content';
 interface Props {
@@ -81,6 +82,46 @@ const rows = [
           ))}
         </tr>
       ))}
+      {(['adult', 'child', 'battery'] as const).map((part) => (
+        <tr>
+          <th scope="row">
+            {
+              {
+                adult:
+                  lang === 'en'
+                    ? 'Adult pad reference'
+                    : 'Référence des électrodes adultes',
+                child:
+                  lang === 'en'
+                    ? 'Paediatric pads / key'
+                    : 'Électrodes / clé pédiatriques',
+                battery:
+                  lang === 'en'
+                    ? 'Standard battery reference'
+                    : 'Référence de la batterie standard',
+              }[part]
+            }
+          </th>
+          {products.map((p) => (
+            <td data-compare-model={p.id}>
+              {partReferences[p.id]?.[part] ? (
+                <a href={`${pathFor(p.id, lang)}#replacement-parts-${p.id}`}>
+                  {partReferences[p.id]![part]}
+                  {part === 'child' && p.id === 'frx'
+                    ? lang === 'en'
+                      ? ' (Infant/Child Key)'
+                      : ' (clé nourrisson/enfant)'
+                    : ''}
+                </a>
+              ) : lang === 'en' ? (
+                'Confirm the exact configuration'
+              ) : (
+                'Confirmer la configuration exacte'
+              )}
+            </td>
+          ))}
+        </tr>
+      ))}
       <tr>
         <th scope="row">{lang === 'en' ? 'Source' : 'Source'}</th>
         {products.map((p) => (
@@ -94,8 +135,8 @@ const rows = [
 </div>
 <p class="comparison-note">
   {lang === 'en'
-    ? 'Before ordering, confirm the exact Canadian device licence, price, availability and warranty in your written quote.'
-    : 'Avant de commander, confirmez l’homologation canadienne de l’appareil exact, le prix, la disponibilité et la garantie dans votre soumission écrite.'}
+    ? 'Part numbers are manufacturer references. Match your device label and current manual; regional and aviation configurations can differ. Before ordering, confirm the exact Canadian device licence, price, availability and warranty in your written quote.'
+    : 'Les numéros de pièces sont des références du fabricant. Vérifiez l’étiquette et le manuel actuel; les configurations régionales et d’aviation peuvent différer. Avant de commander, confirmez l’homologation canadienne de l’appareil exact, le prix, la disponibilité et la garantie dans votre soumission écrite.'}
 </p>
 
 <script>

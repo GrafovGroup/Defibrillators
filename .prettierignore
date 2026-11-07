@@ -1,6 +1,7 @@
 node_modules
 dist
 .astro
+.release
 pnpm-lock.yaml
 MASTER_PROMPT.md
 public/brand/*.svg

@@ -2,13 +2,9 @@
 
 ## Current delivery scope
 
-Consent-gated GA4 is live as of 7 November 2026. All 283 checked public files and 233 page security policies match the release, and GA4 Realtime received both English and French page views. Google now reports sitemap Success with 232 discovered URLs. See [ANALYTICS.md](ANALYTICS.md) for configuration and evidence.
+The static English/French website is live on the dedicated WHC document root. The approved design and direct English root entry are preserved. There are 234 canonical localized pages, plus the root fallback and custom 404. GA4 and its consent/preferences controls were removed at the owner's request; see [ANALYTICS-REMOVAL-AND-DISCOVERY.md](ANALYTICS-REMOVAL-AND-DISCOVERY.md).
 
-The bilingual enquiry refinement is also live as of 7 November 2026: all 281 checked public files and 233 HTML security policies match the tested release. The subsequent consent-gated GA4 release is documented in [ANALYTICS.md](ANALYTICS.md). See [ENQUIRY-REFINEMENT.md](ENQUIRY-REFINEMENT.md) for the latest release evidence.
-
-The national city/product/service expansion is live on WHC as of 7 November 2026, including the direct English homepage and the restored approved design. The deployment matched all 279 checked public files and all 233 HTML security policies. Both forms and primary/secondary-domain redirects have earlier live verification evidence in [PHASE-5.md](PHASE-5.md). The expansion includes the owner-authorized search launch; see [EXPANSION-AND-SEARCH.md](EXPANSION-AND-SEARCH.md) for its verification and search-submission record. Detailed hosting-account, server and historical operations records are kept outside this repository.
-
-The current expansion build contains 234 HTML files (232 localized pages, an English homepage fallback at the root and a custom 404) and 232 canonical sitemap entries. WHC redirects the root directly to `/en/`; no language-selection screen is used. It includes the restored approved design, 45 city/metropolitan guides, all 13 provinces/territories, eight manufacturer reference profiles, parts and package planning, twelve focused offerings and bilingual quote forms. See `EXPANSION-AND-SEARCH.md` for the latest implementation, validation and deployment status.
+The current discovery release adds IndexNow and improves manufacturer/part references. Follow [INDEXNOW.md](INDEXNOW.md) after every verified deployment. The public ownership key belongs in the document root; release manifests, notification state, scripts, source and archives do not. Historical release evidence remains under `docs/qa/` and hosting account details remain outside this repository.
 
 ## Build and package
 
@@ -16,7 +12,7 @@ Run `pnpm verify` from the repository with the supported Node version. `pnpm bui
 
 Upload the complete contents of `dist/`, including the root and every nested hidden `.htaccess` file and all `_astro`, `brand`, `images` and `maps` assets. Keep source code, environment files, internal records and upload archives outside the public document root. Do not combine HTML from one build with security headers from another.
 
-The parts finder uses a same-origin GET navigation to the quote page. Content Security Policy allows that navigation and the configured Formspree POST destination. Inline scripts are authorized by generated hashes; do not replace that restriction with unrestricted inline JavaScript. The expansion emits 233 `.htaccess` files: the root policy and a policy in each localized page directory. Each page policy includes its own scripts and the root/404 fallback scripts, keeping every response below the existing 7.5 KB header budget. Upload these files together and verify each deployed HTML response against its expected policy.
+The parts finder uses a same-origin GET navigation to the quote page. Content Security Policy allows that navigation and the configured Formspree POST destination. Inline scripts are authorized by generated hashes; do not replace that restriction with unrestricted inline JavaScript. The build emits 236 `.htaccess` files: the root policy, one in each localized page directory and the asset cache policy. Each page policy includes its own scripts and the root/404 fallback scripts, keeping every response below the existing 7.5 KB header budget. Upload these files together and verify each deployed HTML response against its expected policy.
 
 ## Hosting preparation
 
@@ -40,6 +36,10 @@ Exercise model filtering, comparison, parts-to-quote navigation, package selecti
 
 ## Indexing configuration
 
-The owner explicitly authorized Google and Bing submission on 7 November 2026. Production defaults in `src/data/search-launch.ts` are indexable and include public ownership-verification tags. Use `PUBLIC_SITE_INDEXABLE=false` for staging only. The switch controls page metadata and robots.txt together. Verify deployed crawlability, canonicals, all 232 sitemap entries and verification tags before submitting. Product licensing, supply and service statements must remain factual regardless of indexing authorization.
+The owner explicitly authorized Google and Bing submission on 7 November 2026. Production defaults in `src/data/search-launch.ts` are indexable and include public ownership-verification tags. Use `PUBLIC_SITE_INDEXABLE=false` for staging only. The switch controls page metadata and robots.txt together. Verify deployed crawlability, canonicals, all 234 sitemap entries and verification tags before submitting. Product licensing, supply and service statements must remain factual regardless of indexing authorization.
 
 A crawl block is not access control and cannot guarantee removal of previously discovered URLs. Crawlers need access to read a noindex directive when deindexing is required. No search-engine submission or eligibility guarantee is implied by generating a sitemap.
+
+## Post-deployment IndexNow
+
+Run `pnpm indexnow` to inspect the added/changed/removed canonical URLs, then `pnpm indexnow:submit` after upload verification. The first activation also requires `--bootstrap`; subsequent deployments use the committed `docs/search/indexnow-state.json`. The command verifies live key, sitemap, robots, changed pages and their images before posting to the single global endpoint. It skips unchanged releases, rejects staging and mismatched uploads, and saves state only after HTTP 200 or 202. Commit the receipt/state after success. Do not trigger this from a build, page view or GitHub push before deployment. See [INDEXNOW.md](INDEXNOW.md) for failure handling and removed pages.
