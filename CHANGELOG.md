@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-07 - Consent-gated GA4
+
+- Add bilingual optional analytics preferences, with no Google tag before opt-in and cross-tab withdrawal.
+- Send canonical page views and finite enquiry categories; map confirmed delivery to `generate_lead`, excluding contact details and message text.
+- Set 90-day browser choices/cookies and disable enhanced measurement and advertising. Configure short user/event retention in the dedicated property.
+- Generate compact browser catalogue data to preserve the existing initial JavaScript budget.
+- Record live enquiry-release verification and accepted English/French Google indexing requests.
+
 ## 2026-11-07 — Enquiry refinement
 
 - Put the request first and group optional equipment/service details in bilingual quote forms.
@@ -7,6 +15,7 @@
 - Prepare finite enquiry/contact events without an analytics provider, network delivery, cookies or storage.
 - Strengthen the existing JavaScript transfer budget to include shared imports; pass 531 tests and 22 browser audit checks.
 - Record the remaining Google crawl-cache issue and measurement activation requirements in `docs/ENQUIRY-REFINEMENT.md`.
+- Deploy to WHC after a private rollback backup; verify all 281 public files and 233 HTML security policies. The subsequent GA4 integration is documented in `docs/ANALYTICS.md`.
 
 ## 2026-11-07 — National city coverage and focused offerings
 

@@ -1433,14 +1433,22 @@ export const pages: DetailPage[] = [
   {
     id: 'privacy',
     intro: {
-      en: 'This notice describes the current informational website and ways to contact us. It is a prelaunch notice for review, not a statement about a future customer portal.',
-      fr: 'Cet avis décrit le site d’information actuel et les moyens de nous joindre. Il s’agit d’un avis préalable au lancement, à réviser, et non d’une description d’un futur portail client.',
+      en: 'This notice describes browsing Defibrillators.ca, optional analytics and the information you choose to send in an enquiry.',
+      fr: 'Cet avis décrit la navigation sur Defibrillators.ca, les statistiques facultatives et les renseignements que vous choisissez de transmettre dans une demande.',
     },
     sections: {
       en: [
         s(
           'Browsing this website',
-          'The current site includes no analytics tags, advertising trackers, account creation or payment collection. Fonts and images are served with the site. Hosting infrastructure may process connection information; the final hosting provider and retention practices must be confirmed before public launch.',
+          'The site is hosted by WHC. Fonts and images are served with the website. Hosting infrastructure may process connection information and server logs. The site does not offer customer accounts or collect payments.',
+        ),
+        s(
+          'Optional Google Analytics',
+          'Google Analytics 4 loads only after you allow analytics. It uses first-party cookies and technical connection information to measure visits and enquiry activity; Google may process data outside Canada. We send canonical page addresses without URL queries or fragments, and only fixed categories such as language, request type and selected city guide. Form answers, contact details and attachments are excluded. Automatic enhanced measurement, advertising signals and advertising personalization are disabled. Referrer addresses are not sent. This limits traffic-source reporting. Analytics is optional and does not affect your enquiry.',
+        ),
+        s(
+          'Your analytics choice',
+          'Use Analytics preferences in the footer to allow or decline analytics at any time. Your choice is stored in your browser for up to 90 days. Declining prevents the Google tag from loading; withdrawing stops future analytics and clears this integration’s cookies. Previously collected data is not automatically deleted by changing the choice. Analytics cookies expire after up to 90 days. If browser storage is unavailable, your choice applies only to the current page. This choice is separate from the consent required to process a quote request.',
         ),
         s(
           'Information you choose to send',
@@ -1452,13 +1460,21 @@ export const pages: DetailPage[] = [
         ),
         s(
           'Privacy questions',
-          'Contact info@defibrillators.ca with privacy questions or a request concerning information you have sent. Before public launch, the operator must confirm the responsible entity, privacy contact, processing purposes, retention, service providers and applicable rights procedures.',
+          'Contact info@defibrillators.ca with privacy questions or a request concerning information you have sent. Please identify the enquiry concerned without including medical records or payment details.',
         ),
       ],
       fr: [
         s(
           'Navigation sur ce site',
-          'Le site actuel ne comprend pas de balises analytiques, de suivi publicitaire, de comptes ni de paiement. Les polices et images sont servies avec le site. L’hébergement peut traiter des données de connexion; le fournisseur et les pratiques de conservation doivent être confirmés avant le lancement public.',
+          'Le site est hébergé par WHC. Les polices et images sont servies avec le site. L’infrastructure d’hébergement peut traiter des données de connexion et des journaux serveur. Le site ne propose pas de comptes clients et ne perçoit pas de paiements.',
+        ),
+        s(
+          'Google Analytics facultatif',
+          'Google Analytics 4 se charge uniquement après votre accord. Il utilise des témoins internes et des données techniques de connexion pour mesurer les visites et l’activité des demandes; Google peut traiter les données hors du Canada. Nous transmettons les adresses canoniques sans paramètres ni fragments, et des catégories fixes comme la langue, le type de demande et le guide de ville choisi. Les réponses, coordonnées et pièces jointes sont exclues. Les mesures améliorées automatiques, les signaux publicitaires et la personnalisation publicitaire sont désactivés. Les adresses de provenance ne sont pas transmises, ce qui limite les rapports sur les sources de trafic. Ces statistiques sont facultatives et n’affectent pas votre demande.',
+        ),
+        s(
+          'Votre choix de statistiques',
+          'Utilisez Préférences statistiques au bas de la page pour accepter ou refuser à tout moment. Votre choix est conservé dans votre navigateur pendant un maximum de 90 jours. Un refus empêche le chargement de la balise Google; un retrait arrête les statistiques futures et efface les témoins de cette intégration. Les données déjà recueillies ne sont pas automatiquement supprimées. Les témoins analytiques expirent après un maximum de 90 jours. Si le stockage du navigateur est indisponible, le choix s’applique uniquement à la page actuelle. Ce choix est distinct du consentement requis pour traiter une demande de soumission.',
         ),
         s(
           'Renseignements transmis volontairement',
@@ -1470,7 +1486,7 @@ export const pages: DetailPage[] = [
         ),
         s(
           'Questions de confidentialité',
-          'Écrivez à info@defibrillators.ca pour une question ou une demande relative aux renseignements transmis. Avant le lancement, l’exploitant doit confirmer l’entité responsable, le contact, les fins du traitement, la conservation, les fournisseurs et les procédures d’exercice des droits.',
+          'Écrivez à info@defibrillators.ca pour une question ou une demande relative aux renseignements transmis. Précisez la demande concernée sans transmettre de dossier médical ni de renseignement de paiement.',
         ),
       ],
     },

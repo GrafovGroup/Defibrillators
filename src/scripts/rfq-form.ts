@@ -1,4 +1,8 @@
-import { cityCatalogue, type CityId } from '../data/city-catalogue';
+import {
+  clientCities,
+  clientProvinces,
+  sourcePaths,
+} from '../data/client-enquiry';
 import {
   validateRfq,
   submitRfq,
@@ -7,8 +11,7 @@ import {
   type RfqLocale,
 } from '../lib/rfq';
 import { safeEnquiryParams } from '../lib/enquiry-context';
-import { pathFor, type PageId } from '../data/routes';
-import { provinceForLocation } from '../data/location-routes';
+
 import { emitMeasurement, type MeasurementName } from '../lib/measurement';
 const params = new URLSearchParams(location.search);
 const audience =
@@ -129,10 +132,12 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-rfq]')) {
   field('request_type')!.addEventListener('change', syncDetails);
   field('maintenance')!.addEventListener('change', syncDetails);
   const cityId = safe.get('city') ?? safe.get('source') ?? '';
-  const city = Object.hasOwn(cityCatalogue, cityId)
-    ? cityCatalogue[cityId as CityId]
+  const city = Object.hasOwn(clientCities, cityId)
+    ? clientCities[cityId as keyof typeof clientCities]
     : undefined;
-  const province = provinceForLocation(cityId);
+  const province = Object.hasOwn(clientProvinces, cityId)
+    ? clientProvinces[cityId as keyof typeof clientProvinces]
+    : undefined;
   const applyContext = () => {
     if (safe.has('model')) field('model')!.value = safe.get('model')!;
     if (safe.has('request'))
@@ -140,7 +145,8 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-rfq]')) {
     if (safe.has('part')) field('accessory_type')!.value = safe.get('part')!;
     if (safe.has('package')) field('package')!.value = safe.get('package')!;
     if (safe.has('source'))
-      field('source_page')!.value = pathFor(safe.get('source') as PageId, lang);
+      field('source_page')!.value =
+        sourcePaths[safe.get('source') as keyof typeof sourcePaths][lang];
     if (city) {
       field('planning_city')!.value = city[lang];
       const locations = field('locations');

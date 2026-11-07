@@ -1,9 +1,9 @@
-import { modelIds } from '../data/model-options.ts';
 import {
-  partOptions,
-  packageOptions,
-  trainingOptions,
-} from '../data/planning-options.ts';
+  modelIds,
+  partIds,
+  packageIds,
+  trainingChoices,
+} from '../data/client-enquiry.ts';
 export const formEndpoint = 'https://formspree.io/f/maeezonn';
 export const consentVersion = 'rfq-2026-11-06';
 export const provinces = [
@@ -160,14 +160,11 @@ export function validateRfq(data: FormData, lang: RfqLocale): FieldErrors {
     audience: ['commercial', 'residential'],
     request_type: requestTypes,
     model: ['', 'discuss', ...modelIds, 'other'],
-    accessory_type: ['', ...partOptions.map((p) => p.id)],
-    package: ['', ...packageOptions.map((p) => p.id)],
-    training_language: [
-      '',
-      ...trainingOptions.training_language.map((p) => p.id),
-    ],
-    training_format: ['', ...trainingOptions.training_format.map((p) => p.id)],
-    training_course: ['', ...trainingOptions.training_course.map((p) => p.id)],
+    accessory_type: ['', ...partIds],
+    package: ['', ...packageIds],
+    training_language: ['', ...trainingChoices.training_language],
+    training_format: ['', ...trainingChoices.training_format],
+    training_course: ['', ...trainingChoices.training_course],
     maintenance: ['', ...maintenanceTypes],
     installation: ['', 'discuss', 'yes', 'no'],
   };

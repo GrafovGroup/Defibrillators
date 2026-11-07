@@ -1,5 +1,4 @@
-import { cityIds } from '../data/city-catalogue.ts';
-import { routes } from '../data/routes.ts';
+import { cityIds, pageIds } from '../data/client-enquiry.ts';
 import { requestTypes } from './rfq.ts';
 
 export const measurementNames = [
@@ -13,9 +12,9 @@ export type MeasurementName = (typeof measurementNames)[number];
 export const measurementChannel = 'defibrillators:measurement';
 
 const choices: Record<string, readonly string[]> = {
-  page: Object.keys(routes),
+  page: pageIds,
   language: ['en', 'fr'],
-  source_page: Object.keys(routes),
+  source_page: pageIds,
   city: cityIds,
   audience: ['commercial', 'residential'],
   request_type: requestTypes,

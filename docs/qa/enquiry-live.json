@@ -1,0 +1,113 @@
+{
+  "checkedAt": "2026-11-07T18:23:46.669819+00:00",
+  "sourceCommit": "6f2f7e1a454b801024a09fcab4c64614141c10b2",
+  "publicFiles": 281,
+  "matchingFiles": 281,
+  "htmlPoliciesChecked": 233,
+  "htmlPoliciesMatching": 233,
+  "failures": [],
+  "redirects": [
+    {
+      "url": "https://defibrillators.ca/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/index.html?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/fr/index.html?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "http://defibrillators.ca/en/defibrillators/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/defibrillators/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://www.defibrillators.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillator.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "http://defibrillator.ca/fr/?enquiry=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?enquiry=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/enquiry-not-a-page/",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    },
+    {
+      "url": "https://defibrillators.ca/.htaccess",
+      "status": 403,
+      "location": null,
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/defibrillators-enquiry-whc.zip",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    },
+    {
+      "url": "https://defibrillators.ca/defibrillators-pre-enquiry-20261107.zip",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    }
+  ],
+  "certificates": [
+    {
+      "host": "defibrillators.ca",
+      "valid": true,
+      "expires": "Feb  5 05:49:28 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "www.defibrillators.ca",
+      "valid": true,
+      "expires": "Feb  5 05:49:28 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "defibrillator.ca",
+      "valid": true,
+      "expires": "Feb  5 06:22:02 2027 GMT",
+      "issuer": "Let's Encrypt"
+    },
+    {
+      "host": "www.defibrillator.ca",
+      "valid": true,
+      "expires": "Feb  5 06:22:02 2027 GMT",
+      "issuer": "Let's Encrypt"
+    }
+  ],
+  "browser": {
+    "englishValidationSummary": true,
+    "trainingHidesAndDisablesModel": true,
+    "frenchModelPartProvincePrefill": true,
+    "frenchMobileWidth": 390,
+    "horizontalOverflow": false,
+    "brokenImages": 0,
+    "capturedConsoleErrorsOrWarnings": 0,
+    "productionLeadSubmissions": 0
+  }
+}

@@ -59,6 +59,18 @@ const c = content[lang];
       }
     >
       <ul>
+        <li>
+          <button
+            type="button"
+            class="analytics-preferences"
+            data-analytics-preferences
+            hidden
+          >
+            {lang === 'en'
+              ? 'Analytics preferences'
+              : 'Préférences statistiques'}
+          </button>
+        </li>
         {footerIds.map((id) => (
           <li>
             <a href={pathFor(id, lang)}>{labelFor(id, lang)}</a>
@@ -89,3 +101,18 @@ const c = content[lang];
     </p>
   </div>
 </footer>
+<style>
+  .analytics-preferences {
+    font: inherit;
+    background: none;
+    color: inherit;
+    border: 0;
+    padding: 0.5rem 0;
+    text-decoration: underline;
+    cursor: pointer;
+    min-height: 44px;
+  }
+  .analytics-preferences[hidden] {
+    display: none;
+  }
+</style>

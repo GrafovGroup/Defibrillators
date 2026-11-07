@@ -18,6 +18,7 @@ const types = {
 };
 const helpers = {
   '/__qa__/axe.js': fileURLToPath(import.meta.resolve('axe-core/axe.min.js')),
+  '/__qa__/ga.js': fileURLToPath(new URL('./qa-ga.js', import.meta.url)),
   '/__qa__/audit.js': fileURLToPath(new URL('./qa-audit.js', import.meta.url)),
 };
 const server = http.createServer(async (req, res) => {
@@ -31,7 +32,13 @@ const server = http.createServer(async (req, res) => {
       .readFileSync(path.join(root, '.htaccess'), 'utf8')
       .matchAll(/Header always set ([\w-]+) "([^"]+)"/g)) {
       // Prevent every test form from contacting the real delivery provider.
-      res.setHeader(name, value.replaceAll(' https://formspree.io', ''));
+      res.setHeader(
+        name,
+        value.replaceAll(
+          / https:\/\/(?:formspree\.io|www\.googletagmanager\.com|(?:www|region1)\.google-analytics\.com)/g,
+          '',
+        ),
+      );
     }
     res.setHeader('Cache-Control', 'no-store');
     if (req.method === 'POST' && url.pathname === '/__qa__/submit') {
@@ -98,12 +105,24 @@ const server = http.createServer(async (req, res) => {
       for (const [, name, value] of fs
         .readFileSync(pageHeaders, 'utf8')
         .matchAll(/Header always set ([\w-]+) "([^"]+)"/g))
-        res.setHeader(name, value.replaceAll(' https://formspree.io', ''));
+        res.setHeader(
+          name,
+          value.replaceAll(
+            / https:\/\/(?:formspree\.io|www\.googletagmanager\.com|(?:www|region1)\.google-analytics\.com)/g,
+            '',
+          ),
+        );
     }
     const ext = path.extname(file);
     let body = fs.readFileSync(file);
     if (ext === '.html' || ext === '.js') {
-      body = body.toString().replaceAll(endpoint, '/__qa__/submit');
+      body = body
+        .toString()
+        .replaceAll(endpoint, '/__qa__/submit')
+        .replaceAll(
+          'https://www.googletagmanager.com/gtag/js',
+          '/__qa__/ga.js',
+        );
       if (ext === '.html' && url.searchParams.get('qa-nojs') === '1') {
         // Keep metadata, but omit the site's progressive enhancements for native-form QA.
         body = body.replace(

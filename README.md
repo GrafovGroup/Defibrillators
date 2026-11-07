@@ -2,7 +2,7 @@
 
 Phases 0–5 of `MASTER_PROMPT.md`: bilingual homepages, core product/service pages, RFQs, location planning guides, SEO, technical QA and WHC deployment using the approved modern wordmark and design system. Static Astro output, with no production Node process. The verified release is live at [Defibrillators.ca](https://defibrillators.ca/), with the approved design preserved. The owner authorized Google/Bing indexing and national city/product/service expansion on 7 November 2026. See `docs/EXPANSION-AND-SEARCH.md` for the current release and search-submission record, and `docs/PHASE-5.md` for the original hosting verification.
 
-The latest enquiry refinement simplifies both quote forms and prepares sanitized measurement events without connecting an external tracker. See [docs/ENQUIRY-REFINEMENT.md](docs/ENQUIRY-REFINEMENT.md) for scope, checks and activation requirements.
+The latest enquiry refinement simplifies both quote forms. The owner-authorized GA4 integration adds optional bilingual consent and sanitized enquiry events. See [docs/ANALYTICS.md](docs/ANALYTICS.md) and [docs/ENQUIRY-REFINEMENT.md](docs/ENQUIRY-REFINEMENT.md) for scope, checks and deployment evidence.
 
 The homepage and shared logo/header were restored to the owner’s selected mockup on 7 November 2026. Both homepages now use the exact owner-approved concept artwork as an illustration, with real HTML content and controls. See `docs/DESIGN-SYSTEM.md` and `docs/ASSETS.md` for the reference and scope.
 
@@ -33,7 +33,7 @@ For local accessibility and form QA after a build, use `pnpm qa:preview`. It run
 
 Navigation, homepage cards and related links reach the localized pages. The language switch retains page identity. The catalogue supports accessible search, manufacturer and guidance-feature filtering, with every profile available without JavaScript. City, service, part and package context carries into the RFQ; request-specific optional fields support replacement supplies and training. See `docs/ROUTES.md` for the complete route pairs and `docs/COMPETITOR-AUDIT.md` for the six-site audit and implementation decisions.
 
-Product profiles contain manufacturer reference information, not confirmed inventory. Exact Canadian licensing, supply, price, included items and warranty remain unverified. Quote pages provide separate bilingual commercial and residential forms using the owner-supplied Formspree endpoint. Native HTML POST is progressively enhanced with Vanilla JavaScript for localized errors and success feedback. No React, private API key or production Node server is needed. There is no checkout, analytics or client-side storage of enquiry data.
+Product profiles contain manufacturer reference information, not confirmed inventory. Exact Canadian licensing, supply, price, included items and warranty remain unverified. Quote pages provide separate bilingual commercial and residential forms using the owner-supplied Formspree endpoint. Native HTML POST is progressively enhanced with Vanilla JavaScript for localized errors and success feedback. No React, private API key or production Node server is needed. There is no checkout or client-side storage of enquiry data. Optional GA4 loads only after consent; its browser choice is stored separately from form data.
 
 ## Source map
 

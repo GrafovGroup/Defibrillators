@@ -6,9 +6,9 @@ The request type and project description now appear first, followed by contact/l
 
 Validation opens collapsed sections containing invalid controls and focuses the linked error summary. A successful submission restores the original safe product/city/source context for any subsequent enquiry. Without JavaScript, optional details remain open and native required-field validation remains available. The approved homepage, brand assets and direct English entry are preserved.
 
-## Measurement preparation, not active analytics
+## Measurement foundation
 
-The site emits transient `defibrillators:measurement` DOM events. No analytics provider is connected, no events are sent or persisted, and no cookies, visitor IDs or tracking queue are created. The Formspree delivery integration remains separate and continues processing explicitly submitted enquiry details under the existing consent notice.
+The initial refinement release emitted transient `defibrillators:measurement` DOM events. That release had no analytics destination, cookies or persistent tracking. The subsequent owner-authorized GA4 integration is documented in [ANALYTICS.md](ANALYTICS.md). The Formspree delivery integration remains separate and continues processing explicitly submitted enquiry details under the existing consent notice.
 
 | Event                  | Meaning                                                                                                        |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------- |
@@ -20,7 +20,7 @@ The site emits transient `defibrillators:measurement` DOM events. No analytics p
 
 The payload permits only known page IDs, language, source page, public planning-city ID, audience, request category, contact channel and error category. Unknown fields and values are dropped. Contact details, message text, uploaded files, URLs, referrers, request IDs and timestamps are excluded. City is the selected public guide context, not a detected visitor location.
 
-Before activating analytics, confirm the owner's provider/property and configure its consent, retention and privacy notice. Map only these sanitized events; disable automatic form-field and full-URL capture. Use received Formspree enquiries and commercial outcomes as the authoritative lead record. Hosted verification completion cannot be inferred from the handoff event.
+The owner subsequently authorized a dedicated Defibrillators.ca GA4 property in Grafov Group. The consent-gated integration maps only sanitized events. Formspree enquiries and commercial outcomes remain the authoritative lead record. Hosted verification completion cannot be inferred from a handoff event.
 
 ## Verification
 
@@ -32,10 +32,12 @@ Before activating analytics, confirm the owner's provider/property and configure
 
 ## Search status
 
-Google's live homepage inspection at 10:30 AM on 7 November still reported the earlier robots block, despite its robots report already showing the refreshed allow-crawling file. The existing sitemap submission remains pending successful Google processing; the crawler/cache cannot be forced from site code. Bing's previous verified sitemap report showed Success and 232 discovered URLs. Submission does not guarantee indexing or ranking. See [EXPANSION-AND-SEARCH.md](EXPANSION-AND-SEARCH.md).
+Google live inspection at 1:24 PM on 7 November cleared the earlier crawl block and reported that the English homepage was available to Google and could be indexed. Indexing requests for both English and French homepages were accepted. The sitemap was resubmitted, but its observed status still read Could not fetch; successful sitemap processing remains pending. Bing previously showed Success and 232 discovered URLs. Submission does not guarantee indexing or ranking. See [EXPANSION-AND-SEARCH.md](EXPANSION-AND-SEARCH.md).
 
 ## Deployment
 
 Implementation commit: `6f2f7e1a454b801024a09fcab4c64614141c10b2`. The tested release archive contains 515 files, including 234 HTML documents and 233 `.htaccess` files; size 2,908,894 bytes; SHA-256 `20909d375ddc331d54ca226f7c7dd4cd5157b7f20b6eeb7232747608def2ae33`.
 
-A fresh private WHC rollback archive was created and confirmed before upload. **This refinement has not yet been deployed:** the browser file-upload integration cannot access local files, and the native picker is unavailable while the owner's Mac is locked. The upload page is prepared for continuation after unlock. The previous expansion remains the live release; no live verification of these new form changes is claimed. Private hosting identifiers and rollback paths are kept outside this repository.
+The refinement was deployed to WHC on **7 November 2026**, after the owner unlocked the Mac and a fresh private rollback archive had been confirmed. All **281 checked public files** matched the tested build byte for byte. All **233 checked HTML responses** returned exactly the generated Content Security Policy. HTTPS, primary/singular host redirects with query preservation, the custom 404, blocked configuration-file access and private archive isolation passed.
+
+Live browser checks confirmed English required-field errors, request-specific controls and French model/part/province prefills at 390 px without overflow, broken images or captured console errors/warnings. No production lead submission was sent. Evidence: [qa/enquiry-live.json](qa/enquiry-live.json). Private hosting identifiers and rollback paths remain outside this repository.

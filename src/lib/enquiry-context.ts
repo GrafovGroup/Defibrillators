@@ -1,7 +1,10 @@
-import { cityIds } from '../data/city-catalogue.ts';
-import { modelIds } from '../data/model-options.ts';
-import { packageOptions, partOptions } from '../data/planning-options.ts';
-import { routes } from '../data/routes.ts';
+import {
+  cityIds,
+  modelIds,
+  pageIds,
+  partIds,
+  packageIds,
+} from '../data/client-enquiry.ts';
 import { requestTypes } from './rfq.ts';
 // Only public catalogue choices travel in links; never carry user-entered or contact data.
 export function safeEnquiryParams(params: URLSearchParams): URLSearchParams {
@@ -11,9 +14,9 @@ export function safeEnquiryParams(params: URLSearchParams): URLSearchParams {
     city: cityIds,
     model: [...modelIds, 'other'],
     request: requestTypes,
-    source: Object.keys(routes),
-    package: packageOptions.map((p) => p.id),
-    part: partOptions.map((p) => p.id),
+    source: pageIds,
+    package: packageIds,
+    part: partIds,
   };
   for (const [key, values] of Object.entries(choices)) {
     const value = params.get(key);

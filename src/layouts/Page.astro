@@ -2,6 +2,7 @@
 import '@fontsource-variable/inter';
 import '../styles/site.css';
 import SEO from '../components/SEO.astro';
+import AnalyticsConsent from '../components/AnalyticsConsent.astro';
 import type { Locale } from '../data/content';
 import type { PageId } from '../data/routes';
 interface Props {
@@ -29,6 +30,7 @@ const { lang, pageId = 'home' } = Astro.props;
   </head>
   <body data-page={pageId} data-language={lang}>
     <slot />
+    <AnalyticsConsent lang={lang} />
     <script>
       import '../scripts/measurement';
     </script>

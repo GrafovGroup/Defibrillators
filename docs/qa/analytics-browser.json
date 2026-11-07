@@ -1,0 +1,153 @@
+{
+  "checkedAt": "2026-11-07T18:42:59.301Z",
+  "environment": "loopback; Formspree and Google tag simulated",
+  "checks": {
+    "noLoaderBeforeChoice": true,
+    "declinePersistsAcrossReload": true,
+    "allowQueuesOnePageView": true,
+    "canonicalExcludesQueryAndFragment": true,
+    "blankReferrer": true,
+    "advertisingDenied": true,
+    "validationNotLead": true,
+    "confirmedMockSuccessGeneratesLead": true,
+    "formContentExcluded": true,
+    "withdrawalStopsEvents": true,
+    "withdrawalPersists": true,
+    "crossTabWithdrawalStopsEvents": true,
+    "ottawaProvinceRemainsUnselected": true
+  },
+  "commands": [
+    [
+      "consent",
+      "default",
+      {
+        "analytics_storage": "denied",
+        "ad_storage": "denied",
+        "ad_user_data": "denied",
+        "ad_personalization": "denied"
+      }
+    ],
+    [
+      "set",
+      {
+        "page_location": "https://defibrillators.ca/en/request-quote/",
+        "page_referrer": "",
+        "allow_google_signals": false,
+        "allow_ad_personalization_signals": false
+      }
+    ],
+    ["js", "2026-11-07T18:39:39.134Z"],
+    [
+      "consent",
+      "update",
+      {
+        "analytics_storage": "granted"
+      }
+    ],
+    [
+      "config",
+      "G-ERD2WFW0WZ",
+      {
+        "send_page_view": false,
+        "cookie_prefix": "dfca",
+        "cookie_expires": 7776000,
+        "cookie_update": false,
+        "page_location": "https://defibrillators.ca/en/request-quote/",
+        "page_referrer": "",
+        "allow_google_signals": false,
+        "allow_ad_personalization_signals": false
+      }
+    ],
+    [
+      "event",
+      "page_view",
+      {
+        "page_location": "https://defibrillators.ca/en/request-quote/",
+        "page_referrer": "",
+        "page_title": "Request a quote | Defibrillators.ca"
+      }
+    ],
+    [
+      "event",
+      "rfq_start",
+      {
+        "page_id": "quote",
+        "site_language": "en",
+        "source_page": "toronto",
+        "planning_city": "toronto",
+        "enquiry_audience": "commercial",
+        "request_type": "equipment"
+      }
+    ],
+    [
+      "event",
+      "rfq_error",
+      {
+        "page_id": "quote",
+        "site_language": "en",
+        "source_page": "toronto",
+        "planning_city": "toronto",
+        "enquiry_audience": "commercial",
+        "request_type": "equipment",
+        "failure_category": "validation"
+      }
+    ],
+    [
+      "event",
+      "generate_lead",
+      {
+        "page_id": "quote",
+        "site_language": "en",
+        "source_page": "toronto",
+        "planning_city": "toronto",
+        "enquiry_audience": "commercial",
+        "request_type": "equipment"
+      }
+    ]
+  ],
+  "audits": [
+    {
+      "path": "/fr/demander-soumission/",
+      "width": 360,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": ["button[data-analytics-allow=\"\"]"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ]
+        }
+      ],
+      "passes": 49,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/fr/demander-soumission/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": ["p[data-astro-cid-fg2vtww3=\"\"]"],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ]
+        }
+      ],
+      "passes": 49,
+      "overflow": false,
+      "brokenImages": []
+    }
+  ],
+  "manualContrast": "Consent uses navy text on white; axe could not determine overlap background. Visual inspection confirms legible controls. Not a full accessibility certification."
+}

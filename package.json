@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "astro dev --host 127.0.0.1",
-    "build": "astro build && node scripts/hosting-headers.mjs",
+    "build": "node scripts/client-data.mjs && astro build && node scripts/hosting-headers.mjs",
     "preview": "astro preview --host 127.0.0.1",
     "qa:preview": "node scripts/qa-preview.mjs",
     "check": "astro check",
