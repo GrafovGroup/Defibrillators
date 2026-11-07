@@ -13,7 +13,7 @@ const { lang, pageId = 'home' } = Astro.props;
     href={pathFor(pageId, 'en')}
     lang="en-CA"
     hreflang="en-CA"
-    aria-label="English"
+    aria-label="EN — English"
     aria-current={lang === 'en' ? 'page' : undefined}
   >
     EN
@@ -23,7 +23,7 @@ const { lang, pageId = 'home' } = Astro.props;
     href={pathFor(pageId, 'fr')}
     lang="fr-CA"
     hreflang="fr-CA"
-    aria-label="Français"
+    aria-label="FR — Français"
     aria-current={lang === 'fr' ? 'page' : undefined}
   >
     FR

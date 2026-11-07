@@ -104,7 +104,7 @@ const references = [
     image: null,
     source: {
       label: 'ZOLL — AED 3',
-      url: 'https://candistributor.zoll.com/en-CA/zoll-aed-3',
+      url: 'https://www.zoll.com/en-us/products/emergency-care/aeds/zoll-aed-3',
       reviewed: '2026-11-07',
     },
     guidance: {

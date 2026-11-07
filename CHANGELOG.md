@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026-11-07 — Phase 4 technical QA
+
+- Improved accessible language names, footer targets, keyboard focus and form error associations.
+- Added precise bilingual validation and full province/territory labels; repaired a manufacturer source and the 404 favicon.
+- Added local-only accessibility/form QA tooling, production asset budgets and regression coverage. See `docs/PHASE-4.md` for results and limits.
+- Preserved the approved design and direct homepage entry. GitHub-only delivery; no deployment or live lead submission.
+
+## 2026-11-07 — Direct homepage entry
+
+Removed the preliminary language selector, opened the approved English homepage directly and retained EN/FR switching. Recorded the owner's preference against introductory language gates. Commit: `0e5f329`.
+
+## 2026-11-07 — Catalogue and planning improvements
+
+Added eight model references, catalogue filters, selectable comparison, parts/package planning and source-backed bilingual guides following the six-site competitor audit. Commit: `6ffc32f`.
+
 ## 0.2.0 — 2026-11-06
 
 - Add 70 English/Canadian French core pages while retaining the approved homepage design, tokens and vector brand assets.

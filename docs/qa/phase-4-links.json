@@ -1,0 +1,125 @@
+{
+  "date": "2026-11-07",
+  "checks": [
+    {
+      "url": "https://www.geoboundaries.org/api/current/gbOpen/CAN/ADM1/",
+      "status": 200,
+      "finalUrl": "https://www.geoboundaries.org/api/current/gbOpen/CAN/ADM1/"
+    },
+    {
+      "url": "https://www.statcan.gc.ca/en/terms-conditions/open-licence",
+      "status": 200,
+      "finalUrl": "https://www.statcan.gc.ca/en/terms-conditions/open-licence"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:PhilipsAED-ZRS.jpg",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:PhilipsAED-ZRS.jpg"
+    },
+    {
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "status": 200,
+      "finalUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:AED_open_cutout.jpg",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:AED_open_cutout.jpg"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by/3.0/",
+      "status": 200,
+      "finalUrl": "https://creativecommons.org/licenses/by/3.0/"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Philips_Automated_External_Defibrillator_in_Tanforan.JPG",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Philips_Automated_External_Defibrillator_in_Tanforan.JPG"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "status": 200,
+      "finalUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Zoll_AED_Plus_units.png",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Zoll_AED_Plus_units.png"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "status": 200,
+      "finalUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Philips_self-adhesive_electrodes_of_adefibrillator-9854.jpg",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Philips_self-adhesive_electrodes_of_adefibrillator-9854.jpg"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Aed-defibrillators-c2fa8edb.jpg",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Aed-defibrillators-c2fa8edb.jpg"
+    },
+    {
+      "url": "https://www.heartandstroke.ca/how-you-can-help/learn-cpr/aeds",
+      "status": 200,
+      "finalUrl": "https://www.heartandstroke.ca/how-you-can-help/learn-cpr/aeds"
+    },
+    {
+      "url": "https://www.coeuretavc.ca/comment-vous-pouvez-aider/apprenez-la-rcr/dea",
+      "status": 200,
+      "finalUrl": "https://www.coeuretavc.ca/comment-vous-pouvez-aider/apprenez-la-rcr/dea"
+    },
+    {
+      "url": "https://candistributor.zoll.com/en-CA/aed-plus",
+      "status": 200,
+      "finalUrl": "https://candistributor.zoll.com/en-CA/aed-plus"
+    },
+    {
+      "url": "https://health-products.canada.ca/mdall-limh/index-eng.jsp",
+      "status": 200,
+      "finalUrl": "https://health-products.canada.ca/mdall-limh/?lang=eng"
+    },
+    {
+      "url": "https://www.usa.philips.com/healthcare/product/HCM5066A/heartstart-onsite-hs1",
+      "status": 200,
+      "finalUrl": "https://www.usa.philips.com/healthcare/product/HCM5066A/heartstart-onsite-hs1"
+    },
+    {
+      "url": "https://candistributor.zoll.com/en-CA/zoll-aed-3",
+      "status": 502,
+      "getStatus": 502,
+      "replacement": "https://www.zoll.com/en-us/products/emergency-care/aeds/zoll-aed-3",
+      "replacementStatus": 200
+    },
+    {
+      "url": "https://www.usa.philips.com/healthcare/product/HC861304/heartstart-frx-automated-external-defibrillator",
+      "status": 200,
+      "finalUrl": "https://www.usa.philips.com/healthcare/product/HC861304/heartstart-frx-automated-external-defibrillator"
+    },
+    {
+      "url": "https://www.stryker.com/us/en/emergency-care/products/lifepak-cr2.html",
+      "status": 404,
+      "getStatus": 200,
+      "finalUrl": "https://www.stryker.com/us/en/emergency-care/products/lifepak-cr2.html"
+    },
+    {
+      "url": "https://www.stryker.com/us/en/emergency-care/products/heartsine-samaritan-pad-360p.html",
+      "status": 404,
+      "getStatus": 200,
+      "finalUrl": "https://www.stryker.com/us/en/emergency-care/products/heartsine-samaritan-pad-360p.html"
+    },
+    {
+      "url": "https://candistributor.zoll.com/en-CA/powerheart-g5",
+      "status": 502,
+      "getStatus": 200,
+      "finalUrl": "https://candistributor.zoll.com/en-CA/powerheart-g5"
+    },
+    {
+      "url": "https://www.defibtech.com/products/lifeline-view-aed/",
+      "status": 200,
+      "finalUrl": "https://www.defibtech.com/products/lifeline-view-aed/"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 ---
 import PlanningFields from './PlanningFields.astro';
 import { modelOptions } from '../data/model-options';
+import { provinceLabels } from '../data/province-labels';
 import type { Locale } from '../data/content';
 import { pathFor } from '../data/routes';
 import {
@@ -192,7 +193,9 @@ const t = (en: string, french: string) => (fr ? french : en);
                     )}
                   </option>
                   {provinces.map((p) => (
-                    <option value={p}>{p}</option>
+                    <option value={p}>
+                      {provinceLabels[p][lang]} ({p})
+                    </option>
                   ))}
                 </select>
                 <span
@@ -307,7 +310,11 @@ const t = (en: string, french: string) => (fr ? french : en);
                 <label for={id('installation')}>
                   {t('Installation support', 'Aide à l’installation')}
                 </label>
-                <select id={id('installation')} name="installation">
+                <select
+                  id={id('installation')}
+                  name="installation"
+                  aria-describedby={id('installation-error')}
+                >
                   <option value="discuss">
                     {t('To discuss', 'À discuter')}
                   </option>
@@ -324,7 +331,11 @@ const t = (en: string, french: string) => (fr ? french : en);
                 <label for={id('maintenance')}>
                   {t('Maintenance needs', 'Besoins d’entretien')}
                 </label>
-                <select id={id('maintenance')} name="maintenance">
+                <select
+                  id={id('maintenance')}
+                  name="maintenance"
+                  aria-describedby={id('maintenance-error')}
+                >
                   {maintenanceTypes.map((value, i) => (
                     <option value={value}>{maintenanceLabels[lang][i]}</option>
                   ))}

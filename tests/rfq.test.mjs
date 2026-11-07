@@ -10,6 +10,7 @@ import {
   consentText,
   requestTypes,
   formEndpoint,
+  messages,
 } from '../src/lib/rfq.ts';
 import { products } from '../src/data/products.ts';
 import { renewalDue } from '../src/lib/maintenance.ts';
@@ -54,6 +55,19 @@ for (const lang of ['en', 'fr']) {
       f.find('input:not([type=hidden]),select,textarea').each((_, el) =>
         assert.equal($(`label[for="${$(el).attr('id')}"]`).length, 1),
       );
+      f.find('[data-error]').each((_, error) => {
+        const input = f.find(`[name="${$(error).attr('data-error')}"]`);
+        assert.ok(
+          (input.attr('aria-describedby') ?? '')
+            .split(' ')
+            .includes($(error).attr('id')),
+          `${input.attr('name')} error must be linked to its control`,
+        );
+      });
+      assert.equal(
+        f.find('[name=province] option[value=BC]').text(),
+        lang === 'fr' ? 'Colombie-Britannique (BC)' : 'British Columbia (BC)',
+      );
       assert.equal(f.find('[data-errors][role=alert]').length, 1);
     }
     assert.equal($('#residential-form [name=company]').length, 0);
@@ -85,6 +99,16 @@ test('Residential enquiry does not require company or site details', () => {
   data.delete('company');
   data.delete('locations');
   assert.deepEqual(validateRfq(data, 'en'), {});
+});
+test('Validation explains length limits and preserves required-field errors', () => {
+  for (const lang of ['en', 'fr']) {
+    const data = valid();
+    data.set('name', 'A');
+    data.set('province', '');
+    const errors = validateRfq(data, lang);
+    assert.match(errors.name, /2.*100/);
+    assert.equal(errors.province, messages[lang].required);
+  }
 });
 test('Every request category and maintenance lifecycle value is accepted', () => {
   for (const type of requestTypes) {

@@ -2,9 +2,9 @@
 
 ## Current delivery scope
 
-The competitor-informed update remains on GitHub at the owner’s request. No hosting upload or indexing submission is included in this revision. Detailed hosting-account, server and historical operations records are kept outside this repository.
+The Phase 4 QA update remains on GitHub at the owner’s request. No hosting upload or indexing submission is included in this revision. Detailed hosting-account, server and historical operations records are kept outside this repository.
 
-The current build contains 128 HTML files (126 localized pages, an English homepage fallback at the root and a custom 404) and 126 canonical sitemap entries. WHC redirects the root directly to `/en/`; no language-selection screen is used. It includes the restored approved design, location guides, eight manufacturer reference profiles, parts and package planning, and bilingual quote forms. See `COMPETITOR-AUDIT.md` and the latest `QA.md` section for implementation and validation.
+The current build contains 128 HTML files (126 localized pages, an English homepage fallback at the root and a custom 404) and 126 canonical sitemap entries. WHC redirects the root directly to `/en/`; no language-selection screen is used. It includes the restored approved design, location guides, eight manufacturer reference profiles, parts and package planning, and bilingual quote forms. See `COMPETITOR-AUDIT.md`, `PHASE-4.md` and the latest `QA.md` section for implementation and validation.
 
 ## Build and package
 

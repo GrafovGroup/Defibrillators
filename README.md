@@ -1,6 +1,6 @@
 # Defibrillators.ca
 
-Phases 0–3 of `MASTER_PROMPT.md`: bilingual homepages, core product/service pages, RFQs, location planning guides and SEO using the approved modern wordmark and design system. Static Astro output for WHC hosting, with no production Node process.
+Phases 0–4 of `MASTER_PROMPT.md`: bilingual homepages, core product/service pages, RFQs, location planning guides, SEO and technical QA using the approved modern wordmark and design system. Static Astro output for WHC hosting, with no production Node process. Phase 4 results and verification limits are recorded in `docs/PHASE-4.md`.
 
 The homepage and shared logo/header were restored to the owner’s selected mockup on 7 November 2026. Both homepages now use the exact owner-approved concept artwork as an illustration, with real HTML content and controls. See `docs/DESIGN-SYSTEM.md` and `docs/ASSETS.md` for the reference and scope.
 
@@ -16,6 +16,8 @@ pnpm preview
 ```
 
 `pnpm verify` runs ESLint, Astro/TypeScript checking, formatting, production build and Node integration tests against the generated HTML. TypeScript is intentionally pinned to 6.0.3 because the installed Astro checker and TypeScript ESLint do not support TypeScript 7. All direct dependencies and the lockfile are pinned. The workspace pins the emnapi runtime matching Astro’s checker and patched minimatch 11.0.1; the full suite passes with these overrides. Set `ASTRO_TELEMETRY_DISABLED=1` to disable Astro telemetry.
+
+For local accessibility and form QA after a build, use `pnpm qa:preview`. It runs axe-core in the browser and simulates every RFQ submission locally, without sending or storing leads. It is a development tool, excluded from `dist/`; never deploy it. Test modes and evidence are documented in `docs/PHASE-4.md`.
 
 ## Implemented routes
 
@@ -46,7 +48,7 @@ Product profiles contain manufacturer reference information, not confirmed inven
 - `src/lib/structured-data.ts`, `site-config.ts`, `sitemap.ts`: factual JSON-LD, indexing/verification configuration and canonical sitemap.
 - `tests/`: built-output integration and catalogue-filter checks.
 - `docs/PHASE-0.md`, `docs/DESIGN-SYSTEM.md`, `docs/QA.md`: original audit, design and Phase 1A verification.
-- `docs/PHASE-1B.md`, `docs/PHASE-2.md`, `docs/PHASE-3.md`: implementation scope and verification records for each phase.
+- `docs/PHASE-1B.md`, `docs/PHASE-2.md`, `docs/PHASE-3.md`, `docs/PHASE-4.md`: implementation scope and verification records for each phase.
 
 ## Static hosting handoff
 
@@ -62,4 +64,4 @@ To regenerate logos on a Mac with the licensed system fonts: `node scripts/gener
 
 ## Remaining phases
 
-Supplier verification remains required before model recommendations or sales. Phase 4 is the full accessibility, localization, security and performance review. The Phase 2 WHC deployment already verified primary DNS, SSL and RFQ delivery; Phase 5 still includes final launch/indexing approval and secondary-domain verification. See the audit and current deployment record for remaining inputs.
+Phase 4 technical QA is complete: 309 tests, 320 page/viewport accessibility checks, bilingual form scenarios, link/metadata review and build-size budgets. This is not a full accessibility certification or a field-performance measurement. Phase 5 remains: approved deployment, fresh live DNS/SSL/redirect/form/performance checks and launch/indexing approval. Supplier/regulatory/privacy verification, formal French review and assistive-technology testing remain launch dependencies. Delivery stays GitHub-only until the owner authorizes deployment.

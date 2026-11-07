@@ -80,7 +80,7 @@ export const messages = {
     required: 'Complete this required field.',
     email: 'Enter a valid email address.',
     invalid: 'Check this value.',
-    length: 'Use the length shown for this field.',
+    length: 'Enter between {min} and {max} characters.',
     quantity: 'Enter a whole number from 1 to 9999.',
     consent: 'Confirm your consent before sending.',
     attachment: 'Choose one PDF, JPG or PNG file, up to 2 MB.',
@@ -99,7 +99,7 @@ export const messages = {
     required: 'Remplissez ce champ obligatoire.',
     email: 'Saisissez une adresse courriel valide.',
     invalid: 'Vérifiez cette valeur.',
-    length: 'Respectez la longueur indiquée pour ce champ.',
+    length: 'Saisissez entre {min} et {max} caractères.',
     quantity: 'Saisissez un nombre entier de 1 à 9999.',
     consent: 'Confirmez votre consentement avant l’envoi.',
     attachment: 'Choisissez un fichier PDF, JPG ou PNG de 2 Mo maximum.',
@@ -151,7 +151,9 @@ export function validateRfq(data: FormData, lang: RfqLocale): FieldErrors {
   for (const [key, [min, max]] of Object.entries(limits)) {
     const value = textValue(data, key);
     if (value && (value.length < min || value.length > max))
-      errors[key] = m.length;
+      errors[key] = m.length
+        .replace('{min}', String(min))
+        .replace('{max}', String(max));
   }
   const allowed: Record<string, readonly string[]> = {
     province: provinces,
@@ -170,7 +172,8 @@ export function validateRfq(data: FormData, lang: RfqLocale): FieldErrors {
     installation: ['discuss', 'yes', 'no'],
   };
   for (const [key, values] of Object.entries(allowed))
-    if (!values.includes(textValue(data, key))) errors[key] = m.invalid;
+    if (!errors[key] && !values.includes(textValue(data, key)))
+      errors[key] = m.invalid;
   for (const key of ['quantity', 'training_participants']) {
     const quantity = textValue(data, key);
     if (

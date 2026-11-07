@@ -20,7 +20,7 @@ On 7 November 2026, the owner rejected the preliminary language-selection page a
 | Body text      | `#18324F`                             |
 | Secondary text | `#506278`                             |
 | Borders        | `#D9E2EB`                             |
-| Focus ring     | `#1872CB`, 3px with 5px offset        |
+| Focus ring     | `#1872CB`, 3px with 5px white halo    |
 | Container      | 1480px maximum, fluid 20–64px gutters |
 | CTA radius     | 8px                                   |
 | Card radius    | 10px                                  |

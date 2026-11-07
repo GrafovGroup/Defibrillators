@@ -36,7 +36,7 @@ test('Eight distinct model references use official sources and no unlicensed ima
   for (const p of products) {
     assert.match(
       p.source.url,
-      /^https:\/\/(candistributor\.zoll\.com|www\.usa\.philips\.com|www\.stryker\.com|www\.defibtech\.com)\//,
+      /^https:\/\/(candistributor\.zoll\.com|www\.zoll\.com|www\.usa\.philips\.com|www\.stryker\.com|www\.defibtech\.com)\//,
     );
     for (const lang of ['en', 'fr']) {
       const $ = html(p.id, lang);

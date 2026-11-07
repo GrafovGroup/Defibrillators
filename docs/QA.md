@@ -90,3 +90,11 @@ Validation:
 - Saved proof: `outputs/direct-homepage-entry.png` in the workspace. Local preview used the generated security headers; Apache redirects were checked in the generated configuration, not on a live WHC server.
 
 Delivery remains GitHub-only. No WHC deployment or live form submission occurred.
+
+## Phase 4 technical QA — 7 November 2026
+
+Completed the accessibility, localization, form-state, links/metadata, build-size and security review. Fixed language-link accessible names, footer target sizes, dark-background keyboard focus, linked form errors, precise bilingual length validation and localized province labels. Added the 404 favicon and replaced an unavailable manufacturer source.
+
+`pnpm verify`: **309 passing tests** with no lint/type/format/build errors. Axe-core 4.14.0 found zero violations across **320 route/viewport checks** after fixes; layered-content contrast requires manual review and is not counted as an automated pass. Dependency audit: zero known advisories. Bilingual success/failure, keyboard menu/skip-link/comparison, parts-to-RFQ context and native application-script fallbacks were verified using the local-only test preview.
+
+See [PHASE-4.md](PHASE-4.md) for complete scope, reproduction commands, evidence, measured transfer sizes and remaining launch dependencies. No live Formspree submission, WHC deployment or indexing activation occurred.

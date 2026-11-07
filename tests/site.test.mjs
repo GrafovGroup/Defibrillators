@@ -97,6 +97,10 @@ for (const lang of ['en', 'fr']) {
         `https://defibrillators.ca/${locale}/`,
       );
       assert.ok($(`.locale-switch a[href="/${locale}/"]`).length);
+      const switchLink = $(`.locale-switch a[href="/${locale}/"]`);
+      assert.ok(
+        switchLink.attr('aria-label').startsWith(switchLink.text().trim()),
+      );
     }
     assert.equal(
       $('.locale-switch [aria-current="page"]').attr('href'),
@@ -170,6 +174,8 @@ test('Core text palette meets WCAG AA contrast', () => {
     ['506278', 'F5F8FB'],
     ['CFDAE7', '09213E'],
     ['D7E2EF', '09213E'],
+    ['FF4555', '052543'],
+    ['1872CB', 'FFFFFF'],
   ]) {
     const x = luminance(a),
       y = luminance(b);
