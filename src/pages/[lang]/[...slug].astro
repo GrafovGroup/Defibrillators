@@ -267,6 +267,7 @@ const isLegal = ['privacy', 'terms', 'accessibility'].includes(page.id);
               </section>
             ))
           )}
+          {page.id === 'procurement' && <BusinessDetails lang={lang} />}
           {page.guide && (
             <>
               <section id="guide-questions" class="faq-list">

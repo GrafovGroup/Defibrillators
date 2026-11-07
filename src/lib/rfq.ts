@@ -28,6 +28,7 @@ export const requestTypes = [
   'maintenance',
   'programs',
   'training',
+  'procurement',
 ] as const;
 export const maintenanceTypes = [
   'discuss',
@@ -49,6 +50,7 @@ export const requestLabels = {
     'Maintenance',
     'Multi-site program',
     'CPR / AED training',
+    'Tender / public-sector procurement',
   ],
   fr: [
     'Équipement DEA',
@@ -57,6 +59,7 @@ export const requestLabels = {
     'Entretien',
     'Programme multisite',
     'Formation RCR / DEA',
+    'Appel d’offres / approvisionnement public',
   ],
 };
 export const maintenanceLabels = {
@@ -82,7 +85,10 @@ export const messages = {
     invalid: 'Check this value.',
     length: 'Enter between {min} and {max} characters.',
     quantity: 'Enter a whole number from 1 to 9999.',
-    attachment: 'Choose one PDF, JPG or PNG file, up to 2 MB.',
+    attachment: 'Choose up to 3 PDF, XLSX, JPG or PNG files, up to 2 MB each.',
+    date: 'Enter a valid date.',
+    deadline: 'Include the closing date, time and time zone.',
+    url: 'Enter a public HTTPS link without login details.',
     summary: 'Please check the highlighted fields.',
     sending: 'Sending your request…',
     success:
@@ -100,7 +106,11 @@ export const messages = {
     invalid: 'Vérifiez cette valeur.',
     length: 'Saisissez entre {min} et {max} caractères.',
     quantity: 'Saisissez un nombre entier de 1 à 9999.',
-    attachment: 'Choisissez un fichier PDF, JPG ou PNG de 2 Mo maximum.',
+    attachment:
+      'Choisissez jusqu’à 3 fichiers PDF, XLSX, JPG ou PNG de 2 Mo chacun.',
+    date: 'Saisissez une date valide.',
+    deadline: 'Indiquez la date, l’heure et le fuseau horaire de clôture.',
+    url: 'Saisissez un lien public HTTPS sans identifiants de connexion.',
     summary: 'Veuillez vérifier les champs indiqués.',
     sending: 'Envoi de votre demande…',
     success:
@@ -145,6 +155,10 @@ export function validateRfq(data: FormData, lang: RfqLocale): FieldErrors {
     message: [10, 4000],
     renewal_reference: [1, 100],
     part_reference: [1, 100],
+    procurement_reference: [1, 100],
+    procurement_url: [1, 1000],
+    deadline_zone: [1, 100],
+    equipment_details: [1, 1500],
   };
   for (const [key, [min, max]] of Object.entries(limits)) {
     const value = textValue(data, key);
@@ -165,6 +179,8 @@ export function validateRfq(data: FormData, lang: RfqLocale): FieldErrors {
     training_course: ['', ...trainingChoices.training_course],
     maintenance: ['', ...maintenanceTypes],
     installation: ['', 'discuss', 'yes', 'no'],
+    alternatives: ['', 'specified-only', 'approval-required', 'permitted'],
+    technical_training: ['', 'none', 'installation', 'repair', 'both'],
   };
   for (const [key, values] of Object.entries(allowed))
     if (!errors[key] && !values.includes(textValue(data, key)))
@@ -179,15 +195,68 @@ export function validateRfq(data: FormData, lang: RfqLocale): FieldErrors {
     )
       errors[key] = m.quantity;
   }
-  const file = data.get('attachment');
+  const fileTypes: Record<string, string> = {
+    pdf: 'application/pdf',
+    jpg: 'image/jpeg',
+    jpeg: 'image/jpeg',
+    png: 'image/png',
+    xlsx: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+  };
+  const files = data
+    .getAll('attachment')
+    .filter(
+      (value) => !(value instanceof File && value.size === 0 && !value.name),
+    );
   if (
-    file instanceof File &&
-    file.size > 0 &&
-    (file.size > 2 * 1024 * 1024 ||
-      !['application/pdf', 'image/jpeg', 'image/png'].includes(file.type) ||
-      !/\.(pdf|jpe?g|png)$/i.test(file.name))
+    files.length > 3 ||
+    files.some((file) => {
+      if (
+        !(file instanceof File) ||
+        file.size === 0 ||
+        file.size > 2 * 1024 * 1024
+      )
+        return true;
+      const extension = file.name.split('.').at(-1)?.toLowerCase() ?? '';
+      return (
+        !Object.hasOwn(fileTypes, extension) ||
+        !['', 'application/octet-stream', fileTypes[extension]].includes(
+          file.type,
+        )
+      );
+    })
   )
     errors.attachment = m.attachment;
+  if (textValue(data, 'request_type') === 'procurement') {
+    if (textValue(data, 'audience') !== 'commercial')
+      errors.request_type = m.invalid;
+    const deadlineFields = ['deadline_date', 'deadline_time', 'deadline_zone'];
+    if (deadlineFields.some((key) => textValue(data, key)))
+      for (const key of deadlineFields)
+        if (!textValue(data, key)) errors[key] = m.deadline;
+    for (const key of ['deadline_date', 'delivery_date']) {
+      const value = textValue(data, key);
+      if (
+        value &&
+        (!/^\d{4}-\d{2}-\d{2}$/.test(value) ||
+          !Number.isFinite(Date.parse(value)) ||
+          new Date(value).toISOString().slice(0, 10) !== value)
+      )
+        errors[key] = m.date;
+    }
+    const time = textValue(data, 'deadline_time');
+    if (time && !/^([01]\d|2[0-3]):[0-5]\d$/.test(time))
+      errors.deadline_time = m.invalid;
+    const link = textValue(data, 'procurement_url');
+    if (link) {
+      try {
+        const url = new URL(link);
+        if (url.protocol !== 'https:' || url.username || url.password)
+          errors.procurement_url = m.url;
+      } catch {
+        errors.procurement_url = m.url;
+      }
+    }
+  }
   return errors;
 }
 export type SubmissionResult =
@@ -223,7 +292,9 @@ export async function submitRfq(
     let verification = false;
     for (const error of Array.isArray(result.errors) ? result.errors : []) {
       if (/CAPTCHA/i.test(error.code ?? '')) verification = true;
-      if (error.field && /^[a-z_]+$/.test(error.field))
+      if (error.field && /^attachment(?:\[\d*\])?$/.test(error.field))
+        fields.attachment = m.attachment;
+      else if (error.field && /^[a-z_]+$/.test(error.field))
         fields[error.field] = error.field === 'email' ? m.email : m.invalid;
     }
     return {

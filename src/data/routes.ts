@@ -122,6 +122,20 @@ export const routes = {
     en: ['resources', 'AED resources'],
     fr: ['ressources', 'Ressources sur les DEA'],
   },
+  procurement: {
+    en: ['procurement', 'Municipal & EMS procurement'],
+    fr: ['approvisionnement', 'Achats municipaux et services préhospitaliers'],
+  },
+  mountCompatibility: {
+    en: [
+      'resources/defibrillator-mount-compatibility',
+      'Defibrillator mount compatibility guide',
+    ],
+    fr: [
+      'ressources/compatibilite-supports-defibrillateurs',
+      'Compatibilité des supports de défibrillateurs',
+    ],
+  },
   about: {
     en: ['about', 'About Defibrillators.ca'],
     fr: ['a-propos', 'À propos de Defibrillators.ca'],

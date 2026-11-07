@@ -1,0 +1,86 @@
+{
+  "checkedAt": "2026-11-07T21:36:32.037Z",
+  "environment": "loopback production build; Formspree blocked and replaced with local mock",
+  "audits": [
+    {
+      "path": "/en/procurement/",
+      "width": 360,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 39,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/fr/approvisionnement/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 39,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/en/resources/defibrillator-mount-compatibility/",
+      "width": 768,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 40,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/fr/ressources/compatibilite-supports-defibrillateurs/",
+      "width": 1024,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 40,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/en/request-quote/",
+      "width": 1440,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 47,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/fr/demander-soumission/",
+      "width": 1920,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 47,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "path": "/en/request-quote/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "passes": 50,
+      "overflow": false,
+      "brokenImages": []
+    }
+  ],
+  "interactions": {
+    "frenchDeadlineErrors": "passed",
+    "threeFileMultipartMock": "passed",
+    "successReset": "passed",
+    "englishProviderErrorPreservesInput": "passed",
+    "requestTypeHidesAndDisablesFields": "passed",
+    "privateFieldsExcludedFromLocaleLink": "passed",
+    "nativeNoJavaScriptFallback": "passed"
+  },
+  "liveSubmission": false
+}

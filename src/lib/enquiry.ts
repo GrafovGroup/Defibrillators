@@ -33,6 +33,10 @@ export function enquiryPath(page: PageId, lang: Locale): string {
     if ('part' in selection) params.set('part', selection.part);
   }
   if (page === 'residential') params.set('audience', 'residential');
+  if (['procurement', 'mountCompatibility'].includes(page)) {
+    params.set('request', 'procurement');
+    params.set('audience', 'commercial');
+  }
   params.set('source', page);
   return `${pathFor('quote', lang)}?${params}#rfq`;
 }

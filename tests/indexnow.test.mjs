@@ -11,6 +11,7 @@ import {
   submitRelease,
 } from '../scripts/lib/indexnow.mjs';
 import { indexNow } from '../scripts/lib/indexnow-config.mjs';
+import { routes } from '../src/data/routes.ts';
 
 async function fixture(t) {
   const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'dfca-indexnow-'));
@@ -76,10 +77,10 @@ async function fixture(t) {
 
 test('Built release includes both languages, excludes assets/queries, and keeps IndexNow out of browser code', async () => {
   const manifest = await buildManifest();
-  assert.equal(manifest.pages.length, 234);
+  assert.equal(manifest.pages.length, Object.keys(routes).length * 2);
   assert.equal(
     manifest.pages.filter((p) => p.url.includes('/fr/')).length,
-    117,
+    Object.keys(routes).length,
   );
   assert.equal(manifest.indexable, true);
   assert.match(indexNow.key, /^[a-f0-9]{32}$/);

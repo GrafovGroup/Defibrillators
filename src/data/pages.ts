@@ -11,6 +11,7 @@ import { planningPages } from './planning-pages.ts';
 import { products } from './products.ts';
 import { guideDetails } from './guide-details.ts';
 import { locationPages } from './locations.ts';
+import { procurementPages } from './procurement-pages.ts';
 export type Localized<T> = Record<Locale, T>;
 export interface Section {
   heading: string;
@@ -94,6 +95,7 @@ export const pages: DetailPage[] = [
   },
   ...locationPages,
   ...planningPages,
+  ...procurementPages,
   ...offeringPages,
   ...products
     .filter((p) => !['zoll', 'philips'].includes(p.id))
@@ -1601,6 +1603,32 @@ for (const page of pages) {
     page.kind = 'guide';
     page.guide = guide;
   }
+}
+for (const id of ['industries', 'resources'] as const) {
+  const parent = pages.find((page) => page.id === id)!;
+  parent.children = [
+    ...(parent.children ?? []),
+    ...(id === 'industries'
+      ? ['procurement' as const]
+      : ['procurement' as const, 'mountCompatibility' as const]),
+  ];
+}
+for (const id of [
+  'municipalities',
+  'accessories',
+  'buying',
+  'manitoba',
+  'winnipeg',
+] as const) {
+  const page = pages.find((page) => page.id === id);
+  if (page)
+    page.related = [
+      ...new Set([
+        ...(page.related ?? []),
+        'procurement' as const,
+        'mountCompatibility' as const,
+      ]),
+    ];
 }
 export function pageFor(id: PageId): DetailPage {
   const page = pages.find((p) => p.id === id);

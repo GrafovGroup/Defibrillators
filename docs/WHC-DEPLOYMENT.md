@@ -2,9 +2,9 @@
 
 ## Current delivery scope
 
-The static English/French website is live on the dedicated WHC document root. The approved design and direct English root entry are preserved. There are 234 canonical localized pages, plus the root fallback and custom 404. GA4 and its consent/preferences controls were removed at the owner's request; see [ANALYTICS-REMOVAL-AND-DISCOVERY.md](ANALYTICS-REMOVAL-AND-DISCOVERY.md).
+The static English/French website is live on the dedicated WHC document root. The approved design and direct English root entry are preserved. There are 238 canonical localized pages, plus the root fallback and custom 404. GA4 and its consent/preferences controls were removed at the owner's request; see [ANALYTICS-REMOVAL-AND-DISCOVERY.md](ANALYTICS-REMOVAL-AND-DISCOVERY.md).
 
-The current discovery release adds IndexNow and improves manufacturer/part references. Follow [INDEXNOW.md](INDEXNOW.md) after every verified deployment. The public ownership key belongs in the document root; release manifests, notification state, scripts, source and archives do not. Historical release evidence remains under `docs/qa/` and hosting account details remain outside this repository.
+The procurement release adds bilingual public-sector purchasing and mounting compatibility information with improved tender enquiries; see [PROCUREMENT.md](PROCUREMENT.md). The discovery release adds IndexNow and improves manufacturer/part references. Follow [INDEXNOW.md](INDEXNOW.md) after every verified deployment. The public ownership key belongs in the document root; release manifests, notification state, scripts, source and archives do not. Historical release evidence remains under `docs/qa/` and hosting account details remain outside this repository.
 
 ## Build and package
 
@@ -12,7 +12,7 @@ Run `pnpm verify` from the repository with the supported Node version. `pnpm bui
 
 Upload the complete contents of `dist/`, including the root and every nested hidden `.htaccess` file and all `_astro`, `brand`, `images` and `maps` assets. Keep source code, environment files, internal records and upload archives outside the public document root. Do not combine HTML from one build with security headers from another.
 
-The parts finder uses a same-origin GET navigation to the quote page. Content Security Policy allows that navigation and the configured Formspree POST destination. Inline scripts are authorized by generated hashes; do not replace that restriction with unrestricted inline JavaScript. The build emits 236 `.htaccess` files: the root policy, one in each localized page directory and the asset cache policy. Each page policy includes its own scripts and the root/404 fallback scripts, keeping every response below the existing 7.5 KB header budget. Upload these files together and verify each deployed HTML response against its expected policy.
+The parts finder uses a same-origin GET navigation to the quote page. Content Security Policy allows that navigation and the configured Formspree POST destination. Inline scripts are authorized by generated hashes; do not replace that restriction with unrestricted inline JavaScript. The build emits 240 `.htaccess` files: the root policy, one in each localized page directory and the asset cache policy. Each page policy includes its own scripts and the root/404 fallback scripts, keeping every response below the existing 7.5 KB header budget. Upload these files together and verify each deployed HTML response against its expected policy.
 
 ## Hosting preparation
 
@@ -36,7 +36,7 @@ Exercise model filtering, comparison, parts-to-quote navigation, package selecti
 
 ## Indexing configuration
 
-The owner explicitly authorized Google and Bing submission on 7 November 2026. Production defaults in `src/data/search-launch.ts` are indexable and include public ownership-verification tags. Use `PUBLIC_SITE_INDEXABLE=false` for staging only. The switch controls page metadata and robots.txt together. Verify deployed crawlability, canonicals, all 234 sitemap entries and verification tags before submitting. Product licensing, supply and service statements must remain factual regardless of indexing authorization.
+The owner explicitly authorized Google and Bing submission on 7 November 2026. Production defaults in `src/data/search-launch.ts` are indexable and include public ownership-verification tags. Use `PUBLIC_SITE_INDEXABLE=false` for staging only. The switch controls page metadata and robots.txt together. Verify deployed crawlability, canonicals, all 238 sitemap entries and verification tags before submitting. Product licensing, supply and service statements must remain factual regardless of indexing authorization.
 
 A crawl block is not access control and cannot guarantee removal of previously discovered URLs. Crawlers need access to read a noindex directive when deindexing is required. No search-engine submission or eligibility guarantee is implied by generating a sitemap.
 

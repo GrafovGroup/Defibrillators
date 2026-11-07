@@ -1,0 +1,174 @@
+---
+import type { Locale } from '../data/content';
+interface Props {
+  lang: Locale;
+  audience: string;
+}
+const { lang, audience } = Astro.props;
+const t = (en: string, fr: string) => (lang === 'en' ? en : fr);
+const id = (name: string) => `${audience}-${name}`;
+const fields = [
+  {
+    name: 'procurement_reference',
+    type: 'text',
+    max: 100,
+    label: t(
+      'Tender / project reference',
+      'Référence de l’appel d’offres ou du projet',
+    ),
+  },
+  {
+    name: 'procurement_url',
+    type: 'url',
+    max: 1000,
+    label: t(
+      'Public tender or specification link',
+      'Lien public vers l’appel d’offres ou le devis',
+    ),
+  },
+  {
+    name: 'deadline_date',
+    type: 'date',
+    label: t('Closing date', 'Date de clôture'),
+  },
+  {
+    name: 'deadline_time',
+    type: 'time',
+    label: t('Closing time', 'Heure de clôture'),
+  },
+  {
+    name: 'deadline_zone',
+    type: 'text',
+    max: 100,
+    label: t(
+      'Time zone as stated in the tender',
+      'Fuseau horaire indiqué dans l’appel d’offres',
+    ),
+  },
+  {
+    name: 'delivery_date',
+    type: 'date',
+    label: t('Required delivery date', 'Date de livraison requise'),
+  },
+];
+---
+
+<fieldset class="rfq-wide" data-request-details="procurement">
+  <legend>
+    {t(
+      'Procurement details (optional)',
+      'Détails d’approvisionnement (facultatifs)',
+    )}
+  </legend>
+  <p>
+    {t(
+      'Add the details you have. For a closing deadline, include the date, time and time zone. Submitting an enquiry does not reserve stock or confirm tender participation.',
+      'Ajoutez les renseignements connus. Pour une échéance de clôture, indiquez la date, l’heure et le fuseau horaire. Une demande ne réserve pas de stock et ne confirme pas une participation à l’appel d’offres.',
+    )}
+  </p>
+  <div class="rfq-grid">
+    {fields.map((field) => (
+      <div class="rfq-field">
+        <label for={id(field.name)}>{field.label}</label>
+        <input
+          id={id(field.name)}
+          name={field.name}
+          type={field.type as 'text' | 'url' | 'date' | 'time'}
+          maxlength={field.max}
+          aria-describedby={id(`${field.name}-error`)}
+        />
+        <span
+          class="field-error"
+          id={id(`${field.name}-error`)}
+          data-error={field.name}
+        ></span>
+      </div>
+    ))}
+    <div class="rfq-field">
+      <label for={id('alternatives')}>
+        {t('Alternative products', 'Produits de remplacement')}
+      </label>
+      <select
+        id={id('alternatives')}
+        name="alternatives"
+        aria-describedby={id('alternatives-error')}
+      >
+        <option value="">{t('To discuss', 'À discuter')}</option>
+        <option value="specified-only">
+          {t('Specified products only', 'Produits prescrits uniquement')}
+        </option>
+        <option value="approval-required">
+          {t(
+            'Prior written approval required',
+            'Approbation écrite préalable requise',
+          )}
+        </option>
+        <option value="permitted">
+          {t(
+            'Alternatives may be proposed',
+            'Solutions de remplacement permises',
+          )}
+        </option>
+      </select>
+      <span
+        class="field-error"
+        id={id('alternatives-error')}
+        data-error="alternatives"
+      ></span>
+    </div>
+    <div class="rfq-field">
+      <label for={id('technical_training')}>
+        {t(
+          'Factory-authorized technical training needed',
+          'Formation technique autorisée par le fabricant',
+        )}
+      </label>
+      <select
+        id={id('technical_training')}
+        name="technical_training"
+        aria-describedby={id('technical_training-error')}
+      >
+        <option value="">{t('To discuss', 'À discuter')}</option>
+        <option value="none">{t('Not required', 'Non requise')}</option>
+        <option value="installation">
+          {t('Installation', 'Installation')}
+        </option>
+        <option value="repair">{t('Repair', 'Réparation')}</option>
+        <option value="both">
+          {t('Installation and repair', 'Installation et réparation')}
+        </option>
+      </select>
+      <span
+        class="field-error"
+        id={id('technical_training-error')}
+        data-error="technical_training"
+      ></span>
+    </div>
+    <div class="rfq-field rfq-wide">
+      <label for={id('equipment_details')}>
+        {t(
+          'Equipment and compatibility requirements',
+          'Équipement et exigences de compatibilité',
+        )}
+      </label>
+      <textarea
+        id={id('equipment_details')}
+        name="equipment_details"
+        rows="3"
+        maxlength="1500"
+        aria-describedby={`${id('equipment_details-hint')} ${id('equipment_details-error')}`}
+      ></textarea>
+      <small id={id('equipment_details-hint')}>
+        {t(
+          'For a mounting system: stretcher model, defibrillator model, mounting side, existing part references and required standards. Include quantities by configuration.',
+          'Pour un support : modèle de civière, modèle de défibrillateur, côté de montage, références existantes et normes exigées. Précisez les quantités par configuration.',
+        )}
+      </small>
+      <span
+        class="field-error"
+        id={id('equipment_details-error')}
+        data-error="equipment_details"
+      ></span>
+    </div>
+  </div>
+</fieldset>

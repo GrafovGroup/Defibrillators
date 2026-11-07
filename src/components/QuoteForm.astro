@@ -1,5 +1,6 @@
 ---
 import PlanningFields from './PlanningFields.astro';
+import ProcurementFields from './ProcurementFields.astro';
 import { modelOptions } from '../data/model-options';
 import { provinceLabels } from '../data/province-labels';
 import type { Locale } from '../data/content';
@@ -170,9 +171,12 @@ const t = (en: string, french: string) => (fr ? french : en);
                   required
                   aria-describedby={id('request_type-error')}
                 >
-                  {requestTypes.map((value, i) => (
-                    <option value={value}>{requestLabels[lang][i]}</option>
-                  ))}
+                  {requestTypes.map(
+                    (value, i) =>
+                      (commercial || value !== 'procurement') && (
+                        <option value={value}>{requestLabels[lang][i]}</option>
+                      ),
+                  )}
                 </select>
                 <span
                   class="field-error"
@@ -432,24 +436,28 @@ const t = (en: string, french: string) => (fr ? french : en);
               )}
               <PlanningFields lang={lang} audience={audience} />
               {commercial && (
+                <ProcurementFields lang={lang} audience={audience} />
+              )}
+              {commercial && (
                 <div class="rfq-field rfq-wide">
                   <label for={id('attachment')}>
                     {t(
-                      'Project document (optional)',
-                      'Document de projet (facultatif)',
+                      'Project documents (optional)',
+                      'Documents de projet (facultatifs)',
                     )}
                   </label>
                   <input
                     id={id('attachment')}
                     name="attachment"
                     type="file"
-                    accept="application/pdf,image/jpeg,image/png,.pdf,.jpg,.jpeg,.png"
+                    multiple
+                    accept="application/pdf,image/jpeg,image/png,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,.pdf,.jpg,.jpeg,.png,.xlsx"
                     aria-describedby={`${id('attachment-hint')} ${id('attachment-error')}`}
                   />
                   <small id={id('attachment-hint')}>
                     {t(
-                      'One PDF, JPG or PNG, up to 2 MB. No medical, payment or sensitive personal information.',
-                      'Un PDF, JPG ou PNG de 2 Mo maximum. Aucun renseignement médical, de paiement ou personnel sensible.',
+                      'Up to 3 PDF, XLSX, JPG or PNG files, 2 MB each. You can also include a public document link in your request. No medical, payment or sensitive personal information.',
+                      'Jusqu’à 3 fichiers PDF, XLSX, JPG ou PNG, de 2 Mo chacun. Vous pouvez aussi fournir un lien public dans votre demande. Aucun renseignement médical, de paiement ou personnel sensible.',
                     )}
                   </small>
                   <span

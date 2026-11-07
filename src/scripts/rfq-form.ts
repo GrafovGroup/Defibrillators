@@ -110,7 +110,9 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-rfq]')) {
   const optional = form.querySelector<HTMLDetailsElement>(
     '[data-optional-details]',
   )!;
-  optional.open = ['model', 'part', 'package'].some((key) => safe.has(key));
+  optional.open =
+    safe.get('request') === 'procurement' ||
+    ['model', 'part', 'package'].some((key) => safe.has(key));
   const syncDetails = () => {
     for (const group of form.querySelectorAll<HTMLElement>(
       '[data-request-details], [data-request-field], [data-maintenance-renewal]',
@@ -124,10 +126,13 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-rfq]')) {
       group.hidden = !relevant;
       if (group instanceof HTMLFieldSetElement) group.disabled = !relevant;
       for (const control of group.querySelectorAll<
-        HTMLInputElement | HTMLSelectElement
-      >('input, select'))
+        HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+      >('input, select, textarea'))
         control.disabled = !relevant;
     }
+    field('_subject')!.value =
+      `Defibrillators.ca | ${field('audience')!.value} | ${field('request_type')!.value} | ${lang}`;
+    if (field('request_type')!.value === 'procurement') optional.open = true;
   };
   field('request_type')!.addEventListener('change', syncDetails);
   field('maintenance')!.addEventListener('change', syncDetails);
@@ -140,7 +145,11 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-rfq]')) {
     : undefined;
   const applyContext = () => {
     if (safe.has('model')) field('model')!.value = safe.get('model')!;
-    if (safe.has('request'))
+    if (
+      safe.has('request') &&
+      (field('audience')!.value === 'commercial' ||
+        safe.get('request') !== 'procurement')
+    )
       field('request_type')!.value = safe.get('request')!;
     if (safe.has('part')) field('accessory_type')!.value = safe.get('part')!;
     if (safe.has('package')) field('package')!.value = safe.get('package')!;
