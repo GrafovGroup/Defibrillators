@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-07 — Phase 5 WHC deployment
+
+- Deployed the verified Phase 4 release with the approved homepage, direct English entry and all bilingual pages.
+- Preserved a private rollback archive and verified every deployed page and asset against the build.
+- Connected the singular domain to the website, activated free HTTPS and verified permanent redirects preserving paths and queries.
+- Verified live bilingual Formspree enquiries, consent/context, notification delivery, mobile navigation and catalogue/planning interactions. Recorded the hosting handoff and indexing gate in `docs/PHASE-5.md`.
+
 ## 2026-11-07 — Phase 4 technical QA
 
 - Improved accessible language names, footer targets, keyboard focus and form error associations.

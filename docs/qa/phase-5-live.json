@@ -1,0 +1,1373 @@
+{
+  "sourceCommit": "1b9adc4815166b4170c180a1d7fb2c67a5234f0a",
+  "checks": [
+    {
+      "path": "/404.html",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 698,
+      "csp": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 9667,
+      "csp": true
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26,
+      "csp": true
+    },
+    {
+      "path": "/maps/calgary.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63385,
+      "csp": true
+    },
+    {
+      "path": "/maps/manitoba.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63247,
+      "csp": true
+    },
+    {
+      "path": "/maps/ontario.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63246,
+      "csp": true
+    },
+    {
+      "path": "/maps/quebec.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63246,
+      "csp": true
+    },
+    {
+      "path": "/maps/locations.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63245,
+      "csp": true
+    },
+    {
+      "path": "/maps/saskatchewan.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63251,
+      "csp": true
+    },
+    {
+      "path": "/maps/alberta.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63246,
+      "csp": true
+    },
+    {
+      "path": "/maps/nl.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63290,
+      "csp": true
+    },
+    {
+      "path": "/maps/pei.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63285,
+      "csp": true
+    },
+    {
+      "path": "/maps/nunavut.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63246,
+      "csp": true
+    },
+    {
+      "path": "/maps/montreal.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63387,
+      "csp": true
+    },
+    {
+      "path": "/maps/ns.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63269,
+      "csp": true
+    },
+    {
+      "path": "/maps/nb.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63272,
+      "csp": true
+    },
+    {
+      "path": "/maps/toronto.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63385,
+      "csp": true
+    },
+    {
+      "path": "/maps/nwt.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63288,
+      "csp": true
+    },
+    {
+      "path": "/maps/bc.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63278,
+      "csp": true
+    },
+    {
+      "path": "/maps/vancouver.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63387,
+      "csp": true
+    },
+    {
+      "path": "/maps/yukon.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 63244,
+      "csp": true
+    },
+    {
+      "path": "/licenses/inter-OFL.txt",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 4477,
+      "csp": true
+    },
+    {
+      "path": "/images/philips-reference.webp",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27280,
+      "csp": true
+    },
+    {
+      "path": "/images/approved-homepage-art.webp",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 136932,
+      "csp": true
+    },
+    {
+      "path": "/images/electrodes.webp",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 54614,
+      "csp": true
+    },
+    {
+      "path": "/images/readiness.webp",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 31024,
+      "csp": true
+    },
+    {
+      "path": "/images/aed-cabinet.webp",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 56198,
+      "csp": true
+    },
+    {
+      "path": "/images/maintenance.webp",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 46536,
+      "csp": true
+    },
+    {
+      "path": "/images/training.webp",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 43842,
+      "csp": true
+    },
+    {
+      "path": "/brand/logo-en-dark.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16116,
+      "csp": true
+    },
+    {
+      "path": "/brand/logo-fr-light.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15906,
+      "csp": true
+    },
+    {
+      "path": "/brand/logo-en-light.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16116,
+      "csp": true
+    },
+    {
+      "path": "/brand/logo-fr-dark.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15906,
+      "csp": true
+    },
+    {
+      "path": "/brand/wordmark-light.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 6998,
+      "csp": true
+    },
+    {
+      "path": "/brand/wordmark-dark.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 6998,
+      "csp": true
+    },
+    {
+      "path": "/brand/favicon.svg",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 329,
+      "csp": true
+    },
+    {
+      "path": "/_astro/inter-vietnamese-wght-normal.CBcvBZtf.woff2",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 10252,
+      "csp": true
+    },
+    {
+      "path": "/_astro/inter-cyrillic-ext-wght-normal.BOeWTOD4.woff2",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 25960,
+      "csp": true
+    },
+    {
+      "path": "/_astro/inter-greek-wght-normal.CkhJZR-_.woff2",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18996,
+      "csp": true
+    },
+    {
+      "path": "/_astro/inter-cyrillic-wght-normal.DqGufNeO.woff2",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18748,
+      "csp": true
+    },
+    {
+      "path": "/_astro/inter-latin-ext-wght-normal.DO1Apj_S.woff2",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 85068,
+      "csp": true
+    },
+    {
+      "path": "/_astro/inter-latin-wght-normal.Dx4kXJAl.woff2",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 48256,
+      "csp": true
+    },
+    {
+      "path": "/_astro/site.CDlv6iT1.css",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 36906,
+      "csp": true
+    },
+    {
+      "path": "/_astro/inter-greek-ext-wght-normal.DlzME5K_.woff2",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 11232,
+      "csp": true
+    },
+    {
+      "path": "/_astro/QuoteForm.astro_astro_type_script_index_0_lang.k2tZBAg1.js",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16411,
+      "csp": true
+    },
+    {
+      "path": "/fr/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24251,
+      "csp": true
+    },
+    {
+      "path": "/fr/confidentialite/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16076,
+      "csp": true
+    },
+    {
+      "path": "/fr/formation-rcr-dea/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16643,
+      "csp": true
+    },
+    {
+      "path": "/fr/regions/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 25917,
+      "csp": true
+    },
+    {
+      "path": "/fr/regions/nouvelle-ecosse/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19914,
+      "csp": true
+    },
+    {
+      "path": "/fr/regions/yukon/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19667,
+      "csp": true
+    },
+    {
+      "path": "/fr/regions/saskatchewan/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19878,
+      "csp": true
+    },
+    {
+      "path": "/fr/regions/manitoba/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19753,
+      "csp": true
+    },
+    {
+      "path": "/fr/regions/territoires-du-nord-ouest/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 20074,
+      "csp": true
+    },
+    {
+      "path": "/fr/regions/nunavut/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19841,
+      "csp": true
+    },
+    {
+      "path": "/fr/regions/nouveau-brunswick/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 20027,
+      "csp": true
+    },
+    {
+      "path": "/fr/regions/ontario/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 20705,
+      "csp": true
+    },
+    {
+      "path": "/fr/regions/ontario/toronto/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19984,
+      "csp": true
+    },
+    {
+      "path": "/fr/regions/ile-du-prince-edouard/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 20169,
+      "csp": true
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 21011,
+      "csp": true
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/vancouver/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 20427,
+      "csp": true
+    },
+    {
+      "path": "/fr/regions/quebec/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 20674,
+      "csp": true
+    },
+    {
+      "path": "/fr/regions/quebec/montreal/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 20082,
+      "csp": true
+    },
+    {
+      "path": "/fr/regions/alberta/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 20632,
+      "csp": true
+    },
+    {
+      "path": "/fr/regions/alberta/calgary/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 20049,
+      "csp": true
+    },
+    {
+      "path": "/fr/regions/terre-neuve-labrador/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 20018,
+      "csp": true
+    },
+    {
+      "path": "/fr/contact/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15683,
+      "csp": true
+    },
+    {
+      "path": "/fr/demander-soumission/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 41593,
+      "csp": true
+    },
+    {
+      "path": "/fr/questions-frequentes/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19681,
+      "csp": true
+    },
+    {
+      "path": "/fr/installation/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16524,
+      "csp": true
+    },
+    {
+      "path": "/fr/secteurs/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 21146,
+      "csp": true
+    },
+    {
+      "path": "/fr/secteurs/bureaux/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16563,
+      "csp": true
+    },
+    {
+      "path": "/fr/secteurs/hotellerie/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16423,
+      "csp": true
+    },
+    {
+      "path": "/fr/secteurs/commerce-detail/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16613,
+      "csp": true
+    },
+    {
+      "path": "/fr/secteurs/ecoles/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16551,
+      "csp": true
+    },
+    {
+      "path": "/fr/secteurs/gestion-immobiliere/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16867,
+      "csp": true
+    },
+    {
+      "path": "/fr/secteurs/industries-entrepots/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16681,
+      "csp": true
+    },
+    {
+      "path": "/fr/secteurs/municipalites/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16720,
+      "csp": true
+    },
+    {
+      "path": "/fr/secteurs/residentiel/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16692,
+      "csp": true
+    },
+    {
+      "path": "/fr/secteurs/sports-loisirs/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16515,
+      "csp": true
+    },
+    {
+      "path": "/fr/a-propos/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16558,
+      "csp": true
+    },
+    {
+      "path": "/fr/accessoires/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19400,
+      "csp": true
+    },
+    {
+      "path": "/fr/accessoires/trousses-intervention/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16761,
+      "csp": true
+    },
+    {
+      "path": "/fr/accessoires/signalisation/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16547,
+      "csp": true
+    },
+    {
+      "path": "/fr/accessoires/batteries/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16583,
+      "csp": true
+    },
+    {
+      "path": "/fr/accessoires/electrodes/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16613,
+      "csp": true
+    },
+    {
+      "path": "/fr/accessoires/armoires/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16440,
+      "csp": true
+    },
+    {
+      "path": "/fr/accessoires/trouver-pieces/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 22709,
+      "csp": true
+    },
+    {
+      "path": "/fr/defibrillateurs/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 27953,
+      "csp": true
+    },
+    {
+      "path": "/fr/defibrillateurs/philips-heartstart-frx/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18151,
+      "csp": true
+    },
+    {
+      "path": "/fr/defibrillateurs/ensembles/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19891,
+      "csp": true
+    },
+    {
+      "path": "/fr/defibrillateurs/zoll-aed-plus/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18117,
+      "csp": true
+    },
+    {
+      "path": "/fr/defibrillateurs/lifepak-cr2/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17717,
+      "csp": true
+    },
+    {
+      "path": "/fr/defibrillateurs/philips-heartstart-hs1/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18295,
+      "csp": true
+    },
+    {
+      "path": "/fr/defibrillateurs/defibtech-lifeline-view/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17978,
+      "csp": true
+    },
+    {
+      "path": "/fr/defibrillateurs/heartsine-samaritan-350p/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18340,
+      "csp": true
+    },
+    {
+      "path": "/fr/defibrillateurs/zoll-aed-3/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17636,
+      "csp": true
+    },
+    {
+      "path": "/fr/defibrillateurs/comparer/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 25141,
+      "csp": true
+    },
+    {
+      "path": "/fr/defibrillateurs/powerheart-g5/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17732,
+      "csp": true
+    },
+    {
+      "path": "/fr/conditions/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15883,
+      "csp": true
+    },
+    {
+      "path": "/fr/ressources/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19543,
+      "csp": true
+    },
+    {
+      "path": "/fr/ressources/guide-entretien-dea/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 21776,
+      "csp": true
+    },
+    {
+      "path": "/fr/ressources/guide-achat-dea/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 21837,
+      "csp": true
+    },
+    {
+      "path": "/fr/ressources/cout-dea-budget/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 22535,
+      "csp": true
+    },
+    {
+      "path": "/fr/accessibilite/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15404,
+      "csp": true
+    },
+    {
+      "path": "/fr/programmes-dea/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16655,
+      "csp": true
+    },
+    {
+      "path": "/fr/services/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18171,
+      "csp": true
+    },
+    {
+      "path": "/fr/entretien/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16646,
+      "csp": true
+    },
+    {
+      "path": "/en/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 22909,
+      "csp": true
+    },
+    {
+      "path": "/en/aed-programs/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15950,
+      "csp": true
+    },
+    {
+      "path": "/en/contact/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 14994,
+      "csp": true
+    },
+    {
+      "path": "/en/accessories/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18480,
+      "csp": true
+    },
+    {
+      "path": "/en/accessories/find-parts/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 21594,
+      "csp": true
+    },
+    {
+      "path": "/en/accessories/signage/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15731,
+      "csp": true
+    },
+    {
+      "path": "/en/accessories/electrode-pads/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15930,
+      "csp": true
+    },
+    {
+      "path": "/en/accessories/emergency-response-kits/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16055,
+      "csp": true
+    },
+    {
+      "path": "/en/accessories/batteries/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15887,
+      "csp": true
+    },
+    {
+      "path": "/en/accessories/cabinets/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15803,
+      "csp": true
+    },
+    {
+      "path": "/en/privacy/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15227,
+      "csp": true
+    },
+    {
+      "path": "/en/resources/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18696,
+      "csp": true
+    },
+    {
+      "path": "/en/resources/aed-maintenance-guide/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 20771,
+      "csp": true
+    },
+    {
+      "path": "/en/resources/aed-buying-guide/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 20807,
+      "csp": true
+    },
+    {
+      "path": "/en/resources/aed-cost-ownership/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 21417,
+      "csp": true
+    },
+    {
+      "path": "/en/terms/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15365,
+      "csp": true
+    },
+    {
+      "path": "/en/industries/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 20206,
+      "csp": true
+    },
+    {
+      "path": "/en/industries/municipalities/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16047,
+      "csp": true
+    },
+    {
+      "path": "/en/industries/hospitality/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15822,
+      "csp": true
+    },
+    {
+      "path": "/en/industries/industrial-warehouses/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16172,
+      "csp": true
+    },
+    {
+      "path": "/en/industries/fitness-recreation/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15944,
+      "csp": true
+    },
+    {
+      "path": "/en/industries/retail/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15841,
+      "csp": true
+    },
+    {
+      "path": "/en/industries/property-management/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16167,
+      "csp": true
+    },
+    {
+      "path": "/en/industries/residential/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16029,
+      "csp": true
+    },
+    {
+      "path": "/en/industries/offices/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15896,
+      "csp": true
+    },
+    {
+      "path": "/en/industries/schools/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15867,
+      "csp": true
+    },
+    {
+      "path": "/en/about/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15743,
+      "csp": true
+    },
+    {
+      "path": "/en/installation/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15786,
+      "csp": true
+    },
+    {
+      "path": "/en/faqs/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18456,
+      "csp": true
+    },
+    {
+      "path": "/en/defibrillators/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 26609,
+      "csp": true
+    },
+    {
+      "path": "/en/defibrillators/philips-heartstart-frx/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17376,
+      "csp": true
+    },
+    {
+      "path": "/en/defibrillators/zoll-aed-plus/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17354,
+      "csp": true
+    },
+    {
+      "path": "/en/defibrillators/lifepak-cr2/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16993,
+      "csp": true
+    },
+    {
+      "path": "/en/defibrillators/philips-heartstart-hs1/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17620,
+      "csp": true
+    },
+    {
+      "path": "/en/defibrillators/defibtech-lifeline-view/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17187,
+      "csp": true
+    },
+    {
+      "path": "/en/defibrillators/heartsine-samaritan-350p/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17572,
+      "csp": true
+    },
+    {
+      "path": "/en/defibrillators/zoll-aed-3/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16937,
+      "csp": true
+    },
+    {
+      "path": "/en/defibrillators/packages/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18788,
+      "csp": true
+    },
+    {
+      "path": "/en/defibrillators/compare/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 23972,
+      "csp": true
+    },
+    {
+      "path": "/en/defibrillators/powerheart-g5/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16983,
+      "csp": true
+    },
+    {
+      "path": "/en/cpr-aed-training/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 15973,
+      "csp": true
+    },
+    {
+      "path": "/en/locations/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 24712,
+      "csp": true
+    },
+    {
+      "path": "/en/locations/new-brunswick/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19102,
+      "csp": true
+    },
+    {
+      "path": "/en/locations/newfoundland-labrador/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19447,
+      "csp": true
+    },
+    {
+      "path": "/en/locations/yukon/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18766,
+      "csp": true
+    },
+    {
+      "path": "/en/locations/saskatchewan/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19132,
+      "csp": true
+    },
+    {
+      "path": "/en/locations/manitoba/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18984,
+      "csp": true
+    },
+    {
+      "path": "/en/locations/nunavut/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 18986,
+      "csp": true
+    },
+    {
+      "path": "/en/locations/ontario/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19813,
+      "csp": true
+    },
+    {
+      "path": "/en/locations/ontario/toronto/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19245,
+      "csp": true
+    },
+    {
+      "path": "/en/locations/nova-scotia/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19023,
+      "csp": true
+    },
+    {
+      "path": "/en/locations/prince-edward-island/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19241,
+      "csp": true
+    },
+    {
+      "path": "/en/locations/northwest-territories/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19292,
+      "csp": true
+    },
+    {
+      "path": "/en/locations/british-columbia/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 20102,
+      "csp": true
+    },
+    {
+      "path": "/en/locations/british-columbia/vancouver/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19454,
+      "csp": true
+    },
+    {
+      "path": "/en/locations/quebec/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19853,
+      "csp": true
+    },
+    {
+      "path": "/en/locations/quebec/montreal/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19341,
+      "csp": true
+    },
+    {
+      "path": "/en/locations/alberta/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19788,
+      "csp": true
+    },
+    {
+      "path": "/en/locations/alberta/calgary/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 19317,
+      "csp": true
+    },
+    {
+      "path": "/en/request-quote/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 39910,
+      "csp": true
+    },
+    {
+      "path": "/en/maintenance/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 16001,
+      "csp": true
+    },
+    {
+      "path": "/en/accessibility/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 14779,
+      "csp": true
+    },
+    {
+      "path": "/en/services/",
+      "status": 200,
+      "matchesBuild": true,
+      "bytes": 17325,
+      "csp": true
+    }
+  ],
+  "redirects": [
+    {
+      "url": "https://defibrillators.ca/?phase5=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/?phase5=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/index.html?phase5=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/?phase5=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/fr/index.html?phase5=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?phase5=check",
+      "custom404": null
+    },
+    {
+      "url": "http://defibrillators.ca/en/defibrillators/?phase5=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/en/defibrillators/?phase5=check",
+      "custom404": null
+    },
+    {
+      "url": "https://www.defibrillators.ca/fr/?phase5=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?phase5=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillator.ca/fr/?phase5=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?phase5=check",
+      "custom404": null
+    },
+    {
+      "url": "http://defibrillator.ca/fr/?phase5=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?phase5=check",
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/phase5-not-a-page/",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    },
+    {
+      "url": "https://defibrillators.ca/.htaccess",
+      "status": 403,
+      "location": null,
+      "custom404": null
+    },
+    {
+      "url": "https://defibrillators.ca/defibrillators-phase4-whc.zip",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    },
+    {
+      "url": "https://defibrillators.ca/defibrillators-pre-phase5-20261107.zip",
+      "status": 404,
+      "location": null,
+      "custom404": true
+    },
+    {
+      "url": "http://www.defibrillator.ca/fr/?phase5=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?phase5=check",
+      "custom404": null
+    },
+    {
+      "url": "https://www.defibrillator.ca/fr/?phase5=check",
+      "status": 301,
+      "location": "https://defibrillators.ca/fr/?phase5=check",
+      "custom404": null
+    }
+  ],
+  "certificates": [
+    {
+      "host": "defibrillators.ca",
+      "valid": true
+    },
+    {
+      "host": "www.defibrillators.ca",
+      "valid": true
+    },
+    {
+      "host": "defibrillator.ca",
+      "valid": true
+    },
+    {
+      "host": "www.defibrillator.ca",
+      "valid": true
+    }
+  ],
+  "verifiedOn": "2026-11-07",
+  "transferSamples": [
+    {
+      "path": "/en/",
+      "status": 200,
+      "ttfbMs": 54,
+      "transferredBytes": 5924,
+      "encoding": "gzip",
+      "cacheControl": null
+    },
+    {
+      "path": "/fr/",
+      "status": 200,
+      "ttfbMs": 54,
+      "transferredBytes": 6300,
+      "encoding": "gzip",
+      "cacheControl": null
+    },
+    {
+      "path": "/_astro/site.CDlv6iT1.css",
+      "status": 200,
+      "ttfbMs": 66,
+      "transferredBytes": 8260,
+      "encoding": "gzip",
+      "cacheControl": "public, max-age=604800"
+    },
+    {
+      "path": "/_astro/QuoteForm.astro_astro_type_script_index_0_lang.k2tZBAg1.js",
+      "status": 200,
+      "ttfbMs": 50,
+      "transferredBytes": 6060,
+      "encoding": "gzip",
+      "cacheControl": null
+    },
+    {
+      "path": "/images/training.webp",
+      "status": 200,
+      "ttfbMs": 49,
+      "transferredBytes": 43842,
+      "encoding": null,
+      "cacheControl": "public, max-age=604800"
+    },
+    {
+      "path": "/_astro/inter-cyrillic-ext-wght-normal.BOeWTOD4.woff2",
+      "status": 200,
+      "ttfbMs": 51,
+      "transferredBytes": 25960,
+      "encoding": null,
+      "cacheControl": "public, max-age=31536000"
+    }
+  ],
+  "indexingEnabled": false,
+  "forms": [
+    {
+      "scenario": "fr-commercial",
+      "received": true,
+      "notificationStatus": "delivered"
+    },
+    {
+      "scenario": "en-residential",
+      "received": true,
+      "notificationStatus": "delivered",
+      "package": "home"
+    },
+    {
+      "scenario": "fr-parts-attachment",
+      "received": true,
+      "notificationStatus": "open",
+      "attachmentStored": true,
+      "model": "frx",
+      "accessoryType": "battery"
+    }
+  ]
+}

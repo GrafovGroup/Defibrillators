@@ -1,6 +1,6 @@
 # Defibrillators.ca
 
-Phases 0–4 of `MASTER_PROMPT.md`: bilingual homepages, core product/service pages, RFQs, location planning guides, SEO and technical QA using the approved modern wordmark and design system. Static Astro output for WHC hosting, with no production Node process. Phase 4 results and verification limits are recorded in `docs/PHASE-4.md`.
+Phases 0–5 of `MASTER_PROMPT.md`: bilingual homepages, core product/service pages, RFQs, location planning guides, SEO, technical QA and WHC deployment using the approved modern wordmark and design system. Static Astro output, with no production Node process. The verified release is live at [Defibrillators.ca](https://defibrillators.ca/), with search indexing disabled pending launch clearance. See `docs/PHASE-4.md` and `docs/PHASE-5.md` for results and verification limits.
 
 The homepage and shared logo/header were restored to the owner’s selected mockup on 7 November 2026. Both homepages now use the exact owner-approved concept artwork as an illustration, with real HTML content and controls. See `docs/DESIGN-SYSTEM.md` and `docs/ASSETS.md` for the reference and scope.
 
@@ -48,13 +48,13 @@ Product profiles contain manufacturer reference information, not confirmed inven
 - `src/lib/structured-data.ts`, `site-config.ts`, `sitemap.ts`: factual JSON-LD, indexing/verification configuration and canonical sitemap.
 - `tests/`: built-output integration and catalogue-filter checks.
 - `docs/PHASE-0.md`, `docs/DESIGN-SYSTEM.md`, `docs/QA.md`: original audit, design and Phase 1A verification.
-- `docs/PHASE-1B.md`, `docs/PHASE-2.md`, `docs/PHASE-3.md`, `docs/PHASE-4.md`: implementation scope and verification records for each phase.
+- `docs/PHASE-1B.md`, `docs/PHASE-2.md`, `docs/PHASE-3.md`, `docs/PHASE-4.md`, `docs/PHASE-5.md`: implementation scope and verification records for each phase.
 
 ## Static hosting handoff
 
-`pnpm build` generates `dist/`, including Apache security headers, canonical HTTPS redirects and the custom 404 configuration. Inline script hashes are generated from the actual build. Its contents can be uploaded to a cPanel document root or staging subdirectory configured as the site's root. No adapter, database, worker or persistent Node process is required. Verify WHC access, document root, HTTPS, host redirects and 404 handling in Phase 5. See `docs/PHASE-2.md` and `docs/WHC-DEPLOYMENT.md` for integration and hosting verification.
+`pnpm build` generates `dist/`, including Apache security headers, canonical HTTPS redirects and the custom 404 configuration. Inline script hashes are generated from the actual build. Upload the complete build to the verified dedicated website root. No adapter, database, worker or persistent Node process is required. Phase 5 verified live HTTPS, primary and secondary host redirects, 404 handling, exact deployed-file content and real Formspree delivery. See `docs/PHASE-5.md` and `docs/WHC-DEPLOYMENT.md` for the release record and rollback procedure.
 
-**This is a prelaunch implementation.** Keep `PUBLIC_SITE_INDEXABLE=false` until launch approval and supplier/regulatory/privacy checks are complete. The build-time switch controls robots metadata and generated `robots.txt` together. The sitemap is prepared but is not advertised in robots.txt or submitted while the switch is off. A crawl block is not access control and cannot guarantee removal of previously discovered URLs; crawlers must be able to read `noindex` for deindexing. Search Console and Bing public verification tokens have optional slots in `.env.example`; no accounts or indexing submissions are claimed. See `docs/PHASE-3.md` for the launch sequence and remaining secondary-domain setup.
+**This is a prelaunch implementation.** Keep `PUBLIC_SITE_INDEXABLE=false` until launch approval and supplier/regulatory/privacy checks are complete. The build-time switch controls robots metadata and generated `robots.txt` together. The sitemap is prepared but is not advertised in robots.txt or submitted while the switch is off. A crawl block is not access control and cannot guarantee removal of previously discovered URLs; crawlers must be able to read `noindex` for deindexing. Search Console and Bing public verification tokens have optional slots in `.env.example`; no accounts or indexing submissions are claimed. See `docs/PHASE-3.md` for the launch sequence and `docs/PHASE-5.md` for current hosting status.
 
 ## Logo assets
 
@@ -62,6 +62,6 @@ The SVG assets contain outlined text and work without external fonts. The restor
 
 To regenerate logos on a Mac with the licensed system fonts: `node scripts/generate-brand.mjs`. On other systems, set `LOGO_FONT_PATH` and `TAGLINE_FONT_PATH` to licensed Arial Black and Arial Bold font files. The font binaries are not redistributed. Generated SVGs are committed, so regeneration is unnecessary for ordinary development.
 
-## Remaining phases
+## Launch dependencies
 
-Phase 4 technical QA is complete: 309 tests, 320 page/viewport accessibility checks, bilingual form scenarios, link/metadata review and build-size budgets. This is not a full accessibility certification or a field-performance measurement. Phase 5 remains: approved deployment, fresh live DNS/SSL/redirect/form/performance checks and launch/indexing approval. Supplier/regulatory/privacy verification, formal French review and assistive-technology testing remain launch dependencies. Delivery stays GitHub-only until the owner authorizes deployment.
+Phase 4 technical QA includes 309 tests and 320 page/viewport accessibility checks. Phase 5 deployed that release and verified live DNS, SSL, redirects, file integrity, bilingual enquiries, compression and core interactions. These checks are not full accessibility certification or field Core Web Vitals measurements. Supplier/regulatory/privacy verification, operating commitments, formal French review and assistive-technology testing remain launch dependencies. Keep indexing off until those checks and explicit launch approval are complete.

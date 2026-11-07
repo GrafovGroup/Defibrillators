@@ -98,3 +98,9 @@ Completed the accessibility, localization, form-state, links/metadata, build-siz
 `pnpm verify`: **309 passing tests** with no lint/type/format/build errors. Axe-core 4.14.0 found zero violations across **320 route/viewport checks** after fixes; layered-content contrast requires manual review and is not counted as an automated pass. Dependency audit: zero known advisories. Bilingual success/failure, keyboard menu/skip-link/comparison, parts-to-RFQ context and native application-script fallbacks were verified using the local-only test preview.
 
 See [PHASE-4.md](PHASE-4.md) for complete scope, reproduction commands, evidence, measured transfer sizes and remaining launch dependencies. No live Formspree submission, WHC deployment or indexing activation occurred.
+
+## Phase 5 deployment verification — 7 November 2026
+
+Deployed the verified Phase 4 build after owner authorization. All 171 publicly checked files returned 200 and matched the build. Primary and singular-domain HTTPS, canonical 301 redirects with path/query preservation, custom 404, security headers and archive isolation were verified live. Bilingual synthetic enquiries reached Formspree; notification delivery, consent/context and a synthetic attachment were checked in the provider. Catalogue filters, comparison, parts-to-RFQ language switching and the French mobile keyboard menu passed live smoke checks.
+
+The website remains excluded from indexing pending launch clearance. See [PHASE-5.md](PHASE-5.md) for release identity, exact verification scope, transfer samples, rollback handoff and limits. No claim of field Core Web Vitals, full accessibility conformance or regulatory clearance is made.
