@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-11-07",
+  "sitemapUrls": 234,
+  "google": {
+    "resubmission": "Sitemap submitted successfully",
+    "displayedDiscoveredCount": 232,
+    "pageIndexing": "Processing data",
+    "performance": "Processing data",
+    "coreWebVitals": "Not enough usage data"
+  },
+  "bing": {
+    "resubmission": "Processing",
+    "displayedDiscoveredCount": 232,
+    "performance": "Check back in 48 hours"
+  },
+  "pageSpeed": {
+    "reportUrl": "https://pagespeed.web.dev/analysis/https-defibrillators-ca-en/5su9yz4s7s?hl=en&form_factor=mobile",
+    "measured": "2026-11-07 15:25 EST",
+    "mobile": {
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcpSeconds": 0.9,
+      "lcpSeconds": 1.6,
+      "tbtMs": 0,
+      "cls": 0.011,
+      "speedIndexSeconds": 2.2
+    },
+    "desktop": {
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcpSeconds": 0.2,
+      "lcpSeconds": 0.4,
+      "tbtMs": 0,
+      "cls": 0.001,
+      "speedIndexSeconds": 0.3
+    },
+    "fieldData": "Unavailable"
+  },
+  "liveBrowser": [
+    "English search frx battery finds one FRx result",
+    "Confirmed legal operator and full mailing address displayed",
+    "French worksheet calculates 1 300,00 $",
+    "English required-field summary works with zero consent checkboxes",
+    "No production lead submitted"
+  ]
+}

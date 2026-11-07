@@ -58,3 +58,15 @@ Hours, normal reply time, supplier prices/stock, exact Canadian licence/configur
 Twelve Chrome accessibility/layout checks cover changed templates at 320, 360, 390, 768, 1024, 1440 and 2560 px: zero axe violations, page overflow or broken images. Incomplete contrast observations remain in the evidence for decorative arrows, horizontally clipped comparison cells, pseudo backgrounds and wide-viewport capture boundaries; the wide homepage was also visually inspected. Keyboard focus and no-JavaScript required-field behaviour were checked. Actual desktop Safari search and French exact-cent budget calculations passed. No real iPhone or full VoiceOver session was available in this check.
 
 English/French enquiry acceptance and provider field, rate-limit, verification and unavailable scenarios were simulated locally. Model/part context survives the French product-to-parts-to-form journey. No production lead was submitted. See [browser evidence](qa/growth-browser.json).
+
+## Live deployment
+
+Implementation: `8ce99ccba5d1226d3a5f17c7cd4e22e469f4e13a`; final company-name punctuation correction: `444ccf37fe4f14810bf33375f1ed4e3143b358b1`.
+
+Deployed to the dedicated WHC site directory on 7 November after a fresh private rollback backup. The release contains 669 files, including 236 HTML documents and 236 header files. The primary ZIP is 9,491,470 bytes with SHA-256 `39fa9ec9a017023d4442400b5cd35fcec1c02a26d884b8bfb861f8b816ad7350`. An eight-HTML-file copy correction followed (52,505 bytes, SHA-256 `db35b05498589ab5603e60bf68e2cda851bcefc212b7e5e5b69aebeae35066e7`). Archives and account identifiers remain outside the public root and repository.
+
+All **432 public files** matched the final build byte for byte. All **235 checked HTML responses** returned their exact generated CSP. HTTPS certificates, primary/singular-host redirects with query preservation, custom 404s and configuration/archive isolation passed. Content-hashed assets return one-year immutable caching; HTML revalidates. [Live HTTP evidence](qa/growth-live.json).
+
+Live browser checks confirmed the company details, search result filtering, French budget calculations and required-field recovery without a consent checkbox. The final homepage PageSpeed run again scored **100 in performance, accessibility, best practices and SEO on mobile and desktop**. Mobile LCP was 1.6 seconds, TBT 0 ms and CLS 0.011; desktop LCP 0.4 seconds, TBT 0 ms and CLS 0.001. [Report](https://pagespeed.web.dev/analysis/https-defibrillators-ca-en/5su9yz4s7s?hl=en&form_factor=mobile).
+
+Google confirmed “Sitemap submitted successfully”; Bing moved the resubmission to Processing. The deployed sitemap has **234 URLs**, while both dashboards still display the prior 232 discovered URLs until reprocessing finishes. No indexing, ranking or real-user performance guarantee is inferred. [Search and performance evidence](qa/growth-search.json).
