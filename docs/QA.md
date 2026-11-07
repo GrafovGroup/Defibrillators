@@ -76,3 +76,17 @@ Validation:
 Workspace screenshots: `competitor-parts-finder-fr-desktop.png`, `competitor-package-planner-desktop.png`, `competitor-catalogue-desktop.png`, `competitor-budget-guide-fr-mobile.png` in `outputs/`.
 
 Delivery remains GitHub-only. No new live Formspree lead or provider configuration change was made; current optional-field transport is covered by mocked tests, and the established delivery integration remains unchanged. No WHC upload or search indexing submission occurred. Exact supplier/licensing information, stock/pricing, new photo rights and operating service commitments remain launch dependencies. Formal accessibility and French-language review and field performance measurement are not claimed by these checks.
+
+## Direct homepage entry — 7 November 2026
+
+Removed the preliminary language-selection page at the owner's request. The root renders the complete approved English homepage without JavaScript. WHC's configuration redirects `/` and `/index.html` directly to canonical `/en/`, preserving queries. French remains directly available at `/fr/` and through the header switch. The sitemap now contains 126 canonical localized URLs, and homepage x-default points to `/en/`.
+
+The shared `HomePage.astro` keeps root and localized homepages consistent. A single `site.css` import preserves the intended CSS cascade across route bundles; browser verification caught and resolved an ordering regression before delivery. Error-page styling is explicitly scoped to `.error-page`. The owner's preference against mandatory language or introductory screens is recorded in `AGENTS.md` and `DESIGN-SYSTEM.md`.
+
+Validation:
+
+- `pnpm verify`: lint, Astro/TypeScript (0 diagnostics), formatting, production build and **305 passing tests**. The root regression check verifies the complete English homepage and header, French switch, canonical URL and absence of a refresh interstitial. Existing checks cover all links, assets, metadata, sitemap and generated security headers.
+- Browser: root displays the approved homepage immediately at 1280px and 390px; no horizontal overflow or broken HTML images. Root → French → English navigation works, and the mobile menu opens with Enter and closes with Escape. The French mobile homepage, desktop catalogue and bilingual 404 were visually checked after the shared CSS adjustment. No captured browser console errors.
+- Saved proof: `outputs/direct-homepage-entry.png` in the workspace. Local preview used the generated security headers; Apache redirects were checked in the generated configuration, not on a live WHC server.
+
+Delivery remains GitHub-only. No WHC deployment or live form submission occurred.

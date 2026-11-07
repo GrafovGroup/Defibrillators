@@ -19,12 +19,12 @@ pnpm preview
 
 ## Implemented routes
 
-- `/`: accessible English/French language choice, usable without JavaScript.
+- `/`: opens the English homepage directly. WHC redirects to `/en/`; other static hosts render the same complete homepage without JavaScript or a preliminary screen. The header retains the EN/FR switch. See `AGENTS.md` for the owner's permanent preference against language-selection gates.
 - `/en/` and `/fr/`: complete localized homepages and 62 additional pages per language (126 localized pages).
 - Catalogue, eight manufacturer reference profiles, selectable comparison, model-first parts finder and four package planning paths; five accessory categories; four service pages and a service hub; nine industry pages and an industry hub; resources, buying/readiness/ownership-budget guides, about, contact, quote enquiries, FAQs, privacy, terms and accessibility.
 - `/404.html`: bilingual not-found page. Configure the host to return this with HTTP 404.
 - `/en/locations/` and `/fr/regions/`: a national planning hub, all 13 provinces/territories and Toronto, Montréal, Vancouver and Calgary guides, with locator maps and project-specific briefs. These are not claims of local offices or guaranteed service coverage.
-- `/sitemap.xml`: 127 canonical URLs, excluding queries, assets and the error page. Reciprocal hreflang is supplied in HTML.
+- `/sitemap.xml`: 126 canonical URLs, excluding the redirected root, queries, assets and the error page. Reciprocal hreflang is supplied in HTML.
 
 Navigation, homepage cards and related links reach the localized pages. The language switch retains page identity. The catalogue supports accessible search, manufacturer and guidance-feature filtering, with every profile available without JavaScript. Parts/package context carries into the RFQ; request-specific optional fields support replacement supplies and training. See `docs/ROUTES.md` for the complete route pairs and `docs/COMPETITOR-AUDIT.md` for the six-site audit and implementation decisions.
 

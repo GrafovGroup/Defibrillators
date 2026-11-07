@@ -36,13 +36,11 @@ test('Sitemap contains each canonical destination exactly once and excludes quer
   const actual = $('url > loc')
     .toArray()
     .map((el) => $(el).text());
-  const expected = [
-    origin + '/',
-    ...Object.keys(routes).flatMap((id) =>
-      ['en', 'fr'].map((lang) => origin + pathFor(id, lang)),
-    ),
-  ];
-  assert.equal(actual.length, Object.keys(routes).length * 2 + 1);
+  const expected = Object.keys(routes).flatMap((id) =>
+    ['en', 'fr'].map((lang) => origin + pathFor(id, lang)),
+  );
+  assert.equal(actual.length, Object.keys(routes).length * 2);
+  assert.ok(!actual.includes(origin + '/'), 'exclude the redirected root');
   assert.equal(new Set(actual).size, actual.length);
   assert.deepEqual([...actual].sort(), [...expected].sort());
   for (const loc of actual) {
@@ -298,6 +296,13 @@ test('WHC header supports every emitted inline script within a conservative size
 
 test('Host redirect configuration preserves paths, query strings and certificate validation', () => {
   const config = fs.readFileSync('dist/.htaccess', 'utf8');
+  const entryRule =
+    'RewriteRule ^(?:index\\.html)?$ https://defibrillators.ca/en/ [R=301,L]';
+  assert.ok(config.includes(entryRule));
+  assert.ok(
+    config.indexOf(entryRule) < config.indexOf('RewriteCond %{THE_REQUEST}'),
+    'root and root index go straight to the canonical English homepage',
+  );
   assert.ok(config.includes('^(?:www\\.)?defibrillator\\.ca$'));
   assert.ok(config.includes('^www\\.defibrillators\\.ca$'));
   assert.ok(

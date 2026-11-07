@@ -4,6 +4,9 @@ ErrorDocument 404 /404.html
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  # Open the English homepage directly; language switching stays in the header.
+  # Match only the root and its explicit index, preserving any query string.
+  RewriteRule ^(?:index\.html)?$ https://defibrillators.ca/en/ [R=301,L]
   # Collapse explicit index.html URLs while preserving any enquiry query string.
   RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[?\s] [NC]
   RewriteRule ^(.*/)?index\.html$ https://defibrillators.ca/$1 [R=301,L]

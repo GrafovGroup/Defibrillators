@@ -739,22 +739,22 @@ summary {
   margin: 14px 0 0;
   color: #b7c7da;
 }
-.entry {
+.error-page {
   min-height: 100vh;
   display: grid;
   place-items: center;
   background: var(--canvas);
   padding: 28px;
 }
-.entry main {
+.error-page main {
   max-width: 780px;
 }
-.entry h1 {
+.error-page h1 {
   font-size: clamp(28px, 4vw, 45px);
   margin: 35px 0;
   line-height: 1.35;
 }
-.entry .actions {
+.error-page .actions {
   justify-content: flex-start;
 }
 @media (min-width: 1700px) {
@@ -1209,10 +1209,10 @@ summary {
   .photo-credits a {
     overflow-wrap: anywhere;
   }
-  .entry .actions {
+  .error-page .actions {
     flex-direction: column;
   }
-  .entry .button {
+  .error-page .button {
     width: 100%;
   }
 }

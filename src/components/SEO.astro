@@ -48,11 +48,7 @@ const image =
 <link
   rel="alternate"
   hreflang="x-default"
-  href={
-    pageId === 'home'
-      ? 'https://defibrillators.ca/'
-      : `https://defibrillators.ca${pathFor(pageId, 'en')}`
-  }
+  href={`https://defibrillators.ca${pathFor(pageId, 'en')}`}
 />
 <meta property="og:type" content={page?.guide ? 'article' : 'website'} />
 <meta property="og:title" content={title} />

@@ -4,7 +4,7 @@
 
 The competitor-informed update remains on GitHub at the owner’s request. No hosting upload or indexing submission is included in this revision. Detailed hosting-account, server and historical operations records are kept outside this repository.
 
-The current build contains 128 HTML files (126 localized pages, a root language selector and a custom 404) and 127 canonical sitemap entries. It includes the restored approved design, location guides, eight manufacturer reference profiles, parts and package planning, and bilingual quote forms. See `COMPETITOR-AUDIT.md` and the latest `QA.md` section for implementation and validation.
+The current build contains 128 HTML files (126 localized pages, an English homepage fallback at the root and a custom 404) and 126 canonical sitemap entries. WHC redirects the root directly to `/en/`; no language-selection screen is used. It includes the restored approved design, location guides, eight manufacturer reference profiles, parts and package planning, and bilingual quote forms. See `COMPETITOR-AUDIT.md` and the latest `QA.md` section for implementation and validation.
 
 ## Build and package
 
@@ -22,7 +22,7 @@ Confirm the authoritative DNS records and valid HTTPS certificate in the hosting
 
 ## Post-upload verification
 
-Check the root language selector, both homepages, a model page, services, location guides, new planning routes, assets and a genuine HTTP 404. Verify HTTPS, canonical host/path redirects, reciprocal language links and security headers using the deployed response, not only the local files.
+Check that `/` and `/index.html` redirect directly to `/en/` with query strings preserved. Check both homepages and their header language switch, a model page, services, location guides, new planning routes, assets and a genuine HTTP 404. Verify HTTPS, canonical host/path redirects, reciprocal language links and security headers using the deployed response, not only the local files.
 
 Exercise model filtering, comparison, parts-to-quote navigation, package selection, language switching and the optional replacement/training fields. Make an explicitly labelled synthetic form submission only when authorized for the deployment check, then verify its receipt and routing in the configured provider. Check bilingual validation, consent, uploads and hosted anti-spam fallback. Do not claim notification delivery from a browser success message alone.
 

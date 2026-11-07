@@ -65,6 +65,20 @@ for (const page of pages) {
     });
   });
 }
+test('Root immediately renders the approved English homepage without a language gate', () => {
+  const $ = parsed.get('index.html');
+  const english = parsed.get('en/index.html');
+  assert.equal($('html').attr('lang'), 'en-CA');
+  assert.equal($('main').html(), english('main').html());
+  assert.equal($('header').html(), english('header').html());
+  assert.equal(
+    $('link[rel="canonical"]').attr('href'),
+    'https://defibrillators.ca/en/',
+  );
+  assert.equal($('.locale-switch a[href="/fr/"]').length, 1);
+  assert.equal($('body.entry, meta[http-equiv="refresh"]').length, 0);
+  assert.doesNotMatch($('title').text(), /choose|choisir/i);
+});
 for (const lang of ['en', 'fr']) {
   test(`${lang}: locale, navigation, contact and prelaunch guardrails`, () => {
     const $ = load(read(`${lang}/index.html`));
@@ -72,6 +86,10 @@ for (const lang of ['en', 'fr']) {
     assert.equal(
       $('link[rel="canonical"]').attr('href'),
       `https://defibrillators.ca/${lang}/`,
+    );
+    assert.equal(
+      $('link[hreflang="x-default"]').attr('href'),
+      'https://defibrillators.ca/en/',
     );
     for (const locale of ['en', 'fr']) {
       assert.equal(

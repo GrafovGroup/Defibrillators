@@ -4,6 +4,10 @@ The owner’s original homepage and Logo #4 were recovered from the “Launch AE
 
 The exact approved illustration is shared by the hero and cards through `ApprovedScene.astro`, using SVG viewports to frame the existing source. No new device, label or scene is generated. All navigation, headings, descriptions and actions are semantic HTML. The owner's explicit choice to use the approved scene as an illustration overrides the master prompt's photographic requirement for these homepage visuals only; see `ASSETS.md`. Product reference pages retain their existing licensed photographs and verification notes.
 
+## Homepage entry preference
+
+On 7 November 2026, the owner rejected the preliminary language-selection page and requested that this style never be used again. Visitors must reach the approved English homepage immediately, with French available through the header switch or its direct URL. Do not reintroduce a splash screen, mandatory locale question or introductory gate. This preference is also recorded in `AGENTS.md` for future changes.
+
 ## Tokens
 
 | Role           | Token                                 |
@@ -26,7 +30,7 @@ The exact approved illustration is shared by the hero and cards through `Approve
 
 Desktop navigation becomes a native expandable menu below 901px. Four service columns become two below 901px and one below 600px. The full-width hero places the selected scene beside the copy on desktop and beneath it on phones. The support strip uses six, three and two columns. French text remains real text, with its own headline line breaks. Buttons keep a minimum 48px height in the hero. The equivalent-page language switch, keyboard menu and existing form behaviour are preserved.
 
-`src/styles/approved-design.css` contains the restored component styles, loaded after the established design-system styles. Lower homepage sections and the internal page layouts remain intact. Brand and header changes are shared across all locales/routes.
+`src/styles/approved-design.css` contains the restored component styles. The single `site.css` entry imports global, page, approved-design and planning styles in that order to keep route bundling from reordering the cascade. Lower homepage sections and the internal page layouts remain intact. Brand and header changes are shared across all locales/routes.
 
 ## Brand deliverables
 
