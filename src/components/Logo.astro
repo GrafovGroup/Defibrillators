@@ -9,10 +9,9 @@ const { lang, dark = false } = Astro.props;
 
 <span class="brand">
   <img
-    src={`/brand/wordmark-${dark ? 'dark' : 'light'}.svg`}
-    width="440"
-    height="70"
-    alt="Defibrillators.ca"
+    src={`/brand/logo-${lang}-${dark ? 'dark' : 'light'}.svg`}
+    width="492"
+    height="88"
+    alt={`Defibrillators.ca — ${content[lang].tagline}`}
   />
-  <span class="brand-tagline">{content[lang].tagline}</span>
 </span>

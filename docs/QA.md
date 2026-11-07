@@ -41,3 +41,20 @@ The installed Astro checker requires TypeScript 6; 7 is not currently supported.
 This is Phase 1A, not a public launch or complete WCAG conformance certification. Screen-reader/device testing beyond the connected browser, formal French-language review, performance field data, actual phone/mail reception, RFQ backend delivery, supplier verification and real WHC/DNS/SSL configuration remain future work. No live form delivery, checkout, Search Console submission or production deployment is claimed.
 
 The visual reference is implemented in HTML/CSS; exact product/lobby imagery is replaced by licensed real photographic examples. Owner review of screenshots and supplier-approved imagery is still needed. Screenshots and a review report are supplied in the task's output folder; no screenshot is used as the website itself.
+
+## Approved homepage restoration — 7 November 2026
+
+Recovered the original homepage and Logo #4 selection from the owner’s prior conversation. The owner explicitly selected reuse of the exact concept scene as an illustration. Restored the heavy italic vector lockups, terminal pulse, compact header with Home/Accueil, hero composition, six support icons and four compact service cards. Kept the established category routes, forms, location pages and SEO behaviour.
+
+Validation:
+
+- `pnpm verify`: ESLint, Astro/TypeScript (0 diagnostics), Prettier, production build and all **252 tests passed**.
+- EN and FR homepages at 360, 390, 768, 1024 and 1440px: no horizontal overflow or broken HTML images; all five SVG artwork frames present. Desktop and phone artwork visually inspected against the recovered reference.
+- French RFQ, Toronto location and ZOLL reference pages at 390, 768 and 1440px: no horizontal overflow or broken images after the shared-header update.
+- French mobile menu opens with Enter, closes with Escape and returns focus to its summary. The hero quote CTA reaches the French RFQ. The English-to-French switch reaches the paired homepage.
+- Fixed a desktop illustration-layer overlap affecting the French secondary CTA; the hero copy now sits above the illustration’s stacking context. Final production screenshots show both actions unobstructed.
+- The shared illustration is 136,932 bytes and stays within the existing 150 KB image budget. Text remains live HTML and the logo uses font-independent vector outlines.
+
+Production screenshots in the workspace `outputs/` directory: `restored-homepage-en-desktop.png`, `restored-homepage-fr-desktop.png`, `restored-homepage-fr-mobile.png`. Original reference copies: `approved-homepage-original.png` and `approved-logo-concepts-original.png`.
+
+The owner selected “Keep it on GitHub for now.” This revision is not deployed to WHC. No new Formspree submission or provider configuration change was made during this design correction.

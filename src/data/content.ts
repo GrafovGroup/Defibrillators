@@ -30,20 +30,22 @@ export const content = {
     quote: 'Request a quote',
     shop: 'Shop AEDs',
     subject: 'AED quote request',
-    eyebrow: 'FOR WORKPLACES, COMMUNITIES & HOMES',
-    headline: 'Canada’s AED solutions.',
+    eyebrow: 'CANADA’S AED EXPERTS',
+    headline:
+      'Life-Saving\nDefibrillators for\nHomes, Workplaces\nand Communities',
     heroText:
-      'The right equipment. A thoughtful installation. A plan for what comes next. Bring it all together with Defibrillators.ca.',
+      'AED equipment, installation planning, ongoing maintenance and training coordination across Canada.',
     heroNote: 'From a single AED to a multi-location program.',
-    heroAlt:
-      'A wall-mounted cabinet containing an AED, with a prominent AED sign',
+    heroAlt: 'Illustration of an AED and wall cabinet in a modern lobby',
     heroCaption:
-      'Equipment shown for illustration. Ask about suitable models and availability.',
+      'Illustrative scene. Models and availability confirmed with your quote.',
     benefits: [
-      'AED sales & accessories',
+      'AED sales across Canada',
       'Installation planning',
-      'Ongoing readiness checks',
-      'Training coordination',
+      'Maintenance & inspections',
+      'CPR & AED training coordination',
+      'Equipment & accessories',
+      'For businesses & homes',
     ],
     servicesEyebrow: 'ONE PARTNER. EVERY STEP.',
     servicesTitle: 'Build a better-prepared space.',
@@ -56,7 +58,7 @@ export const content = {
         title: 'AED defibrillators',
         text: 'Find an AED suited to your setting, users and budget.',
         link: 'Discuss AED options',
-        alt: 'Two ZOLL AED Plus units on a shelf',
+        alt: 'Illustration of AED equipment from the approved homepage concept',
       },
       {
         id: 'accessories',
@@ -64,7 +66,7 @@ export const content = {
         title: 'AED accessories',
         text: 'Electrode pads, batteries, cabinets and signage for your setup.',
         link: 'Find the right accessories',
-        alt: 'Packaged Philips defibrillator electrode pads',
+        alt: 'Illustration of electrode pads and an AED battery',
       },
       {
         id: 'installation',
@@ -72,7 +74,7 @@ export const content = {
         title: 'AED installation',
         text: 'Plan a visible, accessible location with the right cabinet and signage.',
         link: 'Plan an installation',
-        alt: 'An AED cabinet mounted beneath its location sign',
+        alt: 'Illustration of a technician fitting an AED cabinet',
       },
       {
         id: 'maintenance',
@@ -80,11 +82,11 @@ export const content = {
         title: 'AED maintenance',
         text: 'Organise readiness checks, expiry tracking and replacement supplies.',
         link: 'Discuss ongoing care',
-        alt: 'An open Powerheart AED G3 with electrodes inside the lid',
+        alt: 'Illustration of an AED readiness checklist',
       },
     ],
     imageNote:
-      'Illustrative equipment photos; model selection, compatibility and availability are confirmed with your quote.',
+      'Concept illustrations, not product photographs. Model selection, compatibility and service availability are confirmed with your quote.',
     programEyebrow: 'A PLAN THAT FITS YOUR ORGANISATION',
     programTitle: 'One location or many.\nEvery AED matters.',
     programText:
@@ -187,20 +189,23 @@ export const content = {
     quote: 'Demander une soumission',
     shop: 'Magasiner les DEA',
     subject: 'Demande de soumission — DEA',
-    eyebrow: 'AU TRAVAIL, DANS LA COMMUNAUTÉ ET À LA MAISON',
-    headline: 'Vos solutions de DEA au Canada.',
+    eyebrow: 'VOS EXPERTS EN DEA AU CANADA',
+    headline:
+      'Des défibrillateurs\npour les maisons,\nles milieux de travail\net les communautés',
     heroText:
-      'Le bon équipement. Une installation bien pensée. Un plan pour la suite. Réunissez le tout avec Defibrillators.ca.',
+      'Équipement de DEA, planification d’installation, entretien et coordination de formations partout au Canada.',
     heroNote: 'D’un seul DEA à un programme pour plusieurs établissements.',
     heroAlt:
-      'Une armoire murale contenant un DEA, surmontée d’une enseigne bien visible',
+      'Illustration d’un DEA et d’une armoire murale dans un hall moderne',
     heroCaption:
-      'Équipement présenté à titre indicatif. Informez-vous sur les modèles adaptés et leur disponibilité.',
+      'Scène illustrative. Modèles et disponibilité confirmés avec votre soumission.',
     benefits: [
-      'Vente de DEA et accessoires',
-      'Planification de l’installation',
-      'Vérifications périodiques',
-      'Coordination de formations',
+      'Vente de DEA au Canada',
+      'Planification d’installation',
+      'Entretien et vérifications',
+      'Coordination de formations RCR et DEA',
+      'Équipement et accessoires',
+      'Entreprises et résidences',
     ],
     servicesEyebrow: 'UN PARTENAIRE. À CHAQUE ÉTAPE.',
     servicesTitle: 'Pour des espaces mieux préparés.',
@@ -213,7 +218,7 @@ export const content = {
         title: 'Défibrillateurs DEA',
         text: 'Un DEA adapté à votre environnement, à ses utilisateurs et à votre budget.',
         link: 'Discuter des options de DEA',
-        alt: 'Deux défibrillateurs ZOLL AED Plus sur une tablette',
+        alt: 'Illustration de DEA tirée du concept de page d’accueil approuvé',
       },
       {
         id: 'accessories',
@@ -221,7 +226,7 @@ export const content = {
         title: 'Accessoires de DEA',
         text: 'Électrodes, batteries, armoires et signalisation pour votre installation.',
         link: 'Trouver les bons accessoires',
-        alt: 'Électrodes Philips pour défibrillateur dans leur emballage',
+        alt: 'Illustration d’électrodes et d’une batterie de DEA',
       },
       {
         id: 'installation',
@@ -229,7 +234,7 @@ export const content = {
         title: 'Installation de DEA',
         text: 'Un emplacement visible et accessible, avec l’armoire et la signalisation appropriées.',
         link: 'Planifier une installation',
-        alt: 'Une armoire de DEA fixée au mur, sous son enseigne',
+        alt: 'Illustration d’un technicien installant une armoire de DEA',
       },
       {
         id: 'maintenance',
@@ -237,11 +242,11 @@ export const content = {
         title: 'Entretien de DEA',
         text: 'Planifiez les vérifications, le suivi des dates d’expiration et le remplacement des fournitures.',
         link: 'Discuter de l’entretien',
-        alt: 'Un Powerheart AED G3 ouvert avec des électrodes à l’intérieur du couvercle',
+        alt: 'Illustration d’une liste de vérification de DEA',
       },
     ],
     imageNote:
-      'Photos à titre indicatif. Le choix du modèle, la compatibilité et la disponibilité sont confirmés avec votre soumission.',
+      'Illustrations conceptuelles, et non photos de produits. Modèles, compatibilité et disponibilité des services confirmés avec votre soumission.',
     programEyebrow: 'UN PLAN ADAPTÉ À VOTRE ORGANISATION',
     programTitle: 'Un établissement ou plusieurs.\nChaque DEA compte.',
     programText:

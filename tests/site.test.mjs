@@ -84,8 +84,8 @@ for (const lang of ['en', 'fr']) {
       $('.locale-switch [aria-current="page"]').attr('href'),
       `/${lang}/`,
     );
-    assert.equal($('.desktop-nav li').length, 8);
-    assert.equal($('.mobile-nav nav li').length, 8);
+    assert.equal($('.desktop-nav li').length, 9);
+    assert.equal($('.mobile-nav nav li').length, 9);
     assert.equal($('.service-card').length, 4);
     assert.equal($('.faq-list details').length, 4);
     assert.ok($('a[href="tel:+18336969996"]').length);
@@ -116,7 +116,7 @@ test('Homepage navigation leads to localized page routes', () => {
           .toArray()
           .map((el) => $(el).attr('href')),
       ).size,
-      8,
+      9,
     );
   }
 });
@@ -148,7 +148,7 @@ test('Core text palette meets WCAG AA contrast', () => {
       .reduce((s, v, i) => s + v * [0.2126, 0.7152, 0.0722][i], 0);
   for (const [a, b] of [
     ['102B4E', 'FFFFFF'],
-    ['D62839', 'FFFFFF'],
+    ['D6091B', 'FFFFFF'],
     ['506278', 'F5F8FB'],
     ['CFDAE7', '09213E'],
     ['D7E2EF', '09213E'],

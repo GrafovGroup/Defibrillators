@@ -29,4 +29,12 @@ Regenerate from the pinned input using `python3 scripts/location-maps.py /path/t
 
 ## Fonts and original brand assets
 
-Inter Variable 5.3.0 is locally bundled through Fontsource under the SIL Open Font License; the licence is retained at `public/licenses/inter-OFL.txt`. Arial Bold Italic/Arial Bold were used as licensed local design fonts for outlined logo artwork. Font files are not included in the repository; the generated logo paths need no external fonts. The pulse, favicon and layout are original implementation assets.
+Inter Variable 5.3.0 is locally bundled through Fontsource under the SIL Open Font License; the licence is retained at `public/licenses/inter-OFL.txt`. Arial Black (slanted in SVG)/Arial Bold were used as licensed local design fonts for outlined logo artwork. Font files are not included in the repository; the generated logo paths need no external fonts. The pulse, favicon and layout are original implementation assets.
+
+## Owner-approved homepage illustration — 7 November 2026
+
+`public/images/approved-homepage-art.webp` is the exact selected AI-generated homepage concept from the owner’s “Launch AED Business” conversation. Source conversation: https://chatgpt.com/c/6aee060e-d7b8-83ea-9c5b-c0c94334866b. The owner explicitly instructed: “Use the approved mockup scene exactly, as an illustrative image.” This supersedes the master prompt’s real-photography requirement for the homepage hero and four service-card illustrations. It does not establish product availability, device identity, certification, manufacturer approval or an actual installation/staff photograph.
+
+The original PNG is preserved in the workspace output as `approved-homepage-original.png`; the logo selection sheet is `approved-logo-concepts-original.png`. The website version is a 1536 × 1024 WebP (quality 72, 136,932 bytes). `ApprovedScene.astro` frames its hero and four image areas using SVG viewports. Conversion is compression only; the selected scene has not been regenerated or altered. The full mockup is never displayed as a flattened webpage. The browser fetches one shared illustration for the five frames, preloaded on the homepage. Actual text, navigation, controls and layout remain HTML/CSS.
+
+The visible illustration notes and bilingual image credits distinguish this artwork from the unchanged licensed real photographs used elsewhere. Do not reuse these illustrative branded device depictions as product-specification images or schema evidence.

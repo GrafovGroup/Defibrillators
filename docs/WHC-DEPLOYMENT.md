@@ -12,9 +12,13 @@ The language selector, English/French homepages, both quote forms, service pages
 
 Formspree confirmed a bilingual form test in its Inbox and marked the notification delivered. A separate synthetic PNG attachment was accepted. The implementation passed all 173 automated checks, plus responsive form and error-focus checks.
 
+## Design restoration publication scope
+
+On 7 November 2026 the owner selected “Keep it on GitHub for now.” The restored logo/homepage and Phase 3 release are committed and packaged, but this revision is not uploaded to WHC. The verified live deployment remains the Phase 2 record above.
+
 ## Deployment procedure
 
-Phase 3 version 0.4.0 is ready as a separate static release. Its build adds 36 location pages, locator maps, `/sitemap.xml`, generated robots.txt and updated CSP hashes/redirect rules. The hosting browser connection was unavailable during that implementation; the live Phase 2 deployment above has not been replaced. Retain the existing private Phase 2 archive for rollback, extract the complete new build into the same document root, and move the new archive outside the public root. In addition to the checks below, verify both location hubs, a nested city route, the sitemap, `index.html` canonicalization and the updated RFQ province context. Keep the indexing switch false until launch approval.
+Phase 3 version 0.4.0, including the subsequent approved-homepage restoration, is ready as a separate static release. Its build adds 36 location pages, locator maps, `/sitemap.xml`, generated robots.txt and updated CSP hashes/redirect rules. The hosting browser connection was unavailable during that implementation; the live Phase 2 deployment above has not been replaced. Retain the existing private Phase 2 archive for rollback, extract the complete new build into the same document root, and move the new archive outside the public root. In addition to the checks below, verify both location hubs, a nested city route, the sitemap, `index.html` canonicalization and the updated RFQ province context. Keep the indexing switch false until launch approval.
 
 Build with `pnpm verify`, then upload the **contents** of `dist/` (including `.htaccess`) to the document root configured for `defibrillators.ca`. Do not upload source, `node_modules`, `.git`, credentials or customer submissions. Build locally; the live site needs no Node process or database.
 

@@ -1,0 +1,26 @@
+---
+// Frame only the selected artwork; text, navigation and controls stay HTML.
+// A shared source preserves the approved illustration without regenerating it.
+interface Props {
+  scene: 'hero' | 'equipment' | 'accessories' | 'installation' | 'maintenance';
+  alt: string;
+}
+const frames = {
+  hero: '550 199 986 441',
+  equipment: '29 753 360 165',
+  accessories: '400 753 360 165',
+  installation: '771 753 361 165',
+  maintenance: '1145 753 362 165',
+};
+const { scene, alt } = Astro.props;
+---
+
+<svg
+  class="approved-scene"
+  viewBox={frames[scene]}
+  preserveAspectRatio="xMidYMid slice"
+  role="img"
+  aria-label={alt}
+>
+  <image href="/images/approved-homepage-art.webp" width="1536" height="1024" />
+</svg>

@@ -18,13 +18,11 @@ const c = content[lang];
   <Header lang={lang} />
   <main id="main" tabindex="-1">
     <Hero lang={lang} />
-    <section class="section services">
+    <section class="section services" aria-labelledby="services-title">
       <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">{c.servicesEyebrow}</p>
-          <h2>{c.servicesTitle}</h2>
-          <p>{c.servicesText}</p>
-        </div>
+        <h2 id="services-title" class="visually-hidden">
+          {c.servicesTitle}
+        </h2>
         <div class="service-grid">
           {c.cards.map((card) => (
             <ServiceCard

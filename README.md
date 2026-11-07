@@ -2,6 +2,8 @@
 
 Phases 0–3 of `MASTER_PROMPT.md`: bilingual homepages, core product/service pages, RFQs, location planning guides and SEO using the approved modern wordmark and design system. Static Astro output for WHC hosting, with no production Node process.
 
+The homepage and shared logo/header were restored to the owner’s selected mockup on 7 November 2026. Both homepages now use the exact owner-approved concept artwork as an illustration, with real HTML content and controls. See `docs/DESIGN-SYSTEM.md` and `docs/ASSETS.md` for the reference and scope.
+
 ## Development
 
 Use Node 22.13+ (tested on 24.22.1) and pnpm 11.25.0.

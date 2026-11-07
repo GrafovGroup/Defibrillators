@@ -1,11 +1,21 @@
 ---
 import { content, type Locale } from '../data/content';
 import { pathFor } from '../data/routes';
+import Icon from './Icon.astro';
+import ApprovedScene from './ApprovedScene.astro';
 interface Props {
   lang: Locale;
 }
 const { lang } = Astro.props;
 const c = content[lang];
+const benefitIcons = [
+  'truck',
+  'tools',
+  'clipboard',
+  'training',
+  'shield',
+  'maple',
+] as const;
 ---
 
 <section class="hero" aria-labelledby="hero-title">
@@ -15,23 +25,17 @@ const c = content[lang];
       <h1 id="hero-title">{c.headline}</h1>
       <p class="hero-description">{c.heroText}</p>
       <div class="actions">
-        <a class="button" href={pathFor('quote', lang)}>
+        <a class="button" href={pathFor('defibrillators', lang)}>
+          {c.shop}
+          <span aria-hidden="true">›</span>
+        </a>
+        <a class="button button-outline" href={pathFor('quote', lang)}>
           {c.quote}
         </a>
-        <a class="button button-outline" href={pathFor('defibrillators', lang)}>
-          {c.shop}
-        </a>
       </div>
-      <p class="hero-note">{c.heroNote}</p>
     </div>
     <figure class="hero-image">
-      <img
-        src="/images/aed-cabinet.webp"
-        width="800"
-        height="1106"
-        alt={c.heroAlt}
-        fetchpriority="high"
-      />
+      <ApprovedScene scene="hero" alt={c.heroAlt} />
       <figcaption>{c.heroCaption}</figcaption>
     </figure>
   </div>
@@ -40,9 +44,7 @@ const c = content[lang];
   <ul class="container">
     {c.benefits.map((benefit, i) => (
       <li>
-        <span class="benefit-icon" aria-hidden="true">
-          {['＋', '⌖', '✓', '◎'][i]}
-        </span>
+        <Icon name={benefitIcons[i]} />
         <span>{benefit}</span>
       </li>
     ))}

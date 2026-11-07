@@ -1,6 +1,7 @@
 ---
+import ApprovedScene from './ApprovedScene.astro';
 interface Props {
-  id: string;
+  id: 'equipment' | 'accessories' | 'installation' | 'maintenance';
   href: string;
   image: string;
   title: string;
@@ -13,18 +14,17 @@ const { id, image, title, text, link, alt, href } = Astro.props;
 
 <article class="service-card" id={id}>
   <div class={`service-photo photo-${image}`}>
-    <img
-      src={`/images/${image}.webp`}
-      width="640"
-      height="420"
-      alt={alt}
-      loading="lazy"
-      decoding="async"
-    />
+    <ApprovedScene scene={id} alt={alt} />
   </div>
   <div class="service-content">
-    <h3>{title}</h3>
+    <h3>
+      <a href={href} aria-label={`${title}: ${link}`}>
+        {title}
+        <span class="card-arrow" aria-hidden="true">
+          ›
+        </span>
+      </a>
+    </h3>
     <p>{text}</p>
-    <a href={href}>{link}</a>
   </div>
 </article>

@@ -1,5 +1,7 @@
 # Phase 0 — repository and readiness audit
 
+> Historical audit. The owner requested a visual correction on 2026-11-07; see `DESIGN-SYSTEM.md` for the restored design and explicit permission to use the original illustration.
+
 Audit date: 2026-11-06 (America/Toronto).
 
 ## Baseline

@@ -1,5 +1,6 @@
 ---
 import Logo from './Logo.astro';
+import Icon from './Icon.astro';
 import LocaleSwitch from './LocaleSwitch.astro';
 import { content, contact, type Locale } from '../data/content';
 import { pathFor, navIds, type PageId } from '../data/routes';
@@ -16,18 +17,25 @@ const c = content[lang];
 <a class="skip-link" href="#main">
   {c.skip}
 </a>
-<header>
+<header class="site-header">
   <div class="utility">
     <div class="container utility-inner">
-      <p>
-        <span class="canada-mark" aria-hidden="true">
-          ✦
-        </span>{' '}
-        {c.coverage}
-      </p>
+      <LocaleSwitch lang={lang} pageId={pageId} />
       <div class="utility-right">
-        <a href={contact.tel}>{contact.phone}</a>
-        <LocaleSwitch lang={lang} pageId={pageId} />
+        <span class="utility-coverage">
+          <Icon name="maple" />
+          {c.coverage}
+        </span>
+        <span class="utility-detail">
+          <Icon name="tools" />
+          {lang === 'en' ? 'Installation & support' : 'Installation et soutien'}
+        </span>
+        <span class="utility-detail">
+          <Icon name="shield" />
+          {lang === 'en'
+            ? 'Commercial & residential'
+            : 'Commercial et résidentiel'}
+        </span>
       </div>
     </div>
   </div>
@@ -37,9 +45,13 @@ const c = content[lang];
     </a>
     <div class="header-contact">
       <a class="header-phone" href={contact.tel}>
+        <Icon name="phone" />
         {contact.phone}
       </a>
-      <a href={`mailto:${contact.email}`}>{contact.email}</a>
+      <a class="header-email" href={`mailto:${contact.email}`}>
+        <Icon name="mail" />
+        {contact.email}
+      </a>
     </div>
     <a class="button header-quote" href={pathFor('quote', lang)}>
       {c.quote}
@@ -47,6 +59,15 @@ const c = content[lang];
   </div>
   <nav class="desktop-nav" aria-label={c.navLabel}>
     <ul class="container">
+      <li>
+        <a
+          class:list={{ 'nav-home': true, 'nav-active': pageId === 'home' }}
+          aria-current={pageId === 'home' ? 'page' : undefined}
+          href={`/${lang}/`}
+        >
+          {lang === 'en' ? 'HOME' : 'ACCUEIL'}
+        </a>
+      </li>
       {c.nav.map((label, i) => (
         <li>
           <a
@@ -73,6 +94,15 @@ const c = content[lang];
     </summary>
     <nav aria-label={c.navLabel}>
       <ul>
+        <li>
+          <a
+            class:list={{ 'nav-active': pageId === 'home' }}
+            aria-current={pageId === 'home' ? 'page' : undefined}
+            href={`/${lang}/`}
+          >
+            {lang === 'en' ? 'HOME' : 'ACCUEIL'}
+          </a>
+        </li>
         {c.nav.map((label, i) => (
           <li>
             <a

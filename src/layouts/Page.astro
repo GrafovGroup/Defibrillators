@@ -2,6 +2,7 @@
 import '@fontsource-variable/inter';
 import '../styles/global.css';
 import '../styles/pages.css';
+import '../styles/approved-design.css';
 import SEO from '../components/SEO.astro';
 import type { Locale } from '../data/content';
 import type { PageId } from '../data/routes';
@@ -20,6 +21,13 @@ const { lang, pageId = 'home' } = Astro.props;
     <meta name="theme-color" content="#102B4E" />
     <SEO lang={lang} pageId={pageId} />
     <link rel="icon" type="image/svg+xml" href="/brand/favicon.svg" />
+    {pageId === 'home' && (
+      <link
+        rel="preload"
+        as="image"
+        href="/images/approved-homepage-art.webp"
+      />
+    )}
   </head>
   <body>
     <slot />
