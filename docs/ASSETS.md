@@ -17,6 +17,16 @@ The cabinet photo depicts an older installation, including historic labelling. I
 
 Phase 1B visual inspection identified a metadata error in the Commons description of `AED open cutout.jpg`: the photographed label reads Powerheart AED G3, although the source description names Philips HS1. Its alternative text now describes the actual photograph; it is used only for generic readiness contexts, never as an HS1 product photograph. The Philips illustration shows a HeartStart carrying case in a cabinet, not an exposed unit or a verified Canadian configuration. The precise model inside the case is not asserted. All product photographs are illustrative examples, not exact supplied configurations.
 
-## Fonts and original assets
+## Phase 3 locator maps
+
+`public/maps/*.svg` contains 18 generalized geographic locator illustrations. Source: Statistics Canada provincial/territorial boundary data, reference year 2023, distributed through [geoBoundaries CAN ADM1](https://www.geoboundaries.org/api/current/gbOpen/CAN/ADM1/), boundary ID `CAN-ADM1-82249235`, pinned geoBoundaries revision `41af8f1`. The [input GeoJSON](https://github.com/wmgeolab/geoBoundaries/raw/41af8f1/releaseData/gbOpen/CAN/ADM1/geoBoundaries-CAN-ADM1_simplified.geojson) remains available upstream and is not bundled into the website.
+
+Adapted from Statistics Canada, Canada provincial and territorial boundaries (geoBoundaries CAN ADM1), 2023. This does not constitute an endorsement by Statistics Canada of this product. Use is under the [Statistics Canada Open Licence](https://www.statcan.gc.ca/en/terms-conditions/open-licence). The catalogue metadata also labels the boundary licence Open Government Canada 2.0 and directs users to this Statistics Canada licence. Visible bilingual credits and a notice embedded in each SVG retain the source acknowledgment.
+
+Changes: Lambert conformal conic projection, pixel-scale line simplification, omission of tiny rings and inland holes for legibility, navy/red/grey styling and highlighted province/territory. City circles use approximate geographic centres for orientation; they are not offices, exact service locations or coverage boundaries. Maps are informational illustrations, not authoritative cartography. The 18 SVG files total approximately 1.14 MB; each individual map is under 80 KB and only one is loaded on a location page. No third-party map runtime, tracking or API key is used.
+
+Regenerate from the pinned input using `python3 scripts/location-maps.py /path/to/geoBoundaries-CAN-ADM1_simplified.geojson`. The script uses only Python's standard library; geometry generation is not part of a normal site build. Visually check north/south orientation and city markers after any map changes.
+
+## Fonts and original brand assets
 
 Inter Variable 5.3.0 is locally bundled through Fontsource under the SIL Open Font License; the licence is retained at `public/licenses/inter-OFL.txt`. Arial Bold Italic/Arial Bold were used as licensed local design fonts for outlined logo artwork. Font files are not included in the repository; the generated logo paths need no external fonts. The pulse, favicon and layout are original implementation assets.

@@ -4,3 +4,4 @@ dist
 pnpm-lock.yaml
 MASTER_PROMPT.md
 public/brand/*.svg
+public/maps/*.svg

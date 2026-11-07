@@ -1,5 +1,7 @@
 import type { Locale } from './content';
+import { locationRoutes } from './location-routes.ts';
 export const routes = {
+  ...locationRoutes,
   home: { en: ['', 'Home'], fr: ['', 'Accueil'] },
   defibrillators: {
     en: ['defibrillators', 'AED defibrillators'],
@@ -182,6 +184,7 @@ export const accessoryIds: PageId[] = [
   'kits',
 ];
 export const footerIds: PageId[] = [
+  'locations',
   'about',
   'quote',
   'faq',

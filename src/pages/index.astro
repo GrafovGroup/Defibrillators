@@ -1,6 +1,7 @@
 ---
 import '@fontsource-variable/inter';
 import '../styles/global.css';
+import { searchConfig } from '../lib/site-config';
 ---
 
 <!doctype html>
@@ -8,7 +9,17 @@ import '../styles/global.css';
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex, nofollow" />
+    <meta name="robots" content={searchConfig.robots} />
+    {searchConfig.google && (
+      <meta name="google-site-verification" content={searchConfig.google} />
+    )}
+    {searchConfig.bing && (
+      <meta name="msvalidate.01" content={searchConfig.bing} />
+    )}
+    <meta
+      name="description"
+      content="Choose English or French to explore AED equipment and support across Canada. Choisissez le français ou l’anglais pour explorer les solutions de DEA au Canada."
+    />
     <title>Defibrillators.ca — Choose your language / Choisir votre langue</title>
     <link rel="canonical" href="https://defibrillators.ca/" />
     <link

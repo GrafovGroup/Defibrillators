@@ -1,5 +1,11 @@
 import type { Locale } from './content';
-import { accessoryIds, industryIds, serviceIds, type PageId } from './routes';
+import {
+  accessoryIds,
+  industryIds,
+  serviceIds,
+  type PageId,
+} from './routes.ts';
+import { locationPages } from './locations.ts';
 export type Localized<T> = Record<Locale, T>;
 export interface Section {
   heading: string;
@@ -9,7 +15,20 @@ export interface Section {
 export interface DetailPage {
   id: Exclude<PageId, 'home'>;
   parent?: PageId;
-  kind?: 'catalogue' | 'product' | 'comparison' | 'quote' | 'contact' | 'faq';
+  kind?:
+    | 'catalogue'
+    | 'product'
+    | 'comparison'
+    | 'quote'
+    | 'contact'
+    | 'faq'
+    | 'location';
+  location?: {
+    code: string;
+    place: Localized<string>;
+    checklist: Localized<string[]>;
+    faqs: Localized<Section[]>;
+  };
   image?: keyof typeof pageImages;
   intro: Localized<string>;
   sections: Localized<Section[]>;
@@ -48,6 +67,7 @@ const s = (heading: string, body: string, bullets?: string[]): Section => ({
   ...(bullets ? { bullets } : {}),
 });
 export const pages: DetailPage[] = [
+  ...locationPages,
   {
     id: 'defibrillators',
     kind: 'catalogue',
@@ -1017,7 +1037,7 @@ export const pages: DetailPage[] = [
   {
     id: 'resources',
     image: 'training',
-    children: ['buying', 'care', 'faq', 'compare'],
+    children: ['locations', 'buying', 'care', 'faq', 'compare'],
     intro: {
       en: 'Practical questions and planning guides to help you organise an AED purchase and ongoing care.',
       fr: 'Des questions pratiques et des guides pour organiser l’achat d’un DEA et son suivi.',

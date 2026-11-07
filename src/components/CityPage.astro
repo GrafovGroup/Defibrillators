@@ -1,0 +1,54 @@
+---
+import type { DetailPage } from '../data/pages';
+import type { Locale } from '../data/content';
+interface Props {
+  page: DetailPage;
+  lang: Locale;
+}
+const { page, lang } = Astro.props;
+const location = page.location!;
+---
+
+<div class="location-guide">
+  <p class="notice">
+    {lang === 'en'
+      ? 'Plan with us, then confirm the details. Equipment, delivery and on-site service arrangements are reviewed for your exact address before a written quote. These guides do not represent local offices or guaranteed coverage.'
+      : 'Planifiez avec nous, puis confirmez les détails. L’équipement, la livraison et les services sur place sont examinés pour votre adresse exacte avant une soumission écrite. Ces guides ne représentent pas des bureaux locaux ni une desserte garantie.'}
+  </p>
+  <section class="location-brief" aria-labelledby="location-brief-heading">
+    <p class="eyebrow">
+      {lang === 'en' ? 'YOUR PROJECT BRIEF' : 'VOTRE DOSSIER DE PROJET'}
+    </p>
+    <h2 id="location-brief-heading">
+      {lang === 'en'
+        ? 'Bring these details to your enquiry'
+        : 'Préparez ces renseignements pour votre demande'}
+    </h2>
+    <ul>
+      {location.checklist[lang].map((item) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+  </section>
+  {page.sections[lang].map((section, index) => (
+    <section id={`section-${index + 1}`}>
+      <h2>{section.heading}</h2>
+      <p>{section.body}</p>
+    </section>
+  ))}
+  <section aria-labelledby="location-faq-heading" class="location-faqs">
+    <h2 id="location-faq-heading">
+      {lang === 'en'
+        ? 'Questions before you request a quote'
+        : 'Questions avant de demander une soumission'}
+    </h2>
+    <div class="faq-list">
+      {location.faqs[lang].map((faq) => (
+        <details>
+          <summary>{faq.heading}</summary>
+          <p>{faq.body}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</div>

@@ -82,8 +82,8 @@ for (const [file, $] of all) {
     assert.match($('meta[name="robots"]').attr('content'), /noindex/);
     assert.equal(
       $('script[type="application/ld+json"]').length,
-      0,
-      'no fabricated product offers or ratings',
+      1,
+      'one JSON-LD graph; factual content is checked by the SEO suite',
     );
     assert.equal(
       $('form').length,
@@ -94,11 +94,11 @@ for (const [file, $] of all) {
     );
   });
 }
-test('Phase 1B route coverage and unique metadata', () => {
+test('Core and Phase 3 route coverage and unique metadata', () => {
   assert.equal(
     localized.length,
-    72,
-    '36 pages per locale including the homepage',
+    108,
+    '54 pages per locale including the homepage and 18 location guides',
   );
   const titles = [...all.values()].map(($) => $('title').text());
   assert.equal(new Set(titles).size, titles.length);

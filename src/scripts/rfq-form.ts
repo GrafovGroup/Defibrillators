@@ -7,6 +7,7 @@ import {
   type RfqLocale,
 } from '../lib/rfq';
 import { routes, pathFor, type PageId } from '../data/routes';
+import { provinceForLocation } from '../data/location-routes';
 const params = new URLSearchParams(location.search);
 const audience =
   params.get('audience') === 'residential' ? 'residential' : 'commercial';
@@ -81,6 +82,8 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-rfq]')) {
   if (safe.has('request')) field('request_type')!.value = safe.get('request')!;
   if (safe.has('source'))
     field('source_page')!.value = pathFor(safe.get('source') as PageId, lang);
+  const province = provinceForLocation(safe.get('source') ?? '');
+  if (province) field('province')!.value = province;
   native.addEventListener('click', () => {
     // Preserve the provider's hosted challenge; never disable or bypass it.
     if (busy) return;

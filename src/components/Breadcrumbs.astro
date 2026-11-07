@@ -1,13 +1,13 @@
 ---
 import { pathFor, labelFor, type PageId } from '../data/routes';
-import { pageFor } from '../data/pages';
+import { breadcrumbIds } from '../lib/breadcrumbs';
 import type { Locale } from '../data/content';
 interface Props {
   lang: Locale;
   pageId: Exclude<PageId, 'home'>;
 }
 const { lang, pageId } = Astro.props;
-const parent = pageFor(pageId).parent;
+const ancestors = breadcrumbIds(pageId).slice(0, -1);
 ---
 
 <nav
@@ -15,14 +15,11 @@ const parent = pageFor(pageId).parent;
   aria-label={lang === 'en' ? 'Breadcrumb' : 'Fil d’Ariane'}
 >
   <ol>
-    <li>
-      <a href={pathFor('home', lang)}>{labelFor('home', lang)}</a>
-    </li>
-    {parent && (
+    {ancestors.map((parent) => (
       <li>
         <a href={pathFor(parent, lang)}>{labelFor(parent, lang)}</a>
       </li>
-    )}
+    ))}
     <li>
       <span aria-current="page">{labelFor(pageId, lang)}</span>
     </li>

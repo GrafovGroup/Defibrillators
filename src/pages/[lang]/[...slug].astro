@@ -7,6 +7,7 @@ import PageCard from '../../components/PageCard.astro';
 import Catalogue from '../../components/Catalogue.astro';
 import Comparison from '../../components/Comparison.astro';
 import QuoteForm from '../../components/QuoteForm.astro';
+import CityPage from '../../components/CityPage.astro';
 import { enquiryPath } from '../../lib/enquiry';
 import EnquiryActions from '../../components/EnquiryActions.astro';
 import { pages, pageImages, type DetailPage } from '../../data/pages';
@@ -45,7 +46,15 @@ const isLegal = ['privacy', 'terms', 'accessibility'].includes(page.id);
   <Header lang={lang} pageId={page.id} />
   <main id="main" tabindex="-1">
     <Breadcrumbs lang={lang} pageId={page.id} />
-    <section class:list={['page-hero', { 'has-image': !!page.image }]}>
+    <section
+      class:list={[
+        'page-hero',
+        {
+          'has-image': !!page.image || !!page.location,
+          'location-hero': !!page.location,
+        },
+      ]}
+    >
       <div class="container page-hero-grid">
         <div class="page-hero-copy">
           <p class="eyebrow">{category}</p>
@@ -57,25 +66,64 @@ const isLegal = ['privacy', 'terms', 'accessibility'].includes(page.id);
             </a>
           )}
         </div>
-        {page.image && (
-          <figure>
+        {page.location ? (
+          <figure class="location-map">
             <img
-              src={`/images/${page.image}.webp`}
+              src={`/maps/${page.id}.svg`}
               width="800"
-              height="600"
-              alt={pageImages[page.image][lang]}
+              height="500"
+              alt={
+                lang === 'en'
+                  ? `Geographic locator for ${page.location.place.en} within Canada`
+                  : `Repère géographique : ${page.location.place.fr} au Canada`
+              }
               fetchpriority="high"
             />
             <figcaption>
               {lang === 'en'
-                ? 'Illustrative photograph · equipment and configuration to be confirmed'
-                : 'Photo à titre indicatif · équipement et configuration à confirmer'}
+                ? 'Geographic locator · not a service coverage map'
+                : 'Repère géographique · ne représente pas la desserte'}
             </figcaption>
           </figure>
+        ) : (
+          page.image && (
+            <figure>
+              <img
+                src={`/images/${page.image}.webp`}
+                width="800"
+                height="600"
+                alt={pageImages[page.image][lang]}
+                fetchpriority="high"
+              />
+              <figcaption>
+                {lang === 'en'
+                  ? 'Illustrative photograph · equipment and configuration to be confirmed'
+                  : 'Photo à titre indicatif · équipement et configuration à confirmer'}
+              </figcaption>
+            </figure>
+          )
         )}
       </div>
     </section>
     <div class="container page-body">
+      {page.location && (
+        <p class="map-credit">
+          {lang === 'en'
+            ? 'Adapted from Statistics Canada, Canada provincial and territorial boundaries (2023), via '
+            : 'Adapté de Statistique Canada, limites des provinces et territoires du Canada (2023), par '}
+          <a href="https://www.geoboundaries.org/api/current/gbOpen/CAN/ADM1/">
+            geoBoundaries
+          </a>
+          .{' '}
+          <a href="https://www.statcan.gc.ca/en/terms-conditions/open-licence">
+            {lang === 'en' ? 'Open licence' : 'Licence ouverte'}
+          </a>
+          .{' '}
+          {lang === 'en'
+            ? 'This does not constitute an endorsement by Statistics Canada of this product. Generalized for orientation; not an official map.'
+            : 'Cela ne constitue pas une approbation de ce produit par Statistique Canada. Carte généralisée à titre de repère, non officielle.'}
+        </p>
+      )}
       {page.kind === 'catalogue' && <Catalogue lang={lang} />}
       {page.kind === 'comparison' && <Comparison lang={lang} />}
       {product && (
@@ -157,7 +205,9 @@ const isLegal = ['privacy', 'terms', 'accessibility'].includes(page.id);
       <div class:list={['article-layout', { 'article-full': isLegal }]}>
         <article class="article-copy">
           {page.kind === 'quote' && <QuoteForm lang={lang} />}
-          {page.kind === 'faq' ? (
+          {page.kind === 'location' ? (
+            <CityPage page={page} lang={lang} />
+          ) : page.kind === 'faq' ? (
             <div class="faq-list">
               {sections.map((section) => (
                 <details>

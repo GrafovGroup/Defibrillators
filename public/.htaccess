@@ -4,9 +4,13 @@ ErrorDocument 404 /404.html
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  # Collapse explicit index.html URLs while preserving any enquiry query string.
+  RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[?\s] [NC]
+  RewriteRule ^(.*/)?index\.html$ https://defibrillators.ca/$1 [R=301,L]
   # Keep certificate validation reachable over HTTP.
   RewriteCond %{REQUEST_URI} !^/\.well-known/
   RewriteCond %{HTTPS} !=on [OR]
+  RewriteCond %{HTTP_HOST} ^(?:www\.)?defibrillator\.ca$ [NC,OR]
   RewriteCond %{HTTP_HOST} ^www\.defibrillators\.ca$ [NC]
   RewriteRule ^ https://defibrillators.ca%{REQUEST_URI} [R=301,L]
 </IfModule>

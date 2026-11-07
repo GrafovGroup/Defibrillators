@@ -2,6 +2,7 @@
 import { contact, type Locale } from '../data/content';
 import { enquiryPath } from '../lib/enquiry';
 import type { PageId } from '../data/routes';
+import { locationRoutes } from '../data/location-routes';
 interface Props {
   lang: Locale;
   subject?: string;
@@ -9,6 +10,7 @@ interface Props {
   pageId?: PageId;
 }
 const { lang, subject, quote = false, pageId = 'contact' } = Astro.props;
+const location = Object.hasOwn(locationRoutes, pageId);
 const service = [
   'installation',
   'maintenance',
@@ -31,13 +33,17 @@ const service = [
   </p>
   {!quote && (
     <a class="button" href={enquiryPath(pageId, lang)}>
-      {service
+      {location
         ? lang === 'en'
-          ? 'Request a service'
-          : 'Demander un service'
-        : lang === 'en'
-          ? 'Ask about this equipment'
-          : 'Se renseigner sur cet équipement'}
+          ? 'Discuss your project'
+          : 'Discuter de votre projet'
+        : service
+          ? lang === 'en'
+            ? 'Request a service'
+            : 'Demander un service'
+          : lang === 'en'
+            ? 'Ask about this equipment'
+            : 'Se renseigner sur cet équipement'}
     </a>
   )}
   <a

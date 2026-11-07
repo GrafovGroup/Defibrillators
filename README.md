@@ -1,6 +1,6 @@
 # Defibrillators.ca
 
-Phase 0, Phase 1A, Phase 1B and Phase 2 implementation of `MASTER_PROMPT.md`: bilingual homepages and core product, accessory, service, industry and information pages using the approved modern wordmark and design system. Static Astro output for conventional hosting, with no production Node process.
+Phases 0–3 of `MASTER_PROMPT.md`: bilingual homepages, core product/service pages, RFQs, location planning guides and SEO using the approved modern wordmark and design system. Static Astro output for WHC hosting, with no production Node process.
 
 ## Development
 
@@ -18,9 +18,11 @@ pnpm preview
 ## Implemented routes
 
 - `/`: accessible English/French language choice, usable without JavaScript.
-- `/en/` and `/fr/`: complete localized homepages and 35 additional pages per language (72 localized pages).
+- `/en/` and `/fr/`: complete localized homepages and 53 additional pages per language (108 localized pages).
 - Catalogue, two manufacturer reference profiles and comparison; five accessory categories; four service pages and a service hub; nine industry pages and an industry hub; resources, buying/readiness guides, about, contact, quote enquiries, FAQs, privacy, terms and accessibility.
 - `/404.html`: bilingual not-found page. Configure the host to return this with HTTP 404.
+- `/en/locations/` and `/fr/regions/`: a national planning hub, all 13 provinces/territories and Toronto, Montréal, Vancouver and Calgary guides, with locator maps and project-specific briefs. These are not claims of local offices or guaranteed service coverage.
+- `/sitemap.xml`: 109 canonical URLs, excluding queries, assets and the error page. Reciprocal hreflang is supplied in HTML.
 
 Navigation, homepage cards and related links reach the localized pages. The language switch retains page identity. The catalogue supports accessible search, manufacturer, environment-verification and product-type filtering, with both profiles available without JavaScript. See `docs/ROUTES.md` for the complete route pairs.
 
@@ -30,6 +32,7 @@ Product profiles contain manufacturer reference information, not confirmed inven
 
 - `src/data/content.ts`: typed English and Canadian French copy and contact configuration.
 - `src/data/routes.ts`, `pages.ts`, `products.ts`: typed localized routes, core page content and manufacturer references.
+- `src/data/location-routes.ts`, `locations.ts`: location hierarchy, regional briefs, FAQs and province context for RFQs.
 - `src/pages/[lang]/[...slug].astro`: shared static page layouts.
 - `src/components/`: shared navigation, branding, cards, catalogue, comparison, breadcrumbs, enquiry actions and SEO.
 - `src/layouts/Page.astro`: document shell and shared styles.
@@ -37,15 +40,17 @@ Product profiles contain manufacturer reference information, not confirmed inven
 - `src/scripts/catalogue-filter.ts`: accent-insensitive search matching.
 - `public/brand/`: path-based SVG wordmarks, bilingual light/dark logo lockups and favicon.
 - `public/images/`: optimized licensed photographic examples; see `docs/ASSETS.md`.
+- `public/maps/`: generalized locator SVGs with Statistics Canada/geoBoundaries provenance; regenerated with `scripts/location-maps.py`.
+- `src/lib/structured-data.ts`, `site-config.ts`, `sitemap.ts`: factual JSON-LD, indexing/verification configuration and canonical sitemap.
 - `tests/`: built-output integration and catalogue-filter checks.
 - `docs/PHASE-0.md`, `docs/DESIGN-SYSTEM.md`, `docs/QA.md`: original audit, design and Phase 1A verification.
-- `docs/PHASE-1B.md`: current scope, source verification, QA and handoff.
+- `docs/PHASE-1B.md`, `docs/PHASE-2.md`, `docs/PHASE-3.md`: implementation scope and verification records for each phase.
 
 ## Static hosting handoff
 
 `pnpm build` generates `dist/`, including Apache security headers, canonical HTTPS redirects and the custom 404 configuration. Inline script hashes are generated from the actual build. Its contents can be uploaded to a cPanel document root or staging subdirectory configured as the site's root. No adapter, database, worker or persistent Node process is required. Verify WHC access, document root, HTTPS, host redirects and 404 handling in Phase 5. See `docs/PHASE-2.md` and `docs/WHC-DEPLOYMENT.md` for integration and hosting verification.
 
-**This is a prelaunch implementation.** Robots and page metadata intentionally prevent indexing. Remove both guards only after launch approval and the documented supplier/regulatory checks. Phase 5 must configure the secondary domain's permanent redirect, canonical host/HTTPS redirects, cache headers, security headers, custom 404, and XML sitemap/indexing. A root language selector preserves equal access to French and English.
+**This is a prelaunch implementation.** Keep `PUBLIC_SITE_INDEXABLE=false` until launch approval and supplier/regulatory/privacy checks are complete. The build-time switch controls robots metadata and generated `robots.txt` together. The sitemap is prepared but is not advertised in robots.txt or submitted while the switch is off. A crawl block is not access control and cannot guarantee removal of previously discovered URLs; crawlers must be able to read `noindex` for deindexing. Search Console and Bing public verification tokens have optional slots in `.env.example`; no accounts or indexing submissions are claimed. See `docs/PHASE-3.md` for the launch sequence and remaining secondary-domain setup.
 
 ## Logo assets
 
@@ -55,4 +60,4 @@ To regenerate logos on a Mac with the licensed system fonts: `node scripts/gener
 
 ## Remaining phases
 
-Supplier verification remains required before model recommendations or sales. Phase 3: substantive location architecture and expanded SEO. Phase 4: full site QA. Phase 5: verified hosting deployment. See the audit for inputs required before these phases or public launch.
+Supplier verification remains required before model recommendations or sales. Phase 4 is the full accessibility, localization, security and performance review. The Phase 2 WHC deployment already verified primary DNS, SSL and RFQ delivery; Phase 5 still includes final launch/indexing approval and secondary-domain verification. See the audit and current deployment record for remaining inputs.

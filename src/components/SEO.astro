@@ -2,6 +2,8 @@
 import { content, type Locale } from '../data/content';
 import { pathFor, labelFor, type PageId } from '../data/routes';
 import { pageFor } from '../data/pages';
+import { searchConfig, siteOrigin, safeJson } from '../lib/site-config';
+import { structuredData } from '../lib/structured-data';
 interface Props {
   lang: Locale;
   pageId?: PageId;
@@ -19,11 +21,16 @@ const title = page
   : content[lang].title;
 const description = page?.intro[lang] ?? content[lang].description;
 const canonical = `https://defibrillators.ca${pathFor(pageId, lang)}`;
+const image = `/images/${page?.image ?? 'aed-cabinet'}.webp`;
 ---
 
 <title>{title}</title>
 <meta name="description" content={description} />
-<meta name="robots" content="noindex, nofollow" />
+<meta name="robots" content={searchConfig.robots} />
+{searchConfig.google && (
+  <meta name="google-site-verification" content={searchConfig.google} />
+)}
+{searchConfig.bing && <meta name="msvalidate.01" content={searchConfig.bing} />}
 <link rel="canonical" href={canonical} />
 <link
   rel="alternate"
@@ -49,3 +56,15 @@ const canonical = `https://defibrillators.ca${pathFor(pageId, lang)}`;
 <meta property="og:description" content={description} />
 <meta property="og:locale" content={`${lang}_CA`} />
 <meta property="og:url" content={canonical} />
+<meta
+  property="og:locale:alternate"
+  content={lang === 'en' ? 'fr_CA' : 'en_CA'}
+/>
+<meta property="og:site_name" content="Defibrillators.ca" />
+<meta property="og:image" content={siteOrigin + image} />
+<meta name="twitter:card" content="summary" />
+<script
+  is:inline
+  type="application/ld+json"
+  set:html={safeJson(structuredData(pageId, lang, title, description))}
+/>

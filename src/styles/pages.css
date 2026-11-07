@@ -1,6 +1,55 @@
 [hidden] {
   display: none !important;
 }
+.page-hero .location-map {
+  min-height: 0;
+  max-height: none;
+  align-self: center;
+  margin-block: 30px;
+  border-radius: 12px;
+  background: var(--canvas);
+  overflow: hidden;
+}
+.page-hero .location-map::after {
+  display: none;
+}
+.page-hero .location-map img {
+  position: static;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.page-hero .location-map figcaption {
+  position: static;
+  background: var(--canvas);
+  color: var(--muted);
+  padding: 0 22px 20px;
+  font-size: 11px;
+}
+.map-credit {
+  margin: -15px 0 35px;
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.location-guide > section {
+  margin-bottom: 38px;
+}
+.location-brief {
+  background: var(--canvas);
+  border: 1px solid var(--border);
+  padding: 28px;
+  border-radius: 10px;
+}
+.location-brief .eyebrow {
+  color: var(--navy);
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+}
+.location-faqs .faq-list {
+  margin-top: 22px;
+}
 .desktop-nav a.nav-active {
   color: var(--red);
   box-shadow: inset 0 -2px var(--red);
