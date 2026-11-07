@@ -4,7 +4,7 @@
 
 The owner authorized Phase 5 deployment on 7 November 2026. The verified Phase 4 build is now live on WHC, including the direct English homepage and the restored approved design. Both forms and primary/secondary-domain redirects have live verification evidence in [PHASE-5.md](PHASE-5.md). The later city expansion includes the owner-authorized search launch; see [EXPANSION-AND-SEARCH.md](EXPANSION-AND-SEARCH.md) for its verification record. Detailed hosting-account, server and historical operations records are kept outside this repository.
 
-The current build contains 128 HTML files (126 localized pages, an English homepage fallback at the root and a custom 404) and 126 canonical sitemap entries. WHC redirects the root directly to `/en/`; no language-selection screen is used. It includes the restored approved design, location guides, eight manufacturer reference profiles, parts and package planning, and bilingual quote forms. See `COMPETITOR-AUDIT.md`, `PHASE-4.md` and the latest `QA.md` section for implementation and validation.
+The current expansion build contains 234 HTML files (232 localized pages, an English homepage fallback at the root and a custom 404) and 232 canonical sitemap entries. WHC redirects the root directly to `/en/`; no language-selection screen is used. It includes the restored approved design, 45 city/metropolitan guides, all 13 provinces/territories, eight manufacturer reference profiles, parts and package planning, twelve focused offerings and bilingual quote forms. See `EXPANSION-AND-SEARCH.md` for the latest implementation, validation and deployment status.
 
 ## Build and package
 
@@ -12,7 +12,7 @@ Run `pnpm verify` from the repository with the supported Node version. `pnpm bui
 
 Upload the complete contents of `dist/`, including the root and every nested hidden `.htaccess` file and all `_astro`, `brand`, `images` and `maps` assets. Keep source code, environment files, internal records and upload archives outside the public document root. Do not combine HTML from one build with security headers from another.
 
-The new parts finder uses a same-origin GET navigation to the quote page. Its updated Content Security Policy allows that navigation and the configured Formspree POST destination. Inline scripts are authorized by generated hashes; do not replace that restriction with unrestricted inline JavaScript. The current header is close to its tested size budget, so future route expansion needs a more granular strategy.
+The parts finder uses a same-origin GET navigation to the quote page. Content Security Policy allows that navigation and the configured Formspree POST destination. Inline scripts are authorized by generated hashes; do not replace that restriction with unrestricted inline JavaScript. The expansion emits 233 `.htaccess` files: the root policy and a policy in each localized page directory. Each page policy includes its own scripts and the root/404 fallback scripts, keeping every response below the existing 7.5 KB header budget. Upload these files together and verify each deployed HTML response against its expected policy.
 
 ## Hosting preparation
 

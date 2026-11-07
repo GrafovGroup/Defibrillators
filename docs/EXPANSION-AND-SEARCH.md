@@ -44,6 +44,10 @@ Google states that its normal SEO requirements apply to AI features and that no 
 
 ## Deployment and search submission record
 
-The release is prepared for WHC. Google Search Console and Bing Webmaster Tools are accessible, the Defibrillators.ca properties have been added, and the public ownership tags have been obtained. Verification and sitemap submission will be recorded here after the indexable build is deployed and the respective success states are observed. A generated sitemap or an ownership tag alone is not a submission or proof of indexing.
+Implementation source: `6cb33bf329c337042479fa7a8aa41f25c5bc48e1`. The WHC release archive contains 513 files, including 234 HTML documents and 233 `.htaccess` files, and is 2,882,227 bytes. SHA-256: `dcce813aaf16356d65a002343b67d479b75bc353ea0c3123fe82bea1ad0566bb`. Archive integrity was checked and a new private rollback archive of the current WHC site was created.
+
+The expansion archive has **not yet been uploaded or deployed**. The preceding Phase 5 release remains live. Google Search Console and Bing Webmaster Tools are accessible, the Defibrillators.ca properties have been added, and the public ownership tags have been obtained. Ownership verification and sitemap submission remain pending; no submission success is claimed. The prepared site must be deployed and its live responses checked before completing these steps. Detailed operator handoff information stays outside this repository.
+
+Verification and sitemap submission will be recorded here after the indexable build is deployed and the respective success states are observed. A generated sitemap or an ownership tag alone is not a submission or proof of indexing.
 
 Submission asks the engines to discover the pages; their indexing, ranking and answer-engine inclusion remain their decisions. No Google Indexing API request is used for these ordinary commercial/informational pages.
