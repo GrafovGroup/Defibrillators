@@ -1,4 +1,6 @@
 ---
+import { metroCommunities, type CityId } from '../data/city-catalogue';
+import { pathFor } from '../data/routes';
 import type { DetailPage } from '../data/pages';
 import type { Locale } from '../data/content';
 interface Props {
@@ -7,9 +9,54 @@ interface Props {
 }
 const { page, lang } = Astro.props;
 const location = page.location!;
+const communities = metroCommunities[page.id as CityId];
 ---
 
 <div class="location-guide">
+  <p class="guide-byline">
+    {lang === 'en' ? 'Prepared by' : 'Préparé par'}{' '}
+    <a href={pathFor('about', lang)}>Defibrillators.ca</a> ·{' '}
+    {lang === 'en' ? 'Updated' : 'Mis à jour le'}{' '}
+    <time datetime={location.reviewed}>{location.reviewed}</time>
+  </p>
+  {communities && (
+    <section class="metro-context">
+      <h2>
+        {lang === 'en'
+          ? 'Planning within this region'
+          : 'Planifier dans cette région'}
+      </h2>
+      <p>{communities.join(', ')}.</p>
+      <p>
+        {lang === 'en'
+          ? 'Use this regional brief as a starting point and specify the actual municipality and address in your enquiry. Building access, freight and any site services are reviewed for that destination.'
+          : 'Utilisez cette fiche régionale comme point de départ et précisez municipalité et adresse réelles. Accès au bâtiment, transport et services sur place sont examinés pour cette destination.'}
+      </p>
+    </section>
+  )}
+  <nav
+    class="guide-toc"
+    aria-label={lang === 'en' ? 'On this page' : 'Sur cette page'}
+  >
+    <strong>{lang === 'en' ? 'On this page' : 'Sur cette page'}</strong>
+    <ol>
+      <li>
+        <a href="#location-brief-heading">
+          {lang === 'en' ? 'Your project brief' : 'Votre dossier de projet'}
+        </a>
+      </li>
+      {page.sections[lang].map((section, index) => (
+        <li>
+          <a href={`#section-${index + 1}`}>{section.heading}</a>
+        </li>
+      ))}
+      <li>
+        <a href="#location-faq-heading">
+          {lang === 'en' ? 'Common questions' : 'Questions courantes'}
+        </a>
+      </li>
+    </ol>
+  </nav>
   <p class="notice">
     {lang === 'en'
       ? 'Plan with us, then confirm the details. Equipment, delivery and on-site service arrangements are reviewed for your exact address before a written quote. These guides do not represent local offices or guaranteed coverage.'
@@ -50,5 +97,22 @@ const location = page.location!;
         </details>
       ))}
     </div>
+  </section>
+  <section class="guide-sources" aria-labelledby="location-sources-heading">
+    <h2 id="location-sources-heading">
+      {lang === 'en' ? 'About this guide' : 'À propos de ce guide'}
+    </h2>
+    <p>
+      {lang === 'en'
+        ? 'The local scenarios are original procurement-planning guidance, not a statement about a specific facility or a local legal requirement. The geographic reference defines the metropolitan coverage baseline; it does not verify services or endorse equipment.'
+        : 'Les scénarios locaux sont des conseils originaux de planification d’achat, non des affirmations sur un établissement précis ou une exigence légale locale. La référence géographique définit la couverture métropolitaine; elle ne confirme ni services ni approbation de l’équipement.'}
+    </p>
+    <ul>
+      {location.sources.map((source) => (
+        <li>
+          <a href={source.url}>{source.label}</a>
+        </li>
+      ))}
+    </ul>
   </section>
 </div>

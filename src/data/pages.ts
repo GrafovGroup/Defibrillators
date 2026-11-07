@@ -1,3 +1,4 @@
+import { offeringPages } from './offering-pages.ts';
 import type { Locale } from './content';
 import {
   accessoryIds,
@@ -37,6 +38,9 @@ export interface DetailPage {
   };
   location?: {
     code: string;
+    mapId: string;
+    reviewed: string;
+    sources: { label: string; url: string }[];
     place: Localized<string>;
     checklist: Localized<string[]>;
     faqs: Localized<Section[]>;
@@ -81,6 +85,7 @@ const s = (heading: string, body: string, bullets?: string[]): Section => ({
 export const pages: DetailPage[] = [
   ...locationPages,
   ...planningPages,
+  ...offeringPages,
   ...products
     .filter((p) => !['zoll', 'philips'].includes(p.id))
     .map((p): DetailPage => ({
@@ -1572,6 +1577,10 @@ export const pages: DetailPage[] = [
     related: ['contact', 'privacy'],
   },
 ];
+for (const offering of offeringPages) {
+  const parent = pages.find((page) => page.id === offering.parent)!;
+  parent.children = [...(parent.children ?? []), offering.id];
+}
 for (const page of pages) {
   const guide = guideDetails[page.id];
   if (guide) {

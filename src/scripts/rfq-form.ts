@@ -1,3 +1,4 @@
+import { cityCatalogue, type CityId } from '../data/city-catalogue';
 import {
   validateRfq,
   submitRfq,
@@ -87,7 +88,16 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-rfq]')) {
   syncDetails();
   if (safe.has('source'))
     field('source_page')!.value = pathFor(safe.get('source') as PageId, lang);
-  const province = provinceForLocation(safe.get('source') ?? '');
+  const cityId = safe.get('city') ?? safe.get('source') ?? '';
+  const city = Object.hasOwn(cityCatalogue, cityId)
+    ? cityCatalogue[cityId as CityId]
+    : undefined;
+  if (city) {
+    field('planning_city')!.value = city[lang];
+    const locations = field('locations');
+    if (locations) locations.value = city[lang];
+  }
+  const province = provinceForLocation(cityId);
   if (province) field('province')!.value = province;
   native.addEventListener('click', () => {
     // Preserve the provider's hosted challenge; never disable or bypass it.

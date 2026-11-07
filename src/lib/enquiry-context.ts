@@ -1,3 +1,4 @@
+import { cityIds } from '../data/city-catalogue.ts';
 import { modelIds } from '../data/model-options.ts';
 import { packageOptions, partOptions } from '../data/planning-options.ts';
 import { routes } from '../data/routes.ts';
@@ -7,6 +8,7 @@ export function safeEnquiryParams(params: URLSearchParams): URLSearchParams {
   const safe = new URLSearchParams();
   const choices: Record<string, readonly string[]> = {
     audience: ['commercial', 'residential'],
+    city: cityIds,
     model: [...modelIds, 'other'],
     request: requestTypes,
     source: Object.keys(routes),

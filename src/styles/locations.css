@@ -1,0 +1,153 @@
+.location-finder,
+.offering-directory {
+  margin-block: 0 3.5rem;
+}
+.location-finder > p,
+.offering-directory > p {
+  max-width: 85ch;
+  margin-block: 1rem;
+}
+.location-finder .finder-controls {
+  margin-top: 1.5rem;
+}
+.location-finder [hidden],
+.city-context [hidden] {
+  display: none !important;
+}
+.finder-controls input,
+.city-context select {
+  width: 100%;
+  min-height: 48px;
+  padding: 0.75rem;
+  border: 1px solid #7b8c9f;
+  border-radius: 6px;
+  color: var(--navy);
+  background: white;
+  font: inherit;
+}
+.finder-count {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.city-directory {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+.city-directory a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 0.6rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  background: white;
+}
+.city-directory strong {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+.city-directory a > span {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.city-directory a:hover,
+.city-directory a:focus-visible {
+  border-color: var(--red);
+  background: var(--canvas);
+}
+.directory-method {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.offering-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.offering-columns > div:only-child {
+  grid-column: 1 / -1;
+}
+.offering-columns > div:only-child ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 2rem;
+}
+.offering-columns h3 {
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--red);
+}
+.offering-columns li {
+  border-bottom: 1px solid var(--border);
+}
+.offering-columns a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 1.5rem 0;
+  text-decoration: none;
+}
+.offering-columns a > strong {
+  color: var(--navy);
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+.offering-columns a > span:not(.text-link) {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--muted);
+}
+.offering-columns a:hover > strong {
+  color: var(--red);
+}
+.city-context {
+  padding: 1.5rem;
+  border-left: 4px solid var(--red);
+  background: var(--canvas);
+  margin-bottom: 2.5rem;
+}
+.city-context label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.city-context select {
+  max-width: 600px;
+}
+.city-context p {
+  font-size: 0.9rem;
+  margin-block: 0.75rem;
+}
+.metro-context {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1.25rem;
+}
+.utility-coverage {
+  text-decoration: none;
+}
+@media (max-width: 1023px) {
+  .city-directory {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 620px) {
+  .city-directory,
+  .offering-columns,
+  .offering-columns > div:only-child ul {
+    grid-template-columns: 1fr;
+  }
+  .city-context {
+    padding: 1rem;
+  }
+  .finder-controls > div {
+    min-width: 0;
+    flex-basis: 100%;
+  }
+}

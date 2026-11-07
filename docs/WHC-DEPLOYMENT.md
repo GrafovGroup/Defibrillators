@@ -2,7 +2,7 @@
 
 ## Current delivery scope
 
-The owner authorized Phase 5 deployment on 7 November 2026. The verified Phase 4 build is now live on WHC, including the direct English homepage and the restored approved design. Both forms and primary/secondary-domain redirects have live verification evidence in [PHASE-5.md](PHASE-5.md). Search indexing remains disabled. Detailed hosting-account, server and historical operations records are kept outside this repository.
+The owner authorized Phase 5 deployment on 7 November 2026. The verified Phase 4 build is now live on WHC, including the direct English homepage and the restored approved design. Both forms and primary/secondary-domain redirects have live verification evidence in [PHASE-5.md](PHASE-5.md). The later city expansion includes the owner-authorized search launch; see [EXPANSION-AND-SEARCH.md](EXPANSION-AND-SEARCH.md) for its verification record. Detailed hosting-account, server and historical operations records are kept outside this repository.
 
 The current build contains 128 HTML files (126 localized pages, an English homepage fallback at the root and a custom 404) and 126 canonical sitemap entries. WHC redirects the root directly to `/en/`; no language-selection screen is used. It includes the restored approved design, location guides, eight manufacturer reference profiles, parts and package planning, and bilingual quote forms. See `COMPETITOR-AUDIT.md`, `PHASE-4.md` and the latest `QA.md` section for implementation and validation.
 
@@ -10,7 +10,7 @@ The current build contains 128 HTML files (126 localized pages, an English homep
 
 Run `pnpm verify` from the repository with the supported Node version. `pnpm build` creates the static `dist/` directory and generates `.htaccess` script hashes from the emitted HTML. No persistent Node process, database or server adapter is required on WHC.
 
-Upload the complete contents of `dist/`, including the hidden `.htaccess` file and all `_astro`, `brand`, `images` and `maps` assets. Keep source code, environment files, internal records and upload archives outside the public document root. Do not combine HTML from one build with security headers from another.
+Upload the complete contents of `dist/`, including the root and every nested hidden `.htaccess` file and all `_astro`, `brand`, `images` and `maps` assets. Keep source code, environment files, internal records and upload archives outside the public document root. Do not combine HTML from one build with security headers from another.
 
 The new parts finder uses a same-origin GET navigation to the quote page. Its updated Content Security Policy allows that navigation and the configured Formspree POST destination. Inline scripts are authorized by generated hashes; do not replace that restriction with unrestricted inline JavaScript. The current header is close to its tested size budget, so future route expansion needs a more granular strategy.
 
@@ -26,7 +26,7 @@ The current primary and singular domains use the same dedicated website root. Th
 
 A pre-deployment archive of the previous website and the uploaded release archive are retained in the hosting account outside every public document root. Their exact locations are in the private operations record. Preserve certificate-validation directories and hosting-managed files during any restoration.
 
-To roll back, extract the chosen complete archive in a private staging directory, inspect its root structure, then restore that release's HTML, assets and matching `.htaccess` to the dedicated website root. Keep a copy of the release being replaced. Remove obsolete application files only after identifying them against the two manifests; do not remove hosting-managed directories or other sites. Repeat HTTPS, redirects, 404, file-integrity and bilingual form checks. DNS rollback is separate from file rollback; use the saved private DNS snapshot and WHC history if needed, preserving mail configuration.
+To roll back, extract the chosen complete archive in a private staging directory, inspect its root structure, then restore that release's HTML, assets and matching root and nested `.htaccess` files to the dedicated website root. Keep a copy of the release being replaced. Remove obsolete application files only after identifying them against the two manifests; do not remove hosting-managed directories or other sites. Repeat HTTPS, redirects, 404, file-integrity and bilingual form checks. DNS rollback is separate from file rollback; use the saved private DNS snapshot and WHC history if needed, preserving mail configuration.
 
 ## Post-upload verification
 
@@ -34,8 +34,8 @@ Check that `/` and `/index.html` redirect directly to `/en/` with query strings 
 
 Exercise model filtering, comparison, parts-to-quote navigation, package selection, language switching and the optional replacement/training fields. Make an explicitly labelled synthetic form submission only when authorized for the deployment check, then verify its receipt and routing in the configured provider. Check bilingual validation, consent, uploads and hosted anti-spam fallback. Do not claim notification delivery from a browser success message alone.
 
-## Indexing gate
+## Indexing configuration
 
-Keep `PUBLIC_SITE_INDEXABLE=false` until launch is approved and supplier, regulatory, privacy and operating requirements are resolved. The build switch controls robots metadata and robots.txt together. Before enabling it, review the exact product information, service commitments, canonical routes and sitemap, and configure public Search Console/Bing verification tokens if supplied. Verify the deployed indexing controls before submitting the sitemap.
+The owner explicitly authorized Google and Bing submission on 7 November 2026. Production defaults in `src/data/search-launch.ts` are indexable and include public ownership-verification tags. Use `PUBLIC_SITE_INDEXABLE=false` for staging only. The switch controls page metadata and robots.txt together. Verify deployed crawlability, canonicals, all 232 sitemap entries and verification tags before submitting. Product licensing, supply and service statements must remain factual regardless of indexing authorization.
 
 A crawl block is not access control and cannot guarantee removal of previously discovered URLs. Crawlers need access to read a noindex directive when deindexing is required. No search-engine submission or eligibility guarantee is implied by generating a sitemap.

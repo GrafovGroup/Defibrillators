@@ -1,8 +1,10 @@
+import { offeringRoutes } from './offering-routes.ts';
 import type { Locale } from './content';
 import { modelRoutes } from './model-options.ts';
 import { locationRoutes } from './location-routes.ts';
 export const routes = {
   ...locationRoutes,
+  ...offeringRoutes,
   home: { en: ['', 'Home'], fr: ['', 'Accueil'] },
   defibrillators: {
     en: ['defibrillators', 'AED defibrillators'],

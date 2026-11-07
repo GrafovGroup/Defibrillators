@@ -5,4 +5,4 @@
 - Preserve the approved homepage composition, logo and illustration assets. A language-entry change is not permission to redesign them.
 - These later owner preferences override any conflicting language-entry guidance in `MASTER_PROMPT.md` or historical phase documentation.
 - The owner authorized Phase 5 WHC deployment on 7 November 2026. Preserve the dedicated website root and other hosted sites; keep rollback archives and account records outside the public root and GitHub.
-- Search indexing remains disabled until the owner approves launch after supplier, regulatory, privacy and operating checks. Deployment authorization is not indexing approval.
+- The owner explicitly authorized Google and Bing indexing on 7 November 2026 with the city/product/service expansion. Keep the production launch indexable and retain the public verification tags. This authorization does not establish unverified licensing, inventory, prices, local offices or service-provider claims.

@@ -88,6 +88,18 @@ const server = http.createServer(async (req, res) => {
         status = 404;
       }
     }
+    // Apache inherits the root headers and replaces CSP in each page directory.
+    const pageHeaders = path.join(path.dirname(file), '.htaccess');
+    if (
+      file.startsWith(root + path.sep) &&
+      pageHeaders !== path.join(root, '.htaccess') &&
+      fs.existsSync(pageHeaders)
+    ) {
+      for (const [, name, value] of fs
+        .readFileSync(pageHeaders, 'utf8')
+        .matchAll(/Header always set ([\w-]+) "([^"]+)"/g))
+        res.setHeader(name, value.replaceAll(' https://formspree.io', ''));
+    }
     const ext = path.extname(file);
     let body = fs.readFileSync(file);
     if (ext === '.html' || ext === '.js') {

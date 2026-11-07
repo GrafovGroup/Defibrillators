@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-07 — National city coverage and focused offerings
+
+- Expand to 45 city/metropolitan guides plus all 13 provincial/territorial guides in both languages.
+- Add 12 focused accessory and service pages with procurement briefs, short answers, source references and enquiry routing.
+- Add an accessible city/province finder, municipality aliases, and city context through service pages and language switching into RFQs.
+- Preserve the approved homepages and logos; improve local page navigation and related product/service discovery.
+- Replace the global CSP hash list with bounded page-specific headers and enable the owner-authorized search launch with Google/Bing verification tags.
+- Validate 232 localized routes with 526 tests and 332 browser accessibility/responsive checks. Search submission and deployment evidence is recorded in `docs/EXPANSION-AND-SEARCH.md`.
+
 ## 2026-11-07 — Phase 5 WHC deployment
 
 - Deployed the verified Phase 4 release with the approved homepage, direct English entry and all bilingual pages.

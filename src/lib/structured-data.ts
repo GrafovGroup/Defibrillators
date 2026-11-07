@@ -72,9 +72,14 @@ export function structuredData(
           ? 'Country'
           : page.parent === 'locations'
             ? 'AdministrativeArea'
-            : 'City',
+            : 'Place',
       name: page.location.place[lang],
     };
+  }
+  if (page?.location) {
+    webpage.dateModified = page.location.reviewed;
+    webpage.author = { '@id': `${siteOrigin}/#organization` };
+    webpage.citation = page.location.sources.map((source) => source.url);
   }
   if (collectionItems.length) {
     webpage.mainEntity = { '@id': `${url}#items` };

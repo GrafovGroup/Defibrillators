@@ -1,0 +1,67 @@
+---
+import { offeringIds, offeringRequests } from '../data/offering-routes';
+import { pathFor, labelFor } from '../data/routes';
+import { pageFor } from '../data/pages';
+import type { Locale } from '../data/content';
+import type { CityId } from '../data/city-catalogue';
+interface Props {
+  lang: Locale;
+  city?: CityId;
+  group?: 'services' | 'accessories';
+}
+const { lang, city, group } = Astro.props;
+const t = (en: string, fr: string) => (lang === 'en' ? en : fr);
+const groups = (['services', 'accessories'] as const).filter(
+  (item) => !group || item === group,
+);
+---
+
+<section
+  class="offering-directory"
+  aria-labelledby="offering-directory-heading"
+>
+  <p class="eyebrow">{t('A CLEAR NEXT STEP', 'UNE PROCHAINE ÉTAPE CLAIRE')}</p>
+  <h2 id="offering-directory-heading">
+    {t(
+      'Choose the product or task you need',
+      'Choisissez le produit ou la tâche nécessaire',
+    )}
+  </h2>
+  <p>
+    {t(
+      'Explore a focused brief, check what information to provide and request a written scope for your location.',
+      'Consultez une fiche ciblée, préparez les renseignements utiles et demandez une portée écrite pour votre emplacement.',
+    )}
+  </p>
+  <div class="offering-columns">
+    {groups.map((kind) => (
+      <div>
+        <h3>
+          {kind === 'services'
+            ? t('Focused services', 'Services ciblés')
+            : t('Specialist accessories', 'Accessoires ciblés')}
+        </h3>
+        <ul>
+          {offeringIds
+            .filter(
+              (id) =>
+                (offeringRequests[id].request === 'accessories') ===
+                (kind === 'accessories'),
+            )
+            .map((id) => (
+              <li>
+                <a href={`${pathFor(id, lang)}${city ? `?city=${city}` : ''}`}>
+                  <strong>{labelFor(id, lang)}</strong>
+                  <span>{pageFor(id).guide!.summary[lang]}</span>
+                  <span class="text-link">
+                    {t('View details', 'Voir les détails')}{' '}
+                    <span aria-hidden="true">→</span>
+                  </span>
+                </a>
+              </li>
+            ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</section>

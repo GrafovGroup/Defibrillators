@@ -1,5 +1,6 @@
 ---
 import Logo from './Logo.astro';
+import { enquiryPath } from '../lib/enquiry';
 import Icon from './Icon.astro';
 import LocaleSwitch from './LocaleSwitch.astro';
 import { content, contact, type Locale } from '../data/content';
@@ -22,10 +23,10 @@ const c = content[lang];
     <div class="container utility-inner">
       <LocaleSwitch lang={lang} pageId={pageId} />
       <div class="utility-right">
-        <span class="utility-coverage">
+        <a class="utility-coverage" href={pathFor('locations', lang)}>
           <Icon name="maple" />
           {c.coverage}
-        </span>
+        </a>
         <span class="utility-detail">
           <Icon name="tools" />
           {lang === 'en' ? 'Installation & support' : 'Installation et soutien'}
@@ -53,7 +54,7 @@ const c = content[lang];
         {contact.email}
       </a>
     </div>
-    <a class="button header-quote" href={pathFor('quote', lang)}>
+    <a class="button header-quote" href={enquiryPath(pageId, lang)}>
       {c.quote}
     </a>
   </div>

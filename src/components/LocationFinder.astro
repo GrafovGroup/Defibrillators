@@ -1,0 +1,166 @@
+---
+import { cityCatalogue, cityIds, censusSource } from '../data/city-catalogue';
+import { provinceLabels } from '../data/province-labels';
+import { pathFor } from '../data/routes';
+import type { Locale } from '../data/content';
+interface Props {
+  lang: Locale;
+  region?: string;
+}
+const { lang, region } = Astro.props;
+const cities = cityIds
+  .filter(
+    (id) =>
+      !region ||
+      cityCatalogue[id].parent === region ||
+      (region === 'quebec' && id === 'ottawa'),
+  )
+  .sort((a, b) =>
+    cityCatalogue[a][lang].localeCompare(cityCatalogue[b][lang], lang),
+  );
+const t = (en: string, fr: string) => (lang === 'en' ? en : fr);
+---
+
+<section
+  class="location-finder"
+  data-location-finder
+  data-lang={lang}
+  aria-labelledby="city-directory-heading"
+>
+  <p class="eyebrow">
+    {t(
+      'LOCAL PLANNING, ACROSS CANADA',
+      'PLANIFICATION LOCALE, PARTOUT AU CANADA',
+    )}
+  </p>
+  <h2 id="city-directory-heading">
+    {t('Find your city or region', 'Trouvez votre ville ou région')}
+  </h2>
+  <p>
+    {t(
+      'Choose a city guide for local project details, then explore equipment and support. Use the actual delivery address in your enquiry.',
+      'Choisissez un guide local, puis explorez l’équipement et le soutien. Indiquez l’adresse réelle de livraison dans votre demande.',
+    )}
+  </p>
+  <div class="finder-controls" data-finder-controls hidden>
+    <div>
+      <label for="city-search">
+        {t('City or nearby municipality', 'Ville ou municipalité voisine')}
+      </label>
+      <input
+        id="city-search"
+        type="search"
+        autocomplete="off"
+        placeholder={t(
+          'Try Surrey, Ottawa or Quebec',
+          'Essayez Laval, Ottawa ou Québec',
+        )}
+      />
+    </div>
+    {!region && (
+      <div>
+        <label for="city-province">
+          {t('Province or territory', 'Province ou territoire')}
+        </label>
+        <select id="city-province">
+          <option value="">{t('All regions', 'Toutes les régions')}</option>
+          {Object.entries(provinceLabels).map(([code, labels]) => (
+            <option value={code}>{labels[lang]}</option>
+          ))}
+        </select>
+      </div>
+    )}
+    <button type="button" class="button" data-finder-reset>
+      {t('Clear filters', 'Effacer les filtres')}
+    </button>
+  </div>
+  <p
+    class="finder-count"
+    data-finder-count
+    role="status"
+    aria-live="polite"
+    aria-atomic="true"
+  >
+    {cities.length} {t('city guides', 'guides de villes')}
+  </p>
+  <ul class="city-directory">
+    {cities.map((id) => {
+      const city = cityCatalogue[id];
+      return (
+        <li
+          data-city-result
+          data-code={city.code}
+          data-search={`${city.en} ${city.fr} ${city.aliases}`}
+        >
+          <a href={pathFor(id, lang)}>
+            <strong>{city[lang]}</strong>
+            <span>
+              {city.code === 'ON-QC'
+                ? t('Ontario & Québec', 'Ontario et Québec')
+                : provinceLabels[city.code][lang]}{' '}
+              <span aria-hidden="true">→</span>
+            </span>
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+  <p data-finder-empty hidden>
+    {t(
+      'No matching guide. Clear the filters or use the provincial guide below. You can still request a quote for another Canadian community.',
+      'Aucun guide correspondant. Effacez les filtres ou utilisez le guide provincial ci-dessous. Vous pouvez demander une soumission pour une autre communauté canadienne.',
+    )}
+  </p>
+  {!region && (
+    <p class="directory-method">
+      {t(
+        '45 city and metropolitan guides: all 41 census metropolitan areas in the 2021 classification, plus Charlottetown, Whitehorse, Yellowknife and Iqaluit. Regional guides also cover planning enquiries from nearby municipalities. Coverage here describes editorial guides, not local offices or confirmed service availability.',
+        '45 guides de villes et régions métropolitaines : les 41 régions métropolitaines de la classification de 2021, plus Charlottetown, Whitehorse, Yellowknife et Iqaluit. Les guides régionaux accueillent aussi les demandes des municipalités voisines. Il s’agit de guides, non de bureaux locaux ou de services confirmés.',
+      )}{' '}
+      <a href={censusSource.url}>
+        {t(
+          'Statistics Canada classification',
+          'Classification de Statistique Canada',
+        )}
+      </a>
+      .
+    </p>
+  )}
+</section>
+<script>
+  import { matchesLocation } from '../lib/location-search';
+  for (const root of document.querySelectorAll<HTMLElement>(
+    '[data-location-finder]',
+  )) {
+    const search = root.querySelector<HTMLInputElement>('#city-search')!;
+    const province = root.querySelector<HTMLSelectElement>('#city-province');
+    const results = [
+      ...root.querySelectorAll<HTMLElement>('[data-city-result]'),
+    ];
+    const update = () => {
+      let count = 0;
+      for (const result of results) {
+        result.hidden = !matchesLocation(
+          result.dataset.search!,
+          result.dataset.code!,
+          search.value,
+          province?.value,
+        );
+        if (!result.hidden) count++;
+      }
+      root.querySelector('[data-finder-count]')!.textContent =
+        `${count} ${root.dataset.lang === 'fr' ? (count === 1 ? 'guide de ville' : 'guides de villes') : count === 1 ? 'city guide' : 'city guides'}`;
+      root.querySelector<HTMLElement>('[data-finder-empty]')!.hidden =
+        count !== 0;
+    };
+    search.addEventListener('input', update);
+    province?.addEventListener('change', update);
+    root.querySelector('[data-finder-reset]')!.addEventListener('click', () => {
+      search.value = '';
+      if (province) province.value = '';
+      update();
+      search.focus();
+    });
+    root.querySelector<HTMLElement>('[data-finder-controls]')!.hidden = false;
+  }
+</script>

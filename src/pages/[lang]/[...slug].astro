@@ -10,6 +10,11 @@ import PackagePlanner from '../../components/PackagePlanner.astro';
 import Comparison from '../../components/Comparison.astro';
 import QuoteForm from '../../components/QuoteForm.astro';
 import CityPage from '../../components/CityPage.astro';
+import LocationFinder from '../../components/LocationFinder.astro';
+import OfferingDirectory from '../../components/OfferingDirectory.astro';
+import CityContext from '../../components/CityContext.astro';
+import { cityCatalogue, type CityId } from '../../data/city-catalogue';
+import { offeringIds, type OfferingId } from '../../data/offering-routes';
 import { enquiryPath } from '../../lib/enquiry';
 import EnquiryActions from '../../components/EnquiryActions.astro';
 import { pages, pageImages, type DetailPage } from '../../data/pages';
@@ -41,6 +46,9 @@ const category =
       : lang === 'en'
         ? 'AED EQUIPMENT & SUPPORT'
         : 'ÉQUIPEMENT ET ACCOMPAGNEMENT EN DEA';
+const isOffering = offeringIds.includes(page.id as OfferingId);
+const isCity = Object.hasOwn(cityCatalogue, page.id);
+const isRegion = page.location && page.parent === 'locations';
 const isLegal = ['privacy', 'terms', 'accessibility'].includes(page.id);
 ---
 
@@ -62,6 +70,15 @@ const isLegal = ['privacy', 'terms', 'accessibility'].includes(page.id);
           <p class="eyebrow">{category}</p>
           <h1>{labelFor(page.id, lang)}</h1>
           <p>{page.intro[lang]}</p>
+          {(page.id === 'locations' || isRegion) && (
+            <p>
+              <a class="text-link" href="#city-directory-heading">
+                {lang === 'en'
+                  ? 'Find your city in the directory ↓'
+                  : 'Trouvez votre ville dans le répertoire ↓'}
+              </a>
+            </p>
+          )}
           {!isLegal && page.id !== 'quote' && (
             <a class="button" href={enquiryPath(page.id, lang)}>
               {lang === 'en' ? 'Request a quote' : 'Demander une soumission'}
@@ -71,20 +88,28 @@ const isLegal = ['privacy', 'terms', 'accessibility'].includes(page.id);
         {page.location ? (
           <figure class="location-map">
             <img
-              src={`/maps/${page.id}.svg`}
+              src={`/maps/${page.location.mapId}.svg`}
               width="800"
               height="500"
               alt={
                 lang === 'en'
-                  ? `Geographic locator for ${page.location.place.en} within Canada`
-                  : `Repère géographique : ${page.location.place.fr} au Canada`
+                  ? page.location.mapId !== page.id
+                    ? `Province or territory locator for the ${page.location.place.en} guide`
+                    : `Geographic locator for ${page.location.place.en} within Canada`
+                  : page.location.mapId !== page.id
+                    ? `Repère provincial ou territorial pour le guide de ${page.location.place.fr}`
+                    : `Repère géographique : ${page.location.place.fr} au Canada`
               }
               fetchpriority="high"
             />
             <figcaption>
               {lang === 'en'
-                ? 'Geographic locator · not a service coverage map'
-                : 'Repère géographique · ne représente pas la desserte'}
+                ? page.location.mapId !== page.id
+                  ? 'Province / territory locator · not a service coverage map'
+                  : 'Geographic locator · not a service coverage map'
+                : page.location.mapId !== page.id
+                  ? 'Repère provincial / territorial · ne représente pas la desserte'
+                  : 'Repère géographique · ne représente pas la desserte'}
             </figcaption>
           </figure>
         ) : (
@@ -125,6 +150,10 @@ const isLegal = ['privacy', 'terms', 'accessibility'].includes(page.id);
             ? 'This does not constitute an endorsement by Statistics Canada of this product. Generalized for orientation; not an official map.'
             : 'Cela ne constitue pas une approbation de ce produit par Statistique Canada. Carte généralisée à titre de repère, non officielle.'}
         </p>
+      )}
+      {isOffering && <CityContext lang={lang} pageId={page.id} />}
+      {(page.id === 'locations' || isRegion) && (
+        <LocationFinder lang={lang} region={isRegion ? page.id : undefined} />
       )}
       {page.kind === 'parts' && <PartsFinder lang={lang} />}
       {page.kind === 'packages' && <PackagePlanner lang={lang} />}
@@ -192,7 +221,7 @@ const isLegal = ['privacy', 'terms', 'accessibility'].includes(page.id);
           </a>
         </section>
       )}
-      {page.children && (
+      {page.children && !isRegion && (
         <section
           class="page-directory"
           aria-label={
@@ -341,6 +370,19 @@ const isLegal = ['privacy', 'terms', 'accessibility'].includes(page.id);
           </aside>
         )}
       </div>
+      {(isCity || page.id === 'services' || page.id === 'accessories') && (
+        <OfferingDirectory
+          lang={lang}
+          city={isCity ? (page.id as CityId) : undefined}
+          group={
+            page.id === 'services'
+              ? 'services'
+              : page.id === 'accessories'
+                ? 'accessories'
+                : undefined
+          }
+        />
+      )}
       {page.related && (
         <nav
           class="related-pages"

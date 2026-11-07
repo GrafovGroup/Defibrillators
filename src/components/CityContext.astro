@@ -1,0 +1,86 @@
+---
+import { cityCatalogue, cityIds } from '../data/city-catalogue';
+import { enquiryPath } from '../lib/enquiry';
+import { pathFor, type PageId } from '../data/routes';
+import type { Locale } from '../data/content';
+interface Props {
+  lang: Locale;
+  pageId: PageId;
+}
+const { lang, pageId } = Astro.props;
+---
+
+<aside
+  class="city-context"
+  data-city-context
+  data-enquiry={enquiryPath(pageId, lang)}
+  data-quote-path={pathFor('quote', lang)}
+  aria-label={
+    lang === 'en' ? 'Location for this enquiry' : 'Lieu de cette demande'
+  }
+>
+  <div data-city-select-wrap hidden>
+    <label for="enquiry-city">
+      {lang === 'en'
+        ? 'Planning for a particular city?'
+        : 'Vous planifiez pour une ville précise?'}
+    </label>
+    <select id="enquiry-city">
+      <option value="">
+        {lang === 'en'
+          ? 'Choose a city (optional)'
+          : 'Choisir une ville (facultatif)'}
+      </option>
+      {[...cityIds]
+        .sort((a, b) =>
+          cityCatalogue[a][lang].localeCompare(cityCatalogue[b][lang], lang),
+        )
+        .map((id) => (
+          <option value={id}>
+            {cityCatalogue[id][lang]} · {cityCatalogue[id].code}
+          </option>
+        ))}
+    </select>
+    <p role="status" data-city-context-status>
+      {lang === 'en'
+        ? 'Your selection stays with the quote request. Confirm the final address in the form.'
+        : 'Votre choix accompagne la demande. Confirmez l’adresse finale dans le formulaire.'}
+    </p>
+  </div>
+  <a class="text-link" href={pathFor('locations', lang)}>
+    {lang === 'en'
+      ? 'See city planning guides across Canada'
+      : 'Consulter les guides des villes du Canada'}{' '}
+    <span aria-hidden="true">→</span>
+  </a>
+</aside>
+<script>
+  import { safeEnquiryParams } from '../lib/enquiry-context';
+  const root = document.querySelector<HTMLElement>('[data-city-context]');
+  if (root) {
+    const select = root.querySelector<HTMLSelectElement>('select')!;
+    const safe = safeEnquiryParams(new URLSearchParams(location.search));
+    select.value = safe.get('city') ?? '';
+    const update = () => {
+      for (const link of document.querySelectorAll<HTMLAnchorElement>(
+        'a[href]',
+      )) {
+        let url = new URL(link.href);
+        if (url.origin !== location.origin) continue;
+        if (url.pathname === root.dataset.quotePath)
+          url = new URL(root.dataset.enquiry!, location.origin);
+        if (
+          url.pathname === root.dataset.quotePath ||
+          link.closest('.locale-switch')
+        ) {
+          if (select.value) url.searchParams.set('city', select.value);
+          else url.searchParams.delete('city');
+          link.href = url.pathname + url.search + url.hash;
+        }
+      }
+    };
+    select.addEventListener('change', update);
+    update();
+    root.querySelector<HTMLElement>('[data-city-select-wrap]')!.hidden = false;
+  }
+</script>

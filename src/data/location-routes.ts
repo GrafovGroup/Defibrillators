@@ -1,5 +1,11 @@
+import {
+  cityCatalogue,
+  cityIds,
+  citySlug,
+  type CityId,
+} from './city-catalogue.ts';
 // Locations identify planning guides, not offices or confirmed service territories.
-export const locationRoutes = {
+const regionAndOriginalRoutes = {
   locations: {
     en: ['locations', 'AED planning across Canada'],
     fr: ['regions', 'Planifier un DEA au Canada'],
@@ -97,6 +103,29 @@ export const locationRoutes = {
     fr: ['regions/alberta/calgary', 'Planifier un DEA à Calgary'],
   },
 } as const;
+const cityRoutes = Object.fromEntries(
+  cityIds.map((id) => {
+    const city = cityCatalogue[id];
+    const parent = regionAndOriginalRoutes[city.parent];
+    return [
+      id,
+      {
+        en: [
+          `${parent.en[0]}/${citySlug(id)}`,
+          `AED equipment & services in ${city.en}`,
+        ],
+        fr: [
+          `${parent.fr[0]}/${id === 'quebecCity' ? 'ville-quebec' : id === 'sudbury' ? 'grand-sudbury' : citySlug(id)}`,
+          `DEA et services à ${city.fr}`,
+        ],
+      },
+    ];
+  }),
+) as unknown as Record<
+  CityId,
+  { en: readonly [string, string]; fr: readonly [string, string] }
+>;
+export const locationRoutes = { ...regionAndOriginalRoutes, ...cityRoutes };
 export type LocationId = keyof typeof locationRoutes;
 const provinceByLocation: Partial<Record<LocationId, string>> = {
   alberta: 'AB',
@@ -112,10 +141,11 @@ const provinceByLocation: Partial<Record<LocationId, string>> = {
   nwt: 'NT',
   nunavut: 'NU',
   yukon: 'YT',
-  toronto: 'ON',
-  montreal: 'QC',
-  vancouver: 'BC',
-  calgary: 'AB',
+  ...Object.fromEntries(
+    cityIds
+      .filter((id) => cityCatalogue[id].code !== 'ON-QC')
+      .map((id) => [id, cityCatalogue[id].code]),
+  ),
 };
 export function provinceForLocation(source: string): string | undefined {
   return Object.hasOwn(provinceByLocation, source)

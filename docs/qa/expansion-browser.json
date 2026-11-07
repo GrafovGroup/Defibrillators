@@ -1,0 +1,4614 @@
+{
+  "checked": "2026-11-07",
+  "scope": "150 changed pages at 390 and 1280 px; eight representative pages at 360, 768, 1024 and 1710 px. Local preview uses production CSP with mocked form delivery.",
+  "results": [
+    {
+      "path": "/en/locations/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 45
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 45
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/alberta/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 4
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/alberta/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 4
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/british-columbia/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/manitoba/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/manitoba/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/new-brunswick/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 3
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/nouveau-brunswick/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 3
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/newfoundland-labrador/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/terre-neuve-labrador/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/nova-scotia/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/nouvelle-ecosse/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 16
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 16
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/prince-edward-island/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ile-du-prince-edouard/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/quebec/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/quebec/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/saskatchewan/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/saskatchewan/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/northwest-territories/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/territoires-du-nord-ouest/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/nunavut/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/nunavut/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/yukon/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/yukon/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/toronto/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/toronto/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/quebec/montreal/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/quebec/montreal/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/british-columbia/vancouver/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/vancouver/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/alberta/calgary/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/alberta/calgary/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/ottawa-gatineau/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/ottawa-gatineau/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/alberta/edmonton/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/alberta/edmonton/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/quebec/quebec-city/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/quebec/ville-quebec/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/manitoba/winnipeg/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/manitoba/winnipeg/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/hamilton/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/hamilton/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/kitchener-cambridge-waterloo/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/kitchener-cambridge-waterloo/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/london/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/london/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/nova-scotia/halifax/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/nouvelle-ecosse/halifax/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/st-catharines-niagara/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/st-catharines-niagara/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/windsor/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/windsor/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/oshawa/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/oshawa/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/british-columbia/victoria/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/victoria/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/saskatchewan/saskatoon/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/saskatchewan/saskatoon/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/saskatchewan/regina/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/saskatchewan/regina/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/quebec/sherbrooke/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/quebec/sherbrooke/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/british-columbia/kelowna/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/kelowna/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/barrie/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/barrie/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/newfoundland-labrador/st-johns/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/terre-neuve-labrador/st-johns/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/british-columbia/abbotsford-mission/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/abbotsford-mission/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/greater-sudbury/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/grand-sudbury/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/kingston/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/kingston/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/quebec/saguenay/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/quebec/saguenay/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/quebec/trois-rivieres/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/quebec/trois-rivieres/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/guelph/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/guelph/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/new-brunswick/moncton/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/nouveau-brunswick/moncton/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/brantford/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/brantford/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/new-brunswick/saint-john/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/nouveau-brunswick/saint-john/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/peterborough/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/peterborough/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/thunder-bay/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/thunder-bay/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/alberta/lethbridge/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/alberta/lethbridge/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/british-columbia/nanaimo/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/nanaimo/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/british-columbia/kamloops/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/kamloops/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/belleville-quinte-west/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/belleville-quinte-west/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/new-brunswick/fredericton/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/nouveau-brunswick/fredericton/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/british-columbia/chilliwack/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/chilliwack/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/alberta/red-deer/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/alberta/red-deer/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/quebec/drummondville/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/quebec/drummondville/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/prince-edward-island/charlottetown/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ile-du-prince-edouard/charlottetown/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/yukon/whitehorse/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/yukon/whitehorse/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/northwest-territories/yellowknife/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/territoires-du-nord-ouest/yellowknife/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/nunavut/iqaluit/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/nunavut/iqaluit/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/services/aed-site-assessment/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/services/evaluation-emplacement-dea/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/services/aed-cabinet-mounting/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/services/fixation-armoire-dea/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/services/aed-readiness-inspection/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/services/verification-etat-dea/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/services/aed-expiry-tracking/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/services/suivi-echeances-dea/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/services/aed-post-use-replenishment/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/services/reapprovisionnement-dea-apres-utilisation/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/services/aed-asset-inventory/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/services/inventaire-dea-multisite/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/accessories/adult-aed-pads/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/accessoires/electrodes-dea-adultes/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/accessories/paediatric-aed-pads-keys/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/accessoires/electrodes-cles-pediatriques-dea/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/accessories/combined-pad-battery-packs/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/accessoires/blocs-electrodes-batterie-dea/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/accessories/aed-trainers/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/accessoires/simulateurs-dea/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/accessories/aed-carry-cases/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/accessoires/etuis-transport-dea/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/accessories/outdoor-aed-cabinets/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/accessoires/armoires-exterieures-dea/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 16
+        }
+      ]
+    },
+    {
+      "path": "/fr/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 15
+        }
+      ]
+    },
+    {
+      "path": "/en/request-quote/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": []
+    },
+    {
+      "path": "/fr/demander-soumission/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": []
+    },
+    {
+      "path": "/en/services/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "path": "/fr/services/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "path": "/en/accessories/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "path": "/fr/accessoires/",
+      "width": 390,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 45
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 45
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/alberta/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 4
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/alberta/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 4
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/british-columbia/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/manitoba/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/manitoba/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/new-brunswick/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 3
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/nouveau-brunswick/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 3
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/newfoundland-labrador/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/terre-neuve-labrador/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/nova-scotia/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/nouvelle-ecosse/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 16
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 16
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/prince-edward-island/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ile-du-prince-edouard/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/quebec/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/quebec/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/saskatchewan/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/saskatchewan/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/northwest-territories/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/territoires-du-nord-ouest/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/nunavut/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/nunavut/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/yukon/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/yukon/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/toronto/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/toronto/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/quebec/montreal/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/quebec/montreal/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/british-columbia/vancouver/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/vancouver/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/alberta/calgary/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/alberta/calgary/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/ottawa-gatineau/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/ottawa-gatineau/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/alberta/edmonton/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/alberta/edmonton/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/quebec/quebec-city/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/quebec/ville-quebec/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/manitoba/winnipeg/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/manitoba/winnipeg/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/hamilton/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/hamilton/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/kitchener-cambridge-waterloo/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/kitchener-cambridge-waterloo/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/london/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/london/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/nova-scotia/halifax/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/nouvelle-ecosse/halifax/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/st-catharines-niagara/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/st-catharines-niagara/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/windsor/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/windsor/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/oshawa/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/oshawa/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/british-columbia/victoria/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/victoria/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/saskatchewan/saskatoon/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/saskatchewan/saskatoon/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/saskatchewan/regina/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/saskatchewan/regina/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/quebec/sherbrooke/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/quebec/sherbrooke/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/british-columbia/kelowna/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/kelowna/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/barrie/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/barrie/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/newfoundland-labrador/st-johns/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/terre-neuve-labrador/st-johns/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/british-columbia/abbotsford-mission/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/abbotsford-mission/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/greater-sudbury/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/grand-sudbury/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/kingston/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/kingston/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/quebec/saguenay/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/quebec/saguenay/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/quebec/trois-rivieres/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/quebec/trois-rivieres/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/guelph/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/guelph/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/new-brunswick/moncton/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/nouveau-brunswick/moncton/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/brantford/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/brantford/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/new-brunswick/saint-john/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/nouveau-brunswick/saint-john/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/peterborough/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/peterborough/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/thunder-bay/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/thunder-bay/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/alberta/lethbridge/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/alberta/lethbridge/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/british-columbia/nanaimo/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/nanaimo/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/british-columbia/kamloops/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/kamloops/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/belleville-quinte-west/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ontario/belleville-quinte-west/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/new-brunswick/fredericton/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/nouveau-brunswick/fredericton/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/british-columbia/chilliwack/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/colombie-britannique/chilliwack/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/alberta/red-deer/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/alberta/red-deer/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/quebec/drummondville/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/quebec/drummondville/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/prince-edward-island/charlottetown/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/ile-du-prince-edouard/charlottetown/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/yukon/whitehorse/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/yukon/whitehorse/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/northwest-territories/yellowknife/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/territoires-du-nord-ouest/yellowknife/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/nunavut/iqaluit/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/nunavut/iqaluit/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/en/services/aed-site-assessment/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/services/evaluation-emplacement-dea/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/services/aed-cabinet-mounting/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/services/fixation-armoire-dea/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/services/aed-readiness-inspection/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/services/verification-etat-dea/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/services/aed-expiry-tracking/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/services/suivi-echeances-dea/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/services/aed-post-use-replenishment/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/services/reapprovisionnement-dea-apres-utilisation/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/services/aed-asset-inventory/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/services/inventaire-dea-multisite/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/accessories/adult-aed-pads/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/accessoires/electrodes-dea-adultes/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/accessories/paediatric-aed-pads-keys/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/accessoires/electrodes-cles-pediatriques-dea/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/accessories/combined-pad-battery-packs/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/accessoires/blocs-electrodes-batterie-dea/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/accessories/aed-trainers/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/accessoires/simulateurs-dea/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/accessories/aed-carry-cases/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/accessoires/etuis-transport-dea/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/accessories/outdoor-aed-cabinets/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/fr/accessoires/armoires-exterieures-dea/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 22
+        }
+      ]
+    },
+    {
+      "path": "/fr/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 23
+        }
+      ]
+    },
+    {
+      "path": "/en/request-quote/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": []
+    },
+    {
+      "path": "/fr/demander-soumission/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": []
+    },
+    {
+      "path": "/en/services/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "path": "/fr/services/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "path": "/en/accessories/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "path": "/fr/accessoires/",
+      "width": 1280,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/",
+      "width": 360,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 45
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/",
+      "width": 360,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 45
+        }
+      ]
+    },
+    {
+      "path": "/fr/services/fixation-armoire-dea/",
+      "width": 360,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/kitchener-cambridge-waterloo/",
+      "width": 360,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/accessoires/electrodes-cles-pediatriques-dea/",
+      "width": 360,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/",
+      "width": 360,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 14
+        }
+      ]
+    },
+    {
+      "path": "/fr/",
+      "width": 360,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 15
+        }
+      ]
+    },
+    {
+      "path": "/en/request-quote/",
+      "width": 360,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": []
+    },
+    {
+      "path": "/en/locations/",
+      "width": 768,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 45
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/",
+      "width": 768,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 45
+        }
+      ]
+    },
+    {
+      "path": "/fr/services/fixation-armoire-dea/",
+      "width": 768,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/kitchener-cambridge-waterloo/",
+      "width": 768,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/accessoires/electrodes-cles-pediatriques-dea/",
+      "width": 768,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/",
+      "width": 768,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 14
+        }
+      ]
+    },
+    {
+      "path": "/fr/",
+      "width": 768,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 14
+        }
+      ]
+    },
+    {
+      "path": "/en/request-quote/",
+      "width": 768,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": []
+    },
+    {
+      "path": "/en/locations/",
+      "width": 1024,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 45
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/",
+      "width": 1024,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 45
+        }
+      ]
+    },
+    {
+      "path": "/fr/services/fixation-armoire-dea/",
+      "width": 1024,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/kitchener-cambridge-waterloo/",
+      "width": 1024,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/accessoires/electrodes-cles-pediatriques-dea/",
+      "width": 1024,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/",
+      "width": 1024,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 27
+        }
+      ]
+    },
+    {
+      "path": "/fr/",
+      "width": 1024,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 27
+        }
+      ]
+    },
+    {
+      "path": "/en/request-quote/",
+      "width": 1024,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": []
+    },
+    {
+      "path": "/en/locations/",
+      "width": 1710,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 45
+        }
+      ]
+    },
+    {
+      "path": "/fr/regions/",
+      "width": 1710,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 45
+        }
+      ]
+    },
+    {
+      "path": "/fr/services/fixation-armoire-dea/",
+      "width": 1710,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/locations/ontario/kitchener-cambridge-waterloo/",
+      "width": 1710,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ]
+    },
+    {
+      "path": "/fr/accessoires/electrodes-cles-pediatriques-dea/",
+      "width": 1710,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "path": "/en/",
+      "width": 1710,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 20
+        }
+      ]
+    },
+    {
+      "path": "/fr/",
+      "width": 1710,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 20
+        }
+      ]
+    },
+    {
+      "path": "/en/request-quote/",
+      "width": 1710,
+      "axe": "4.14.0",
+      "violations": [],
+      "overflow": false,
+      "brokenImages": [],
+      "incomplete": []
+    }
+  ]
+}

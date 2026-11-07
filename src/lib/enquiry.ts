@@ -1,3 +1,4 @@
+import { offeringRequests, type OfferingId } from '../data/offering-routes.ts';
 import { modelIds, type ModelId } from '../data/model-options.ts';
 import { pathFor, type PageId } from '../data/routes.ts';
 import type { Locale } from '../data/content';
@@ -26,6 +27,11 @@ export function enquiryPath(page: PageId, lang: Locale): string {
         ? 'accessories'
         : 'equipment',
   );
+  if (Object.hasOwn(offeringRequests, page)) {
+    const selection = offeringRequests[page as OfferingId];
+    params.set('request', selection.request);
+    if ('part' in selection) params.set('part', selection.part);
+  }
   if (page === 'residential') params.set('audience', 'residential');
   params.set('source', page);
   return `${pathFor('quote', lang)}?${params}#rfq`;

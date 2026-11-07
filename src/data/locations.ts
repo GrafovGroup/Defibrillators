@@ -1,3 +1,6 @@
+import { cityCatalogue, cityIds, censusSource } from './city-catalogue.ts';
+import { cityBriefs } from './city-briefs.ts';
+import { moreCityBriefs } from './city-briefs-more.ts';
 import type { DetailPage, Localized, Section } from './pages';
 import type { LocationId } from './location-routes';
 import type { PageId } from './routes';
@@ -18,6 +21,8 @@ interface Guide {
   faqs: ReturnType<typeof s>[];
   children?: LocationId[];
   related: PageId[];
+  mapId?: LocationId;
+  sources?: { label: string; url: string }[];
 }
 
 // Editorial planning scenarios, not verified local branches or installation promises.
@@ -1068,6 +1073,49 @@ export const locationGuides: Guide[] = [
   },
 ];
 
+const newBriefs = { ...cityBriefs, ...moreCityBriefs };
+for (const id of Object.keys(newBriefs) as (keyof typeof newBriefs)[]) {
+  const city = cityCatalogue[id],
+    brief = newBriefs[id];
+  locationGuides.push({
+    id,
+    code: city.code,
+    place: l(city.en, city.fr),
+    parent: city.parent,
+    mapId: city.parent,
+    intro: l(...brief.intro),
+    sections: brief.topics.map(([he, hf, be, bf]) => s(he, hf, be, bf)),
+    checklist: [
+      ...brief.checks.map(([en, fr]) => l(en, fr)),
+      l(
+        'Exact AED model, quantity and requested product or service scope',
+        'Modèle exact, quantité et portée du produit ou du service demandé',
+      ),
+    ],
+    faqs: [
+      s(...brief.question, ...brief.answer),
+      s(
+        `How do I request AED equipment or support in ${city.en}?`,
+        `Comment demander de l’équipement ou du soutien en DEA à ${city.fr}?`,
+        'Choose the product or service below and include your final address. We review compatibility, equipment availability, delivery and any site work before providing a written quote. These are planning enquiries, not emergency assistance.',
+        'Choisissez le produit ou le service ci-dessous et indiquez l’adresse finale. Nous examinons compatibilité, disponibilité, livraison et travaux avant la soumission écrite. Il s’agit de planification, pas d’assistance d’urgence.',
+      ),
+    ],
+    related: ['parts', 'siteAssessment', 'readinessInspection', 'locations'],
+    sources: [censusSource],
+  });
+}
+for (const guide of locationGuides) {
+  if (guide.parent === 'locations') {
+    guide.children = cityIds.filter(
+      (id) =>
+        cityCatalogue[id].parent === guide.id ||
+        (guide.id === 'quebec' && id === 'ottawa'),
+    );
+  }
+  guide.sources ??= [censusSource];
+}
+
 const localSections = (
   sections: ReturnType<typeof s>[],
 ): Localized<Section[]> =>
@@ -1091,6 +1139,9 @@ export const locationPages: DetailPage[] = locationGuides.map((guide) => ({
   related: guide.related,
   location: {
     code: guide.code,
+    mapId: guide.mapId ?? guide.id,
+    sources: guide.sources!,
+    reviewed: '2026-11-07',
     place: guide.place,
     checklist: l(
       guide.checklist.map((x) => x.en),

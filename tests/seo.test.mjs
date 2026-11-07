@@ -10,6 +10,7 @@ import { locationGuides } from '../src/data/locations.ts';
 import { provinceForLocation } from '../src/data/location-routes.ts';
 import {
   searchConfiguration,
+  searchConfig,
   robotsText,
   safeJson,
 } from '../src/lib/site-config.ts';
@@ -56,8 +57,8 @@ test('Sitemap contains each canonical destination exactly once and excludes quer
   );
 });
 
-test('Search configuration defaults to prelaunch and rejects malformed verification tokens', () => {
-  for (const value of [undefined, '', 'false', 'TRUE', '1']) {
+test('Owner-authorized production indexing and explicit staging overrides reject malformed verification tokens', () => {
+  for (const value of ['', 'false', 'TRUE', '1']) {
     const config = searchConfiguration({ PUBLIC_SITE_INDEXABLE: value });
     assert.equal(config.indexable, false);
     assert.equal(config.robots, 'noindex, nofollow');
@@ -83,14 +84,18 @@ test('Search configuration defaults to prelaunch and rejects malformed verificat
   assert.throws(() =>
     searchConfiguration({ PUBLIC_BING_SITE_VERIFICATION: 'bad token' }),
   );
-  assert.equal(fs.readFileSync('dist/robots.txt', 'utf8'), robotsText(false));
+  assert.equal(searchConfiguration().indexable, true);
+  assert.equal(
+    fs.readFileSync('dist/robots.txt', 'utf8'),
+    robotsText(searchConfig.indexable),
+  );
   for (const route of ['/', '/en/', '/fr/']) {
     const $ = html(route);
-    assert.match($('meta[name=robots]').attr('content'), /noindex/);
+    assert.equal($('meta[name=robots]').attr('content'), searchConfig.robots);
     assert.equal(
       $('meta[name="google-site-verification"],meta[name="msvalidate.01"]')
         .length,
-      0,
+      2,
     );
   }
 });
@@ -178,8 +183,8 @@ test('Structured data reflects visible content and never fabricates commercial o
     }
 });
 
-test('Location guides cover 13 regions and four cities with distinct bilingual briefs and linked hierarchy', () => {
-  assert.equal(locationGuides.length, 18);
+test('Location guides cover 13 regions and 45 city/metro guides with distinct bilingual briefs and linked hierarchy', () => {
+  assert.equal(locationGuides.length, 59);
   const regions = locationGuides.filter(
     (guide) => guide.parent === 'locations',
   );
@@ -203,7 +208,7 @@ test('Location guides cover 13 regions and four cities with distinct bilingual b
     locationGuides.filter(
       (guide) => guide.parent && guide.parent !== 'locations',
     ).length,
-    4,
+    45,
   );
   for (const lang of ['en', 'fr']) {
     const unique = new Set();
@@ -247,7 +252,7 @@ test('Location guides cover 13 regions and four cities with distinct bilingual b
         assert.equal(target.searchParams.get('source'), guide.id);
       }
       const map = $('.location-map img').attr('src');
-      assert.equal(map, `/maps/${guide.id}.svg`);
+      assert.equal(map, `/maps/${guide.mapId ?? guide.id}.svg`);
       assert.ok(
         fs.statSync('public' + map).size < 80_000,
         'lightweight locator map',
@@ -282,12 +287,23 @@ test('WHC header supports every emitted inline script within a conservative size
   assert.doesNotMatch(csp, /script-src[^;]*unsafe-inline/);
   for (const id of Object.keys(routes))
     for (const lang of ['en', 'fr']) {
+      const routeHeaders = fs.readFileSync(
+        path.join('dist', pathFor(id, lang), '.htaccess'),
+        'utf8',
+      );
+      const pageCsp = routeHeaders
+        .split('\n')
+        .find((line) => line.includes('Content-Security-Policy'));
+      assert.ok(Buffer.byteLength(pageCsp) < 7500);
+      assert.doesNotMatch(pageCsp, /script-src[^;]*unsafe-inline/);
       const $ = html(pathFor(id, lang));
       $('script:not([src])').each((_, el) => {
         const text = $(el).text();
         if (text)
           assert.ok(
-            csp.includes(createHash('sha256').update(text).digest('base64')),
+            pageCsp.includes(
+              createHash('sha256').update(text).digest('base64'),
+            ),
             `${id}/${lang} script hash`,
           );
       });

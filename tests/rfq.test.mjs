@@ -241,9 +241,13 @@ test('WHC headers allow Formspree and every generated inline script by hash', ()
   assert.match(headers, /ErrorDocument 404 \/404.html/);
   assert.doesNotMatch(headers, /__SCRIPT_HASHES__/);
   const $ = load(fs.readFileSync('dist/en/request-quote/index.html', 'utf8'));
+  const pageHeaders = fs.readFileSync(
+    'dist/en/request-quote/.htaccess',
+    'utf8',
+  );
   $('script:not([src])').each((_, el) => {
     assert.ok(
-      headers.includes(
+      pageHeaders.includes(
         `'sha256-${createHash('sha256').update($(el).text()).digest('base64')}'`,
       ),
     );

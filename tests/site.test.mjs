@@ -1,3 +1,4 @@
+import { searchConfig } from '../src/lib/site-config.ts';
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import fs from 'node:fs';
@@ -113,7 +114,7 @@ for (const lang of ['en', 'fr']) {
     assert.ok($('a[href="tel:+18336969996"]').length);
     assert.ok($('a[href^="mailto:info@defibrillators.ca?subject="]').length);
     assert.equal($('form').length, 0, 'no unconfigured form should be exposed');
-    assert.match($('meta[name="robots"]').attr('content'), /noindex/);
+    assert.equal($('meta[name="robots"]').attr('content'), searchConfig.robots);
     assert.equal($('.skip-link').attr('href'), '#main');
     assert.equal($('#main').attr('tabindex'), '-1');
     assert.equal($('.photo-credits li').length, 6);

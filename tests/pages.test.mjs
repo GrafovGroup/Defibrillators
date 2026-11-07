@@ -1,3 +1,4 @@
+import { searchConfig } from '../src/lib/site-config.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -81,7 +82,7 @@ for (const [file, $] of all) {
       );
     }
     assert.ok($('meta[name="description"]').attr('content').length > 60);
-    assert.match($('meta[name="robots"]').attr('content'), /noindex/);
+    assert.equal($('meta[name="robots"]').attr('content'), searchConfig.robots);
     assert.equal(
       $('script[type="application/ld+json"]').length,
       1,
