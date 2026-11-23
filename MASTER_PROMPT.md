@@ -56,6 +56,15 @@ Create structured product schema/types with manufacturer, model, Canadian licenc
 - Confirm Canadian privacy, marketing consent, consumer protection, tax, accessibility and Québec French-language obligations with relevant advisers.
 
 ## SEO / AEO / DISCOVERABILITY
+
+**Editorial standard · Google E-E-A-T**
+
+Start with the decision the reader came to make. Where first-hand experience helps, use work the publisher can document and share. Identify who produced or reviewed technical guidance where readers would expect it, and explain the method when it affects interpretation. Support consequential claims with the most relevant original source. Claim outside recognition or credentials only when readers can verify them.
+
+For each AED model, reconcile the current manufacturer instructions and applicable Health Canada record. A listing does not establish clinical outcomes or endorsement. Name a real qualified reviewer for substantive emergency-use guidance and record which version was checked.
+
+At content review, trace a material claim on a representative page back to its source. Correct, qualify or omit an unsupported claim, including in translated copy and structured data where present. [Google Search Central](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) · [Universal master prompt](https://github.com/GrafovGroup/MasterPrompt/blob/main/MASTER_PROMPT.md).
+
 - Unique human-useful titles, meta descriptions, headings, internal links and concise FAQ answers for each localized page.
 - Canonical URLs, en-CA/fr-CA hreflang plus x-default, language-aware navigation, valid XML sitemaps, robots.txt, 301 redirects, correct 404s, no duplicate locale content.
 - Structured data only where factually accurate: Organization, WebSite, BreadcrumbList, Product, Offer (only with real price/availability), FAQPage where appropriate. Do not fabricate ratings/reviews or use unsupported rich-result claims.
