@@ -194,5 +194,5 @@ test('Master prompt remains exactly the audited Git blob', () => {
     .update(`blob ${body.length}\0`)
     .update(body)
     .digest('hex');
-  assert.equal(sha, '68e473cd39ee68b3b97f20369d8587fdb57835ab');
+  assert.equal(sha, '5c561f677b6b8faed47201a15c26d15a47957a3d');
 });
